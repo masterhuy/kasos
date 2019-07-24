@@ -1,0 +1,5 @@
+da07c8,::1,GET,http://localhost/jms_kasos/admin201ucslkx/index.php/improve/modules/manage/action/configure/jmsslider?_token=8OGlCsZYyxAbAzYIfg5Xa-WqFJknqn7NUNULMhaNNJs,1563955653,,302
+eb1915,::1,GET,http://localhost/jms_kasos/admin201ucslkx/index.php/improve/modules/manage?_token=8OGlCsZYyxAbAzYIfg5Xa-WqFJknqn7NUNULMhaNNJs,1563955698,,200
+c7b206,::1,POST,http://localhost/jms_kasos/admin201ucslkx/index.php/common/notifications?_token=8OGlCsZYyxAbAzYIfg5Xa-WqFJknqn7NUNULMhaNNJs&rand=1563955694796,1563955698,,200
+15228f,::1,POST,http://localhost/jms_kasos/admin201ucslkx/index.php/common/notifications?_token=8OGlCsZYyxAbAzYIfg5Xa-WqFJknqn7NUNULMhaNNJs&rand=1563955699372,1563955700,,200
+99889a,::1,GET,http://localhost/jms_kasos/admin201ucslkx/index.php/improve/modules/alerts/count?_token=8OGlCsZYyxAbAzYIfg5Xa-WqFJknqn7NUNULMhaNNJs,1563955706,,200
