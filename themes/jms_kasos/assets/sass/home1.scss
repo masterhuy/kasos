@@ -117,3 +117,51 @@
 		}
 	}
 }
+
+.jms-row.discount{
+	text-align: center;
+	p{
+		font-size: 18px;
+		font-family: "samsungsharpsans-medium";
+		margin-bottom: 0;
+		background: #ff4800;
+		color: #fff;
+		padding: 28.5px 0;
+		letter-spacing: 0.5px;
+		span{
+			color: #fcff00;
+		}
+	}
+}
+.banner-4{
+	padding: 125px 0;
+	.addon-box{
+		padding-left: 140px;
+	}
+	.text-1{
+		font-family: "samsungsharpsans-medium";
+		color: $active;
+		font-size: 24px;
+		margin-bottom: 20px;
+	}
+	.text-2{
+		font-size: 56px;
+		font-family: "samsungsharpsans-bold";
+		color: #000;
+		letter-spacing: 1.3px;
+		line-height: 1.16;
+		margin-bottom: 34px;
+	}
+	a{
+		font-size: 17px;
+		color: #0070c9;
+		&::after{
+			content: "\f105";
+			font-family: FontAwesome;
+			font-size: 23px;
+			margin-left: 10px;
+			position: relative;
+			bottom: -2px;
+		}
+	}
+}

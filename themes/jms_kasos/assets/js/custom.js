@@ -236,7 +236,7 @@ jQuery(function ($) {
 				}
 			},
 			rtl: rtl,
-			margin: 30,
+			margin: 0,
 			nav: p_nav,
 			dots: p_pag,
 			autoplay: auto_play_carousel,
@@ -273,7 +273,7 @@ jQuery(function ($) {
 				}
 			},
 			rtl: rtl,
-			margin: 30,
+			margin: 0,
 			nav: p1_nav,
 			dots: p1_pag,
 			autoplay: p1_auto_play_carousel,
@@ -309,7 +309,7 @@ jQuery(function ($) {
 				}
 			},
 			rtl: rtl,
-			margin: 30,
+			margin: 0,
 			nav: p6_nav,
 			dots: p6_pag,
 			autoplay: p6_auto_play_carousel,
@@ -345,7 +345,7 @@ jQuery(function ($) {
 				}
 			},
 			rtl: rtl,
-			margin: 30,
+			margin: 0,
 			nav: p5_nav,
 			dots: p5_pag,
 			autoplay: p5_auto_play_carousel,
@@ -381,7 +381,7 @@ jQuery(function ($) {
 				}
 			},
 			rtl: rtl,
-			margin: 30,
+			margin: 0,
 			nav: p2_nav,
 			dots: p2_pag,
 			autoplay: p2_auto_play_carousel,
@@ -417,7 +417,7 @@ jQuery(function ($) {
 				}
 			},
 			rtl: rtl,
-			margin: 30,
+			margin: 0,
 			nav: p2_c3_nav,
 			dots: p2_c3_pag,
 			autoplay: p2_c3_auto_play_carousel,
@@ -453,7 +453,7 @@ jQuery(function ($) {
 				}
 			},
 			rtl: rtl,
-				margin: 30,
+				margin: 0,
 			    nav: p_nav_tab,
 		        dots: p_pag_tab,
 				autoplay: auto_play_tab,
@@ -490,7 +490,7 @@ jQuery(function ($) {
 				}
 			},
 			rtl: rtl,
-				margin: 30,
+				margin: 0,
 			    nav: cattab_nav,
 		        dots: cattab_pag,
 				autoplay: cattab_auto_play_carousel,
@@ -527,7 +527,7 @@ jQuery(function ($) {
 				}
 			},
 			rtl: rtl,
-				margin: 30,
+				margin: 0,
 			    nav: megtab_nav,
 		        dots: megtab_pag,
 				autoplay: megtab_auto_play_carousel,
