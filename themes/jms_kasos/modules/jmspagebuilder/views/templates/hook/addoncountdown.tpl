@@ -31,14 +31,17 @@
 	<div class="row">
 		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col_left">
 			{if $html_content}
-				{$html_content nofilter}
+				<div class="content">
+					{$html_content nofilter}
+				</div>
+			{/if}
+			{if $button_text}
+				<a href="{if $button_link}{$button_link|escape:'htmlall':'UTF-8'}{else}#{/if}"{if $target == 'new window'} target="_blank"{/if} class="btn-buyitnow">{$button_text|escape:'htmlall':'UTF-8'}</a>
 			{/if}
 			<div class="countdown">
 				{$expire_time|escape:'html':'UTF-8'}
 			</div>
-			{if $button_text}
-				<a href="{if $button_link}{$button_link|escape:'htmlall':'UTF-8'}{else}#{/if}"{if $target == 'new window'} target="_blank"{/if} class="btn-underline">{$button_text|escape:'htmlall':'UTF-8'}</a>
-			{/if}
+			
 		</div>
 		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col_right">
 			{if $image}	
@@ -47,4 +50,5 @@
 		</div>
 	</div>
 </div>	
+
 

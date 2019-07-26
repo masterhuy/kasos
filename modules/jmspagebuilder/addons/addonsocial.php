@@ -59,15 +59,17 @@ class JmsAddonSocial extends JmsAddonBase
                 'name' => 'twitter_url',
                 'label' => $this->l('Twitter Url'),
                 'lang' => '0',
-                'desc' => 'Your Linkedin Page.',
+                
+                'desc' => 'Your official Twitter accounts.',
                 'default' => '#'
             ),
             array(
                 'type' => 'text',
                 'name' => 'linkedin_url',
                 'label' => $this->l('LinkedIn Url'),
+                'desc' => 'Your Linkedin Page.',
                 'lang' => '0',
-                'desc' => 'Your official Twitter accounts.',
+                
                 'default' => '#'
             ),
             array(

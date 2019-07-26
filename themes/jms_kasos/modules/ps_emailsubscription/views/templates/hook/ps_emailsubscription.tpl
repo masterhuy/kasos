@@ -26,19 +26,16 @@
 <div id="newsletter_block_left" class="block">	
 	<div class="block_content">
 		<div class="addon-title">
-			<h3>{l s='Newsletter subscription' d='Shop.Theme.Global'}</h3>
-			<span>{l s='Sign up for Shella updates to receive information about new arrivals, future events and specials.' d='Shop.Theme.Global'}</span>
+			<h3>{l s='Newsletter' d='Shop.Theme.Global'}</h3>
+			<span>{l s='Register now to get updates on promotions' d='Shop.Theme.Global'} & {l s='coupons' d='Shop.Theme.Global'}</span>
 		</div>
 		<div class="news_content">
         	<div  class="block_c_right">
 				<form action="{$urls.pages.index}#footer" method="post">
 					<div class="form-group{if isset($msg) && $msg} {if $nw_error}form-error{else}form-ok{/if}{/if}" >
-						<input class="inputNew form-control grey newsletter-input" id="newsletter-input" type="text" name="email" size="18" value="{$value}" placeholder="{l s='Enter Your Email Address' d='Shop.Forms.Labels'}" />
+						<input class="inputNew form-control grey newsletter-input" id="newsletter-input" type="text" name="email" size="18" value="{$value}" placeholder="{l s='Your email address' d='Shop.Forms.Labels'}" />
 						<button type="submit" name="submitNewsletter" class="btn-default">
-							{l s='SUBSCRIBE!' d='Shop.Theme.Global'}
-						</button>
-						<button type="submit" name="submitNewsletter" class="btn-default active">
-							{l s='SUBSCRIBE!' d='Shop.Theme.Global'}
+							{l s='Subscribe' d='Shop.Theme.Global'}
 						</button>
 						<input type="hidden" name="action" value="0" />
 					</div>
@@ -52,6 +49,11 @@
       	</div>
 	</div>
 </div>
+
+
+
+
+
 
 
 

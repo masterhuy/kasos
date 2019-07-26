@@ -95,6 +95,72 @@
   line-height: 1;
   margin-bottom: 0; }
 
+.countdown-box {
+  padding: 94px 0; }
+  .countdown-box .content {
+    color: #fff; }
+    .countdown-box .content .text-1 {
+      font-size: 24px;
+      font-family: "samsungsharpsans-medium";
+      margin-bottom: 24px; }
+    .countdown-box .content .text-2 {
+      font-size: 56px;
+      font-family: "samsungsharpsans-bold";
+      letter-spacing: 1.8px;
+      line-height: 1.16;
+      margin-bottom: 44px; }
+  .countdown-box .btn-buyitnow {
+    font-size: 17px;
+    color: #ff4800;
+    background: #fff;
+    padding: 9.5px 20px;
+    letter-spacing: 0.5px;
+    font-family: "samsungsharpsans-bold"; }
+    .countdown-box .btn-buyitnow::after {
+      content: "\f105";
+      font-family: FontAwesome;
+      font-size: 23px;
+      margin-left: 10px;
+      position: relative;
+      bottom: -2px; }
+  .countdown-box .countdown-row {
+    color: #fff; }
+  .countdown-box .countdown-section {
+    display: inline-block;
+    text-align: center;
+    min-width: 70px;
+    margin-right: 29px; }
+    .countdown-box .countdown-section .countdown-amount {
+      display: block;
+      font-size: 37px;
+      font-family: "samsungsharpsans-bold"; }
+    .countdown-box .countdown-section .countdown-period {
+      display: block;
+      font-size: 15px;
+      text-transform: lowercase;
+      margin-top: 2px; }
+  .countdown-box .countdown.is-countdown {
+    margin-top: 78px;
+    margin-bottom: 2.4px;
+    margin-left: -4px; }
+
+.blog-carousel {
+  padding-top: 55px; }
+  .blog-carousel .post-info {
+    text-align: center;
+    margin-top: 19px; }
+  .blog-carousel .blog-title {
+    font-family: 'samsungsharpsans-medium';
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 12px;
+    display: block; }
+  .blog-carousel .post-meta li {
+    display: inline-block;
+    position: relative; }
+    .blog-carousel .post-meta li:not(:last-child)::after {
+      content: "/"; }
+
 .customs-html-left .html_left {
   position: relative;
   margin-top: 47px; }
@@ -800,6 +866,24 @@
   #off-canvas-menu #_desktop_currency_selector.type-3 {
     display: block; }
 
+#newsletter_block_left .addon-title span {
+  line-height: 32px; }
+
+#newsletter_block_left .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 24px;
+  margin-bottom: 23px; }
+  #newsletter_block_left .form-group button {
+    font-size: 18px;
+    font-family: "samsungsharpsans-bold"; }
+
+#newsletter_block_left #newsletter-input {
+  height: 50px;
+  font-style: italic;
+  margin-bottom: 0; }
+
 .quickview.fade.in {
   background: rgba(20, 20, 20, 0.5); }
 
@@ -1303,6 +1387,72 @@
   color: #555;
   line-height: 1.71; }
 
+#footer {
+  margin-top: 86px; }
+  #footer .footer-top {
+    background: #f6f6f6;
+    padding: 98px 0 79px; }
+  #footer .addon-box .addon-title h3 {
+    text-align: left;
+    font-size: 17px;
+    padding-bottom: 22px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px; }
+  #footer .social_icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    #footer .social_icon p, #footer .social_icon ul {
+      margin-bottom: 0; }
+    #footer .social_icon p {
+      margin-right: 20px; }
+    #footer .social_icon ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      #footer .social_icon ul li {
+        line-height: inherit;
+        margin-right: 18px; }
+        #footer .social_icon ul li a {
+          font-size: 21px; }
+          #footer .social_icon ul li a .fa-facebook-square {
+            color: #3a589e; }
+          #footer .social_icon ul li a .fa-twitter {
+            color: #1ab2e8; }
+          #footer .social_icon ul li a .fa-behance {
+            color: #0057ff; }
+          #footer .social_icon ul li a .fa-pinterest {
+            color: #d62424; }
+          #footer .social_icon ul li a .fa-instagram {
+            color: #b27d62; }
+  #footer ul li {
+    line-height: 32px; }
+  #footer .footer-bottom {
+    padding: 34px 0; }
+    #footer .footer-bottom p {
+      margin-bottom: 0; }
+    #footer .footer-bottom .copyright {
+      font-size: 15px;
+      letter-spacing: -0.2px; }
+      #footer .footer-bottom .copyright span {
+        font-weight: 700; }
+    #footer .footer-bottom .payments {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end; }
+      #footer .footer-bottom .payments span {
+        margin-right: 23px;
+        font-size: 15px; }
+
 .view-now {
   position: relative;
   color: #fcff00 !important; }
@@ -1328,21 +1478,15 @@
     position: relative;
     bottom: 1px; }
 
+@media (min-width: 1367px) {
+  .footer-top .info {
+    padding-left: 95px; }
+  .footer-top .quicklink {
+    padding-left: 55px; } }
+
 @media (min-width: 1200px) {
   div.container {
     width: 1410px; } }
-
-@media (min-width: 992px) {
-  .blog-item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    .blog-item .post-thumb {
-      margin-right: 20px;
-      width: 270px;
-      min-width: 270px; }
-  div.blog-carousel .post-info {
-    margin-top: 0; } }
 
 @media (min-width: 768px) {
   .pagination div.left-pagination {
