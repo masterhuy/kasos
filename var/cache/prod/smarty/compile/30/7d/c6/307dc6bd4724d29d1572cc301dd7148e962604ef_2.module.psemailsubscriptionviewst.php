@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-07-26 06:28:41
+/* Smarty version 3.1.33, created on 2019-07-29 06:27:04
   from 'module:psemailsubscriptionviewst' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d3ad5d936dfe9_14793561',
+  'unifunc' => 'content_5d3ec9f83debc9_39440863',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '307dc6bd4724d29d1572cc301dd7148e962604ef' => 
     array (
       0 => 'module:psemailsubscriptionviewst',
-      1 => 1564134370,
+      1 => 1564370609,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d3ad5d936dfe9_14793561 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d3ec9f83debc9_39440863 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- Block Newsletter module-->
 <div id="newsletter_block_left" class="block">	
 	<div class="block_content">
@@ -29,6 +29,11 @@ function content_5d3ad5d936dfe9_14793561 (Smarty_Internal_Template $_smarty_tpl)
 </h3>
 			<span><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Register now to get updates on promotions','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
  & <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'coupons','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
+</span>
+		</div>
+		<div class="addon-title advertising">
+			<h3 class="sss-bold">Subscribe And Get <span>20% Off</span></h3>
+			<span class="sss-medium"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Apply for your next purchase!','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
 </span>
 		</div>
 		<div class="news_content">

@@ -29,6 +29,10 @@
 			<h3>{l s='Newsletter' d='Shop.Theme.Global'}</h3>
 			<span>{l s='Register now to get updates on promotions' d='Shop.Theme.Global'} & {l s='coupons' d='Shop.Theme.Global'}</span>
 		</div>
+		<div class="addon-title advertising">
+			<h3 class="sss-bold">Subscribe And Get <span>20% Off</span></h3>
+			<span class="sss-medium">{l s='Apply for your next purchase!' d='Shop.Theme.Global'}</span>
+		</div>
 		<div class="news_content">
         	<div  class="block_c_right">
 				<form action="{$urls.pages.index}#footer" method="post">

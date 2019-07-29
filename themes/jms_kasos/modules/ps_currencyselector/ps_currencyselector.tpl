@@ -27,7 +27,7 @@
 		{$current_currency.iso_code} 
 		<img src="{$urls.base_url}themes/jms_kasos/assets/img/icon/icon-down.png" />
 	</a>
-	<div id="currency-1" class="collapse dropdown-menu">
+	<div id="currency-1" class="dropdown-menu">
 		<ul>
 			{foreach from=$currencies item=currency}
 				<li {if $currency.current} class="current" {/if}>
@@ -44,7 +44,7 @@
    	<a href="#" class="title btn-xs dropdown-toggle" data-toggle="dropdown">
 		{$current_currency.iso_code} <i class="fa fa-angle-down" aria-hidden="true"></i>
 	</a>
-	<div id="currency-2" class="collapse dropdown-menu">
+	<div id="currency-2" class="dropdown-menu">
 		<ul>
 			{foreach from=$currencies item=currency}
 				<li {if $currency.current} class="current" {/if}>

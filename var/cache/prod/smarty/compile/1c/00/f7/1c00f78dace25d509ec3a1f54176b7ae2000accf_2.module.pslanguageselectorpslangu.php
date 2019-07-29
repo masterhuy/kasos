@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-07-26 06:28:41
+/* Smarty version 3.1.33, created on 2019-07-29 06:27:04
   from 'module:pslanguageselectorpslangu' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d3ad5d9250d24_86817080',
+  'unifunc' => 'content_5d3ec9f81ee9d5_40719673',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1c00f78dace25d509ec3a1f54176b7ae2000accf' => 
     array (
       0 => 'module:pslanguageselectorpslangu',
-      1 => 1563951538,
+      1 => 1564374027,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d3ad5d9250d24_86817080 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d3ec9f81ee9d5_40719673 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- Block languages module -->
 <?php if (count($_smarty_tpl->tpl_vars['languages']->value) > 1) {?>
 	<div class="btn-group compact-hidden languages-info type-1">
@@ -32,7 +32,7 @@ img/l/<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['current_language']->va
 			<img src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['base_url'], ENT_QUOTES, 'UTF-8');?>
 themes/jms_kasos/assets/img/icon/icon-down.png" />
 		</a>
-		<div id="languages-1" class="collapse dropdown-menu">
+		<div id="languages-1" class="dropdown-menu">
 			<ul>
 				<?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['languages']->value, 'language', false, 'k', 'languages', array (
@@ -66,7 +66,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 			<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['current_language']->value['name_simple'], ENT_QUOTES, 'UTF-8');?>
  <i class="fa fa-angle-down" aria-hidden="true"></i>
 		</a>
-		<div id="languages-2" class="collapse dropdown-menu">
+		<div id="languages-2" class="dropdown-menu">
 			<ul>
 				<?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['languages']->value, 'language', false, 'k', 'languages', array (

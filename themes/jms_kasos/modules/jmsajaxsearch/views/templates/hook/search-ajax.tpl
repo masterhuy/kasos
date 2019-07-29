@@ -32,7 +32,6 @@
                         <a href="{$product.link nofilter}" title="{$product.name nofilter}" class="product_image">
 				            <img src="{$link->getImageLink($product.link_rewrite, $product.id_image, 'home_default') nofilter}" alt="{$product.name nofilter}" />
 				        </a>
-                        zzzzzzzzzzzzzzz
                     </div>
 					{/if}	
                     <div class="right-info">

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-07-26 06:28:41
+/* Smarty version 3.1.33, created on 2019-07-29 06:27:04
   from 'module:pscurrencyselectorpscurre' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d3ad5d9287821_25061837',
+  'unifunc' => 'content_5d3ec9f8248762_91366864',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b97756c07f8c7dd53da6530f78f67ddd242f77c9' => 
     array (
       0 => 'module:pscurrencyselectorpscurre',
-      1 => 1563951589,
+      1 => 1564374007,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d3ad5d9287821_25061837 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d3ec9f8248762_91366864 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="_desktop_currency_selector" class="btn-group compact-hidden currency-info type-1">
    	<a href="#" class="title btn-xs dropdown-toggle" data-toggle="dropdown">
 		<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['current_currency']->value['iso_code'], ENT_QUOTES, 'UTF-8');?>
@@ -28,7 +28,7 @@ function content_5d3ad5d9287821_25061837 (Smarty_Internal_Template $_smarty_tpl)
 		<img src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['base_url'], ENT_QUOTES, 'UTF-8');?>
 themes/jms_kasos/assets/img/icon/icon-down.png" />
 	</a>
-	<div id="currency-1" class="collapse dropdown-menu">
+	<div id="currency-1" class="dropdown-menu">
 		<ul>
 			<?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['currencies']->value, 'currency');
@@ -58,7 +58,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 		<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['current_currency']->value['iso_code'], ENT_QUOTES, 'UTF-8');?>
  <i class="fa fa-angle-down" aria-hidden="true"></i>
 	</a>
-	<div id="currency-2" class="collapse dropdown-menu">
+	<div id="currency-2" class="dropdown-menu">
 		<ul>
 			<?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['currencies']->value, 'currency');

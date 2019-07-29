@@ -10,16 +10,7 @@
 	</a>
 	<div class="dropdown-menu shoppingcart-box">
 		<div class="shoppingcart-content">
-			<i class="d-flex close-cart">
-				<svg aria-hidden="true" focusable="false" role="presentation"
-						class="icon icon-theme-164" viewBox="0 0 24 24">
-					<path d="M19.583 4.965a.65.65 0 0 1-.176.449l-6.445 6.426 6.445 6.426c.117.131.176.28.176.449a.65.65 0 0 1-.176.449.846.846 0 0 1-.215.127.596.596 0 0 1-.468 0 .846.846 0 0 1-.215-.127l-6.426-6.445-6.426 6.445a.846.846 0 0 1-.215.127.596.596 0 0 1-.468 0 .846.846 0 0 1-.215-.127.65.65 0 0 1-.176-.449c0-.169.059-.318.176-.449l6.445-6.426-6.445-6.426a.65.65 0 0 1-.176-.449c0-.169.059-.318.176-.449a.652.652 0 0 1 .449-.176c.169 0 .319.059.449.176l6.426 6.445 6.426-6.445a.652.652 0 0 1 .449-.176c.169 0 .319.059.449.176.117.13.176.28.176.449z"/>
-				</svg>
-			</i>
 			<span class="ajax_cart_no_product" {if $cart.products_count != 0}style="display:none"{/if}>{l s='There is no product' d='Shop.Theme.Actions'}</span>
-			{if $cart.products_count > 0}
-				<span class="quantity">{l s='My Bag' d='Shop.Theme.Actions'} ({$cart.products_count})</span>
-			{/if}
 			<ul class="list products cart_block_list">
 				{foreach from=$cart.products item=product}
 					<li>{include 'module:ps_shoppingcart/ps_shoppingcart-product-line.tpl' product=$product}</li>
@@ -30,20 +21,16 @@
 			<div class="checkout-info">
 				{foreach from=$cart.subtotals item="subtotal"}
 					<div class="{if $subtotal.type == ''}hidden {else}$subtotal.type {/if} cart-prices-line">
-						<span class="label">{$subtotal.label}:</span>
-						<span class="value">{$subtotal.value}</span>
+						<span class="label sss-bold">{$subtotal.label}:</span>
+						<span class="value sss-bold">{$subtotal.value}</span>
 					</div>
 				{/foreach}
 			</div>
 			<div class="cart-button">
-				<a class="btn-default active" href="{$urls.pages.order}" title="{l s='Proceed to checkout' d='Shop.Theme.Actions'}" rel="nofollow">
-					{l s='PROCEED TO CHECKOUT' d='Shop.Theme.Actions'}
+				<a class="btn-default btn-black w-100 text-center" href="{$urls.pages.order}" title="{l s='Proceed to checkout' d='Shop.Theme.Actions'}" rel="nofollow">
+					{l s='Check out' d='Shop.Theme.Actions'}
 				</a>
-				<a class="btn-default" href="{$cart_url}" title="{l s='View shopping bag' d='Shop.Theme.Actions'}" rel="nofollow">
-					{l s='VIEW SHOPPING BAG' d='Shop.Theme.Actions'}
-				</a> 
 			</div>
 		</div>
 	</div>
-	<div class="bg-overlay"></div>
 </div>

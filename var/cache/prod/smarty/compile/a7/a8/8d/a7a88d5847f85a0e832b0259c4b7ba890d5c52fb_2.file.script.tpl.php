@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-07-26 06:28:41
+/* Smarty version 3.1.33, created on 2019-07-29 06:27:04
   from 'D:\xamppp\htdocs\jms_kasos\modules\jmsslider\views\templates\hook\script.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d3ad5d941dc89_32607023',
+  'unifunc' => 'content_5d3ec9f8532994_48561783',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d3ad5d941dc89_32607023 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d3ec9f8532994_48561783 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type="text/javascript">
     $(window).load(function(){

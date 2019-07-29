@@ -133,3 +133,25 @@
       margin-left: 10px;
       position: relative;
       bottom: -2px; }
+
+.banner_bg .addon-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 119px 0 60px;
+  background-size: cover;
+  background: url("../img/h1-banner-bg.png") no-repeat top center; }
+  .banner_bg .addon-box p {
+    margin-bottom: 0; }
+    .banner_bg .addon-box p:not(:last-child) {
+      font-family: "samsungsharpsans-bold";
+      font-size: 30px;
+      color: #fff;
+      letter-spacing: 0.5px;
+      margin: 0 47px 0 60px; }
+  .banner_bg .addon-box .btn-buyitnow {
+    padding: 9.5px 16px;
+    display: inline-block; }

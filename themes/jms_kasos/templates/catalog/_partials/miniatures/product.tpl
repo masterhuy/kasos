@@ -132,11 +132,9 @@
 		</div>
 	</div>
 	<div class="product_action d-flex flex-center">
-		<div class="btn-group">
-			{if isset($jpb_wishlist) && $jpb_wishlist}							
-				<a href="#" class="addToWishlist product-btn" title="{l s='Add to Whislist' d='Shop.Theme.Actions'}" onclick="WishlistCart('wishlist_block_list', 'add', '{$product.id_product|escape:'html'}', false, 1); return false;" data-id-product="{$product.id_product|escape:'html'}"></a>
-			{/if}
-		</div>
+		{if isset($jpb_wishlist) && $jpb_wishlist}							
+			<a href="#" class="addToWishlist product-btn" title="{l s='Add to Wislist' d='Shop.Theme.Actions'}" onclick="WishlistCart('wishlist_block_list', 'add', '{$product.id_product|escape:'html'}', false, 1); return false;" data-id-product="{$product.id_product|escape:'html'}"></a>
+		{/if}
 		<button class="btn-default ajax-add-to-cart product-btn {if $product.quantity < 1}disabled{/if} cart-button" {if $product.quantity < 1}disabled{/if} title="{if $product.quantity < 1}{l s='Sold Out' d='Shop.Theme.Actions'}{else}{l s='Add to Cart' d='Shop.Theme.Actions'}{/if}" {if $product.quantity < 1}disabled{/if} data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}" data-token="{if isset($static_token) && $static_token}{$static_token}{/if}">
 			<span class="la la-spin la-spinner"></span>
 			<span class="la la-check">

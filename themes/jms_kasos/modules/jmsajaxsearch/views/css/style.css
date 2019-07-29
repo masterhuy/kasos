@@ -37,7 +37,6 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 2px;
 }
 #jms_ajax_search.open > #cover-background {
     background: rgba(0, 0, 0, 0.4) none repeat scroll 0 0;
@@ -110,17 +109,18 @@
     position: relative;
 }
 #ajax_search {
-    background: #fff none repeat scroll 0 0;
+    background: transparent;
     border: 0;
-    border-bottom: 1px solid #e5e5e5;
-    font-size: 24px;
-    color: #141414;
-    height: 50px;
+    font-size: 14px;
+    color: #555;
+    height: 54px;
     margin: 0;
-    padding: 0 0 15px;
+    width: 415px;
+    padding-left: 46px;
+    letter-spacing: 0.1px;
 }
 #ajax_search::placeholder{
-    color: #141414;
+    color: #555;
 }
 #search_result {
 
@@ -143,23 +143,27 @@
     background: none repeat scroll 0 0 #fff;
     position: relative;
     width: 100%;
-    padding: 30px 0;
+    padding: 0 17px;
 }
 #search_result .result_div .item {
-    width: 16.666666667%;
-    padding: 0 15px;
+    display: flex;
 }
 #search_result .result_div .item:last-child{
     border: none;
     padding-bottom: 0;
 }
 #search_result .result_div .item .left-img {
-
+    width: 20%;
 }
 #search_result .result_div .right-info {
-    line-height: 1;
-    margin-top: 16px;
+    width: 80%;
+    padding-top: 10px;
+    padding-left: 10px;
 }
+#search_result .result_div .right-info a{
+    line-height: 1;
+}
+#search_result .result_div .right-info a
 #search_result .result_div .item .left-img img{
 	max-width:100%;
 }
@@ -183,6 +187,7 @@
 }
 #search_result .content_price{
     line-height: 1;
+    padding-bottom: 0;
 }
 #search_result .result_div .price .label {
     color: #777;

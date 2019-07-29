@@ -77,8 +77,11 @@ $(document).ready(function() {
 		$('.jms-popup-overlay').show();
 		setCookie("showpopup", "show", 365);	
 	} 
-	$('.popup-close').on('click', function() {
+	$('.jms-popup-overlay').on('click', function() {
 		$('.jms-popup-overlay').hide();
+	});
+	$(".jms-popup-content").on('click', function (e) {
+	     e.stopPropagation();
 	});
 	$('#dontshowagain').click(function (e) {
 		setCookie("showpopup", "hide", 365);	
