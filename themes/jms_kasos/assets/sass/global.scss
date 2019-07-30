@@ -36,6 +36,15 @@
 }
 //
 
+//logo center
+.logo-center{
+	.addon-box{
+		display: flex;
+		justify-content: center;	
+	}
+}
+//
+
 //dropdown menu
 .dropdown-menu{
 	ul{
@@ -249,6 +258,69 @@
 }
 //
 
+//jmstab
+.jms-tab{
+	ul{
+		text-align: center;
+		li{
+			padding: 0 32px;
+			display: inline-block;
+			&.active a{
+				color: $active;
+				&::after{
+					opacity: 1;
+				}
+			}
+			&:not(:last-child) a::before{
+				content: "";
+				width: 8px;
+				height: 8px;
+				background: #e1e1e1;
+				border-radius: 50%;
+				display: block;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				right: -37px;
+			}
+			a{
+				color: #17171f;
+				font-size: 19px;
+				font-family: 'samsungsharpsans-bold';
+				padding: 0;
+				letter-spacing: 0.4px;
+				&.active{
+					color: $active;
+					&::after{
+					opacity: 1;
+				}
+				}
+				&::after{
+					content:"";
+					position: absolute;
+					bottom: -2px;
+					left: 0;
+					width: 100%;
+					height: 2px;
+					background: $active;
+					opacity: 0;
+					transition: .4s all;
+				}
+			}
+		}
+	}
+}
+//
+
+//Categorytab carousel
+.categorytab-carousel{
+	padding-top: 12px;
+	.categoryname{
+		display: none;
+	}
+}
+//
+
 //jms banner
 .jms-banner{
 	.banner-content{
@@ -333,6 +405,7 @@
 	.post-info{
 		text-align: center;
 		margin-top: 19px;
+		position: relative;
 	}
 	.blog-title{
 		font-family: 'samsungsharpsans-medium';
@@ -348,6 +421,92 @@
 			&:not(:last-child)::after{
 				content: "/";
 			}
+		}
+	}
+	.post-intro{
+		p{
+			font-size: 15px;
+			color: #555;
+			line-height: 1.85;
+		}
+	}
+	.blog-readmore {
+		margin-top: 9px;
+		font-size: 17px;
+		display: inline-block;
+		position: relative;
+		color: #0070c9;
+		font-family: 'samsungsharpsans-bold';
+		letter-spacing: 0.6px;
+		&:hover{
+			color: $active;
+		}
+		&::after{
+			content: "\f105";
+			font-family: FontAwesome;
+			font-size: 23px;
+			margin-left: 3px;
+			position: relative;
+			bottom: -2px;
+		}
+	}
+}
+.blog.v2{
+	.post-meta {
+		position: absolute;
+		top: -34px;
+		background: #0070c9;
+		color: #fff;
+		left: 50%;
+		transform: translateX(-50%);
+		min-width: 330px;
+		padding: 6.5px 15px;
+	}
+	.post-info{
+		padding-top: 13px;
+	}
+	.blog-title{
+		margin-bottom: 17px;
+	}
+}
+//
+
+//service
+.service{
+	margin-top: 96px;
+	.layout-column:not(:last-child) .feature-box{
+		&::after{
+			content: "";
+			width: 1px;
+			height: 46px;
+			position: absolute;
+			right: -15px;
+			top: 50%;
+			transform: translateY(-50%);
+			background: #e1e1e1;
+		}
+	}
+	.feature-box{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+	}
+	.image{
+		margin-right: 15px;
+		display: inline-block;
+	}
+	.include_content_s{
+		display: inline-block;
+
+		.text-1{
+			font-family: 'samsungsharpsans-bold';
+			font-size: 19px;
+			color: #000;
+		}
+		.text-2{
+			letter-spacing: 0.3px;
+			margin-bottom: 3px;
 		}
 	}
 }
@@ -398,7 +557,59 @@
 }
 //
 
+//banner bg
+.banner_bg{
+	.addon-box{
+		display: flex;
+		align-items: center;
+		padding: 119px 0 60px;
+		background-size: cover;
+		p{
+			margin-bottom: 0;
+			&:not(:last-child){
+				font-family: "samsungsharpsans-bold";
+				font-size: 30px;
+				color: #fff;
+				letter-spacing: 0.5px;
+				margin: 0 47px 0 60px;
+			}
+		}
+		.btn-buyitnow{
+			padding: 9.5px 16px;
+			display: inline-block;
+		}
+	}
+}
+.home_1 .banner_bg .addon-box{
+	background: url("../img/h1-banner-bg.png") no-repeat top center;
+}
+.home_2 .banner_bg .addon-box{
+	background: url("../img/h2-banner-bg.png") no-repeat top center;
+	p{
+		color: #000;
+		letter-spacing: 1.1px;
+		margin-right: 58px;
+	}
+	.btn-buyitnow{
+		color: #fff;
+		background: $active;
+		letter-spacing: 0.5px;
+		margin-right: 0;
+	}
+}
+//
+
 //product box
+.owl-item{
+	.item{
+		.product-miniature{
+			margin-bottom: 32px;
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+	}
+}
 .addToWishlist{
 	&::after{
 		content: "\e949";
@@ -416,9 +627,6 @@
 .product-preview{
 	&:hover{
 		box-shadow: 0 0 8px rgba(0,0,0,0.2);
-		.ajax-add-to-cart{
-			top: 0;
-		}
 		.product_action{
 			opacity: 1;
 			visibility: visible;
@@ -442,9 +650,6 @@
 		}
 	}
 	.ajax-add-to-cart{
-		position: relative;
-		top: 20px;
-		transition: .4s all;
 		&::after{
 			content: "";
 			position: absolute;
@@ -1172,7 +1377,6 @@
 	.addon-title{
 		> span{
 			line-height: 32px;
-			letter-spacing: 0.6px;
 		}
 		&.advertising{
 			display: none;
@@ -1684,6 +1888,12 @@
 .wishlist_top.home_page{
 	display: inline-block;
 	color: #000;
+	&::after{
+		content: "\e949";
+		font-family: 'typo-icon';
+		font-size: 22px;
+		display: inline-block;
+	}
 	&:hover{
 		color: $active;
 	}

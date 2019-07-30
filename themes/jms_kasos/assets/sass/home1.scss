@@ -165,26 +165,3 @@
 		}
 	}
 }
-.banner_bg{
-	.addon-box{
-		display: flex;
-		align-items: center;
-		padding: 119px 0 60px;
-		background-size: cover;
-		background: url("../img/h1-banner-bg.png") no-repeat top center;
-		p{
-			margin-bottom: 0;
-			&:not(:last-child){
-				font-family: "samsungsharpsans-bold";
-				font-size: 30px;
-				color: #fff;
-				letter-spacing: 0.5px;
-				margin: 0 47px 0 60px;
-			}
-		}
-		.btn-buyitnow{
-			padding: 9.5px 16px;
-			display: inline-block;
-		}
-	}
-}

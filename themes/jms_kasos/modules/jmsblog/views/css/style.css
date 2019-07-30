@@ -337,14 +337,6 @@
 .cat-post-list .post-meta li:last-child {
 	margin-right:0;
 }
-.blog-readmore {
-	margin-top: 10px;
-	text-transform: uppercase;
-	font-size: 14px;
-	font-weight: 700;
-	display: inline-block;
-	position: relative;
-}
 .post-intro {
 	margin:10px 0;
 }

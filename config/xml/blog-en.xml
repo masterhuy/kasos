@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>What relationship does PrestaShop have with its community and its partners?</title>
+    <link>https://www.prestashop.com/en/blog/prestashop-project-prioritization</link>
+    <description>PrestaShop is an open source e-commerce solution available to all, designed to quickly set up an effective and reliable e-commerce website.</description>
+     <pubDate>Mon, 29 Jul 2019 11:56:07 +0200</pubDate>
+ <dc:creator>Cécile Dubouis</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/prestashop-project-prioritization</guid>
+  </item>
+  <item>
     <title>How To Create A Social Media Calendar</title>
     <link>https://www.prestashop.com/en/blog/create-social-media-calendar</link>
     <description>We all know that promoting our businesses on social media is an important part of reaching and expanding our customer base, but great intentions can slide away from us in the absence of a strategic</description>
@@ -76,14 +84,6 @@
      <pubDate>Thu, 27 Jun 2019 16:57:13 +0200</pubDate>
  <dc:creator>Code Sphere Network</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/social-netwoks-ecommerce</guid>
-  </item>
-  <item>
-    <title>3 challenges to expand your logistics internationally</title>
-    <link>https://www.prestashop.com/en/blog/expand-your-logistics-internationally</link>
-    <description>Do you know that many businesses face loss due to inefficiency to meet customers demand on time?</description>
-     <pubDate>Wed, 26 Jun 2019 10:38:00 +0200</pubDate>
- <dc:creator>Webkul</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/expand-your-logistics-internationally</guid>
   </item>
   </channel>
 </rss>

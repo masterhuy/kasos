@@ -1214,6 +1214,7 @@ class FrontContainer extends Container
                 70 => 'jmsfacebookconnect',
                 71 => 'jmspagebuilder',
                 72 => 'jmsslider',
+                73 => 'jmswishlist',
             ],
             'ps_cache_dir' => 'D:\\xamppp\\htdocs\\jms_kasos/var/cache/prod\\',
             'mail_themes_uri' => '/mails/themes',
