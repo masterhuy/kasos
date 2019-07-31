@@ -1,0 +1,33 @@
+.jms-megamenu .nav > li > a {
+  line-height: 130px; }
+
+.banner-1 .banner-content, .banner-2 .banner-content {
+  left: auto;
+  right: 61px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+  .banner-1 .banner-content .text-1, .banner-2 .banner-content .text-1 {
+    font-size: 20px;
+    font-family: 'samsungsharpsans-medium';
+    margin-bottom: 9px; }
+  .banner-1 .banner-content .text-2, .banner-2 .banner-content .text-2 {
+    font-size: 42px;
+    font-family: 'samsungsharpsans-bold';
+    margin-bottom: 22px; }
+  .banner-1 .banner-content .text-3, .banner-2 .banner-content .text-3 {
+    font-size: 18px;
+    letter-spacing: 0.35px; }
+
+.banner-1 .banner-content {
+  color: #fff; }
+
+.banner-2 .banner-content {
+  color: #000; }
+
+.owl-item .item .product-miniature {
+  margin-bottom: 23px; }
+
+.page-index #footer {
+  margin-top: 0; }

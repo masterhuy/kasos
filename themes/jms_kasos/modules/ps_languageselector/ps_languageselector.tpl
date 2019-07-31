@@ -29,7 +29,7 @@
 			<img class="flag" alt="{$language.iso_code}" src="{$urls.base_url}img/l/{$current_language.id_lang}.jpg" width="18" height="11"/>
 			<img src="{$urls.base_url}themes/jms_kasos/assets/img/icon/icon-down.png" />
 		</a>
-		<div id="languages-1" class="dropdown-menu">
+		<div class="dropdown-menu">
 			<ul>
 				{foreach from=$languages key=k item=language name="languages"}
 					<li {if $language.id_lang == $current_language.id_lang} class="current" {/if}>
@@ -44,11 +44,10 @@
 	</div>
 
 	<div class="btn-group compact-hidden languages-info type-2">
-		<p class="">{l s='Select Language' d='Shop.Theme.Actions'}</p>
 		<a href="#" class="btn-xs dropdown-toggle" data-toggle="dropdown">
 			{$current_language.name_simple} <i class="fa fa-angle-down" aria-hidden="true"></i>
 		</a>
-		<div id="languages-2" class="dropdown-menu">
+		<div class="dropdown-menu">
 			<ul>
 				{foreach from=$languages key=k item=language name="languages"}
 					<li {if $language.id_lang == $current_language.id_lang} class="current" {/if}>

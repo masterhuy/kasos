@@ -56,6 +56,7 @@
 							{/if}
 							<div class="c_item-info">
 								<a class="cat-name" href="{$categoryLink nofilter}">{$c_item.name nofilter}</a>
+								<span class="count">({$c_item.product_count} {if $c_item.product_count > 1}Products{else}Product{/if})</span>
 								<ul class="child" style="margin-bottom: 0;">
 									{foreach from=$c_item.cat_childs item=child}
 										{assign var='childLink' value=$link->getcategoryLink($child.id_category, $c_item.link_rewrite)}
@@ -77,4 +78,3 @@
 </div>
 
 
-	

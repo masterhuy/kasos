@@ -26,7 +26,7 @@
 	<div class="user-info menu-collapse btn-group compact-hidden type-1">
 		{if $logged} 
 			<a href="#" class="account dropdown-toggle p-relative" data-toggle="dropdown"></a>
-			<div id="login-1" class="collapse dropdown-menu">
+			<div id="login" class="dropdown-menu">
 				<ul>
 					<li><a href="{$link->getPageLink('my-account', true)}">{$customerName}</a></li>		
 					<li><a href="{$link->getPageLink('order', true)}" title="{l s='Checkout' d='Shop.Theme.CustomerAccount'}" class="account" rel="nofollow">{l s='Checkout' d='Shop.Theme.CustomerAccount'} </a></li>
@@ -35,7 +35,7 @@
 			</div>
 		{else}   
 			<a href="#" class="account dropdown-toggle p-relative" data-toggle="dropdown"></a>
-			<div id="login" class="collapse dropdown-menu">
+			<div id="login" class="dropdown-menu">
 				<ul>
 					<li><a href="{$urls.pages.register}" title="{l s='Register' d='Shop.Theme.CustomerAccount'}" class="account" rel="nofollow">{l s='Register' d='Shop.Theme.CustomerAccount'} </a></li>		
 					<li><a class="login" href="{$my_account_url}" title="{l s='Login' d='Shop.Theme.CustomerAccount'}" rel="nofollow" >{l s='Log In' d='Shop.Theme.Actions'}</a></li>
@@ -46,10 +46,9 @@
 	<div class="user-info menu-collapse btn-group compact-hidden type-2">
 		{if $logged} 
 			<a href="#" class="account dropdown-toggle" title="{l s='View my customer account' d='Shop.Theme.CustomerAccount'}" data-toggle="dropdown">      
-				<i class="fa fa-user"></i>
 				{$customerName}
 		  	</a>
-			<div id="login-2" class="collapse dropdown-menu">
+			<div id="login" class="dropdown-menu">
 				<ul>
 					<li><a href="{$link->getPageLink('my-account', true)}" title="{l s='View my customer account' d='Shop.Theme.CustomerAccount'}" class="account" rel="nofollow">{l s='My Account' d='Shop.Theme.CustomerAccount'} </a></li>		
 					<li><a href="{$link->getPageLink('order', true)}" title="{l s='Checkout' d='Shop.Theme.CustomerAccount'}" class="account" rel="nofollow">{l s='Checkout' d='Shop.Theme.CustomerAccount'} </a></li>
@@ -57,11 +56,10 @@
 				</ul>
 			</div>
 		{else}   
-			<a href="#" class="account dropdown-toggle" title="{l s='View my customer account' d='Shop.Theme.CustomerAccount'}" data-toggle="dropdown">
-				<i class="fa fa-user"></i>
-				{l s='My account' d='Shop.Theme.Actions'}
+			<a href="#" class="account dropdown-toggle" title="{l s='Login/Register' d='Shop.Theme.CustomerAccount'}" data-toggle="dropdown">
+				{l s='Login/Register' d='Shop.Theme.Actions'}
 			</a>
-			<div id="login-2" class="collapse dropdown-menu">
+			<div id="login" class="dropdown-menu">
 				<ul>		
 					<li><a href="{$link->getPageLink('order', true)}" title="{l s='Checkout' d='Shop.Theme.CustomerAccount'}" class="account" rel="nofollow">{l s='Checkout' d='Shop.Theme.CustomerAccount'} </a></li>
 					<li><a class="logout" href="{$link->getPageLink('my-account', true)}" title="{l s='Login' d='Shop.Theme.CustomerAccount'}" rel="nofollow" >{l s='Log In' d='Shop.Theme.Actions'}</a></li>

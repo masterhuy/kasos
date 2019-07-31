@@ -26,10 +26,7 @@
 <div class="addon-instagram">
 	<div class="addon-title">
 		<h3>
-			<a href="https://www.instagram.com/shellatemplate" target="_blank">
-				<span class="text-underline">{l s='@Shella' d='Modules.JmsPagebuilder'}</span>
-				{l s='Follow Us On Instagram' d='Modules.JmsPagebuilder'}
-			</a>
+			Follow <br>@Kasos Store
 		</h3>
 	</div>
 	<div class="instagram-carousel">

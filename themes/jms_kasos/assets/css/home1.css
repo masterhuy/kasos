@@ -94,19 +94,6 @@
   .banner-3 .banner-content p {
     color: #fff; }
 
-.jms-row.discount {
-  text-align: center; }
-  .jms-row.discount p {
-    font-size: 18px;
-    font-family: "samsungsharpsans-medium";
-    margin-bottom: 0;
-    background: #ff4800;
-    color: #fff;
-    padding: 28.5px 0;
-    letter-spacing: 0.5px; }
-    .jms-row.discount p span {
-      color: #fcff00; }
-
 .banner-4 {
   padding: 125px 0; }
   .banner-4 .addon-box {

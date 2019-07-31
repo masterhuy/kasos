@@ -16,6 +16,52 @@
 // 	}
 // }
 
+
+//topbar
+.topbar{
+	background: #0070c9;
+	color: #fff;
+	.right{
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		.addon-box{
+			margin-left: 20px;
+		}
+	}
+	.btn-xs{
+		color: #fff;
+	}
+	#_desktop_user_info{
+		.type-1{
+			display: none;
+		}
+		.type-2{
+			display: block;
+			&.user-info > a{
+				color: #fff;
+			}
+		}
+	}
+	.languages-info {
+		&.type-1, &.type-3{
+			display: none;
+		}
+		&.type-2{
+			display: block;
+		}
+	}
+	#_desktop_currency_selector{
+		&.type-1{
+			display: none;
+		}
+		&.type-2{
+			display: block;
+		}
+	}
+}
+//
+
 //header
 .home_1{
 	.header{
@@ -27,7 +73,7 @@
 	}
 }
 .header{
-	.container-fluid{
+	.container-fluid, .container{
 		> .row{
 			display: flex;
 			align-items: center;
@@ -114,6 +160,14 @@
 		}
 	}
 }
+.home_3{
+	.right-icon-group{
+		margin-right: 8px;
+		.addon-box{
+			margin-left: 25px;
+		}
+	}
+}
 //
 
 //ajax search
@@ -179,6 +233,24 @@
 	}
 	.type-2{
 		display: none;
+		&.user-info > a{
+			text-transform: uppercase;
+			font-weight: 700;
+			color: #000;
+			&::before{
+				display: none;
+			}
+		}
+	}
+}
+.home_3{
+	#_desktop_user_info{
+		.type-1{
+			display: none;
+		}
+		.type-2{
+			display: block;
+		}
 	}
 }
 //
@@ -215,8 +287,6 @@
 
 //language
 .languages-info{
-	border: 2px solid #e1e1e1;
-	padding: 3.5px 8.5px 3.5px 13.5px;
 	.dropdown-menu{
 		min-width: 130px;
 		left: -12px;
@@ -231,6 +301,10 @@
 			}
 		}
 	}
+	&.type-1{
+		border: 2px solid #e1e1e1;
+		padding: 3.5px 8.5px 3.5px 13.5px;
+	}
 	&.type-2, &.type-3{
 		display: none;
 	}
@@ -243,8 +317,10 @@
 
 //currency
 #_desktop_currency_selector{
-	border: 2px solid #e1e1e1;
-	padding: 3.5px 8.5px;
+	&.type-1{
+		border: 2px solid #e1e1e1;
+		padding: 3.5px 8.5px;
+	}
 	&.type-2, &.type-3{
 		display: none;
 	}
@@ -332,6 +408,51 @@
 }
 //
 
+//instagram
+.addon-instagram{
+	position: relative;
+	margin-top: 86px;
+	.addon-title{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: #fff;
+		width: 140px;
+		height: 140px;
+		border-radius: 50%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 9;
+		h3{
+			color: #555 !important;
+			font-size: 17px !important;
+			letter-spacing: 0 !important;
+			line-height: 1.7 !important;
+		}
+	}
+}
+//
+
+//discount
+.jms-row.discount{
+	text-align: center;
+	p{
+		font-size: 18px;
+		font-family: "samsungsharpsans-medium";
+		margin-bottom: 0;
+		background: #ff4800;
+		color: #fff;
+		padding: 28.5px 0;
+		letter-spacing: 0.5px;
+		span{
+			color: #fcff00;
+		}
+	}
+}
+//
+
 //countdown box banner
 .btn-buyitnow{	
 	font-size: 17px;
@@ -395,6 +516,112 @@
 		margin-top: 78px;
 		margin-bottom: 2.4px;
 		margin-left: -4px;
+	}
+}
+//
+
+//macbook pro banner
+.banner-macbook-pro{
+	.jms-banner a img{
+		transform: unset !important;
+	}
+	.banner-center{
+		overflow: unset;
+		.banner-content{
+			width: 100%;
+			left: 0;
+			text-align: center;
+			top: auto;
+			bottom: -60px;
+		}
+	}
+}
+//
+
+//macbook pro detail
+.macbook-detail{
+	background: #f8f8f8;
+	padding: 147px 0 93px;
+	.addon-box > .row{
+		display: flex;
+		align-items: center;
+	}
+	.product-info{
+		text-align: center;
+		max-width: 248px;
+		padding-bottom: 4px;
+		.logo{
+			margin-bottom: 24px;
+		}
+		.status{
+			font-size: 20px;
+			font-family: 'samsungsharpsans-medium';
+			margin-bottom: 32px;
+			color: #000;
+		}
+		button{
+			position: relative;
+			&::after {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				height: 2px;
+				width: 100%;
+				left: 0;
+				background: #d93d00;
+			}
+		}
+	}
+	.feature{
+		display: flex;
+		align-items: center;
+		&:not(:last-child){
+			margin-bottom: 58px;
+		}
+		.image{
+			min-width: 100px;
+		}
+		.content{
+			.text-1{
+				font-size: 20px;
+				color: #17171f;
+				font-family: 'samsungsharpsans-bold';
+				letter-spacing: 0.5px;
+			}
+			.text-2{
+				font-size: 15px;
+				line-height: 1.6;
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+//
+
+//categories carousel
+.categories-carousel2{
+	.categories-wrapper {
+		position: relative;
+		.c_item-info {
+			position: absolute;
+			top: 53px;
+			color: #fff;
+			width: 100%;
+			text-align: center;
+			.cat-name{
+				color: #fff;
+				display: block;
+				font-family: 'samsungsharpsans-bold';
+				font-size: 27px;
+				margin-bottom: 12px;
+				letter-spacing: 1.1px;
+			}
+			.count{
+				font-size: 20px;
+				font-family: 'samsungsharpsans-medium';
+				letter-spacing: 0.7px;
+			}
+		}
 	}
 }
 //
@@ -1095,7 +1322,7 @@
 		}
 	}
 }
-#header{
+.page-index{
 	a.wishlist_top{
 		&.home_page{
 			display: block;
@@ -1972,6 +2199,79 @@
 
 //footer
 #footer{
+	.footer-top-2{
+		background: #000;
+		color: #bbb;
+		.container{
+			padding: 70px 0 18px;
+			border-bottom: 1px solid rgba(235,235,235,0.2);
+		}
+		.left{
+			display: flex;
+			align-items: center;
+			.addon-box:first-child{
+				margin-right: 100px;
+			}
+			p{
+				margin-bottom: 0;
+				font-size: 15px;
+				letter-spacing: -0.12px;
+				padding-top: 4px;
+			}
+		}
+		.right{
+			ul{
+				text-align: right;
+				padding-top: 4px;
+				li{
+					display: inline-block;
+					margin-left: 30px;
+					a{
+						color: #bbb;
+						font-size: 15px;
+						font-family: 'samsungsharpsans-bold';
+						letter-spacing: 0.5px;
+						&:hover{
+							color: $active;
+						}
+					}
+				}
+			}
+		}
+	}
+	.footer-bottom-2{
+		background: #000;
+		color: #bbb;
+		padding: 34px 0 72.5px;
+		p{
+			margin-bottom: 0;
+		}
+		.left{
+			p{
+				font-family: 'samsungsharpsans-bold';
+				font-size: 15px;
+				line-height: 25px;
+			}
+		}
+		.right{
+			.social_icon{
+				justify-content: flex-end;
+			}
+			ul{
+				text-align: right;
+				li{
+					display: inline-block;
+					margin-right: 0;
+					margin-left: 25px;
+					a{
+						font-size: 20px;
+					}
+				}
+			}
+		}
+	}
+}
+#footer{
 	margin-top: 86px;
 	.footer-top{
 		background: #f6f6f6;
@@ -2098,6 +2398,14 @@
 
 }
 @media (min-width: 768px){
+	.banner-macbook-pro{
+		.row{
+			margin: 0;
+		}
+		.layout-column{
+			padding: 0;
+		}
+	}
 	.pagination div.left-pagination {
 	  text-align: center;
 	  color: #858585;

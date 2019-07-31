@@ -43,7 +43,7 @@ var megtab_auto_play_carousel = {if $autoplay == 1}true{else}false{/if};
 	{if $addon_desc}
 		<p class="addon-desc">{$addon_desc nofilter}</p>
 	{/if}
-	<div class="jms-tab">
+	<div class="jms-tab {if $addon_title}mt-40{/if}">
 		<ul class="nav">
 			{foreach from = $categories key = k item = category}
 				<li class="nav-item {if $k == 0} active{/if}">

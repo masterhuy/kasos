@@ -260,6 +260,9 @@ hr {
 .mt-98{
   margin-top: 98px;
 }
+.mt-100{
+  margin-top: 100px;
+}
 .w-100{
   width: 100%;
 }
@@ -5172,7 +5175,7 @@ footer .blog-carousel {
 }
 /*Owl carousel*/
 .brand-carousel {
-  padding: 50px 0;
+  padding: 90px 0;
 }
   .brand-carousel.owl-theme .owl-controls{
     position: unset;
