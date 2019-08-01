@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-07-31 06:12:26
+/* Smarty version 3.1.33, created on 2019-08-01 06:13:31
   from 'module:pscustomersigninpscustome' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d41698a6e9ee2_82437194',
+  'unifunc' => 'content_5d42bb4b500be0_20878605',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd5f8f570180f74d1dbdd1a1d2af0445e90a6650c' => 
     array (
       0 => 'module:pscustomersigninpscustome',
-      1 => 1564563254,
+      1 => 1564624548,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d41698a6e9ee2_82437194 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d42bb4b500be0_20878605 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="_desktop_user_info">
 	<div class="user-info menu-collapse btn-group compact-hidden type-1">
 		<?php if ($_smarty_tpl->tpl_vars['logged']->value) {?> 
@@ -80,7 +80,7 @@ function content_5d41698a6e9ee2_82437194 (Smarty_Internal_Template $_smarty_tpl)
 		<?php } else { ?>   
 			<a href="#" class="account dropdown-toggle" title="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Login/Register','d'=>'Shop.Theme.CustomerAccount'),$_smarty_tpl ) );?>
 " data-toggle="dropdown">
-				<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Login/Register','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
+				<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Login / Register','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
 
 			</a>
 			<div id="login" class="dropdown-menu">

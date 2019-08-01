@@ -18,11 +18,23 @@
     align-items: center;
     justify-content: flex-end;
 }
+#jms_ajax_search .button-search{
+    display: none;
+    border: 0;
+    background: transparent;
+    position: absolute;
+    right: 0;
+    top: 7px;
+}
+#jms_ajax_search .button-search::before{
+    content: "\e92d";
+    font-family: 'typo-icon';
+    font-size: 24px;
+    display: inline-block;
+    color: #000;
+}
 #jms_ajax_search .btn-search:hover{
     color: #858585;
-}
-#jms_ajax_search .btn-search:hover i{
-    fill: #858585;
 }
 #jms_ajax_search .btn-search > span{
     text-transform: uppercase;

@@ -8,12 +8,11 @@
 #jms-vermegamenu-container {
     position: absolute;
     width: 100%;
-    max-width: 270px;
+    max-width: 417px;
     margin-bottom: 0px;
-    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.2);
-    border-radius: 0 0 5px 5px;
+    border-radius: 0;
     z-index: 9991;
-    background: #fff;
+    background: #0070c9;
 }
 .jms-vermegamenu {
     padding: 0;
@@ -37,16 +36,14 @@
 }
 .jms-vermegamenu .nav > li a i, 
 #mobile-vermegamenu .jms-vermegamenu .nav > li a i {
-    font-size: 18px;
-    position: relative;
-    top: 2px;
-    padding-right: 9px;
+    font-size: 24px;
+    padding-right: 10px;
 }
 .jms-vermegamenu .nav > li > a {
     font-family: "PT Sans",serif;
-    font-size: 15px;
-    line-height: 30px;
-    padding: 6px 20px;
+    font-size: 18px;
+    line-height: 31px;
+    padding: 6.5px 27px 12.5px;
     position: relative;
     text-transform: capitalize;
     white-space: nowrap;
@@ -54,21 +51,24 @@
     letter-spacing: 0.2px;
     font-weight: 400;
     overflow: hidden;
+    color: #fff;
+    display: flex;
+    align-items: center;
 }
 .jms-vermegamenu .nav > li.no-icon > a {
     font-size: 17px;
     font-weight: 700;
     letter-spacing: 0.1px;
 }
-.jms-vermegamenu .nav > li:not(:last-child) > a::after{
+.jms-vermegamenu .nav > li:not(:last-child) > a::after {
     content: "";
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: calc(100% - 40px);
+    width: 100%;
     height: 1px;
-    background: #ebebeb;
+    background: rgba(255,255,255,0.15);
 }
 .jms-vermegamenu .nav > li > a i{
     width: 38.3px;

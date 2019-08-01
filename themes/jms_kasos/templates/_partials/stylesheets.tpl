@@ -22,6 +22,7 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
+<link rel="stylesheet" type="text/css" href="{$urls.theme_assets}css/digitalicon.css" />
 <link rel="stylesheet" type="text/css" href="{$urls.theme_assets}css/typo-icon.css" />
 <link rel="stylesheet" href="//maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">

@@ -57,7 +57,7 @@
 			</div>
 		{else}   
 			<a href="#" class="account dropdown-toggle" title="{l s='Login/Register' d='Shop.Theme.CustomerAccount'}" data-toggle="dropdown">
-				{l s='Login/Register' d='Shop.Theme.Actions'}
+				{l s='Login / Register' d='Shop.Theme.Actions'}
 			</a>
 			<div id="login" class="dropdown-menu">
 				<ul>		

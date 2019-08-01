@@ -1,3 +1,51 @@
 @import "mixin";
 @import "varians";
 
+.jms-megamenu .nav{
+	text-align: center;
+	> li > a{
+		line-height: 96px;
+	}
+}
+.product-carousel{
+	padding-top: 26px;
+}
+.jms-row.video{
+	margin-top: -277px;
+}
+.container-fluid {
+	max-width: 1790px;
+	padding: 0 15px;
+	margin: auto;
+}
+.featured-product{
+	.product-carousel{
+		padding-top: 10px;
+	}
+}
+
+.jms-banner{
+	.banner-content{
+		left: 50px;
+		top: 50%;
+		transform: translateY(-50%);
+		color: #fff;
+		.text-1{
+			font-size: 20px;
+			font-family: 'samsungsharpsans-medium';
+			margin-bottom: 9px;
+		}
+		.text-2{
+			font-size: 42px;
+			font-family: 'samsungsharpsans-bold';
+			margin-bottom: 22px;
+		}
+		.text-3{
+			font-size: 18px;
+			letter-spacing: 0.35px;
+		}
+	}
+}
+#footer{
+	margin-top: 96px;
+}

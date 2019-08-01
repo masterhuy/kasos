@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>5 advice to launch your blog on your e-shop </title>
+    <link>https://www.prestashop.com/en/blog/advice-launching-your-blog</link>
+    <description>Starting a blog to increase user engagement on store is an overwhelming experience yet a frightening one too.</description>
+     <pubDate>Wed, 31 Jul 2019 15:07:31 +0200</pubDate>
+ <dc:creator>Webkul</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/advice-launching-your-blog</guid>
+  </item>
+  <item>
     <title>What relationship does PrestaShop have with its community and its partners?</title>
     <link>https://www.prestashop.com/en/blog/prestashop-project-prioritization</link>
     <description>PrestaShop is an open source e-commerce solution available to all, designed to quickly set up an effective and reliable e-commerce website.</description>
@@ -76,14 +84,6 @@
      <pubDate>Tue, 02 Jul 2019 16:39:16 +0200</pubDate>
  <dc:creator>Eva Lacalle</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/reduce-size-weight-photos</guid>
-  </item>
-  <item>
-    <title>The importance of social networks for your ecommerce</title>
-    <link>https://www.prestashop.com/en/blog/social-netwoks-ecommerce</link>
-    <description>The social networks</description>
-     <pubDate>Thu, 27 Jun 2019 16:57:13 +0200</pubDate>
- <dc:creator>Code Sphere Network</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/social-netwoks-ecommerce</guid>
   </item>
   </channel>
 </rss>

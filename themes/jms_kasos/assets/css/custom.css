@@ -17,6 +17,7 @@
 @import url(sitemap.css);
 @import url(cms.css);
 @import url(order-detail.css);
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
 @font-face {
     font-family: 'samsungsharpsans-regular';
     font-style: normal;
@@ -251,8 +252,14 @@ hr {
 .mt-60{
   margin-top: 60px;
 }
+.mt-62{
+  margin-top: 62px;
+}
 .mb-80{
   margin-bottom: 80px;
+}
+.mt-93{
+  margin-top: 93px;
 }
 .mt-97{
   margin-top: 97px;
@@ -260,11 +267,17 @@ hr {
 .mt-98{
   margin-top: 98px;
 }
+.pt-98{
+  padding-top: 98px;
+}
 .mt-100{
   margin-top: 100px;
 }
 .w-100{
   width: 100%;
+}
+.pb-300{
+  padding-bottom: 300px;
 }
 .ml-auto{
   margin-left: auto;
@@ -274,6 +287,9 @@ hr {
 }
 .cursor-pointer{  
   cursor: pointer;
+}
+.bg-f3{
+  background: #f3f3f3;
 }
 .d-block{
   display: block;
@@ -1988,6 +2004,7 @@ ul.cart_block_list li {
   position: relative;
   padding-bottom: 8px;
   margin-top: -2px;
+  background: #fff;
 }
 .product-preview .product-info .product_button{
   display: none;
@@ -5404,19 +5421,6 @@ footer .blog-carousel {
 #supplier .brand-img {
   margin-bottom: 30px; }
 
-.button-search {
-  background: #000;
-  border: 0;
-  color: #fff;
-  display: block;
-  height: 47px;
-  font-size: 16px;
-  font-weight: 600;
-  text-transform: uppercase;
-  padding: 0 21px 0 19px;
-  border-radius: 0 30px 30px 0;
-  letter-spacing: 0.3px;
-}
 .jms-vermegamenu .nav > li.sub-h18{
   display: none;
 }

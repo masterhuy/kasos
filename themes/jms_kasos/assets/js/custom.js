@@ -1045,6 +1045,11 @@ $(document).ready(function() {
 		}, 3000);		
 		initialLoad = false;
 	}
+	$(".product-miniature").hover(function(){
+	  	$(".owl-stage-outer").css("z-index", "10");
+	  	}, function(){
+	  	$(".owl-stage-outer").css("z-index", "1");
+	});
 
 	$("#jms_ajax_search .btn-search").click(function(event) {
 		$("body").addClass("open-search");

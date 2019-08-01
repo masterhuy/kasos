@@ -1,0 +1,29 @@
+.container-fluid {
+  max-width: 1790px;
+  padding: 0 15px;
+  margin: auto; }
+
+.jms-megamenu .nav {
+  text-align: center; }
+  .jms-megamenu .nav > li > a {
+    line-height: 96px; }
+
+#jms-vermegamenu-container {
+  position: unset; }
+
+#cart_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  #cart_block .text-custom {
+    display: block;
+    font-size: 17px;
+    color: #000;
+    font-family: 'samsungsharpsans-bold';
+    margin-left: 12px; }
+
+.right-icon-group .addon-box {
+  margin-left: 30px !important; }
