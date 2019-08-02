@@ -243,7 +243,42 @@ jQuery(function ($) {
 			loop: true,
 			slideSpeed: 800,
 		});
+	}
 
+	if($(".product-carousel-pag").length) {		
+		var productCarouselPag = $(".product-carousel-pag");			
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		productCarouselPag.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:p_pag_itemsDesktop
+				},
+				991:{
+					items:p_pag_itemsDesktopSmall
+				},
+				768:{
+					items:p_pag_itemsTablet
+				},
+				481:{
+					items:p_pag_itemsMobile
+				},
+				361:{
+					items:1
+				},
+				0:{
+					items:1
+				}
+			},
+			rtl: rtl,
+			margin: 0,
+			nav: p_pag_nav,
+			dots: p_pag_pag,
+			autoplay: p_pag_auto_play_carousel,
+			loop: true,
+			slideSpeed: 800,
+		});
 	}
 
 	if($(".product-carousel-col1").length) {		

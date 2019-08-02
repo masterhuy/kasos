@@ -13,7 +13,7 @@
 				<input type="hidden" name="controller" value="search" />
 				<input type="hidden" name="orderby" value="position" />
 				<input type="hidden" name="orderway" value="desc" />
-				<input autofocus type="text" id="ajax_search" name="search_query" placeholder="{l s='Search everything...' d='Modules.JmsAjaxsearch'}" class="form-control ajax_search" />
+				<input type="text" id="ajax_search" name="search_query" placeholder="{l s='Search everything...' d='Modules.JmsAjaxsearch'}" class="form-control ajax_search" />
 				<button type="submit" name="submit_search" class="button-search"></button>
 			</form>
 			<div id="search_result"></div>

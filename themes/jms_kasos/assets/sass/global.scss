@@ -721,6 +721,13 @@
 //discount
 .jms-row.discount{
 	text-align: center;
+	&.v2{
+		background: #0070c9;
+		p{
+			background: transparent;
+			letter-spacing: 0.95px;
+		}
+	}
 	p{
 		font-size: 18px;
 		font-family: "samsungsharpsans-medium";
@@ -777,47 +784,81 @@
 		}
 	}
 }
-.countdown-box{
-	padding: 94px 0;
-	.content{
-		color: #fff;
-		.text-1{
-			font-size: 24px;
-			font-family: "samsungsharpsans-medium";
-			margin-bottom: 24px;
+.countdown-banner{
+	&.v2{
+		.col_left{
+			float: right;
+			padding-left: 134px;
 		}
-		.text-2{
-			font-size: 56px;
-			font-family: "samsungsharpsans-bold";
-			letter-spacing: 1.8px;
-			line-height: 1.16;
-			margin-bottom: 44px;
+		.col_right{
+			float: left;
 		}
-	}
-	.countdown-row{
-		color: #fff;
-	}
-	.countdown-section{
-		display: inline-block;
-		text-align: center;
-		min-width: 70px;
-		margin-right: 29px;
-		.countdown-amount{
-			display: block;
-			font-size: 37px;
-			font-family: "samsungsharpsans-bold";
-		}
-		.countdown-period{
-			display: block;
-			font-size: 15px;
-			text-transform: lowercase;
-			margin-top: 2px;
+		.countdown-box{
+			.content{
+				color: #000;
+				.text-1{
+					color: #0070c9;
+				}
+			}
+			.btn-buyitnow{
+				background: $active;
+				color: #fff;
+			}
+			.countdown-row{
+				color: #000;
+			}
 		}
 	}
-	.countdown.is-countdown {
-		margin-top: 78px;
-		margin-bottom: 2.4px;
-		margin-left: -4px;
+	.countdown-box{
+		padding: 94px 0;
+		.content{
+			color: #fff;
+			.text-1{
+				font-size: 24px;
+				font-family: "samsungsharpsans-medium";
+				margin-bottom: 24px;
+			}
+			.text-2{
+				font-size: 56px;
+				font-family: "samsungsharpsans-bold";
+				letter-spacing: 1.8px;
+				line-height: 1.16;
+				margin-bottom: 44px;
+			}
+		}
+		.countdown-row{
+			color: #fff;
+		}
+		.countdown-section{
+			display: inline-block;
+			text-align: center;
+			min-width: 70px;
+			margin-right: 29px;
+			.countdown-amount{
+				display: block;
+				font-size: 37px;
+				font-family: "samsungsharpsans-bold";
+			}
+			.countdown-period{
+				display: block;
+				font-size: 15px;
+				text-transform: lowercase;
+				margin-top: 2px;
+			}
+		}
+		.countdown.is-countdown {
+			margin-top: 78px;
+			margin-bottom: 2.4px;
+			margin-left: -4px;
+		}
+	}
+}
+//
+
+//
+.title-left{
+	.addon-box .addon-title h3{
+		text-align: left;
 	}
 }
 //

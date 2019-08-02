@@ -3,6 +3,9 @@
   padding: 0 15px;
   margin: auto; }
 
+.product-carousel-pag {
+  padding-top: 10px; }
+
 .jms-megamenu .nav {
   text-align: center; }
   .jms-megamenu .nav > li > a {
@@ -27,3 +30,68 @@
 
 .right-icon-group .addon-box {
   margin-left: 30px !important; }
+
+.banner-space-25 .row {
+  margin: 0 -12.5px; }
+  .banner-space-25 .row .layout-column {
+    padding: 0 12.5px; }
+
+.banner-type-1 .banner-content {
+  left: auto;
+  right: 48px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding-bottom: 10px; }
+  .banner-type-1 .banner-content .text-1 {
+    font-family: 'samsungsharpsans-bold';
+    font-size: 28px;
+    color: #000;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin-bottom: 19px; }
+
+.banner-type-2 .banner-content {
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  padding: 0 20px;
+  top: 60px; }
+  .banner-type-2 .banner-content .text-1 {
+    font-family: 'samsungsharpsans-bold';
+    font-size: 30px;
+    margin-bottom: 11px;
+    line-height: 1.4; }
+  .banner-type-2 .banner-content .text-2 {
+    font-size: 18px;
+    letter-spacing: 0.35px; }
+
+.col-left-custom {
+  width: 70.15%; }
+  .col-left-custom .product-preview button.cart-button {
+    padding: 11.5px 17px;
+    margin: 0 18px; }
+  .col-left-custom .product-preview .product-info {
+    margin-top: 6px; }
+  .col-left-custom .owl-item.active:hover {
+    z-index: 2; }
+  .col-left-custom .product_box {
+    margin: 0 -5px; }
+    .col-left-custom .product_box .owl-stage-outer {
+      padding-bottom: 60px; }
+    .col-left-custom .product_box .item {
+      padding: 15px 5px; }
+
+.col-right-custom {
+  width: 29.85%;
+  margin-top: 2px; }
+
+.blog {
+  background: #f6f6f6;
+  padding-top: 100px;
+  padding-bottom: 96px; }
+
+#footer {
+  margin-top: 97px; }

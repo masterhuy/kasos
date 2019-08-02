@@ -576,6 +576,11 @@
 
 .jms-row.discount {
   text-align: center; }
+  .jms-row.discount.v2 {
+    background: #0070c9; }
+    .jms-row.discount.v2 p {
+      background: transparent;
+      letter-spacing: 0.95px; }
   .jms-row.discount p {
     font-size: 18px;
     font-family: "samsungsharpsans-medium";
@@ -619,40 +624,62 @@
   .btn-buyitnow.not-arrow::after {
     display: none; }
 
-.countdown-box {
+.countdown-banner.v2 .col_left {
+  float: right;
+  padding-left: 134px; }
+
+.countdown-banner.v2 .col_right {
+  float: left; }
+
+.countdown-banner.v2 .countdown-box .content {
+  color: #000; }
+  .countdown-banner.v2 .countdown-box .content .text-1 {
+    color: #0070c9; }
+
+.countdown-banner.v2 .countdown-box .btn-buyitnow {
+  background: #ff4800;
+  color: #fff; }
+
+.countdown-banner.v2 .countdown-box .countdown-row {
+  color: #000; }
+
+.countdown-banner .countdown-box {
   padding: 94px 0; }
-  .countdown-box .content {
+  .countdown-banner .countdown-box .content {
     color: #fff; }
-    .countdown-box .content .text-1 {
+    .countdown-banner .countdown-box .content .text-1 {
       font-size: 24px;
       font-family: "samsungsharpsans-medium";
       margin-bottom: 24px; }
-    .countdown-box .content .text-2 {
+    .countdown-banner .countdown-box .content .text-2 {
       font-size: 56px;
       font-family: "samsungsharpsans-bold";
       letter-spacing: 1.8px;
       line-height: 1.16;
       margin-bottom: 44px; }
-  .countdown-box .countdown-row {
+  .countdown-banner .countdown-box .countdown-row {
     color: #fff; }
-  .countdown-box .countdown-section {
+  .countdown-banner .countdown-box .countdown-section {
     display: inline-block;
     text-align: center;
     min-width: 70px;
     margin-right: 29px; }
-    .countdown-box .countdown-section .countdown-amount {
+    .countdown-banner .countdown-box .countdown-section .countdown-amount {
       display: block;
       font-size: 37px;
       font-family: "samsungsharpsans-bold"; }
-    .countdown-box .countdown-section .countdown-period {
+    .countdown-banner .countdown-box .countdown-section .countdown-period {
       display: block;
       font-size: 15px;
       text-transform: lowercase;
       margin-top: 2px; }
-  .countdown-box .countdown.is-countdown {
+  .countdown-banner .countdown-box .countdown.is-countdown {
     margin-top: 78px;
     margin-bottom: 2.4px;
     margin-left: -4px; }
+
+.title-left .addon-box .addon-title h3 {
+  text-align: left; }
 
 .banner-macbook-pro .jms-banner a img {
   -webkit-transform: unset !important;
