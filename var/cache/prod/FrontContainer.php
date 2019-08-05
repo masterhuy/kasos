@@ -1217,6 +1217,7 @@ class FrontContainer extends Container
                 73 => 'jmswishlist',
                 74 => 'jmsadvsearch',
                 75 => 'jmsvermegamenu',
+                76 => 'jmsflashsales',
             ],
             'ps_cache_dir' => 'D:\\xamppp\\htdocs\\jms_kasos/var/cache/prod\\',
             'mail_themes_uri' => '/mails/themes',

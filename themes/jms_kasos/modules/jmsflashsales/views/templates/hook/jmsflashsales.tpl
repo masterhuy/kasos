@@ -24,29 +24,17 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 <div class="jmsflashsales">
-	<div class="product_box">
-		<div class="title">
-			<div class="addon-title pull-left">
-				<h3>{l s='week deals limited' d='Shop.Theme.Catalog'}</h3>
-			</div>
-			<div class="flashsales-countdown pull-left">{$expiretime|escape:'htmlall':'UTF-8'}</div>
-			<div class="pull-right">
-				<a href="index.php?id_category=2&controller=category&id_lang=1" class="view-all fw-bold">view all</a>
-			</div>
-			<div class="clearfix"></div>
+	<div class="title">
+		<div class="addon-title">
+			<h3>{l s='Hot Deals Products' d='Shop.Theme.Catalog'}</h3>
 		</div>
-
+		<div class="flashsales-countdown">{$expiretime|escape:'htmlall':'UTF-8'}</div>
+	</div>
+	<div class="product_box">
 		<div class="flashsales-carousel">	
 			{foreach from=$products item=product key=k}	
 				<div class="item ajax_block_product">		
 					{include file="catalog/_partials/miniatures/product.tpl" product=$product}
-				</div>
-			{/foreach}
-		</div>
-		<div class="flashsales-slick">	
-			{foreach from=$products item=product key=k}	
-				<div class="item ajax_block_product">		
-					{include file="catalog/_partials/miniatures/product2.tpl" product=$product}
 				</div>
 			{/foreach}
 		</div>

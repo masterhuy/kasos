@@ -144,7 +144,8 @@
   font-family: 'samsungsharpsans-bold';
   padding: 19.5px 30px;
   margin-bottom: 0;
-  letter-spacing: 0.5px; }
+  letter-spacing: 0.5px;
+  position: relative; }
   .ver_menu img {
     margin-right: 9px;
     padding-bottom: 2px; }
@@ -222,10 +223,13 @@
     .right-icon-group .addon-box:last-child {
       margin-left: 15px; }
 
-.home_3 .right-icon-group, .home_4 .right-icon-group {
+.home_3 .right-icon-group, .home_4 .right-icon-group, .home_6 .right-icon-group {
   margin-right: 8px; }
-  .home_3 .right-icon-group .addon-box, .home_4 .right-icon-group .addon-box {
+  .home_3 .right-icon-group .addon-box, .home_4 .right-icon-group .addon-box, .home_6 .right-icon-group .addon-box {
     margin-left: 25px; }
+
+.home_6 .right-icon-group .addon-box {
+  margin-left: 30px; }
 
 #jms_ajax_search .btn-search::before {
   content: "\e92d";
@@ -293,10 +297,10 @@
     #_desktop_user_info .type-2.user-info > a::before {
       display: none; }
 
-.home_3 #_desktop_user_info .type-1 {
+.home_3 #_desktop_user_info .type-1, .home_6 #_desktop_user_info .type-1 {
   display: none; }
 
-.home_3 #_desktop_user_info .type-2 {
+.home_3 #_desktop_user_info .type-2, .home_6 #_desktop_user_info .type-2 {
   display: block; }
 
 #cart_block .cart-icon {
@@ -747,25 +751,75 @@
       line-height: 1.6;
       margin-bottom: 0; }
 
-.categories-carousel2 .categories-wrapper {
+.flashsales-carousel {
+  padding-top: 35px; }
+  .flashsales-carousel .label-sale {
+    display: none; }
+  .flashsales-carousel .product-preview .product-info {
+    margin-top: -6px;
+    padding-bottom: 16px; }
+
+.flashsales-countdown {
+  color: #fff;
+  text-align: center;
+  margin-top: 35px; }
+  .flashsales-countdown .countdown-row {
+    display: inline-block;
+    background: #41444a;
+    padding: 11px 24px; }
+    .flashsales-countdown .countdown-row::before {
+      content: "End In:";
+      margin-right: 19px;
+      font-size: 20px;
+      font-family: 'samsungsharpsans-medium'; }
+  .flashsales-countdown .countdown-amount {
+    font-size: 22px;
+    font-family: 'samsungsharpsans-medium';
+    margin-right: 7px; }
+  .flashsales-countdown .countdown-period {
+    font-size: 15px;
+    text-transform: lowercase;
+    letter-spacing: 0.2px;
+    position: relative;
+    bottom: 2px; }
+  .flashsales-countdown .countdown-section {
+    position: relative; }
+    .flashsales-countdown .countdown-section:not(:last-child) {
+      margin-right: 30px; }
+      .flashsales-countdown .countdown-section:not(:last-child)::after {
+        content: "";
+        width: 2px;
+        height: 20px;
+        background: #67696e;
+        position: absolute;
+        right: -16px;
+        top: -5px; }
+
+.categories-carousel2 .categories-wrapper, .categories-carousel2-mr-0 .categories-wrapper {
   position: relative; }
-  .categories-carousel2 .categories-wrapper .c_item-info {
+  .categories-carousel2 .categories-wrapper .c_item-info, .categories-carousel2-mr-0 .categories-wrapper .c_item-info {
     position: absolute;
     top: 53px;
     color: #fff;
     width: 100%;
     text-align: center; }
-    .categories-carousel2 .categories-wrapper .c_item-info .cat-name {
+    .categories-carousel2 .categories-wrapper .c_item-info .cat-name, .categories-carousel2-mr-0 .categories-wrapper .c_item-info .cat-name {
       color: #fff;
       display: block;
       font-family: 'samsungsharpsans-bold';
       font-size: 27px;
       margin-bottom: 12px;
       letter-spacing: 1.1px; }
-    .categories-carousel2 .categories-wrapper .c_item-info .count {
+    .categories-carousel2 .categories-wrapper .c_item-info .count, .categories-carousel2-mr-0 .categories-wrapper .c_item-info .count {
       font-size: 20px;
       font-family: 'samsungsharpsans-medium';
       letter-spacing: 0.7px; }
+
+.categories-carousel2-mr-0 .categories-wrapper .c_item-info {
+  top: 63px; }
+
+.categories-carousel2-mr-0.owl-carousel .owl-item img {
+  width: 100%; }
 
 .blog-carousel {
   padding-top: 55px; }
@@ -991,7 +1045,8 @@
 .product-carousel .owl-stage-outer,
 .categorytab-carousel .owl-stage-outer,
 .hotdeal-carousel .owl-stage-outer,
-.custom_carousel .owl-stage-outer {
+.custom_carousel .owl-stage-outer,
+.flashsales-carousel .owl-stage-outer {
   padding-bottom: 63px; }
 
 .products-sort-order .select-title span {

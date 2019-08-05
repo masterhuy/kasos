@@ -120,6 +120,9 @@
 #jms_ajax_search .searchbox{
     position: relative;
 }
+#jms_ajax_search .button-search span{
+    display: none;
+}
 #ajax_search {
     background: transparent;
     border: 0;

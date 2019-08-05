@@ -1,0 +1,19 @@
+.container-fluid {
+  max-width: 1790px;
+  padding: 0 15px;
+  margin: auto; }
+
+#header {
+  background: #0070c9; }
+
+.languages-info.type-2 {
+  display: block; }
+
+.languages-info.type-1, .languages-info.type3 {
+  display: none; }
+
+#_desktop_currency_selector.type-1, #_desktop_currency_selector.type-3 {
+  display: none; }
+
+#_desktop_currency_selector.type-2 {
+  display: block; }

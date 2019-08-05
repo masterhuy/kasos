@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-08-02 05:38:27
+/* Smarty version 3.1.33, created on 2019-08-05 05:49:19
   from 'D:\xamppp\htdocs\jms_kasos\themes\jms_kasos\modules\jmsajaxsearch\views\templates\hook\jmsajaxsearch.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d4404938d8084_41840229',
+  'unifunc' => 'content_5d47fb9f9f0d58_93195896',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '06e7cfc45e80c4bd46ecd08187772985655ac6d7' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_kasos\\themes\\jms_kasos\\modules\\jmsajaxsearch\\views\\templates\\hook\\jmsajaxsearch.tpl',
-      1 => 1564710918,
+      1 => 1564979149,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d4404938d8084_41840229 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d47fb9f9f0d58_93195896 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="btn-group menu-collapse compact-hidden jms_ajax_search" id="jms_ajax_search">
 	<a href="#" class="btn-search dropdown-toggle" data-toggle="dropdown"></a>
 	<div id="search-form" class="dropdown-menu">
@@ -32,12 +32,17 @@ function content_5d4404938d8084_41840229 (Smarty_Internal_Template $_smarty_tpl)
 				<input type="hidden" name="orderway" value="desc" />
 				<input type="text" id="ajax_search" name="search_query" placeholder="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Search everything...','d'=>'Modules.JmsAjaxsearch'),$_smarty_tpl ) );?>
 " class="form-control ajax_search" />
-				<button type="submit" name="submit_search" class="button-search"></button>
+				<button type="submit" name="submit_search" class="button-search">
+					<span><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Search','d'=>'Modules.JmsAjaxsearch'),$_smarty_tpl ) );?>
+</span>
+				</button>
 			</form>
 			<div id="search_result"></div>
 		</div>	
 	</div>
 </div>
+
+
 
 <?php }
 }

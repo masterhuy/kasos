@@ -1,2 +1,27 @@
 @import "mixin";
 @import "varians";
+
+.container-fluid {
+	max-width: 1790px;
+	padding: 0 15px;
+	margin: auto;
+}
+#header{
+	background: #0070c9;
+}
+.languages-info{
+	&.type-2 {
+		display: block;
+	}
+	&.type-1, &.type3{
+		display: none;
+	}
+}
+#_desktop_currency_selector{
+	&.type-1, &.type-3 {
+		display: none;
+	}
+	&.type-2{
+		display: block;
+	}
+}

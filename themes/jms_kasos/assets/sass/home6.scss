@@ -1,2 +1,214 @@
 @import "mixin";
 @import "varians";
+
+.main-site{
+	background: #2b2f36;
+}
+.jms-row.header{
+	padding: 40px 0;
+	.wishlist_top.home_page::after{
+		font-size: 24px;
+	}
+	#cart_block .cart-icon::before,
+	.wishlist_top.home_page,
+	#_desktop_user_info .type-2.user-info > a{
+		color: #fff;
+	}
+	#jms_ajax_search{
+		.btn-search{
+			display: none;
+		}
+		#search-form{
+			max-width: 500px;
+			margin: auto;
+			opacity: 1;
+			visibility: visible;
+			position: unset;
+			float: none;
+			box-shadow: unset;
+			#ajax_search{
+				width: 100%;
+				padding: 0;
+				font-size: 14px;
+				letter-spacing: 0.15px;
+				font-weight: 400;
+				height: 49px;
+				padding: 0 16px;
+			}
+			&::after{
+				display: none;
+			}
+			.search-box::before{
+				display: none;
+			}
+		}
+		.button-search{
+			display: block;
+			top: 0;
+			height: 100%;
+			background: $active;
+			color: #fff;
+			padding: 0 23px;
+			font-family: 'samsungsharpsans-bold';
+			font-size: 17px;
+			letter-spacing: 0.5px;
+			&::before{
+				display: none;
+			}
+			span{
+				display: block;
+			}
+		}
+	}
+}
+.hotline{
+	text-align: right;
+	letter-spacing: 1.05px;
+	font-weight: 900;
+	font-size: 15px;
+	margin-bottom: 0;
+	color: #fff;
+	line-height: 58px;
+}
+.jms-row.menu{
+	background: #0070c9;
+	.left{
+		.addon-box{
+			position: relative;
+		}
+	}
+}
+.ver_menu{
+	cursor: pointer;
+	padding: 16px 30px;
+	letter-spacing: 1px;
+	img{
+		margin-right: 4px;
+	}
+	.icon{
+		margin-right: 0;
+		position: absolute;
+		right: 30px;
+		top: 26px;
+	}
+}
+.jms-megamenu .nav > li > a{
+	line-height: 58px;
+	color: #fff;
+}
+.banner-1, .banner-2, .banner-3{
+	.banner-content{
+		p{
+			font-size: 24px;
+			color: #000;
+			font-family: 'samsungsharpsans-bold';
+			line-height: 1.45;
+			letter-spacing: 0.2px;
+		}
+	}
+}
+.banner-1, .banner-2{
+	.banner-content{
+		left: 0;
+		top: 21px;
+		width: 100%;
+		padding: 0 20px;
+		text-align: center;
+	}
+}
+.banner-3{
+	.banner-content{
+		text-align: right;
+		left: auto;
+		right: 50px;
+		top: 41px;
+	}
+}
+.banner-4{
+	.banner-content{
+		color: #fff;
+		top: auto;
+		bottom: 15px;
+		left: 40px;
+		.text-1{
+			font-size: 27px;
+			font-family: 'samsungsharpsans-bold';
+			letter-spacing: 0.9px;
+			margin-bottom: 34px;
+		}
+		.text-2{
+			font-size: 60px;
+			font-family: 'samsungsharpsans-regular';
+			margin-bottom: 10px;
+		}
+		.text-3{
+			font-size: 160px;
+			font-family: 'samsungsharpsans-bold';
+			letter-spacing: 16px;
+		}
+	}
+}
+.addon-box .addon-title h3{
+	color: #fff;
+}
+.product-carousel{
+	padding-top: 30px;
+	.product-preview .product-info {
+		margin-top: -6px;
+	}
+}
+.jms-row.discount.v2{
+	margin-top: 23px;
+	p {
+		letter-spacing: 0.5px;
+		padding: 23.5px 0;
+	}
+}
+.jms-addon.jms-video{
+	background: url("../img/h6-video-bg.jpg") no-repeat;
+}
+.video{
+	margin-top: 23px;
+	.container > .row{
+		display: flex;
+		align-items: center;
+	}
+}
+.video-content{
+	padding-bottom: 19px;
+	.addon-box{
+		padding-left: 18px;
+	}
+	.text-1{
+		font-family: 'samsungsharpsans-regular';
+		font-size: 53px;
+		color: #fff;
+		letter-spacing: 0.65px;
+		margin-bottom: 1px;
+	}
+	.text-2{
+		font-family: 'samsungsharpsans-bold';
+		font-size: 53px;
+		color: #fff;
+		letter-spacing: 1.2px;
+		margin-bottom: 28px;
+	}
+	.text-3{
+		font-size: 15px;
+		color: #d7d7d7;
+		letter-spacing: 0.1px;
+		line-height: 1.85;
+		margin-bottom: 67px;
+	}
+	.btn-buyitnow{
+		padding: 12px 22px;
+	}
+}
+.blog-carousel{
+	.blog-title {
+		color: #fff;
+	}
+	.post-meta{
+		color: #d7d7d7;
+	}
+}

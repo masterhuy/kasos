@@ -680,6 +680,40 @@ jQuery(function ($) {
 		});
 	}
 
+	if($(".categories-carousel2-mr-0").length) {
+		var cateCarouselMr0 = $(".categories-carousel2-mr-0");
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		cateCarouselMr0.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:cs_mr0_itemsDesktop
+					},
+				991:{
+					items:cs_mr0_itemsDesktopSmall
+				},
+				768:{
+					items:cs_mr0_itemsTablet
+				},
+				481:{
+					items:cs_mr0_itemsMobile
+				},
+				0: {
+					items:1
+				}
+
+			},
+			rtl: rtl,
+			margin: 0,
+			nav: cs_mr0_nav,
+			dots: cs_mr0_pag,
+			autoplay: cs_mr0_auto_play_carousel,
+			slideSpeed: 200,
+			loop: true
+		});
+	}
+
     if($(".testimonial-carousel").length) {
 		var testimonialCarousel = $(".testimonial-carousel");		
 		var rtl = false;
@@ -790,26 +824,23 @@ jQuery(function ($) {
 			responsiveClass:true,
 			responsive:{			
 				1199:{
-					items:5
-				},
-				991:{
 					items:4
 				},
-				768:{
+				991:{
 					items:3
+				},
+				768:{
+					items:2
 				},
 				481:{
 					items:2
-				},
-				361:{
-					items:1
 				},
 				0:{
 					items:1
 				}
 			},
 			rtl: rtl,
-			margin:0,
+			margin: 0,
 			nav: true,
 			dots: false,
 			autoplay: false,
@@ -1071,6 +1102,8 @@ $(document).ready(function() {
 			menu.removeClass("fixed");
     	}
     });
+
+    $(".home_6 #jms-vermegamenu-container").addClass('collapse');
 
     
 

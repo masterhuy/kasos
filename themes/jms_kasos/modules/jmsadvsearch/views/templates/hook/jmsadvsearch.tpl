@@ -26,10 +26,11 @@
 			</div>
 			<input type="text" id="ajax_advsearch" name="search_query" placeholder="{l s='Search for shopping...' mod='jmsadvsearch'}" class="input-search" />
 		</div>
-		<span class="input-group-addon input-group-search">
-			<button></button>
-		</span>
+		<div class="input-group keyword-group">
+			<span class="input-group-addon input-group-search">
+				<button>{l s='Search' mod='jmsadvsearch'}</button>
+			</span>
+		</div>
 	</form>
-	<div id="advsearch_result">
-	</div>
+	<div id="advsearch_result"></div>
 </div>

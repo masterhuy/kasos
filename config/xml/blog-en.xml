@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>Digital Marketing: SEO vs SEM - What is the Right Strategy for You?</title>
+    <link>https://www.prestashop.com/en/blog/right-seo-sem-strategy</link>
+    <description>Do you have an online presence? For example, an online store?</description>
+     <pubDate>Fri, 02 Aug 2019 11:55:01 +0200</pubDate>
+ <dc:creator>Cobiro</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/right-seo-sem-strategy</guid>
+  </item>
+  <item>
     <title>5 advice to launch your blog on your e-shop </title>
     <link>https://www.prestashop.com/en/blog/advice-launching-your-blog</link>
     <description>Starting a blog to increase user engagement on store is an overwhelming experience yet a frightening one too.</description>
@@ -76,14 +84,6 @@
      <pubDate>Tue, 09 Jul 2019 16:23:04 +0200</pubDate>
  <dc:creator>Méguy Solvet</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/prestashop-1-7-6</guid>
-  </item>
-  <item>
-    <title>How to reduce the size and weight of your eCommerce photos</title>
-    <link>https://www.prestashop.com/en/blog/reduce-size-weight-photos</link>
-    <description>Do you know the real importance of reducing the weight and size of photos on your PrestaShop store&#039;s website?</description>
-     <pubDate>Tue, 02 Jul 2019 16:39:16 +0200</pubDate>
- <dc:creator>Eva Lacalle</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/reduce-size-weight-photos</guid>
   </item>
   </channel>
 </rss>

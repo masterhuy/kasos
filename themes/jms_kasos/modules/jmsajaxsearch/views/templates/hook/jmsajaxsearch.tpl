@@ -14,10 +14,14 @@
 				<input type="hidden" name="orderby" value="position" />
 				<input type="hidden" name="orderway" value="desc" />
 				<input type="text" id="ajax_search" name="search_query" placeholder="{l s='Search everything...' d='Modules.JmsAjaxsearch'}" class="form-control ajax_search" />
-				<button type="submit" name="submit_search" class="button-search"></button>
+				<button type="submit" name="submit_search" class="button-search">
+					<span>{l s='Search' d='Modules.JmsAjaxsearch'}</span>
+				</button>
 			</form>
 			<div id="search_result"></div>
 		</div>	
 	</div>
 </div>
+
+
 
