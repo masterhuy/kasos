@@ -223,12 +223,12 @@
     .right-icon-group .addon-box:last-child {
       margin-left: 15px; }
 
-.home_3 .right-icon-group, .home_4 .right-icon-group, .home_6 .right-icon-group {
+.home_3 .right-icon-group, .home_4 .right-icon-group, .home_6 .right-icon-group, .home_7 .right-icon-group {
   margin-right: 8px; }
-  .home_3 .right-icon-group .addon-box, .home_4 .right-icon-group .addon-box, .home_6 .right-icon-group .addon-box {
+  .home_3 .right-icon-group .addon-box, .home_4 .right-icon-group .addon-box, .home_6 .right-icon-group .addon-box, .home_7 .right-icon-group .addon-box {
     margin-left: 25px; }
 
-.home_6 .right-icon-group .addon-box {
+.home_6 .right-icon-group .addon-box, .home_7 .right-icon-group .addon-box {
   margin-left: 30px; }
 
 #jms_ajax_search .btn-search::before {
@@ -297,10 +297,10 @@
     #_desktop_user_info .type-2.user-info > a::before {
       display: none; }
 
-.home_3 #_desktop_user_info .type-1, .home_6 #_desktop_user_info .type-1 {
+.home_3 #_desktop_user_info .type-1, .home_6 #_desktop_user_info .type-1, .home_7 #_desktop_user_info .type-1 {
   display: none; }
 
-.home_3 #_desktop_user_info .type-2, .home_6 #_desktop_user_info .type-2 {
+.home_3 #_desktop_user_info .type-2, .home_6 #_desktop_user_info .type-2, .home_7 #_desktop_user_info .type-2 {
   display: block; }
 
 #cart_block .cart-icon {
@@ -795,6 +795,11 @@
         right: -16px;
         top: -5px; }
 
+.banner-space-25 .row {
+  margin: 0 -12.5px; }
+  .banner-space-25 .row .layout-column {
+    padding: 0 12.5px; }
+
 .categories-carousel2 .categories-wrapper, .categories-carousel2-mr-0 .categories-wrapper {
   position: relative; }
   .categories-carousel2 .categories-wrapper .c_item-info, .categories-carousel2-mr-0 .categories-wrapper .c_item-info {
@@ -802,7 +807,8 @@
     top: 53px;
     color: #fff;
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    padding: 0 20px; }
     .categories-carousel2 .categories-wrapper .c_item-info .cat-name, .categories-carousel2-mr-0 .categories-wrapper .c_item-info .cat-name {
       color: #fff;
       display: block;

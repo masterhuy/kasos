@@ -1,2 +1,17 @@
 @import "mixin";
 @import "varians";
+
+.container-fluid {
+	max-width: 1790px;
+	padding: 0 15px;
+	margin: auto;
+}
+.header{
+	.right{
+		display: flex;
+		justify-content: flex-end;
+		.addon-box{
+			margin-left: 30px;
+		}
+	}
+}

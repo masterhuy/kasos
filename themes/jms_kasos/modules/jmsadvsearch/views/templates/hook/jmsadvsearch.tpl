@@ -14,7 +14,7 @@
 		<div class="input-group keyword-group">
 			<div class="input-group-addon icon-drop-down">
 				<select name="id_category" id="selector_cat">
-				<option value="0">{l s='All Categories' mod='jmsadvsearch'}</option>
+					<option value="0">{l s='All Categories' mod='jmsadvsearch'}</option>
 					{foreach from=$jmsCategTree.children item=child name=jmsCategTree}
 						{if $smarty.foreach.jmsCategTree.last}
 							{include file="$branche_tpl_path" node=$child last='true'}
@@ -24,10 +24,10 @@
 					{/foreach}
 				</select>
 			</div>
-			<input type="text" id="ajax_advsearch" name="search_query" placeholder="{l s='Search for shopping...' mod='jmsadvsearch'}" class="input-search" />
+			<input type="text" id="ajax_advsearch" name="search_query" placeholder="{l s='Search everything...' mod='jmsadvsearch'}" class="input-search" />
 		</div>
 		<div class="input-group keyword-group">
-			<span class="input-group-addon input-group-search">
+			<span class="input-group-search">
 				<button>{l s='Search' mod='jmsadvsearch'}</button>
 			</span>
 		</div>

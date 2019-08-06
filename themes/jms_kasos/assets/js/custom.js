@@ -353,6 +353,39 @@ jQuery(function ($) {
 		});
 	}
 
+	if($(".product-carousel-col7").length) {		
+		var productCarouselCol7 = $(".product-carousel-col7");			
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		productCarouselCol7.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:p7_itemsDesktop
+				},
+				991:{
+					items:p7_itemsDesktopSmall
+				},
+				768:{
+					items:p7_itemsTablet
+				},
+				481:{
+					items:p7_itemsMobile
+				},
+				0:{
+					items:1
+				}
+			},
+			rtl: rtl,
+			margin: 0,
+			nav: p7_nav,
+			dots: p7_pag,
+			autoplay: p7_auto_play_carousel,
+			loop: true,
+			slideSpeed: 800,
+		});
+	}
+
 	if($(".product-carousel-col5").length) {		
 		var productCarouselCol5 = $(".product-carousel-col5");			
 		var rtl = false;

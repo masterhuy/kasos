@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>PSD 2: next deadline on September 14, 2019</title>
+    <link>https://www.prestashop.com/en/blog/european-payment-services-directive</link>
+    <description>This fall, new strong authentication rules will come into force.</description>
+     <pubDate>Mon, 05 Aug 2019 14:36:25 +0200</pubDate>
+ <dc:creator>Camille Silhol</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/european-payment-services-directive</guid>
+  </item>
+  <item>
     <title>Digital Marketing: SEO vs SEM - What is the Right Strategy for You?</title>
     <link>https://www.prestashop.com/en/blog/right-seo-sem-strategy</link>
     <description>Do you have an online presence? For example, an online store?</description>
@@ -76,14 +84,6 @@
      <pubDate>Mon, 15 Jul 2019 12:13:57 +0200</pubDate>
  <dc:creator>Coline Ginestet</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/customer-reviews-module</guid>
-  </item>
-  <item>
-    <title>New features, developments, advanced functionalities, download PrestaShop 1.7.6 now!</title>
-    <link>https://www.prestashop.com/en/blog/prestashop-1-7-6</link>
-    <description>So, what&#039;s new in version 1.7.6?</description>
-     <pubDate>Tue, 09 Jul 2019 16:23:04 +0200</pubDate>
- <dc:creator>Méguy Solvet</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/prestashop-1-7-6</guid>
   </item>
   </channel>
 </rss>

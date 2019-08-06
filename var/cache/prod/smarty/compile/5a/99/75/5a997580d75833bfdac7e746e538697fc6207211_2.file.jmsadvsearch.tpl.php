@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-08-05 06:15:11
+/* Smarty version 3.1.33, created on 2019-08-06 06:03:44
   from 'D:\xamppp\htdocs\jms_kasos\themes\jms_kasos\modules\jmsadvsearch\views\templates\hook\jmsadvsearch.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d4801af015f07_01300855',
+  'unifunc' => 'content_5d4950804405d9_52753581',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5a997580d75833bfdac7e746e538697fc6207211' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_kasos\\themes\\jms_kasos\\modules\\jmsadvsearch\\views\\templates\\hook\\jmsadvsearch.tpl',
-      1 => 1564998093,
+      1 => 1565058216,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d4801af015f07_01300855 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d4950804405d9_52753581 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="jms-advsearch">
 	<form method="get" action="<?php echo $_smarty_tpl->tpl_vars['link']->value->getPageLink('search');?>
 " class="input-group" id="searchbox">
@@ -31,7 +31,7 @@ function content_5d4801af015f07_01300855 (Smarty_Internal_Template $_smarty_tpl)
 		<div class="input-group keyword-group">
 			<div class="input-group-addon icon-drop-down">
 				<select name="id_category" id="selector_cat">
-				<option value="0"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'All Categories','mod'=>'jmsadvsearch'),$_smarty_tpl ) );?>
+					<option value="0"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'All Categories','mod'=>'jmsadvsearch'),$_smarty_tpl ) );?>
 </option>
 					<?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['jmsCategTree']->value['children'], 'child', false, NULL, 'jmsCategTree', array (
@@ -57,11 +57,11 @@ $_smarty_tpl->tpl_vars['__smarty_foreach_jmsCategTree']->value['last'] = $_smart
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 				</select>
 			</div>
-			<input type="text" id="ajax_advsearch" name="search_query" placeholder="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Search for shopping...','mod'=>'jmsadvsearch'),$_smarty_tpl ) );?>
+			<input type="text" id="ajax_advsearch" name="search_query" placeholder="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Search everything...','mod'=>'jmsadvsearch'),$_smarty_tpl ) );?>
 " class="input-search" />
 		</div>
 		<div class="input-group keyword-group">
-			<span class="input-group-addon input-group-search">
+			<span class="input-group-search">
 				<button><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Search','mod'=>'jmsadvsearch'),$_smarty_tpl ) );?>
 </button>
 			</span>

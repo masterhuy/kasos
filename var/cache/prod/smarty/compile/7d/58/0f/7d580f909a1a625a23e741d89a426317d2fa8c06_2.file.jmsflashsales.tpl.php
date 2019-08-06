@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-08-05 05:33:07
+/* Smarty version 3.1.33, created on 2019-08-05 22:23:56
   from 'D:\xamppp\htdocs\jms_kasos\themes\jms_kasos\modules\jmsflashsales\views\templates\hook\jmsflashsales.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d47f7d3f0f304_34240514',
+  'unifunc' => 'content_5d48e4bcb664f9_45357321',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/miniatures/product.tpl' => 1,
   ),
 ),false)) {
-function content_5d47f7d3f0f304_34240514 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d48e4bcb664f9_45357321 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="jmsflashsales">
 	<div class="title">
 		<div class="addon-title">
