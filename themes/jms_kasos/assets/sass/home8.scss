@@ -11,7 +11,463 @@
 		display: flex;
 		justify-content: flex-end;
 		.addon-box{
-			margin-left: 30px;
+			&:not(:first-child){
+				margin-left: 29px;
+			}
+			&:last-child{
+				margin-left: 15px;
+			}
 		}
 	}
+}
+#_desktop_user_info{
+	line-height: 32px;
+	.type-1{
+		display: none;
+	}
+	.type-2{
+		display: block;
+	}
+}
+a.wishlist_top.home_page,
+#cart_block{
+	padding-top: 3px;
+}
+.hotline{
+	font-size: 18px;
+	color: #000;
+	font-family: 'samsungsharpsans-bold';
+	line-height: 60px;
+	margin-bottom: 0;
+	text-align: right;
+}
+#selector_cat,
+#ajax_advsearch {
+	height: 56px;
+}
+#ajax_advsearch::placeholder {
+	color: #555;
+}
+.jms-advsearch{
+	height: 60px;
+	#searchbox{
+		width: 1000px;
+		.input-group-addon.icon-drop-down::after{
+			right: 29px;
+		}
+		#selector_cat{
+			width: 263px;
+			padding: 0 15px;
+		}
+	}
+	.input-group-search button {
+		padding: 19px 43px;
+	}
+}
+.ver_menu {
+	padding: 17px 30px;
+}
+.col-left{
+	width: 20.15%;
+}
+.adv-search{
+	width: 54.85%;
+}
+.col-right{
+	width: 79.85%;
+}
+.fs-stretcher{
+	height: 620px !important;
+}
+#jms-vermegamenu-container{
+	position: unset;
+	width: 100%;
+	background: #fff;
+	border: 2px solid #0070c9;
+	border-top: 0;
+}
+.jms-vermegamenu .nav > li{
+	&.no-icon > a{
+		padding-top: 9.5px;
+	}
+	> a{
+		color: #555;
+		padding: 8.5px 27px 9.5px;
+		border-bottom: 1px solid #e1e1e1;
+	}
+}
+.banner-1{
+	.banner-content{
+		left: 0;
+		width: 100%;
+		padding: 0 20px;
+		text-align: center;
+		top: 33px;
+		p{
+			font-size: 24px;
+			color: #000;
+			font-family: 'samsungsharpsans-bold';
+			margin-bottom: 10px;
+			line-height: 1.5;
+			letter-spacing: 0.5px;
+		}
+	}
+}
+.banner-type-1{
+	.banner-content{
+		left: 36px;
+		top: 50%;
+		transform: translateY(-50%);
+		margin-top: -3px;
+		p{
+			font-size: 24px;
+			color: #000;
+			font-family: 'samsungsharpsans-bold';
+			margin-bottom: 10px;
+			line-height: 1.5;
+			letter-spacing: 0.9px;
+			margin-bottom: 12px;
+		}
+	}
+}
+.owl-dots .owl-dot {
+	margin: 0 2px;
+}
+.owl-dot{
+	&.active > span{
+		background: $active;
+	}
+	> span {
+		background: #d7d7d7;
+		height: 11px;
+		width: 11px;
+	}
+}
+.best-seller{
+	.addon-title{
+		h3{
+		 	text-align: left;	
+		}
+	}
+}
+.testimonials{
+	.addon-box{
+		background: #000;
+		padding: 50px 0 68px;
+		position: relative;
+		&::after{
+			content: "";
+			position: absolute;
+			bottom: -50px;
+			left: 0;
+			width: 100%;
+			height: 1px;
+			background: #ebebeb;
+		}
+	}
+	.addon-title{
+		h3{
+			color: #fff;
+		}
+	}
+	.owl-dot{
+		&.active > span{
+			background: $active;
+		}
+		> span {
+			background: #636363;
+		}
+	}
+}
+.best-seller{
+	.owl-dots{
+		width: auto;
+		right: 12px;
+		top: -20px;
+		bottom: auto;
+	}
+}
+.blog{
+	margin-top: -27px;
+	.addon-title h3{
+		text-align: left;
+	}
+	.blog-carousel {
+		padding-top: 26px;
+		.post-thumb img{
+			min-height: 200px;
+		}
+		.post-info {
+			text-align: left;
+			margin-top: 18px;
+		}
+		.blog-title{
+			line-height: 1.5;
+			margin-bottom: 10px;
+		}
+		.post-intro p{
+			letter-spacing: 0.1px;
+		}
+		.blog-readmore{
+			margin-top: 5px;
+		}
+	}
+	.post-meta {
+		color: #0070c9;
+		margin-bottom: 12px;
+	}
+	.owl-dots {
+		width: auto;
+		top: -19px;
+		right: -2px;
+		bottom: auto;
+	}
+}
+.banner-bg{
+	margin-bottom: 67px;
+	background: url("../img/h8-banner-bg.jpg") no-repeat;
+	background-size: cover;
+	.content{
+		max-width: 700px;
+		margin: auto;
+		text-align: right;
+		padding: 40px 51px 47px 0;
+		.text-1{
+			font-size: 30px;
+			color: $active;
+			font-family: 'samsungsharpsans-bold';
+		}
+		.text-2{
+			font-size: 18px;
+			color: #000;
+			letter-spacing: 0.3px;
+			margin-bottom: 0;
+		}
+	}
+}
+.recent-arrivals{
+	margin-top: -30px;
+	.addon-title h3{
+		text-align: left;
+	}
+}
+.product-carousel2{
+	padding-top: 11px;
+	.owl-dots {
+		width: auto;
+		top: -19px;
+		bottom: auto;
+		right: 12px;
+	}
+	.owl-stage-outer{
+		padding-bottom: 0;
+	}
+	.product-box .flexbox {
+		width: 47.5%;
+	}
+	.owl-item.active + .owl-item.active + .owl-item.active .product-preview::after{
+		display: none;
+	}
+	.product-preview{
+		position: relative;
+		align-items: center;
+		box-shadow: unset !important;
+		&::after{
+			content: "";
+			width: 1px;
+			height: 153px;
+			right: -14px;
+			top: 50%;
+			transform: translateY(-50%);
+			background: #ebebeb;
+			position: absolute;
+		}
+		.product-info .product_button{
+			display: block;
+			margin-top: 24px;
+			button{
+				margin: 0;
+				padding: 11.5px 16px;
+			}
+		}
+		.flexbox + .product-info {
+			width: 52.5%;
+			padding: 0 10px;
+		}
+	}
+}
+.banner-type-2{
+	.banner-content{
+		left: auto;
+		right: 48px;
+		top: 50%;
+		transform: translateY(-50%);
+		.text-1{
+			font-size: 22px;
+			color: #0070c9;
+			font-family: 'samsungsharpsans-medium';
+			letter-spacing: 0.9px;
+			margin-bottom: 22px;
+			span{
+				font-family: 'samsungsharpsans-bold';
+			}
+		}
+		.text-2{
+			font-size: 22px;
+			color: #000;
+			font-family: 'samsungsharpsans-bold';
+			letter-spacing: 0.8px;
+			margin-bottom: 27px;
+		}
+	}
+}
+.service{
+	margin-top: -6px;
+	+ .col-right{
+		margin-top: 17px;
+	}
+	&::before{
+		content: "";
+		position: absolute;
+		width: calc(100% - 30px);
+		height: 100%;
+		left: 15px;
+		top: 0;
+		background: #f9f9f9;
+	}
+	.feature-box{
+		padding: 30px 37px;
+		justify-content: flex-start;
+	}
+	.addon-box:not(:last-child) .feature-box{
+		&::after{
+			content: "";
+			width: 257px;
+			background: #e1e1e1;
+			height: 1px;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+}
+.newsletter{
+	margin-top: 50px;
+	.addon-box .addon-title{
+		h3{
+			text-align: left;
+			margin-bottom: 18px;
+		}
+		span{
+			display: none;
+		}
+	}
+	#newsletter_block_left{
+		.addon-title .text-h8{
+			display: block;
+			font-size: 15px;
+			letter-spacing: 0.1px;
+			line-height: 28px;
+		}
+		#newsletter-input{
+			height: 44px;
+			border: 2px solid #f1f1f1;
+			font-style: normal;
+			padding: 0 16px;
+			&.newsletter-input{
+				display: none;
+				&.h8{
+					display: block;
+				}
+			}
+		}
+		.form-group{
+			display: block;
+			margin-top: 21px;
+			button{
+				width: 100%;
+				margin-top: 12px;
+				padding: 13px 20px;
+			}
+		}
+	}
+}
+.cates-tab{
+	margin-top: -86px;
+	.categorytab-carousel{
+		padding-top: 10px;
+	}
+	.addon-box .addon-title{
+		&::after{
+			content: "";
+			display: table;
+			clear: both;
+		}
+		h3{
+			text-align: left;
+			float: left;
+		}
+		.jms-tab{
+			float: right;
+			margin-top: -3px;
+			ul li{
+				padding: 0;
+				padding-left: 64px;
+				a{
+					letter-spacing: 0.2px;
+				}
+			}
+		}
+	}
+}
+.banner{
+	width: 100%;
+	display: inline-block;
+	margin: auto;
+	margin-top: -30px;
+}
+.banner-7, .banner-8, .banner-9{
+	.banner-content{
+		top: 38px;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		padding: 0 20px;
+		.text-1{
+			font-family: 'samsungsharpsans-bold';
+			font-size: 24px;
+			color: #000;
+			letter-spacing: 0.8px;
+			margin-bottom: 18px;
+		}
+	}
+}
+.banner-8{
+	.banner-content{
+		p{
+			color: #fff !important;
+			a{
+				color: #fff !important;
+				&:hover{
+					color: $active !important;
+				}
+			}
+		}
+	}
+}
+.brand-carousel {
+	padding: 45px 0;
+}
+.jms-row.instagram{
+	.container-fluid{
+		max-width: 100%;
+		padding: 0;
+	}
+	.addon-instagram {
+		margin-top: 0;
+	}
+}
+.page-index #footer{
+	margin-top: 0;
 }

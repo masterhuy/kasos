@@ -28,6 +28,8 @@
 		<div class="addon-title">
 			<h3>{l s='Newsletter' d='Shop.Theme.Global'}</h3>
 			<span>{l s='Register now to get updates on promotions' d='Shop.Theme.Global'} & {l s='coupons' d='Shop.Theme.Global'}</span>
+			<span class="text-h8">{l s='Recent news' d='Shop.Theme.Global'} & {l s='updates from Kasos Store.' d='Shop.Theme.Global'}</span>
+			<span class="text-h8">{l s='No spam, we promise.' d='Shop.Theme.Global'}</span>
 		</div>
 		<div class="addon-title advertising">
 			<h3 class="sss-bold">Subscribe And Get <span>20% Off</span></h3>
@@ -38,10 +40,11 @@
 				<form action="{$urls.pages.index}#footer" method="post">
 					<div class="form-group{if isset($msg) && $msg} {if $nw_error}form-error{else}form-ok{/if}{/if}" >
 						<input class="inputNew form-control grey newsletter-input" id="newsletter-input" type="text" name="email" size="18" value="{$value}" placeholder="{l s='Your email address' d='Shop.Forms.Labels'}" />
+						<input class="inputNew form-control grey newsletter-input h8" id="newsletter-input" type="text" name="email" size="18" value="{$value}" placeholder="{l s='Email@example.com' d='Shop.Forms.Labels'}" />
 						<button type="submit" name="submitNewsletter" class="btn-default">
 							{l s='Subscribe' d='Shop.Theme.Global'}
 						</button>
-						<input type="hidden" name="action" value="0" />
+						<input type="hidden" name="action" value="0"/>
 					</div>
 					{if $msg}
 			    		<div class="alert {if $nw_error}alert-danger{else}alert-success{/if}">

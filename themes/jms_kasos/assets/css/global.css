@@ -333,7 +333,7 @@
   border-radius: 50%;
   font-size: 12px;
   font-weight: 500;
-  bottom: -8px;
+  bottom: -7px;
   right: -8px; }
 
 .languages-info .dropdown-menu {
@@ -955,6 +955,28 @@
   .customs-html-left .block-service span {
     line-height: 1.29;
     color: #555; }
+
+#testimonial {
+  padding: 29px; }
+  #testimonial .testimonial-img {
+    margin-bottom: 23px; }
+    #testimonial .testimonial-img img {
+      margin: auto; }
+  #testimonial .testimonial-comment {
+    font-size: 15px;
+    color: #d9d9d9;
+    letter-spacing: 0.1px;
+    line-height: 1.85;
+    margin-bottom: 24px; }
+  #testimonial .testimonial-author {
+    font-family: 'samsungsharpsans-regular';
+    color: #fff; }
+    #testimonial .testimonial-author span {
+      font-size: 17px;
+      font-family: 'samsungsharpsans-bold';
+      color: #ff4800; }
+  #testimonial .owl-dots {
+    bottom: -50px; }
 
 .banner_bg .addon-box {
   display: -webkit-box;
@@ -1669,7 +1691,7 @@
 #newsletter_block_left .addon-title > span {
   line-height: 32px; }
 
-#newsletter_block_left .addon-title.advertising {
+#newsletter_block_left .addon-title.advertising, #newsletter_block_left .addon-title .text-h8 {
   display: none; }
 
 #newsletter_block_left .form-group {
@@ -1687,6 +1709,8 @@
   font-style: italic;
   margin-bottom: 0;
   padding: 0 12px; }
+  #newsletter_block_left #newsletter-input.h8 {
+    display: none; }
 
 .quickview.fade.in {
   background: rgba(20, 20, 20, 0.5); }
@@ -2099,7 +2123,7 @@
   .wishlist_top.home_page::after {
     content: "\e949";
     font-family: 'typo-icon';
-    font-size: 22px;
+    font-size: 24px;
     display: inline-block; }
   .wishlist_top.home_page:hover {
     color: #ff4800; }

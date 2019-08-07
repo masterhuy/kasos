@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-08-06 04:31:06
+/* Smarty version 3.1.33, created on 2019-08-07 06:02:52
   from 'D:\xamppp\htdocs\jms_kasos\themes\jms_kasos\modules\jmsvermegamenu\views\templates\hook\jmsvermegamenu.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d493aca0c46c7_59545812',
+  'unifunc' => 'content_5d4aa1cc643060_05580777',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d493aca0c46c7_59545812 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d4aa1cc643060_05580777 (Smarty_Internal_Template $_smarty_tpl) {
 echo $_smarty_tpl->tpl_vars['vermenu_html']->value;?>
 
 <?php echo '<script'; ?>

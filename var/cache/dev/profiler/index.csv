@@ -3,3 +3,8 @@ eb1915,::1,GET,http://localhost/jms_kasos/admin201ucslkx/index.php/improve/modul
 c7b206,::1,POST,http://localhost/jms_kasos/admin201ucslkx/index.php/common/notifications?_token=8OGlCsZYyxAbAzYIfg5Xa-WqFJknqn7NUNULMhaNNJs&rand=1563955694796,1563955698,,200
 15228f,::1,POST,http://localhost/jms_kasos/admin201ucslkx/index.php/common/notifications?_token=8OGlCsZYyxAbAzYIfg5Xa-WqFJknqn7NUNULMhaNNJs&rand=1563955699372,1563955700,,200
 99889a,::1,GET,http://localhost/jms_kasos/admin201ucslkx/index.php/improve/modules/alerts/count?_token=8OGlCsZYyxAbAzYIfg5Xa-WqFJknqn7NUNULMhaNNJs,1563955706,,200
+ebf5ce,::1,POST,http://localhost/jms_kasos/admin201ucslkx/index.php/common/notifications?_token=JHn1K9p2sSa6IxuUC-pL8TCcuNSeG_CRhgRiaXvl8Sc&rand=1565151435286,1565151436,,200
+1cf6d0,::1,POST,http://localhost/jms_kasos/admin201ucslkx/index.php/common/notifications?_token=JHn1K9p2sSa6IxuUC-pL8TCcuNSeG_CRhgRiaXvl8Sc&rand=1565151469822,1565151470,,200
+239d96,::1,POST,http://localhost/jms_kasos/admin201ucslkx/index.php/common/notifications?_token=JHn1K9p2sSa6IxuUC-pL8TCcuNSeG_CRhgRiaXvl8Sc&rand=1565151498793,1565151499,,200
+824ba4,::1,POST,http://localhost/jms_kasos/admin201ucslkx/index.php/common/notifications?_token=JHn1K9p2sSa6IxuUC-pL8TCcuNSeG_CRhgRiaXvl8Sc&rand=1565151556217,1565151556,,200
+b85b0c,::1,POST,http://localhost/jms_kasos/admin201ucslkx/index.php/common/notifications?_token=JHn1K9p2sSa6IxuUC-pL8TCcuNSeG_CRhgRiaXvl8Sc&rand=1565151590650,1565151591,,200

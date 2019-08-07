@@ -13,6 +13,25 @@
 	padding: 40px 0;
 	border-bottom: 1px solid rgba(255,255,255,0.2);
 }
+#searchbox{
+	#selector_cat,
+	.input-group-addon.icon-drop-down::after {
+		color: #fff;
+	}
+}
+.jms-advsearch{
+	#searchbox {
+		margin: auto;
+		border: 2px solid rgba(255,255,255,0.3);
+	}
+	.input-group-addon.icon-drop-down::before {
+		background: rgba(255,255,255,0.3);
+	}
+	.input-group-search button {
+		background: #fff;
+		color: #ff4800;
+	}
+}
 .languages-info{
 	&.type-2 {
 		display: block;
