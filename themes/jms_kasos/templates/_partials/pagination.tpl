@@ -32,7 +32,7 @@
     {/block}
   </div>
 
-  <div class=" col-md-6 col-sm-6 col-xs-6 right-pagination">
+  <div class="col-md-6 col-sm-6 col-xs-6 right-pagination">
     {block name='pagination_page_list'}
      {if $pagination.should_be_displayed}
         <ul class="page-list clearfix text-sm-center">
@@ -48,9 +48,9 @@
                   class="{if $page.type === 'previous'}previous {elseif $page.type === 'next'}next {/if}{['disabled' => !$page.clickable, 'js-search-link' => true]|classnames}"
                 >
                   {if $page.type === 'previous'}
-                    Previous
+                    
                   {elseif $page.type === 'next'}
-                    Next
+                    
                   {else}
                     {$page.page}
                   {/if}

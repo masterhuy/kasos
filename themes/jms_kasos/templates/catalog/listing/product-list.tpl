@@ -27,6 +27,9 @@
     <section id="main">
         <section id="products">
             {if $listing.products|count}
+                <div class="category-title">
+                    <h3>{$page.meta.title}</h3>
+                </div>
                 <div id="">
                     {block name='product_list_top'}
                         {include file='catalog/_partials/products-top.tpl' listing=$listing}

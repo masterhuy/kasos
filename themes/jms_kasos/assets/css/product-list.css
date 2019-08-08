@@ -1,15 +1,34 @@
+.category-title {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	left: 0;
+	text-align: center;
+}
+.category-title h3{
+	font-size: 36px;
+	color: #17171f;
+	font-family: 'samsungsharpsans-bold';
+	letter-spacing: 1.5px;
+}
+#category #content-wrapper{
+	position: unset;
+}
+#category #content-wrapper,
+#category #left-column,
+#category #right-column{
+	padding-top: 121px;
+}
 .search-link{
-	color: #8f8f8f;
+	color: #555;
 }
 #search_filters .filter-box {
 	margin-bottom: 12px;
 	border-bottom: 1px solid #e5e5e5;
 }
 #search_filters .facet {
-	margin-bottom: 13px;
-	padding-bottom: 5px;
+	margin-bottom: 21px;
 	margin-right: 0px;
-	border-bottom: 1px solid #e5e5e5;
 }
 #search_filters .facet.color {
 	margin-bottom: 0;
@@ -18,21 +37,33 @@
 #search_filters .facet.color .flex-box{
 	margin-bottom: 7px;
 }
+#search_filters .btn-default.js-search-filters-clear-all {
+	display: flex;
+	align-items: center;
+	letter-spacing: 1px;
+}
+#search_filters .btn-default.js-search-filters-clear-all i{
+	font-size: 15px;
+	margin-left: -3px;
+	margin-right: 5px;
+}
 #search_filters .facet.color .facet-title.collapsed + .flex-box{
 	margin-bottom: 0;
 }
 #search_filters .facet-title {
-	padding-bottom: 9px;
-	font-size: 15px;
-	margin-bottom: 0;
-	position: relative;
-	text-transform: uppercase;
-	letter-spacing: 0.7px;
-	display: flex;
+	font-size: 20px;
+    margin-bottom: 0;
+    color: #000;
+    letter-spacing: 0.7px;
+    font-family: 'samsungsharpsans-bold';
 	cursor: pointer;
+	margin-bottom: 20px;
 }
 #_desktop_search_filters_clear_all {
-	margin-bottom: 20px;
+	margin-bottom: 42px;
+}
+.facet.filter-by {
+	margin-top: 40px;
 }
 #search_filters .facet .facet-title > i,
 .block-categories .title-block h3 > i{
@@ -44,15 +75,11 @@
 }
 #search_filters .facet li {
 	position: relative;
-	line-height: 27px;
+	line-height: 32px;
 }
 #search_filters .facet.size ul li {
 	float: left;
 	width: 50%;
-}
-.best-sellers_block_right {
-	padding-top: 9px;
-	border-top: 1px solid #e5e5e5;
 }
 .products-list-in-column.item-gutter-40 .js-product-miniature:hover::after {
 	width: calc(100% - 40px);
@@ -195,12 +222,12 @@
   width:100%;
 }
 #search_filters .custom-checkbox {
-	margin-right: 8px;
+	margin-right: 12px;
 	display: inline-block;
-	width: 18px;
-	height: 18px;
+	width: 11px;
+	height: 11px;
 	position: relative;
-	top: 5px;
+	top: 10px;
 }
 #search_filters .custom-checkbox > input{
 	opacity: 0;	
@@ -214,9 +241,9 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	height: 18px;
-	width: 18px;
-	border: 1px solid #e5e5e5;
+	height: 11px;
+	width: 11px;
+	border: 1px solid #b7b7b7;
 }
 #category .facet-label input:checked ~ .checkmark {
   border-color: #141414;
@@ -232,7 +259,7 @@
 #category .facet-label .checkmark::after {
 	content: "\f17b";
 	font-family: LineAwesome;
-	font-size: 10px;
+	font-size: 6px;
 	position: absolute;
 	top: 50%;
 	transform: translate(-50%, -50%);
@@ -249,6 +276,14 @@
 	display: flex;
 	flex-wrap: wrap;
 	margin-bottom: 0;
+}
+#search_filters .facet.Color{
+	margin-bottom: 33px;
+}
+#search_filters .facet.Color li {
+	width: 50%;
+	float: left;
+	line-height: 31px;
 }
 #category .banner-and-desc {
 	width: 60%;
@@ -271,25 +306,25 @@
 #category .facet.size ul li{
 	border-bottom: 0;
 }
-#category .facet.color ul li .custom-checkbox input,
-#category .facet.color ul li .custom-checkbox .checkmark {
+#category .facet.Color ul li .custom-checkbox input,
+#category .facet.Color ul li .custom-checkbox .checkmark {
     display: none;
 }
-#category .facet.color ul li .custom-checkbox .color {
+#category .facet.Color ul li .custom-checkbox .color {
 	border-radius: 50%;
 	display: block;
-	height: 18px;
-	width: 18px;
+	height: 12px;
+	width: 12px;
 	cursor: pointer;
 	position: relative;
 }
-#category .facet.color ul li .custom-checkbox input:checked ~ span {
+#category .facet.Color ul li .custom-checkbox input:checked ~ span {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	border: 0;
 }
-#category .facet.color ul li .custom-checkbox input:checked ~ .color::after {
+#category .facet.Color ul li .custom-checkbox input:checked ~ .color::after {
 	content: "\f17b";
 	font-family: LineAwesome;
 	font-size: 10px;

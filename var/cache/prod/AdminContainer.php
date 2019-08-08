@@ -1197,6 +1197,7 @@ class AdminContainer extends Container
                 74 => 'jmsadvsearch',
                 75 => 'jmsvermegamenu',
                 76 => 'jmsflashsales',
+                77 => 'ps_bestsellers',
             ],
             'ps_cache_dir' => 'D:\\xamppp\\htdocs\\jms_kasos/var/cache/prod\\',
             'mail_themes_uri' => '/mails/themes',

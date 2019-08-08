@@ -48,7 +48,7 @@
           {if $filter.active}{assign var=_collapse value=false}{/if}
         {/foreach}
 
-        <div class="title hidden-md-up" data-target="#facet_{$_expand_id}" data-toggle="collapse"{if !$_collapse} aria-expanded="true"{/if}>
+        <div class="title" data-target="#facet_{$_expand_id}" data-toggle="collapse"{if !$_collapse} aria-expanded="true"{/if}>
           <p class="h6 facet-title">{$facet.label}</p>
           <span class="float-xs-right">
             <span class="navbar-toggler collapse-icons">

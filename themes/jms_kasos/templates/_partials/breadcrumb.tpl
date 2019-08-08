@@ -23,7 +23,7 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <div class="breadcrumb">
-    <div class="breadcrumb-box container">
+    <div class="breadcrumb-box container-fluid">
         <span class="title_meta">
             {$page.meta.title}
         </span>

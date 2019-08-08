@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-08-07 00:08:14
+/* Smarty version 3.1.33, created on 2019-08-08 02:47:39
   from 'D:\xamppp\htdocs\jms_kasos\admin201ucslkx\themes\default\template\controllers\modules\modal_not_trusted.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d4a4eaea410a4_44598213',
+  'unifunc' => 'content_5d4bc58b55f641_37146883',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d4a4eaea410a4_44598213 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d4bc58b55f641_37146883 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="untrusted-content-action">
 

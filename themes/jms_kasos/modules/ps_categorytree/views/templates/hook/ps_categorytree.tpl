@@ -34,12 +34,7 @@
                         </a>
                         {if $node.children}
                             <span class="navbar-toggler collapse-icons collapsed" data-toggle="collapse" data-target="#exCollapsingNavbar{$node.id}">
-                                <i class="d-i-flex">
-                                    <svg aria-hidden="true" focusable="false" role="presentation"
-                                            class="icon icon-theme-229" viewBox="0 0 24 24">
-                                        <path d="M11.783 14.088l-3.75-3.75a.652.652 0 0 1-.176-.449c0-.169.059-.319.176-.449a.65.65 0 0 1 .449-.176c.169 0 .318.059.449.176l3.301 3.32 3.301-3.32a.65.65 0 0 1 .449-.176c.169 0 .318.059.449.176.117.13.176.28.176.449a.652.652 0 0 1-.176.449l-3.75 3.75a.877.877 0 0 1-.215.127.596.596 0 0 1-.468 0 .841.841 0 0 1-.215-.127z"/>
-                                    </svg>
-                                </i>
+                                
                             </span>
                         {/if}
                         {if $node.children}
@@ -51,11 +46,7 @@
                         <a class="category-sub-link" href="{$node.link}">{$node.name}
                             {if $node.children}
                                 <span class="navbar-toggler collapse-icons" data-toggle="collapse" data-target="#exCollapsingNavbar{$node.id}">
-                                    <i class="d-i-flex">
-                                        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-theme-229" viewBox="0 0 24 24">
-                                            <path d="M11.783 14.088l-3.75-3.75a.652.652 0 0 1-.176-.449c0-.169.059-.319.176-.449a.65.65 0 0 1 .449-.176c.169 0 .318.059.449.176l3.301 3.32 3.301-3.32a.65.65 0 0 1 .449-.176c.169 0 .318.059.449.176.117.13.176.28.176.449a.652.652 0 0 1-.176.449l-3.75 3.75a.877.877 0 0 1-.215.127.596.596 0 0 1-.468 0 .841.841 0 0 1-.215-.127z"/>
-                                        </svg>
-                                    </i>
+                                    
                                 </span>
                             {/if}
                         </a>	
@@ -77,12 +68,6 @@
 		<div class="title-block">
 			<h3 class="d-flex cursor-pointer" data-toggle="collapse" data-target="#category-sub-menu">
                 {l s='Categories' d='Shop.Theme.CategoryTree'}
-                <i class="d-i-flex">
-                    <svg aria-hidden="true" focusable="false" role="presentation"
-                            class="icon icon-theme-229" viewBox="0 0 24 24">
-                        <path d="M11.783 14.088l-3.75-3.75a.652.652 0 0 1-.176-.449c0-.169.059-.319.176-.449a.65.65 0 0 1 .449-.176c.169 0 .318.059.449.176l3.301 3.32 3.301-3.32a.65.65 0 0 1 .449-.176c.169 0 .318.059.449.176.117.13.176.28.176.449a.652.652 0 0 1-.176.449l-3.75 3.75a.877.877 0 0 1-.215.127.596.596 0 0 1-.468 0 .841.841 0 0 1-.215-.127z"/>
-                    </svg>
-                </i>
             </h3>
 		</div>
 	{/if}

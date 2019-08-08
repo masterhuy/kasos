@@ -136,16 +136,4 @@
 		line-height: 1.16;
 		margin-bottom: 34px;
 	}
-	a{
-		font-size: 17px;
-		color: #0070c9;
-		&::after{
-			content: "\f105";
-			font-family: FontAwesome;
-			font-size: 23px;
-			margin-left: 10px;
-			position: relative;
-			bottom: -2px;
-		}
-	}
 }
