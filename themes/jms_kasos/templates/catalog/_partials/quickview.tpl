@@ -26,7 +26,9 @@
     <div class="modal-dialog cover_product1 container" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="la la-close"></i>
+                </button>   
             </div>
             <div class="modal-body" id="main">
                 <div class="row">
@@ -40,19 +42,6 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 hidden-xs-down right">
-                        {block name='product_availability'}
-                            {if $product.show_availability && $product.availability_message}
-                            <span id="product-availability">
-                                {if $product.availability == 'available'}
-                                    <span style="color:#fff; background:#25A799">{$product.availability_message}</span>
-                                {elseif $product.availability == 'last_remaining_items'}
-                                    <i class="material-icons product-last-items">&#xE002;</i>
-                                {else}
-                                    <span style="color:#fff; background:#858585;">{$product.availability_message}</span>
-                                {/if}
-                            </span>
-                            {/if}
-                        {/block}
                         {block name='page_header_container'}
                             {block name='page_header'}
                                 <h2 itemprop="name" class="pd-name">{block name='page_title'}{$product.name}{/block}</h2>

@@ -83,5 +83,20 @@
         {/block}
 
         {hook h='displayProductPriceBlock' product=$product type="weight" hook_origin='product_sheet'}
+
+        {block name='product_availability'}
+            {if $product.show_availability && $product.availability_message}
+            <span id="product-availability">
+                {if $product.availability == 'available'}
+                    <img src="{$urls.base_url}themes/jms_kasos/assets/img/icon/available.png" alt="">
+                    <span>{$product.availability_message}</span>
+                {elseif $product.availability == 'last_remaining_items'}
+                    <i class="material-icons product-last-items">&#xE002;</i>
+                {else}
+                    <span>{$product.availability_message}</span>
+                {/if}
+            </span>
+            {/if}
+        {/block}
   </div>
 {/if}

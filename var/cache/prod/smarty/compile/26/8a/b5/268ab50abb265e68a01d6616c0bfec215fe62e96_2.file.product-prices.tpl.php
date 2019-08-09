@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-08-06 04:58:00
+/* Smarty version 3.1.33, created on 2019-08-09 05:20:18
   from 'D:\xamppp\htdocs\jms_kasos\themes\jms_kasos\templates\catalog\_partials\product-prices.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d4941189a6768_25034688',
+  'unifunc' => 'content_5d4d3ad2df8477_17859118',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '268ab50abb265e68a01d6616c0bfec215fe62e96' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_kasos\\themes\\jms_kasos\\templates\\catalog\\_partials\\product-prices.tpl',
-      1 => 1563937369,
+      1 => 1565318517,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d4941189a6768_25034688 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d4d3ad2df8477_17859118 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 if ($_smarty_tpl->tpl_vars['product']->value['show_price']) {?>
@@ -39,7 +39,7 @@ if ($_smarty_tpl->tpl_vars['product']->value['show_price']) {?>
         </div>
 
         <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_18750982705d49411897b7d8_94410833', 'product_discount');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_9657028515d4d3ad2dd51f2_51999867', 'product_discount');
 ?>
 
 
@@ -48,37 +48,42 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_18750982705d494118
 </span>
 
         <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15769283475d49411897f650_48868009', 'product_price');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_3972200945d4d3ad2ddcef0_02989302', 'product_price');
 ?>
 
 
         <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1552588615d49411898f067_22124741', 'product_without_taxes');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_5468594795d4d3ad2de4bf0_69307673', 'product_without_taxes');
 ?>
 
 
         <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_14124499475d494118996d68_72698969', 'product_pack_price');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_7511520895d4d3ad2de8a76_34679633', 'product_pack_price');
 ?>
 
 
         <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_18330880235d494118996d66_68223080', 'product_ecotax');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_5041813705d4d3ad2dec8f5_94900788', 'product_ecotax');
 ?>
 
 
         <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0], array( array('h'=>'displayProductPriceBlock','product'=>$_smarty_tpl->tpl_vars['product']->value,'type'=>"weight",'hook_origin'=>'product_sheet'),$_smarty_tpl ) );?>
 
+
+        <?php 
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_9060532715d4d3ad2df0779_35845434', 'product_availability');
+?>
+
   </div>
 <?php }
 }
 /* {block 'product_discount'} */
-class Block_18750982705d49411897b7d8_94410833 extends Smarty_Internal_Block
+class Block_9657028515d4d3ad2dd51f2_51999867 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_discount' => 
   array (
-    0 => 'Block_18750982705d49411897b7d8_94410833',
+    0 => 'Block_9657028515d4d3ad2dd51f2_51999867',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -95,7 +100,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'product_discount'} */
 /* {block 'product_unit_price'} */
-class Block_11105730415d4941189834d8_15233092 extends Smarty_Internal_Block
+class Block_18273995135d4d3ad2de0d72_52253439 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -109,16 +114,16 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'product_unit_price'} */
 /* {block 'product_price'} */
-class Block_15769283475d49411897f650_48868009 extends Smarty_Internal_Block
+class Block_3972200945d4d3ad2ddcef0_02989302 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_price' => 
   array (
-    0 => 'Block_15769283475d49411897f650_48868009',
+    0 => 'Block_3972200945d4d3ad2ddcef0_02989302',
   ),
   'product_unit_price' => 
   array (
-    0 => 'Block_11105730415d4941189834d8_15233092',
+    0 => 'Block_18273995135d4d3ad2de0d72_52253439',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -134,7 +139,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
                 <meta itemprop="priceCurrency" content="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['currency']->value['iso_code'], ENT_QUOTES, 'UTF-8');?>
 ">
                 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_11105730415d4941189834d8_15233092', 'product_unit_price', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_18273995135d4d3ad2de0d72_52253439', 'product_unit_price', $this->tplIndex);
 ?>
 
             </div>
@@ -143,12 +148,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_11105730415d494118
 }
 /* {/block 'product_price'} */
 /* {block 'product_without_taxes'} */
-class Block_1552588615d49411898f067_22124741 extends Smarty_Internal_Block
+class Block_5468594795d4d3ad2de4bf0_69307673 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_without_taxes' => 
   array (
-    0 => 'Block_1552588615d49411898f067_22124741',
+    0 => 'Block_5468594795d4d3ad2de4bf0_69307673',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -163,12 +168,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'product_without_taxes'} */
 /* {block 'product_pack_price'} */
-class Block_14124499475d494118996d68_72698969 extends Smarty_Internal_Block
+class Block_7511520895d4d3ad2de8a76_34679633 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_pack_price' => 
   array (
-    0 => 'Block_14124499475d494118996d68_72698969',
+    0 => 'Block_7511520895d4d3ad2de8a76_34679633',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -183,12 +188,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'product_pack_price'} */
 /* {block 'product_ecotax'} */
-class Block_18330880235d494118996d66_68223080 extends Smarty_Internal_Block
+class Block_5041813705d4d3ad2dec8f5_94900788 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_ecotax' => 
   array (
-    0 => 'Block_18330880235d494118996d66_68223080',
+    0 => 'Block_5041813705d4d3ad2dec8f5_94900788',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -207,4 +212,35 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 }
 /* {/block 'product_ecotax'} */
+/* {block 'product_availability'} */
+class Block_9060532715d4d3ad2df0779_35845434 extends Smarty_Internal_Block
+{
+public $subBlocks = array (
+  'product_availability' => 
+  array (
+    0 => 'Block_9060532715d4d3ad2df0779_35845434',
+  ),
+);
+public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
+?>
+
+            <?php if ($_smarty_tpl->tpl_vars['product']->value['show_availability'] && $_smarty_tpl->tpl_vars['product']->value['availability_message']) {?>
+            <span id="product-availability">
+                <?php if ($_smarty_tpl->tpl_vars['product']->value['availability'] == 'available') {?>
+                    <img src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['base_url'], ENT_QUOTES, 'UTF-8');?>
+themes/jms_kasos/assets/img/icon/available.png" alt="">
+                    <span><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['availability_message'], ENT_QUOTES, 'UTF-8');?>
+</span>
+                <?php } elseif ($_smarty_tpl->tpl_vars['product']->value['availability'] == 'last_remaining_items') {?>
+                    <i class="material-icons product-last-items">&#xE002;</i>
+                <?php } else { ?>
+                    <span><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['availability_message'], ENT_QUOTES, 'UTF-8');?>
+</span>
+                <?php }?>
+            </span>
+            <?php }?>
+        <?php
+}
+}
+/* {/block 'product_availability'} */
 }

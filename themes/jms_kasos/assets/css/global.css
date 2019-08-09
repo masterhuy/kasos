@@ -137,6 +137,9 @@
   .topbar-v2 #_desktop_currency_selector.type-2 {
     display: block; }
 
+.jms-megamenu .sub-home .mega-col-nav .mod-content {
+  height: 420px; }
+
 .ver_menu {
   background: #0065b5;
   color: #fff;
@@ -1094,7 +1097,8 @@
 .categorytab-carousel .owl-stage-outer,
 .hotdeal-carousel .owl-stage-outer,
 .custom_carousel .owl-stage-outer,
-.flashsales-carousel .owl-stage-outer {
+.flashsales-carousel .owl-stage-outer,
+.customs-carousel-product .owl-stage-outer {
   padding-bottom: 63px; }
 
 .products-sort-order .select-title span {
@@ -1176,6 +1180,18 @@
 #left-column #search_widget form, #right-column #search_widget form {
   border: 0;
   background: #f2f2f2; }
+
+.select-option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 2px solid #ebebeb;
+  padding: 0 13px; }
+  .select-option select {
+    margin-bottom: 0; }
 
 .product-detail.thumbslist .same-category {
   max-width: 1200px;
@@ -1441,7 +1457,7 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-bottom: -7px !important; }
+    margin-bottom: 0 !important; }
     .best-sellers_block_right .product-preview .flexbox + .product-info {
       width: 63%;
       margin-top: 9px;
@@ -1828,10 +1844,8 @@
   display: none; }
 
 #product .product-cover .layer {
-  bottom: -40px;
-  right: 0;
-  font-size: 10px;
-  color: #858585;
+  bottom: 20px;
+  right: 20px;
   position: absolute;
   cursor: pointer;
   display: -webkit-box;
@@ -1842,13 +1856,15 @@
   align-items: center;
   z-index: 9; }
   #product .product-cover .layer i {
-    margin-right: 3px; }
+    margin-right: 0;
+    font-size: 30px;
+    color: #000; }
 
 #product .thumbslist .product-cover .layer {
   left: 0; }
 
 #product #footer {
-  margin-top: 78px; }
+  margin-top: 0; }
 
 #search #content .search-box {
   width: 290px;
@@ -1857,16 +1873,14 @@
 #more_info_block.v2 {
   margin-top: 35px; }
 
-#more_info_block #accordion {
-  border-top: 1px solid #e5e5e5; }
-
 #more_info_block .panel.panel-default {
-  padding: 4px 0;
+  padding: 0;
   border: 0;
   margin-top: 0;
   -webkit-box-shadow: unset;
-  box-shadow: unset;
-  border-bottom: 1px solid #e5e5e5; }
+  box-shadow: unset; }
+  #more_info_block .panel.panel-default:not(:last-child) {
+    border-bottom: 1px solid #e5e5e5; }
 
 #more_info_block .panel-title {
   padding: 0; }
@@ -1874,7 +1888,7 @@
 #more_info_block .panel-body {
   border-top: 0;
   padding: 0;
-  margin-top: -4px; }
+  margin-top: 3px; }
 
 #more_info_block .panel-heading {
   border: 0;
@@ -1883,33 +1897,30 @@
   #more_info_block .panel-heading h4 {
     padding: 0; }
   #more_info_block .panel-heading a {
-    font-size: 13px;
+    font-size: 20px;
     position: relative;
-    text-transform: uppercase;
-    display: block; }
-    #more_info_block .panel-heading a.collapsed i {
-      -webkit-transform: rotate(0);
-      -ms-transform: rotate(0);
-      transform: rotate(0); }
-    #more_info_block .panel-heading a i {
-      position: absolute;
-      right: -6px;
-      top: 1px;
-      -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-      transform: rotate(45deg);
-      -webkit-transition: .4s all;
-      -o-transition: .4s all;
-      transition: .4s all; }
-
-#more_info_block .panel-body {
-  margin-top: 19px; }
+    display: block;
+    font-family: 'samsungsharpsans-bold';
+    color: #000;
+    letter-spacing: 0.3px;
+    padding: 14px 0; }
+    #more_info_block .panel-heading a::after {
+      content: "\f107";
+      font-family: FontAwesome;
+      font-size: 17px;
+      font-weight: 500;
+      margin-left: 12px; }
+    #more_info_block .panel-heading a.collapsed::after {
+      content: "\f105"; }
 
 #more_info_block .product-description ul {
   margin-bottom: 5px; }
 
 #more_info_block .product-description p {
-  margin-bottom: 20px; }
+  margin-bottom: 18px;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  line-height: 28px; }
 
 #more_info_block .tabs .tt-tabs-product__list li {
   display: block; }

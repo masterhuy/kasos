@@ -36,11 +36,11 @@
 	background:#333;
 }
 #jmstools-arrow i {
-	font-size: 18px;
+	font-size: 15px;
 	line-height: 30px;
-	fill: #FFF;
 	height: 30px;
 	justify-content: center;
+	color: #fff;
 }
 #jmstools-arrow .close-cog,
 .jmsopen #jmstools-arrow .cog{

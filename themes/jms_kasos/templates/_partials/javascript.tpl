@@ -40,8 +40,8 @@
     {/foreach}
   </script>
 {/if}
-<!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5b83af218bd4bc00"></script>
+<!-- Go to www.addthis.com/dashboard to customize your tools --> 
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d4d1d554851509f"></script>
 
 
 

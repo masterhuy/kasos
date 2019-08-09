@@ -112,28 +112,25 @@ jQuery(function ($) {
 			responsiveClass:true,
 			responsive:{            
 				1199:{
-                  	items:4
+                  	items:5
 				},
 				991:{
-					items:3
+					items:4
 				},
 				768:{
-					items:2
+					items:3
 				},
 				481:{
 					items:2
-				},
-				361:{
-					items:1
 				},
 				0:{
 					items:1
 				}
 			},
 			rtl: rtl,
-			margin: 30,
+			margin: 0,
 			nav: false,
-			dots: true,
+			dots: false,
 			autoplay: true,
 			slideSpeed: 200,
 			loop: true
@@ -1081,6 +1078,40 @@ jQuery(function ($) {
 			loop: true
 		});
 	}
+
+	var subhomeCarousel = $('.menu-item.sub-home .mega-dropdown-inner .mega-nav');			
+	var rtl = false;
+	if ($("body").hasClass("rtl")) rtl = true;	
+	 	subhomeCarousel.owlCarousel({
+	  	responsiveClass:true,
+		    responsive:{
+		        1199:{
+					items:4
+				},
+				991:{
+					items:3
+				},
+				768:{
+					items:2
+				},
+				481:{
+					items:2
+				},
+				361:{
+					items:1
+				},
+				0: {
+					items:1
+				}
+		    },
+		    rtl: rtl,
+		    margin: 30,
+		    nav: false,
+		    dots: true,
+		    loop: true,
+		    navigationText: ["", ""],
+			slideSpeed: 800
+	});
 	
 });
 
@@ -1100,6 +1131,8 @@ jQuery(function ($) {
 			$("#back-to-top").removeClass('show');
 		}
     });
+
+    $('.menu-item.sub-home .mega-dropdown-inner .mega-nav').addClass('subhome-carousel');
 
     $(window).scroll(function () {
 		if ($(document).scrollTop() >= 500) {
