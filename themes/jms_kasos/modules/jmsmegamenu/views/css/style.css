@@ -150,7 +150,7 @@ div.jms-megamenu .dropdown-menu::before{
     visibility: visible;
 }
 .jms-megamenu .nav .open .mega-nav .dropdown-menu {
-    top: -14px;
+    top: -22px;
 }
 .jms-megamenu .dropdown-menu {
     width: 100%;
@@ -197,9 +197,9 @@ div.jms-megamenu .dropdown-menu::before{
 .jms-megamenu .mega-nav .mega > a::after {
     font-family: "FontAwesome";
     position: absolute;
-    right: 0;
-    top: calc(50% - 12px);
-	content: '\f105';
+    right: 28px;
+    top: calc(50% - 17px);
+    content: '\f105';
 }
 .jms-megamenu .item-fullwidth .mega-nav > li > ul > li.group, .jms-megamenu .item-fullwidth .mega-nav > li.group {
     position: relative;
@@ -212,7 +212,7 @@ div.jms-megamenu .dropdown-menu::before{
     margin-right: 5px;
 }
 .jms-megamenu .mega-nav > .mega > .dropdown-menu {
-    left: calc(100% + 5px);
+    left: 100%;
     margin: 0;
     top: 0;
 }
@@ -242,6 +242,7 @@ div.jms-megamenu .dropdown-menu::before{
 }
 .jms-megamenu .menu-item > .dropdown-menu {
     top: calc(100% - 25px);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 .jms-megamenu .menu-align-center > .dropdown-menu {
     left: 50%;
@@ -264,9 +265,6 @@ div.jms-megamenu .dropdown-menu::before{
 .jms-megamenu .menu-align-justify > .dropdown-menu {
     left: 0;
     margin-left: 0;
-}
-.jms-megamenu .open .mega.open .dropdown-menu {
-    top: -14px;
 }
 .jms-megamenu .dropdown-menu {
     background: #fff;
@@ -308,11 +306,14 @@ div.jms-megamenu .dropdown-menu::before{
 .jms-megamenu .nav > .menu-item .mega-nav li > a {
     border-bottom: medium none;
     line-height: 32px;
-    padding: 0;
+    padding: 0 35px;
     letter-spacing: 0.1px;
     color: #555;
     display: block;
     position: relative;
+}
+.jms-megamenu .nav > .menu-item.item-fullwidth .mega-nav li > a{
+    padding: 0;
 }
 .jms-megamenu .nav > .menu-item .mega-nav li > a:hover {
     color: #ff4800;
@@ -336,7 +337,7 @@ div.jms-megamenu .dropdown-menu::before{
     letter-spacing: 0.7px;
     font-size: 20px;
     display: block;
-    padding-bottom: 15px;
+    padding-bottom: 15px !important;
 }
 .jms-megamenu .mega-col-nav .mod-content{
     position: relative;

@@ -901,7 +901,7 @@ input[type="text"], input[type="password"], input[type="datetime"], input[type="
   border-radius: 0px;
   width: 100%;
   border: 1px solid #ebebeb;
-  height: 35px;
+  height: 50px;
   padding: 0 15px;
   margin-bottom: 20px;
 }
@@ -2342,7 +2342,17 @@ li.product-flag {
 .jms-videos {
   z-index: 99999;
   position: relative;}
-
+.jms-videos .addon-title h3{
+  font-size: 20px;
+  position: relative;
+  display: block;
+  font-family: 'samsungsharpsans-bold';
+  color: #000;
+  letter-spacing: 0.3px;
+}
+.jms-videos iframe {
+  width: 100%;
+}
 .popup{
   margin-top: -1px;
 }

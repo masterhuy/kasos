@@ -42,20 +42,24 @@
 	cursor:default;	
 }
 .owl-theme .owl-controls div.owl-prev, .owl-theme .owl-controls div.owl-next {
-	display: inline-block;
-	height: 20px;
-	text-align: center;
-	width: 20px;
+	display: inline-flex;
+	height: 60px;
+	width: 60px;
 	cursor: pointer;
 	z-index: 2;
+	border: 2px solid #e1e1e1;
+	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
 }
 
-.owl-theme .owl-controls div{
+.owl-theme .owl-controls div {
 	position: absolute;
 	opacity: 0;
 	visibility: hidden;
 	transition: .4s all;
-	top: calc(35% + 2px); 
+	top: calc(50% - 5px);
+	transform: translateY(-50%);
 }
 .owl-theme .owl-controls div:hover{
 	opacity: 1;
@@ -65,19 +69,19 @@
 	visibility: visible;
 }
 .owl-theme .owl-controls  div.owl-prev {
-	left: -55px;
+	left: -100px;
 }
 .owl-theme .owl-controls div.owl-next {
-	right: -55px;
+	right: -100px;
 }
 .jms-row:hover .owl-theme .owl-controls div.owl-prev {
-    left: -45px;
+    left: -80px;
 }
 .owl-theme .owl-controls div.owl-prev:hover {
     opacity: 1;
 }
 .jms-row:hover .owl-theme .owl-controls div.owl-next {
-    right: -45px;
+    right: -80px;
 }
 .owl-theme .owl-controls div.owl-next:hover {
     opacity: 1;

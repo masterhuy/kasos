@@ -1105,9 +1105,9 @@ jQuery(function ($) {
 				}
 		    },
 		    rtl: rtl,
-		    margin: 30,
-		    nav: false,
-		    dots: true,
+		    margin: 0,
+		    nav: true,
+		    dots: false,
 		    loop: true,
 		    navigationText: ["", ""],
 			slideSpeed: 800

@@ -71,12 +71,13 @@
 					</a>
 				</div>
 				<div class="left">
-					<a href="{jmsblog::getPageLink('jmsblog-post', $params) nofilter}" class="post-title">
-						{$post.title|truncate:45:'...' nofilter}
-					</a>
 					<p class="post-created">
-						{$post.created|escape:'html':'UTF-8'|date_format:"%b %e, %Y"}
+						{$post.created|escape:'html':'UTF-8'|date_format:"%b %e, %Y"} /
+						{$comments|@count}{l s=' Comment(s)' d='Modules.JmsBlog'}
 					</p>
+					<a href="{jmsblog::getPageLink('jmsblog-post', $params) nofilter}" class="post-title">
+						{$post.title|truncate:40:'...' nofilter}
+					</a>
 				</div>
 			</article>
 		{/foreach}				
@@ -103,7 +104,7 @@
 	<ul>
 	{foreach from=$archives item=archive}
 		{assign var=aparams value=['archive' => $archive.postmonth]}
-		<li><a class="archive" href="{jmsblog::getPageLink('jmsblog-archive', $aparams)}">{$archive.postmonth nofilter}</a></li>
+		<li><a href="{jmsblog::getPageLink('jmsblog-archive', $aparams)}">{$archive.postmonth nofilter}</a></li>
 	{/foreach}
 	</ul>
 </aside>

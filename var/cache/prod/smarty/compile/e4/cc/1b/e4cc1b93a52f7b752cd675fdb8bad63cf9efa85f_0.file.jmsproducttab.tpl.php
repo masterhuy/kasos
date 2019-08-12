@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-08-09 04:20:55
+/* Smarty version 3.1.33, created on 2019-08-12 00:53:32
   from 'D:\xamppp\htdocs\jms_kasos\modules\jmsproducttab\views\templates\hook\jmsproducttab.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d4d2ce779a0e1_58891955',
+  'unifunc' => 'content_5d50f0ccf2a071_90635664',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d4d2ce779a0e1_58891955 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d50f0ccf2a071_90635664 (Smarty_Internal_Template $_smarty_tpl) {
 ?><h3><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Custom Tab','mod'=>'jmsproducttab'),$_smarty_tpl ) );?>
 </h3>
 <div class="form-group">				
