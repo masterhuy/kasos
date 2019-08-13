@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-08-12 06:10:01
+/* Smarty version 3.1.33, created on 2019-08-13 05:56:12
   from 'D:\xamppp\htdocs\jms_kasos\themes\jms_kasos\modules\jmsblogwidget\views\templates\hook\sidebar-widget.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d513af995ad74_32970347',
+  'unifunc' => 'content_5d52893cc77b60_87615722',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0087f1c3ab58fdeb33e581b31af313b2f2f556b7' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_kasos\\themes\\jms_kasos\\modules\\jmsblogwidget\\views\\templates\\hook\\sidebar-widget.tpl',
-      1 => 1565604570,
+      1 => 1565661679,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d513af995ad74_32970347 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d52893cc77b60_87615722 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_kasos\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
 if ($_smarty_tpl->tpl_vars['widget_setting']->value['JBW_SB_SHOW_CATEGORYMENU']) {?>
 <aside class="blog-widget widget-categories">
@@ -114,30 +114,6 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 </aside>
 <?php }?>
 
-
-<?php if ($_smarty_tpl->tpl_vars['widget_setting']->value['JBW_SB_SHOW_LATESTCOMMENT']) {?>
-<aside class="blog-widget widget-lastest-comment">
-	<h3 class="widget-title"><span><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Recent Comments','d'=>'Modules.JmsBlogwidget'),$_smarty_tpl ) );?>
-</span></h3>
-	<?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['latestcomment']->value, 'comment', false, 'k');
-if ($_from !== null) {
-foreach ($_from as $_smarty_tpl->tpl_vars['k']->value => $_smarty_tpl->tpl_vars['comment']->value) {
-?>
-		<article class="comment-item">
-			<p><span><?php echo $_smarty_tpl->tpl_vars['comment']->value['customer_name'];?>
-:</span> <?php echo call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'truncate' ][ 0 ], array( $_smarty_tpl->tpl_vars['comment']->value['comment'],40,'...' ));?>
-</p>
-		</article>
-	<?php
-}
-}
-$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>	
-</aside>
-<?php }?>
-
-
-
 <?php if ($_smarty_tpl->tpl_vars['widget_setting']->value['JBW_SB_SHOW_ARCHIVES']) {?>
 <aside class="blog-widget widget-archives">
 	<h3 class="widget-title"><span><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Archives','d'=>'Modules.JmsBlogwidget'),$_smarty_tpl ) );?>
@@ -157,6 +133,27 @@ foreach ($_from as $_smarty_tpl->tpl_vars['archive']->value) {
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 	</ul>
+</aside>
+<?php }?>
+
+<?php if ($_smarty_tpl->tpl_vars['widget_setting']->value['JBW_SB_SHOW_LATESTCOMMENT']) {?>
+<aside class="blog-widget widget-lastest-comment">
+	<h3 class="widget-title"><span><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Recent Comments','d'=>'Modules.JmsBlogwidget'),$_smarty_tpl ) );?>
+</span></h3>
+	<?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['latestcomment']->value, 'comment', false, 'k');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['k']->value => $_smarty_tpl->tpl_vars['comment']->value) {
+?>
+		<article class="comment-item">
+			<p><?php echo $_smarty_tpl->tpl_vars['comment']->value['customer_name'];?>
+ on <?php echo call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'truncate' ][ 0 ], array( $_smarty_tpl->tpl_vars['comment']->value['comment'],80,'...' ));?>
+</p>
+		</article>
+	<?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>	
 </aside>
 <?php }
 }

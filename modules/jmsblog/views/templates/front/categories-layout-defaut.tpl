@@ -25,6 +25,7 @@
 {extends file='page.tpl'}
 {block name="page_content"}
 {capture name=path}{l s='Categories' d='Modules.JmsBlog'}{/capture}
+<h1 class="page-heading">{l s='Categories'}</h1>
 {if isset($categories) AND $categories}		
 	<div class="categories-list row">
 		{foreach from=$categories item=category}			
@@ -36,7 +37,7 @@
 					</div>
 				{/if}
 				<div class="category-info">
-					<h4 class="category-title"><a href="{jmsblog::getPageLink('jmsblog-category', $catparams)}">{$category.title|escape:'htmlall':'UTF-8'}</a></h4>	
+					<h4 class="category_title"><a href="{jmsblog::getPageLink('jmsblog-category', $catparams)}">{$category.title|escape:'htmlall':'UTF-8'}</a></h4>	
 					<div class="cat-intro">{$category.introtext nofilter}</div>
 				</div>			
 			</div>

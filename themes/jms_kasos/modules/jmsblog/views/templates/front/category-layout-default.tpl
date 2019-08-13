@@ -28,41 +28,13 @@
 {capture name=path}{$current_category.title|escape:'html':'UTF-8'}{/capture}
 
 {if isset($posts) AND $posts}		
-	<div class="cat-post-list">
+	<div class="cat-post-list more-columns">
 		{foreach from=$posts item=post}
 			{assign var=params value=['post_id' => $post.post_id, 'category_slug' => $post.category_alias, 'slug' => $post.alias]}
 			{assign var=catparams value=['category_id' => $post.category_id, 'slug' => $post.category_alias]}				
 			
-			<div class="item">
+			<div class="item col-sm-6 col-md-6 col-lg-6 col-xs-12">
 				<div class="blog-post">
-					<h4 class="post-title">
-						<a class="blog-list-title" href="{jmsblog::getPageLink('jmsblog-post', $params)}" alt="{l s='Blog Images' d='Modules.JmsBlog'}">{$post.title|escape:'htmlall':'UTF-8'}</a>
-					</h4>
-					<ul class="post-meta">
-						{if $jmsblog_setting.JMSBLOG_SHOW_CATEGORY}
-							<li>
-								<span>
-									{l s='In' d='Modules.JmsBlog'} 
-								</span>
-								<a href="{jmsblog::getPageLink('jmsblog-category', $catparams)}">
-									{$post.category_name|escape:'html':'UTF-8'}
-								</a>
-							</li>
-						{/if}
-						<li class="created">
-							<span>{$post.created|escape:'html':'UTF-8'|date_format:"%B %d, %Y"}</span>
-						</li>
-						{if $jmsblog_setting.JMSBLOG_SHOW_VIEWS}
-							<li>
-								<span>{$post.views|escape:'html':'UTF-8'} {l s='view(s)' d='Modules.JmsBlog'}</span>
-							</li>
-						{/if}
-						{if $jmsblog_setting.JMSBLOG_SHOW_COMMENTS}
-							<li>
-								<span>{$comments|@count}{l s=' Comment(s)' d='Modules.JmsBlog'}</span>
-							</li>
-						{/if}
-					</ul>
 					{if $post.link_video && $jmsblog_setting.JMSBLOG_SHOW_MEDIA}
 						<div class="post-thumb">
 							{$post.link_video}
@@ -75,11 +47,40 @@
 						</div>
 					{/if}
 					<div class="post-info">
+						<h4 class="post-title">
+							<a class="blog-list-title" href="{jmsblog::getPageLink('jmsblog-post', $params)}" alt="{l s='Blog Images' d='Modules.JmsBlog'}">{$post.title|escape:'htmlall':'UTF-8'}</a>
+						</h4>
+						<ul class="post-meta">
+							{if $jmsblog_setting.JMSBLOG_SHOW_CATEGORY}
+								<li class="category-name">
+									<span>
+										{l s='In' d='Modules.JmsBlog'} 
+									</span>
+									<a href="{jmsblog::getPageLink('jmsblog-category', $catparams)}">
+										{$post.category_name|escape:'html':'UTF-8'}
+									</a>
+								</li>
+							{/if}
+							<li class="created">
+								{l s='Posted' d='Modules.JmsBlog'}:
+								<span>{$post.created|escape:'html':'UTF-8'|date_format:"%b %d, %Y"}</span>
+							</li>
+							{if $jmsblog_setting.JMSBLOG_SHOW_VIEWS}
+								<li>
+									<span>{$post.views|escape:'html':'UTF-8'} {l s='view(s)' d='Modules.JmsBlog'}</span>
+								</li>
+							{/if}
+							{if $jmsblog_setting.JMSBLOG_SHOW_COMMENTS}
+								<li>
+									<span>{$comments|@count}{l s=' Comment(s)' d='Modules.JmsBlog'}</span>
+								</li>
+							{/if}
+						</ul>
 						<div class="post-intro">
-							{$post.introtext|truncate:400:'...' nofilter}
+							{$post.introtext|truncate:300:'...' nofilter}
 						</div>
-						<a class="btn-default" href="{jmsblog::getPageLink('jmsblog-post', $params)}">
-							{l s='Learn more' d='Modules.JmsBlog'}
+						<a class="blog-readmore" href="{jmsblog::getPageLink('jmsblog-post', $params)}">
+							{l s='Read more' d='Modules.JmsBlog'}
 						</a>
 					</div>
 				</div>

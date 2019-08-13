@@ -84,20 +84,6 @@
 </aside>
 {/if}
 
-
-{if $widget_setting.JBW_SB_SHOW_LATESTCOMMENT}
-<aside class="blog-widget widget-lastest-comment">
-	<h3 class="widget-title"><span>{l s='Recent Comments' d='Modules.JmsBlogwidget'}</span></h3>
-	{foreach from=$latestcomment key=k item=comment}
-		<article class="comment-item">
-			<p><span>{$comment.customer_name nofilter}:</span> {$comment.comment|truncate:40:'...' nofilter}</p>
-		</article>
-	{/foreach}	
-</aside>
-{/if}
-
-
-
 {if $widget_setting.JBW_SB_SHOW_ARCHIVES}
 <aside class="blog-widget widget-archives">
 	<h3 class="widget-title"><span>{l s='Archives' d='Modules.JmsBlogwidget'}</span></h3>
@@ -107,5 +93,16 @@
 		<li><a href="{jmsblog::getPageLink('jmsblog-archive', $aparams)}">{$archive.postmonth nofilter}</a></li>
 	{/foreach}
 	</ul>
+</aside>
+{/if}
+
+{if $widget_setting.JBW_SB_SHOW_LATESTCOMMENT}
+<aside class="blog-widget widget-lastest-comment">
+	<h3 class="widget-title"><span>{l s='Recent Comments' d='Modules.JmsBlogwidget'}</span></h3>
+	{foreach from=$latestcomment key=k item=comment}
+		<article class="comment-item">
+			<p>{$comment.customer_name nofilter} on {$comment.comment|truncate:80:'...' nofilter}</p>
+		</article>
+	{/foreach}	
 </aside>
 {/if}

@@ -34,11 +34,19 @@
 {capture name=path}{$post.title|escape:'html':'UTF-8'}{/capture}
 <div class="single-blog">
 	<div class="blog-post">
-		<h1 class="title">{$post.title|escape:'html':'UTF-8'}</h1>
+		{if $post.link_video && $jmsblog_setting.JMSBLOG_SHOW_MEDIA}
+			<div class="post-video">
+				{$post.link_video}
+			</div>
+		{elseif $post.image && $jmsblog_setting.JMSBLOG_SHOW_MEDIA}
+			<div class="post-thumb">
+				<img src="{$image_baseurl|escape:'html':'UTF-8'}{$post.image|escape:'html':'UTF-8'}" alt="{l s='Image Blog' d='Modules.JmsBlog'}" />
+			</div>
+		{/if}
 		{assign var=catparams value=['category_id' => $post.category_id, 'slug' => $post.category_alias]}	
 		<ul class="post-meta">
 			{if $jmsblog_setting.JMSBLOG_SHOW_CATEGORY}
-				<li>
+				<li class="category-name">
 					<span>
 						{l s='In' d='Modules.JmsBlog'} 
 						<a href="{jmsblog::getPageLink('jmsblog-category', $catparams)}">
@@ -49,6 +57,7 @@
 			{/if}
 			<li class="created">
 				<span>
+					{l s='Posted:' d='Modules.JmsBlog'} 
 					<span>{$post.created|escape:'html':'UTF-8'|date_format:"%B %e, %Y"}</span>
 				</span>
 			</li>
@@ -63,16 +72,7 @@
 				</li>
 			{/if}
 		</ul>
-		{if $post.link_video && $jmsblog_setting.JMSBLOG_SHOW_MEDIA}
-			<div class="post-video">
-				{$post.link_video}
-			</div>
-		{elseif $post.image && $jmsblog_setting.JMSBLOG_SHOW_MEDIA}
-			<div class="post-thumb">
-				<img src="{$image_baseurl|escape:'html':'UTF-8'}{$post.image|escape:'html':'UTF-8'}" alt="{l s='Image Blog' d='Modules.JmsBlog'}" />
-			</div>
-		{/if}
-		
+		<h1 class="title">{$post.title|escape:'html':'UTF-8'}</h1>
 		
 		<div class="post-fulltext">
 			{$post.fulltext nofilter}	
@@ -122,70 +122,67 @@
 					{/foreach}	
 					</ul>
 				{/if}
-				<div id="accordion" class="panel-group">
-					<div class="panels">	
-					{if $comments}	
-						<div id="post-comments">
-						
-							{foreach from=$comments item=comment key = k}
-								<div class="post-comment clearfix">
-									<div class="post-comment-info">
-										<div class="user-image">
-											<img class="attachment-widget wp-post-image img-responsive" src="{$image_baseurl|escape:'html':'UTF-8'}user.png" />
-										</div>
-										<div class="left">
-											<div class="title">
-												<h6>
-													<span>{$comment.customer_name|escape:'html':'UTF-8'}</span>
-												</h6>
-												<p>
-													<i class="fa fa-calendar"></i>
-													{l s='POSTED ON' d='Modules.JmsBlog'}
-													{$comment.time_add|escape:'html':'UTF-8'|date_format:'%B %e, %Y'}
-												</p>
-											</div>
-											<p class="post-comment-content">{$comment.comment|truncate:200:'...'|escape:'html':'UTF-8'}</p>
-										</div>
-									</div>
+				{if $comments}
+					<div id="accordion" class="panel-group">
+						<div class="panels">	
+								<div class="addon-title text-center">
+									<h3>{l s='Comments' d='Modules.JmsBlog'}</h3>
 								</div>
-							{/foreach}	
-						
+								<div id="post-comments">
+									{foreach from=$comments item=comment key = k}
+										<div class="post-comment clearfix">
+											<div class="post-comment-info">
+												<div class="user-image">
+													<img class="attachment-widget wp-post-image img-responsive" src="{$image_baseurl|escape:'html':'UTF-8'}user.png" />
+												</div>
+												<div class="left">
+													<div class="title">
+														<h6>
+															<span>{$comment.customer_name|escape:'html':'UTF-8'}</span> - {$comment.time_add|escape:'html':'UTF-8'|date_format:'%B %e, %Y'}
+														</h6>
+													</div>
+													<p class="post-comment-content">{$comment.comment|truncate:200:'...'|escape:'html':'UTF-8'}</p>
+												</div>
+											</div>
+										</div>
+									{/foreach}	
+								
+								</div>
 						</div>
-					{/if}
 					</div>
-				</div>
+				{/if}
 				{if $jmsblog_setting.JMSBLOG_ALLOW_GUEST_COMMENT || (!$jmsblog_setting.JMSBLOG_ALLOW_GUEST_COMMENT && $logged)}	
 				<div class="commentForm">
-					<div class="addon-title">
-						<h3>{l s='Leave a reply' d='Modules.JmsBlog'}</h3>
+					<div class="addon-title text-center">
+						<h3>{l s='Leave Your Comment' d='Modules.JmsBlog'}</h3>
 					</div>
 					<form id="commentForm" enctype="multipart/form-data" method="post" action="index.php?fc=module&module=jmsblog&controller=post&post_id={$post.post_id|escape:'html':'UTF-8'}&action=submitComment">	
 						<div class="row">
 							<div class="col-lg-4 col-md-4 col-sm-12">
 								<div class="form-group">
-									<input id="customer_name" placeholder="Full name" class="form-control" name="customer_name" type="text" value="{$customer.firstname}{$customer.lastname}" required />
+									<input id="customer_name" placeholder="Your name" class="form-control" name="customer_name" type="text" value="{$customer.firstname}{$customer.lastname}" required />
 								</div>	
 							</div>
 							<div class="col-lg-4 col-md-4 col-sm-12">
 								<div class="form-group">
-									<input id="comment_title" placeholder="Email address" class="form-control" name="email" type="text" value="{$customer.email}" required />
+									<input id="comment_title" placeholder="Your email" class="form-control" name="email" type="text" value="{$customer.email}" required />
 								</div>
 							</div>
 							<div class="col-lg-4 col-md-4 col-sm-12">
 								<div class="form-group">
-									<input id="customer_site" placeholder="Website" class="form-control" name="customer_site" type="text" value=""/>
+									<input id="customer_site" placeholder="Your website" class="form-control" name="customer_site" type="text" value=""/>
 								</div>
 							</div>
 						</div>
 						
 						<div class="form-group">
-							<textarea id="comment" placeholder="Comment" class="form-control" name="comment" rows="2" required></textarea>
+							<textarea id="comment" placeholder="Your message" class="form-control" name="comment" rows="2" required></textarea>
 						</div>
 						<div id="new_comment_form_footer">
 							<input id="item_id_comment_send" name="post_id" type="hidden" value="{$post.post_id|escape:'html':'UTF-8'}" />
 							<input id="item_id_comment_reply" name="post_id_comment_reply" type="hidden" value="" />
 							<p class="">
-								<button id="submitComment" class="btn-default" name="submitComment" type="submit">{l s='Submit review' d='Modules.JmsBlog'}</button>
+								<button id="submitComment" class="btn-default" name="submitComment" type="submit">{l s='Send message' d='Modules.JmsBlog'}</button>
 							</p>
 						</div>
 					</form>

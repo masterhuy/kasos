@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-08-12 06:10:01
+/* Smarty version 3.1.33, created on 2019-08-13 06:23:16
   from 'D:\xamppp\htdocs\jms_kasos\themes\jms_kasos\modules\jmsajaxsearch\views\templates\hook\jmsajaxsearch.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d513af96c2c72_22965872',
+  'unifunc' => 'content_5d528f94cbd2d4_12449915',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d513af96c2c72_22965872 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d528f94cbd2d4_12449915 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="btn-group menu-collapse compact-hidden jms_ajax_search" id="jms_ajax_search">
 	<a href="#" class="btn-search dropdown-toggle" data-toggle="dropdown"></a>
 	<div id="search-form" class="dropdown-menu">

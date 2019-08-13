@@ -1,2 +1,7 @@
 *ERROR* 	v1.7.6.0	2019/08/12 - 03:35:31: Link to database cannot be established: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
  at line 127 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.6.0	2019/08/12 - 22:29:20: Dispatcher::createUrl() miss required parameter "category_id" for route "jmsblog-category" at line 920 in file classes/Dispatcher.php
+*ERROR* 	v1.7.6.0	2019/08/12 - 22:29:30: Dispatcher::createUrl() miss required parameter "category_id" for route "jmsblog-category" at line 920 in file classes/Dispatcher.php
+*ERROR* 	v1.7.6.0	2019/08/12 - 22:29:32: Dispatcher::createUrl() miss required parameter "category_id" for route "jmsblog-category" at line 920 in file classes/Dispatcher.php
+*ERROR* 	v1.7.6.0	2019/08/12 - 22:29:34: Dispatcher::createUrl() miss required parameter "category_id" for route "jmsblog-category" at line 920 in file classes/Dispatcher.php
+*ERROR* 	v1.7.6.0	2019/08/12 - 22:29:36: Dispatcher::createUrl() miss required parameter "category_id" for route "jmsblog-category" at line 920 in file classes/Dispatcher.php

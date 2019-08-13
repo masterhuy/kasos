@@ -32,21 +32,20 @@
 {include file="module:jmsblog/views/templates/front/$categories_layout"}
 {extends file='page.tpl'}
 {block name="page_content"}
-{capture name=path}{l s='Categories'}{/capture}
-<h1 class="page-heading">{l s='Categories dewffaul'}</h1>
+{capture name=path}{l s='Categories' d='Modules.JmsBlog'}{/capture}
 {if isset($categories) AND $categories}		
 	<div class="categories-list row">
 		{foreach from=$categories item=category}			
 			{assign var=catparams value=['category_id' => $category.category_id, 'slug' => $category.alias]}				
-			<div class="blog-category col-lg-6 col-sm-6 col-md-6 col-xs-12">
+			<div class="col-sm-6 col-md-6 col-lg-6 col-xs-12 cat-item">
 				{if $category.image && $jmsblog_setting.JMSBLOG_SHOW_MEDIA}
 					<div class="post-thumb">
 						<a href="{jmsblog::getPageLink('jmsblog-category', $catparams)}"><img src="{$image_baseurl|escape:'html':'UTF-8'}{$category.image|escape:'html':'UTF-8'}" alt="{$category.title|escape:'htmlall':'UTF-8'}" class="img-responsive" /></a>			 		
 					</div>
 				{/if}
 				<div class="category-info">
-					<h4 class="post-title"><a href="{jmsblog::getPageLink('jmsblog-category', $catparams)}">{$category.title|escape:'htmlall':'UTF-8'}</a></h4>	
-					<div class="blog-intro">{$category.introtext|truncate:120:'...' nofilter}</div>
+					<h4 class="category-title"><a href="{jmsblog::getPageLink('jmsblog-category', $catparams)}">{$category.title|escape:'htmlall':'UTF-8'}</a></h4>	
+					<div class="cat-intro">{$category.introtext nofilter}</div>
 				</div>			
 			</div>
 		{/foreach}
@@ -55,4 +54,3 @@
 {l s='Sorry, dont have any category in this section' d='Modules.JmsBlog'}
 {/if}
 {/block}
-

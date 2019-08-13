@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th8 12, 2019 lúc 12:28 PM
+-- Thời gian đã tạo: Th8 13, 2019 lúc 12:29 PM
 -- Phiên bản máy phục vụ: 10.1.31-MariaDB
 -- Phiên bản PHP: 7.0.29
 
@@ -4837,7 +4837,7 @@ INSERT INTO jms_condition VALUES(19, 19, 'install', '', '>', '0', '1', 'time', '
 INSERT INTO jms_condition VALUES(20, 20, 'install', '', '>=', '7', '1', 'time', '1', 1, '2019-08-11 21:36:01', '2019-08-11 21:36:01');
 INSERT INTO jms_condition VALUES(21, 21, 'configuration', 'PS_LOGO', '!=', 'logo.jpg', '', 'hook', 'actionAdminThemesControllerUpdate_optionsAfter', 0, '2019-08-11 21:36:01', '2019-08-11 21:36:01');
 INSERT INTO jms_condition VALUES(22, 22, 'sql', 'SELECT COUNT(*) FROM PREFIX_theme WHERE directory != \"default\" AND directory != \"prestashop\" AND directory ! \"default-bootstrap\"', '>', '0', '', 'hook', 'actionObjectShopUpdateAfter', 0, '2019-08-11 21:36:01', '2019-08-11 21:36:01');
-INSERT INTO jms_condition VALUES(23, 23, 'configuration', 'PS_LOGGED_ON_ADDONS', '==', '1', '', 'time', '1', 0, '2019-08-11 21:36:01', '2019-08-12 00:12:19');
+INSERT INTO jms_condition VALUES(23, 23, 'configuration', 'PS_LOGGED_ON_ADDONS', '==', '1', '', 'time', '1', 0, '2019-08-11 21:36:01', '2019-08-13 00:09:24');
 INSERT INTO jms_condition VALUES(24, 24, 'configuration', 'PS_MULTISHOP_FEATURE_ACTIVE', '==', '1', '', 'hook', 'actionAdminPreferencesControllerUpdate_optionsAfter', 0, '2019-08-11 21:36:01', '2019-08-11 21:36:01');
 INSERT INTO jms_condition VALUES(25, 25, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop', '>', '1', '', 'hook', 'actionObjectShopAddAfter', 0, '2019-08-11 21:36:01', '2019-08-11 21:36:01');
 INSERT INTO jms_condition VALUES(26, 26, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop', '>', '4', '', 'hook', 'actionObjectShopAddAfter', 0, '2019-08-11 21:36:01', '2019-08-11 21:36:01');
@@ -4847,42 +4847,42 @@ INSERT INTO jms_condition VALUES(29, 29, 'sql', 'SELECT COUNT(distinct m.id_modu
 INSERT INTO jms_condition VALUES(30, 30, 'sql', 'SELECT COUNT(*) FROM PREFIX_carrier WHERE name NOT IN (\"0\", \"My carrier\")', '>', '2', '', 'hook', 'actionObjectCarrierAddAfter', 0, '2019-08-11 21:36:01', '2019-08-11 21:36:01');
 INSERT INTO jms_condition VALUES(31, 31, 'sql', 'SELECT SUM(total_paid_tax_excl / c.conversion_rate)\r\nFROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"', '>=', '200', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-08-11 21:36:01', '2019-08-11 21:36:01');
 INSERT INTO jms_condition VALUES(32, 32, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"', '>=', '2000', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-08-11 21:36:01', '2019-08-11 21:36:01');
-INSERT INTO jms_condition VALUES(33, 33, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"', '>=', '20000', '1078', 'time', '1', 0, '2019-08-11 21:36:01', '2019-08-12 00:12:19');
+INSERT INTO jms_condition VALUES(33, 33, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"', '>=', '20000', '1078', 'time', '1', 0, '2019-08-11 21:36:01', '2019-08-13 00:09:24');
 INSERT INTO jms_condition VALUES(34, 34, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1', '>=', '200000', '0', 'time', '7', 0, '2019-08-11 21:36:01', '2019-08-11 21:36:01');
 INSERT INTO jms_condition VALUES(35, 35, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1', '>=', '2000000', '0', 'time', '7', 0, '2019-08-11 21:36:01', '2019-08-11 21:36:01');
 INSERT INTO jms_condition VALUES(36, 36, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1', '>=', '20000000', '0', 'time', '7', 0, '2019-08-11 21:36:01', '2019-08-11 21:36:01');
-INSERT INTO jms_condition VALUES(37, 37, 'install', '', '>=', '30', '', 'time', '1', 0, '2019-08-11 21:36:01', '2019-08-12 00:12:19');
-INSERT INTO jms_condition VALUES(38, 38, 'install', '', '>=', '182', '', 'time', '2', 0, '2019-08-11 21:36:01', '2019-08-11 21:36:01');
-INSERT INTO jms_condition VALUES(39, 39, 'install', '', '>=', '365', '', 'time', '2', 0, '2019-08-11 21:36:01', '2019-08-11 21:36:01');
-INSERT INTO jms_condition VALUES(40, 40, 'install', '', '>=', '730', '', 'time', '2', 0, '2019-08-11 21:36:01', '2019-08-11 21:36:01');
+INSERT INTO jms_condition VALUES(37, 37, 'install', '', '>=', '30', '', 'time', '1', 0, '2019-08-11 21:36:01', '2019-08-13 00:09:24');
+INSERT INTO jms_condition VALUES(38, 38, 'install', '', '>=', '182', '', 'time', '2', 0, '2019-08-11 21:36:01', '2019-08-12 21:37:20');
+INSERT INTO jms_condition VALUES(39, 39, 'install', '', '>=', '365', '', 'time', '2', 0, '2019-08-11 21:36:01', '2019-08-12 21:37:20');
+INSERT INTO jms_condition VALUES(40, 40, 'install', '', '>=', '730', '', 'time', '2', 0, '2019-08-11 21:36:01', '2019-08-12 21:37:20');
 INSERT INTO jms_condition VALUES(41, 41, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '10', '10', 'time', '1', 1, '2019-08-11 21:36:01', '2019-08-11 21:36:01');
-INSERT INTO jms_condition VALUES(42, 42, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '100', '19', 'time', '1', 0, '2019-08-11 21:36:01', '2019-08-12 00:12:19');
-INSERT INTO jms_condition VALUES(43, 43, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '1000', '19', 'time', '1', 0, '2019-08-11 21:36:01', '2019-08-12 00:12:19');
-INSERT INTO jms_condition VALUES(44, 44, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '10000', '18', 'time', '2', 0, '2019-08-11 21:36:01', '2019-08-11 21:36:01');
+INSERT INTO jms_condition VALUES(42, 42, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '100', '19', 'time', '1', 0, '2019-08-11 21:36:01', '2019-08-13 00:09:24');
+INSERT INTO jms_condition VALUES(43, 43, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '1000', '19', 'time', '1', 0, '2019-08-11 21:36:01', '2019-08-13 00:09:24');
+INSERT INTO jms_condition VALUES(44, 44, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '10000', '19', 'time', '2', 0, '2019-08-11 21:36:01', '2019-08-12 21:37:20');
 INSERT INTO jms_condition VALUES(45, 45, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '100000', '10', 'time', '3', 0, '2019-08-11 21:36:01', '2019-08-11 21:36:01');
 INSERT INTO jms_condition VALUES(46, 46, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '1000000', '10', 'time', '4', 0, '2019-08-11 21:36:01', '2019-08-11 21:36:01');
 INSERT INTO jms_condition VALUES(47, 47, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '2', '2', 'hook', 'actionObjectCartAddAfter', 1, '2019-08-11 21:36:01', '2019-08-11 21:36:01');
 INSERT INTO jms_condition VALUES(48, 48, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '10', '3', 'hook', 'actionObjectCartAddAfter', 0, '2019-08-11 21:36:01', '2019-08-11 21:36:01');
 INSERT INTO jms_condition VALUES(49, 49, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '100', '3', 'hook', 'actionObjectCartAddAfter', 0, '2019-08-11 21:36:01', '2019-08-11 21:36:01');
-INSERT INTO jms_condition VALUES(50, 50, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '1000', '3', 'time', '1', 0, '2019-08-11 21:36:01', '2019-08-12 00:12:19');
+INSERT INTO jms_condition VALUES(50, 50, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '1000', '3', 'time', '1', 0, '2019-08-11 21:36:01', '2019-08-13 00:09:24');
 INSERT INTO jms_condition VALUES(51, 51, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '10000', '2', 'time', '4', 0, '2019-08-11 21:36:01', '2019-08-11 21:36:01');
 INSERT INTO jms_condition VALUES(52, 52, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '100000', '2', 'time', '8', 0, '2019-08-11 21:36:01', '2019-08-11 21:36:01');
 INSERT INTO jms_condition VALUES(53, 53, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '1', '0', 'hook', 'actionObjectOrderAddAfter', 0, '2019-08-11 21:36:01', '2019-08-11 21:36:01');
 INSERT INTO jms_condition VALUES(54, 54, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '10', '0', 'hook', 'actionObjectOrderAddAfter', 0, '2019-08-11 21:36:01', '2019-08-11 21:36:01');
 INSERT INTO jms_condition VALUES(55, 55, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '100', '0', 'hook', 'actionObjectOrderAddAfter', 0, '2019-08-11 21:36:01', '2019-08-11 21:36:01');
-INSERT INTO jms_condition VALUES(56, 56, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '1000', '0', 'time', '2', 0, '2019-08-11 21:36:01', '2019-08-11 21:36:01');
+INSERT INTO jms_condition VALUES(56, 56, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '1000', '0', 'time', '2', 0, '2019-08-11 21:36:01', '2019-08-12 21:37:20');
 INSERT INTO jms_condition VALUES(57, 57, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '10000', '0', 'time', '4', 0, '2019-08-11 21:36:01', '2019-08-11 21:36:01');
 INSERT INTO jms_condition VALUES(58, 58, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '100000', '0', 'time', '8', 0, '2019-08-11 21:36:01', '2019-08-11 21:36:01');
 INSERT INTO jms_condition VALUES(59, 59, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '1', '1', 'hook', 'actionObjectCustomerAddAfter', 1, '2019-08-11 21:36:01', '2019-08-11 21:36:01');
 INSERT INTO jms_condition VALUES(60, 60, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '10', '1', 'hook', 'actionObjectCustomerAddAfter', 0, '2019-08-11 21:36:01', '2019-08-11 21:36:01');
 INSERT INTO jms_condition VALUES(61, 61, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '100', '1', 'hook', 'actionObjectCustomerAddAfter', 0, '2019-08-11 21:36:01', '2019-08-11 21:36:01');
-INSERT INTO jms_condition VALUES(62, 62, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '1000', '1', 'time', '1', 0, '2019-08-11 21:36:01', '2019-08-12 00:12:19');
-INSERT INTO jms_condition VALUES(63, 63, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '10000', '1', 'time', '2', 0, '2019-08-11 21:36:01', '2019-08-11 21:36:01');
+INSERT INTO jms_condition VALUES(62, 62, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '1000', '1', 'time', '1', 0, '2019-08-11 21:36:01', '2019-08-13 00:09:24');
+INSERT INTO jms_condition VALUES(63, 63, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '10000', '1', 'time', '2', 0, '2019-08-11 21:36:01', '2019-08-12 21:37:20');
 INSERT INTO jms_condition VALUES(64, 64, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '100000', '1', 'time', '4', 0, '2019-08-11 21:36:01', '2019-08-11 21:36:01');
 INSERT INTO jms_condition VALUES(65, 65, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '1', '', 'hook', 'actionObjectCustomerThreadAddAfter', 0, '2019-08-11 21:36:01', '2019-08-11 21:36:01');
 INSERT INTO jms_condition VALUES(66, 66, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '10', '', 'hook', 'actionObjectCustomerThreadAddAfter', 0, '2019-08-11 21:36:01', '2019-08-11 21:36:01');
 INSERT INTO jms_condition VALUES(67, 67, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '100', '', 'hook', 'actionObjectCustomerThreadAddAfter', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
-INSERT INTO jms_condition VALUES(68, 68, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '1000', '0', 'time', '2', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
+INSERT INTO jms_condition VALUES(68, 68, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '1000', '0', 'time', '2', 0, '2019-08-11 21:36:02', '2019-08-12 21:37:20');
 INSERT INTO jms_condition VALUES(69, 69, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '10000', '0', 'time', '4', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
 INSERT INTO jms_condition VALUES(70, 70, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '100000', '0', 'time', '8', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
 INSERT INTO jms_condition VALUES(71, 76, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"CA\",\r\n\"GL\",\r\n\"PM\",\r\n\"US\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
@@ -4901,7 +4901,7 @@ INSERT INTO jms_condition VALUES(83, 95, 'sql', 'SELECT COUNT(*) FROM PREFIX_emp
 INSERT INTO jms_condition VALUES(84, 96, 'sql', 'SELECT id_image FROM PREFIX_image WHERE id_image > 26', '>', '0', '27', 'hook', 'actionObjectImageAddAfter', 1, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
 INSERT INTO jms_condition VALUES(85, 97, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '50', '50', 'hook', 'actionObjectImageAddAfter', 1, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
 INSERT INTO jms_condition VALUES(86, 98, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '100', '100', 'hook', 'actionObjectImageAddAfter', 1, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
-INSERT INTO jms_condition VALUES(87, 99, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '1000', '196', 'time', '2', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
+INSERT INTO jms_condition VALUES(87, 99, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '1000', '196', 'time', '2', 0, '2019-08-11 21:36:02', '2019-08-12 21:37:20');
 INSERT INTO jms_condition VALUES(88, 100, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '10000', '196', 'time', '4', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
 INSERT INTO jms_condition VALUES(89, 101, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '50000', '112', 'time', '8', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
 INSERT INTO jms_condition VALUES(90, 102, 'sql', 'SELECT id_cms FROM PREFIX_cms WHERE id_cms > 5', '>', '0', '', 'hook', 'actionObjectCMSAddAfter', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
@@ -4934,128 +4934,128 @@ INSERT INTO jms_condition VALUES(116, 172, 'sql', 'SELECT COUNT(*) FROM PREFIX_w
 INSERT INTO jms_condition VALUES(117, 173, 'sql', 'SELECT COUNT(*) FROM PREFIX_webservice_account', '>=', '3', '', 'hook', 'actionAdminWebserviceControllerSaveAfter', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
 INSERT INTO jms_condition VALUES(118, 174, 'sql', 'SELECT COUNT(*) FROM PREFIX_webservice_account', '>=', '4', '', 'hook', 'actionAdminWebserviceControllerSaveAfter', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
 INSERT INTO jms_condition VALUES(119, 175, 'sql', 'SELECT count(*) FROM	 PREFIX_configuration WHERE name = \'PS_HOSTED_MODE\'', '==', '0', '', 'time', '1', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
-INSERT INTO jms_condition VALUES(120, 209, 'configuration', 'EBAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-08-11 21:36:02', '2019-08-12 00:12:19');
+INSERT INTO jms_condition VALUES(120, 209, 'configuration', 'EBAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-08-11 21:36:02', '2019-08-13 00:09:24');
 INSERT INTO jms_condition VALUES(121, 320, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%shopgate%\" ', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
-INSERT INTO jms_condition VALUES(122, 322, 'configuration', 'SHOPGATE_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-08-11 21:36:02', '2019-08-12 00:12:19');
+INSERT INTO jms_condition VALUES(122, 322, 'configuration', 'SHOPGATE_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-08-11 21:36:02', '2019-08-13 00:09:24');
 INSERT INTO jms_condition VALUES(123, 323, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%shoppingfluxexport%\" ', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
 INSERT INTO jms_condition VALUES(124, 324, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%shoppingfluxexport%\" ', '==', '0', '', 'time', '1', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
-INSERT INTO jms_condition VALUES(125, 325, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE name LIKE \'SHOPPINGFLUXEXPORT_CONFIGURATION_OK\' OR name LIKE \'SHOPPINGFLUXEXPORT_CONFIGURED\'', '>=', '1', '0', 'time', '1', 0, '2019-08-11 21:36:02', '2019-08-12 00:12:19');
-INSERT INTO jms_condition VALUES(126, 326, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'MONEYBOOKERS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'MB_PAY_TO_EMAIL \') AND ( value != \'testaccount2@moneybookers.com \'))', '==', '2', '0', 'time', '1', 0, '2019-08-11 21:36:02', '2019-08-12 00:12:19');
-INSERT INTO jms_condition VALUES(127, 358, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ebay%\" AND os.logable = 1', '>=', '1', '0', 'time', '1', 0, '2019-08-11 21:36:02', '2019-08-12 00:12:19');
-INSERT INTO jms_condition VALUES(128, 359, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ebay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2019-08-11 21:36:02', '2019-08-12 00:12:19');
-INSERT INTO jms_condition VALUES(129, 375, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%shopgate%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '1', '0', 'time', '1', 0, '2019-08-11 21:36:02', '2019-08-12 00:12:19');
-INSERT INTO jms_condition VALUES(130, 376, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%shopgate%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2019-08-11 21:36:02', '2019-08-12 00:12:19');
-INSERT INTO jms_condition VALUES(131, 377, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%moneybookers%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '1', '0', 'time', '1', 0, '2019-08-11 21:36:02', '2019-08-12 00:12:19');
-INSERT INTO jms_condition VALUES(132, 394, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%sofortbanking%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2019-08-11 21:36:02', '2019-08-12 00:12:19');
+INSERT INTO jms_condition VALUES(125, 325, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE name LIKE \'SHOPPINGFLUXEXPORT_CONFIGURATION_OK\' OR name LIKE \'SHOPPINGFLUXEXPORT_CONFIGURED\'', '>=', '1', '0', 'time', '1', 0, '2019-08-11 21:36:02', '2019-08-13 00:09:24');
+INSERT INTO jms_condition VALUES(126, 326, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'MONEYBOOKERS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'MB_PAY_TO_EMAIL \') AND ( value != \'testaccount2@moneybookers.com \'))', '==', '2', '0', 'time', '1', 0, '2019-08-11 21:36:02', '2019-08-13 00:09:24');
+INSERT INTO jms_condition VALUES(127, 358, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ebay%\" AND os.logable = 1', '>=', '1', '0', 'time', '1', 0, '2019-08-11 21:36:02', '2019-08-13 00:09:24');
+INSERT INTO jms_condition VALUES(128, 359, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ebay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2019-08-11 21:36:02', '2019-08-13 00:09:24');
+INSERT INTO jms_condition VALUES(129, 375, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%shopgate%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '1', '0', 'time', '1', 0, '2019-08-11 21:36:02', '2019-08-13 00:09:24');
+INSERT INTO jms_condition VALUES(130, 376, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%shopgate%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2019-08-11 21:36:02', '2019-08-13 00:09:24');
+INSERT INTO jms_condition VALUES(131, 377, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%moneybookers%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '1', '0', 'time', '1', 0, '2019-08-11 21:36:02', '2019-08-13 00:09:24');
+INSERT INTO jms_condition VALUES(132, 394, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%sofortbanking%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2019-08-11 21:36:02', '2019-08-13 00:09:24');
 INSERT INTO jms_condition VALUES(133, 399, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '499', '', 'hook', 'actionObjectProductAddAfter', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
 INSERT INTO jms_condition VALUES(134, 424, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%alliance3%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
-INSERT INTO jms_condition VALUES(135, 425, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ALLIANCE3_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'ALLIANCE_DEMO\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2019-08-11 21:36:02', '2019-08-12 00:12:19');
-INSERT INTO jms_condition VALUES(136, 426, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%alliance3%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
+INSERT INTO jms_condition VALUES(135, 425, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ALLIANCE3_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'ALLIANCE_DEMO\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2019-08-11 21:36:02', '2019-08-13 00:09:24');
+INSERT INTO jms_condition VALUES(136, 426, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%alliance3%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-08-11 21:36:02', '2019-08-12 21:37:20');
 INSERT INTO jms_condition VALUES(137, 427, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%alliance3%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
 INSERT INTO jms_condition VALUES(138, 428, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%authorizeaim%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
-INSERT INTO jms_condition VALUES(139, 429, 'configuration', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'AUTHORIZEAIM_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'AUTHORIZE_AIM_SANDBOX\') AND ( value = \'0\'))', '==', '2', '', 'time', '2', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
-INSERT INTO jms_condition VALUES(140, 430, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%authorizeaim%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
+INSERT INTO jms_condition VALUES(139, 429, 'configuration', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'AUTHORIZEAIM_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'AUTHORIZE_AIM_SANDBOX\') AND ( value = \'0\'))', '==', '2', '', 'time', '2', 0, '2019-08-11 21:36:02', '2019-08-12 21:37:20');
+INSERT INTO jms_condition VALUES(140, 430, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%authorizeaim%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-08-11 21:36:02', '2019-08-12 21:37:20');
 INSERT INTO jms_condition VALUES(141, 431, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%authorizeaim%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
 INSERT INTO jms_condition VALUES(142, 434, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%bluepay%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
-INSERT INTO jms_condition VALUES(143, 435, 'configuration', 'BLUEPAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-08-11 21:36:02', '2019-08-12 00:12:19');
-INSERT INTO jms_condition VALUES(144, 436, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluepay%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
+INSERT INTO jms_condition VALUES(143, 435, 'configuration', 'BLUEPAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-08-11 21:36:02', '2019-08-13 00:09:24');
+INSERT INTO jms_condition VALUES(144, 436, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluepay%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-08-11 21:36:02', '2019-08-12 21:37:20');
 INSERT INTO jms_condition VALUES(145, 437, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluepay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
 INSERT INTO jms_condition VALUES(146, 438, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%payplug%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
-INSERT INTO jms_condition VALUES(147, 439, 'configuration', 'PAYPLUG_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-08-11 21:36:02', '2019-08-12 00:12:19');
-INSERT INTO jms_condition VALUES(148, 440, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payplug%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
+INSERT INTO jms_condition VALUES(147, 439, 'configuration', 'PAYPLUG_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-08-11 21:36:02', '2019-08-13 00:09:24');
+INSERT INTO jms_condition VALUES(148, 440, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payplug%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-08-11 21:36:02', '2019-08-12 21:37:20');
 INSERT INTO jms_condition VALUES(149, 441, 'sql', 'SELECT SUM(o.total_paid) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payplug%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '10000', '0', 'time', '7', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
 INSERT INTO jms_condition VALUES(150, 442, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%affinityitems%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
-INSERT INTO jms_condition VALUES(151, 443, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE name LIKE \'AFFINITYITEMS_CONFIGURATION_OK\' AND value = \'1\'', '==', '1', '0', 'time', '1', 0, '2019-08-11 21:36:02', '2019-08-12 00:12:19');
+INSERT INTO jms_condition VALUES(151, 443, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE name LIKE \'AFFINITYITEMS_CONFIGURATION_OK\' AND value = \'1\'', '==', '1', '0', 'time', '1', 0, '2019-08-11 21:36:02', '2019-08-13 00:09:24');
 INSERT INTO jms_condition VALUES(152, 446, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%dpdpoland%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
-INSERT INTO jms_condition VALUES(153, 447, 'configuration', 'DPDPOLAND_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-08-11 21:36:02', '2019-08-12 00:12:19');
-INSERT INTO jms_condition VALUES(154, 448, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%dpdpoland%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
+INSERT INTO jms_condition VALUES(153, 447, 'configuration', 'DPDPOLAND_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-08-11 21:36:02', '2019-08-13 00:09:24');
+INSERT INTO jms_condition VALUES(154, 448, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%dpdpoland%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-08-11 21:36:02', '2019-08-12 21:37:20');
 INSERT INTO jms_condition VALUES(155, 449, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%dpdpoland%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '100', '0', 'time', '7', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
 INSERT INTO jms_condition VALUES(156, 450, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%envoimoinscher%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
-INSERT INTO jms_condition VALUES(157, 451, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ENVOIMOINSCHER_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'EMC_ENV \') AND ( value != \'TEST\'))', '==', '2', '0', 'time', '1', 0, '2019-08-11 21:36:02', '2019-08-12 00:12:19');
-INSERT INTO jms_condition VALUES(158, 452, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%envoimoinscher%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
+INSERT INTO jms_condition VALUES(157, 451, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ENVOIMOINSCHER_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'EMC_ENV \') AND ( value != \'TEST\'))', '==', '2', '0', 'time', '1', 0, '2019-08-11 21:36:02', '2019-08-13 00:09:24');
+INSERT INTO jms_condition VALUES(158, 452, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%envoimoinscher%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-08-11 21:36:02', '2019-08-12 21:37:20');
 INSERT INTO jms_condition VALUES(159, 453, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%envoimoinscher%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '100', '0', 'time', '7', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
 INSERT INTO jms_condition VALUES(160, 454, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%klikandpay%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
-INSERT INTO jms_condition VALUES(161, 455, 'configuration', 'KLIKANDPAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-08-11 21:36:02', '2019-08-12 00:12:19');
-INSERT INTO jms_condition VALUES(162, 456, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%klikandpay%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
+INSERT INTO jms_condition VALUES(161, 455, 'configuration', 'KLIKANDPAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-08-11 21:36:02', '2019-08-13 00:09:24');
+INSERT INTO jms_condition VALUES(162, 456, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%klikandpay%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-08-11 21:36:02', '2019-08-12 21:37:20');
 INSERT INTO jms_condition VALUES(163, 457, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%klikandpay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
 INSERT INTO jms_condition VALUES(164, 458, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%clickline%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
-INSERT INTO jms_condition VALUES(165, 459, 'configuration', 'CLICKLINE_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-08-11 21:36:02', '2019-08-12 00:12:19');
-INSERT INTO jms_condition VALUES(166, 460, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%clickline%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
+INSERT INTO jms_condition VALUES(165, 459, 'configuration', 'CLICKLINE_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-08-11 21:36:02', '2019-08-13 00:09:24');
+INSERT INTO jms_condition VALUES(166, 460, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%clickline%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-08-11 21:36:02', '2019-08-12 21:37:20');
 INSERT INTO jms_condition VALUES(167, 461, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%clickline%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '100', '0', 'time', '7', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
 INSERT INTO jms_condition VALUES(168, 462, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%cdiscount%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
 INSERT INTO jms_condition VALUES(169, 463, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
-INSERT INTO jms_condition VALUES(170, 464, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%cdiscount%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
+INSERT INTO jms_condition VALUES(170, 464, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%cdiscount%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-08-11 21:36:02', '2019-08-12 21:37:20');
 INSERT INTO jms_condition VALUES(171, 465, 'sql', 'SELECT SUM(o.total_paid) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%cdiscount%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 365 DAY)', '>=', '500', '0', 'time', '7', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
 INSERT INTO jms_condition VALUES(172, 467, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%erpillicopresta%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
-INSERT INTO jms_condition VALUES(173, 468, 'configuration', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ERPILLICOPRESTA_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'ERP_LICENCE_VALIDITY \') AND ( value == \'1\')) OR (( name LIKE \'ERP_MONTH_FREE_ACTIVE \') AND ( value == \'0\'))', '==', '3', '', 'time', '1', 0, '2019-08-11 21:36:02', '2019-08-12 00:12:19');
+INSERT INTO jms_condition VALUES(173, 468, 'configuration', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ERPILLICOPRESTA_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'ERP_LICENCE_VALIDITY \') AND ( value == \'1\')) OR (( name LIKE \'ERP_MONTH_FREE_ACTIVE \') AND ( value == \'0\'))', '==', '3', '', 'time', '1', 0, '2019-08-11 21:36:02', '2019-08-13 00:09:24');
 INSERT INTO jms_condition VALUES(174, 469, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
 INSERT INTO jms_condition VALUES(175, 470, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
 INSERT INTO jms_condition VALUES(176, 471, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%netreviews%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
-INSERT INTO jms_condition VALUES(177, 472, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'NETREVIEWS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'AVISVERIFIES_URLCERTIFICAT \') AND ( value IS NOT LIKE \'%preprod%\'))', '==', '2', '0', 'time', '1', 0, '2019-08-11 21:36:02', '2019-08-12 00:12:19');
+INSERT INTO jms_condition VALUES(177, 472, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'NETREVIEWS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'AVISVERIFIES_URLCERTIFICAT \') AND ( value IS NOT LIKE \'%preprod%\'))', '==', '2', '0', 'time', '1', 0, '2019-08-11 21:36:02', '2019-08-13 00:09:24');
 INSERT INTO jms_condition VALUES(178, 473, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
 INSERT INTO jms_condition VALUES(179, 474, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
 INSERT INTO jms_condition VALUES(180, 475, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%bluesnap%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
-INSERT INTO jms_condition VALUES(181, 476, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'BLUESNAP_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'BLUESNAP_SANDBOX \') AND ( value NOT LIKE \'%sandbox%\'))', '==', '2', '0', 'time', '1', 0, '2019-08-11 21:36:02', '2019-08-12 00:12:19');
-INSERT INTO jms_condition VALUES(182, 477, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluesnap%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
+INSERT INTO jms_condition VALUES(181, 476, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'BLUESNAP_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'BLUESNAP_SANDBOX \') AND ( value NOT LIKE \'%sandbox%\'))', '==', '2', '0', 'time', '1', 0, '2019-08-11 21:36:02', '2019-08-13 00:09:24');
+INSERT INTO jms_condition VALUES(182, 477, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluesnap%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-08-11 21:36:02', '2019-08-12 21:37:20');
 INSERT INTO jms_condition VALUES(183, 478, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluesnap%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
 INSERT INTO jms_condition VALUES(184, 479, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%desjardins%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
-INSERT INTO jms_condition VALUES(185, 480, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'DESJARDINS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'DESJARDINS_MODE \') AND ( value NOT LIKE \'%test%\'))', '==', '2', '0', 'time', '1', 0, '2019-08-11 21:36:02', '2019-08-12 00:12:19');
-INSERT INTO jms_condition VALUES(186, 481, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%desjardins%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
+INSERT INTO jms_condition VALUES(185, 480, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'DESJARDINS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'DESJARDINS_MODE \') AND ( value NOT LIKE \'%test%\'))', '==', '2', '0', 'time', '1', 0, '2019-08-11 21:36:02', '2019-08-13 00:09:24');
+INSERT INTO jms_condition VALUES(186, 481, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%desjardins%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-08-11 21:36:02', '2019-08-12 21:37:20');
 INSERT INTO jms_condition VALUES(187, 482, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%desjardins%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
 INSERT INTO jms_condition VALUES(188, 483, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%firstdata%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-08-11 21:36:02', '2019-08-11 21:36:02');
-INSERT INTO jms_condition VALUES(189, 484, 'configuration', 'FIRSTDATA_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-08-11 21:36:03', '2019-08-12 00:12:19');
-INSERT INTO jms_condition VALUES(190, 485, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%firstdata%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-08-11 21:36:03', '2019-08-11 21:36:03');
+INSERT INTO jms_condition VALUES(189, 484, 'configuration', 'FIRSTDATA_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-08-11 21:36:03', '2019-08-13 00:09:24');
+INSERT INTO jms_condition VALUES(190, 485, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%firstdata%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-08-11 21:36:03', '2019-08-12 21:37:20');
 INSERT INTO jms_condition VALUES(191, 486, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%firstdata%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-08-11 21:36:03', '2019-08-11 21:36:03');
 INSERT INTO jms_condition VALUES(192, 487, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%giveit%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-08-11 21:36:03', '2019-08-11 21:36:03');
-INSERT INTO jms_condition VALUES(193, 488, 'sql', 'GIVEIT_CONFIGURATION_OK', '>=', '1', '0', 'time', '1', 0, '2019-08-11 21:36:03', '2019-08-12 00:12:19');
+INSERT INTO jms_condition VALUES(193, 488, 'sql', 'GIVEIT_CONFIGURATION_OK', '>=', '1', '0', 'time', '1', 0, '2019-08-11 21:36:03', '2019-08-13 00:09:24');
 INSERT INTO jms_condition VALUES(194, 489, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-08-11 21:36:03', '2019-08-11 21:36:03');
 INSERT INTO jms_condition VALUES(195, 490, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-08-11 21:36:03', '2019-08-11 21:36:03');
 INSERT INTO jms_condition VALUES(196, 491, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%ganalytics%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-08-11 21:36:03', '2019-08-11 21:36:03');
-INSERT INTO jms_condition VALUES(197, 492, 'configuration', 'GANALYTICS_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-08-11 21:36:03', '2019-08-12 00:12:19');
-INSERT INTO jms_condition VALUES(198, 493, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '1', 0, '2019-08-11 21:36:03', '2019-08-12 00:12:19');
+INSERT INTO jms_condition VALUES(197, 492, 'configuration', 'GANALYTICS_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-08-11 21:36:03', '2019-08-13 00:09:24');
+INSERT INTO jms_condition VALUES(198, 493, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '1', 0, '2019-08-11 21:36:03', '2019-08-13 00:09:24');
 INSERT INTO jms_condition VALUES(199, 494, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-08-11 21:36:03', '2019-08-11 21:36:03');
 INSERT INTO jms_condition VALUES(200, 496, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%pagseguro%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-08-11 21:36:03', '2019-08-11 21:36:03');
-INSERT INTO jms_condition VALUES(201, 497, 'configuration', 'PAGSEGURO_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-08-11 21:36:03', '2019-08-12 00:12:19');
-INSERT INTO jms_condition VALUES(202, 498, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%pagseguro%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-08-11 21:36:03', '2019-08-11 21:36:03');
+INSERT INTO jms_condition VALUES(201, 497, 'configuration', 'PAGSEGURO_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-08-11 21:36:03', '2019-08-13 00:09:24');
+INSERT INTO jms_condition VALUES(202, 498, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%pagseguro%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-08-11 21:36:03', '2019-08-12 21:37:20');
 INSERT INTO jms_condition VALUES(203, 499, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%pagseguro%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-08-11 21:36:03', '2019-08-11 21:36:03');
 INSERT INTO jms_condition VALUES(204, 500, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypalmx%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-08-11 21:36:03', '2019-08-11 21:36:03');
-INSERT INTO jms_condition VALUES(205, 501, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPALMX_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_MX_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2019-08-11 21:36:03', '2019-08-12 00:12:19');
-INSERT INTO jms_condition VALUES(206, 502, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-08-11 21:36:03', '2019-08-11 21:36:03');
+INSERT INTO jms_condition VALUES(205, 501, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPALMX_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_MX_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2019-08-11 21:36:03', '2019-08-13 00:09:24');
+INSERT INTO jms_condition VALUES(206, 502, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-08-11 21:36:03', '2019-08-12 21:37:20');
 INSERT INTO jms_condition VALUES(207, 503, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-08-11 21:36:03', '2019-08-11 21:36:03');
 INSERT INTO jms_condition VALUES(208, 505, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypalusa%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-08-11 21:36:03', '2019-08-11 21:36:03');
-INSERT INTO jms_condition VALUES(209, 506, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPALUSA_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_USA_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2019-08-11 21:36:03', '2019-08-12 00:12:19');
-INSERT INTO jms_condition VALUES(210, 507, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalusa%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-08-11 21:36:03', '2019-08-11 21:36:03');
+INSERT INTO jms_condition VALUES(209, 506, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPALUSA_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_USA_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2019-08-11 21:36:03', '2019-08-13 00:09:24');
+INSERT INTO jms_condition VALUES(210, 507, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalusa%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-08-11 21:36:03', '2019-08-12 21:37:20');
 INSERT INTO jms_condition VALUES(211, 508, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-08-11 21:36:03', '2019-08-11 21:36:03');
 INSERT INTO jms_condition VALUES(212, 509, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%payulatam%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-08-11 21:36:03', '2019-08-11 21:36:03');
-INSERT INTO jms_condition VALUES(213, 510, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYULATAM_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYU_LATAM_TEST\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2019-08-11 21:36:03', '2019-08-12 00:12:19');
-INSERT INTO jms_condition VALUES(214, 511, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payulatam%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-08-11 21:36:03', '2019-08-11 21:36:03');
+INSERT INTO jms_condition VALUES(213, 510, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYULATAM_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYU_LATAM_TEST\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2019-08-11 21:36:03', '2019-08-13 00:09:24');
+INSERT INTO jms_condition VALUES(214, 511, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payulatam%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-08-11 21:36:03', '2019-08-12 21:37:20');
 INSERT INTO jms_condition VALUES(215, 512, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payulatam%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-08-11 21:36:03', '2019-08-11 21:36:03');
 INSERT INTO jms_condition VALUES(216, 513, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%prestastats%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-08-11 21:36:03', '2019-08-11 21:36:03');
-INSERT INTO jms_condition VALUES(217, 514, 'configuration', 'PRESTASTATS_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-08-11 21:36:03', '2019-08-12 00:12:19');
+INSERT INTO jms_condition VALUES(217, 514, 'configuration', 'PRESTASTATS_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-08-11 21:36:03', '2019-08-13 00:09:24');
 INSERT INTO jms_condition VALUES(218, 515, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-08-11 21:36:03', '2019-08-11 21:36:03');
 INSERT INTO jms_condition VALUES(219, 516, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-08-11 21:36:03', '2019-08-11 21:36:03');
 INSERT INTO jms_condition VALUES(220, 517, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%riskified%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-08-11 21:36:03', '2019-08-11 21:36:03');
-INSERT INTO jms_condition VALUES(221, 518, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'RISKIFIED_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'RISKIFIED_MODE\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2019-08-11 21:36:03', '2019-08-12 00:12:19');
-INSERT INTO jms_condition VALUES(222, 519, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%riskified%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-08-11 21:36:03', '2019-08-11 21:36:03');
+INSERT INTO jms_condition VALUES(221, 518, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'RISKIFIED_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'RISKIFIED_MODE\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2019-08-11 21:36:03', '2019-08-13 00:09:24');
+INSERT INTO jms_condition VALUES(222, 519, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%riskified%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-08-11 21:36:03', '2019-08-12 21:37:20');
 INSERT INTO jms_condition VALUES(223, 520, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%riskified%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-08-11 21:36:03', '2019-08-11 21:36:03');
 INSERT INTO jms_condition VALUES(224, 521, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%simplifycommerce%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-08-11 21:36:03', '2019-08-11 21:36:03');
-INSERT INTO jms_condition VALUES(225, 522, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'SIMPLIFY_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'SIMPLIFY_MODE\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2019-08-11 21:36:03', '2019-08-12 00:12:19');
-INSERT INTO jms_condition VALUES(226, 523, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%simplifycommerce%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-08-11 21:36:03', '2019-08-11 21:36:03');
+INSERT INTO jms_condition VALUES(225, 522, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'SIMPLIFY_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'SIMPLIFY_MODE\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2019-08-11 21:36:03', '2019-08-13 00:09:24');
+INSERT INTO jms_condition VALUES(226, 523, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%simplifycommerce%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-08-11 21:36:03', '2019-08-12 21:37:20');
 INSERT INTO jms_condition VALUES(227, 524, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%simplifycommerce%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-08-11 21:36:03', '2019-08-11 21:36:03');
 INSERT INTO jms_condition VALUES(228, 525, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%vtpayment%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-08-11 21:36:03', '2019-08-11 21:36:03');
-INSERT INTO jms_condition VALUES(229, 526, 'configuration', 'VTPAYMENT_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-08-11 21:36:03', '2019-08-12 00:12:19');
-INSERT INTO jms_condition VALUES(230, 527, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%vtpayment%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-08-11 21:36:03', '2019-08-11 21:36:03');
+INSERT INTO jms_condition VALUES(229, 526, 'configuration', 'VTPAYMENT_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-08-11 21:36:03', '2019-08-13 00:09:24');
+INSERT INTO jms_condition VALUES(230, 527, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%vtpayment%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-08-11 21:36:03', '2019-08-12 21:37:20');
 INSERT INTO jms_condition VALUES(231, 528, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%vtpayment%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-08-11 21:36:03', '2019-08-11 21:36:03');
 INSERT INTO jms_condition VALUES(232, 529, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%yotpo%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-08-11 21:36:03', '2019-08-11 21:36:03');
-INSERT INTO jms_condition VALUES(233, 530, 'configuration', 'YOTPO_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-08-11 21:36:03', '2019-08-12 00:12:19');
+INSERT INTO jms_condition VALUES(233, 530, 'configuration', 'YOTPO_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-08-11 21:36:03', '2019-08-13 00:09:24');
 INSERT INTO jms_condition VALUES(234, 531, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-08-11 21:36:03', '2019-08-11 21:36:03');
 INSERT INTO jms_condition VALUES(235, 532, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-08-11 21:36:03', '2019-08-11 21:36:03');
 INSERT INTO jms_condition VALUES(236, 533, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%yotpo%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-08-11 21:36:03', '2019-08-11 21:36:03');
-INSERT INTO jms_condition VALUES(237, 534, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'YOUSTICERESOLUTIONSYSTEM_CONF_OK\') AND ( value = \'1\')) OR (( name LIKE \'YRS_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2019-08-11 21:36:03', '2019-08-12 00:12:19');
+INSERT INTO jms_condition VALUES(237, 534, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'YOUSTICERESOLUTIONSYSTEM_CONF_OK\') AND ( value = \'1\')) OR (( name LIKE \'YRS_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2019-08-11 21:36:03', '2019-08-13 00:09:24');
 INSERT INTO jms_condition VALUES(238, 535, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-08-11 21:36:03', '2019-08-11 21:36:03');
 INSERT INTO jms_condition VALUES(239, 536, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-08-11 21:36:03', '2019-08-11 21:36:03');
 INSERT INTO jms_condition VALUES(240, 537, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%loyaltylion%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-08-11 21:36:03', '2019-08-11 21:36:03');
-INSERT INTO jms_condition VALUES(241, 538, 'configuration', 'LOYALTYLION_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-08-11 21:36:03', '2019-08-12 00:12:19');
+INSERT INTO jms_condition VALUES(241, 538, 'configuration', 'LOYALTYLION_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-08-11 21:36:03', '2019-08-13 00:09:24');
 INSERT INTO jms_condition VALUES(242, 539, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-08-11 21:36:03', '2019-08-11 21:36:03');
 INSERT INTO jms_condition VALUES(243, 540, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-08-11 21:36:03', '2019-08-11 21:36:03');
 INSERT INTO jms_condition VALUES(244, 542, 'sql', 'SELECT \'{config} PS_VERSION_DB{/config}\' >= \'1.7.0.0\' AND < \'1.8.0.0\'', '==', '1', '', 'time', '1', 0, '2019-08-11 21:36:03', '2019-08-11 21:36:03');
@@ -6300,6 +6300,17 @@ INSERT INTO jms_connections VALUES(55, 1, 1, 13, 1, 0, '2019-08-11 21:35:50', ''
 INSERT INTO jms_connections VALUES(56, 1, 1, 13, 4, 0, '2019-08-12 04:38:54', '');
 INSERT INTO jms_connections VALUES(57, 1, 1, 13, 4, 0, '2019-08-12 05:15:44', '');
 INSERT INTO jms_connections VALUES(58, 1, 1, 13, 4, 0, '2019-08-12 06:01:07', '');
+INSERT INTO jms_connections VALUES(59, 1, 1, 13, 1, 0, '2019-08-12 21:37:24', '');
+INSERT INTO jms_connections VALUES(60, 1, 1, 13, 4, 0, '2019-08-12 22:21:25', '');
+INSERT INTO jms_connections VALUES(61, 1, 1, 13, 4, 0, '2019-08-12 23:02:58', '');
+INSERT INTO jms_connections VALUES(62, 1, 1, 13, 4, 0, '2019-08-12 23:43:16', '');
+INSERT INTO jms_connections VALUES(63, 1, 1, 13, 4, 0, '2019-08-13 00:16:06', '');
+INSERT INTO jms_connections VALUES(64, 1, 1, 13, 4, 0, '2019-08-13 00:50:28', '');
+INSERT INTO jms_connections VALUES(65, 1, 1, 13, 4, 0, '2019-08-13 02:41:23', '');
+INSERT INTO jms_connections VALUES(66, 1, 1, 13, 4, 0, '2019-08-13 03:14:57', '');
+INSERT INTO jms_connections VALUES(67, 1, 1, 13, 5, 0, '2019-08-13 04:28:06', '');
+INSERT INTO jms_connections VALUES(68, 1, 1, 13, 5, 0, '2019-08-13 05:00:34', '');
+INSERT INTO jms_connections VALUES(69, 1, 1, 13, 5, 0, '2019-08-13 05:37:27', '');
 
 -- --------------------------------------------------------
 
@@ -8508,7 +8519,7 @@ CREATE TABLE jms_employee (
 -- Đang đổ dữ liệu cho bảng jms_employee
 --
 
-INSERT INTO jms_employee VALUES(1, 1, 1, 'Huy', 'Mr', 'admin@admin.com', '$2y$10$aJRmEKZrF2eR0s2BQ.PpK.nfYyxPoojM.LGk6KDhYPW20d2Btygha', '2019-07-23 22:53:02', '2019-06-24', '2019-07-24', '0000-00-00', '0000-00-00', 1, NULL, NULL, 'default', 'theme.css', 1, 0, 1, 1, 1, 6, 0, 2, '2019-08-12', NULL, '0000-00-00 00:00:00');
+INSERT INTO jms_employee VALUES(1, 1, 1, 'Huy', 'Mr', 'admin@admin.com', '$2y$10$aJRmEKZrF2eR0s2BQ.PpK.nfYyxPoojM.LGk6KDhYPW20d2Btygha', '2019-07-23 22:53:02', '2019-06-24', '2019-07-24', '0000-00-00', '0000-00-00', 1, NULL, NULL, 'default', 'theme.css', 1, 0, 1, 1, 1, 6, 0, 2, '2019-08-13', NULL, '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -9612,6 +9623,7 @@ INSERT INTO jms_hook_module VALUES(24, 1, 433, 1);
 INSERT INTO jms_hook_module VALUES(24, 1, 434, 1);
 INSERT INTO jms_hook_module VALUES(24, 1, 435, 1);
 INSERT INTO jms_hook_module VALUES(24, 1, 436, 1);
+INSERT INTO jms_hook_module VALUES(25, 1, 7, 1);
 INSERT INTO jms_hook_module VALUES(25, 1, 12, 1);
 INSERT INTO jms_hook_module VALUES(25, 1, 437, 1);
 INSERT INTO jms_hook_module VALUES(26, 1, 52, 1);
@@ -9664,7 +9676,6 @@ INSERT INTO jms_hook_module VALUES(70, 1, 444, 1);
 INSERT INTO jms_hook_module VALUES(74, 1, 13, 1);
 INSERT INTO jms_hook_module VALUES(74, 1, 21, 1);
 INSERT INTO jms_hook_module VALUES(74, 1, 35, 1);
-INSERT INTO jms_hook_module VALUES(75, 1, 7, 1);
 INSERT INTO jms_hook_module VALUES(75, 1, 8, 1);
 INSERT INTO jms_hook_module VALUES(75, 1, 9, 1);
 INSERT INTO jms_hook_module VALUES(76, 1, 15, 1);
@@ -9677,6 +9688,7 @@ INSERT INTO jms_hook_module VALUES(3, 1, 396, 2);
 INSERT INTO jms_hook_module VALUES(3, 1, 402, 2);
 INSERT INTO jms_hook_module VALUES(4, 1, 403, 2);
 INSERT INTO jms_hook_module VALUES(5, 1, 397, 2);
+INSERT INTO jms_hook_module VALUES(10, 1, 7, 2);
 INSERT INTO jms_hook_module VALUES(10, 1, 12, 2);
 INSERT INTO jms_hook_module VALUES(13, 1, 440, 2);
 INSERT INTO jms_hook_module VALUES(17, 1, 394, 2);
@@ -9704,7 +9716,6 @@ INSERT INTO jms_hook_module VALUES(69, 1, 124, 2);
 INSERT INTO jms_hook_module VALUES(69, 1, 442, 2);
 INSERT INTO jms_hook_module VALUES(75, 1, 13, 2);
 INSERT INTO jms_hook_module VALUES(75, 1, 20, 2);
-INSERT INTO jms_hook_module VALUES(76, 1, 7, 2);
 INSERT INTO jms_hook_module VALUES(76, 1, 21, 2);
 INSERT INTO jms_hook_module VALUES(78, 1, 102, 2);
 INSERT INTO jms_hook_module VALUES(80, 1, 17, 2);
@@ -9721,6 +9732,7 @@ INSERT INTO jms_hook_module VALUES(27, 1, 14, 3);
 INSERT INTO jms_hook_module VALUES(33, 1, 49, 3);
 INSERT INTO jms_hook_module VALUES(55, 1, 65, 3);
 INSERT INTO jms_hook_module VALUES(55, 1, 397, 3);
+INSERT INTO jms_hook_module VALUES(60, 1, 7, 3);
 INSERT INTO jms_hook_module VALUES(60, 1, 12, 3);
 INSERT INTO jms_hook_module VALUES(60, 1, 76, 3);
 INSERT INTO jms_hook_module VALUES(69, 1, 87, 3);
@@ -9735,15 +9747,18 @@ INSERT INTO jms_hook_module VALUES(34, 1, 49, 4);
 INSERT INTO jms_hook_module VALUES(57, 1, 65, 4);
 INSERT INTO jms_hook_module VALUES(61, 1, 14, 4);
 INSERT INTO jms_hook_module VALUES(61, 1, 413, 4);
+INSERT INTO jms_hook_module VALUES(71, 1, 7, 4);
 INSERT INTO jms_hook_module VALUES(71, 1, 12, 4);
 INSERT INTO jms_hook_module VALUES(35, 1, 49, 5);
 INSERT INTO jms_hook_module VALUES(55, 1, 402, 5);
 INSERT INTO jms_hook_module VALUES(62, 1, 413, 5);
 INSERT INTO jms_hook_module VALUES(63, 1, 14, 5);
+INSERT INTO jms_hook_module VALUES(72, 1, 7, 5);
 INSERT INTO jms_hook_module VALUES(72, 1, 12, 5);
 INSERT INTO jms_hook_module VALUES(36, 1, 49, 6);
 INSERT INTO jms_hook_module VALUES(64, 1, 14, 6);
 INSERT INTO jms_hook_module VALUES(64, 1, 413, 6);
+INSERT INTO jms_hook_module VALUES(80, 1, 7, 6);
 INSERT INTO jms_hook_module VALUES(80, 1, 12, 6);
 INSERT INTO jms_hook_module VALUES(37, 1, 49, 7);
 INSERT INTO jms_hook_module VALUES(65, 1, 14, 7);
@@ -9793,11 +9808,6 @@ CREATE TABLE jms_hook_module_exceptions (
 -- Đang đổ dữ liệu cho bảng jms_hook_module_exceptions
 --
 
-INSERT INTO jms_hook_module_exceptions VALUES(1, 1, 80, 12, 'module-jmsblog-archive');
-INSERT INTO jms_hook_module_exceptions VALUES(2, 1, 80, 12, 'module-jmsblog-categories');
-INSERT INTO jms_hook_module_exceptions VALUES(3, 1, 80, 12, 'module-jmsblog-category');
-INSERT INTO jms_hook_module_exceptions VALUES(4, 1, 80, 12, 'module-jmsblog-post');
-INSERT INTO jms_hook_module_exceptions VALUES(5, 1, 80, 12, 'module-jmsblog-tag');
 INSERT INTO jms_hook_module_exceptions VALUES(78, 1, 71, 12, 'address');
 INSERT INTO jms_hook_module_exceptions VALUES(79, 1, 71, 12, 'addresses');
 INSERT INTO jms_hook_module_exceptions VALUES(80, 1, 71, 12, 'attachment');
@@ -9942,6 +9952,160 @@ INSERT INTO jms_hook_module_exceptions VALUES(218, 1, 25, 12, 'module-jmswishlis
 INSERT INTO jms_hook_module_exceptions VALUES(219, 1, 25, 12, 'module-ps_checkpayment-payment');
 INSERT INTO jms_hook_module_exceptions VALUES(220, 1, 25, 12, 'module-ps_checkpayment-validation');
 INSERT INTO jms_hook_module_exceptions VALUES(221, 1, 25, 12, 'module-ps_shoppingcart-ajax');
+INSERT INTO jms_hook_module_exceptions VALUES(222, 1, 25, 7, 'address');
+INSERT INTO jms_hook_module_exceptions VALUES(223, 1, 25, 7, 'addresses');
+INSERT INTO jms_hook_module_exceptions VALUES(224, 1, 25, 7, 'attachment');
+INSERT INTO jms_hook_module_exceptions VALUES(225, 1, 25, 7, 'auth');
+INSERT INTO jms_hook_module_exceptions VALUES(226, 1, 25, 7, 'bestsales');
+INSERT INTO jms_hook_module_exceptions VALUES(227, 1, 25, 7, 'cart');
+INSERT INTO jms_hook_module_exceptions VALUES(228, 1, 25, 7, 'category');
+INSERT INTO jms_hook_module_exceptions VALUES(229, 1, 25, 7, 'changecurrency');
+INSERT INTO jms_hook_module_exceptions VALUES(230, 1, 25, 7, 'cms');
+INSERT INTO jms_hook_module_exceptions VALUES(231, 1, 25, 7, 'contact');
+INSERT INTO jms_hook_module_exceptions VALUES(232, 1, 25, 7, 'discount');
+INSERT INTO jms_hook_module_exceptions VALUES(233, 1, 25, 7, 'getfile');
+INSERT INTO jms_hook_module_exceptions VALUES(234, 1, 25, 7, 'guesttracking');
+INSERT INTO jms_hook_module_exceptions VALUES(235, 1, 25, 7, 'history');
+INSERT INTO jms_hook_module_exceptions VALUES(236, 1, 25, 7, 'identity');
+INSERT INTO jms_hook_module_exceptions VALUES(237, 1, 25, 7, 'index');
+INSERT INTO jms_hook_module_exceptions VALUES(238, 1, 25, 7, 'manufacturer');
+INSERT INTO jms_hook_module_exceptions VALUES(239, 1, 25, 7, 'myaccount');
+INSERT INTO jms_hook_module_exceptions VALUES(240, 1, 25, 7, 'newproducts');
+INSERT INTO jms_hook_module_exceptions VALUES(241, 1, 25, 7, 'order');
+INSERT INTO jms_hook_module_exceptions VALUES(242, 1, 25, 7, 'orderconfirmation');
+INSERT INTO jms_hook_module_exceptions VALUES(243, 1, 25, 7, 'orderdetail');
+INSERT INTO jms_hook_module_exceptions VALUES(244, 1, 25, 7, 'orderfollow');
+INSERT INTO jms_hook_module_exceptions VALUES(245, 1, 25, 7, 'orderreturn');
+INSERT INTO jms_hook_module_exceptions VALUES(246, 1, 25, 7, 'orderslip');
+INSERT INTO jms_hook_module_exceptions VALUES(247, 1, 25, 7, 'pagenotfound');
+INSERT INTO jms_hook_module_exceptions VALUES(248, 1, 25, 7, 'password');
+INSERT INTO jms_hook_module_exceptions VALUES(249, 1, 25, 7, 'pdfinvoice');
+INSERT INTO jms_hook_module_exceptions VALUES(250, 1, 25, 7, 'pdforderreturn');
+INSERT INTO jms_hook_module_exceptions VALUES(251, 1, 25, 7, 'pdforderslip');
+INSERT INTO jms_hook_module_exceptions VALUES(252, 1, 25, 7, 'pricesdrop');
+INSERT INTO jms_hook_module_exceptions VALUES(253, 1, 25, 7, 'product');
+INSERT INTO jms_hook_module_exceptions VALUES(254, 1, 25, 7, 'search');
+INSERT INTO jms_hook_module_exceptions VALUES(255, 1, 25, 7, 'sitemap');
+INSERT INTO jms_hook_module_exceptions VALUES(256, 1, 25, 7, 'statistics');
+INSERT INTO jms_hook_module_exceptions VALUES(257, 1, 25, 7, 'stores');
+INSERT INTO jms_hook_module_exceptions VALUES(258, 1, 25, 7, 'supplier');
+INSERT INTO jms_hook_module_exceptions VALUES(259, 1, 25, 7, 'module-ps_buybuttonlite-AdminAjaxPs_buybuttonliteController');
+INSERT INTO jms_hook_module_exceptions VALUES(260, 1, 25, 7, 'module-dashgoals-AdminDashgoalsController');
+INSERT INTO jms_hook_module_exceptions VALUES(261, 1, 25, 7, 'module-jmsblog-AdminJmsblogCategories');
+INSERT INTO jms_hook_module_exceptions VALUES(262, 1, 25, 7, 'module-jmsblog-AdminJmsblogComment');
+INSERT INTO jms_hook_module_exceptions VALUES(263, 1, 25, 7, 'module-jmsblog-AdminJmsblogDashboard');
+INSERT INTO jms_hook_module_exceptions VALUES(264, 1, 25, 7, 'module-jmsblog-AdminJmsblogPost');
+INSERT INTO jms_hook_module_exceptions VALUES(265, 1, 25, 7, 'module-jmsblog-AdminJmsblogSetting');
+INSERT INTO jms_hook_module_exceptions VALUES(266, 1, 25, 7, 'module-jmsmegamenu-AdminJmsmegamenuManager');
+INSERT INTO jms_hook_module_exceptions VALUES(267, 1, 25, 7, 'module-jmsmegamenu-AdminJmsmegamenuStyle');
+INSERT INTO jms_hook_module_exceptions VALUES(268, 1, 25, 7, 'module-jmspagebuilder-AdminJmspagebuilderHomepages');
+INSERT INTO jms_hook_module_exceptions VALUES(269, 1, 25, 7, 'module-jmspagebuilder-AdminJmspagebuilderMedia');
+INSERT INTO jms_hook_module_exceptions VALUES(270, 1, 25, 7, 'module-jmspagebuilder-AdminJmspagebuilderSetting');
+INSERT INTO jms_hook_module_exceptions VALUES(271, 1, 25, 7, 'module-jmsvermegamenu-AdminJmsvermegamenuManager');
+INSERT INTO jms_hook_module_exceptions VALUES(272, 1, 25, 7, 'module-jmsvermegamenu-AdminJmsvermegamenuStyle');
+INSERT INTO jms_hook_module_exceptions VALUES(273, 1, 25, 7, 'module-ps_mbo-AdminPsMboModuleController');
+INSERT INTO jms_hook_module_exceptions VALUES(274, 1, 25, 7, 'module-ps_mbo-AdminPsMboThemeController');
+INSERT INTO jms_hook_module_exceptions VALUES(275, 1, 25, 7, 'module-gamification-AdminGamificationController');
+INSERT INTO jms_hook_module_exceptions VALUES(276, 1, 25, 7, 'module-ps_faviconnotificationbo-AdminAjaxFaviconBOController');
+INSERT INTO jms_hook_module_exceptions VALUES(277, 1, 25, 7, 'module-ps_themecusto-AdminPsThemeCustoAdvanced');
+INSERT INTO jms_hook_module_exceptions VALUES(278, 1, 25, 7, 'module-ps_themecusto-AdminPsThemeCustoConfiguration');
+INSERT INTO jms_hook_module_exceptions VALUES(279, 1, 25, 7, 'module-welcome-AdminWelcomeController');
+INSERT INTO jms_hook_module_exceptions VALUES(280, 1, 25, 7, 'module-ps_wirepayment-payment');
+INSERT INTO jms_hook_module_exceptions VALUES(281, 1, 25, 7, 'module-ps_wirepayment-validation');
+INSERT INTO jms_hook_module_exceptions VALUES(282, 1, 25, 7, 'module-ps_buybuttonlite-RedirectManager');
+INSERT INTO jms_hook_module_exceptions VALUES(283, 1, 25, 7, 'module-ps_emailsubscription-subscription');
+INSERT INTO jms_hook_module_exceptions VALUES(284, 1, 25, 7, 'module-ps_emailsubscription-verification');
+INSERT INTO jms_hook_module_exceptions VALUES(285, 1, 25, 7, 'module-eugdpr-customer');
+INSERT INTO jms_hook_module_exceptions VALUES(286, 1, 25, 7, 'module-hotdeals-allproduct');
+INSERT INTO jms_hook_module_exceptions VALUES(287, 1, 25, 7, 'module-jmsadvsearch-search');
+INSERT INTO jms_hook_module_exceptions VALUES(288, 1, 25, 7, 'module-jmsflashsales-flashsales');
+INSERT INTO jms_hook_module_exceptions VALUES(289, 1, 25, 7, 'module-jmswishlist-mywishlist');
+INSERT INTO jms_hook_module_exceptions VALUES(290, 1, 25, 7, 'module-jmswishlist-view');
+INSERT INTO jms_hook_module_exceptions VALUES(291, 1, 25, 7, 'module-ps_checkpayment-payment');
+INSERT INTO jms_hook_module_exceptions VALUES(292, 1, 25, 7, 'module-ps_checkpayment-validation');
+INSERT INTO jms_hook_module_exceptions VALUES(293, 1, 25, 7, 'module-ps_shoppingcart-ajax');
+INSERT INTO jms_hook_module_exceptions VALUES(294, 1, 10, 7, 'module-jmsblog-archive');
+INSERT INTO jms_hook_module_exceptions VALUES(295, 1, 10, 7, 'module-jmsblog-categories');
+INSERT INTO jms_hook_module_exceptions VALUES(296, 1, 10, 7, 'module-jmsblog-category');
+INSERT INTO jms_hook_module_exceptions VALUES(297, 1, 10, 7, 'module-jmsblog-post');
+INSERT INTO jms_hook_module_exceptions VALUES(298, 1, 10, 7, 'module-jmsblog-tag');
+INSERT INTO jms_hook_module_exceptions VALUES(299, 1, 60, 7, 'module-jmsblog-archive');
+INSERT INTO jms_hook_module_exceptions VALUES(300, 1, 60, 7, 'module-jmsblog-categories');
+INSERT INTO jms_hook_module_exceptions VALUES(301, 1, 60, 7, 'module-jmsblog-category');
+INSERT INTO jms_hook_module_exceptions VALUES(302, 1, 60, 7, 'module-jmsblog-post');
+INSERT INTO jms_hook_module_exceptions VALUES(303, 1, 60, 7, 'module-jmsblog-tag');
+INSERT INTO jms_hook_module_exceptions VALUES(304, 1, 71, 7, 'address');
+INSERT INTO jms_hook_module_exceptions VALUES(305, 1, 71, 7, 'addresses');
+INSERT INTO jms_hook_module_exceptions VALUES(306, 1, 71, 7, 'attachment');
+INSERT INTO jms_hook_module_exceptions VALUES(307, 1, 71, 7, 'auth');
+INSERT INTO jms_hook_module_exceptions VALUES(308, 1, 71, 7, 'bestsales');
+INSERT INTO jms_hook_module_exceptions VALUES(309, 1, 71, 7, 'cart');
+INSERT INTO jms_hook_module_exceptions VALUES(310, 1, 71, 7, 'category');
+INSERT INTO jms_hook_module_exceptions VALUES(311, 1, 71, 7, 'changecurrency');
+INSERT INTO jms_hook_module_exceptions VALUES(312, 1, 71, 7, 'cms');
+INSERT INTO jms_hook_module_exceptions VALUES(313, 1, 71, 7, 'contact');
+INSERT INTO jms_hook_module_exceptions VALUES(314, 1, 71, 7, 'discount');
+INSERT INTO jms_hook_module_exceptions VALUES(315, 1, 71, 7, 'getfile');
+INSERT INTO jms_hook_module_exceptions VALUES(316, 1, 71, 7, 'guesttracking');
+INSERT INTO jms_hook_module_exceptions VALUES(317, 1, 71, 7, 'history');
+INSERT INTO jms_hook_module_exceptions VALUES(318, 1, 71, 7, 'identity');
+INSERT INTO jms_hook_module_exceptions VALUES(319, 1, 71, 7, 'index');
+INSERT INTO jms_hook_module_exceptions VALUES(320, 1, 71, 7, 'manufacturer');
+INSERT INTO jms_hook_module_exceptions VALUES(321, 1, 71, 7, 'myaccount');
+INSERT INTO jms_hook_module_exceptions VALUES(322, 1, 71, 7, 'newproducts');
+INSERT INTO jms_hook_module_exceptions VALUES(323, 1, 71, 7, 'order');
+INSERT INTO jms_hook_module_exceptions VALUES(324, 1, 71, 7, 'orderconfirmation');
+INSERT INTO jms_hook_module_exceptions VALUES(325, 1, 71, 7, 'orderdetail');
+INSERT INTO jms_hook_module_exceptions VALUES(326, 1, 71, 7, 'orderfollow');
+INSERT INTO jms_hook_module_exceptions VALUES(327, 1, 71, 7, 'orderreturn');
+INSERT INTO jms_hook_module_exceptions VALUES(328, 1, 71, 7, 'orderslip');
+INSERT INTO jms_hook_module_exceptions VALUES(329, 1, 71, 7, 'pagenotfound');
+INSERT INTO jms_hook_module_exceptions VALUES(330, 1, 71, 7, 'password');
+INSERT INTO jms_hook_module_exceptions VALUES(331, 1, 71, 7, 'pdfinvoice');
+INSERT INTO jms_hook_module_exceptions VALUES(332, 1, 71, 7, 'pdforderreturn');
+INSERT INTO jms_hook_module_exceptions VALUES(333, 1, 71, 7, 'pdforderslip');
+INSERT INTO jms_hook_module_exceptions VALUES(334, 1, 71, 7, 'pricesdrop');
+INSERT INTO jms_hook_module_exceptions VALUES(335, 1, 71, 7, 'product');
+INSERT INTO jms_hook_module_exceptions VALUES(336, 1, 71, 7, 'search');
+INSERT INTO jms_hook_module_exceptions VALUES(337, 1, 71, 7, 'sitemap');
+INSERT INTO jms_hook_module_exceptions VALUES(338, 1, 71, 7, 'statistics');
+INSERT INTO jms_hook_module_exceptions VALUES(339, 1, 71, 7, 'stores');
+INSERT INTO jms_hook_module_exceptions VALUES(340, 1, 71, 7, 'supplier');
+INSERT INTO jms_hook_module_exceptions VALUES(341, 1, 71, 7, 'module-ps_buybuttonlite-AdminAjaxPs_buybuttonliteController');
+INSERT INTO jms_hook_module_exceptions VALUES(342, 1, 71, 7, 'module-dashgoals-AdminDashgoalsController');
+INSERT INTO jms_hook_module_exceptions VALUES(343, 1, 71, 7, 'module-jmsblog-AdminJmsblogCategories');
+INSERT INTO jms_hook_module_exceptions VALUES(344, 1, 71, 7, 'module-jmsblog-AdminJmsblogComment');
+INSERT INTO jms_hook_module_exceptions VALUES(345, 1, 71, 7, 'module-jmsblog-AdminJmsblogDashboard');
+INSERT INTO jms_hook_module_exceptions VALUES(346, 1, 71, 7, 'module-jmsblog-AdminJmsblogPost');
+INSERT INTO jms_hook_module_exceptions VALUES(347, 1, 71, 7, 'module-jmsblog-AdminJmsblogSetting');
+INSERT INTO jms_hook_module_exceptions VALUES(348, 1, 71, 7, 'module-jmsmegamenu-AdminJmsmegamenuManager');
+INSERT INTO jms_hook_module_exceptions VALUES(349, 1, 71, 7, 'module-jmsmegamenu-AdminJmsmegamenuStyle');
+INSERT INTO jms_hook_module_exceptions VALUES(350, 1, 71, 7, 'module-jmspagebuilder-AdminJmspagebuilderHomepages');
+INSERT INTO jms_hook_module_exceptions VALUES(351, 1, 71, 7, 'module-jmspagebuilder-AdminJmspagebuilderMedia');
+INSERT INTO jms_hook_module_exceptions VALUES(352, 1, 71, 7, 'module-jmspagebuilder-AdminJmspagebuilderSetting');
+INSERT INTO jms_hook_module_exceptions VALUES(353, 1, 71, 7, 'module-jmsvermegamenu-AdminJmsvermegamenuManager');
+INSERT INTO jms_hook_module_exceptions VALUES(354, 1, 71, 7, 'module-jmsvermegamenu-AdminJmsvermegamenuStyle');
+INSERT INTO jms_hook_module_exceptions VALUES(355, 1, 71, 7, 'module-ps_mbo-AdminPsMboModuleController');
+INSERT INTO jms_hook_module_exceptions VALUES(356, 1, 71, 7, 'module-ps_mbo-AdminPsMboThemeController');
+INSERT INTO jms_hook_module_exceptions VALUES(357, 1, 71, 7, 'module-gamification-AdminGamificationController');
+INSERT INTO jms_hook_module_exceptions VALUES(358, 1, 71, 7, 'module-ps_faviconnotificationbo-AdminAjaxFaviconBOController');
+INSERT INTO jms_hook_module_exceptions VALUES(359, 1, 71, 7, 'module-ps_themecusto-AdminPsThemeCustoAdvanced');
+INSERT INTO jms_hook_module_exceptions VALUES(360, 1, 71, 7, 'module-ps_themecusto-AdminPsThemeCustoConfiguration');
+INSERT INTO jms_hook_module_exceptions VALUES(361, 1, 71, 7, 'module-welcome-AdminWelcomeController');
+INSERT INTO jms_hook_module_exceptions VALUES(362, 1, 71, 7, 'module-ps_wirepayment-payment');
+INSERT INTO jms_hook_module_exceptions VALUES(363, 1, 71, 7, 'module-ps_wirepayment-validation');
+INSERT INTO jms_hook_module_exceptions VALUES(364, 1, 71, 7, 'module-ps_buybuttonlite-RedirectManager');
+INSERT INTO jms_hook_module_exceptions VALUES(365, 1, 71, 7, 'module-ps_emailsubscription-subscription');
+INSERT INTO jms_hook_module_exceptions VALUES(366, 1, 71, 7, 'module-ps_emailsubscription-verification');
+INSERT INTO jms_hook_module_exceptions VALUES(367, 1, 71, 7, 'module-eugdpr-customer');
+INSERT INTO jms_hook_module_exceptions VALUES(368, 1, 71, 7, 'module-hotdeals-allproduct');
+INSERT INTO jms_hook_module_exceptions VALUES(369, 1, 71, 7, 'module-jmsadvsearch-search');
+INSERT INTO jms_hook_module_exceptions VALUES(370, 1, 71, 7, 'module-jmsflashsales-flashsales');
+INSERT INTO jms_hook_module_exceptions VALUES(371, 1, 71, 7, 'module-jmswishlist-mywishlist');
+INSERT INTO jms_hook_module_exceptions VALUES(372, 1, 71, 7, 'module-jmswishlist-view');
+INSERT INTO jms_hook_module_exceptions VALUES(373, 1, 71, 7, 'module-ps_checkpayment-payment');
+INSERT INTO jms_hook_module_exceptions VALUES(374, 1, 71, 7, 'module-ps_checkpayment-validation');
+INSERT INTO jms_hook_module_exceptions VALUES(375, 1, 71, 7, 'module-ps_shoppingcart-ajax');
 
 -- --------------------------------------------------------
 
@@ -11599,10 +11763,10 @@ CREATE TABLE jms_jmsblog_posts (
 -- Đang đổ dữ liệu cho bảng jms_jmsblog_posts
 --
 
-INSERT INTO jms_jmsblog_posts VALUES(1, 0, 1, 1, '2019-07-23 11:01:26', '', '2019-07-23 11:01:26', 25);
+INSERT INTO jms_jmsblog_posts VALUES(1, 0, 1, 1, '2019-07-23 11:01:26', '', '2019-07-23 11:01:26', 86);
 INSERT INTO jms_jmsblog_posts VALUES(2, 0, 1, 1, '2019-07-23 11:01:26', '', '2019-07-23 11:01:26', 6);
-INSERT INTO jms_jmsblog_posts VALUES(3, 0, 1, 1, '2019-07-23 11:01:26', '', '2019-07-23 11:01:26', 5);
-INSERT INTO jms_jmsblog_posts VALUES(4, 0, 1, 1, '2019-08-01 05:28:00', '', '2019-08-14 17:09:00', 0);
+INSERT INTO jms_jmsblog_posts VALUES(3, 0, 1, 1, '2019-07-23 11:01:26', '', '2019-07-23 11:01:26', 10);
+INSERT INTO jms_jmsblog_posts VALUES(4, 0, 1, 1, '2019-08-01 05:28:00', '', '2019-08-14 17:09:00', 1);
 
 -- --------------------------------------------------------
 
@@ -11621,6 +11785,14 @@ CREATE TABLE jms_jmsblog_posts_comments (
   time_add datetime NOT NULL,
   status int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Đang đổ dữ liệu cho bảng jms_jmsblog_posts_comments
+--
+
+INSERT INTO jms_jmsblog_posts_comments VALUES(1, 1, 'The Best Of Quality Phone & Watch', 'Donec nex volutpat ornare metus rutrum extock. Lacus ultrices mollis, sapien ut aliquam eros. Lorem ipsum dolor sit amet,\r\nconsectetur adipiscing elit. Fusce et vestibulum lacus.', 'Ms. Karen Morales', 'Morales@gmail.com', '', '2019-08-12 21:42:32', 1);
+INSERT INTO jms_jmsblog_posts_comments VALUES(2, 1, 'The Best Of Quality Phone & Watch', 'Donec nex volutpat ornare metus in rutrum extock. Lacus ultrices mollis, sapien ut aliquam eros. Lorem ipsum\r\ndolor sit amet, consectetur adipiscing elit. Fusce et vestibulum lacus.', 'Mr. Mark Hicks', 'Hicks@gmail.com', '', '2019-08-12 21:43:03', 1);
+INSERT INTO jms_jmsblog_posts_comments VALUES(3, 1, 'The Best Of Quality Phone & Watch', 'Donec nex volutpat ornare metus rutrum extock. Lacus ultrices mollis, sapien ut aliquam eros. Lorem ipsum dolor sit amet,\r\nconsectetur adipiscing elit. Fusce et vestibulum lacus.', 'Ms. Helen Murphy', 'Murphy@gmail.com', '', '2019-08-12 21:43:26', 1);
 
 -- --------------------------------------------------------
 
@@ -11646,22 +11818,22 @@ CREATE TABLE jms_jmsblog_posts_lang (
 -- Đang đổ dữ liệu cho bảng jms_jmsblog_posts_lang
 --
 
-INSERT INTO jms_jmsblog_posts_lang VALUES(1, 1, 'The Best Of Quality Phone & Watch', 'the-best-of-quality-phone-watch', '<p>Aenean cursus interdum elit, sit amet fermentum placerat. Suspendisse tempus velenim, condimentum neque <span class=\"quote\"> vel illum dolore eu feugiat nulla facilisis at vero eros et accumsa</span></p>', '<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>\r\n<p><span class=\"quote\"><span class=\"quote-author\"><em class=\"placeholder\">Hello</em> wrote:</span>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. At vero eos et accusam et justo duo dolores et ea rebum. Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</span></p>\r\n<h1>h1. Heading 1</h1>\r\n<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>\r\n<ul>\r\n<li>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</li>\r\n<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</li>\r\n<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</li>\r\n</ul>\r\n<h2>h2. Heading 2</h2>\r\n<p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>\r\n<h3>h3. Heading 3</h3>\r\n<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Sanctus sea sed takimata ut vero voluptua.</p>', '', '', '', 'b60ecd1cc756c7c55ba29fd4b2a0bf77.jpg', '');
+INSERT INTO jms_jmsblog_posts_lang VALUES(1, 1, 'The Best Of Quality Phone & Watch', 'the-best-of-quality-phone-watch', '<p>Aenean cursus interdum elit, sit amet fermentum placerat. Suspendisse tempus velenim, condimentum neque <span class=\"quote\"> vel illum dolore eu feugiat nulla facilisis at vero eros et accumsa</span></p>', '<p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condimentum. Nullam dignissim neque odio, ac blandit sapien hendrerit sed. Nulla ac ex fringilla, volutpat mauris sit amet, consequat massa. Suspendisse feugiat, elit sed fringilla pellentesque, felis sapien pharetra nulla, sed aliquet ante nisi sit amet nibh. Mauris sed purus consequat, auctor libero sed, molestie neque. Nam convallis at felis vel varius. Aliquam sollicitudin tincidunt nunc suscipit vulputate</p>\r\n<p>Proin non feugiat velit. Maecenas porta arcu in pulvinar ultricies. Morbi varius consequat pulvinar. Integer id feugiat elit. Sed vehicula varius turpis, a interdum ex tincidunt sed. Nunc bibendum ipsum tellus, eget pellentesque metus dictum eu. Nullam a neque vestibulum, porta lorem sed, dapibus magna. Vivamus eget bibendum ligula. Proin facilisis felis non ornare pellentesque. Suspendisse posuere elit sit amet eros lobortis aliquam nec vitae mi. Quisque nec luctus dolor. Ut venenatis dictum quam quis malesuada</p>\r\n<div class=\"row\">\r\n<div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_kasos/assets/img/blog-post-img1.jpg\" /></div>\r\n<div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_kasos/assets/img/blog-post-img2.jpg\" /></div>\r\n</div>\r\n<h2>Enhance Your Life By Using Technology Products</h2>\r\n<p>Proin non feugiat velit. Maecenas porta arcu in pulvinar ultricies. Morbi varius consequat pulvinar. Integer id feugiat elit. Sed vehicula varius turpis, a interdum ex tincidunt sed. Nunc bibendum ipsum tellus, eget pellentesque metus dictum eu. Nullam a neque vestibulum, porta lorem sed, dapibus magna. Vivamus eget bibendum ligula. Proin facilisis felis non ornare pellentesque. Suspendisse posuere elit sit amet eros lobortis aliquam nec vitae mi. Quisque nec luctus dolor. Ut venenatis dictum quam quis malesuada</p>\r\n<p>Donec sit amet tempus purus. Etiam tincidunt lacinia lacus, sed convallis felis sodales at. Vivamus ornare massa sed felis faucibus luctus. Cras ullamcorper pellentesque vehicula. Sed posuere mauris ac sem interdum facilisis. Suspendisse venenatis leo non bibendum aliquam. Nam quis ex et sapien pellentesque egestas sed vel eros. Maecenas fermentum dictum ullamcorper</p>\r\n<div class=\"testimonial\">\r\n<div class=\"testimonial-comment\">“ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse auctor dolor lectus, maximus vitae sapien dictum feugiat vehicula. Donec odio vulputate feugiat consequat”</div>\r\n<div class=\"testimonial-author\"><img src=\"themes/jms_kasos/assets/img/avatar-blog.png\" /> <span><span>Ms. Karen Morales</span> - Fashion Designer</span></div>\r\n</div>\r\n<p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condimentum. Nullam dignissim neque odio, ac blandit sapien hendrerit sed. Nulla ac ex fringilla, volutpat mauris sit amet, consequat massa. Suspendisse feugiat, elit sed fringilla pellentesque, felis sapien pharetra nulla, sed aliquet ante nisi sit amet nibh. Mauris sed purus consequat, auctor libero sed, molestie neque. Nam convallis at felis vel varius. Aliquam sollicitudin tincidunt nunc suscipit vulputate</p>', '', '', '', 'b60ecd1cc756c7c55ba29fd4b2a0bf77.jpg', 'smartphone');
 INSERT INTO jms_jmsblog_posts_lang VALUES(1, 2, 'The Best Of Quality Phone & Watch', 'the-best-of-quality-phone-watch', '', '', '', '', '', '', '');
 INSERT INTO jms_jmsblog_posts_lang VALUES(1, 3, 'The Best Of Quality Phone & Watch', 'the-best-of-quality-phone-watch', '', '', '', '', '', '', '');
 INSERT INTO jms_jmsblog_posts_lang VALUES(1, 4, 'The Best Of Quality Phone & Watch', 'the-best-of-quality-phone-watch', '', '', '', '', '', '', '');
 INSERT INTO jms_jmsblog_posts_lang VALUES(1, 6, 'The Best Of Quality Phone & Watch', 'the-best-of-quality-phone-watch', '', '', '', '', '', '', '');
-INSERT INTO jms_jmsblog_posts_lang VALUES(2, 1, 'Best About Mobile Smart Speakers', 'best-about-mobile-smart-speakers', '<p>Aenean cursus interdum elit, sit amet fermentum placerat. Suspendisse tempus velenim, condimentum neque <span class=\"quote\"> vel illum dolore eu feugiat nulla facilisis at vero eros et accumsa</span></p>', '<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>\r\n<p><span class=\"quote\"><span class=\"quote-author\"><em class=\"placeholder\">Hello</em> wrote:</span>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. At vero eos et accusam et justo duo dolores et ea rebum. Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</span></p>\r\n<h1>h1. Heading 1</h1>\r\n<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>\r\n<ul>\r\n<li>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</li>\r\n<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</li>\r\n<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</li>\r\n</ul>\r\n<h2>h2. Heading 2</h2>\r\n<p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>\r\n<h3>h3. Heading 3</h3>\r\n<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Sanctus sea sed takimata ut vero voluptua.</p>', '', '', '', '4ce4151952fd82fc7b3c3bc691821e77.jpg', '');
+INSERT INTO jms_jmsblog_posts_lang VALUES(2, 1, 'Best About Mobile Smart Speakers', 'best-about-mobile-smart-speakers', '<p>Aenean cursus interdum elit, sit amet fermentum placerat. Suspendisse tempus velenim, condimentum neque <span class=\"quote\"> vel illum dolore eu feugiat nulla facilisis at vero eros et accumsa</span></p>', '<p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condimentum. Nullam dignissim neque odio, ac blandit sapien hendrerit sed. Nulla ac ex fringilla, volutpat mauris sit amet, consequat massa. Suspendisse feugiat, elit sed fringilla pellentesque, felis sapien pharetra nulla, sed aliquet ante nisi sit amet nibh. Mauris sed purus consequat, auctor libero sed, molestie neque. Nam convallis at felis vel varius. Aliquam sollicitudin tincidunt nunc suscipit vulputate</p>\r\n<p>Proin non feugiat velit. Maecenas porta arcu in pulvinar ultricies. Morbi varius consequat pulvinar. Integer id feugiat elit. Sed vehicula varius turpis, a interdum ex tincidunt sed. Nunc bibendum ipsum tellus, eget pellentesque metus dictum eu. Nullam a neque vestibulum, porta lorem sed, dapibus magna. Vivamus eget bibendum ligula. Proin facilisis felis non ornare pellentesque. Suspendisse posuere elit sit amet eros lobortis aliquam nec vitae mi. Quisque nec luctus dolor. Ut venenatis dictum quam quis malesuada</p>\r\n<div class=\"row\">\r\n<div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_kasos/assets/img/blog-post-img1.jpg\" /></div>\r\n<div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_kasos/assets/img/blog-post-img2.jpg\" /></div>\r\n</div>\r\n<h2>Enhance Your Life By Using Technology Products</h2>\r\n<p>Proin non feugiat velit. Maecenas porta arcu in pulvinar ultricies. Morbi varius consequat pulvinar. Integer id feugiat elit. Sed vehicula varius turpis, a interdum ex tincidunt sed. Nunc bibendum ipsum tellus, eget pellentesque metus dictum eu. Nullam a neque vestibulum, porta lorem sed, dapibus magna. Vivamus eget bibendum ligula. Proin facilisis felis non ornare pellentesque. Suspendisse posuere elit sit amet eros lobortis aliquam nec vitae mi. Quisque nec luctus dolor. Ut venenatis dictum quam quis malesuada</p>\r\n<p>Donec sit amet tempus purus. Etiam tincidunt lacinia lacus, sed convallis felis sodales at. Vivamus ornare massa sed felis faucibus luctus. Cras ullamcorper pellentesque vehicula. Sed posuere mauris ac sem interdum facilisis. Suspendisse venenatis leo non bibendum aliquam. Nam quis ex et sapien pellentesque egestas sed vel eros. Maecenas fermentum dictum ullamcorper</p>\r\n<div class=\"testimonial\">\r\n<div class=\"testimonial-comment\">“ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse auctor dolor lectus, maximus vitae sapien dictum feugiat vehicula. Donec odio vulputate feugiat consequat”</div>\r\n<div class=\"testimonial-author\"><img src=\"themes/jms_kasos/assets/img/avatar-blog.png\" /> <span><span>Ms. Karen Morales</span> - Fashion Designer</span></div>\r\n</div>\r\n<p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condimentum. Nullam dignissim neque odio, ac blandit sapien hendrerit sed. Nulla ac ex fringilla, volutpat mauris sit amet, consequat massa. Suspendisse feugiat, elit sed fringilla pellentesque, felis sapien pharetra nulla, sed aliquet ante nisi sit amet nibh. Mauris sed purus consequat, auctor libero sed, molestie neque. Nam convallis at felis vel varius. Aliquam sollicitudin tincidunt nunc suscipit vulputate</p>', '', '', '', '4ce4151952fd82fc7b3c3bc691821e77.jpg', '');
 INSERT INTO jms_jmsblog_posts_lang VALUES(2, 2, 'Best About Mobile Smart Speakers', 'best-about-mobile-smart-speakers', '', '', '', '', '', '', '');
 INSERT INTO jms_jmsblog_posts_lang VALUES(2, 3, 'Best About Mobile Smart Speakers', 'best-about-mobile-smart-speakers', '', '', '', '', '', '', '');
 INSERT INTO jms_jmsblog_posts_lang VALUES(2, 4, 'Best About Mobile Smart Speakers', 'best-about-mobile-smart-speakers', '', '', '', '', '', '', '');
 INSERT INTO jms_jmsblog_posts_lang VALUES(2, 6, 'Best About Mobile Smart Speakers', 'best-about-mobile-smart-speakers', '', '', '', '', '', '', '');
-INSERT INTO jms_jmsblog_posts_lang VALUES(3, 1, 'The Smart TV Ultra HD Resolution', 'the-smart-tv-ultra-dh-resolution', '<p>Aenean cursus interdum elit, sit amet fermentum placerat. Suspendisse tempus velenim, condimentum neque <span class=\"quote\"> vel illum dolore eu feugiat nulla facilisis at vero eros et accumsa</span></p>', '<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>\r\n<p><span class=\"quote\"><span class=\"quote-author\"><em class=\"placeholder\">Hello</em> wrote:</span>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. At vero eos et accusam et justo duo dolores et ea rebum. Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</span></p>\r\n<h1>h1. Heading 1</h1>\r\n<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>\r\n<ul>\r\n<li>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</li>\r\n<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</li>\r\n<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</li>\r\n</ul>\r\n<h2>h2. Heading 2</h2>\r\n<p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>\r\n<h3>h3. Heading 3</h3>\r\n<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Sanctus sea sed takimata ut vero voluptua.</p>', '', '', '', '06cc633e4a0d1583818b8345b73404cd.jpg', '');
+INSERT INTO jms_jmsblog_posts_lang VALUES(3, 1, 'The Smart TV Ultra HD Resolution', 'the-smart-tv-ultra-dh-resolution', '<p>Aenean cursus interdum elit, sit amet fermentum placerat. Suspendisse tempus velenim, condimentum neque <span class=\"quote\"> vel illum dolore eu feugiat nulla facilisis at vero eros et accumsa</span></p>', '<p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condimentum. Nullam dignissim neque odio, ac blandit sapien hendrerit sed. Nulla ac ex fringilla, volutpat mauris sit amet, consequat massa. Suspendisse feugiat, elit sed fringilla pellentesque, felis sapien pharetra nulla, sed aliquet ante nisi sit amet nibh. Mauris sed purus consequat, auctor libero sed, molestie neque. Nam convallis at felis vel varius. Aliquam sollicitudin tincidunt nunc suscipit vulputate</p>\r\n<p>Proin non feugiat velit. Maecenas porta arcu in pulvinar ultricies. Morbi varius consequat pulvinar. Integer id feugiat elit. Sed vehicula varius turpis, a interdum ex tincidunt sed. Nunc bibendum ipsum tellus, eget pellentesque metus dictum eu. Nullam a neque vestibulum, porta lorem sed, dapibus magna. Vivamus eget bibendum ligula. Proin facilisis felis non ornare pellentesque. Suspendisse posuere elit sit amet eros lobortis aliquam nec vitae mi. Quisque nec luctus dolor. Ut venenatis dictum quam quis malesuada</p>\r\n<div class=\"row\">\r\n<div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_kasos/assets/img/blog-post-img1.jpg\" /></div>\r\n<div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_kasos/assets/img/blog-post-img2.jpg\" /></div>\r\n</div>\r\n<h2>Enhance Your Life By Using Technology Products</h2>\r\n<p>Proin non feugiat velit. Maecenas porta arcu in pulvinar ultricies. Morbi varius consequat pulvinar. Integer id feugiat elit. Sed vehicula varius turpis, a interdum ex tincidunt sed. Nunc bibendum ipsum tellus, eget pellentesque metus dictum eu. Nullam a neque vestibulum, porta lorem sed, dapibus magna. Vivamus eget bibendum ligula. Proin facilisis felis non ornare pellentesque. Suspendisse posuere elit sit amet eros lobortis aliquam nec vitae mi. Quisque nec luctus dolor. Ut venenatis dictum quam quis malesuada</p>\r\n<p>Donec sit amet tempus purus. Etiam tincidunt lacinia lacus, sed convallis felis sodales at. Vivamus ornare massa sed felis faucibus luctus. Cras ullamcorper pellentesque vehicula. Sed posuere mauris ac sem interdum facilisis. Suspendisse venenatis leo non bibendum aliquam. Nam quis ex et sapien pellentesque egestas sed vel eros. Maecenas fermentum dictum ullamcorper</p>\r\n<div class=\"testimonial\">\r\n<div class=\"testimonial-comment\">“ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse auctor dolor lectus, maximus vitae sapien dictum feugiat vehicula. Donec odio vulputate feugiat consequat”</div>\r\n<div class=\"testimonial-author\"><img src=\"themes/jms_kasos/assets/img/avatar-blog.png\" /> <span><span>Ms. Karen Morales</span> - Fashion Designer</span></div>\r\n</div>\r\n<p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condimentum. Nullam dignissim neque odio, ac blandit sapien hendrerit sed. Nulla ac ex fringilla, volutpat mauris sit amet, consequat massa. Suspendisse feugiat, elit sed fringilla pellentesque, felis sapien pharetra nulla, sed aliquet ante nisi sit amet nibh. Mauris sed purus consequat, auctor libero sed, molestie neque. Nam convallis at felis vel varius. Aliquam sollicitudin tincidunt nunc suscipit vulputate</p>', '', '', '', '06cc633e4a0d1583818b8345b73404cd.jpg', '');
 INSERT INTO jms_jmsblog_posts_lang VALUES(3, 2, 'The Smart TV Ultra HD Resolution', 'the-smart-tv-ultra-dh-resolution', '', '', '', '', '', '', '');
 INSERT INTO jms_jmsblog_posts_lang VALUES(3, 3, 'The Smart TV Ultra HD Resolution', 'the-smart-tv-ultra-dh-resolution', '', '', '', '', '', '', '');
 INSERT INTO jms_jmsblog_posts_lang VALUES(3, 4, 'The Smart TV Ultra HD Resolution', 'the-smart-tv-ultra-dh-resolution', '', '', '', '', '', '', '');
 INSERT INTO jms_jmsblog_posts_lang VALUES(3, 6, 'The Smart TV Ultra HD Resolution', 'the-smart-tv-ultra-dh-resolution', '', '', '', '', '', '', '');
-INSERT INTO jms_jmsblog_posts_lang VALUES(4, 1, 'Enjoy Great Music From iPhone Xs Max', 'enjoy-great-music-from-iphone-xs-max', '<p>Aenean cursus interdum elit, sit amet fermentum placerat. Suspendisse tempus velenim, condimentum neque <span class=\"quote\"> vel illum dolore eu feugiat nulla facilisis at vero eros et accumsa</span></p>', '<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>\r\n<p><span class=\"quote\"><span class=\"quote-author\"><em class=\"placeholder\">Hello</em> wrote:</span>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. At vero eos et accusam et justo duo dolores et ea rebum. Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</span></p>\r\n<h1>h1. Heading 1</h1>\r\n<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>\r\n<ul>\r\n<li>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</li>\r\n<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</li>\r\n<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</li>\r\n</ul>\r\n<h2>h2. Heading 2</h2>\r\n<p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>\r\n<h3>h3. Heading 3</h3>\r\n<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Sanctus sea sed takimata ut vero voluptua.</p>', '', '', '', '0db58bdaeccd9505e85cbb641378aaaa.jpg', '');
+INSERT INTO jms_jmsblog_posts_lang VALUES(4, 1, 'Enjoy Great Music From iPhone Xs Max', 'enjoy-great-music-from-iphone-xs-max', '<p>Aenean cursus interdum elit, sit amet fermentum placerat. Suspendisse tempus velenim, condimentum neque <span class=\"quote\"> vel illum dolore eu feugiat nulla facilisis at vero eros et accumsa</span></p>', '<p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condimentum. Nullam dignissim neque odio, ac blandit sapien hendrerit sed. Nulla ac ex fringilla, volutpat mauris sit amet, consequat massa. Suspendisse feugiat, elit sed fringilla pellentesque, felis sapien pharetra nulla, sed aliquet ante nisi sit amet nibh. Mauris sed purus consequat, auctor libero sed, molestie neque. Nam convallis at felis vel varius. Aliquam sollicitudin tincidunt nunc suscipit vulputate</p>\r\n<p>Proin non feugiat velit. Maecenas porta arcu in pulvinar ultricies. Morbi varius consequat pulvinar. Integer id feugiat elit. Sed vehicula varius turpis, a interdum ex tincidunt sed. Nunc bibendum ipsum tellus, eget pellentesque metus dictum eu. Nullam a neque vestibulum, porta lorem sed, dapibus magna. Vivamus eget bibendum ligula. Proin facilisis felis non ornare pellentesque. Suspendisse posuere elit sit amet eros lobortis aliquam nec vitae mi. Quisque nec luctus dolor. Ut venenatis dictum quam quis malesuada</p>\r\n<div class=\"row\">\r\n<div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_kasos/assets/img/blog-post-img1.jpg\" /></div>\r\n<div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_kasos/assets/img/blog-post-img2.jpg\" /></div>\r\n</div>\r\n<h2>Enhance Your Life By Using Technology Products</h2>\r\n<p>Proin non feugiat velit. Maecenas porta arcu in pulvinar ultricies. Morbi varius consequat pulvinar. Integer id feugiat elit. Sed vehicula varius turpis, a interdum ex tincidunt sed. Nunc bibendum ipsum tellus, eget pellentesque metus dictum eu. Nullam a neque vestibulum, porta lorem sed, dapibus magna. Vivamus eget bibendum ligula. Proin facilisis felis non ornare pellentesque. Suspendisse posuere elit sit amet eros lobortis aliquam nec vitae mi. Quisque nec luctus dolor. Ut venenatis dictum quam quis malesuada</p>\r\n<p>Donec sit amet tempus purus. Etiam tincidunt lacinia lacus, sed convallis felis sodales at. Vivamus ornare massa sed felis faucibus luctus. Cras ullamcorper pellentesque vehicula. Sed posuere mauris ac sem interdum facilisis. Suspendisse venenatis leo non bibendum aliquam. Nam quis ex et sapien pellentesque egestas sed vel eros. Maecenas fermentum dictum ullamcorper</p>\r\n<div class=\"testimonial\">\r\n<div class=\"testimonial-comment\">“ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse auctor dolor lectus, maximus vitae sapien dictum feugiat vehicula. Donec odio vulputate feugiat consequat”</div>\r\n<div class=\"testimonial-author\"><img src=\"themes/jms_kasos/assets/img/avatar-blog.png\" /> <span><span>Ms. Karen Morales</span> - Fashion Designer</span></div>\r\n</div>\r\n<p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condimentum. Nullam dignissim neque odio, ac blandit sapien hendrerit sed. Nulla ac ex fringilla, volutpat mauris sit amet, consequat massa. Suspendisse feugiat, elit sed fringilla pellentesque, felis sapien pharetra nulla, sed aliquet ante nisi sit amet nibh. Mauris sed purus consequat, auctor libero sed, molestie neque. Nam convallis at felis vel varius. Aliquam sollicitudin tincidunt nunc suscipit vulputate</p>', '', '', '', '0db58bdaeccd9505e85cbb641378aaaa.jpg', 'smartphone');
 INSERT INTO jms_jmsblog_posts_lang VALUES(4, 2, 'Enjoy Great Music From iPhone Xs Max', 'enjoy-great-music-from-iphone-xs-max', '', '', '', '', '', '', '');
 INSERT INTO jms_jmsblog_posts_lang VALUES(4, 3, 'Enjoy Great Music From iPhone Xs Max', 'enjoy-great-music-from-iphone-xs-max', '', '', '', '', '', '', '');
 INSERT INTO jms_jmsblog_posts_lang VALUES(4, 4, 'Enjoy Great Music From iPhone Xs Max', 'enjoy-great-music-from-iphone-xs-max', '', '', '', '', '', '', '');
@@ -12051,25 +12223,23 @@ INSERT INTO jms_jmsmegamenu VALUES(284, 1, 3, 'html', 'html_content', '<p><a hre
 INSERT INTO jms_jmsmegamenu VALUES(285, 1, 3, 'html', 'html_content', '<p><a href=\"index.php?id_category=11&controller=category&id_lang=1\"><img src=\"themes/jms_kasos/assets/img/feature-img3.jpg\" /></a></p>', 1, '_self', '{\"title\":\"0\"}', 14);
 INSERT INTO jms_jmsmegamenu VALUES(286, 1, 3, 'html', 'html_content', '<p><a href=\"index.php?id_category=16&controller=category&id_lang=1\"><img src=\"themes/jms_kasos/assets/img/feature-img4.jpg\" /></a></p>', 1, '_self', '{\"title\":\"0\"}', 21);
 INSERT INTO jms_jmsmegamenu VALUES(287, 1, 5, 'jmsblog-category', '1', '', 1, '_self', '{\"title\":\"1\"}', 1);
-INSERT INTO jms_jmsmegamenu VALUES(288, 1, 287, 'link', 'index.php?fc=module&module=jmsblog&controller=category&category_id=2&sidebar=left', '', 1, '_self', '', 1);
-INSERT INTO jms_jmsmegamenu VALUES(289, 1, 287, 'link', 'index.php?fc=module&module=jmsblog&controller=category&category_id=2&sidebar=right', '', 1, '_self', '', 2);
-INSERT INTO jms_jmsmegamenu VALUES(290, 1, 287, 'link', 'index.php?fc=module&module=jmsblog&controller=category&category_id=2&sidebar=no', '', 1, '_self', '', 2);
-INSERT INTO jms_jmsmegamenu VALUES(291, 1, 287, 'link', 'index.php?fc=module&module=jmsblog&controller=category&category_id=2&sidebar=left&layout=category-layout-2columns', '', 1, '_self', '', 3);
-INSERT INTO jms_jmsmegamenu VALUES(292, 1, 287, 'link', 'index.php?fc=module&module=jmsblog&controller=category&category_id=2&sidebar=no&layout=category-layout-3columns', '', 1, '_self', '', 4);
-INSERT INTO jms_jmsmegamenu VALUES(293, 1, 287, 'link', 'index.php?fc=module&module=jmsblog&controller=category&category_id=2&sidebar=no&layout=category-layout-4columns', '', 1, '_self', '', 5);
-INSERT INTO jms_jmsmegamenu VALUES(294, 1, 5, 'jmsblog-singlepost', '21', '', 1, '_self', '{\"title\":\"1\"}', 2);
-INSERT INTO jms_jmsmegamenu VALUES(295, 1, 294, 'link', 'index.php?fc=module&module=jmsblog&controller=post&post_id=21&sidebar=left', '', 1, '_self', '', 1);
-INSERT INTO jms_jmsmegamenu VALUES(296, 1, 294, 'link', 'index.php?fc=module&module=jmsblog&controller=post&post_id=21&sidebar=right', '', 1, '_self', '', 2);
-INSERT INTO jms_jmsmegamenu VALUES(297, 1, 294, 'link', 'index.php?fc=module&module=jmsblog&controller=post&post_id=21&sidebar=no', '', 1, '_self', '', 3);
+INSERT INTO jms_jmsmegamenu VALUES(288, 1, 287, 'link', '', '', 1, '_self', '', 1);
+INSERT INTO jms_jmsmegamenu VALUES(289, 1, 287, 'link', '', '', 1, '_self', '', 2);
+INSERT INTO jms_jmsmegamenu VALUES(290, 1, 287, 'link', '', '', 1, '_self', '', 2);
+INSERT INTO jms_jmsmegamenu VALUES(292, 1, 287, 'link', '', '', 1, '_self', '', 3);
+INSERT INTO jms_jmsmegamenu VALUES(293, 1, 287, 'link', '', '', 1, '_self', '', 4);
+INSERT INTO jms_jmsmegamenu VALUES(294, 1, 5, 'jmsblog-singlepost', '1', '', 1, '_self', '{\"title\":\"1\"}', 2);
+INSERT INTO jms_jmsmegamenu VALUES(295, 1, 294, 'link', '', '', 1, '_self', '', 1);
+INSERT INTO jms_jmsmegamenu VALUES(296, 1, 294, 'link', '', '', 1, '_self', '', 2);
+INSERT INTO jms_jmsmegamenu VALUES(297, 1, 294, 'link', '', '', 1, '_self', '', 3);
 INSERT INTO jms_jmsmegamenu VALUES(298, 1, 5, 'jmsblog-categories', 'jmsblog_categories', '', 1, '_self', '{\"title\":\"1\"}', 3);
-INSERT INTO jms_jmsmegamenu VALUES(299, 1, 298, 'link', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=left', '', 1, '_self', '', 1);
-INSERT INTO jms_jmsmegamenu VALUES(300, 1, 298, 'link', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=right', '', 1, '_self', '', 2);
-INSERT INTO jms_jmsmegamenu VALUES(301, 1, 298, 'link', 'index.php?fc=module&module=jmsblog&controller=categories&layout=categories-layout-3columns&sidebar=no', '', 1, '_self', '', 3);
-INSERT INTO jms_jmsmegamenu VALUES(302, 1, 298, 'link', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=left', '', 1, '_self', '', 4);
-INSERT INTO jms_jmsmegamenu VALUES(303, 1, 298, 'link', 'index.php?fc=module&module=jmsblog&controller=categories&layout=categories-layout-3columns&sidebar=no', '', 1, '_self', '', 5);
-INSERT INTO jms_jmsmegamenu VALUES(304, 1, 298, 'link', 'index.php?fc=module&module=jmsblog&controller=categories&layout=categories-layout-4columns&sidebar=no', '', 1, '_self', '', 6);
-INSERT INTO jms_jmsmegamenu VALUES(305, 1, 5, 'jmsblog-tag', 'furniture', '', 1, '_self', '{\"title\":\"1\"}', 4);
-INSERT INTO jms_jmsmegamenu VALUES(306, 1, 5, 'link', 'index.php?fc=module&module=jmsblog&archive=2017-08&controller=archive&id_lang=1&sidebar=left', '', 1, '_self', '{\"title\":\"1\"}', 5);
+INSERT INTO jms_jmsmegamenu VALUES(299, 1, 298, 'link', '', '', 1, '_self', '', 1);
+INSERT INTO jms_jmsmegamenu VALUES(300, 1, 298, 'link', '', '', 1, '_self', '', 2);
+INSERT INTO jms_jmsmegamenu VALUES(301, 1, 298, 'link', '', '', 1, '_self', '', 3);
+INSERT INTO jms_jmsmegamenu VALUES(303, 1, 298, 'link', '', '', 1, '_self', '', 4);
+INSERT INTO jms_jmsmegamenu VALUES(304, 1, 298, 'link', '', '', 1, '_self', '', 5);
+INSERT INTO jms_jmsmegamenu VALUES(305, 1, 5, 'jmsblog-tag', 'smartphone', '', 1, '_self', '{\"title\":\"1\"}', 4);
+INSERT INTO jms_jmsmegamenu VALUES(306, 1, 5, 'jmsblog-archive', '2019-07', '', 1, '_self', '{\"title\":\"1\"}', 5);
 INSERT INTO jms_jmsmegamenu VALUES(307, 1, 6, 'link', 'index.php?controller=best-sales', '', 1, '_self', '{\"title\":\"1\"}', 4);
 INSERT INTO jms_jmsmegamenu VALUES(308, 1, 2, 'product', '19', '', 1, '_self', '{\"title\":\"1\",\"group\":\"1\"}', 1);
 INSERT INTO jms_jmsmegamenu VALUES(309, 1, 2, 'product', '34', '', 1, '_self', '{\"title\":\"1\"}', 8);
@@ -12284,55 +12454,49 @@ INSERT INTO jms_jmsmegamenu_lang VALUES(286, 3, 'img', '');
 INSERT INTO jms_jmsmegamenu_lang VALUES(287, 1, 'Blog Category', '');
 INSERT INTO jms_jmsmegamenu_lang VALUES(287, 2, 'Blog Category', '');
 INSERT INTO jms_jmsmegamenu_lang VALUES(287, 3, 'Blog Category', '');
-INSERT INTO jms_jmsmegamenu_lang VALUES(288, 1, 'Category - Left Sidebar', '');
+INSERT INTO jms_jmsmegamenu_lang VALUES(288, 1, 'Category - Left Sidebar', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=left');
 INSERT INTO jms_jmsmegamenu_lang VALUES(288, 2, 'Category - Left Sidebar', '');
 INSERT INTO jms_jmsmegamenu_lang VALUES(288, 3, 'Category - Left Sidebar', '');
-INSERT INTO jms_jmsmegamenu_lang VALUES(289, 1, 'Category - Right Sidebar', '');
+INSERT INTO jms_jmsmegamenu_lang VALUES(289, 1, 'Category - Right Sidebar', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=right');
 INSERT INTO jms_jmsmegamenu_lang VALUES(289, 2, 'Category - Right Sidebar', '');
 INSERT INTO jms_jmsmegamenu_lang VALUES(289, 3, 'Category - Right Sidebar', '');
-INSERT INTO jms_jmsmegamenu_lang VALUES(290, 1, 'Category - No Sidebar', '');
+INSERT INTO jms_jmsmegamenu_lang VALUES(290, 1, 'Category - No Sidebar', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=no');
 INSERT INTO jms_jmsmegamenu_lang VALUES(290, 2, 'Category - No Sidebar', '');
 INSERT INTO jms_jmsmegamenu_lang VALUES(290, 3, 'Category - No Sidebar', '');
-INSERT INTO jms_jmsmegamenu_lang VALUES(291, 1, '2 Columns', '');
-INSERT INTO jms_jmsmegamenu_lang VALUES(291, 2, '2 Columns', '');
-INSERT INTO jms_jmsmegamenu_lang VALUES(291, 3, '2 Columns', '');
-INSERT INTO jms_jmsmegamenu_lang VALUES(292, 1, '3 Columns', '');
+INSERT INTO jms_jmsmegamenu_lang VALUES(292, 1, '3 Columns', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=no&layout=category-layout-3columns');
 INSERT INTO jms_jmsmegamenu_lang VALUES(292, 2, '3 Columns', '');
 INSERT INTO jms_jmsmegamenu_lang VALUES(292, 3, '3 Columns', '');
-INSERT INTO jms_jmsmegamenu_lang VALUES(293, 1, '4 Columns', '');
+INSERT INTO jms_jmsmegamenu_lang VALUES(293, 1, '4 Columns', 'index.php?fc=module&module=jmsblog&controller=category&category_id=1&sidebar=no&layout=category-layout-4columns');
 INSERT INTO jms_jmsmegamenu_lang VALUES(293, 2, '4 Columns', '');
 INSERT INTO jms_jmsmegamenu_lang VALUES(293, 3, '4 Columns', '');
 INSERT INTO jms_jmsmegamenu_lang VALUES(294, 1, 'Blog Single Post', '');
 INSERT INTO jms_jmsmegamenu_lang VALUES(294, 2, 'Blog Single Post', '');
 INSERT INTO jms_jmsmegamenu_lang VALUES(294, 3, 'Blog Single Post', '');
-INSERT INTO jms_jmsmegamenu_lang VALUES(295, 1, 'Left Sidebar', '');
+INSERT INTO jms_jmsmegamenu_lang VALUES(295, 1, 'Left Sidebar', 'index.php?fc=module&module=jmsblog&category_slug=smartphone&post_id=1&controller=post&id_lang=1&sidebar=left');
 INSERT INTO jms_jmsmegamenu_lang VALUES(295, 2, 'Left Sidebar', '');
 INSERT INTO jms_jmsmegamenu_lang VALUES(295, 3, 'Left Sidebar', '');
-INSERT INTO jms_jmsmegamenu_lang VALUES(296, 1, 'Right Sidebar', '');
+INSERT INTO jms_jmsmegamenu_lang VALUES(296, 1, 'Right Sidebar', 'index.php?fc=module&module=jmsblog&category_slug=smartphone&post_id=1&controller=post&id_lang=1&sidebar=right');
 INSERT INTO jms_jmsmegamenu_lang VALUES(296, 2, 'Right Sidebar', '');
 INSERT INTO jms_jmsmegamenu_lang VALUES(296, 3, 'Right Sidebar', '');
-INSERT INTO jms_jmsmegamenu_lang VALUES(297, 1, 'No Sidebar', '');
+INSERT INTO jms_jmsmegamenu_lang VALUES(297, 1, 'No Sidebar', 'index.php?fc=module&module=jmsblog&category_slug=smartphone&post_id=1&controller=post&id_lang=1&sidebar=no');
 INSERT INTO jms_jmsmegamenu_lang VALUES(297, 2, 'No Sidebar', '');
 INSERT INTO jms_jmsmegamenu_lang VALUES(297, 3, 'No Sidebar', '');
 INSERT INTO jms_jmsmegamenu_lang VALUES(298, 1, 'Blog Categories', '');
 INSERT INTO jms_jmsmegamenu_lang VALUES(298, 2, 'Blog Categories', '');
 INSERT INTO jms_jmsmegamenu_lang VALUES(298, 3, 'Blog Categories', '');
-INSERT INTO jms_jmsmegamenu_lang VALUES(299, 1, 'Categories - Left Sidebar', '');
+INSERT INTO jms_jmsmegamenu_lang VALUES(299, 1, 'Categories - Left Sidebar', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=left');
 INSERT INTO jms_jmsmegamenu_lang VALUES(299, 2, 'Categories - Left Sidebar', '');
 INSERT INTO jms_jmsmegamenu_lang VALUES(299, 3, 'Categories - Left Sidebar', '');
-INSERT INTO jms_jmsmegamenu_lang VALUES(300, 1, 'Categories- Right Sidebar', '');
+INSERT INTO jms_jmsmegamenu_lang VALUES(300, 1, 'Categories- Right Sidebar', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=right');
 INSERT INTO jms_jmsmegamenu_lang VALUES(300, 2, 'Categories- Right Sidebar', '');
 INSERT INTO jms_jmsmegamenu_lang VALUES(300, 3, 'Categories- Right Sidebar', '');
-INSERT INTO jms_jmsmegamenu_lang VALUES(301, 1, 'Categories -No Sidebar', '');
+INSERT INTO jms_jmsmegamenu_lang VALUES(301, 1, 'Categories -No Sidebar', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=no');
 INSERT INTO jms_jmsmegamenu_lang VALUES(301, 2, 'Categories -No Sidebar', '');
 INSERT INTO jms_jmsmegamenu_lang VALUES(301, 3, 'Categories -No Sidebar', '');
-INSERT INTO jms_jmsmegamenu_lang VALUES(302, 1, '2 Columns', '');
-INSERT INTO jms_jmsmegamenu_lang VALUES(302, 2, '2 Columns', '');
-INSERT INTO jms_jmsmegamenu_lang VALUES(302, 3, '2 Columns', '');
-INSERT INTO jms_jmsmegamenu_lang VALUES(303, 1, '3 Columns', '');
+INSERT INTO jms_jmsmegamenu_lang VALUES(303, 1, '3 Columns', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=no&layout=categories-layout-3columns');
 INSERT INTO jms_jmsmegamenu_lang VALUES(303, 2, '3 Columns', '');
 INSERT INTO jms_jmsmegamenu_lang VALUES(303, 3, '3 Columns', '');
-INSERT INTO jms_jmsmegamenu_lang VALUES(304, 1, '4 Columns', '');
+INSERT INTO jms_jmsmegamenu_lang VALUES(304, 1, '4 Columns', 'index.php?fc=module&module=jmsblog&controller=categories&sidebar=no&layout=categories-layout-4columns');
 INSERT INTO jms_jmsmegamenu_lang VALUES(304, 2, '4 Columns', '');
 INSERT INTO jms_jmsmegamenu_lang VALUES(304, 3, '4 Columns', '');
 INSERT INTO jms_jmsmegamenu_lang VALUES(305, 1, 'Blog Tags', '');
@@ -12628,6 +12792,38 @@ INSERT INTO jms_jmsmegamenu_lang VALUES(315, 4, 'Product Layout', '');
 INSERT INTO jms_jmsmegamenu_lang VALUES(315, 6, 'Product Layout', '');
 INSERT INTO jms_jmsmegamenu_lang VALUES(287, 4, 'Blog Category', '');
 INSERT INTO jms_jmsmegamenu_lang VALUES(287, 6, 'Blog Category', '');
+INSERT INTO jms_jmsmegamenu_lang VALUES(288, 4, 'Category - Left Sidebar', '');
+INSERT INTO jms_jmsmegamenu_lang VALUES(288, 6, 'Category - Left Sidebar', '');
+INSERT INTO jms_jmsmegamenu_lang VALUES(289, 4, 'Category - Right Sidebar', '');
+INSERT INTO jms_jmsmegamenu_lang VALUES(289, 6, 'Category - Right Sidebar', '');
+INSERT INTO jms_jmsmegamenu_lang VALUES(290, 4, 'Category - No Sidebar', '');
+INSERT INTO jms_jmsmegamenu_lang VALUES(290, 6, 'Category - No Sidebar', '');
+INSERT INTO jms_jmsmegamenu_lang VALUES(292, 4, '3 Columns', '');
+INSERT INTO jms_jmsmegamenu_lang VALUES(292, 6, '3 Columns', '');
+INSERT INTO jms_jmsmegamenu_lang VALUES(293, 4, '4 Columns', '');
+INSERT INTO jms_jmsmegamenu_lang VALUES(293, 6, '4 Columns', '');
+INSERT INTO jms_jmsmegamenu_lang VALUES(294, 4, 'Blog Single Post', '');
+INSERT INTO jms_jmsmegamenu_lang VALUES(294, 6, 'Blog Single Post', '');
+INSERT INTO jms_jmsmegamenu_lang VALUES(295, 4, 'Left Sidebar', '');
+INSERT INTO jms_jmsmegamenu_lang VALUES(295, 6, 'Left Sidebar', '');
+INSERT INTO jms_jmsmegamenu_lang VALUES(296, 4, 'Right Sidebar', '');
+INSERT INTO jms_jmsmegamenu_lang VALUES(296, 6, 'Right Sidebar', '');
+INSERT INTO jms_jmsmegamenu_lang VALUES(297, 4, 'No Sidebar', '');
+INSERT INTO jms_jmsmegamenu_lang VALUES(297, 6, 'No Sidebar', '');
+INSERT INTO jms_jmsmegamenu_lang VALUES(299, 4, 'Categories - Left Sidebar', '');
+INSERT INTO jms_jmsmegamenu_lang VALUES(299, 6, 'Categories - Left Sidebar', '');
+INSERT INTO jms_jmsmegamenu_lang VALUES(300, 4, 'Categories- Right Sidebar', '');
+INSERT INTO jms_jmsmegamenu_lang VALUES(300, 6, 'Categories- Right Sidebar', '');
+INSERT INTO jms_jmsmegamenu_lang VALUES(301, 4, 'Categories -No Sidebar', '');
+INSERT INTO jms_jmsmegamenu_lang VALUES(301, 6, 'Categories -No Sidebar', '');
+INSERT INTO jms_jmsmegamenu_lang VALUES(303, 4, '3 Columns', '');
+INSERT INTO jms_jmsmegamenu_lang VALUES(303, 6, '3 Columns', '');
+INSERT INTO jms_jmsmegamenu_lang VALUES(304, 4, '4 Columns', '');
+INSERT INTO jms_jmsmegamenu_lang VALUES(304, 6, '4 Columns', '');
+INSERT INTO jms_jmsmegamenu_lang VALUES(305, 4, 'Blog Tags', '');
+INSERT INTO jms_jmsmegamenu_lang VALUES(305, 6, 'Blog Tags', '');
+INSERT INTO jms_jmsmegamenu_lang VALUES(306, 4, 'Blog Archives', '');
+INSERT INTO jms_jmsmegamenu_lang VALUES(306, 6, 'Blog Archives', '');
 
 -- --------------------------------------------------------
 
@@ -16956,6 +17152,7 @@ INSERT INTO jms_page VALUES(1, 1, NULL);
 INSERT INTO jms_page VALUES(2, 2, NULL);
 INSERT INTO jms_page VALUES(3, 3, 10);
 INSERT INTO jms_page VALUES(4, 4, NULL);
+INSERT INTO jms_page VALUES(5, 3, 0);
 
 -- --------------------------------------------------------
 
@@ -27097,7 +27294,7 @@ ALTER TABLE jms_configuration_kpi
 -- AUTO_INCREMENT cho bảng jms_connections
 --
 ALTER TABLE jms_connections
-  MODIFY id_connections int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
+  MODIFY id_connections int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=70;
 
 --
 -- AUTO_INCREMENT cho bảng jms_connections_source
@@ -27241,7 +27438,7 @@ ALTER TABLE jms_hook_alias
 -- AUTO_INCREMENT cho bảng jms_hook_module_exceptions
 --
 ALTER TABLE jms_hook_module_exceptions
-  MODIFY id_hook_module_exceptions int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=222;
+  MODIFY id_hook_module_exceptions int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=376;
 
 --
 -- AUTO_INCREMENT cho bảng jms_hotdeals
@@ -27301,7 +27498,7 @@ ALTER TABLE jms_jmsblog_posts
 -- AUTO_INCREMENT cho bảng jms_jmsblog_posts_comments
 --
 ALTER TABLE jms_jmsblog_posts_comments
-  MODIFY comment_id int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY comment_id int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT cho bảng jms_jmsblog_posts_lang
@@ -27655,7 +27852,7 @@ ALTER TABLE jms_order_state
 -- AUTO_INCREMENT cho bảng jms_page
 --
 ALTER TABLE jms_page
-  MODIFY id_page int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY id_page int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT cho bảng jms_pagenotfound
@@ -27769,7 +27966,7 @@ ALTER TABLE jms_search_engine
 -- AUTO_INCREMENT cho bảng jms_search_word
 --
 ALTER TABLE jms_search_word
-  MODIFY id_word int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8387;
+  MODIFY id_word int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7251;
 
 --
 -- AUTO_INCREMENT cho bảng jms_sekeyword
@@ -27805,7 +28002,7 @@ ALTER TABLE jms_specific_price
 -- AUTO_INCREMENT cho bảng jms_specific_price_priority
 --
 ALTER TABLE jms_specific_price_priority
-  MODIFY id_specific_price_priority int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=64;
+  MODIFY id_specific_price_priority int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
 
 --
 -- AUTO_INCREMENT cho bảng jms_specific_price_rule
