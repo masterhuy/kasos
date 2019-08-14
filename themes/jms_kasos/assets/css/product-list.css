@@ -293,6 +293,9 @@
 	margin-top: 10px;
 	margin-bottom: 55px;
 }
+#category .image-banner-category img{
+	width: 100%;
+}
 #category .facet .facet-label {
 	margin-bottom: 0;
 	display: flex;

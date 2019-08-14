@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-08-08 05:29:07
+/* Smarty version 3.1.33, created on 2019-08-14 01:01:13
   from 'D:\xamppp\htdocs\jms_kasos\themes\jms_kasos\templates\_partials\pagination.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d4beb63b6a205_64963127',
+  'unifunc' => 'content_5d53959920ae97_36536018',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5392d7581ca9390287a861d4b58693ff885541e0' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_kasos\\themes\\jms_kasos\\templates\\_partials\\pagination.tpl',
-      1 => 1565255337,
+      1 => 1565257221,
       2 => 'file',
     ),
   ),
@@ -20,21 +20,21 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d4beb63b6a205_64963127 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d53959920ae97_36536018 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
 <nav class="pagination col-lg-12 col-sm-12 col-xs-12 col-md-12">
   <div class="col-md-6 col-sm-6 col-xs-6 left-pagination">
     <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_18195746555d4beb63b4ec84_93319672', 'pagination_summary');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_56185345d5395991e3d98_24929682', 'pagination_summary');
 ?>
 
   </div>
 
-  <div class=" col-md-6 col-sm-6 col-xs-6 right-pagination">
+  <div class="col-md-6 col-sm-6 col-xs-6 right-pagination">
     <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_5382808455d4beb63b56985_71894467', 'pagination_page_list');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_8569769895d5395991e3d94_13904781', 'pagination_page_list');
 ?>
 
   </div>
@@ -42,12 +42,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_5382808455d4beb63b
 </nav>
 <?php }
 /* {block 'pagination_summary'} */
-class Block_18195746555d4beb63b4ec84_93319672 extends Smarty_Internal_Block
+class Block_56185345d5395991e3d98_24929682 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'pagination_summary' => 
   array (
-    0 => 'Block_18195746555d4beb63b4ec84_93319672',
+    0 => 'Block_56185345d5395991e3d98_24929682',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -65,12 +65,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'pagination_summary'} */
 /* {block 'pagination_page_list'} */
-class Block_5382808455d4beb63b56985_71894467 extends Smarty_Internal_Block
+class Block_8569769895d5395991e3d94_13904781 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'pagination_page_list' => 
   array (
-    0 => 'Block_5382808455d4beb63b56985_71894467',
+    0 => 'Block_8569769895d5395991e3d94_13904781',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

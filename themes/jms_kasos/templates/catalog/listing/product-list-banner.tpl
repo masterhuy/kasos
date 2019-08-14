@@ -35,11 +35,9 @@
           {/if}
 				{/if}
 			{/if}
-      <div class="cat_desc">
-        <div class="addon-title">
+        <div class="category-title">
             <h3>{$page.meta.title}</h3>
         </div>
-      </div>
       {if $listing.products|count}
         <div id="">
           {block name='product_list_top'}

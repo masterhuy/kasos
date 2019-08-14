@@ -42,7 +42,6 @@
     transform: rotate(180deg);
     right: 0;
     font-size: 16px;
-    top: 2px;
 }
 .block-categories > .category-sub-menu > .cat-item .navbar-toggler.collapsed{
     transform: unset;
@@ -193,7 +192,7 @@
 }
 
 /**/
-#product-availability {
+.product-prices #product-availability {
     display: block;
     margin-left: 41px;
 }
@@ -442,9 +441,9 @@
 .product-quantity button.bootstrap-touchspin-down{
     margin-right: 46px;
 }
-.product-quantity button.btn-touchspin:hover{
+.product-quantity button.btn-touchspin:hover {
     background-color: transparent;
-    border-color: #141414;
+    border-color: transparent;
 }
 .product-minimal-quantity {
 	margin-bottom:0;

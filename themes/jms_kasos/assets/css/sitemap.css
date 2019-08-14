@@ -1,12 +1,21 @@
 #sitemap #wrapper > .container {
-	border:1px solid #e5e5e5;
+	border:1px solid #ebebeb;
 	padding: 30px 0;
 }
 #sitemap .sitemap{
 	margin: 0;
 }
+#sitemap h5{
+	font-family: 'samsungsharpsans-bold';
+	color: #000;
+	font-size: 20px;
+	letter-spacing: 0.5px;
+}
 #sitemap .sitemap ul.tree li a {
 	font-size:15px;
+}
+#sitemap .sitemap ul li{
+	line-height: 32px;
 }
 @media (max-width: 991px){
 	#sitemap .sitemap > div{

@@ -29,7 +29,7 @@
 			   {if $page.page_name=="category"}
 				
 						<div class="cat_desc">
-              <div class="addon-title">
+              <div class="category-title">
                 <h3>{$page.meta.title}</h3>
               </div>
 							<div class="flex-box">

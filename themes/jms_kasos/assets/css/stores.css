@@ -1,8 +1,14 @@
 #stores .page-stores {
 	margin: 0 auto; 
-	border:1px solid #e5e5e5;
+	border:1px solid #ebebeb;
 	padding:30px 20px;
  }
+ #stores .h3.card-title{
+    font-family: 'samsungsharpsans-bold';
+    color: #000;
+    letter-spacing: 0.5px;
+}
+
   #stores .page-stores .store-item {
     padding-left: 0.75rem;
     padding-right: 0.75rem; }

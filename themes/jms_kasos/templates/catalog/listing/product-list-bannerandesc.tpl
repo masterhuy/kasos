@@ -26,6 +26,9 @@
 {block name='content'}
   <section id="main">
     <section id="products">
+    <div class="category-title">
+        <h3>{$page.meta.title}</h3>
+      </div>
 			{if $page.page_name=="category"}
 				{if isset($category.image.bySize.category_default.url) && {$category.image.bySize.category_default.url} != ""}
 					<div style="background:transparent url('{$category.image.bySize.category_default.url}')
