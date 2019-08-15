@@ -27,7 +27,7 @@
 				{/foreach}
 			</div>
 			<div class="cart-button">
-				<a class="btn-default btn-black w-100 text-center" href="{$urls.pages.order}" title="{l s='Proceed to checkout' d='Shop.Theme.Actions'}" rel="nofollow">
+				<a class="btn-default btn-black w-100 text-center" href="{$cart_url}" title="{l s='Proceed to checkout' d='Shop.Theme.Actions'}" rel="nofollow">
 					{l s='Check out' d='Shop.Theme.Actions'}
 				</a>
 			</div>

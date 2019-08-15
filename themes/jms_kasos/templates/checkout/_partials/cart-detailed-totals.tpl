@@ -23,7 +23,7 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <div class="cart-detailed-totals">
-
+  <h3>Cart Totals</h3>
   <div class="card-block">
     {foreach from=$cart.subtotals item="subtotal"}
       {if $subtotal.value && $subtotal.type !== 'tax'}
@@ -48,7 +48,6 @@
     {include file='checkout/_partials/cart-voucher.tpl'}
   {/block}
 
-  <hr>
 
   <div class="card-block">
     <div class="cart-summary-line cart-total">
@@ -62,5 +61,4 @@
     </div>
   </div>
 
-  <hr>
 </div>

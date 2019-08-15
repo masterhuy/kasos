@@ -5,3 +5,6 @@
 #customer-form .form-footer {
 	margin-top: 20px;
 }
+#identity .show-pass button{
+  height: 50px;
+}

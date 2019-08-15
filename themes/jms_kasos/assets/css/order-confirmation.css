@@ -44,7 +44,7 @@
 	font-weight:500;
 }
 #order-confirmation .title-block{
-	background-color: #141414;
+	background-color: #ff4800;
 	color: #fff;
 	padding:10px 15px;
 }
@@ -57,11 +57,11 @@
 	margin-bottom:0;
 }
 #order-confirmation .card-title {
-  text-transform: uppercase;
   font-size: 15px;
   padding: 0;
   margin: 0;
-  color: #141414;
+  color: #000;
+  font-family: 'samsungsharpsans-bold';
 }
 #order-confirmation #content-hook_order_confirmation .title-block, #order-confirmation .page-order-confirmation, #order-confirmation .definition-list {
 	border: 1px solid #e5e5e5;
@@ -78,17 +78,12 @@
 }
 #order-confirmation #content-hook_payment_return, #order-confirmation .page-order-confirmation { 
 	padding:30px 15px;
-  color: #858585;
 }
 #order-confirmation .action-buttons a{
   margin-left: 6px;
 }
 .payment_return a{
-  color: #858585;
   text-decoration: underline !important;
-}
-.payment_return a:hover{
-  color: #141414;
 }
   .definition-list dl {
   display: -webkit-box;

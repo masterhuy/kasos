@@ -94,7 +94,6 @@
 	margin-top: 80px;
 }
 #checkout #delivery-address .form-footer button {
-	font-size: 13px;
 	margin-right: 6px;
 }
 #checkout #delivery-address .form-footer .js-cancel-address{
@@ -102,6 +101,11 @@
 }
 #checkout section#content #js-checkout-summary p {
 	text-transform: capitalize;
+	font-size: 16px;
+	padding: 0;
+	color: #555;
+	font-family: 'samsungsharpsans-bold';
+	letter-spacing: 0.1px;
 }
 #checkout section#content #cart-summary-product-list .media-list .media-body {
 	padding: 0;
@@ -117,10 +121,18 @@
 	color: #141414;
 }
 #checkout section#content #js-checkout-summary .card-block .label {
-	font-size: 13px;
-	font-weight: 400;
+	text-transform: capitalize;
+	font-size: 16px;
 	padding: 0;
-	color: #858585;
+	color: #555;
+	font-family: 'samsungsharpsans-bold';
+	letter-spacing: 0.1px;
+	line-height: 2;
+}
+.cart-summary-line .value{
+	font-size: 20px;
+	font-family: 'samsungsharpsans-bold';
+	color: #000;
 }
 .price .product-price {
     display: block;
@@ -190,8 +202,7 @@
 	margin-left:10px;
 }
 #checkout .right-box {
-	background: #f2f2f2;
-	border: 1px solid #e5e5e5;
+	border: 2px solid #0070c9;
 }
 #checkout .right-box .card.js-cart, #checkout .right-box #block-reassurance {
 	padding: 20px;
@@ -201,7 +212,7 @@ body#checkout section.checkout-step.-complete .step-title {
 	color: #fff;
 }
 body#checkout section.checkout-step.-complete .step-title {
-	background-color: #141414;
+	background-color: #ff4800;
 	color: #fff;
 	line-height: 1;
 }
@@ -210,8 +221,7 @@ body#checkout section.checkout-step .step-title {
 	font-size: 15px;
 	margin: 0;
 	padding: 13px 15px;
-	text-transform: uppercase;
-	line-height: 1;
+	font-family: 'samsungsharpsans-medium';
 }
 body#checkout section.checkout-step .content {
     margin-top: 10px;
@@ -271,12 +281,12 @@ body#checkout section.checkout-step.-reachable.-complete .content {
   margin-right: 1rem;
 } 
 body#checkout section.checkout-step.-current .content .address {
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: 400;
 	padding: 0 20px;
 }
 body#checkout section.checkout-step.-current .content .address-alias.h4 {
-	font-size: 13px;
+	font-size: 14px;
 }
 body#checkout section.checkout-step.-current .content .address-footer {
 	border-bottom: 1px solid #ebebeb;

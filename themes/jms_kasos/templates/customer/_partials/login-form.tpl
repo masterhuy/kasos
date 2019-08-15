@@ -18,7 +18,7 @@
   <footer class="form-footer text-xs-center clearfix">
     <input type="hidden" name="submitLogin" value="1">
     {block name='form_buttons'}
-      <button class="btn-default active w-100 mb-20" data-link-action="sign-in" type="submit" class="form-control-submit">
+      <button class="btn-default mb-20" data-link-action="sign-in" type="submit" class="form-control-submit">
         {l s='Login' d='Shop.Theme.Actions'}
       </button>
     {/block}

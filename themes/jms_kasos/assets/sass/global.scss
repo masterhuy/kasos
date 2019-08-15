@@ -779,6 +779,18 @@
 	}
 }
 //
+.btn-border-bottom{
+	position: relative;
+	&::after{
+		content: "";
+		position: absolute;
+		bottom: 0;
+		height: 2px;
+		width: 100%;
+		left: 0;
+		background: #d93d00;
+	}
+}
 
 //discount
 .jms-row.discount{
@@ -2749,6 +2761,11 @@
 //
 
 // wishlist
+#mywishlist{
+	h3{
+		color: #000;
+	}
+}
 #form_wishlist {
   margin-top: 20px;
   fieldset{

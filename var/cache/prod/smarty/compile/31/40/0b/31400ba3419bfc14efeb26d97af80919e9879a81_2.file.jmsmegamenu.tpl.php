@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-08-14 06:13:25
+/* Smarty version 3.1.33, created on 2019-08-15 06:26:53
   from 'D:\xamppp\htdocs\jms_kasos\themes\jms_kasos\modules\jmsmegamenu\views\templates\hook\jmsmegamenu.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d53dec59b6f48_57705046',
+  'unifunc' => 'content_5d55336d717348_38460389',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d53dec59b6f48_57705046 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d55336d717348_38460389 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="jms-megamenu-wrap">
 	<a id="open-button" class="open-button hidden-lg hidden-md" href="#">

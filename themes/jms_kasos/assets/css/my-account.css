@@ -34,6 +34,7 @@
 	margin-bottom: 1.875rem;
 	text-align: center;
 	text-transform: uppercase;
+	color: #000;
 }
 .page-my-account #content .links a:last-child {
 	margin-bottom:0;
@@ -44,6 +45,7 @@
 	padding: 7px;
 	text-align: center;
 	text-transform: uppercase;
+	color: #000;
 }
 #block-history table.std td, #block-history table.table_block td {
     text-align: center;

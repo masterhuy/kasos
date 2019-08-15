@@ -862,9 +862,6 @@ textarea{
   margin-bottom: 20px;
   padding: 10px;
 }
-textarea:hover, textarea:focus{
-  border-color: #000;
-}
 fieldset {
   width: 100%;
   padding: 15px;
@@ -3189,12 +3186,16 @@ ul.footer_links {
 .wlp_bought_list .product-box{
   display: block;
 }
+.wlp_bought_list .product-box:hover {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
 .wlp_bought_list .product_infos {
-  text-align: left;
-  margin-top: 14px;
+  text-align: center;
+  padding: 0 20px 20px;
 }
 .wlp_bought_list .group_btn {
   margin-bottom: 20px;
+  text-align: center;
 }
 .wlp_bought .group_btn a {
   display: inline-block;

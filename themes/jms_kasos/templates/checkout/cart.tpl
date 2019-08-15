@@ -28,12 +28,12 @@
 
 <section id="main">
 	<div class="cart-block">
-        <h1>{l s='Shopping Bag' d='Shop.Theme.Checkout'}</h1>
+        <h1>{l s='Shopping Cart' d='Shop.Theme.Checkout'}</h1>
     </div>
     <div class="cart-grid">
 		<div class="row first">
       		<!-- Left Block: cart product informations & shpping -->
-      		<div class="cart-grid-body col-lg-9 col-md-9 col-sm-12 col-xs-12">
+      		<div class="cart-grid-body col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<div class="cart-box">
 					<!-- cart products detailed -->
 					<div class="cart cart-container">
@@ -43,13 +43,7 @@
 					</div>
 
 					{block name='continue_shopping'}
-			  			<a class="btn-continue-shopping btn-default active" href="{$urls.pages.index}">
-							<i class="d-i-flex">
-								<svg aria-hidden="true" focusable="false" role="presentation"
-										class="icon icon-theme-012" viewBox="0 0 24 24">
-									<path d="M21.036 12.569a.601.601 0 0 1-.439.186H4.601l4.57 4.551c.117.13.176.28.176.449a.652.652 0 0 1-.176.449.877.877 0 0 1-.215.127.596.596 0 0 1-.468 0 .877.877 0 0 1-.215-.127l-5.625-5.625a2.48 2.48 0 0 1-.068-.107c-.02-.032-.042-.068-.068-.107a.736.736 0 0 1 0-.468 2.48 2.48 0 0 0 .068-.107c.02-.032.042-.068.068-.107l5.625-5.625a.652.652 0 0 1 .449-.176c.169 0 .319.059.449.176.117.13.176.28.176.449a.652.652 0 0 1-.176.449l-4.57 4.551h15.996a.6.6 0 0 1 .439.186.601.601 0 0 1 .186.439.599.599 0 0 1-.186.437z"/>
-								</svg>
-							</i>
+			  			<a class="btn-default btn-border-bottom continue-shopping pull-right" href="{$urls.pages.index}">
 							{l s='Continue shopping' d='Shop.Theme.Actions'}
 			  			</a>
 					{/block}
@@ -62,7 +56,7 @@
     		</div>
 
       		<!-- Right Block: cart subtotal & cart total -->
-      		<div class="cart-grid-right pull-right col-lg-3 col-md-3 col-sm-12 col-xs-12">
+      		<div class="cart-grid-right pull-right col-lg-4 col-md-4 col-sm-12 col-xs-12">
 				<div class="right-box">
 					{block name='cart_summary'}
 			  		<div class="card cart-summary">
