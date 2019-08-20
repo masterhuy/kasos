@@ -7,21 +7,21 @@
 **/
 jQuery(function ($) {
     "use strict";
-    $("#off-canvas-menu .mega .fa-angle-right").click(function (e) {		
-    	e.preventDefault();		
+    $("#off-canvas-menu .mega .fa-angle-right").click(function (e) {        
+        e.preventDefault();     
         var _parent = $(this).parent();
         var _dropdown = _parent.next('.dropdown-menu');
         var _grandparent = _parent.parent();        
         if(_grandparent.hasClass('open')) {
-        	_grandparent.removeClass('open');
-        	_dropdown.slideUp("normal");
-			$(this).removeClass('fa-angle-down');
-			$(this).addClass('fa-angle-right');
-        } else {			
-        	_grandparent.addClass('open');        	
-        	_dropdown.slideDown("normal"); 
-			$(this).removeClass('fa-angle-right');
-			$(this).addClass('fa-angle-down');
+            _grandparent.removeClass('open');
+            _dropdown.slideUp("normal");
+            $(this).removeClass('fa-angle-down');
+            $(this).addClass('fa-angle-right');
+        } else {            
+            _grandparent.addClass('open');          
+            _dropdown.slideDown("normal"); 
+            $(this).removeClass('fa-angle-right');
+            $(this).addClass('fa-angle-down');
         }
     })
     $(".mega .fa-angle-right").mouseover(function (e) {       
@@ -32,5 +32,5 @@ jQuery(function ($) {
         e.preventDefault();
         return false;
         
-    })	
+    })  
 });

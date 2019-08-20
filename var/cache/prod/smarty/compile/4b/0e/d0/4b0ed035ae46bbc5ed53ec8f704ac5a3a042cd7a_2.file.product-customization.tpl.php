@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-08-13 22:41:05
+/* Smarty version 3.1.33, created on 2019-08-15 22:11:38
   from 'D:\xamppp\htdocs\jms_kasos\themes\jms_kasos\templates\catalog\_partials\product-customization.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d5374c1b10b51_01746482',
+  'unifunc' => 'content_5d5610dad46de9_36322621',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d5374c1b10b51_01746482 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d5610dad46de9_36322621 (Smarty_Internal_Template $_smarty_tpl) {
 ?><section class="product-customization">
   <?php if (!$_smarty_tpl->tpl_vars['configuration']->value['is_catalog']) {?>
     <div class="card card-block">

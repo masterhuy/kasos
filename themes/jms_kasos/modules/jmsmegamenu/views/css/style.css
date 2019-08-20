@@ -5,6 +5,13 @@
     padding: 0;
 	position:static;
 }
+#open-button {
+    font-size: 30px;
+    color: #000;
+    position: relative;
+    top: 4px;
+    right: 4px;
+}
 .mod-content .product-info{
     margin-top: 17px;
 }

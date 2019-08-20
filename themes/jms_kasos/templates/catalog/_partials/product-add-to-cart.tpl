@@ -23,7 +23,7 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <div class="product-add-to-cart">
-    {if isset($configuration.is_catalog) && !$configuration.is_catalog}
+    {if !$configuration.is_catalog}
         {block name='product_quantity'}
             <div class="product-quantity">
                 <div class="customs">

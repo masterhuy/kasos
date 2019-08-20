@@ -3875,25 +3875,25 @@ footer .blog-carousel {
 
 /*back to top*/
 .back-to-top {
-  bottom: 16px;
+  bottom: 20px;
   cursor: pointer;
   font-size: 20px;
-  height: 30px;
-  line-height: 30px;
+  height: 50px;
+  line-height: 50px;
   position: fixed;
-  right: -40px;
   text-align: center;
-  width: 30px;
+  width: 50px;
   padding: 0;
   border: 0;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0;
+  right: 20px;
   z-index: 9999;
-  transition: .4s all;
 }
 .back-to-top.show{
-  right: 0;
-}
-.back-to-top i{
-  height: 30px;
+  opacity: 1;
 }
 
 

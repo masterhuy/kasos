@@ -41,11 +41,14 @@
     text-transform: capitalize;
     position: relative;
     font-size: 13px;
-    color: #858585;
+    color: #555;
 }
 #off-canvas-menu .dropdown-menu > li > a:focus, #off-canvas-menu .dropdown-menu > li > a:hover {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     text-decoration: none;
+}
+#off-canvas-menu ul li.current a{
+    color: #ff4800;
 }
 #off-canvas-menu li a {
     border-radius: 0;
@@ -56,6 +59,7 @@
     font-size: 15px;
     letter-spacing: 0.5px;
     line-height: 36px;
+    color: #000;
 }
 #off-canvas-menu .dropdown-menu > li.group > a {
     font-size: 15px;
@@ -110,15 +114,15 @@
     font-size: 18px;
 }
 #off-canvas-menu #search_widget input {
-    width: 189px;
+    width: 100%;
     border: 0;
     border-radius: 0;
     height: 37px;
     background: transparent;
     margin-bottom: 0;
-    font-size: 18px;
-    color: #141414;
+    font-size: 13px;
     padding: 0 0 8px;
+    font-weight: 400;
 }
 #off-canvas-menu #search_widget input::placeholder{
     color: #141414;
@@ -127,6 +131,7 @@
     padding: 0 20px;
     background: #fff;
     padding-bottom: 25px;
+    margin-bottom: 0;
 }
 #off-canvas-menu .btn-group > ul li span, #off-canvas-menu .btn-group > ul li a {
     font-size: 13px;

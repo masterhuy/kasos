@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-08-09 04:39:01
+/* Smarty version 3.1.33, created on 2019-08-20 04:21:14
   from 'D:\xamppp\htdocs\jms_kasos\themes\jms_kasos\templates\checkout\_partials\cart-detailed-totals.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d4d312506d308_94190452',
+  'unifunc' => 'content_5d5bad7a8ab7c5_14547910',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'aa66b8666b553bb7e87201ff51bca2b803b3ac98' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_kasos\\themes\\jms_kasos\\templates\\checkout\\_partials\\cart-detailed-totals.tpl',
-      1 => 1563937369,
+      1 => 1565843845,
       2 => 'file',
     ),
   ),
@@ -21,12 +21,12 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:checkout/_partials/cart-voucher.tpl' => 1,
   ),
 ),false)) {
-function content_5d4d312506d308_94190452 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d5bad7a8ab7c5_14547910 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
 <div class="cart-detailed-totals">
-
+  <h3>Cart Totals</h3>
   <div class="card-block">
     <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['cart']->value['subtotals'], 'subtotal');
@@ -60,11 +60,10 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
   </div>
 
   <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_14254190175d4d3125046204_06003452', 'cart_voucher');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_17915986155d5bad7a8a3ab2_08657684', 'cart_voucher');
 ?>
 
 
-  <hr>
 
   <div class="card-block">
     <div class="cart-summary-line cart-total">
@@ -83,16 +82,15 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_14254190175d4d3125
     </div>
   </div>
 
-  <hr>
 </div>
 <?php }
 /* {block 'cart_voucher'} */
-class Block_14254190175d4d3125046204_06003452 extends Smarty_Internal_Block
+class Block_17915986155d5bad7a8a3ab2_08657684 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'cart_voucher' => 
   array (
-    0 => 'Block_14254190175d4d3125046204_06003452',
+    0 => 'Block_17915986155d5bad7a8a3ab2_08657684',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

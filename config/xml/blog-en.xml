@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>4 Reasons Your Business is Being Flagged as High-Risk</title>
+    <link>https://www.prestashop.com/en/blog/business-flagged-as-high-risk</link>
+    <description>When starting your business, the last thing you want to worry about are complications with your credit card processing.</description>
+     <pubDate>Fri, 16 Aug 2019 15:07:43 +0200</pubDate>
+ <dc:creator>PaymentCloud</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/business-flagged-as-high-risk</guid>
+  </item>
+  <item>
     <title>PSD 2: next deadline on September 14, 2019</title>
     <link>https://www.prestashop.com/en/blog/european-payment-services-directive</link>
     <description>This fall, new strong authentication rules will come into force.</description>
@@ -76,14 +84,6 @@
      <pubDate>Wed, 17 Jul 2019 10:44:29 +0200</pubDate>
  <dc:creator>Samantha Novick</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/inventory-management-tips</guid>
-  </item>
-  <item>
-    <title>Discover the Customer Reviews module available in version 1.7.6 of PrestaShop!</title>
-    <link>https://www.prestashop.com/en/blog/customer-reviews-module</link>
-    <description>Reassurance on an online store plays a huge part in building trust between merchants and visitors.</description>
-     <pubDate>Mon, 15 Jul 2019 12:13:57 +0200</pubDate>
- <dc:creator>Coline Ginestet</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/customer-reviews-module</guid>
   </item>
   </channel>
 </rss>

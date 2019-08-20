@@ -19,7 +19,7 @@
 		duration: jmmm_duration
 	});
 	
-	//initiate the plugin and pass the id of the div containing gallery images
+	// initiate the plugin and pass the id of the div containing gallery images
 	// $(".zoom_01").elevateZoom({
 	// 	gallery: 'gal1',
 	// 	zoomType: "lens",
@@ -390,8 +390,11 @@ jQuery(function ($) {
 		productCarouselCol5.owlCarousel({
 			responsiveClass:true,
 			responsive:{			
-				1199:{
+				1440:{
 					items:p5_itemsDesktop
+				},
+				1199:{
+					items:4
 				},
 				991:{
 					items:p5_itemsDesktopSmall
@@ -535,8 +538,11 @@ jQuery(function ($) {
 		categorytabCarousel.owlCarousel({
 			responsiveClass:true,
 			responsive:{			
-				1199:{
+				1440:{
 					items:cattab_itemsDesktop
+				},
+				1199:{
+					items:4
 				},
 				991:{
 					items:cattab_itemsDesktopSmall

@@ -5,8 +5,19 @@
 	max-width: 1790px;
 	padding: 0 15px;
 }
-.jms-megamenu .nav > li > a{
-	line-height: 134px;
+#header{
+	position: relative;
+	.container-fluid, .menu{
+		position: unset;
+	}
+}
+.jms-megamenu .nav > li{
+	&.sub-home{
+		padding-left: 0;
+	}
+	> a{
+		line-height: 134px;
+	}
 }
 .banner-1{
 	.banner-content{
@@ -118,9 +129,6 @@
 	}
 }
 .banner-5{
-	width: 50%;
-	float: left;
-	max-width: 550px;
 	.banner-content{
 		top: 50%;
 		transform: translateY(-50%);
@@ -141,9 +149,6 @@
 	}
 }
 .banner-6{
-	float: right;
-	width: 50%;
-	max-width: 550px;
 	.banner-content{
 		top: 43px;
 		text-align: center;
@@ -196,23 +201,11 @@
 		line-height: 1.16;
 		margin-bottom: 34px;
 	}
-	a{
-		font-size: 17px;
-		color: #0070c9;
-		&::after{
-			content: "\f105";
-			font-family: FontAwesome;
-			font-size: 23px;
-			margin-left: 10px;
-			position: relative;
-			bottom: -2px;
-		}
-	}
 }
 #footer{
 	margin-top: 97px;
 }
-@media (min-width: 1800px) {
+@media (min-width: 1200px) {
 	.col-large{
 		width: 67.6%;
 	}
@@ -224,5 +217,187 @@
 	}
 	.col-small-2{
 		width: 35.2%;
+	}
+}
+@media (max-width: 1400px){
+	.jms-megamenu .nav > li {
+		padding: 0 10px;
+	}
+	.banner-7 .addon-box {
+		padding-left: 0;
+	}
+}
+@media (max-width: 1199px) and (min-width: 992px){
+	.banner-2 .banner-content p {
+		font-size: 14px;
+		
+	}
+	.banner-3{
+		.banner-content{
+			top: 30px;
+			padding: 0 30px;
+			.text-1{
+				font-size: 20px;
+			}
+			.text-2{
+				font-size: 25px;
+				margin-bottom: 20px;
+			}
+			a{
+				font-size: 14px;
+			}
+		}
+	}
+	.banner-5{
+		.banner-content{
+			left: 30px;
+			.text-1{
+				font-size: 16px;
+			}
+			.btn-default{
+				font-size: 14px;
+			}
+		}
+	}
+	.banner-6{
+		.banner-content{
+			top: 25px;
+			.text-1{
+				font-size: 13px;
+				margin-bottom: 10px;
+			}
+			.text-2{
+				font-size: 20px;
+				margin-bottom: 10px;
+			}
+			a{
+				font-size: 14px;
+			}
+		}
+	}
+}
+@media (max-width: 1199px){
+	.header .container-fluid > .row {
+		display: flex;
+	}
+	.banner-1{
+		.banner-content{
+			left: 40px;
+			.text-1{
+				font-size: 20px;
+				margin-bottom: 15px;
+			}
+			.buyitnow{
+				font-size: 14px;
+			}
+		}
+	}
+	.banner-4{
+		.banner-content{
+			right: 40px;
+			.text-1{
+				font-size: 20px;
+			}
+			.text-2{
+				font-size: 14px;
+				margin-bottom: 30px;
+			}
+			.btn-buyitnow{
+				font-size: 14px;
+			}
+		}
+	}
+	.banner-7{
+		padding: 80px 0;
+		.text-1{
+			font-size: 14px;
+		}
+		.text-2{
+			font-size: 30px;
+		}
+		.buyitnow{
+			font-size: 14px;
+		}
+	}
+}
+@media (max-width: 991px){
+	.banner-1, .banner-3, .banner-5{
+		margin-bottom: 15px;
+	}
+}
+@media (max-width: 767px){
+	.right-icon-group{
+		.addon-box{
+			&:nth-child(1), &:nth-child(2){
+				display: none;
+			}
+		}
+	}
+	.banner-7 .addon-box {
+		text-align: right;
+	}
+}
+@media (max-width: 481px){
+	.banner-1 .banner-content {
+		left: 25px;
+		.text-1{
+			font-size: 10px;
+		}
+	}
+	.banner-2 .banner-content {
+		padding: 0 20px;
+		p{
+			font-size: 20px;
+		}
+	}
+	.banner-3 .banner-content {
+		top: 20px;
+		padding: 0 20px;
+		.text-1{
+			font-size: 14px;
+		}
+		.text-2{
+			font-size: 20px;
+			margin-bottom: 15px;
+		}
+		a{
+			font-size: 12px;
+		}
+	}
+	.banner-4 .banner-content {
+		right: 15px;
+		.text-1{
+			font-size: 14px;
+			margin-bottom: 10px;
+		}
+		.text-2{
+			font-size: 10px;
+			margin-bottom: 20px;
+		}
+		.btn-buyitnow{
+			font-size: 12px;
+		}
+	}
+	.banner-5 .banner-content {
+		left: 20px;
+		.text-1{
+			font-size: 16px;
+			margin-bottom: 20px;
+		}
+		.btn-default{
+			font-size: 12px;
+		}
+	}
+	.banner-6 .banner-content {
+		top: 20px;
+		padding: 0 20px;
+		.text-1{
+			font-size: 14px;
+			margin-bottom: 15px;
+		}
+		.text-2{
+			font-size: 20px;
+			margin-bottom: 10px;
+		}
 	}
 }

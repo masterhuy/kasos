@@ -9,19 +9,17 @@
 	align-items: center;
 }
 .fs-pager-wrapper span {
-	width: 6px;
-	height: 6px;
-	background: #141414;
+	width: 14px;
+	height: 14px;
+	background: #e1e1e1;
 	border-radius: 50%;
 	text-indent: -100px;
 	display: inline-block;
 	overflow: hidden;
-	margin: 0 12px;
+	margin: 0 3.5px;
 }
 .fs-pager-wrapper .active span {
-	background: #141414;
-	width: 10px;
-	height: 10px;
+	background: #ff4800;
 }
 .fs-pager-wrapper a {
 	display: flex;

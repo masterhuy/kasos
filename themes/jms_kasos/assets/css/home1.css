@@ -5,7 +5,7 @@
     width: 61.15%; } }
 
 .jms-row.banner-text {
-  padding: 17px 0;
+  padding: 11.5px 0;
   background: #0070c9;
   color: #fff;
   text-align: center; }
@@ -19,9 +19,10 @@
   .jms-row.banner-text p {
     font-size: 16px;
     padding: 0 32px;
-    letter-spacing: 1px;
-    font-family: "samsungsharpsans-medium";
-    margin-bottom: 0; }
+    letter-spacing: 1.4px;
+    font-family: "samsungsharpsans-bold";
+    margin-bottom: 0;
+    line-height: 2; }
 
 .jms-slider-wrapper .text-1 {
   letter-spacing: 0.8px; }
@@ -99,7 +100,7 @@
   .banner-4 .addon-box {
     padding-left: 140px; }
   .banner-4 .text-1 {
-    font-family: "samsungsharpsans-medium";
+    font-family: "samsungsharpsans-bold";
     color: #ff4800;
     font-size: 24px;
     margin-bottom: 20px; }
@@ -110,3 +111,59 @@
     letter-spacing: 1.3px;
     line-height: 1.16;
     margin-bottom: 34px; }
+
+@media (max-width: 1440px) {
+  .banner-4 .addon-box {
+    padding-left: 0; } }
+
+@media (max-width: 1440px) and (min-width: 1200px) {
+  .jms-slider-wrapper .text-1, .jms-slider-wrapper .text-3 {
+    font-size: 20px !important; }
+  .jms-slider-wrapper .text-2 {
+    font-size: 35px !important; } }
+
+@media (max-width: 1199px) {
+  .banner-4 {
+    padding: 100px 0; }
+    .banner-4 .text-1 {
+      font-size: 16px; }
+    .banner-4 .text-2 {
+      font-size: 35px; } }
+
+@media (max-width: 991px) {
+  .banner-1 {
+    margin-bottom: 30px; } }
+
+@media (max-width: 767px) {
+  .jms-row.banner-text .addon-box {
+    display: block; }
+  .banner-4 .addon-box {
+    text-align: right; } }
+
+@media (max-width: 481px) {
+  .jms-row.banner-text p {
+    font-size: 14px;
+    padding: 0; }
+  .banner-1 .banner-content .text-1 {
+    font-size: 20px;
+    margin-bottom: 20px; }
+  .banner-2 .banner-content .text-1 {
+    font-size: 16px;
+    margin-bottom: 10px; }
+  .banner-2 .banner-content .text-2 {
+    font-size: 12px; }
+  .banner-2 .banner-content .banner-3 .banner-content .text-1 {
+    font-size: 16px;
+    margin-bottom: 10px; }
+  .banner-2 .banner-content .banner-3 .banner-content .text-2 {
+    font-size: 12px; }
+  .banner-4 {
+    padding: 50px 0; }
+    .banner-4 .text-1 {
+      font-size: 14px; }
+    .banner-4 .text-2 {
+      font-size: 20px; }
+  .banner-3 .banner-content .text-1 {
+    font-size: 16px; }
+  .banner-3 .banner-content .text-2 {
+    font-size: 12px; } }
