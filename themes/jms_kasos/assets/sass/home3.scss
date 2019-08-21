@@ -1,8 +1,38 @@
 @import "mixin";
 @import "varians";
 
-.jms-megamenu .nav > li > a{
-	line-height: 130px;
+
+#header{
+	position: relative;
+	z-index: 999;
+	.menu, .container{
+		position: unset;
+	}
+}
+.jms-megamenu .nav{
+	text-align: center;
+	> li > a{
+		line-height: 130px;
+	}
+}
+.jms-slider-wrapper .slide{
+	background-size: 100% 100% !important;
+}
+@media (min-width: 1200px){
+	.sliders{
+		margin-top: -130px;
+	}
+}
+.jms-slider-wrapper{
+	.jms-slide-content{
+		font-family: 'samsungsharpsans-bold';
+	}
+	.text-1{
+		letter-spacing: 1px;
+	}
+	.text-2{
+		letter-spacing: 0.9px;
+	}
 }
 .banner-1, .banner-2{
 	.banner-content{
@@ -41,4 +71,84 @@
 }
 .page-index #footer{
 	margin-top: 0;
+}
+
+@media (max-width: 1366px) and (min-width: 1200px){
+	.jms-slider-wrapper{
+		.text-1{
+			font-size: 37px !important;
+		}
+		.text-2{
+			font-size: 20px !important;
+		}
+	}
+}
+@media (max-width: 1199px){
+	.header .container > .row{
+		display: block;
+	}
+	.right-icon-group{
+		margin-right: 0 !important;
+		.addon-box{
+			&:first-child{
+				display: none;
+			}
+			&:last-child{
+				margin-right: 8px;
+			}
+		}
+	}
+}
+@media (max-width: 991px) and (min-width: 768px){
+	.banner-1, .banner-2{
+		.banner-content{
+			right: 15px;
+			.text-1{
+				font-size: 14px;
+			}
+			.text-2{
+				font-size: 25px;
+			}
+			.text-3{
+				font-size: 13px;
+			}
+		}
+	}
+}
+@media (max-width: 991px){
+	.banner-macbook-pro .banner-center .banner-content{
+		bottom: auto;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+@media (max-width: 767px){
+	.banner-1{
+		margin-bottom: 15px;
+	}
+	#footer .footer-top-2 .container{
+		padding: 70px 15px 18px !important;
+	}
+	.macbook-detail{
+		padding: 80px 0;
+		.feature{
+			margin-bottom: 30px !important;
+		}
+	}
+}
+@media (max-width: 481px){
+	.banner-1, .banner-2{
+		.banner-content{
+			right: 15px;
+			.text-1{
+				font-size: 14px;
+			}
+			.text-2{
+				font-size: 20px;
+			}
+			.text-3{
+				font-size: 9px;
+			}
+		}
+	}
 }

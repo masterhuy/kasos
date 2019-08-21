@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>How to Set the Retail Price of a Product</title>
+    <link>https://www.prestashop.com/en/blog/set-retail-price-of-a-product</link>
+    <description>Do you know that setting the price of a product goes a long way in making your product a success? Most especially if you’re an eCommerce business owner.</description>
+     <pubDate>Mon, 19 Aug 2019 11:44:30 +0200</pubDate>
+ <dc:creator>WebDesk</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/set-retail-price-of-a-product</guid>
+  </item>
+  <item>
     <title>4 Reasons Your Business is Being Flagged as High-Risk</title>
     <link>https://www.prestashop.com/en/blog/business-flagged-as-high-risk</link>
     <description>When starting your business, the last thing you want to worry about are complications with your credit card processing.</description>
@@ -76,14 +84,6 @@
      <pubDate>Fri, 19 Jul 2019 14:11:59 +0200</pubDate>
  <dc:creator>JackieLong</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/psd2-coming-to-eu</guid>
-  </item>
-  <item>
-    <title>Essential inventory management tips for eCommerce businesses</title>
-    <link>https://www.prestashop.com/en/blog/inventory-management-tips</link>
-    <description>Inventory management sounds as straightforward as it gets. You stock your stores and warehouses with products you can sell to your customers.</description>
-     <pubDate>Wed, 17 Jul 2019 10:44:29 +0200</pubDate>
- <dc:creator>Samantha Novick</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/inventory-management-tips</guid>
   </item>
   </channel>
 </rss>

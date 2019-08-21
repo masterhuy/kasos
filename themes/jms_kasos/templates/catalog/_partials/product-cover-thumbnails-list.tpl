@@ -47,7 +47,6 @@
                             width="100"
                             itemprop="image"
                         >
-                    
                 {/foreach}
             </ul>
         </div>

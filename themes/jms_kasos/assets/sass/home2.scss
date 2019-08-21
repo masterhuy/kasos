@@ -19,6 +19,17 @@
 		line-height: 134px;
 	}
 }
+.jms-slider-wrapper{
+	.text-1{
+		letter-spacing: 0.8px;
+	}
+	.text-2{
+		letter-spacing: 1.2px;
+	}
+	.text-3{
+		letter-spacing: 0.9px;
+	}
+}
 .banner-1{
 	.banner-content{
 		left: 73px;
@@ -398,6 +409,16 @@
 		.text-2{
 			font-size: 20px;
 			margin-bottom: 10px;
+		}
+	}
+}
+@media (max-width: 1440px) and (min-width: 1200px){
+	.jms-slider-wrapper{
+		.text-1, .text-3{
+			font-size: 20px !important;
+		}
+		.text-2{
+			font-size: 35px !important;
 		}
 	}
 }

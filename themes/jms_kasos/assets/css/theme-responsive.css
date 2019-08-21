@@ -336,7 +336,7 @@
 	}
 	div#cart_block .shoppingcart-box {
 		min-width: 290px;
-		padding: 20px;
+		padding: 20px 0;
 	}
 	.jms-slider-wrapper .fs-pager-wrapper {
 		bottom: 15px;

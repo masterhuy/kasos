@@ -267,7 +267,7 @@
 
 .home_3 .right-icon-group, .home_4 .right-icon-group, .home_6 .right-icon-group, .home_7 .right-icon-group {
   margin-right: 8px; }
-  .home_3 .right-icon-group .addon-box, .home_4 .right-icon-group .addon-box, .home_6 .right-icon-group .addon-box, .home_7 .right-icon-group .addon-box {
+  .home_3 .right-icon-group .addon-box:not(:first-child), .home_4 .right-icon-group .addon-box:not(:first-child), .home_6 .right-icon-group .addon-box:not(:first-child), .home_7 .right-icon-group .addon-box:not(:first-child) {
     margin-left: 25px; }
 
 .home_6 .right-icon-group .addon-box, .home_7 .right-icon-group .addon-box {
@@ -2682,6 +2682,9 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
+  .macbook-detail .product-info {
+    margin: auto;
+    padding-bottom: 70px; }
   .banner_bg .addon-box p:not(:last-child) {
     font-size: 20px; }
   .countdown-banner .countdown-box {
@@ -2700,7 +2703,37 @@
     width: 100%; }
   div.products-list-in-row .content_price {
     margin-bottom: 0;
-    padding-top: 0; } }
+    padding-top: 0; }
+  .macbook-detail .addon-box > .row {
+    display: block; }
+  #footer .footer-bottom-2 .left p {
+    text-align: center; }
+  #footer .footer-bottom-2 .right .social_icon {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 15px; }
+    #footer .footer-bottom-2 .right .social_icon ul li {
+      margin: 0;
+      margin: 0 12.5px; }
+  #footer .footer-top-2 .right ul {
+    text-align: center; }
+    #footer .footer-top-2 .right ul li {
+      margin: 0;
+      margin: 0 15px; }
+  #footer .footer-top-2 .left {
+    display: block;
+    text-align: center; }
+    #footer .footer-top-2 .left p {
+      margin: 10px 0; }
+    #footer .footer-top-2 .left .addon-box:first-child {
+      margin-right: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
 
 @media (max-width: 1199px) and (min-width: 992px) {
   #left-column #search_widget input {
@@ -2786,6 +2819,8 @@
     margin-bottom: 15px; } }
 
 @media (max-width: 767px) {
+  div.brand-carousel {
+    padding: 30px 0; }
   .service .layout-column:not(:last-child) {
     margin-bottom: 20px; }
   div.jms-tab ul li {
@@ -2822,10 +2857,6 @@
     display: block; }
   div#module-group {
     right: 0; }
-  div#jms_ajax_search #search-form .searchbox {
-    top: 130px; }
-  div#jms_ajax_search #search_result {
-    top: 185px; }
   .searchbox input#ajax_search {
     min-width: 290px; }
   div#jms_ajax_search div#search_result {
