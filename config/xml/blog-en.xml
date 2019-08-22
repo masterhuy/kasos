@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>Six tips for successful migration to PrestaShop 1.7</title>
+    <link>https://www.prestashop.com/en/blog/prestashop-1.7-migration-tips</link>
+    <description>Migrating your e-commerce shop is an important step – but can sometimes be a tricky process. </description>
+     <pubDate>Wed, 21 Aug 2019 10:59:48 +0200</pubDate>
+ <dc:creator>Méguy Solvet</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/prestashop-1.7-migration-tips</guid>
+  </item>
+  <item>
     <title>How to Set the Retail Price of a Product</title>
     <link>https://www.prestashop.com/en/blog/set-retail-price-of-a-product</link>
     <description>Do you know that setting the price of a product goes a long way in making your product a success? Most especially if you’re an eCommerce business owner.</description>
@@ -76,14 +84,6 @@
      <pubDate>Mon, 22 Jul 2019 10:45:27 +0200</pubDate>
  <dc:creator>Invertus</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/brand-story-through-storytelling</guid>
-  </item>
-  <item>
-    <title>PSD2 Is Coming to the EU – Are You Ready?</title>
-    <link>https://www.prestashop.com/en/blog/psd2-coming-to-eu</link>
-    <description>Companies that sell in the European Union have dealt with many changes over the years to payment services, cross-market regulations, and individual country mandates.</description>
-     <pubDate>Fri, 19 Jul 2019 14:11:59 +0200</pubDate>
- <dc:creator>JackieLong</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/psd2-coming-to-eu</guid>
   </item>
   </channel>
 </rss>

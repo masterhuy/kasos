@@ -734,10 +734,12 @@
 }
 .jms-addon.jms-video{
 	display: inline-flex;
-	background: url("../img/video-bg.jpg") no-repeat;
+	background: url("../img/video-bg.jpg") no-repeat center;
 	background-size: cover;
 	box-shadow: 0 7px 43px 0 rgba(0, 0, 0, 0.1);
 	cursor: pointer;
+	max-width: 1410px;
+	width: 100%;
 	iframe{
 		opacity: 0;
 		visibility: hidden;
@@ -3088,6 +3090,9 @@
 			.social_icon p,
 			#newsletter_block_left .addon-title > span{
 				color: #aaa;
+				&:hover{
+					color: $active;
+				}
 			}
 
 		}

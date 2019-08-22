@@ -574,11 +574,13 @@
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  background: url("../img/video-bg.jpg") no-repeat;
+  background: url("../img/video-bg.jpg") no-repeat center;
   background-size: cover;
   -webkit-box-shadow: 0 7px 43px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 7px 43px 0 rgba(0, 0, 0, 0.1);
-  cursor: pointer; }
+  cursor: pointer;
+  max-width: 1410px;
+  width: 100%; }
   .jms-addon.jms-video iframe {
     opacity: 0;
     visibility: hidden; }
@@ -2517,6 +2519,10 @@
       #footer .footer-top.bg-black .social_icon p,
       #footer .footer-top.bg-black #newsletter_block_left .addon-title > span {
         color: #aaa; }
+        #footer .footer-top.bg-black ul li a:hover,
+        #footer .footer-top.bg-black .social_icon p:hover,
+        #footer .footer-top.bg-black #newsletter_block_left .addon-title > span:hover {
+          color: #ff4800; }
   #footer .addon-box .addon-title h3 {
     text-align: left;
     font-size: 17px;

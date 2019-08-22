@@ -213,8 +213,11 @@ jQuery(function ($) {
 		productCarousel.owlCarousel({
 			responsiveClass:true,
 			responsive:{			
-				1199:{
+				1440:{
 					items:p_itemsDesktop
+				},
+				1440:{
+					items:4
 				},
 				991:{
 					items:p_itemsDesktopSmall
