@@ -4,7 +4,7 @@
 * Slider Layer module for prestashop
 *
 *  @author    Joommasters <joommasters@gmail.com>
-*  @copyright 2007-2019 Joommasters
+*  @copyright 2007-2018 Joommasters
 *  @license   license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
 *  @Website: http://www.joommasters.com
 */
@@ -25,8 +25,7 @@ $(document).ready(function () {
             url : url,
             data : {
                 hooks: val,
-                id_slider: slider,
-                secure_key: secure_key,
+                id_slider: slider
             },
             success : function (result) {
                 data = JSON.parse(result);
@@ -59,8 +58,7 @@ $(document).ready(function () {
             url : url,
             data : {
                 hook: hook,
-                id_slider: slider,
-                secure_key: secure_key,
+                id_slider: slider
             },
             success : function (result) {
                 data = JSON.parse(result);
@@ -94,7 +92,6 @@ $(document).ready(function () {
             type : "POST",
             url : url,
             data : {
-                secure_key: secure_key,
                 sliders: val
             },
             success : function (result) {
@@ -124,7 +121,6 @@ $(document).ready(function () {
             type : "POST",
             url : url,
             data : {
-                secure_key: secure_key,
                 id_slider: slider
             },
             success : function (result) {

@@ -1227,6 +1227,7 @@
 				// calculate % height
 				if (obj.attr("height") != null && obj.attr("height") != "") {
 					value = obj.attr("height");
+					console.log('a');
 					y = pixelToPercent(value, dY);
 					obj.attr("height", y + "%");
 					obj.css("height", y + "%");
@@ -1283,6 +1284,7 @@
 		function resizeSlider() {
 			var w = slider.innerWidth(), h = slider.innerHeight();
 			wWidth = $(window).width();
+			console.log(wWidth);
 			if (w <= dX || options.increase ) {
 
 				var xy = dX / dY, nH = w / xy;
@@ -1343,12 +1345,12 @@
 					// SmallMobile  <= 479
 
 					// obj.css("fontSize", n + "px");
-					// if (n < 14) {
-					// 	obj.css("fontSize", "14px");
-					// }
-					// else {
-					// 	obj.css("fontSize", n + "px");
-					// }
+					if (n < 14) {
+						obj.css("fontSize", "14px");
+					}
+					else {
+						obj.css("fontSize", n + "px");
+					}
 
                     position = obj.attr('data-position').split(',');
 					lineheight = obj.attr('data-line-height');

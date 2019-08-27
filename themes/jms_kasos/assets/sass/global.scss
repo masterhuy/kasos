@@ -755,7 +755,7 @@
 		background: #fff;
 		border: 30px solid #fff;
 		border-bottom: 0;
-		z-index: 999;
+		z-index: 995;
 		> a img{
 			transform: unset !important;
 		}
@@ -1926,16 +1926,15 @@
 		}
 	}
 }
-.page-index{
-	a.wishlist_top{
-		&.home_page{
-			display: block;
-		}
-		&.my_account{
-			display: none !important;
-		}
+a.wishlist_top{
+	&.home_page{
+		display: block;
+	}
+	&.my_account{
+		display: none !important;
 	}
 }
+
 #my-account a.wishlist_top.my_account{
 	display: block;
 }
@@ -3086,15 +3085,16 @@
 			.addon-box .addon-title h3{
 				color: #fff;
 			}
-			ul li a,
-			.social_icon p,
-			#newsletter_block_left .addon-title > span{
+			ul li a{
 				color: #aaa;
 				&:hover{
 					color: $active;
 				}
 			}
-
+			#newsletter_block_left .addon-title > span,
+			.social_icon p,{
+				color: #aaa;
+			}
 		}
 	}
 	.addon-box .addon-title h3{
@@ -3283,6 +3283,26 @@
 	.header .container-fluid > .row{
 		display: block;
 	}
+	.quickview{
+		.images-container .js-qv-mask {
+			max-height: 335px;
+			width: 95px;
+			min-width: 95px;
+		}
+		.pd-name,
+		.product-prices.content_price .price.new{
+			font-size: 25px;
+		}
+		.product-quantity{
+			.custom{
+				margin-right: 10px;
+			}
+			.product-btn.cart-button {
+				margin-right: 10px;
+				padding: 14.5px 20px;
+			}
+		}
+	}
 	input#ajax_search {
 		width: 290px;
 	}
@@ -3413,9 +3433,16 @@
 	}
 }
 @media (max-width: 991px) and (min-width: 768px){
-
+	div.quickview{
+		.images-container .js-qv-mask {
+			max-height: 600px;
+		}
+	}
 }
 @media (max-width: 991px){
+	div.quickview .hidden-xs-down.left{
+		margin-bottom: 30px;
+	}
 	.sm-mb-10{
 		margin-bottom: 10px !important;
 	}
@@ -3512,6 +3539,14 @@
 	}
 }
 @media (max-width: 767px){
+	div.quickview{
+		.images-container .js-qv-mask {
+			max-height: 340px;
+		}
+	}
+	div.modal-dialog.cover_product1{
+		width: calc(100% - 30px);
+	}
 	div.brand-carousel {
 		padding: 30px 0;
 	}
@@ -3604,6 +3639,35 @@
 	}
 }
 @media (max-width: 481px){
+	div.quickview{
+		.images-container{
+			.js-qv-mask {
+				width: 50px;
+				min-width: 50px;
+				max-height: 160px;
+			}
+			.product-cover{
+				width: calc(100% - 60px;)
+			}
+		}
+		.arrows.js-arrows{
+			width: 50px;
+		}
+		.product-prices.content_price{
+			display: block;
+		}
+		.product-prices #product-availability{
+			margin-left: 0;
+		}
+		.product-quantity{
+			display: block;
+			.customs,
+			.product-btn.cart-button{
+				margin-right: 0;
+				margin-bottom: 15px;
+			}
+		}
+	}
 	.countdown-banner .countdown-box{
 		.countdown-section{
 			min-width: 50px;

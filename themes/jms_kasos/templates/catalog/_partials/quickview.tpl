@@ -32,7 +32,7 @@
             </div>
             <div class="modal-body" id="main">
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6 hidden-xs-down left">
+                    <div class="col-lg-6 col-md-6 col-sm-12 hidden-xs-down left">
                         {block name='product_cover_tumbnails'}
                             {include file='catalog/_partials/product-cover-thumbnails-quickview.tpl'}
                         {/block}
@@ -41,7 +41,7 @@
                             <i class="material-icons arrow-down js-arrow-down">&#xE313;</i>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 hidden-xs-down right">
+                    <div class="col-lg-6 col-md-6 col-sm-12 hidden-xs-down right">
                         {block name='page_header_container'}
                             {block name='page_header'}
                                 <h2 itemprop="name" class="pd-name">{block name='page_title'}{$product.name}{/block}</h2>

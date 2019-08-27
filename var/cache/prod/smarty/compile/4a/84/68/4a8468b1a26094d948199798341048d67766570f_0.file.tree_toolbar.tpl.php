@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-08-22 06:10:51
+/* Smarty version 3.1.33, created on 2019-08-27 06:24:03
   from 'D:\xamppp\htdocs\jms_kasos\admin201ucslkx\themes\default\template\helpers\tree\tree_toolbar.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d5e6a2b27b3f2_92377397',
+  'unifunc' => 'content_5d6504c3948884_27457556',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d5e6a2b27b3f2_92377397 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d6504c3948884_27457556 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="tree-actions pull-right">
 	<?php if (isset($_smarty_tpl->tpl_vars['actions']->value)) {?>
 	<?php

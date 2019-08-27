@@ -4,7 +4,7 @@
 * Slider Layer module for prestashop
 *
 *  @author    Joommasters <joommasters@gmail.com>
-*  @copyright 2007-2019 Joommasters
+*  @copyright 2007-2018 Joommasters
 *  @license   license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
 *  @Website: http://www.joommasters.com
 */
@@ -171,9 +171,11 @@ $(document).ready(function () {
 	$('.panel-layers .form-layer').first().show();
 	$('.tp-caption').css("cursor", "move");
 	$('.layer').click(function () {
+		console.log(this);
 		strId = $(this).attr('id');
 	    patt1 = /\d+$/g;
 	    currentId = strId.match(patt1);
+	    console.log('layer:',strId, this);
 		$('.layer').removeClass('active')
 		$(this).addClass('active');
 		$('#caption_' + currentId).addClass('active');
@@ -379,14 +381,7 @@ $(document).ready(function () {
 		$.ajax({
 			type : "POST",
 			url : url,
-			data : {
-				'id_slide' : id_slide,
-				'data_title' : title_text_new,
-				'data_text' : layer_text_new,
-				'data_type' : 'text',
-				'secure_key' : secure_key,
-			},
-				// 'id_slide=' + id_slide + '&data_title=' + title_text_new + '&data_text=' + layer_text_new + '&data_type=text',
+			data : 'id_slide=' + id_slide + '&data_title=' + title_text_new + '&data_text=' + layer_text_new + '&data_type=text',
 			success : function (result) {
 				location.reload(true);
 			},
@@ -409,13 +404,7 @@ $(document).ready(function () {
 			$.ajax({
 				type : "POST",
 				url : url,
-				data : {
-					'id_slide' : id_slide,
-					'data_title' : title_text_new,
-					'data_text' : layer_text_new,
-					'data_type' : 'text',
-					'secure_key' : secure_key,
-				},
+				data : 'id_slide=' + id_slide + '&data_title=' + title_text_new + '&data_text=' + layer_text_new + '&data_type=text',
 				success : function (result) {
 					location.reload(true);
 				},
@@ -536,13 +525,7 @@ $(document).ready(function () {
 		$.ajax({
 			type : "POST",
 			url : url,
-			data : {
-				'text': text,
-				'id_layer': id_layer,
-				'type': type,
-				'secure_key': secure_key,
-			},
-				// 'text=' + text + '&id_layer=' + id_layer + '&type=' + type,
+			data : 'text=' + text + '&id_layer=' + id_layer + '&type=' + type,
 			success : function (result) {
 				data = JSON.parse(result);
 				if (data.status) {
@@ -579,7 +562,6 @@ $(document).ready(function () {
 		title_image_new = $('#title_image_new').val();
 		layer_image_new = $('#data_s_image').val();
 		form_data = new FormData(this);
-		form_data.append('secure_key', secure_key);
 		if (image_update) {
 			form_data.append('update', true);
 			form_data.append('id_layer', $('#id_layer').val());
@@ -645,8 +627,6 @@ $(document).ready(function () {
 			url = $('#site_url').val() + 'modules/jmsslider/ajax_jmsslider.php?action=addLayer&data_type=image&id_slide=' + id_slide;
 			var input = document.getElementById('data_image');
 			var file = input.files[0];
-			form_data = new FormData(this);
-			form_data.append('secure_key', secure_key);
 			if (input.files[0] && !Validate(this)) {
 				$('.show-error').html('Image format incorrect. Try again!');
 				return false;
@@ -662,7 +642,7 @@ $(document).ready(function () {
 					contentType : false, // The content type used when sending data to the server.
 					cache : false, // To unable request pages to be cached
 					processData : false,
-					data : form_data,
+					data : new FormData(this),
 					success : function (result) {
 						location.reload(true);
 					},
@@ -685,14 +665,7 @@ $(document).ready(function () {
 		$.ajax({
 			type : "POST",
 			url : url,
-			data : {
-				'id_slide': id_slide,
-				'data_title': title_video_new,
-				'data_video': layer_video_new,
-				'data_type': 'video',
-				'secure_key': secure_key,
-			},
-				// 'id_slide=' + id_slide + '&data_title=' + title_video_new + '&data_video=' + layer_video_new + '&data_type=video',
+			data : 'id_slide=' + id_slide + '&data_title=' + title_video_new + '&data_video=' + layer_video_new + '&data_type=video',
 			success : function (result) {
 				location.reload(true);
 			},
@@ -714,13 +687,7 @@ $(document).ready(function () {
 			$.ajax({
 				type : "POST",
 				url : url,
-				data : {
-					'id_slide': id_slide,
-					'data_title': title_video_new,
-					'data_video': layer_video_new,
-					'data_type': 'video',
-					'secure_key': secure_key,
-				},
+				data : 'id_slide=' + id_slide + '&data_title=' + title_video_new + '&data_video=' + layer_video_new + '&data_type=video',
 				success : function (result) {
 					location.reload(true);
 				},
@@ -743,10 +710,7 @@ $(document).ready(function () {
 			$.ajax({
 				type : "POST",
 				url : url,
-				data : {
-					'id_layer': lId,
-					'secure_key': secure_key,
-				},
+				data : 'id_layer=' + lId,
 				success : function (result) {
 					$('#caption_' + lId).remove();
 					$('#layer_' + lId).remove();
@@ -792,10 +756,7 @@ $(document).ready(function () {
 		$.ajax({
 			type : "POST",
 			url : url,
-			data : {
-				'id_layer': id_layer,
-				'secure_key': secure_key,
-			},
+			data : 'id_layer=' + id_layer,
 			success : function (result) {
 				data = JSON.parse(result);
 				if (data.duplicate) {
@@ -901,8 +862,7 @@ $(document).ready(function () {
 	main_layer = $('#id_layer').val();
 	if (main_layer != '')
 		$('#caption_'+main_layer).trigger('click');
-	// drawRuler();
-    activeCommonStyle();
+	drawRuler();
 	//mobile style
 
 	$('.data-x').keyup(function (e) {
@@ -975,23 +935,9 @@ $(document).ready(function () {
 			id = getId(this);
 			$(this).css('top' , $('input[name='+top+id+']').val()+'px');
 			$(this).css('left', $('input[name='+left+id+']').val()+'px');
-            w = Number($('input[name='+width+id+']').val());
-            h = Number($('input[name='+height+id+']').val());
-            if (w <= 0) {
-                w = $(this).width();
-                $('input[name='+width+id+']').val($(this).width());
-            }
-            else
-                w += 'px';
-            if (h <= 0) {
-                h = $(this).height();
-                $('input[name='+height+id+']').val($(this).height());
-            }
-            else
-                h += 'px';
-            $(this).css('width' , w);
-			$(this).css('height', h);
-    	})
+			$(this).css('width' , $('input[name='+width+id+']').val()+'px');
+			$(this).css('height', $('input[name='+height+id+']').val()+'px');
+		})
 	}
 	function setVisible(mobile) {
 		if (style=='mobile') {
@@ -1046,6 +992,7 @@ $(document).ready(function () {
 		})
 	}
 	function selectFirstLayer() {
+		console.log('first');
 		$('#frame_layer .layer').first().trigger('click');
 	}
     function activeMobileStyle() {
@@ -1114,7 +1061,6 @@ $(document).ready(function () {
         	selectFirstLayer();
     }
     function activeCommonStyle() {
-        console.log('alo');
     	if (style ==' desktop')
     		return;
     	$('.defaultOpen').click();

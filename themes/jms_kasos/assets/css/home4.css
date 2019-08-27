@@ -83,6 +83,8 @@
         margin-right: 8px; } }
 
 @media (max-width: 991px) {
+  .sliders .container-fluid {
+    padding: 0; }
   .cates .jms-banner {
     margin-top: 20px; }
   #header {
@@ -105,3 +107,15 @@
       font-size: 20px; }
     .jms-banner .banner-content .text-3 {
       font-size: 12px; } }
+
+@media (max-width: 767px) {
+  .banner-1 {
+    margin-bottom: 15px; }
+  .jms-row.video.show-video iframe {
+    max-width: calc(100% - 30px); } }
+
+@media (max-width: 481px) {
+  .jms-addon.jms-video {
+    height: 200px; }
+    .jms-addon.jms-video iframe {
+      height: 200px; } }

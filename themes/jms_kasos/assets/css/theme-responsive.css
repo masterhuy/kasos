@@ -31,12 +31,6 @@
 }
 }
 @media (max-width: 1199px){
-	#jms-vermegamenu-container{
-		max-width: 220px;
-	}
-	.home .nav-child.dropdown-menu.mega-dropdown-menu.fullwidth {
-		width: 624px !important;
-	}
 	.jms-megamenu .mega-col-nav.col-sm-4{
 		padding-top: 0;
 		margin-top: 0;
@@ -71,9 +65,6 @@
 @media (max-width: 991px){
 	.breadcrumb-box.container{
 		display: block;
-	}
-	div#jms-vermegamenu-container {
-		max-width: 360px;
 	}
 	.product_list .item.ajax_block_product{
 		width:50%;
