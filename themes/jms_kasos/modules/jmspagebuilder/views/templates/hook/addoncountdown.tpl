@@ -29,7 +29,7 @@
 {/if}
 <div class="countdown-box{if $box_class} {$box_class|escape:'htmlall':'UTF-8'}{/if} addon-title">
 	<div class="row">
-		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col_left">
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col_left">
 			{if $html_content}
 				<div class="content">
 					{$html_content nofilter}
@@ -43,7 +43,7 @@
 			</div>
 			
 		</div>
-		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col_right">
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col_right">
 			{if $image}	
 				<img src="{$root_url|escape:'html':'UTF-8'}{$image|escape:'html':'UTF-8'}" />	
 			{/if}

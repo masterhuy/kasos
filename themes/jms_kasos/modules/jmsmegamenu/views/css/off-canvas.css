@@ -118,7 +118,6 @@
     border: 0;
     border-radius: 0;
     height: 37px;
-    background: transparent;
     margin-bottom: 0;
     font-size: 13px;
     padding: 0 0 8px;
@@ -185,7 +184,7 @@
 #off-canvas-menu li > a em {
     float: right;
     width: 20px;
-    height: 20px;
+    height: 30px;
     line-height: 20px;
     text-align: right;
     font-size: 14px;

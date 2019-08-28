@@ -1,6 +1,22 @@
 .main-site {
   background: #2b2f36; }
 
+.jms-row.menu {
+  position: relative; }
+  .jms-row.menu .container, .jms-row.menu .megamenu {
+    position: unset; }
+
+.jms-megamenu .menu-item > .dropdown-menu {
+  top: 100%; }
+
+.jms-megamenu .nav > li > a::before {
+  display: none; }
+
+#search_result {
+  width: 100%;
+  position: absolute;
+  z-index: 998; }
+
 .jms-row.header {
   padding: 40px 0; }
   .jms-row.header .wishlist_top.home_page::after {
@@ -77,6 +93,18 @@
   line-height: 58px;
   color: #fff; }
 
+.jms-slider-wrapper .text-1 {
+  letter-spacing: 0.8px; }
+
+.jms-slider-wrapper .text-2 {
+  letter-spacing: 1px; }
+
+.jms-slider-wrapper .text-3 {
+  letter-spacing: 1px; }
+
+.jms-slider-wrapper .btn-buynow {
+  letter-spacing: 0.7px; }
+
 .banner-1 .banner-content p, .banner-2 .banner-content p, .banner-3 .banner-content p {
   font-size: 24px;
   color: #000;
@@ -131,7 +159,8 @@
     padding: 23.5px 0; }
 
 .jms-addon.jms-video {
-  background: url("../img/h6-video-bg.jpg") no-repeat; }
+  background: url("../img/h6-video-bg.jpg") no-repeat center;
+  background-size: cover; }
 
 .video {
   margin-top: 23px; }
@@ -173,3 +202,123 @@
 
 .blog-carousel .post-meta {
   color: #d7d7d7; }
+
+div.menu-wrap {
+  left: auto;
+  right: -300px;
+  -webkit-transition: right 0.4s cubic-bezier(0.7, 0, 0.3, 1) 0s;
+  -o-transition: right 0.4s cubic-bezier(0.7, 0, 0.3, 1) 0s;
+  transition: right 0.4s cubic-bezier(0.7, 0, 0.3, 1) 0s; }
+
+.show-menu div.menu-wrap {
+  left: auto;
+  right: 0;
+  -webkit-transition: right 0.4s;
+  -o-transition: right 0.4s;
+  transition: right 0.4s; }
+
+@media (max-width: 1730px) {
+  #cart_block .shoppingcart-box {
+    right: 0;
+    left: auto;
+    -webkit-transform: unset;
+    -ms-transform: unset;
+    transform: unset; }
+    #cart_block .shoppingcart-box::before {
+      left: auto;
+      right: 5px; } }
+
+@media (max-width: 1440px) {
+  .jms-megamenu .nav > li {
+    padding: 0 18px; } }
+
+@media (max-width: 1440px) and (min-width: 1200px) {
+  .ver_menu {
+    padding: 16px 15px; } }
+
+@media (max-width: 1199px) {
+  #header {
+    padding: 0; }
+  #jms-vermegamenu-container {
+    max-width: 100%; }
+  .megamenu .jms-megamenu-wrap {
+    padding-top: 8px;
+    text-align: right; }
+    .megamenu .jms-megamenu-wrap #open-button {
+      color: #fff;
+      right: -4px; }
+  .banner-3 {
+    margin-bottom: 30px; }
+  .video .container > .row {
+    display: block; }
+  .jms-addon.jms-video iframe {
+    width: 100%; } }
+
+@media (max-width: 991px) {
+  .banner-1 {
+    margin-bottom: 30px; }
+  .jms-row.header {
+    padding: 20px 0; }
+  .col-logo-h6 .addon-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  #jms_ajax_search {
+    padding: 20px 0; }
+  .right-icon-group {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .right-icon-group .addon-box {
+      margin: 0 !important;
+      margin: 0 15px !important; }
+  .video-content .addon-box {
+    padding-left: 0; } }
+
+@media (max-width: 767px) {
+  .jms-addon.jms-video iframe {
+    height: 250px; } }
+
+@media (max-width: 481px) {
+  .ver_menu {
+    padding: 16px;
+    font-size: 16px; }
+    .ver_menu .icon {
+      right: 16px;
+      top: 23px; }
+  .megamenu .jms-megamenu-wrap {
+    padding-top: 5px; }
+  .banner-1 .banner-content p, .banner-2 .banner-content p, .banner-3 .banner-content p {
+    font-size: 16px; }
+  .banner-3 .banner-content {
+    right: 20px;
+    top: 20px; }
+  .banner-4 .banner-content {
+    left: 20px; }
+    .banner-4 .banner-content .text-1 {
+      font-size: 16px;
+      margin-bottom: 15px; }
+    .banner-4 .banner-content .text-2 {
+      font-size: 30px; }
+    .banner-4 .banner-content .text-3 {
+      font-size: 60px;
+      letter-spacing: 0; }
+  .flashsales-countdown .countdown-row::before {
+    display: block;
+    margin-right: 0; }
+  .video-content {
+    margin-top: 20px; }
+    .video-content .text-1, .video-content .text-2 {
+      font-size: 25px; }
+  div#cart_block .shoppingcart-box {
+    right: -31px; }
+    div#cart_block .shoppingcart-box::before {
+      right: 36px; }
+  .jms-vermegamenu .nav > li > a {
+    display: block; }
+    .jms-vermegamenu .nav > li > a i {
+      position: relative;
+      top: 5px; } }

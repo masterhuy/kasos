@@ -266,11 +266,11 @@
     margin-left: 15px; }
 
 .home_3 .right-icon-group, .home_4 .right-icon-group, .home_6 .right-icon-group, .home_7 .right-icon-group {
-  margin-right: 8px; }
+  margin-right: 12px; }
   .home_3 .right-icon-group .addon-box:not(:first-child), .home_4 .right-icon-group .addon-box:not(:first-child), .home_6 .right-icon-group .addon-box:not(:first-child), .home_7 .right-icon-group .addon-box:not(:first-child) {
     margin-left: 25px; }
 
-.home_6 .right-icon-group .addon-box, .home_7 .right-icon-group .addon-box {
+.home_6 .right-icon-group .addon-box:not(:first-child), .home_7 .right-icon-group .addon-box:not(:first-child) {
   margin-left: 30px; }
 
 #jms_ajax_search .btn-search::before {
@@ -1753,6 +1753,9 @@ a.wishlist_top.my_account {
 .open-sidebar1 .mega_menu .close_menu {
   display: block; }
 
+#off-canvas-menu #search_widget input {
+  background: url("../img/icon/search-bg.png") no-repeat right; }
+
 #off-canvas-menu ul li .mod-content {
   padding: 0 20px; }
   #off-canvas-menu ul li .mod-content a {
@@ -2653,6 +2656,8 @@ a.wishlist_top.my_account {
 @media (max-width: 1199px) {
   .home_1 .right-icon-group .addon-box:nth-child(4), .home_1 .right-icon-group .addon-box:nth-child(5), .home_2 .right-icon-group .addon-box:nth-child(4), .home_2 .right-icon-group .addon-box:nth-child(5) {
     display: none; }
+  .home_6 .right-icon-group .addon-box:not(:first-child), .home_7 .right-icon-group .addon-box:not(:first-child) {
+    margin-left: 25px; }
   #header {
     padding: 20px 0; }
     #header .col-logo {
@@ -2842,6 +2847,18 @@ a.wishlist_top.my_account {
     margin-bottom: 15px; } }
 
 @media (max-width: 767px) {
+  .mt-xs-30 {
+    margin-top: 30px !important; }
+  .categories-carousel2 .categories-wrapper .c_item-info .cat-name,
+  .categories-carousel2-mr-0 .categories-wrapper .c_item-info .cat-name {
+    font-size: 16px; }
+  .categories-carousel2 .categories-wrapper .c_item-info .count,
+  .categories-carousel2-mr-0 .categories-wrapper .c_item-info .count {
+    font-size: 14px; }
+  .categories-carousel2-mr-0 .categories-wrapper .c_item-info {
+    top: 25px; }
+  .product-carousel-pag .owl-dots {
+    display: none; }
   div.quickview .images-container .js-qv-mask {
     max-height: 340px; }
   div.modal-dialog.cover_product1 {
@@ -2907,6 +2924,8 @@ a.wishlist_top.my_account {
     padding: 11.5px 15px; } }
 
 @media (max-width: 481px) {
+  .service .image {
+    margin-right: 0; }
   div.quickview .images-container .js-qv-mask {
     width: 50px;
     min-width: 50px;
