@@ -216,7 +216,7 @@ jQuery(function ($) {
 				1440:{
 					items:p_itemsDesktop
 				},
-				1440:{
+				1199:{
 					items:4
 				},
 				991:{
@@ -359,9 +359,12 @@ jQuery(function ($) {
 		if ($("body").hasClass("rtl")) rtl = true;				
 		productCarouselCol7.owlCarousel({
 			responsiveClass:true,
-			responsive:{			
-				1199:{
+			responsive:{	
+				1440:{
 					items:p7_itemsDesktop
+				},		
+				1199:{
+					items:4
 				},
 				991:{
 					items:p7_itemsDesktopSmall

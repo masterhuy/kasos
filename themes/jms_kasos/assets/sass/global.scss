@@ -369,10 +369,12 @@
 }
 .home_3, .home_4, .home_6, .home_7{
 	.right-icon-group{
-		margin-right: 12px;
 		.addon-box{
 			&:not(:first-child){
 				margin-left: 25px;
+			}
+			&:last-child{
+				margin-right: 12px;
 			}
 		}
 	}
@@ -3780,7 +3782,7 @@ a.wishlist_top{
 		margin: 0 2px;
 	}
 	form#searchbox #selector_cat{
-		padding-right: 58px;
+		padding-right: 40px;
 		text-overflow: ellipsis;
 	}
 	div.jms-tab .nav{
@@ -3824,8 +3826,9 @@ a.wishlist_top{
 	div.products-list-in-row .product-preview{
 		flex-direction: column;
 	}
-	#searchbox #selector_cat{
-		max-width: 121px !important;
+	#searchbox #selector_cat {
+		max-width: 100px !important;
+		min-width: auto;
 	}
 	div.fraction-slider{
 		.prev, .next{

@@ -265,10 +265,11 @@
   .right-icon-group .addon-box:last-child {
     margin-left: 15px; }
 
-.home_3 .right-icon-group, .home_4 .right-icon-group, .home_6 .right-icon-group, .home_7 .right-icon-group {
+.home_3 .right-icon-group .addon-box:not(:first-child), .home_4 .right-icon-group .addon-box:not(:first-child), .home_6 .right-icon-group .addon-box:not(:first-child), .home_7 .right-icon-group .addon-box:not(:first-child) {
+  margin-left: 25px; }
+
+.home_3 .right-icon-group .addon-box:last-child, .home_4 .right-icon-group .addon-box:last-child, .home_6 .right-icon-group .addon-box:last-child, .home_7 .right-icon-group .addon-box:last-child {
   margin-right: 12px; }
-  .home_3 .right-icon-group .addon-box:not(:first-child), .home_4 .right-icon-group .addon-box:not(:first-child), .home_6 .right-icon-group .addon-box:not(:first-child), .home_7 .right-icon-group .addon-box:not(:first-child) {
-    margin-left: 25px; }
 
 .home_6 .right-icon-group .addon-box:not(:first-child), .home_7 .right-icon-group .addon-box:not(:first-child) {
   margin-left: 30px; }
@@ -2990,7 +2991,7 @@ a.wishlist_top.my_account {
   div.fs-pager-wrapper a, div.fs-custom-pager-wrapper a {
     margin: 0 2px; }
   form#searchbox #selector_cat {
-    padding-right: 58px;
+    padding-right: 40px;
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis; }
   div.jms-tab .nav {
@@ -3028,7 +3029,8 @@ a.wishlist_top.my_account {
     -ms-flex-direction: column;
     flex-direction: column; }
   #searchbox #selector_cat {
-    max-width: 121px !important; }
+    max-width: 100px !important;
+    min-width: auto; }
   div.fraction-slider .prev, div.fraction-slider .next {
     display: none; }
   div.feature-box {

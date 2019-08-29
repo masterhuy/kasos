@@ -36,14 +36,16 @@
 			</div>
 		{/if}
 			<div class="right-info">
-				<a href="{$product.link nofilter}" title="{$product.name|truncate:50:'...' nofilter}">
+				<a class="product-link" href="{$product.link nofilter}" title="{$product.name|truncate:50:'...' nofilter}">
 					{$product.name|truncate:35:'...' nofilter}
 				</a>
 				{if $description}
 				<p class="product-description">{$product.desc|truncate:$count_description:'...' nofilter}</p>
 				{/if}
 				{if $show_price}
-					<span class="price">{$product.price nofilter}</span>
+				<div class="content_price">
+					<span class="price new">{$product.price nofilter}</span>
+				</div>
 				{/if}
 			</div>
 		</div>
