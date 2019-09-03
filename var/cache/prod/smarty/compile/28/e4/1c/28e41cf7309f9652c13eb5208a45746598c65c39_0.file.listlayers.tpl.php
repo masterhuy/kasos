@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-08-29 06:28:06
+/* Smarty version 3.1.33, created on 2019-09-03 03:56:10
   from 'D:\xamppp\htdocs\jms_kasos\modules\jmsslider\views\templates\hook\listlayers.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d67a8b642abb0_76981633',
+  'unifunc' => 'content_5d6e1c9a57ff49_56772823',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:./layerconfig.tpl' => 1,
   ),
 ),false)) {
-function content_5d67a8b642abb0_76981633 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d6e1c9a57ff49_56772823 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_kasos\\vendor\\smarty\\smarty\\libs\\plugins\\function.math.php','function'=>'smarty_function_math',),));
 ?>
 

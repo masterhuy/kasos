@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-08-29 06:28:52
+/* Smarty version 3.1.33, created on 2019-09-03 06:08:20
   from 'D:\xamppp\htdocs\jms_kasos\themes\jms_kasos\templates\_partials\footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d67a8e4936649_73615750',
+  'unifunc' => 'content_5d6e3b94ed9ed6_06623255',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d67a8e4936649_73615750 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d6e3b94ed9ed6_06623255 (Smarty_Internal_Template $_smarty_tpl) {
 ?> <div class="back-to-top" id="back-to-top" title="Back to top">
 	<i class="la la-angle-up"></i>
 </div>

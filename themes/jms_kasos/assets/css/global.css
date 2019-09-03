@@ -2457,7 +2457,7 @@ a.wishlist_top.my_account {
   background: #000;
   color: #bbb; }
   #footer .footer-top-2 .container {
-    padding: 70px 0 18px;
+    padding: 70px 0 18px !important;
     border-bottom: 1px solid rgba(235, 235, 235, 0.2); }
   #footer .footer-top-2 .left {
     display: -webkit-box;
@@ -2609,7 +2609,7 @@ a.wishlist_top.my_account {
   background: #fff;
   padding: 14px 20px;
   letter-spacing: 0.2px; }
-  .btn-buynow:hover {
+  .btn-buynow:hover, .btn-buynow.active {
     color: #fff;
     background: #ff4800; }
   .btn-buynow::after {
@@ -2655,6 +2655,8 @@ a.wishlist_top.my_account {
     margin-left: 15px; } }
 
 @media (max-width: 1199px) {
+  .mt-md-0 {
+    margin-top: 0 !important; }
   .home_1 .right-icon-group .addon-box:nth-child(4), .home_1 .right-icon-group .addon-box:nth-child(5), .home_2 .right-icon-group .addon-box:nth-child(4), .home_2 .right-icon-group .addon-box:nth-child(5) {
     display: none; }
   .home_6 .right-icon-group .addon-box:not(:first-child), .home_7 .right-icon-group .addon-box:not(:first-child) {
@@ -2780,6 +2782,10 @@ a.wishlist_top.my_account {
     max-height: 600px; } }
 
 @media (max-width: 991px) {
+  .mb-sm-15 {
+    margin-bottom: 15px !important; }
+  .mt-sm-0 {
+    margin-top: 0 !important; }
   div.quickview .hidden-xs-down.left {
     margin-bottom: 30px; }
   .sm-mb-10 {
@@ -3005,8 +3011,6 @@ a.wishlist_top.my_account {
     -webkit-transform: translate(0, 10%);
     -ms-transform: translate(0, 10%);
     transform: translate(0, 10%); }
-  #category #footer {
-    margin-top: 0; }
   .sort-by {
     display: none; }
   div.products-list-in-row .product-preview .preview {

@@ -101,6 +101,7 @@
   border: 0;
   background: #ebebeb;
   margin-top: 37px;
+  width: calc(100% - 15px);
 }
 .ranger{
   margin-top: 29px;

@@ -131,14 +131,6 @@
 	.products-list-in-column.products-list-5 .js-product-miniature, .products-list-in-column.products-list-6 .js-product-miniature {
 		width:33.33%;
 	}
-	#product #left-column.page-column, #category #left-column.page-column {
-		padding-left: 15px;
-		padding-right: 15px;
-		width: 100%;
-	}
-	#product #content-wrapper, #category #content-wrapper {
-		padding-left: 15px;
-	}
 	   #blockcart-modal .btn-cart {
 	    display: inline-block;
 	    font-size: 10px;
@@ -238,9 +230,6 @@
 	}
     #product #content-wrapper, #category #content-wrapper {
 		padding-left: 15px;
-	}
-	.product_list.products-list-in-column .js-product-miniature{
-		width:50%;
 	}
    .wlp_bought .clearfix{
 	   display:block;
