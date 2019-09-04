@@ -1227,13 +1227,11 @@
 				// calculate % height
 				if (obj.attr("height") != null && obj.attr("height") != "") {
 					value = obj.attr("height");
-					console.log('a');
 					y = pixelToPercent(value, dY);
 					obj.attr("height", y + "%");
 					obj.css("height", y + "%");
 				} else if (obj.css('height') != '0px') {
 					value = obj.css("height");
-					console.log('ab');
 					if (value.indexOf('px') > 0) {
 						value = value.substring(0, value.length - 2);
 						y = pixelToPercent(value, dY);
@@ -1284,7 +1282,6 @@
 		function resizeSlider() {
 			var w = slider.innerWidth(), h = slider.innerHeight();
 			wWidth = $(window).width();
-			console.log(wWidth);
 			if (w <= dX || options.increase ) {
 
 				var xy = dX / dY, nH = w / xy;

@@ -3045,6 +3045,9 @@ ul.footer_links {
   top: 10px;
   color: #000;
   z-index: 99;
+  width: 13px;
+  height: 13px;
+  background: url("../img/icon/st-close.png") no-repeat center;
 }
 .js-modal-product-cover.product-cover-modal {
   width: 100%; }

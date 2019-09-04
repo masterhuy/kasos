@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-08-14 03:07:54
+/* Smarty version 3.1.33, created on 2019-09-03 23:04:32
   from 'D:\xamppp\htdocs\jms_kasos\themes\jms_kasos\templates\_partials\form-errors.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d53b34ae3baf9_30207620',
+  'unifunc' => 'content_5d6f29c02ffc05_20836844',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d53b34ae3baf9_30207620 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d6f29c02ffc05_20836844 (Smarty_Internal_Template $_smarty_tpl) {
 if (count($_smarty_tpl->tpl_vars['errors']->value)) {?>
   <div class="help-block">
     <ul>

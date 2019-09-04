@@ -19,19 +19,20 @@
     -ms-flex-pack: end;
     justify-content: flex-end; }
     .topbar .right .addon-box {
-      margin-left: 50px;
       position: relative; }
-      .topbar .right .addon-box:not(:first-child)::before {
-        content: "";
-        position: absolute;
-        left: -24px;
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-        width: 1px;
-        height: 56px;
-        background: rgba(255, 255, 255, 0.3); }
+      .topbar .right .addon-box:not(:first-child) {
+        margin-left: 50px; }
+        .topbar .right .addon-box:not(:first-child)::before {
+          content: "";
+          position: absolute;
+          left: -24px;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+          width: 1px;
+          height: 56px;
+          background: rgba(255, 255, 255, 0.3); }
   .topbar .btn-xs {
     color: #fff;
     font-weight: 500;
@@ -2916,7 +2917,9 @@ a.wishlist_top.my_account {
     width: 30%; }
   div#search_result .result_div .right-info {
     width: 70%; }
-  #content-wrapper .container, #header .container, #footer .container {
+  #content-wrapper > .container {
+    padding: 0 15px !important; }
+  #header .container, #footer .container {
     padding: 0 15px !important; }
   input#ajax_advsearch {
     width: 100%; }

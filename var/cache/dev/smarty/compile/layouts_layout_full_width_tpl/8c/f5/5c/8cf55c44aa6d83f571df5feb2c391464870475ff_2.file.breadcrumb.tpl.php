@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-08-07 00:19:01
+/* Smarty version 3.1.33, created on 2019-09-04 02:42:07
   from 'D:\xamppp\htdocs\jms_kasos\themes\jms_kasos\templates\_partials\breadcrumb.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d4a513574f1d5_95473577',
+  'unifunc' => 'content_5d6f5cbfc52622_81249009',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8cf55c44aa6d83f571df5feb2c391464870475ff' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_kasos\\themes\\jms_kasos\\templates\\_partials\\breadcrumb.tpl',
-      1 => 1563937369,
+      1 => 1565233673,
       2 => 'file',
     ),
   ),
@@ -20,9 +20,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d4a513574f1d5_95473577 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d6f5cbfc52622_81249009 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="breadcrumb">
-    <div class="breadcrumb-box container">
+    <div class="breadcrumb-box container-fluid">
         <span class="title_meta">
             <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['page']->value['meta']['title'], ENT_QUOTES, 'UTF-8');?>
 

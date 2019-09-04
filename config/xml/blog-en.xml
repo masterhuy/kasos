@@ -6,6 +6,22 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>5 content tips to increase conversion rate</title>
+    <link>https://www.prestashop.com/en/blog/content-tips-to-increase-conversion-rate</link>
+    <description>Optimize your product content easily to increase your conversion rate using these easy steps</description>
+     <pubDate>Mon, 02 Sep 2019 12:05:40 +0200</pubDate>
+ <dc:creator>iPresta</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/content-tips-to-increase-conversion-rate</guid>
+  </item>
+  <item>
+    <title>5 Ways to Improve Customer Experience and Retain Customers</title>
+    <link>https://www.prestashop.com/en/blog/improve-customer-experience-retain-customers</link>
+    <description>In the world of ecommerce, everything accelerates quickly and nothing stays the same for very long.</description>
+     <pubDate>Fri, 30 Aug 2019 12:11:01 +0200</pubDate>
+ <dc:creator>shipstation</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/improve-customer-experience-retain-customers</guid>
+  </item>
+  <item>
     <title>4 Tips for Better Creative Content on Facebook Ads</title>
     <link>https://www.prestashop.com/en/blog/better-creative-content-on-facebook-ads</link>
     <description>Facebook has more than 2.41 billion monthly active users who create, share and like different content each and every day. It’s one of the most used marketing tools for eCommerce industry.</description>
@@ -68,22 +84,6 @@
      <pubDate>Mon, 29 Jul 2019 11:56:07 +0200</pubDate>
  <dc:creator>Cécile Dubouis</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/prestashop-project-prioritization</guid>
-  </item>
-  <item>
-    <title>How To Create A Social Media Calendar</title>
-    <link>https://www.prestashop.com/en/blog/create-social-media-calendar</link>
-    <description>We all know that promoting our businesses on social media is an important part of reaching and expanding our customer base, but great intentions can slide away from us in the absence of a strategic</description>
-     <pubDate>Fri, 26 Jul 2019 10:20:45 +0200</pubDate>
- <dc:creator>Teapot</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/create-social-media-calendar</guid>
-  </item>
-  <item>
-    <title>Why do mobile shoppers prefer a simplified payment method?</title>
-    <link>https://www.prestashop.com/en/blog/simplified-payment-method</link>
-    <description>The arrival of smartphones has radically changed e-shoppers’ purchasing habits. The number of people buying online using their mobile phone has increased considerably over recent years.</description>
-     <pubDate>Wed, 24 Jul 2019 11:08:47 +0200</pubDate>
- <dc:creator>Yateo EN</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/simplified-payment-method</guid>
   </item>
   </channel>
 </rss>

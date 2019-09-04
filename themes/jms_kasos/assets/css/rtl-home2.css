@@ -1,0 +1,11 @@
+.jms-megamenu .nav > li.sub-home {
+	padding-right: 0;
+	padding-left: 18.8px;
+}
+.home_2 .banner_bg .addon-box{
+	flex-flow: row-reverse;
+}
+.banner-7 .row{
+	display: flex;
+	flex-flow: row-reverse;
+}

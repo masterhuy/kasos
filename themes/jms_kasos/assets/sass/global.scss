@@ -37,17 +37,19 @@
 		align-items: center;
 		justify-content: flex-end;
 		.addon-box{
-			margin-left: 50px;
 			position: relative;
-			&:not(:first-child)::before{
-				content:"";
-				position: absolute;
-				left: -24px;
-				top: 50%;
-				transform: translateY(-50%);
-				width: 1px;
-				height: 56px;
-				background: rgba(255,255,255,0.3);
+			&:not(:first-child){
+				margin-left: 50px;
+				&::before{
+					content:"";
+					position: absolute;
+					left: -24px;
+					top: 50%;
+					transform: translateY(-50%);
+					width: 1px;
+					height: 56px;
+					background: rgba(255,255,255,0.3);
+				}
 			}
 		}
 	}
@@ -3659,7 +3661,12 @@ a.wishlist_top{
 		    width: 70%;
 		}
 	}
-	#content-wrapper, #header, #footer{
+	#content-wrapper{
+		> .container{
+			padding: 0 15px !important;
+		}
+	}
+	#header, #footer{
 		.container{
 			padding: 0 15px !important;
 		}

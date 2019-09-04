@@ -1,0 +1,14 @@
+.banner-4 .row{
+	display: flex;
+	flex-flow: row-reverse;
+}
+.banner-4 .addon-box{
+	text-align: left;
+}
+.countdown-banner .col_left{
+	float: left;
+	text-align: left;
+}
+.home_1 .banner_bg .addon-box{
+	flex-flow: row-reverse;
+}

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-08-07 00:19:01
+/* Smarty version 3.1.33, created on 2019-09-04 05:40:39
   from 'D:\xamppp\htdocs\jms_kasos\themes\jms_kasos\templates\_partials\footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d4a5135785ce5_80915226',
+  'unifunc' => 'content_5d6f8697a95894_99735964',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '35da3725be547d74c2dd6e10b312093c6b21641a' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_kasos\\themes\\jms_kasos\\templates\\_partials\\footer.tpl',
-      1 => 1563937369,
+      1 => 1565928317,
       2 => 'file',
     ),
   ),
@@ -20,14 +20,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d4a5135785ce5_80915226 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d6f8697a95894_99735964 (Smarty_Internal_Template $_smarty_tpl) {
 ?> <div class="back-to-top" id="back-to-top" title="Back to top">
-	<i class="d-flex flex-center">
-		<svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-theme-014"
-				viewBox="0 0 24 24">
-			<path d="M11.791 21.505a.598.598 0 0 1-.439-.186.601.601 0 0 1-.186-.439V4.883l-4.551 4.57a.649.649 0 0 1-.449.177.652.652 0 0 1-.449-.176.652.652 0 0 1-.176-.449c0-.169.059-.319.176-.449l5.625-5.625a2.48 2.48 0 0 1 .107-.068c.032-.02.068-.042.107-.068a.736.736 0 0 1 .468 0c.039.026.075.049.107.068.032.02.068.042.107.068l5.625 5.625c.117.13.176.28.176.449a.652.652 0 0 1-.176.449.877.877 0 0 1-.215.127.596.596 0 0 1-.468 0 .877.877 0 0 1-.215-.127l-4.551-4.57V20.88a.6.6 0 0 1-.186.439.59.59 0 0 1-.437.186z"/>
-		</svg>
-	</i>
+	<i class="la la-angle-up"></i>
 </div>
 <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0], array( array('h'=>'displayFooter'),$_smarty_tpl ) );?>
 

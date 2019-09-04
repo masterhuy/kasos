@@ -1,0 +1,16 @@
+.right-icon-group .addon-box {
+	margin-right: 30px !important;
+	margin-left: 0 !important;
+}
+#cart_block .text-custom {
+	margin-right: 12px;
+	margin-left: 0;
+}
+#cart_block .shoppingcart-box {
+	left: 0;
+	right: auto;
+}
+#cart_block .shoppingcart-box::before {
+	left: 81px !important;
+	right: auto;
+}

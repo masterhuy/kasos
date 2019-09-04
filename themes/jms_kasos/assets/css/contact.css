@@ -1,3 +1,9 @@
+.contact-rich {
+	display: none;
+}
+#contact .contact-rich {
+	display: block;
+}
 #contact #right-column{
 	display: none;
 }

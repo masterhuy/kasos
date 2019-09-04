@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-08-14 03:07:54
+/* Smarty version 3.1.33, created on 2019-09-03 23:04:31
   from 'module:jmswishlistviewstemplates' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d53b34a2f4e67_04808415',
+  'unifunc' => 'content_5d6f29bf71e6f1_59049513',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '397b03fe774dde055b6ffa7f0521750a7ec80dc2' => 
     array (
       0 => 'module:jmswishlistviewstemplates',
-      1 => 1563937369,
+      1 => 1565857520,
       2 => 'module',
     ),
   ),
@@ -21,22 +21,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:_partials/form-errors.tpl' => 1,
   ),
 ),false)) {
-function content_5d53b34a2f4e67_04808415 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d6f29bf71e6f1_59049513 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15550007485d53b34a27fb63_16170257', 'page_content_container');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_14979049515d6f29bf6d04f0_13174130', 'page_content_container');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'page.tpl');
 }
 /* {block 'page_content_container'} */
-class Block_15550007485d53b34a27fb63_16170257 extends Smarty_Internal_Block
+class Block_14979049515d6f29bf6d04f0_13174130 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_content_container' => 
   array (
-    0 => 'Block_15550007485d53b34a27fb63_16170257',
+    0 => 'Block_14979049515d6f29bf6d04f0_13174130',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -154,13 +154,13 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 						<td class="wishlist_default">
 							<?php if ((($_smarty_tpl->tpl_vars['wishlists']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_i']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index'] : null)]['default'] !== null )) && $_smarty_tpl->tpl_vars['wishlists']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_i']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index'] : null)]['default'] == 1) {?>
 								<p class="is_wish_list_default">
-																		<img src="themes/jms_shella/assets/img/icon/checked.png">
+																		<img src="themes/jms_kasos/assets/img/icon/checked.png">
 								</p>
 							<?php } else { ?>
 								<a href="#" onclick="javascript:event.preventDefault();(WishlistDefault('wishlist_<?php echo htmlspecialchars(intval($_smarty_tpl->tpl_vars['wishlists']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_i']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index'] : null)]['id_wishlist']), ENT_QUOTES, 'UTF-8');?>
 ', '<?php echo htmlspecialchars(intval($_smarty_tpl->tpl_vars['wishlists']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_i']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index'] : null)]['id_wishlist']), ENT_QUOTES, 'UTF-8');?>
 '));">
-																		<img src="themes/jms_shella/assets/img/icon/uncheck.png">
+																		<img src="themes/jms_kasos/assets/img/icon/uncheck.png">
 								</a>
 							<?php }?>
 						</td>
