@@ -2,3 +2,10 @@
 	left: 30px;
 	right: auto;
 }
+#jms_ajax_search .button-search{
+	left: 0;
+	right: auto;
+}
+.hotline{
+	text-align: left;
+}

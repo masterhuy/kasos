@@ -72,8 +72,7 @@
 				</div>
 				<div class="left">
 					<p class="post-created">
-						{$post.created|escape:'html':'UTF-8'|date_format:"%b %e, %Y"} /
-						{$comments|@count}{l s=' Comment(s)' d='Modules.JmsBlog'}
+						{$post.created|escape:'html':'UTF-8'|date_format:"%b %e, %Y"}
 					</p>
 					<a href="{jmsblog::getPageLink('jmsblog-post', $params) nofilter}" class="post-title">
 						{$post.title|truncate:40:'...' nofilter}

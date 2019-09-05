@@ -43,6 +43,7 @@
 				<img src="{$image_baseurl|escape:'html':'UTF-8'}{$post.image|escape:'html':'UTF-8'}" alt="{l s='Image Blog' d='Modules.JmsBlog'}" />
 			</div>
 		{/if}
+		{assign var=params value=['post_id' => $post.post_id, 'category_slug' => $post.category_alias, 'slug' => $post.alias]}
 		{assign var=catparams value=['category_id' => $post.category_id, 'slug' => $post.category_alias]}	
 		<ul class="post-meta">
 			{if $jmsblog_setting.JMSBLOG_SHOW_CATEGORY}
@@ -66,12 +67,13 @@
 					<span>{$post.views|escape:'html':'UTF-8'} {l s='view(s)' d='Modules.JmsBlog'}</span>
 				</li>
 			{/if}
+			
 			{if $jmsblog_setting.JMSBLOG_SHOW_COMMENTS}
 				<li>
-					<span>{$comments|@count}{l s=' Comment(s)' d='Modules.JmsBlog'}</span>
+					<span>{$comments|@count}{l s=' comments' d='Modules.JmsBlog'}</span>
 				</li>
 			{/if}
-		</ul>
+		</ul> 
 		<h1 class="title">{$post.title|escape:'html':'UTF-8'}</h1>
 		
 		<div class="post-fulltext">

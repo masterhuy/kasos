@@ -1,0 +1,58 @@
+.jms-advsearch .input-group-search button {
+	right: auto;
+	left: -2px;
+}
+.jms-advsearch #searchbox .input-group-addon.icon-drop-down::after {
+	left: 29px;
+	right: auto;
+}
+.hotline {
+	text-align: left;
+}
+.header .right .addon-box:not(:first-child) {
+	margin-right: 29px;
+	margin-left: 0;
+}
+.header .right .addon-box:last-child {
+	margin-left: 0;
+}
+.blog .blog-carousel .post-info {
+	text-align: right;
+}
+.blog .addon-title h3 {
+	text-align: right;
+}
+.blog .owl-dots {
+	right: auto;
+	left: -2px;
+}
+.product-carousel2 .product-preview::after {
+	right: auto;
+	left: -14px;
+}
+.newsletter .addon-box .addon-title h3 {
+	text-align: right;
+}
+.best-seller .addon-title h3,
+.recent-arrivals .addon-title h3 {
+	text-align: right;
+}
+.product-carousel2 .owl-dots {
+	right: auto;
+	left: 12px;
+}
+.cates-tab .addon-box .addon-title h3 {
+	text-align: right;
+	float: right;
+}
+.cates-tab .addon-box .addon-title .jms-tab {
+	float: left;
+}
+.cates-tab .addon-box .addon-title .jms-tab ul li {
+	padding-right: 64px;
+	padding-left: 0;
+}
+.service .image {
+	margin-left: 15px;
+	margin-right: 0;
+}

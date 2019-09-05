@@ -1,4 +1,35 @@
-#footer .footer-bottom #social_block.type-2 ul li:last-child {
-	padding-left: 0;
-	padding-right: 9px;
+.jms-advsearch .input-group-search button{
+	left: -2px;
+	right: auto;
+}
+.jms-megamenu .nav > li.sub-home {
+	padding-right: 0;
+	padding-left: 18.8px;
+}
+#searchbox #selector_cat{
+	padding-left: 50px;
+	padding-right: 13px;
+}
+#searchbox .input-group-addon.icon-drop-down::after {
+	left: 16px;
+	right: auto;
+}
+.jms-row.menu .right .addon-box:not(:first-child) {
+	margin-right: 51px;
+	margin-left: 0;
+}
+.jms-row.menu .right .addon-box:not(:first-child)::before {
+	left: auto;
+	right: -26px;
+}
+.jms-row.menu .right .btn-xs .fa {
+	margin-right: 10px;
+	margin-left: 0;
+}
+.categories-carousel2 .categories-wrapper .c_item-info {
+	text-align: right;
+}
+.product-carousel2 .product-preview::after {
+	right: auto;
+	left: -14px;
 }

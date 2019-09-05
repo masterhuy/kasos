@@ -2135,9 +2135,7 @@ a.wishlist_top.my_account {
 
 .blog-widget .item-post .left {
   width: 100%;
-  margin-left: 0;
-  position: relative;
-  top: 5px; }
+  margin-left: 0; }
   .blog-widget .item-post .left .post-title {
     font-size: 18px;
     padding-bottom: 0;

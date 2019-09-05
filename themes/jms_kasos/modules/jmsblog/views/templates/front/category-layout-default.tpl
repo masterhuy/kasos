@@ -72,7 +72,14 @@
 							{/if}
 							{if $jmsblog_setting.JMSBLOG_SHOW_COMMENTS}
 								<li>
-									<span>{$comments|@count}{l s=' Comment(s)' d='Modules.JmsBlog'}</span>
+									<span>
+										{$post.comment_count|escape:'html':'UTF-8'} 
+										{if $post.comment_count > 0}
+											{l s='Comments' d='Modules.JmsPagebuilder'}
+										{else}
+											{l s='Comment' d='Modules.JmsPagebuilder'}
+										{/if}
+									</span>
 								</li>
 							{/if}
 						</ul>

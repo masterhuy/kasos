@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-09-03 23:13:29
+/* Smarty version 3.1.33, created on 2019-09-05 05:29:42
   from 'D:\xamppp\htdocs\jms_kasos\themes\jms_kasos\modules\jmsblogwidget\views\templates\hook\sidebar-widget.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d6f2bd94ed998_58504938',
+  'unifunc' => 'content_5d70d5866486d0_48987813',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0087f1c3ab58fdeb33e581b31af313b2f2f556b7' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_kasos\\themes\\jms_kasos\\modules\\jmsblogwidget\\views\\templates\\hook\\sidebar-widget.tpl',
-      1 => 1565661679,
+      1 => 1567674857,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d6f2bd94ed998_58504938 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d70d5866486d0_48987813 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_kasos\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
 if ($_smarty_tpl->tpl_vars['widget_setting']->value['JBW_SB_SHOW_CATEGORYMENU']) {?>
 <aside class="blog-widget widget-categories">
