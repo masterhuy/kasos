@@ -137,8 +137,12 @@
 @media (max-width: 767px) {
   .jms-row.banner-text .addon-box {
     display: block; }
+  .banner-4 .container {
+    padding: 0 15px; }
   .banner-4 .addon-box {
-    text-align: right; } }
+    text-align: right; }
+  .countdown-banner .container {
+    padding: 0 15px; } }
 
 @media (max-width: 481px) {
   .jms-row.banner-text p {

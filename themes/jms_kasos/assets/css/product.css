@@ -1094,9 +1094,6 @@
     .customs-html-left img{
         width: 100%;
     }
-    #wrapper > .container{
-        padding: 0 15px;
-    }
     div.products-list-in-column .js-product-miniature {
         width: calc((100% - 30px) / 2);
     }

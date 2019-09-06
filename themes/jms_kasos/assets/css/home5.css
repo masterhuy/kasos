@@ -69,6 +69,9 @@
 .right-icon-group .addon-box {
   margin-left: 30px !important; }
 
+.jms-row.discount.v2 p {
+  letter-spacing: 1.36px; }
+
 .banner-type-1 .banner-content {
   left: auto;
   right: 48px;

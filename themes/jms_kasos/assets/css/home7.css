@@ -7,8 +7,11 @@
   background: #0070c9; }
 
 .jms-row.header {
+  background: #0070c9 !important;
   padding: 40px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+  .jms-row.header.fixed {
+    padding: 20px 0; }
 
 #searchbox #selector_cat,
 #searchbox .input-group-addon.icon-drop-down::after {
@@ -158,6 +161,7 @@
   letter-spacing: 1px; }
 
 .service {
+  margin-top: 30px;
   padding: 0 15px; }
   .service .container-fluid {
     max-width: 1760px;
@@ -202,8 +206,6 @@
 
 .jms-row.discount.v2 {
   background: transparent; }
-  .jms-row.discount.v2 p {
-    letter-spacing: 0.5px; }
   .jms-row.discount.v2 .container-fluid {
     max-width: 1760px;
     padding: 0;
@@ -372,6 +374,8 @@
     text-align: center;
     padding-right: 20px;
     padding-left: 20px; }
+    .banner-bg .addon-box .content .text-1 {
+      font-size: 20px; }
   .service .layout-column:not(:last-child) .feature-box::after {
     display: none; }
   .jms-advsearch #searchbox {

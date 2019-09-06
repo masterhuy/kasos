@@ -1,3 +1,6 @@
+.breadcrumb-box.container-fluid {
+  max-width: 1440px; }
+
 .jms-row.header {
   position: relative; }
   .jms-row.header .container {

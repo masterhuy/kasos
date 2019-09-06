@@ -2,8 +2,8 @@
 @import "varians";
 
 // @media (min-width: 992px){
-// 	.jms-row.header.fixed,
-// 	.jms-row.menu.fixed{
+// 	.jms-row.header.fixed{
+// 		top: 0;
 // 		left: 0;
 // 		right: 0;
 // 		position: fixed !important;
@@ -12,11 +12,22 @@
 // 	  	animation-duration: 0.8s;
 // 		animation-name: slideDown;
 // 		animation-timing-function: ease;
-// 		z-index: 999;
+// 		box-shadow: 0 0 5px rgba(0,0,0,0.2);
+// 		z-index: 998;
+// 		.jms-megamenu{
+// 			> ul > .menu-item > .dropdown-menu{
+// 				top: 100%;
+// 			}
+// 			.nav > li > a{
+// 				line-height: 66px;
+// 			}
+// 		}
 // 	}
 // }
 
-
+.page-index #wrapper.container{
+	width: 100%;
+}
 //topbar
 .topbar{
 	padding: 16.75px 0;
@@ -376,7 +387,7 @@
 				margin-left: 25px;
 			}
 			&:last-child{
-				margin-right: 12px;
+				margin-right: 8px;
 			}
 		}
 	}
@@ -502,8 +513,8 @@
 		border-radius: 50%;
 		font-size: 12px;
 		font-weight: 500;
-		bottom: -7px;
-		right: -8px;
+		bottom: -9px;
+		right: -5px;
 	}
 }
 //
@@ -2961,9 +2972,7 @@ a.wishlist_top{
 	}
 	#wrapper{
 		position: relative;
-		.container{
-			padding-top: 595px;
-		}
+		padding-top: 595px;
 	}
 	#left-column{
 		position: unset;
@@ -3463,6 +3472,9 @@ a.wishlist_top{
 	.mt-sm-0{
 		margin-top: 0 !important;
 	}
+	.countdown-banner .countdown-box .countdown-section {
+		min-width: 60px;
+	}
 	div.quickview .hidden-xs-down.left{
 		margin-bottom: 30px;
 	}
@@ -3564,6 +3576,15 @@ a.wishlist_top{
 @media (max-width: 767px){
 	.mt-xs-30{
 		margin-top: 30px !important;
+	}
+	.banner_bg .addon-box p:not(:last-child) {
+		margin: 0 20px;
+	}
+	.blog.v2 .post-meta{
+		display: none;
+	}
+	.jms-row .container{
+		padding: 0 15px !important;
 	}
 	.categories-carousel2 .categories-wrapper .c_item-info .cat-name, 
 	.categories-carousel2-mr-0 .categories-wrapper .c_item-info .cat-name {
@@ -3720,8 +3741,8 @@ a.wishlist_top{
 	}
 	.countdown-banner .countdown-box{
 		.countdown-section{
-			min-width: 50px;
-			margin-right: 20px;
+			min-width: 45px;
+			margin-right: 15px;
 			.countdown-amount{
 				font-size: 20px;
 			}

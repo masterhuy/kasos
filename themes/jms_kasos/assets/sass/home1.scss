@@ -180,8 +180,18 @@
 
 		}
 	}
-	.banner-4 .addon-box {
-		text-align: right;
+	.banner-4{
+		.container{
+			padding: 0 15px;
+		}
+		.addon-box {
+			text-align: right;
+		}
+	}
+	.countdown-banner{
+		.container{
+			padding: 0 15px;
+		}
 	}
 }
 @media (max-width: 481px){

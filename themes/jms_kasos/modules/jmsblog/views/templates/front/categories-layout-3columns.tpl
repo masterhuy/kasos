@@ -34,21 +34,23 @@
 {capture name=path}{l s='Categories'}{/capture}
 <h1 class="page-heading">{l s='Categories'}</h1>
 {if isset($categories) AND $categories}		
-	<div class="categories-list row">
-		{foreach from=$categories item=category}			
-			{assign var=catparams value=['category_id' => $category.category_id, 'slug' => $category.alias]}				
-			<div class="blog-category col-sm-4 col-lg-4 col-md-4 col-xs-12">
-				{if $category.image && $jmsblog_setting.JMSBLOG_SHOW_MEDIA}
-					<div class="post-thumb">
-						<a href="{jmsblog::getPageLink('jmsblog-category', $catparams)}"><img src="{$image_baseurl|escape:'html':'UTF-8'}{$category.image|escape:'html':'UTF-8'}" alt="{$category.title|escape:'htmlall':'UTF-8'}" class="img-responsive" /></a>			 		
-					</div>
-				{/if}
-				<div class="category-info">
-					<h4 class="category_title"><a href="{jmsblog::getPageLink('jmsblog-category', $catparams)}">{$category.title|escape:'htmlall':'UTF-8'}</a></h4>	
-					<div class="cat-intro">{$category.introtext nofilter}</div>
-				</div>					
-			</div>
-		{/foreach}
+	<div class="container">
+		<div class="categories-list row">
+			{foreach from=$categories item=category}			
+				{assign var=catparams value=['category_id' => $category.category_id, 'slug' => $category.alias]}				
+				<div class="blog-category col-sm-4 col-lg-4 col-md-4 col-xs-12">
+					{if $category.image && $jmsblog_setting.JMSBLOG_SHOW_MEDIA}
+						<div class="post-thumb">
+							<a href="{jmsblog::getPageLink('jmsblog-category', $catparams)}"><img src="{$image_baseurl|escape:'html':'UTF-8'}{$category.image|escape:'html':'UTF-8'}" alt="{$category.title|escape:'htmlall':'UTF-8'}" class="img-responsive" /></a>			 		
+						</div>
+					{/if}
+					<div class="category-info">
+						<h4 class="category_title"><a href="{jmsblog::getPageLink('jmsblog-category', $catparams)}">{$category.title|escape:'htmlall':'UTF-8'}</a></h4>	
+						<div class="cat-intro">{$category.introtext nofilter}</div>
+					</div>					
+				</div>
+			{/foreach}
+		</div>
 	</div>
 {else}	
 {l s='Sorry, dont have any category in this section' d='Modules.JmsBlog'}

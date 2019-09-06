@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-09-04 21:43:54
+/* Smarty version 3.1.33, created on 2019-09-06 04:31:40
   from 'D:\xamppp\htdocs\jms_kasos\themes\jms_kasos\modules\jmspagebuilder\views\templates\hook\addoncategoryshow2-mr-0.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d70685ab12af6_58299124',
+  'unifunc' => 'content_5d72196c22c9a2_90007623',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d70685ab12af6_58299124 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d72196c22c9a2_90007623 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type="text/javascript">
 	var cs_mr0_items = <?php if ($_smarty_tpl->tpl_vars['cols']->value) {

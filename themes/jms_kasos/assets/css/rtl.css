@@ -954,12 +954,8 @@ footer .post-created {
     padding-right: 15px;
 }
 .back-to-top{
-	left:-40px;
+	left:20px;
 	right:auto;
-}
-.back-to-top.show{
-  left: 0;
-  right: auto;
 }
 .product-miniature .preview .block-label {
   right: 10px;

@@ -1169,15 +1169,12 @@ $(window).load(function () {
 var initialLoad = true;
 $(document).ready(function() {
 	var header = $(".jms-row.header");
-	var menu = $(".jms-row.menu");
 
 	$(window).scroll(function () {
     	if ($(window).scrollTop() > 300){
 			header.addClass("fixed");
-			menu.addClass("fixed");
     	} else {
 			header.removeClass("fixed");
-			menu.removeClass("fixed");
     	}
     });
 

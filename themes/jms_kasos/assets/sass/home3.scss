@@ -72,7 +72,13 @@
 .page-index #footer{
 	margin-top: 0;
 }
-
+@media (max-width: 1800px){
+	.banner-center .banner-content{
+		img{
+			width: 100%;
+		}
+	}
+}	
 @media (max-width: 1366px) and (min-width: 1200px){
 	.jms-slider-wrapper{
 		.text-1{

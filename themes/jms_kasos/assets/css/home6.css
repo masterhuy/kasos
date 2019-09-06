@@ -1,5 +1,8 @@
-.main-site {
+.page-index .main-site {
   background: #2b2f36; }
+
+.breadcrumb-box.container-fluid {
+  max-width: 1440px; }
 
 .jms-row.menu {
   position: relative; }
@@ -18,7 +21,10 @@
   z-index: 998; }
 
 .jms-row.header {
-  padding: 40px 0; }
+  padding: 40px 0;
+  background: #2b2f36 !important; }
+  .jms-row.header.fixed {
+    padding: 20px 0; }
   .jms-row.header .wishlist_top.home_page::after {
     font-size: 24px; }
   .jms-row.header #cart_block .cart-icon::before,
@@ -155,7 +161,7 @@
 .jms-row.discount.v2 {
   margin-top: 23px; }
   .jms-row.discount.v2 p {
-    letter-spacing: 0.5px;
+    letter-spacing: 0.92px;
     padding: 23.5px 0; }
 
 .jms-addon.jms-video {
@@ -252,7 +258,8 @@ div.menu-wrap {
   .video .container > .row {
     display: block; }
   .jms-addon.jms-video iframe {
-    width: 100%; } }
+    width: calc(100% - 30px);
+    margin: auto; } }
 
 @media (max-width: 991px) {
   .banner-1 {
@@ -306,9 +313,22 @@ div.menu-wrap {
     .banner-4 .banner-content .text-3 {
       font-size: 60px;
       letter-spacing: 0; }
+  .flashsales-countdown .countdown-amount {
+    margin-right: 0; }
+  .flashsales-countdown .countdown-section {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .flashsales-countdown .countdown-section::after {
+      display: none; }
   .flashsales-countdown .countdown-row::before {
     display: block;
-    margin-right: 0; }
+    margin-right: 0;
+    margin-bottom: 15px; }
   .video-content {
     margin-top: 20px; }
     .video-content .text-1, .video-content .text-2 {

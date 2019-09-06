@@ -1,6 +1,9 @@
 @import "mixin";
 @import "varians";
 
+.breadcrumb-box.container-fluid {
+	max-width: 1440px;
+}
 .jms-row.header{
 	position: relative;
 	.container{

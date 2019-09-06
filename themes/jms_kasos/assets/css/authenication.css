@@ -16,7 +16,7 @@
 #authentication #wrapper{
 	padding-top: 0;
 }
-#authentication .no-account h3{
+#authentication .no-account .h3{
 	color: #000;
 }
 #authentication .login-form h3{
@@ -115,13 +115,21 @@
 	height: 4px;
 	background-color: #141414;
 }
+#authentication #wrapper {
+	max-width: 400px;
+}
 @media (max-width: 1199px){
 	#authentication{
 		border: 0;
 	}
 }
+@media (max-width: 767px){
+	#authentication #wrapper{
+		padding: 0 15px;
+	}
+}
 @media (max-width: 481px){
-	#authentication #wrapper > .container {
+	#authentication #wrapper {
 		max-width: 100%;
 	}
 }

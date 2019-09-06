@@ -212,14 +212,26 @@
 	#contact #wrapper #content-wrapper {
 		padding: 0;
 	}
-	#contact #wrapper>.row {
+	#contact #wrapper > .row {
 		margin-left:0;
 		margin-right:0;
 	}
 	#contact #wrapper {
-		padding:0 15px;
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 	#contact .page-content.card-block {
 		margin-top:50px;
+	}
+	#contact .contact-map{
+		width: calc(100% - 30px);
+	}
+}
+@media (max-width: 481px){
+	#contact .contact-map iframe{
+		height: 250px;
+	}
+	#contact #wrapper{
+		padding-top: 300px;
 	}
 }

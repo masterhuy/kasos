@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-09-05 05:53:44
+/* Smarty version 3.1.33, created on 2019-09-06 04:45:43
   from 'module:psbestsellersviewstemplat' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d70db287cab30_52905397',
+  'unifunc' => 'content_5d721cb7a5bc68_35427741',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/miniatures/product2.tpl' => 1,
   ),
 ),false)) {
-function content_5d70db287cab30_52905397 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d721cb7a5bc68_35427741 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- begin D:\xamppp\htdocs\jms_kasos/themes/jms_kasos/modules/ps_bestsellers/views/templates/hook/ps_bestsellers.tpl --><div class="best-sellers_block_right">
 	<div class="title-block">
 		<h3>

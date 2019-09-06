@@ -1,3 +1,6 @@
+.page-index #wrapper.container {
+  width: 100%; }
+
 .topbar {
   padding: 16.75px 0;
   background: #0070c9;
@@ -270,7 +273,7 @@
   margin-left: 25px; }
 
 .home_3 .right-icon-group .addon-box:last-child, .home_4 .right-icon-group .addon-box:last-child, .home_6 .right-icon-group .addon-box:last-child, .home_7 .right-icon-group .addon-box:last-child {
-  margin-right: 12px; }
+  margin-right: 8px; }
 
 .home_6 .right-icon-group .addon-box:not(:first-child), .home_7 .right-icon-group .addon-box:not(:first-child) {
   margin-left: 30px; }
@@ -377,8 +380,8 @@
   border-radius: 50%;
   font-size: 12px;
   font-weight: 500;
-  bottom: -7px;
-  right: -8px; }
+  bottom: -9px;
+  right: -5px; }
 
 .languages-info .dropdown-menu {
   min-width: 130px;
@@ -2412,9 +2415,8 @@ a.wishlist_top.my_account {
   width: 100%; }
 
 #contact #wrapper {
-  position: relative; }
-  #contact #wrapper .container {
-    padding-top: 595px; }
+  position: relative;
+  padding-top: 595px; }
 
 #contact #left-column {
   position: unset; }
@@ -2785,6 +2787,8 @@ a.wishlist_top.my_account {
     margin-bottom: 15px !important; }
   .mt-sm-0 {
     margin-top: 0 !important; }
+  .countdown-banner .countdown-box .countdown-section {
+    min-width: 60px; }
   div.quickview .hidden-xs-down.left {
     margin-bottom: 30px; }
   .sm-mb-10 {
@@ -2855,6 +2859,12 @@ a.wishlist_top.my_account {
 @media (max-width: 767px) {
   .mt-xs-30 {
     margin-top: 30px !important; }
+  .banner_bg .addon-box p:not(:last-child) {
+    margin: 0 20px; }
+  .blog.v2 .post-meta {
+    display: none; }
+  .jms-row .container {
+    padding: 0 15px !important; }
   .categories-carousel2 .categories-wrapper .c_item-info .cat-name,
   .categories-carousel2-mr-0 .categories-wrapper .c_item-info .cat-name {
     font-size: 16px; }
@@ -2953,8 +2963,8 @@ a.wishlist_top.my_account {
       margin-right: 0;
       margin-bottom: 15px; }
   .countdown-banner .countdown-box .countdown-section {
-    min-width: 50px;
-    margin-right: 20px; }
+    min-width: 45px;
+    margin-right: 15px; }
     .countdown-banner .countdown-box .countdown-section .countdown-amount {
       font-size: 20px; }
   .countdown-banner .countdown-box .content .text-1 {
