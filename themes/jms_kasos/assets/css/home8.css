@@ -61,8 +61,7 @@ a.wishlist_top.home_page,
     .jms-advsearch #searchbox .input-group-addon.icon-drop-down::after {
       right: 29px; }
     .jms-advsearch #searchbox #selector_cat {
-      width: 263px;
-      padding: 0 15px; }
+      width: 263px; }
   .jms-advsearch .input-group-search button {
     padding: 19px 43px; }
 
@@ -179,7 +178,7 @@ a.wishlist_top.home_page,
   bottom: auto; }
 
 .blog {
-  margin-top: -27px; }
+  margin-top: -25px; }
   .blog .addon-title h3 {
     text-align: left; }
   .blog .blog-carousel {
@@ -305,7 +304,7 @@ a.wishlist_top.home_page,
     top: 0;
     background: #f9f9f9; }
   .service .feature-box {
-    padding: 30px 37px;
+    padding: 31px 37px;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start; }

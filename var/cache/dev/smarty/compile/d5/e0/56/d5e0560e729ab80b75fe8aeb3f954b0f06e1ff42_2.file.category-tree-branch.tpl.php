@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-09-06 04:35:12
+/* Smarty version 3.1.33, created on 2019-09-09 05:05:24
   from 'D:\xamppp\htdocs\jms_kasos\modules\jmsadvsearch\views\templates\hook\category-tree-branch.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d721a40ed7d81_44693218',
+  'unifunc' => 'content_5d7615d4260155_31824770',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d721a40ed7d81_44693218 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d7615d4260155_31824770 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <option class="category_<?php echo $_smarty_tpl->tpl_vars['node']->value['id'];
 if (isset($_smarty_tpl->tpl_vars['last']->value) && $_smarty_tpl->tpl_vars['last']->value == 'true') {?> last<?php }?>" value="<?php echo $_smarty_tpl->tpl_vars['node']->value['id'];?>

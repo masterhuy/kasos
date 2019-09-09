@@ -381,7 +381,7 @@
   font-size: 12px;
   font-weight: 500;
   bottom: -9px;
-  right: -5px; }
+  right: -8px; }
 
 .languages-info .dropdown-menu {
   min-width: 130px;
@@ -661,7 +661,7 @@
     margin-bottom: 0;
     background: #ff4800;
     color: #fff;
-    padding: 28.5px 20px;
+    padding: 29px 20px;
     letter-spacing: 0.92px; }
     .jms-row.discount p span {
       color: #fcff00; }
@@ -733,7 +733,7 @@
       font-family: "samsungsharpsans-bold";
       letter-spacing: 1.8px;
       line-height: 1.16;
-      margin-bottom: 44px; }
+      margin-bottom: 47px; }
   .countdown-banner .countdown-box .countdown-row {
     color: #fff; }
   .countdown-banner .countdown-box .countdown-section {
@@ -877,7 +877,7 @@
   position: relative; }
   .categories-carousel2 .categories-wrapper .c_item-info, .categories-carousel2-mr-0 .categories-wrapper .c_item-info {
     position: absolute;
-    top: 53px;
+    top: 54px;
     color: #fff;
     width: 100%;
     text-align: center;
@@ -923,7 +923,7 @@
       transition: .4s all; }
   .blog-carousel .post-info {
     text-align: center;
-    margin-top: 19px;
+    margin-top: 20px;
     position: relative; }
   .blog-carousel .blog-title {
     font-family: 'samsungsharpsans-medium';
@@ -941,9 +941,10 @@
   .blog-carousel .post-intro p {
     font-size: 15px;
     color: #555;
-    line-height: 1.85; }
+    line-height: 1.9;
+    letter-spacing: 0.1px; }
   .blog-carousel .blog-readmore {
-    margin-top: 9px;
+    margin-top: 11px;
     font-size: 17px;
     display: inline-block;
     position: relative;
@@ -1053,14 +1054,14 @@
 #testimonial {
   padding: 29px; }
   #testimonial .testimonial-img {
-    margin-bottom: 23px; }
+    margin-bottom: 24px; }
     #testimonial .testimonial-img img {
       margin: auto; }
   #testimonial .testimonial-comment {
     font-size: 15px;
     color: #d9d9d9;
     letter-spacing: 0.1px;
-    line-height: 1.85;
+    line-height: 1.9;
     margin-bottom: 24px; }
   #testimonial .testimonial-author {
     font-family: 'samsungsharpsans-regular';
@@ -1849,7 +1850,8 @@ a.wishlist_top.my_account {
     display: block; }
 
 #newsletter_block_left .addon-title > span {
-  line-height: 32px; }
+  line-height: 32px;
+  letter-spacing: 0.06px; }
 
 #newsletter_block_left .addon-title.advertising, #newsletter_block_left .addon-title .text-h8 {
   display: none; }
@@ -1869,6 +1871,14 @@ a.wishlist_top.my_account {
   font-style: italic;
   margin-bottom: 0;
   padding: 0 12px; }
+  #newsletter_block_left #newsletter-input::-webkit-input-placeholder {
+    color: #555; }
+  #newsletter_block_left #newsletter-input:-ms-input-placeholder {
+    color: #555; }
+  #newsletter_block_left #newsletter-input::-ms-input-placeholder {
+    color: #555; }
+  #newsletter_block_left #newsletter-input::placeholder {
+    color: #555; }
   #newsletter_block_left #newsletter-input.h8 {
     display: none; }
 
@@ -2722,7 +2732,7 @@ a.wishlist_top.my_account {
       font-family: "samsungsharpsans-bold";
       letter-spacing: 1.8px;
       line-height: 1.16;
-      margin-bottom: 44px; }
+      margin-bottom: 48px; }
   .jms-megamenu .dropdown-menu.fullwidth > .mega-dropdown-inner {
     max-width: 970px; }
   div.blog-item .post-thumb {

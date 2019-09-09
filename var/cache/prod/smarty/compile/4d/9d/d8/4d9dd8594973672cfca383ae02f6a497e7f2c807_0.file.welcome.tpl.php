@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-09-06 06:29:01
+/* Smarty version 3.1.33, created on 2019-09-09 05:00:01
   from 'D:\xamppp\htdocs\jms_kasos\modules\welcome\views\contents\welcome.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d7234edccc5f1_01015738',
+  'unifunc' => 'content_5d7614917c9067_61281376',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d7234edccc5f1_01015738 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d7614917c9067_61281376 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="onboarding-welcome">
   <i class="material-icons onboarding-button-shut-down">close</i>

@@ -15,7 +15,8 @@
 
 #searchbox #selector_cat,
 #searchbox .input-group-addon.icon-drop-down::after {
-  color: #fff; }
+  color: #fff;
+  background: #0070c9 url("../img/icon/search-drop-icon.png") no-repeat 189px; }
 
 #cart_block .shoppingcart-box {
   right: 0;
@@ -323,7 +324,8 @@
   .jms-advsearch #searchbox {
     width: 460px; }
   #searchbox #selector_cat {
-    width: 190px; }
+    width: 190px;
+    background-position: 163px; }
   .jms-advsearch .input-group-search button {
     padding: 14px 15px; } }
 
@@ -390,6 +392,8 @@
     right: -27px; }
     div#cart_block .shoppingcart-box::before {
       right: 32px; }
+  form#searchbox #selector_cat {
+    background-position: 70px; }
   .banner-1 .banner-content, .banner-2 .banner-content {
     left: 20px;
     bottom: 20px; }

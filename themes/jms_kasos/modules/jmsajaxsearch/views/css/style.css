@@ -159,6 +159,8 @@
     position: relative;
     width: 100%;
     padding: 15px 17px;
+    max-height: 420px;
+    overflow-y: auto;
 }
 #search_result .result_div .item {
     display: flex;

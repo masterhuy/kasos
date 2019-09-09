@@ -514,7 +514,7 @@
 		font-size: 12px;
 		font-weight: 500;
 		bottom: -9px;
-		right: -5px;
+		right: -8px;
 	}
 }
 //
@@ -849,7 +849,7 @@
 		margin-bottom: 0;
 		background: #ff4800;
 		color: #fff;
-		padding: 28.5px 20px;
+		padding: 29px 20px;
 		letter-spacing: 0.92px;
 		span{
 			color: #fcff00;
@@ -942,7 +942,7 @@
 				font-family: "samsungsharpsans-bold";
 				letter-spacing: 1.8px;
 				line-height: 1.16;
-				margin-bottom: 44px;
+				margin-bottom: 47px;
 			}
 		}
 		.countdown-row{
@@ -1133,7 +1133,7 @@
 		position: relative;
 		.c_item-info {
 			position: absolute;
-			top: 53px;
+			top: 54px;
 			color: #fff;
 			width: 100%;
 			text-align: center;
@@ -1192,7 +1192,7 @@
 	}
 	.post-info{
 		text-align: center;
-		margin-top: 19px;
+		margin-top: 20px;
 		position: relative;
 	}
 	.blog-title{
@@ -1218,11 +1218,12 @@
 		p{
 			font-size: 15px;
 			color: #555;
-			line-height: 1.85;
+			line-height: 1.9;
+			letter-spacing: 0.1px;
 		}
 	}
 	.blog-readmore {
-		margin-top: 9px;
+		margin-top: 11px;
 		font-size: 17px;
 		display: inline-block;
 		position: relative;
@@ -1352,7 +1353,7 @@
 #testimonial{
 	padding: 29px;
 	.testimonial-img{
-		margin-bottom: 23px;
+		margin-bottom: 24px;
 		img{
 			margin: auto;
 		}
@@ -1361,7 +1362,7 @@
 		font-size: 15px;
 		color: #d9d9d9;
 		letter-spacing: 0.1px;
-		line-height: 1.85;
+		line-height: 1.9;
 		margin-bottom: 24px;
 	}
 	.testimonial-author {
@@ -2275,6 +2276,7 @@ a.wishlist_top{
 	.addon-title{
 		> span{
 			line-height: 32px;
+			letter-spacing: 0.06px;
 		}
 		&.advertising, .text-h8{
 			display: none;
@@ -2294,6 +2296,9 @@ a.wishlist_top{
 		font-style: italic;
 		margin-bottom: 0;
 		padding: 0 12px;
+		&::placeholder{
+			color: #555;
+		}
 		&.h8{
 			display: none;
 		}
@@ -3377,7 +3382,7 @@ a.wishlist_top{
 			font-family: "samsungsharpsans-bold";
 			letter-spacing: 1.8px;
 			line-height: 1.16;
-			margin-bottom: 44px;
+			margin-bottom: 48px;
 		}
 	}
 	.jms-megamenu .dropdown-menu.fullwidth > .mega-dropdown-inner {

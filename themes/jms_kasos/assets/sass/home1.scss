@@ -12,7 +12,7 @@
 	}
 }
 .jms-row.banner-text {
-	padding: 11.5px 0;
+	padding: 10.5px 0;
 	background: #0070c9;
 	color: #fff;
 	text-align: center;
@@ -21,9 +21,9 @@
 		justify-content: center;
 	}
 	p{
-		font-size: 16px;
-		padding: 0 32px;
-		letter-spacing: 1.4px;
+		font-size: 17px;
+		padding: 0 31px;
+		letter-spacing: 0.9px;
 		font-family: "samsungsharpsans-bold";
 		margin-bottom: 0;
 		line-height: 2;
@@ -124,7 +124,7 @@
 		padding-left: 140px;
 	}
 	.text-1{
-		font-family: "samsungsharpsans-bold";
+		font-family: "samsungsharpsans-medium";
 		color: $active;
 		font-size: 24px;
 		margin-bottom: 20px;
@@ -135,8 +135,11 @@
 		color: #000;
 		letter-spacing: 1.3px;
 		line-height: 1.16;
-		margin-bottom: 34px;
+		margin-bottom: 38px;
 	}
+}
+.banner_bg .addon-box p:not(:last-child){
+	letter-spacing: 1.1px;
 }
 @media (max-width: 1440px){
 	.banner-4{

@@ -23,9 +23,12 @@
     transform: rotate(45deg) translateX(0); }
 
 #search_result {
+  width: 100%;
   position: absolute;
-  z-index: 998;
-  top: calc(100% + 1px); }
+  top: calc(100% + 1px);
+  -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  z-index: 998; }
 
 .jms-slider-wrapper .text-1 {
   letter-spacing: 0.6px; }
@@ -127,7 +130,8 @@
 .blog {
   background: #f6f6f6;
   padding-top: 100px;
-  padding-bottom: 96px; }
+  padding-bottom: 96px;
+  margin-top: 4px; }
 
 #footer {
   margin-top: 97px; }

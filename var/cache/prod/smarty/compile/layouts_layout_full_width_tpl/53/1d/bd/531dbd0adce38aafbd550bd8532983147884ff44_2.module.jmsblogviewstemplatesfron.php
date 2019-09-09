@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-08-13 05:42:28
+/* Smarty version 3.1.33, created on 2019-09-09 04:49:37
   from 'module:jmsblogviewstemplatesfron' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d528604a874e2_87310810',
+  'unifunc' => 'content_5d761221d40c02_94444088',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '531dbd0adce38aafbd550bd8532983147884ff44' => 
     array (
       0 => 'module:jmsblogviewstemplatesfron',
-      1 => 1565681162,
+      1 => 1567676882,
       2 => 'module',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:modules/jmsblog/views/templates/front/comment_facebook.tpl' => 1,
   ),
 ),false)) {
-function content_5d528604a874e2_87310810 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d761221d40c02_94444088 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 if ($_smarty_tpl->tpl_vars['sidebar']->value == 'left') {?> 
@@ -33,7 +33,7 @@ if ($_smarty_tpl->tpl_vars['sidebar']->value == 'left') {?>
 }?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15639419525d528604a298d1_54018017', "page_content");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_8765021795d761221cc3be3_43018039', "page_content");
 ?>
 
 
@@ -41,12 +41,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15639419525d528604
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'page.tpl');
 }
 /* {block "page_content"} */
-class Block_15639419525d528604a298d1_54018017 extends Smarty_Internal_Block
+class Block_8765021795d761221cc3be3_43018039 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_content' => 
   array (
-    0 => 'Block_15639419525d528604a298d1_54018017',
+    0 => 'Block_8765021795d761221cc3be3_43018039',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -71,6 +71,7 @@ echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'mo
 " />
 			</div>
 		<?php }?>
+		<?php $_smarty_tpl->_assignInScope('params', array('post_id'=>$_smarty_tpl->tpl_vars['post']->value['post_id'],'category_slug'=>$_smarty_tpl->tpl_vars['post']->value['category_alias'],'slug'=>$_smarty_tpl->tpl_vars['post']->value['alias']));?>
 		<?php $_smarty_tpl->_assignInScope('catparams', array('category_id'=>$_smarty_tpl->tpl_vars['post']->value['category_id'],'slug'=>$_smarty_tpl->tpl_vars['post']->value['category_alias']));?>	
 		<ul class="post-meta">
 			<?php if ($_smarty_tpl->tpl_vars['jmsblog_setting']->value['JMSBLOG_SHOW_CATEGORY']) {?>
@@ -101,14 +102,15 @@ echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'mo
 </span>
 				</li>
 			<?php }?>
+			
 			<?php if ($_smarty_tpl->tpl_vars['jmsblog_setting']->value['JMSBLOG_SHOW_COMMENTS']) {?>
 				<li>
 					<span><?php echo htmlspecialchars(count($_smarty_tpl->tpl_vars['comments']->value), ENT_QUOTES, 'UTF-8');
-echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>' Comment(s)','d'=>'Modules.JmsBlog'),$_smarty_tpl ) );?>
+echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>' comments','d'=>'Modules.JmsBlog'),$_smarty_tpl ) );?>
 </span>
 				</li>
 			<?php }?>
-		</ul>
+		</ul> 
 		<h1 class="title"><?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['post']->value['title'],'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
 </h1>
 		

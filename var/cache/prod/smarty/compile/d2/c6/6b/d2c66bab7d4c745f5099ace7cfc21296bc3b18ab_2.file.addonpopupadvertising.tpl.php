@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-09-06 05:59:43
+/* Smarty version 3.1.33, created on 2019-09-09 04:38:54
   from 'D:\xamppp\htdocs\jms_kasos\themes\jms_kasos\modules\jmspagebuilder\views\templates\hook\addonpopupadvertising.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d722e0f7ac382_55483932',
+  'unifunc' => 'content_5d760f9e753393_15664213',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd2c66bab7d4c745f5099ace7cfc21296bc3b18ab' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_kasos\\themes\\jms_kasos\\modules\\jmspagebuilder\\views\\templates\\hook\\addonpopupadvertising.tpl',
-      1 => 1564369722,
+      1 => 1568001658,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d722e0f7ac382_55483932 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d760f9e753393_15664213 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="jms-popup-overlay" style="display:none;">
 	<div class="jms-popup">	
 		<?php if ($_smarty_tpl->tpl_vars['popup_title']->value) {?>
@@ -40,6 +40,7 @@ function content_5d722e0f7ac382_55483932 (Smarty_Internal_Template $_smarty_tpl)
 				<input type="checkbox" name="dontshowagain" value="1" id="dontshowagain" /> 
 				<label><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>"Don't show this popup again",'d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
 </label>
+				<span class="checkmark"></span>
 			</div>		
 			<input type="hidden" name="width_default" id="width-default" value="<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['popup_width']->value,'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
 " />

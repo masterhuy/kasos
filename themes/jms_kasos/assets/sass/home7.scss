@@ -21,6 +21,7 @@
 	#selector_cat,
 	.input-group-addon.icon-drop-down::after {
 		color: #fff;
+		background: #0070c9 url("../img/icon/search-drop-icon.png") no-repeat 189px;
 	}
 }
 #cart_block .shoppingcart-box{
@@ -392,6 +393,7 @@
 	}
 	#searchbox #selector_cat{
 		width: 190px;
+		background-position: 163px;
 	}
 	.jms-advsearch .input-group-search button{
 		padding: 14px 15px;
@@ -481,6 +483,9 @@
 		&::before{
 			right: 32px;
 		}
+	}
+	form#searchbox #selector_cat{
+		background-position: 70px;
 	}
 	.banner-1, .banner-2{
 		.banner-content{

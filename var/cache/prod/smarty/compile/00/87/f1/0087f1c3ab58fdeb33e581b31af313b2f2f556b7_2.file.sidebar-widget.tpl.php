@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-09-05 05:29:42
+/* Smarty version 3.1.33, created on 2019-09-09 04:50:22
   from 'D:\xamppp\htdocs\jms_kasos\themes\jms_kasos\modules\jmsblogwidget\views\templates\hook\sidebar-widget.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d70d5866486d0_48987813',
+  'unifunc' => 'content_5d76124e991a09_08241381',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0087f1c3ab58fdeb33e581b31af313b2f2f556b7' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_kasos\\themes\\jms_kasos\\modules\\jmsblogwidget\\views\\templates\\hook\\sidebar-widget.tpl',
-      1 => 1567674857,
+      1 => 1567675979,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d70d5866486d0_48987813 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d76124e991a09_08241381 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_kasos\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
 if ($_smarty_tpl->tpl_vars['widget_setting']->value['JBW_SB_SHOW_CATEGORYMENU']) {?>
 <aside class="blog-widget widget-categories">
@@ -95,9 +95,6 @@ no-img.jpg" class="img-responsive" />
 				<div class="left">
 					<p class="post-created">
 						<?php echo htmlspecialchars(smarty_modifier_date_format(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['post']->value['created'],'html','UTF-8' )),"%b %e, %Y"), ENT_QUOTES, 'UTF-8');?>
- /
-						<?php echo htmlspecialchars(count($_smarty_tpl->tpl_vars['comments']->value), ENT_QUOTES, 'UTF-8');
-echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>' Comment(s)','d'=>'Modules.JmsBlog'),$_smarty_tpl ) );?>
 
 					</p>
 					<a href="<?php echo jmsblog::getPageLink('jmsblog-post',$_smarty_tpl->tpl_vars['params']->value);?>

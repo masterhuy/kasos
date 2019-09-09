@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-09-06 05:50:19
+/* Smarty version 3.1.33, created on 2019-09-09 06:23:09
   from 'module:pscustomersigninpscustome' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d722bdb7cd4f8_33478299',
+  'unifunc' => 'content_5d76280d94b6e9_67824979',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d722bdb7cd4f8_33478299 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d76280d94b6e9_67824979 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- begin D:\xamppp\htdocs\jms_kasos/themes/jms_kasos/modules/ps_customersignin/ps_customersignin.tpl --><div id="_desktop_user_info">
 	<div class="user-info menu-collapse btn-group compact-hidden type-1">
 		<?php if ($_smarty_tpl->tpl_vars['logged']->value) {?> 

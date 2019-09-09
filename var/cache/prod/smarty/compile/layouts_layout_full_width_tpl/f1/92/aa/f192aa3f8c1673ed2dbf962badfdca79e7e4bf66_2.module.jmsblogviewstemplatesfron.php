@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-08-13 06:23:16
+/* Smarty version 3.1.33, created on 2019-09-09 04:50:32
   from 'module:jmsblogviewstemplatesfron' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d528f94300d92_74091575',
+  'unifunc' => 'content_5d761258b83fb9_90287393',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f192aa3f8c1673ed2dbf962badfdca79e7e4bf66' => 
     array (
       0 => 'module:jmsblogviewstemplatesfron',
-      1 => 1565691513,
+      1 => 1567675838,
       2 => 'module',
     ),
   ),
@@ -20,25 +20,25 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d528f94300d92_74091575 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d761258b83fb9_90287393 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_4456589885d528f942c2581_36128856', "page_content");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_13842191825d761258b12b27_85856468', "page_content");
 ?>
 
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'page.tpl');
 }
 /* {block "page_content"} */
-class Block_4456589885d528f942c2581_36128856 extends Smarty_Internal_Block
+class Block_13842191825d761258b12b27_85856468 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_content' => 
   array (
-    0 => 'Block_4456589885d528f942c2581_36128856',
+    0 => 'Block_13842191825d761258b12b27_85856468',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -114,9 +114,17 @@ echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'mo
 							<?php }?>
 							<?php if ($_smarty_tpl->tpl_vars['jmsblog_setting']->value['JMSBLOG_SHOW_COMMENTS']) {?>
 								<li>
-									<span><?php echo htmlspecialchars(count($_smarty_tpl->tpl_vars['comments']->value), ENT_QUOTES, 'UTF-8');
-echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>' Comment(s)','d'=>'Modules.JmsBlog'),$_smarty_tpl ) );?>
-</span>
+									<span>
+										<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['post']->value['comment_count'],'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
+ 
+										<?php if ($_smarty_tpl->tpl_vars['post']->value['comment_count'] > 0) {?>
+											<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Comments','d'=>'Modules.JmsPagebuilder'),$_smarty_tpl ) );?>
+
+										<?php } else { ?>
+											<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Comment','d'=>'Modules.JmsPagebuilder'),$_smarty_tpl ) );?>
+
+										<?php }?>
+									</span>
 								</li>
 							<?php }?>
 						</ul>
