@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>E-commerce: a back-to-school special?</title>
+    <link>https://www.prestashop.com/en/blog/back-to-school-special</link>
+    <description>The back-to-school season is now the second biggest e-commerce event with an increase of more than 20% in the number of searches on Google.</description>
+     <pubDate>Mon, 09 Sep 2019 17:44:23 +0200</pubDate>
+ <dc:creator>MLNielsen</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/back-to-school-special</guid>
+  </item>
+  <item>
     <title>5 content tips to increase conversion rate</title>
     <link>https://www.prestashop.com/en/blog/content-tips-to-increase-conversion-rate</link>
     <description>Optimize your product content easily to increase your conversion rate using these easy steps</description>
@@ -76,14 +84,6 @@
      <pubDate>Wed, 31 Jul 2019 15:07:31 +0200</pubDate>
  <dc:creator>Webkul</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/advice-launching-your-blog</guid>
-  </item>
-  <item>
-    <title>What relationship does PrestaShop have with its community and its partners?</title>
-    <link>https://www.prestashop.com/en/blog/prestashop-project-prioritization</link>
-    <description>PrestaShop is an open source e-commerce solution available to all, designed to quickly set up an effective and reliable e-commerce website.</description>
-     <pubDate>Mon, 29 Jul 2019 11:56:07 +0200</pubDate>
- <dc:creator>Cécile Dubouis</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/prestashop-project-prioritization</guid>
   </item>
   </channel>
 </rss>

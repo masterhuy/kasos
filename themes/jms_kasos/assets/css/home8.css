@@ -92,6 +92,8 @@ a.wishlist_top.home_page,
   color: #555;
   padding: 8.5px 27px 9.5px;
   border-bottom: 1px solid #e1e1e1; }
+  .jms-vermegamenu .nav > li > a:hover {
+    color: #ff4800; }
 
 .jms-slider-wrapper .text-1 {
   letter-spacing: 0.8px; }
@@ -337,10 +339,6 @@ a.wishlist_top.home_page,
     border: 2px solid #f1f1f1;
     font-style: normal;
     padding: 0 16px; }
-    .newsletter #newsletter_block_left #newsletter-input.newsletter-input {
-      display: none; }
-      .newsletter #newsletter_block_left #newsletter-input.newsletter-input.h8 {
-        display: block; }
   .newsletter #newsletter_block_left .form-group {
     display: block;
     margin-top: 21px; }

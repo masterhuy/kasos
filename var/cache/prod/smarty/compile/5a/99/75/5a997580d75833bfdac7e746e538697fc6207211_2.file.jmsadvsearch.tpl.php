@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-09-09 04:37:54
+/* Smarty version 3.1.33, created on 2019-09-10 05:55:53
   from 'D:\xamppp\htdocs\jms_kasos\themes\jms_kasos\modules\jmsadvsearch\views\templates\hook\jmsadvsearch.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d760f62640164_61860928',
+  'unifunc' => 'content_5d777329055433_44827371',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d760f62640164_61860928 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d777329055433_44827371 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="jms-advsearch">
 	<form method="get" action="<?php echo $_smarty_tpl->tpl_vars['link']->value->getPageLink('search');?>
 " class="input-group" id="searchbox">

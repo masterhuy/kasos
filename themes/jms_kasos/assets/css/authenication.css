@@ -10,7 +10,7 @@
 	color: #000;
 }
 #authentication .forgot-password a{
-	color: #858585;
+	color: #555;
 	text-decoration: underline !important;
 }
 #authentication #wrapper{
@@ -97,7 +97,7 @@
 	padding-top: 19px;
 }
 #authentication .no-account ul{
-	color: #858585;
+	color: #555;
 }
 #authentication .no-account ul li{
 	padding-left: 16px;

@@ -1,29 +1,29 @@
 @import "mixin";
 @import "varians";
 
-// @media (min-width: 992px){
-// 	.jms-row.header.fixed{
-// 		top: 0;
-// 		left: 0;
-// 		right: 0;
-// 		position: fixed !important;
-// 		width: 100%;
-// 		background: #fff;
-// 	  	animation-duration: 0.8s;
-// 		animation-name: slideDown;
-// 		animation-timing-function: ease;
-// 		box-shadow: 0 0 5px rgba(0,0,0,0.2);
-// 		z-index: 998;
-// 		.jms-megamenu{
-// 			> ul > .menu-item > .dropdown-menu{
-// 				top: 100%;
-// 			}
-// 			.nav > li > a{
-// 				line-height: 66px;
-// 			}
-// 		}
-// 	}
-// }
+@media (min-width: 992px){
+	.jms-row.header.fixed{
+		top: 0;
+		left: 0;
+		right: 0;
+		position: fixed !important;
+		width: 100%;
+		background: #fff;
+	  	animation-duration: 0.8s;
+		animation-name: slideDown;
+		animation-timing-function: ease;
+		box-shadow: 0 0 5px rgba(0,0,0,0.2);
+		z-index: 998;
+		.jms-megamenu{
+			> ul > .menu-item > .dropdown-menu{
+				top: 100%;
+			}
+			.nav > li > a{
+				line-height: 66px;
+			}
+		}
+	}
+}
 
 .page-index #wrapper.container{
 	width: 100%;
@@ -1953,8 +1953,13 @@ a.wishlist_top{
 	}
 }
 
-#my-account a.wishlist_top.my_account{
-	display: block;
+#my-account{
+	#content-wrapper{
+		padding: 100px 0;
+	}
+	#main a.wishlist_top.my_account{
+		display: block !important;
+	}
 }
 #customer-form{
 	.custom-checkbox {
@@ -2298,9 +2303,6 @@ a.wishlist_top{
 		padding: 0 12px;
 		&::placeholder{
 			color: #555;
-		}
-		&.h8{
-			display: none;
 		}
 	}
 }
@@ -3884,5 +3886,15 @@ a.wishlist_top{
 		    margin-left: 0;
 		    margin-top: 10px;
 		}
+	}
+}
+@media (min-width: 576px){
+	.hidden-sm-up {
+		display: none !important;
+	}
+}
+@media (max-width: 575px){
+	.hidden-xs-down {
+		display: none !important;
 	}
 }

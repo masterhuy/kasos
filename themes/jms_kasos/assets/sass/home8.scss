@@ -94,6 +94,9 @@ a.wishlist_top.home_page,
 		color: #555;
 		padding: 8.5px 27px 9.5px;
 		border-bottom: 1px solid #e1e1e1;
+		&:hover{
+			color: $active;
+		}
 	}
 }
 .jms-slider-wrapper{
@@ -389,12 +392,6 @@ a.wishlist_top.home_page,
 			border: 2px solid #f1f1f1;
 			font-style: normal;
 			padding: 0 16px;
-			&.newsletter-input{
-				display: none;
-				&.h8{
-					display: block;
-				}
-			}
 		}
 		.form-group{
 			display: block;

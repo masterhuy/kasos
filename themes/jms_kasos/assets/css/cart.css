@@ -203,6 +203,7 @@
 	color: #fff;
 	width: 100%;
 	text-align: center;
+	padding: 0 10px;
 	display: none;
 }
 #promo-code .btn-primary {
@@ -214,14 +215,11 @@
 	border: 1px solid #e6e6e6;
 	line-height: 40px;
 }
-.alert.alert-danger.js-error i{
+.alert.alert-danger.js-error i {
 	position: relative;
-	top: 3px;
-	left: -3px;
+	top: 6px;
 }
 .alert.alert-danger.js-error span {
-	position: relative;
-	top: -5px;
 	font-size: 14px;
 }
 .block-promo {

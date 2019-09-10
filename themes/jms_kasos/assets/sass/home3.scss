@@ -1,7 +1,9 @@
 @import "mixin";
 @import "varians";
 
-
+.breadcrumb-box.container-fluid {
+	max-width: 1440px;
+}
 #header{
 	position: relative;
 	z-index: 999;

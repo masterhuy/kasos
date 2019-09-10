@@ -40,7 +40,6 @@
 				<form action="{$urls.pages.index}#footer" method="post">
 					<div class="form-group{if isset($msg) && $msg} {if $nw_error}form-error{else}form-ok{/if}{/if}" >
 						<input class="inputNew form-control grey newsletter-input" id="newsletter-input" type="text" name="email" size="18" value="{$value}" placeholder="{l s='Your email address' d='Shop.Forms.Labels'}" />
-						<input class="inputNew form-control grey newsletter-input h8" id="newsletter-input" type="text" name="email" size="18" value="{$value}" placeholder="{l s='Email@example.com' d='Shop.Forms.Labels'}" />
 						<button type="submit" name="submitNewsletter" class="btn-default">
 							{l s='Subscribe' d='Shop.Theme.Global'}
 						</button>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-09-09 04:37:56
+/* Smarty version 3.1.33, created on 2019-09-10 06:00:05
   from 'D:\xamppp\htdocs\jms_kasos\themes\jms_kasos\modules\jmspagebuilder\views\templates\hook\addoninstagram.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d760f640b2931_24008387',
+  'unifunc' => 'content_5d777425925ca2_44103176',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8694468ae4c76f14cee2be1f4b7b0d5174be6a65' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_kasos\\themes\\jms_kasos\\modules\\jmspagebuilder\\views\\templates\\hook\\addoninstagram.tpl',
-      1 => 1564557652,
+      1 => 1568109586,
       2 => 'file',
     ),
   ),
@@ -20,11 +20,13 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d760f640b2931_24008387 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d777425925ca2_44103176 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="addon-instagram">
 	<div class="addon-title">
 		<h3>
-			Follow <br>@Kasos Store
+			<a href="www.instagram.com/jmskasos/">
+				Follow <br>@Kasos Store
+			</a>
 		</h3>
 	</div>
 	<div class="instagram-carousel">

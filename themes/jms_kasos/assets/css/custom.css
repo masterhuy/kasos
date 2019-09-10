@@ -504,12 +504,12 @@ h6 {
   font-family: 'samsungsharpsans-bold';
 }
 .bottom-indent {
-  color: #858585;
   line-height: 1.3;
 }
 .page-subheading {
-  font-size: 13px;
+  font-size: 16px;
   line-height: 24px;
+  color: #000;
 }
 
 label {
@@ -1951,12 +1951,17 @@ ul.cart_block_list li {
   font-size: 16px;
   position: relative;
 }
-
+.product-miniature .text-addcart{
+  max-width: 88px;
+}
+.product-miniature .text-outofstock{
+  max-width: 95px;
+}
 .text-addcart, .text-outofstock {
-  display: inline-flex;
-  align-items: center;
-  position: relative;
-  left: 0;
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .product-btn .fa-spin, 
 .product-btn .fa-check, 
@@ -2068,6 +2073,7 @@ ul.cart_block_list li {
   position: relative;
   margin: 0 20px;
   letter-spacing: 0.3px;
+  display: inline-flex;
 }
 .product-preview button.cart-button:hover{
   color: #fff;

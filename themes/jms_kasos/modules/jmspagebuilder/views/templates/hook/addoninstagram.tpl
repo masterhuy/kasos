@@ -26,7 +26,9 @@
 <div class="addon-instagram">
 	<div class="addon-title">
 		<h3>
-			Follow <br>@Kasos Store
+			<a href="www.instagram.com/jmskasos/">
+				Follow <br>@Kasos Store
+			</a>
 		</h3>
 	</div>
 	<div class="instagram-carousel">
