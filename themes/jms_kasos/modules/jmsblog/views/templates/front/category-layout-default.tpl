@@ -62,7 +62,7 @@
 								</li>
 							{/if}
 							<li class="created">
-								{l s='Posted' d='Modules.JmsBlog'}:
+								<span class="posted">{l s='Posted' d='Modules.JmsBlog'}:</span>
 								<span>{$post.created|escape:'html':'UTF-8'|date_format:"%b %d, %Y"}</span>
 							</li>
 							{if $jmsblog_setting.JMSBLOG_SHOW_VIEWS}
@@ -84,7 +84,7 @@
 							{/if}
 						</ul>
 						<div class="post-intro">
-							{$post.introtext|truncate:300:'...' nofilter}
+							{$post.introtext|truncate:150:'...' nofilter}
 						</div>
 						<a class="blog-readmore" href="{jmsblog::getPageLink('jmsblog-post', $params)}">
 							{l s='Read more' d='Modules.JmsBlog'}

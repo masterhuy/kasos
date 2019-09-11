@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-09-05 05:49:11
+/* Smarty version 3.1.33, created on 2019-09-10 23:37:54
   from 'module:jmsblogviewstemplatesfron' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d70da1742a2b0_96303934',
+  'unifunc' => 'content_5d786c125dece6_53256864',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d70da1742a2b0_96303934 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d786c125dece6_53256864 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- begin D:\xamppp\htdocs\jms_kasos/themes/jms_kasos/modules/jmsblog/views/templates/front/post.tpl --><?php if ($_smarty_tpl->tpl_vars['sidebar']->value == 'left') {?> 
 	<?php $_smarty_tpl->_assignInScope('layout', "layouts/layout-left-column.tpl");
 } elseif ($_smarty_tpl->tpl_vars['sidebar']->value == 'right') {?>

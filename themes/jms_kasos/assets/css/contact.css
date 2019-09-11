@@ -113,6 +113,10 @@
 #contact .form-fields textarea{
 	padding-bottom: 21px;
 }
+#contact .form-fields textarea::placeholder,
+#contact .form-fields input::placeholder{
+	color: #666;
+}
 #contact .form-fields .bootstrap-filestyle input{
 	background: transparent;
 	cursor: default;

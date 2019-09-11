@@ -46,7 +46,7 @@
 }
 #authentication .show-pass:hover,
 #authentication .forgot-password a:hover{
-	color: #141414;
+	color: #ff4800;
 }
 #authentication .forgot-password > a {
 	margin-bottom: 10px;

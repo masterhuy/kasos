@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-09-09 04:49:15
+/* Smarty version 3.1.33, created on 2019-09-11 05:40:19
   from 'module:jmsblogviewstemplatesfron' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d76120b4100b4_39270531',
+  'unifunc' => 'content_5d78c1035e4475_01025734',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '17571abcf58db93ea60324cedd4bfb237192f42b' => 
     array (
       0 => 'module:jmsblogviewstemplatesfron',
-      1 => 1567759715,
+      1 => 1568193578,
       2 => 'module',
     ),
   ),
@@ -20,28 +20,28 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d76120b4100b4_39270531 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d78c1035e4475_01025734 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_20619536525d76120b3d18a8_71541791', 'head_seo_title');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15495691235d78c10359a0e5_16695476', 'head_seo_title');
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12572608265d76120b3d18a0_56594352', "page_content");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_19596536585d78c10359df62_07258852', "page_content");
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'page.tpl');
 }
 /* {block 'head_seo_title'} */
-class Block_20619536525d76120b3d18a8_71541791 extends Smarty_Internal_Block
+class Block_15495691235d78c10359a0e5_16695476 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'head_seo_title' => 
   array (
-    0 => 'Block_20619536525d76120b3d18a8_71541791',
+    0 => 'Block_15495691235d78c10359a0e5_16695476',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -50,12 +50,12 @@ echo htmlspecialchars($_smarty_tpl->tpl_vars['current_category']->value['title']
 }
 /* {/block 'head_seo_title'} */
 /* {block "page_content"} */
-class Block_12572608265d76120b3d18a0_56594352 extends Smarty_Internal_Block
+class Block_19596536585d78c10359df62_07258852 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_content' => 
   array (
-    0 => 'Block_12572608265d76120b3d18a0_56594352',
+    0 => 'Block_19596536585d78c10359df62_07258852',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -115,8 +115,8 @@ echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'mo
 								</li>
 							<?php }?>
 							<li class="created">
-								<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Posted','d'=>'Modules.JmsBlog'),$_smarty_tpl ) );?>
-:
+								<span class="posted"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Posted','d'=>'Modules.JmsBlog'),$_smarty_tpl ) );?>
+:</span>
 								<span><?php echo htmlspecialchars(smarty_modifier_date_format(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['post']->value['created'],'html','UTF-8' )),"%b %d, %Y"), ENT_QUOTES, 'UTF-8');?>
 </span>
 							</li>
@@ -144,7 +144,7 @@ echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'mo
 							<?php }?>
 						</ul>
 						<div class="post-intro">
-							<?php echo call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'truncate' ][ 0 ], array( $_smarty_tpl->tpl_vars['post']->value['introtext'],300,'...' ));?>
+							<?php echo call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'truncate' ][ 0 ], array( $_smarty_tpl->tpl_vars['post']->value['introtext'],150,'...' ));?>
 
 						</div>
 						<a class="blog-readmore" href="<?php echo htmlspecialchars(jmsblog::getPageLink('jmsblog-post',$_smarty_tpl->tpl_vars['params']->value), ENT_QUOTES, 'UTF-8');?>

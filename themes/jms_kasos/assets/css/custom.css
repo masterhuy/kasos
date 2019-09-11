@@ -2134,19 +2134,21 @@ ul.cart_block_list li {
   z-index: 2; }
 
 .product-preview .color_to_pick_list {
-
+  position: relative;
+  bottom: 2px;
 }
 
 .product-preview .color_to_pick_list > .variant-links {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .product-preview .color_to_pick_list a {
-  height: 18px;
-  width: 18px;
+  height: 13px;
+  width: 13px;
   display: block;
-  margin-right: 10px;
+  margin: 0 5px;
   border-radius: 50%;
   background-size: cover;
 }
@@ -5513,6 +5515,9 @@ footer .blog-carousel {
 }
 .js-qv-product-cover{
   background: #f1f1f1;
+}
+#new-products .category-title{
+  position: relative;
 }
 
 

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-09-05 05:49:11
+/* Smarty version 3.1.33, created on 2019-09-10 23:37:54
   from 'module:jmsblogviewstemplatesfron' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d70da1749f5d7_16731315',
+  'unifunc' => 'content_5d786c12663a08_46512677',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '531dbd0adce38aafbd550bd8532983147884ff44' => 
     array (
       0 => 'module:jmsblogviewstemplatesfron',
-      1 => 1567676882,
+      1 => 1568172922,
       2 => 'module',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:modules/jmsblog/views/templates/front/comment_facebook.tpl' => 1,
   ),
 ),false)) {
-function content_5d70da1749f5d7_16731315 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d786c12663a08_46512677 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
@@ -34,7 +34,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 }?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12373528235d70da1743db42_84987361', "page_content");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2878171235d786c125f63e3_89624098', "page_content");
 ?>
 
 
@@ -42,12 +42,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12373528235d70da17
 <!-- end D:\xamppp\htdocs\jms_kasos/themes/jms_kasos/modules/jmsblog/views/templates/front/post-layout-default.tpl --><?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'page.tpl');
 }
 /* {block "page_content"} */
-class Block_12373528235d70da1743db42_84987361 extends Smarty_Internal_Block
+class Block_2878171235d786c125f63e3_89624098 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_content' => 
   array (
-    0 => 'Block_12373528235d70da1743db42_84987361',
+    0 => 'Block_2878171235d786c125f63e3_89624098',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -263,19 +263,6 @@ echo htmlspecialchars($_smarty_tpl->tpl_vars['customer']->value['lastname'], ENT
 							</p>
 						</div>
 					</form>
-					<?php echo '<script'; ?>
->
-					$("#commentForm").validate({
-					  	rules: {		
-							customer_name: "required",		
-							email: {
-						  		required: true,
-						  		email: true
-							}
-					  	}
-					});
-					<?php echo '</script'; ?>
->
 				</div>
 				<?php }?>
 				<?php if (!$_smarty_tpl->tpl_vars['jmsblog_setting']->value['JMSBLOG_ALLOW_GUEST_COMMENT'] && !$_smarty_tpl->tpl_vars['logged']->value) {?>

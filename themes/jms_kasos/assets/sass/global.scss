@@ -232,6 +232,9 @@
 	}
 }
 .jms-megamenu .sub-home{
+	.menu-item.active a{
+		color: $active !important;
+	}
 	> .dropdown-menu{
 		padding: 35px 0 45px;
 		.mega-col-nav > .mega-inner{
@@ -2797,6 +2800,7 @@ a.wishlist_top{
 		padding-left: 13px;
 		border: 1px solid #ebebeb;
 		padding: 0 15px;
+		background: #f9f9f9;
 		&:hover, &:focus{
 			border-color: $active;
 		}
@@ -2807,7 +2811,7 @@ a.wishlist_top{
 	textarea{
 		height: auto;
 		padding-top: 10px;
-		padding-bottom: 18px;
+		padding-bottom: 34px;
 	}
 	label{
 		color: #222;
@@ -3593,6 +3597,12 @@ a.wishlist_top{
 	.jms-row .container{
 		padding: 0 15px !important;
 	}
+	#wrapper.container{
+		padding: 0 15px;
+	}
+	.page-index #wrapper.container{
+		padding: 0;
+	}
 	.categories-carousel2 .categories-wrapper .c_item-info .cat-name, 
 	.categories-carousel2-mr-0 .categories-wrapper .c_item-info .cat-name {
 		font-size: 16px;
@@ -3714,6 +3724,9 @@ a.wishlist_top{
 	}
 }
 @media (max-width: 481px){
+	div.cart-grid-right .right-box .card.cart-summary {
+		padding: 15px;
+	}
 	.service .image{
 		margin-right: 0;
 	}

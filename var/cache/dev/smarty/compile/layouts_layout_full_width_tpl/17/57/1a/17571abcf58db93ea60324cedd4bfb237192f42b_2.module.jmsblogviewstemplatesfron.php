@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-09-05 05:48:58
+/* Smarty version 3.1.33, created on 2019-09-10 23:24:00
   from 'module:jmsblogviewstemplatesfron' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d70da0a65fe92_41819870',
+  'unifunc' => 'content_5d7868d09bc4e7_25131699',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '17571abcf58db93ea60324cedd4bfb237192f42b' => 
     array (
       0 => 'module:jmsblogviewstemplatesfron',
-      1 => 1567675772,
+      1 => 1568169387,
       2 => 'module',
     ),
   ),
@@ -20,28 +20,28 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d70da0a65fe92_41819870 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d7868d09bc4e7_25131699 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 <!-- begin D:\xamppp\htdocs\jms_kasos/themes/jms_kasos/modules/jmsblog/views/templates/front/category-layout-default.tpl -->
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15044367705d70da0a638d94_47605532', 'head_seo_title');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_19192675305d7868d0972154_17528546', 'head_seo_title');
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1974026905d70da0a638d91_19812286', "page_content");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_11414349005d7868d0975fd1_30058793', "page_content");
 ?>
 
 <!-- end D:\xamppp\htdocs\jms_kasos/themes/jms_kasos/modules/jmsblog/views/templates/front/category-layout-default.tpl --><?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'page.tpl');
 }
 /* {block 'head_seo_title'} */
-class Block_15044367705d70da0a638d94_47605532 extends Smarty_Internal_Block
+class Block_19192675305d7868d0972154_17528546 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'head_seo_title' => 
   array (
-    0 => 'Block_15044367705d70da0a638d94_47605532',
+    0 => 'Block_19192675305d7868d0972154_17528546',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -50,12 +50,12 @@ echo htmlspecialchars($_smarty_tpl->tpl_vars['current_category']->value['title']
 }
 /* {/block 'head_seo_title'} */
 /* {block "page_content"} */
-class Block_1974026905d70da0a638d91_19812286 extends Smarty_Internal_Block
+class Block_11414349005d7868d0975fd1_30058793 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_content' => 
   array (
-    0 => 'Block_1974026905d70da0a638d91_19812286',
+    0 => 'Block_11414349005d7868d0975fd1_30058793',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -144,7 +144,7 @@ echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'mo
 							<?php }?>
 						</ul>
 						<div class="post-intro">
-							<?php echo call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'truncate' ][ 0 ], array( $_smarty_tpl->tpl_vars['post']->value['introtext'],300,'...' ));?>
+							<?php echo call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'truncate' ][ 0 ], array( $_smarty_tpl->tpl_vars['post']->value['introtext'],150,'...' ));?>
 
 						</div>
 						<a class="blog-readmore" href="<?php echo htmlspecialchars(jmsblog::getPageLink('jmsblog-post',$_smarty_tpl->tpl_vars['params']->value), ENT_QUOTES, 'UTF-8');?>

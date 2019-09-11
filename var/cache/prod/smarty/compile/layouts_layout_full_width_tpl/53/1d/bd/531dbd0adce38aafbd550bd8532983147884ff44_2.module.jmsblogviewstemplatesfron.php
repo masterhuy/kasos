@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-09-09 04:49:37
+/* Smarty version 3.1.33, created on 2019-09-11 05:29:05
   from 'module:jmsblogviewstemplatesfron' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d761221d40c02_94444088',
+  'unifunc' => 'content_5d78be61aa10a5_07644828',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '531dbd0adce38aafbd550bd8532983147884ff44' => 
     array (
       0 => 'module:jmsblogviewstemplatesfron',
-      1 => 1567676882,
+      1 => 1568172922,
       2 => 'module',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:modules/jmsblog/views/templates/front/comment_facebook.tpl' => 1,
   ),
 ),false)) {
-function content_5d761221d40c02_94444088 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d78be61aa10a5_07644828 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 if ($_smarty_tpl->tpl_vars['sidebar']->value == 'left') {?> 
@@ -33,7 +33,7 @@ if ($_smarty_tpl->tpl_vars['sidebar']->value == 'left') {?>
 }?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_8765021795d761221cc3be3_43018039', "page_content");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_13202930735d78be61a3f602_61638857', "page_content");
 ?>
 
 
@@ -41,12 +41,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_8765021795d761221c
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'page.tpl');
 }
 /* {block "page_content"} */
-class Block_8765021795d761221cc3be3_43018039 extends Smarty_Internal_Block
+class Block_13202930735d78be61a3f602_61638857 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_content' => 
   array (
-    0 => 'Block_8765021795d761221cc3be3_43018039',
+    0 => 'Block_13202930735d78be61a3f602_61638857',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -262,19 +262,6 @@ echo htmlspecialchars($_smarty_tpl->tpl_vars['customer']->value['lastname'], ENT
 							</p>
 						</div>
 					</form>
-					<?php echo '<script'; ?>
->
-					$("#commentForm").validate({
-					  	rules: {		
-							customer_name: "required",		
-							email: {
-						  		required: true,
-						  		email: true
-							}
-					  	}
-					});
-					<?php echo '</script'; ?>
->
 				</div>
 				<?php }?>
 				<?php if (!$_smarty_tpl->tpl_vars['jmsblog_setting']->value['JMSBLOG_ALLOW_GUEST_COMMENT'] && !$_smarty_tpl->tpl_vars['logged']->value) {?>

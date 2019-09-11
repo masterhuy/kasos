@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-09-09 23:13:20
+/* Smarty version 3.1.33, created on 2019-09-11 00:15:06
   from 'module:pslanguageselectorpslangu' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d7714d09adae2_69043916',
+  'unifunc' => 'content_5d7874ca6bced3_91118543',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d7714d09adae2_69043916 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d7874ca6bced3_91118543 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- begin D:\xamppp\htdocs\jms_kasos/themes/jms_kasos/modules/ps_languageselector/ps_languageselector.tpl --><!-- Block languages module -->
 <?php if (count($_smarty_tpl->tpl_vars['languages']->value) > 1) {?>
 	<div class="btn-group compact-hidden languages-info type-1">

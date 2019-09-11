@@ -105,20 +105,23 @@ $(document).ready(function () {
 jQuery(function ($) {
     "use strict";
     if($(".customs-carousel-product").length) {
-		  var customsCarouselProduct = $(".customs-carousel-product");
+		var customsCarouselProduct = $(".customs-carousel-product");
 		var rtl = false;
 		if ($("body").hasClass("rtl")) rtl = true;
 		customsCarouselProduct.owlCarousel({
 			responsiveClass:true,
-			responsive:{            
-				1199:{
+			responsive:{
+				1440:{
                   	items:5
 				},
+				1199:{
+                  	items:4
+				},
 				991:{
-					items:4
+					items:3
 				},
 				768:{
-					items:3
+					items:2
 				},
 				481:{
 					items:2
@@ -1180,7 +1183,30 @@ $(document).ready(function() {
 
     $(".home_6 #jms-vermegamenu-container").addClass('collapse');
 
-    
+    if ($("body").hasClass("home_1")){
+		$(".sub-home .menu-item.h1").addClass('active');
+    }
+    else if($("body").hasClass("home_2")){
+    	$(".sub-home .menu-item.h2").addClass('active');
+    }
+    else if($("body").hasClass("home_3")){
+    	$(".sub-home .menu-item.h3").addClass('active');
+    }
+    else if($("body").hasClass("home_4")){
+    	$(".sub-home .menu-item.h4").addClass('active');
+    }
+    else if($("body").hasClass("home_5")){
+    	$(".sub-home .menu-item.h5").addClass('active');
+    }
+    else if($("body").hasClass("home_6")){
+    	$(".sub-home .menu-item.h6").addClass('active');
+    }
+    else if($("body").hasClass("home_7")){
+    	$(".sub-home .menu-item.h7").addClass('active');
+    }
+    else if($("body").hasClass("home_8")){
+    	$(".sub-home .menu-item.h8").addClass('active');
+    }
 
 	if(initialLoad){
 		setTimeout(function() {

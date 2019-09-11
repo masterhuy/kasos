@@ -313,6 +313,11 @@ body#checkout section.checkout-step.-current .content .form-control-select {
 		margin-top: 0;
 	}
 }
+@media (max-width: 991px){
+	#checkout .right-box{
+		margin-top: 30px;
+	}
+}
 @media (max-width: 481px){
 	body#checkout section.checkout-step .step-title {
 		font-size: 14px;

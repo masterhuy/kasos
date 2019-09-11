@@ -179,6 +179,9 @@
 .owl-theme .owl-controls div.owl-next::before {
   content: url("../img/icon/next.png"); }
 
+.jms-megamenu .sub-home .menu-item.active a {
+  color: #ff4800 !important; }
+
 .jms-megamenu .sub-home > .dropdown-menu {
   padding: 35px 0 45px; }
   .jms-megamenu .sub-home > .dropdown-menu .mega-col-nav > .mega-inner {
@@ -2309,7 +2312,8 @@ a.wishlist_top.my_account {
     height: 38px;
     padding-left: 13px;
     border: 1px solid #ebebeb;
-    padding: 0 15px; }
+    padding: 0 15px;
+    background: #f9f9f9; }
     #commentForm input:hover, #commentForm input:focus, #commentForm textarea:hover, #commentForm textarea:focus {
       border-color: #ff4800; }
     #commentForm input::-webkit-input-placeholder, #commentForm textarea::-webkit-input-placeholder {
@@ -2323,7 +2327,7 @@ a.wishlist_top.my_account {
   #commentForm textarea {
     height: auto;
     padding-top: 10px;
-    padding-bottom: 18px; }
+    padding-bottom: 34px; }
   #commentForm label {
     color: #222;
     margin-bottom: 9px; }
@@ -2898,6 +2902,10 @@ a.wishlist_top.my_account {
     display: none; }
   .jms-row .container {
     padding: 0 15px !important; }
+  #wrapper.container {
+    padding: 0 15px; }
+  .page-index #wrapper.container {
+    padding: 0; }
   .categories-carousel2 .categories-wrapper .c_item-info .cat-name,
   .categories-carousel2-mr-0 .categories-wrapper .c_item-info .cat-name {
     font-size: 16px; }
@@ -2975,6 +2983,8 @@ a.wishlist_top.my_account {
     padding: 11.5px 15px; } }
 
 @media (max-width: 481px) {
+  div.cart-grid-right .right-box .card.cart-summary {
+    padding: 15px; }
   .service .image {
     margin-right: 0; }
   div.quickview .images-container .js-qv-mask {

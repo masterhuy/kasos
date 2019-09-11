@@ -188,17 +188,6 @@
 							</p>
 						</div>
 					</form>
-					<script>
-					$("#commentForm").validate({
-					  	rules: {		
-							customer_name: "required",		
-							email: {
-						  		required: true,
-						  		email: true
-							}
-					  	}
-					});
-					</script>
 				</div>
 				{/if}
 				{if !$jmsblog_setting.JMSBLOG_ALLOW_GUEST_COMMENT && !$logged}

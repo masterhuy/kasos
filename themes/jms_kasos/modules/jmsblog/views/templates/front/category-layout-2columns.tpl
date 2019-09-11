@@ -85,7 +85,7 @@
 								{/if}
 							</ul>
 							<div class="post-intro">
-								{$post.introtext|truncate:300:'...' nofilter}
+								{$post.introtext|truncate:200:'...' nofilter}
 							</div>
 							<a class="btn-underline" href="{jmsblog::getPageLink('jmsblog-post', $params)}">
 								{l s='Continue' d='Modules.JmsBlog'}

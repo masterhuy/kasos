@@ -56,7 +56,7 @@
 	{block name='breadcrumb'}
 			   {include file='_partials/breadcrumb.tpl'}
 	{/block}
-    <section id="wrapper">
+    <section id="wrapper" class="container">
       <div class="container">
       
       {block name='content'}
