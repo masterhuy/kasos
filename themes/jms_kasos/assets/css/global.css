@@ -1600,9 +1600,6 @@ a.wishlist_top.home_page {
 a.wishlist_top.my_account {
   display: none !important; }
 
-#my-account #content-wrapper {
-  padding: 100px 0; }
-
 #my-account #main a.wishlist_top.my_account {
   display: block !important; }
 
@@ -1788,7 +1785,7 @@ a.wishlist_top.my_account {
   display: block; }
 
 #off-canvas-menu #search_widget input {
-  background: url("../img/icon/search-bg.png") no-repeat right; }
+  background: url("../img/icon/search-bg.png") no-repeat right 3px; }
 
 #off-canvas-menu ul li .mod-content {
   padding: 0 20px; }
@@ -2668,6 +2665,11 @@ a.wishlist_top.my_account {
   .footer-top .quicklink {
     padding-left: 55px; } }
 
+@media (min-width: 1200px) {
+  #my-account #content-wrapper {
+    padding-top: 100px;
+    padding-bottom: 100px; } }
+
 @media (min-width: 768px) {
   .banner-macbook-pro .row {
     margin: 0; }
@@ -2683,6 +2685,8 @@ a.wishlist_top.my_account {
     max-width: 1170px; } }
 
 @media (max-width: 1366px) {
+  div.shoppingcart-content {
+    max-height: 275px; }
   .fancybox-margin {
     margin-right: 0 !important; }
   div#product-modal .modal-dialog {
@@ -2983,6 +2987,8 @@ a.wishlist_top.my_account {
     padding: 11.5px 15px; } }
 
 @media (max-width: 481px) {
+  .quickview .right {
+    margin-top: 25px; }
   div.cart-grid-right .right-box .card.cart-summary {
     padding: 15px; }
   .service .image {

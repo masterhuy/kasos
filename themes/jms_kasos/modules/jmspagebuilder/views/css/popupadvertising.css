@@ -110,14 +110,15 @@ line-height: 1.64;
 }
 .jms-popup-overlay .popup-close {
   cursor: pointer;
-  display: block;
-  float: right;
-  height: 24px;
+  display: flex;
   position: absolute;
-  right: 12px;
-  top: 16px;
-  width: 24px;
-  border-radius: 50%;
+  right: 10px;
+  top: 10px;
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
 }
 .jms-popup-overlay {
 	display: block;	

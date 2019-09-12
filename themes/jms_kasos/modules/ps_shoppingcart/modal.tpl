@@ -3,29 +3,31 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          
+          <i class="la la-times"></i>
         </button>
-        <h4 class="modal-title text-xs-center" id="myModalLabel">
+        <h4 class="modal-title text-xs-center" id="myModalLabel"><i class="material-icons rtl-no-flip">&#xE876;</i>
 			{l s='Product successfully added to your shopping cart' d='Shop.Theme.Checkout'}
 		</h4>
       </div>
       <div class="modal-body">
         <div class="row">
           <div class="col-md-5 divide-right col-xs-6">
-            
-                <img class="product-image" src="{$product.cover.large.url}" alt="{$product.cover.legend}" title="{$product.cover.legend}" itemprop="image">        
-                <h6 class="h6 product-name">{$product.name}</h6>
-                <div class="content_price">
-				          <span class="price new">{$product.price}</span>
+              <div class="row">
+                <div class="col-md-6">
+                  <img class="product-image" src="{$product.cover.large.url}" alt="{$product.cover.legend}" title="{$product.cover.legend}" itemprop="image">        
                 </div>
-                {hook h='displayProductPriceBlock' product=$product type="unit_price"}
-                <span>
-                  {l s='Quantity:' d='Shop.Theme.Checkout'}{$product.cart_quantity}
-                </span>
-                {foreach from=$product.attributes item="property_value" key="property"}
-                  <span>{$property}: {$property_value}</span>
-                {/foreach}
-                
+                <div class="col-md-6">
+                  <h6 class="h6 product-name">{$product.name}</h6>
+                  <div class="content_price">
+                    <span class="price new">{$product.price}</span>
+                  </div>
+                  {hook h='displayProductPriceBlock' product=$product type="unit_price"}
+                  {foreach from=$product.attributes item="property_value" key="property"}
+                  <span>{l s='%label%:' sprintf=['%label%' => $property] d='Shop.Theme.Global'}<strong> {$property_value}</strong></span><br>
+                  {/foreach}
+                  <span>{l s='Quantity:' d='Shop.Theme.Checkout'}&nbsp;<strong>{$product.cart_quantity}</strong></span>
+                </div>
+              </div>
              
             
           </div>

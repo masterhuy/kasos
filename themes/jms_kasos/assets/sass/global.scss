@@ -1957,9 +1957,6 @@ a.wishlist_top{
 }
 
 #my-account{
-	#content-wrapper{
-		padding: 100px 0;
-	}
 	#main a.wishlist_top.my_account{
 		display: block !important;
 	}
@@ -2165,7 +2162,7 @@ a.wishlist_top{
 }
 #off-canvas-menu{
 	#search_widget input{
-		background: url("../img/icon/search-bg.png") no-repeat right;
+		background: url("../img/icon/search-bg.png") no-repeat right 3px;
 	}
 	ul li .mod-content{
 		padding: 0 20px;
@@ -3251,7 +3248,12 @@ a.wishlist_top{
 	}
 }
 @media (min-width: 1200px){
-
+	#my-account{
+		#content-wrapper{
+			padding-top: 100px;
+			padding-bottom: 100px;
+		}
+	}
 }
 @media (min-width: 992px){
 
@@ -3279,6 +3281,9 @@ a.wishlist_top{
 }
 
 @media (max-width: 1366px){
+	div.shoppingcart-content {
+		max-height: 275px;
+	}
 	.fancybox-margin {
 	    margin-right: 0 !important;
 	}
@@ -3724,6 +3729,9 @@ a.wishlist_top{
 	}
 }
 @media (max-width: 481px){
+	.quickview .right{
+		margin-top: 25px;
+	}
 	div.cart-grid-right .right-box .card.cart-summary {
 		padding: 15px;
 	}

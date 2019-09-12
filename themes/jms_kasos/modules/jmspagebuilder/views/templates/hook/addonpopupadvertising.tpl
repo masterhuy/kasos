@@ -30,6 +30,9 @@
 			{$popup_title|escape:'htmlall':'UTF-8'}
 		</h2>
 		{/if}
+		<a class="popup-close">
+			<i class="fa fa-times"></i>
+		</a>
 		<div class="jms-popup-content">
 
 			<img src="themes/jms_kasos/assets/img/logo-advertising.png"/>

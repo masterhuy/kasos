@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-09-11 05:09:53
+/* Smarty version 3.1.33, created on 2019-09-12 06:29:33
   from 'D:\xamppp\htdocs\jms_kasos\themes\jms_kasos\modules\jmspagebuilder\views\templates\hook\addonpopupadvertising.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d78b9e18a9880_02118524',
+  'unifunc' => 'content_5d7a1e0df06772_64802497',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd2c66bab7d4c745f5099ace7cfc21296bc3b18ab' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_kasos\\themes\\jms_kasos\\modules\\jmspagebuilder\\views\\templates\\hook\\addonpopupadvertising.tpl',
-      1 => 1568001658,
+      1 => 1568275989,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d78b9e18a9880_02118524 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d7a1e0df06772_64802497 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="jms-popup-overlay" style="display:none;">
 	<div class="jms-popup">	
 		<?php if ($_smarty_tpl->tpl_vars['popup_title']->value) {?>
@@ -29,6 +29,9 @@ function content_5d78b9e18a9880_02118524 (Smarty_Internal_Template $_smarty_tpl)
 
 		</h2>
 		<?php }?>
+		<a class="popup-close">
+			<i class="fa fa-times"></i>
+		</a>
 		<div class="jms-popup-content">
 
 			<img src="themes/jms_kasos/assets/img/logo-advertising.png"/>

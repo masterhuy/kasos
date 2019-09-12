@@ -498,6 +498,9 @@
     border: 2px solid #ebebeb;
     padding: 2.5px 19px 2.5px 16px;
 }
+.product-quantity .add{
+    display: flex;
+}
 .product-price.h5.has-discount {
     display: none;
 }

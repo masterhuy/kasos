@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-08-09 04:39:08
+/* Smarty version 3.1.33, created on 2019-09-12 06:02:48
   from 'D:\xamppp\htdocs\jms_kasos\themes\jms_kasos\templates\checkout\_partials\cart-detailed.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d4d312ca54b90_40525542',
+  'unifunc' => 'content_5d7a17c8552ba0_33984577',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '357247a674436eff68112301960d906ae64a7bae' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_kasos\\themes\\jms_kasos\\templates\\checkout\\_partials\\cart-detailed.tpl',
-      1 => 1563937369,
+      1 => 1565836770,
       2 => 'file',
     ),
   ),
@@ -21,20 +21,19 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:checkout/_partials/cart-detailed-product-line.tpl' => 1,
   ),
 ),false)) {
-function content_5d4d312ca54b90_40525542 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d7a17c8552ba0_33984577 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="cart-overview js-cart" data-refresh-url="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['url'][0], array( array('entity'=>'cart','params'=>array('ajax'=>true,'action'=>'refresh')),$_smarty_tpl ) );?>
 ">
     <div class="label-title hidden-xs">
-        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Products','d'=>'Shop.Theme.Checkout'),$_smarty_tpl ) );?>
+        <div class="col-lg-1 col-md-1 col-sm-1"></div>
+        <div class="col-lg-5 col-md-5 col-sm-5"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Products','d'=>'Shop.Theme.Checkout'),$_smarty_tpl ) );?>
 </div>
-        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
-            <div class="pd-0 col-lg-4 col-md-4 col-sm-4 col-xs-12"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Price','d'=>'Shop.Theme.Checkout'),$_smarty_tpl ) );?>
+        <div class="col-lg-2 col-md-2 col-sm-2"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Quantity','d'=>'Shop.Theme.Checkout'),$_smarty_tpl ) );?>
 </div>
-            <div class="pd-0 col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Quantity','d'=>'Shop.Theme.Checkout'),$_smarty_tpl ) );?>
+        <div class="col-lg-2 col-md-2 col-sm-2"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Price','d'=>'Shop.Theme.Checkout'),$_smarty_tpl ) );?>
 </div>
-            <div class="pd-0 col-lg-4 col-md-4 col-sm-4 col-xs-12 text-right"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Total','d'=>'Shop.Theme.Checkout'),$_smarty_tpl ) );?>
+        <div class="col-lg-2 col-md-2 col-sm-2"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Total','d'=>'Shop.Theme.Checkout'),$_smarty_tpl ) );?>
 </div>
-        </div>
     </div>
     <?php if ($_smarty_tpl->tpl_vars['cart']->value['products']) {?>
         <ul class="cart-items">

@@ -22,7 +22,7 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<div class="product-miniature js-product-miniature product-preview product-box flex-box" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}">
+<div class="product-miniature js-product-miniature product-preview product-box flex-box" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}" itemscope itemtype="http://schema.org/Product">
 	<div class="preview flexbox">
 		{block name='product_thumbnail'}
 		  <a href="{$product.url}" class="product-image {if isset($jpb_phover) && $jpb_phover == 'image_swap'}image_swap{else}image_blur{/if}">
@@ -45,12 +45,14 @@
     <div class="product-info">
     	<div class="block-label">
 		  	{block name='product_flags'}
-				{if $product.has_discount}
-					{if $product.discount_type === 'percentage'}
-                	<span class="label label-discount discount-percentage discount-product">{$product.discount_percentage}</span>
-					{/if}
-				{/if}
-		   {/block}	
+				<ul class="product-flags">
+				{foreach from=$product.flags item=flag}
+					<li class="product-flag {$flag.type}">
+							{$flag.label}
+					</li>
+				{/foreach}
+				</ul>
+			{/block}	
 		</div>
     	{if isset($jpb_categoryname) && $jpb_categoryname}
 		    <span class="categoryname">
@@ -59,7 +61,11 @@
 			</span>
 	    {/if}
 	    {block name='product_name'}
-			<a href="{$product.link|escape:'html'}" class="product-link">{$product.name|truncate:40:'...'|escape:'html':'UTF-8'}</a>
+			{if $page.page_name == 'index'}
+				<h3 class="product-title" itemprop="name"><a class="product-link" href="{$product.canonical_url}">{$product.name|truncate:30:'...'}</a></h3>
+			{else}
+				<h2 class="product-title" itemprop="name"><a class="product-link" href="{$product.canonical_url}">{$product.name|truncate:30:'...'}</a></h2>
+			{/if}
 	    {/block}
 		    {block name='product_price_and_shipping'}
 		        {if $product.show_price}

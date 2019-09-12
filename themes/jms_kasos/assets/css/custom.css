@@ -1508,9 +1508,10 @@ fieldset[disabled] .btn-default {
   color: #858585;
 }
 .btn-default.disabled, .btn-default.disabled.focus, .btn-default.disabled:active, .btn-default.disabled:focus, .btn-default.disabled:hover, .btn-default[disabled], .btn-default[disabled].active, .btn-default[disabled].focus, .btn-default[disabled]:active, .btn-default[disabled]:focus, .btn-default[disabled]:hover, fieldset[disabled] .btn-default, fieldset[disabled] .btn-default.active, fieldset[disabled] .btn-default.focus, fieldset[disabled] .btn-default:active, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default:hover {
-  background-color: #ff4800;
+  background-color: #7a7a7a;
   color: #fff !important;
   opacity: 1;
+  cursor: not-allowed;
 }
 
 .btn-primary {
@@ -1643,7 +1644,7 @@ ul.cart_block_list li {
 
 .shoppingcart-content {
   padding: 0 25px;
-  max-height: 510px;
+  max-height: 520px;
   overflow: auto;
 }
 #cart_block .cart-prices {
@@ -1925,7 +1926,11 @@ ul.cart_block_list li {
   padding-bottom: 11px;
   letter-spacing: 0;
 }
-
+.product-info .product-title{
+  padding-bottom: 0;
+  line-height: normal;
+  font-weight: 400;
+}
 .product-link {
   display: block;
   overflow: hidden;
@@ -2242,7 +2247,7 @@ li.product-flag {
   font-size: 18px;
 }
 
-.product-flag.discount, .product-flag.new, .product-flag.on-sale {
+.product-flag.discount, .product-flag.new {
   display: none; }
 
 .product-pack .pack-product-container {
@@ -3017,14 +3022,18 @@ ul.footer_links {
     max-width: 1140px;
     width: 100%; }
 #blockcart-modal .product-image {
-  float: left;
-  margin-right: 10px;
-  width: 100px;
+  width: 100%;
   border: 1px solid #ebebeb;
+}
+#blockcart-modal .divide-left .cart-content p{
+  margin-bottom: 20px;
 }
 #blockcart-modal .modal-title {
   font-size: 15px;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
   #blockcart-modal .modal-header {
     background: #ebebeb;
@@ -3032,9 +3041,11 @@ ul.footer_links {
   #blockcart-modal .modal-title i.material-icons {
     margin-right: 1.875rem; }
 #blockcart-modal .product-name {
-  font-size: 13px;
+  font-size: 15px;
   margin: 0;
   padding-bottom: 4px;
+  color: #000;
+  font-weight: 400;
 }
   #blockcart-modal .cart-content {
     padding-left: 2.5rem; }
@@ -3284,7 +3295,7 @@ ul.footer_links {
   color: #555;
 }
 .breadcrumb-inner ol li a:hover{
-  color: #000;
+  color: #ff4800;
 }
 
 /*GLOBAL*--HEADER*/
@@ -3897,7 +3908,7 @@ footer .blog-carousel {
   background: #fff;
   opacity: 0;
   right: 20px;
-  z-index: 9999;
+  z-index: 991;
 }
 .back-to-top.show{
   opacity: 1;

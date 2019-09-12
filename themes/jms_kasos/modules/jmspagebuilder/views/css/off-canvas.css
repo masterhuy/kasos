@@ -38,6 +38,7 @@
 
 /* Close Button */
 .close-button {
+	font-size: 20px;
 	border: 0 none;
 	margin-top: 0;
 	padding: 10px 20px;

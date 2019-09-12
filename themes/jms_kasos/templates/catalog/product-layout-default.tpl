@@ -83,7 +83,6 @@
                     {include file='catalog/_partials/product-prices.tpl'}
                 {/block}
 
-        
                 <div class="product-information">
                     {block name='product_description_short'}
                         <div id="product-description-short-{$product.id}" class="product-desc">{$product.description_short|truncate:400:"..." nofilter}</div>

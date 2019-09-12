@@ -38,21 +38,29 @@
                         value="{$product.quantity_wanted}"
                         class="input-group"
                         min="{$product.minimal_quantity}"
+                        aria-label="{l s='Quantity' d='Shop.Theme.Actions'}"
                       />
                     </div>
                 </div>
-      		    
-                <button title="{if $product.quantity < 1}{l s='Sold Out' d='Shop.Theme.Actions'}{else}{l s='Add to Cart' d='Shop.Theme.Actions'}{/if}" class="btn-default active add-to-cart product-btn cart-button {if $product.quantity < 1}disabled{/if}" data-button-action="add-to-cart" type="submit" {if !$product.add_to_cart_url}disabled{/if}>
-                    <span class="fa fa-spin fa-spinner"></span>
-                    <span class="fa fa-check"></span>
-                    <span class="text-addcart">{l s='Add to cart' d='Shop.Theme.Actions'}</span>		
-                    <span class="text-outofstock">{l s='Out of stock' d='Shop.Theme.Actions'}</span>                           
-                </button>
-
-                {if isset($jpb_wishlist) && $jpb_wishlist}                          
-                    <a class="addToWishlist" onclick="WishlistCart('wishlist_block_list', 'add', '{$product.id_product|escape:'html'}', false, 1); return false;" data-id-product="{$product.id_product|escape:'html'}" title="{l s='Add to Wishlist'}"></a>
-                {/if}
-
+      		    <div class="add">
+                    <button 
+                        title="{if $product.quantity < 1}{l s='Sold Out' d='Shop.Theme.Actions'}{else}{l s='Add to Cart' d='Shop.Theme.Actions'}{/if}" 
+                        class="btn-default add-to-cart product-btn cart-button 
+                        {if $product.quantity < 1}disabled{/if}" 
+                        data-button-action="add-to-cart" 
+                        type="submit" 
+                        {if !$product.add_to_cart_url}disabled{/if}
+                    >
+                        <span class="fa fa-spin fa-spinner"></span>
+                        <span class="fa fa-check"></span>
+                        <span class="text-addcart">{l s='Add to cart' d='Shop.Theme.Actions'}</span>		
+                        <span class="text-outofstock">{l s='Out of stock' d='Shop.Theme.Actions'}</span>                           
+                    </button>
+                    {if isset($jpb_wishlist) && $jpb_wishlist}                          
+                        <a class="addToWishlist" onclick="WishlistCart('wishlist_block_list', 'add', '{$product.id_product|escape:'html'}', false, 1); return false;" data-id-product="{$product.id_product|escape:'html'}" title="{l s='Add to Wishlist'}"></a>
+                    {/if}
+                </div>
+                {hook h='displayProductActions' product=$product}
             </div>
             <div class="clearfix"></div>
         {/block}

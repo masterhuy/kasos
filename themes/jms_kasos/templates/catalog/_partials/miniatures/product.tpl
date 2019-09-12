@@ -23,7 +23,7 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 
-<div class="product-miniature js-product-miniature product-preview item-gutter-{$jpb_gutterwidth}" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}">
+<div class="product-miniature js-product-miniature product-preview item-gutter-{$jpb_gutterwidth}" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}" itemscope itemtype="http://schema.org/Product">
 	<div class="preview">
 		{block name='product_thumbnail'}
 		  	<a href="{$product.url}" class="product-image {if isset($jpb_phover) && $jpb_phover == 'image_swap'}image_swap{else}image_blur{/if}">
@@ -44,23 +44,14 @@
 		  	</a>
 			<div class="block-label">
 			  	{block name='product_flags'}
+					<ul class="product-flags">
 					{foreach from=$product.flags item=flag}
-						{if $flag.label == 'New'}
-						    <span class="label label-new">{$flag.label}</span>
-						{/if}
-						{if $flag.label == 'On sale!'}
-						    <span class="label label-sale">{l s='Sale' d='Shop.Theme.Actions'}</span>
-						{/if}
+						<li class="product-flag {$flag.type}">
+								{$flag.label}
+						</li>
 					{/foreach}
-					{if $product.has_discount}
-						{if $product.discount_type === 'percentage'}
-	                        <span class="label label-discount discount-percentage discount-product">{$product.discount_percentage}</span>
-						{/if}
-					{/if}
-					{if $product.quantity < 1}
-						<span class="label label-outstock">{l s='Out Stock' d='Shop.Theme.Actions'}</span>
-					{/if}
-			   {/block}	
+					</ul>
+				{/block}
 			</div>
 		{/block}
 	</div>
@@ -73,8 +64,12 @@
 			</span>
 	    {/if}
 		{block name='product_name'}
-			<a href="{$product.link|escape:'html'}" title="{$product.name|escape:'html':'UTF-8'}" class="product-link">{$product.name|truncate:50:'...'|escape:'html':'UTF-8'}</a>
-		{/block}
+          {if $page.page_name == 'index'}
+            <h3 class="product-title" itemprop="name"><a class="product-link" href="{$product.canonical_url}">{$product.name|truncate:30:'...'}</a></h3>
+          {else}
+            <h2 class="product-title" itemprop="name"><a class="product-link" href="{$product.canonical_url}">{$product.name|truncate:30:'...'}</a></h2>
+          {/if}
+        {/block}
 			  
 		{block name='product_price_and_shipping'}
 			{if $product.show_price}

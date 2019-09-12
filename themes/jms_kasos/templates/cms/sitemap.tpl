@@ -29,8 +29,8 @@
 {/block}
 
 {block name='page_content_container'}
-  <div class="container-fluid">
-    <div class="row sitemap col-xs-12">
+  
+    <div class="row sitemap">
         <div class="col-md-3">
           <h5>{$our_offers}</h5>
           {include file='cms/_partials/sitemap-nested-list.tpl' links=$links.offers}
@@ -48,5 +48,5 @@
           {include file='cms/_partials/sitemap-nested-list.tpl' links=$links.pages}
         </div>
     </div>
-  </div>
+  
 {/block}

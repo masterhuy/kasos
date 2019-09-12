@@ -14,6 +14,9 @@ body#checkout section.checkout-step.-complete .step-title {
 }
 
 /*custom*/
+.breadcrumb-inner ol li a:hover{
+  color: #4a6f00;
+}
 a:hover, a:focus, a:active, a:focus {
   color: #4a6f00; 
 }
