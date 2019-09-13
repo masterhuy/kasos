@@ -422,8 +422,8 @@
 			left: 120px;
 			box-shadow: -5px -6px 15px rgba(0,0,0,0.25);
 			background: #fff;
-			width: 8px;
-			height: 8px;
+			width: 11.3px;
+			height: 11.3px;
 			position: absolute;
 			transform: rotate(45deg);
 			top: -4px;
@@ -459,8 +459,8 @@
 		left: 25px;
 		box-shadow: -5px -6px 15px rgba(0,0,0,0.25);
 		background: #fff;
-		width: 8px;
-		height: 8px;
+		width: 11.3px;
+		height: 11.3px;
 		position: absolute;
 		transform: rotate(45deg);
 		top: -4px;
@@ -518,6 +518,7 @@
 		font-weight: 500;
 		bottom: -9px;
 		right: -8px;
+		overflow: hidden;
 	}
 }
 //
@@ -825,6 +826,9 @@
 //
 .btn-border-bottom{
 	position: relative;
+	&.disabled::after{
+		background: #7a7a7a;
+	}
 	&::after{
 		content: "";
 		position: absolute;
@@ -1463,6 +1467,7 @@
 				height: 11px;
 				background: #fff;
 				top: -9px;
+				left: 0;
 				position: absolute;
 			}
 		}
@@ -1476,6 +1481,9 @@
 		}
 	}
 	.ajax-add-to-cart{
+		&[disabled]::after{
+			background: #7a7a7a;
+		}
 		&::after{
 			content: "";
 			position: absolute;
@@ -3027,6 +3035,25 @@ a.wishlist_top{
 
 //footer
 #footer{
+	.addon-box .addon-title + ul li a{
+		position: relative;
+		&:hover::after{
+			opacity: 1;
+			top: calc(100% - 2px;);
+		}
+		&::after{
+			background-color: $active;
+			content: "";
+			height: 1px;
+			left: 0;
+			opacity: 0;
+			pointer-events: none;
+			position: absolute;
+			top: calc(100% + 2px);
+			transition: .2s all;
+			width: 100%;
+		}
+	}
 	.footer-top-2{
 		background: #000;
 		color: #bbb;

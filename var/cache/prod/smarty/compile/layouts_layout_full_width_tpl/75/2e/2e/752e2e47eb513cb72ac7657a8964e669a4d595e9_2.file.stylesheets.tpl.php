@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-09-12 06:29:34
+/* Smarty version 3.1.33, created on 2019-09-13 06:31:21
   from 'D:\xamppp\htdocs\jms_kasos\themes\jms_kasos\templates\_partials\stylesheets.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d7a1e0ea72bf8_18155571',
+  'unifunc' => 'content_5d7b6ff9980172_63652642',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d7a1e0ea72bf8_18155571 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d7b6ff9980172_63652642 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" type="text/css" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['theme_assets'], ENT_QUOTES, 'UTF-8');?>
 css/digitalicon.css" />
 <link rel="stylesheet" type="text/css" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['theme_assets'], ENT_QUOTES, 'UTF-8');?>

@@ -46,7 +46,7 @@
     	{if $jpb_mobilemenu}
     		<div class="menu-wrap hidden-lg">
     			<button id="close-button" class="close-button">
-                    <i class="fa fa-close"></i>
+                    <i class="la la-times"></i>
                 </button>
     			<nav id="off-canvas-menu">					
     				{hook h='displayTopColumn'}
@@ -64,16 +64,16 @@
                     {include file='_partials/header.tpl'}
                 {/block}
             </header>
-            {block name='notifications'}
-         
-            {/block}
+            
     		{if $page.page_name != 'index'}
     			{block name='breadcrumb'}
     			   {include file='_partials/breadcrumb.tpl'}
     			{/block}
     		{/if}
             <div id="wrapper" {if $page.page_name != 'index'}{/if} class="container"> 
-
+                {block name='notifications'}
+                    {include file='_partials/notifications.tpl'}
+                {/block}
                 {if $page.page_name != 'index'}
                     <div class="row">
                 {/if}

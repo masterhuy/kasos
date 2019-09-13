@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-09-11 05:52:51
+/* Smarty version 3.1.33, created on 2019-09-13 03:27:52
   from 'D:\xamppp\htdocs\jms_kasos\themes\jms_kasos\templates\checkout\_partials\order-confirmation-table.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d78c3f31f08c1_64877873',
+  'unifunc' => 'content_5d7b44f86e0c93_56050360',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,10 +20,10 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d78c3f31f08c1_64877873 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d7b44f86e0c93_56050360 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_16938341335d78c3f31c1ab5_35054747', 'order-items-table-head');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12151755155d7b44f86bda12_38004950', 'order-items-table-head');
 ?>
 
   <div class="order-confirmation-table">
@@ -163,12 +163,12 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 </div>
 <?php }
 /* {block 'order-items-table-head'} */
-class Block_16938341335d78c3f31c1ab5_35054747 extends Smarty_Internal_Block
+class Block_12151755155d7b44f86bda12_38004950 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'order-items-table-head' => 
   array (
-    0 => 'Block_16938341335d78c3f31c1ab5_35054747',
+    0 => 'Block_12151755155d7b44f86bda12_38004950',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

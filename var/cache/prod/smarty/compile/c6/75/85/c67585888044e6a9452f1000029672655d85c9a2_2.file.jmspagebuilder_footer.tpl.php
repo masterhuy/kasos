@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-09-12 06:29:35
+/* Smarty version 3.1.33, created on 2019-09-13 06:31:22
   from 'D:\xamppp\htdocs\jms_kasos\themes\jms_kasos\modules\jmspagebuilder\views\templates\hook\jmspagebuilder_footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d7a1e0f56dbd9_83377274',
+  'unifunc' => 'content_5d7b6ffa5cef27_78101011',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d7a1e0f56dbd9_83377274 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d7b6ffa5cef27_78101011 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['rows']->value, 'row');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['row']->value) {

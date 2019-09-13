@@ -42,18 +42,10 @@
 					/>
 				{/if}
 		  	</a>
-			<div class="block-label">
-			  	{block name='product_flags'}
-					<ul class="product-flags">
-					{foreach from=$product.flags item=flag}
-						<li class="product-flag {$flag.type}">
-								{$flag.label}
-						</li>
-					{/foreach}
-					</ul>
-				{/block}
-			</div>
 		{/block}
+		
+		{include file='catalog/_partials/product-flags.tpl'}
+
 	</div>
 						
 	<div class="product-info">

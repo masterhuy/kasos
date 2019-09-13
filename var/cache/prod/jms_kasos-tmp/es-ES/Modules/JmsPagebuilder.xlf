@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="D:\xamppp\htdocs\jms_kasos\themes\jms_kasos\modules\jmspagebuilder\views\templates\hook\addonblog.tpl" source-language="es-ES" target-language="es-ES" datatype="plaintext">
+    <body>
+      <trans-unit id="8413c683b4b27cc3f4dbd4c90329d8ba">
+        <source>Comments</source>
+        <target>Comments</target>
+        <note>Line: 99</note>
+      </trans-unit>
+      <trans-unit id="0be8406951cdfda82f00f79328cf4efc">
+        <source>Comment</source>
+        <target>Comment</target>
+        <note>Line: 101</note>
+      </trans-unit>
+      <trans-unit id="efeb369cccbd560588a756610865664c">
+        <source>In</source>
+        <target>In</target>
+        <note>Line: 68</note>
+      </trans-unit>
+      <trans-unit id="f8127c02f985c51ae2badec0de715daf">
+        <source>Posted:</source>
+        <target>Posted:</target>
+        <note>Line: 77</note>
+      </trans-unit>
+      <trans-unit id="ed4832a84ee072b00a6740f657183598">
+        <source>Views</source>
+        <target>Views</target>
+        <note>Line: 87</note>
+      </trans-unit>
+      <trans-unit id="4351cfebe4b61d8aa5efa1d020710005">
+        <source>View</source>
+        <target>View</target>
+        <note>Line: 89</note>
+      </trans-unit>
+      <trans-unit id="43340e6cc4e88197d57f8d6d5ea50a46">
+        <source>Read more</source>
+        <target>Read more</target>
+        <note>Line: 113</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_kasos\themes\jms_kasos\modules\jmspagebuilder\views\templates\hook\addoncategoryshow2.tpl" source-language="es-ES" target-language="es-ES" datatype="plaintext">
+    <body>
+      <trans-unit id="87bdf2b1731f2c475caf4afc3eae14d0">
+        <source>No categories</source>
+        <target>No categories</target>
+        <note>Line: 76</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_kasos\themes\jms_kasos\modules\jmspagebuilder\views\templates\hook\addonhotdeal.tpl" source-language="es-ES" target-language="es-ES" datatype="plaintext">
+    <body>
+      <trans-unit id="d9aaf75f685857135f722f31e321ac92">
+        <source>View All Product</source>
+        <target>View All Product</target>
+        <note>Line: 147</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_kasos\themes\jms_kasos\modules\jmspagebuilder\views\templates\hook\addoninstagram.tpl" source-language="es-ES" target-language="es-ES" datatype="plaintext">
+    <body>
+      <trans-unit id="06dde14d22c7e889094002c3d93f9018">
+        <source>Instagram Image</source>
+        <target>Instagram Image</target>
+        <note>Line: 37</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_kasos\themes\jms_kasos\modules\jmspagebuilder\views\templates\hook\addonmaplocation.tpl" source-language="es-ES" target-language="es-ES" datatype="plaintext">
+    <body>
+      <trans-unit id="be9256c578fa1d4e043b8de00a808317">
+        <source>Find our stores</source>
+        <target>Find our stores</target>
+        <note>Line: 92</note>
+      </trans-unit>
+      <trans-unit id="c46def90c17d00226139900cdf9abf14">
+        <source>Choose Store Location</source>
+        <target>Choose Store Location</target>
+        <note>Line: 94</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

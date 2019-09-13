@@ -43,17 +43,6 @@
 	</div>
 
     <div class="product-info">
-    	<div class="block-label">
-		  	{block name='product_flags'}
-				<ul class="product-flags">
-				{foreach from=$product.flags item=flag}
-					<li class="product-flag {$flag.type}">
-							{$flag.label}
-					</li>
-				{/foreach}
-				</ul>
-			{/block}	
-		</div>
     	{if isset($jpb_categoryname) && $jpb_categoryname}
 		    <span class="categoryname">
 				<a href="{url entity='category' id=$product.id_category_default}">

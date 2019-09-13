@@ -2,10 +2,10 @@
 -- version 4.8.0
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Sep 12, 2019 at 12:30 PM
--- Server version: 10.1.31-MariaDB
--- PHP Version: 7.0.29
+-- Máy chủ: 127.0.0.1
+-- Thời gian đã tạo: Th9 13, 2019 lúc 12:33 PM
+-- Phiên bản máy phục vụ: 10.1.31-MariaDB
+-- Phiên bản PHP: 7.0.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -18,13 +18,13 @@ START TRANSACTION;
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: jms_kasos
+-- Cơ sở dữ liệu: jms_kasos
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_access
+-- Cấu trúc bảng cho bảng jms_access
 --
 
 CREATE TABLE jms_access (
@@ -33,7 +33,7 @@ CREATE TABLE jms_access (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_access
+-- Đang đổ dữ liệu cho bảng jms_access
 --
 
 INSERT INTO jms_access VALUES(1, 1);
@@ -852,7 +852,7 @@ INSERT INTO jms_access VALUES(4, 460);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_accessory
+-- Cấu trúc bảng cho bảng jms_accessory
 --
 
 CREATE TABLE jms_accessory (
@@ -863,7 +863,7 @@ CREATE TABLE jms_accessory (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_address
+-- Cấu trúc bảng cho bảng jms_address
 --
 
 CREATE TABLE jms_address (
@@ -894,7 +894,7 @@ CREATE TABLE jms_address (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_address
+-- Đang đổ dữ liệu cho bảng jms_address
 --
 
 INSERT INTO jms_address VALUES(1, 8, 0, 1, 0, 0, 0, 'Mon adresse', 'My Company', 'DOE', 'John', '16, Main street', '2nd floor', '75002', 'Paris ', '', '0102030405', '', '', '', '2019-07-24 04:55:52', '2019-07-24 04:55:52', 1, 0);
@@ -903,11 +903,12 @@ INSERT INTO jms_address VALUES(3, 21, 35, 0, 1, 0, 0, 'manufacturer', 'Fashion',
 INSERT INTO jms_address VALUES(4, 21, 12, 1, 0, 0, 0, 'My address', 'My Company', 'DOE', 'John', '16, Main street', '2nd floor', '33133', 'Miami', '', '0102030405', '', '', '', '2019-07-24 04:55:52', '2019-07-24 04:55:52', 1, 0);
 INSERT INTO jms_address VALUES(5, 21, 1, 2, 0, 0, 0, 'My Address', 'jms', 'huy', 'mr', 'hn', 'hn', '11311', 'hn', '', '0987654321', '', '', '', '2019-08-08 02:45:34', '2019-08-15 03:49:40', 1, 1);
 INSERT INTO jms_address VALUES(6, 21, 1, 2, 0, 0, 0, 'My Address', 'jms', 'huy', 'mr', 'hn', 'hn', '11311', 'hn', '', '0987654321', '', '', '', '2019-08-15 03:49:40', '2019-08-15 03:49:40', 1, 0);
+INSERT INTO jms_address VALUES(7, 21, 46, 3, 0, 0, 0, 'My Address', 'Joommasters', 'Doe', 'John', 'sấ', 'saasa', '10000', 'Bucuresti', '', '+84988484844', '', '', '', '2019-09-13 03:27:21', '2019-09-13 03:27:21', 1, 0);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_address_format
+-- Cấu trúc bảng cho bảng jms_address_format
 --
 
 CREATE TABLE jms_address_format (
@@ -916,7 +917,7 @@ CREATE TABLE jms_address_format (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_address_format
+-- Đang đổ dữ liệu cho bảng jms_address_format
 --
 
 INSERT INTO jms_address_format VALUES(1, 'firstname lastname\ncompany\nvat_number\naddress1\naddress2\npostcode city\nCountry:name\nphone');
@@ -1167,7 +1168,7 @@ INSERT INTO jms_address_format VALUES(244, 'firstname lastname\ncompany\nvat_num
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_admin_filter
+-- Cấu trúc bảng cho bảng jms_admin_filter
 --
 
 CREATE TABLE jms_admin_filter (
@@ -1181,7 +1182,7 @@ CREATE TABLE jms_admin_filter (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_admin_filter
+-- Đang đổ dữ liệu cho bảng jms_admin_filter
 --
 
 INSERT INTO jms_admin_filter VALUES(1, 1, 1, '', '', '{\"limit\":50,\"orderBy\":\"id_lang\",\"sortOrder\":\"ASC\",\"filters\":[]}', 'language');
@@ -1196,7 +1197,7 @@ INSERT INTO jms_admin_filter VALUES(8, 1, 1, '', '', '{\"orderBy\":\"position\",
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_advice
+-- Cấu trúc bảng cho bảng jms_advice
 --
 
 CREATE TABLE jms_advice (
@@ -1214,7 +1215,7 @@ CREATE TABLE jms_advice (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_advice
+-- Đang đổ dữ liệu cho bảng jms_advice
 --
 
 INSERT INTO jms_advice VALUES(294, 853, 1, NULL, 1, 0, 'after', '#dashtrends', 0, 0, 1);
@@ -1228,7 +1229,7 @@ INSERT INTO jms_advice VALUES(300, 851, 1, NULL, 1, 0, 'after', '.dash_news', 0,
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_advice_lang
+-- Cấu trúc bảng cho bảng jms_advice_lang
 --
 
 CREATE TABLE jms_advice_lang (
@@ -1238,7 +1239,7 @@ CREATE TABLE jms_advice_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_advice_lang
+-- Đang đổ dữ liệu cho bảng jms_advice_lang
 --
 
 INSERT INTO jms_advice_lang VALUES(294, 1, '<div id=\"wrap_id_advice_853\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"853\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"mailchimp\" href=\"{link}AdminModules{/link}&install=mailchimp&module_name=mailchimp&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/mailchimp.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/853.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Bolster sales and connect with your customers using MailChimp’s powerful tools. Configura ahora<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_853 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=853&url=\'+link;\n                $(\'#wrap_id_advice_853 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>');
@@ -1280,7 +1281,7 @@ INSERT INTO jms_advice_lang VALUES(300, 6, ' <div id=\"wrap_id_advice_851\"> <se
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_alias
+-- Cấu trúc bảng cho bảng jms_alias
 --
 
 CREATE TABLE jms_alias (
@@ -1291,7 +1292,7 @@ CREATE TABLE jms_alias (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_alias
+-- Đang đổ dữ liệu cho bảng jms_alias
 --
 
 INSERT INTO jms_alias VALUES(1, 'bloose', 'blouse', 1);
@@ -1300,7 +1301,7 @@ INSERT INTO jms_alias VALUES(2, 'blues', 'blouse', 1);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_attachment
+-- Cấu trúc bảng cho bảng jms_attachment
 --
 
 CREATE TABLE jms_attachment (
@@ -1314,7 +1315,7 @@ CREATE TABLE jms_attachment (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_attachment_lang
+-- Cấu trúc bảng cho bảng jms_attachment_lang
 --
 
 CREATE TABLE jms_attachment_lang (
@@ -1327,7 +1328,7 @@ CREATE TABLE jms_attachment_lang (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_attribute
+-- Cấu trúc bảng cho bảng jms_attribute
 --
 
 CREATE TABLE jms_attribute (
@@ -1338,7 +1339,7 @@ CREATE TABLE jms_attribute (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_attribute
+-- Đang đổ dữ liệu cho bảng jms_attribute
 --
 
 INSERT INTO jms_attribute VALUES(1, 1, '', 0);
@@ -1355,7 +1356,7 @@ INSERT INTO jms_attribute VALUES(17, 2, '#9b763c', 5);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_attribute_group
+-- Cấu trúc bảng cho bảng jms_attribute_group
 --
 
 CREATE TABLE jms_attribute_group (
@@ -1366,7 +1367,7 @@ CREATE TABLE jms_attribute_group (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_attribute_group
+-- Đang đổ dữ liệu cho bảng jms_attribute_group
 --
 
 INSERT INTO jms_attribute_group VALUES(1, 0, 'select', 0);
@@ -1375,7 +1376,7 @@ INSERT INTO jms_attribute_group VALUES(2, 1, 'color', 1);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_attribute_group_lang
+-- Cấu trúc bảng cho bảng jms_attribute_group_lang
 --
 
 CREATE TABLE jms_attribute_group_lang (
@@ -1386,7 +1387,7 @@ CREATE TABLE jms_attribute_group_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_attribute_group_lang
+-- Đang đổ dữ liệu cho bảng jms_attribute_group_lang
 --
 
 INSERT INTO jms_attribute_group_lang VALUES(1, 1, 'Size', 'Size');
@@ -1403,7 +1404,7 @@ INSERT INTO jms_attribute_group_lang VALUES(2, 6, 'Color', 'Color');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_attribute_group_shop
+-- Cấu trúc bảng cho bảng jms_attribute_group_shop
 --
 
 CREATE TABLE jms_attribute_group_shop (
@@ -1412,7 +1413,7 @@ CREATE TABLE jms_attribute_group_shop (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_attribute_group_shop
+-- Đang đổ dữ liệu cho bảng jms_attribute_group_shop
 --
 
 INSERT INTO jms_attribute_group_shop VALUES(1, 1);
@@ -1421,7 +1422,7 @@ INSERT INTO jms_attribute_group_shop VALUES(2, 1);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_attribute_impact
+-- Cấu trúc bảng cho bảng jms_attribute_impact
 --
 
 CREATE TABLE jms_attribute_impact (
@@ -1435,7 +1436,7 @@ CREATE TABLE jms_attribute_impact (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_attribute_lang
+-- Cấu trúc bảng cho bảng jms_attribute_lang
 --
 
 CREATE TABLE jms_attribute_lang (
@@ -1445,7 +1446,7 @@ CREATE TABLE jms_attribute_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_attribute_lang
+-- Đang đổ dữ liệu cho bảng jms_attribute_lang
 --
 
 INSERT INTO jms_attribute_lang VALUES(1, 1, '32GB');
@@ -1502,7 +1503,7 @@ INSERT INTO jms_attribute_lang VALUES(17, 6, 'Marrón');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_attribute_shop
+-- Cấu trúc bảng cho bảng jms_attribute_shop
 --
 
 CREATE TABLE jms_attribute_shop (
@@ -1511,7 +1512,7 @@ CREATE TABLE jms_attribute_shop (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_attribute_shop
+-- Đang đổ dữ liệu cho bảng jms_attribute_shop
 --
 
 INSERT INTO jms_attribute_shop VALUES(1, 1);
@@ -1528,7 +1529,7 @@ INSERT INTO jms_attribute_shop VALUES(17, 1);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_authorization_role
+-- Cấu trúc bảng cho bảng jms_authorization_role
 --
 
 CREATE TABLE jms_authorization_role (
@@ -1537,7 +1538,7 @@ CREATE TABLE jms_authorization_role (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_authorization_role
+-- Đang đổ dữ liệu cho bảng jms_authorization_role
 --
 
 INSERT INTO jms_authorization_role VALUES(753, 'ROLE_MOD_MODULE_BLOCKREASSURANCE_CREATE');
@@ -2444,7 +2445,7 @@ INSERT INTO jms_authorization_role VALUES(459, 'ROLE_MOD_TAB_SHOPPARAMETERS_UPDA
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_badge
+-- Cấu trúc bảng cho bảng jms_badge
 --
 
 CREATE TABLE jms_badge (
@@ -2459,7 +2460,7 @@ CREATE TABLE jms_badge (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_badge
+-- Đang đổ dữ liệu cho bảng jms_badge
 --
 
 INSERT INTO jms_badge VALUES(1, 159, 'feature', 41, 1, 5, 1, 0);
@@ -2642,7 +2643,7 @@ INSERT INTO jms_badge VALUES(177, 53, 'achievement', 14, 3, 15, 0, 0);
 INSERT INTO jms_badge VALUES(178, 54, 'achievement', 14, 4, 20, 0, 0);
 INSERT INTO jms_badge VALUES(179, 55, 'achievement', 14, 5, 25, 0, 0);
 INSERT INTO jms_badge VALUES(180, 56, 'achievement', 14, 6, 30, 0, 0);
-INSERT INTO jms_badge VALUES(181, 57, 'achievement', 15, 1, 5, 0, 0);
+INSERT INTO jms_badge VALUES(181, 57, 'achievement', 15, 1, 5, 0, 1);
 INSERT INTO jms_badge VALUES(182, 58, 'achievement', 15, 2, 10, 0, 0);
 INSERT INTO jms_badge VALUES(183, 59, 'achievement', 15, 3, 15, 0, 0);
 INSERT INTO jms_badge VALUES(184, 60, 'achievement', 15, 4, 20, 0, 0);
@@ -2700,7 +2701,7 @@ INSERT INTO jms_badge VALUES(234, 122, 'feature', 40, 4, 25, 0, 0);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_badge_lang
+-- Cấu trúc bảng cho bảng jms_badge_lang
 --
 
 CREATE TABLE jms_badge_lang (
@@ -2712,7 +2713,7 @@ CREATE TABLE jms_badge_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_badge_lang
+-- Đang đổ dữ liệu cho bảng jms_badge_lang
 --
 
 INSERT INTO jms_badge_lang VALUES(1, 1, 'Shopgate installed', 'You have installed the Shopgate module', 'Partners');
@@ -3889,7 +3890,7 @@ INSERT INTO jms_badge_lang VALUES(234, 6, 'Webservice x4', '', '');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_carrier
+-- Cấu trúc bảng cho bảng jms_carrier
 --
 
 CREATE TABLE jms_carrier (
@@ -3917,7 +3918,7 @@ CREATE TABLE jms_carrier (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_carrier
+-- Đang đổ dữ liệu cho bảng jms_carrier
 --
 
 INSERT INTO jms_carrier VALUES(1, 1, 0, '0', '', 1, 0, 0, 0, 0, 1, 0, 0, '', 0, 0, 0, 0, 0, '0.000000', 0);
@@ -3926,7 +3927,7 @@ INSERT INTO jms_carrier VALUES(2, 2, 0, 'My carrier', '', 1, 0, 1, 0, 0, 0, 0, 0
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_carrier_group
+-- Cấu trúc bảng cho bảng jms_carrier_group
 --
 
 CREATE TABLE jms_carrier_group (
@@ -3935,7 +3936,7 @@ CREATE TABLE jms_carrier_group (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_carrier_group
+-- Đang đổ dữ liệu cho bảng jms_carrier_group
 --
 
 INSERT INTO jms_carrier_group VALUES(1, 1);
@@ -3948,7 +3949,7 @@ INSERT INTO jms_carrier_group VALUES(2, 3);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_carrier_lang
+-- Cấu trúc bảng cho bảng jms_carrier_lang
 --
 
 CREATE TABLE jms_carrier_lang (
@@ -3959,7 +3960,7 @@ CREATE TABLE jms_carrier_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_carrier_lang
+-- Đang đổ dữ liệu cho bảng jms_carrier_lang
 --
 
 INSERT INTO jms_carrier_lang VALUES(1, 1, 1, 'Pick up in-store');
@@ -3976,7 +3977,7 @@ INSERT INTO jms_carrier_lang VALUES(2, 1, 6, '¡Envío en 24h!');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_carrier_shop
+-- Cấu trúc bảng cho bảng jms_carrier_shop
 --
 
 CREATE TABLE jms_carrier_shop (
@@ -3985,7 +3986,7 @@ CREATE TABLE jms_carrier_shop (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_carrier_shop
+-- Đang đổ dữ liệu cho bảng jms_carrier_shop
 --
 
 INSERT INTO jms_carrier_shop VALUES(1, 1);
@@ -3994,7 +3995,7 @@ INSERT INTO jms_carrier_shop VALUES(2, 1);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_carrier_tax_rules_group_shop
+-- Cấu trúc bảng cho bảng jms_carrier_tax_rules_group_shop
 --
 
 CREATE TABLE jms_carrier_tax_rules_group_shop (
@@ -4004,7 +4005,7 @@ CREATE TABLE jms_carrier_tax_rules_group_shop (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_carrier_tax_rules_group_shop
+-- Đang đổ dữ liệu cho bảng jms_carrier_tax_rules_group_shop
 --
 
 INSERT INTO jms_carrier_tax_rules_group_shop VALUES(1, 1, 1);
@@ -4013,7 +4014,7 @@ INSERT INTO jms_carrier_tax_rules_group_shop VALUES(2, 1, 1);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_carrier_zone
+-- Cấu trúc bảng cho bảng jms_carrier_zone
 --
 
 CREATE TABLE jms_carrier_zone (
@@ -4022,7 +4023,7 @@ CREATE TABLE jms_carrier_zone (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_carrier_zone
+-- Đang đổ dữ liệu cho bảng jms_carrier_zone
 --
 
 INSERT INTO jms_carrier_zone VALUES(1, 1);
@@ -4032,7 +4033,7 @@ INSERT INTO jms_carrier_zone VALUES(2, 2);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_cart
+-- Cấu trúc bảng cho bảng jms_cart
 --
 
 CREATE TABLE jms_cart (
@@ -4059,7 +4060,7 @@ CREATE TABLE jms_cart (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_cart
+-- Đang đổ dữ liệu cho bảng jms_cart
 --
 
 INSERT INTO jms_cart VALUES(1, 1, 1, 2, '{\"3\":\"2,\"}', 1, 4, 4, 1, 1, 1, 'b44a6d9efd7a0076a0fbce6b15eaf3b1', 0, 0, '', 0, 0, '2019-07-24 04:55:53', '2019-07-24 04:55:53', NULL);
@@ -4082,11 +4083,15 @@ INSERT INTO jms_cart VALUES(17, 1, 1, 0, '', 1, 0, 0, 1, 0, 56, '', 0, 0, '', 0,
 INSERT INTO jms_cart VALUES(18, 1, 1, 0, '', 1, 0, 0, 1, 0, 62, '', 0, 0, '', 0, 0, '2019-09-12 03:48:38', '2019-09-12 04:10:46', '{\"checkout-personal-information-step\":{\"step_is_reachable\":true,\"step_is_complete\":false},\"checkout-addresses-step\":{\"step_is_reachable\":false,\"step_is_complete\":false,\"use_same_address\":true},\"checkout-delivery-step\":{\"step_is_reachable\":false,\"step_is_complete\":false},\"checkout-payment-step\":{\"step_is_reachable\":false,\"step_is_complete\":false},\"checksum\":null}');
 INSERT INTO jms_cart VALUES(19, 1, 1, 0, '', 1, 0, 0, 1, 0, 58, '', 0, 0, '', 0, 0, '2019-09-12 04:43:17', '2019-09-12 06:02:47', NULL);
 INSERT INTO jms_cart VALUES(20, 1, 1, 0, '', 1, 0, 0, 1, 0, 59, '', 0, 0, '', 0, 0, '2019-09-12 05:16:38', '2019-09-12 05:16:42', NULL);
+INSERT INTO jms_cart VALUES(21, 1, 1, 0, '', 1, 0, 0, 1, 0, 67, '', 0, 0, '', 0, 0, '2019-09-12 21:51:34', '2019-09-12 23:12:39', NULL);
+INSERT INTO jms_cart VALUES(22, 1, 1, 2, '{\"7\":\"2,\"}', 1, 7, 7, 1, 3, 70, 'ceed26ee10ced4127bfdac76f0c8c49d', 0, 0, '', 0, 0, '2019-09-13 03:17:16', '2019-09-13 03:27:40', '{\"checkout-personal-information-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-addresses-step\":{\"step_is_reachable\":true,\"step_is_complete\":true,\"use_same_address\":true},\"checkout-delivery-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-payment-step\":{\"step_is_reachable\":true,\"step_is_complete\":false},\"checksum\":\"eb79b63df1b7d826ab3ebaed584ab749532169ae\"}');
+INSERT INTO jms_cart VALUES(23, 1, 1, 0, '', 1, 0, 0, 1, 0, 68, '', 0, 0, '', 0, 0, '2019-09-13 03:22:11', '2019-09-13 03:26:12', NULL);
+INSERT INTO jms_cart VALUES(24, 1, 1, 2, '{\"7\":\"2,\"}', 1, 7, 7, 1, 3, 70, 'ceed26ee10ced4127bfdac76f0c8c49d', 0, 0, '', 0, 0, '2019-09-13 03:28:31', '2019-09-13 03:28:31', '{\"checkout-personal-information-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-addresses-step\":{\"step_is_reachable\":true,\"step_is_complete\":false,\"use_same_address\":true},\"checkout-delivery-step\":{\"step_is_reachable\":false,\"step_is_complete\":false},\"checkout-payment-step\":{\"step_is_reachable\":false,\"step_is_complete\":false},\"checksum\":\"eb79b63df1b7d826ab3ebaed584ab749532169ae\"}');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_cart_cart_rule
+-- Cấu trúc bảng cho bảng jms_cart_cart_rule
 --
 
 CREATE TABLE jms_cart_cart_rule (
@@ -4097,7 +4102,7 @@ CREATE TABLE jms_cart_cart_rule (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_cart_product
+-- Cấu trúc bảng cho bảng jms_cart_product
 --
 
 CREATE TABLE jms_cart_product (
@@ -4112,7 +4117,7 @@ CREATE TABLE jms_cart_product (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_cart_product
+-- Đang đổ dữ liệu cho bảng jms_cart_product
 --
 
 INSERT INTO jms_cart_product VALUES(6, 24, 0, 1, 64, 0, 1, '2019-07-29 03:04:18');
@@ -4148,11 +4153,14 @@ INSERT INTO jms_cart_product VALUES(19, 32, 0, 1, 117, 0, 300, '2019-09-12 04:53
 INSERT INTO jms_cart_product VALUES(19, 33, 0, 1, 0, 0, 3, '2019-09-12 04:44:54');
 INSERT INTO jms_cart_product VALUES(20, 29, 0, 1, 98, 0, 1, '2019-09-12 05:16:42');
 INSERT INTO jms_cart_product VALUES(20, 30, 0, 1, 0, 0, 1, '2019-09-12 05:16:38');
+INSERT INTO jms_cart_product VALUES(22, 22, 7, 1, 49, 0, 1, '2019-09-13 03:17:16');
+INSERT INTO jms_cart_product VALUES(23, 32, 0, 1, 115, 0, 1, '2019-09-13 03:22:11');
+INSERT INTO jms_cart_product VALUES(24, 22, 7, 1, 49, 0, 1, '2019-09-13 03:28:31');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_cart_rule
+-- Cấu trúc bảng cho bảng jms_cart_rule
 --
 
 CREATE TABLE jms_cart_rule (
@@ -4192,7 +4200,7 @@ CREATE TABLE jms_cart_rule (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_cart_rule
+-- Đang đổ dữ liệu cho bảng jms_cart_rule
 --
 
 INSERT INTO jms_cart_rule VALUES(1, 0, '2019-08-15 01:00:00', '2019-09-15 01:00:00', '', 1, 1, 1, 1, '2RHRUPVH', '0.00', 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, '20.00', '0.00', 0, 1, 0, 0, 0, 0, 0, 1, '2019-08-15 01:03:18', '2019-08-15 01:03:18');
@@ -4200,7 +4208,7 @@ INSERT INTO jms_cart_rule VALUES(1, 0, '2019-08-15 01:00:00', '2019-09-15 01:00:
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_cart_rule_carrier
+-- Cấu trúc bảng cho bảng jms_cart_rule_carrier
 --
 
 CREATE TABLE jms_cart_rule_carrier (
@@ -4211,7 +4219,7 @@ CREATE TABLE jms_cart_rule_carrier (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_cart_rule_combination
+-- Cấu trúc bảng cho bảng jms_cart_rule_combination
 --
 
 CREATE TABLE jms_cart_rule_combination (
@@ -4222,7 +4230,7 @@ CREATE TABLE jms_cart_rule_combination (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_cart_rule_country
+-- Cấu trúc bảng cho bảng jms_cart_rule_country
 --
 
 CREATE TABLE jms_cart_rule_country (
@@ -4233,7 +4241,7 @@ CREATE TABLE jms_cart_rule_country (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_cart_rule_group
+-- Cấu trúc bảng cho bảng jms_cart_rule_group
 --
 
 CREATE TABLE jms_cart_rule_group (
@@ -4244,7 +4252,7 @@ CREATE TABLE jms_cart_rule_group (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_cart_rule_lang
+-- Cấu trúc bảng cho bảng jms_cart_rule_lang
 --
 
 CREATE TABLE jms_cart_rule_lang (
@@ -4254,7 +4262,7 @@ CREATE TABLE jms_cart_rule_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_cart_rule_lang
+-- Đang đổ dữ liệu cho bảng jms_cart_rule_lang
 --
 
 INSERT INTO jms_cart_rule_lang VALUES(1, 1, '20%');
@@ -4266,7 +4274,7 @@ INSERT INTO jms_cart_rule_lang VALUES(1, 6, '20%');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_cart_rule_product_rule
+-- Cấu trúc bảng cho bảng jms_cart_rule_product_rule
 --
 
 CREATE TABLE jms_cart_rule_product_rule (
@@ -4278,7 +4286,7 @@ CREATE TABLE jms_cart_rule_product_rule (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_cart_rule_product_rule_group
+-- Cấu trúc bảng cho bảng jms_cart_rule_product_rule_group
 --
 
 CREATE TABLE jms_cart_rule_product_rule_group (
@@ -4290,7 +4298,7 @@ CREATE TABLE jms_cart_rule_product_rule_group (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_cart_rule_product_rule_value
+-- Cấu trúc bảng cho bảng jms_cart_rule_product_rule_value
 --
 
 CREATE TABLE jms_cart_rule_product_rule_value (
@@ -4301,7 +4309,7 @@ CREATE TABLE jms_cart_rule_product_rule_value (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_cart_rule_shop
+-- Cấu trúc bảng cho bảng jms_cart_rule_shop
 --
 
 CREATE TABLE jms_cart_rule_shop (
@@ -4312,7 +4320,7 @@ CREATE TABLE jms_cart_rule_shop (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_category
+-- Cấu trúc bảng cho bảng jms_category
 --
 
 CREATE TABLE jms_category (
@@ -4330,7 +4338,7 @@ CREATE TABLE jms_category (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_category
+-- Đang đổ dữ liệu cho bảng jms_category
 --
 
 INSERT INTO jms_category VALUES(1, 0, 1, 0, 1, 28, 1, '2019-07-24 04:52:57', '2019-07-24 04:52:57', 0, 0);
@@ -4351,7 +4359,7 @@ INSERT INTO jms_category VALUES(21, 14, 1, 4, 19, 20, 1, '2019-08-21 00:28:01', 
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_category_group
+-- Cấu trúc bảng cho bảng jms_category_group
 --
 
 CREATE TABLE jms_category_group (
@@ -4360,7 +4368,7 @@ CREATE TABLE jms_category_group (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_category_group
+-- Đang đổ dữ liệu cho bảng jms_category_group
 --
 
 INSERT INTO jms_category_group VALUES(2, 0);
@@ -4407,7 +4415,7 @@ INSERT INTO jms_category_group VALUES(21, 3);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_category_lang
+-- Cấu trúc bảng cho bảng jms_category_lang
 --
 
 CREATE TABLE jms_category_lang (
@@ -4423,7 +4431,7 @@ CREATE TABLE jms_category_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_category_lang
+-- Đang đổ dữ liệu cho bảng jms_category_lang
 --
 
 INSERT INTO jms_category_lang VALUES(1, 1, 1, 'Root', '', 'root', '', '', '');
@@ -4500,7 +4508,7 @@ INSERT INTO jms_category_lang VALUES(21, 1, 6, 'Cellphones & Tablet', '', 'cellp
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_category_product
+-- Cấu trúc bảng cho bảng jms_category_product
 --
 
 CREATE TABLE jms_category_product (
@@ -4510,7 +4518,7 @@ CREATE TABLE jms_category_product (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_category_product
+-- Đang đổ dữ liệu cho bảng jms_category_product
 --
 
 INSERT INTO jms_category_product VALUES(2, 21, 1);
@@ -4622,7 +4630,7 @@ INSERT INTO jms_category_product VALUES(21, 32, 2);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_category_shop
+-- Cấu trúc bảng cho bảng jms_category_shop
 --
 
 CREATE TABLE jms_category_shop (
@@ -4632,7 +4640,7 @@ CREATE TABLE jms_category_shop (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_category_shop
+-- Đang đổ dữ liệu cho bảng jms_category_shop
 --
 
 INSERT INTO jms_category_shop VALUES(1, 1, 0);
@@ -4653,7 +4661,7 @@ INSERT INTO jms_category_shop VALUES(21, 1, 2);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_cms
+-- Cấu trúc bảng cho bảng jms_cms
 --
 
 CREATE TABLE jms_cms (
@@ -4665,7 +4673,7 @@ CREATE TABLE jms_cms (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_cms
+-- Đang đổ dữ liệu cho bảng jms_cms
 --
 
 INSERT INTO jms_cms VALUES(1, 1, 0, 1, 0);
@@ -4677,7 +4685,7 @@ INSERT INTO jms_cms VALUES(5, 1, 4, 1, 0);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_cms_category
+-- Cấu trúc bảng cho bảng jms_cms_category
 --
 
 CREATE TABLE jms_cms_category (
@@ -4691,7 +4699,7 @@ CREATE TABLE jms_cms_category (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_cms_category
+-- Đang đổ dữ liệu cho bảng jms_cms_category
 --
 
 INSERT INTO jms_cms_category VALUES(1, 0, 1, 1, '2019-07-24 04:52:57', '2019-07-24 04:52:57', 0);
@@ -4699,7 +4707,7 @@ INSERT INTO jms_cms_category VALUES(1, 0, 1, 1, '2019-07-24 04:52:57', '2019-07-
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_cms_category_lang
+-- Cấu trúc bảng cho bảng jms_cms_category_lang
 --
 
 CREATE TABLE jms_cms_category_lang (
@@ -4715,7 +4723,7 @@ CREATE TABLE jms_cms_category_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_cms_category_lang
+-- Đang đổ dữ liệu cho bảng jms_cms_category_lang
 --
 
 INSERT INTO jms_cms_category_lang VALUES(1, 1, 1, 'Home', '', 'home', '', '', '');
@@ -4727,7 +4735,7 @@ INSERT INTO jms_cms_category_lang VALUES(1, 6, 1, 'Inicio', '', 'inicio', '', ''
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_cms_category_shop
+-- Cấu trúc bảng cho bảng jms_cms_category_shop
 --
 
 CREATE TABLE jms_cms_category_shop (
@@ -4736,7 +4744,7 @@ CREATE TABLE jms_cms_category_shop (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_cms_category_shop
+-- Đang đổ dữ liệu cho bảng jms_cms_category_shop
 --
 
 INSERT INTO jms_cms_category_shop VALUES(1, 1);
@@ -4744,7 +4752,7 @@ INSERT INTO jms_cms_category_shop VALUES(1, 1);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_cms_lang
+-- Cấu trúc bảng cho bảng jms_cms_lang
 --
 
 CREATE TABLE jms_cms_lang (
@@ -4760,7 +4768,7 @@ CREATE TABLE jms_cms_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_cms_lang
+-- Đang đổ dữ liệu cho bảng jms_cms_lang
 --
 
 INSERT INTO jms_cms_lang VALUES(1, 1, 1, 'Delivery', '', 'Our terms and conditions of delivery', 'conditions, delivery, delay, shipment, pack', '<h2>Shipments and returns</h2><h3>Your pack shipment</h3><p>Packages are generally dispatched within 2 days after receipt of payment and are shipped via UPS with tracking and drop-off without signature. If you prefer delivery by UPS Extra with required signature, an additional cost will be applied, so please contact us before choosing this method. Whichever shipment choice you make, we will provide you with a link to track your package online.</p><p>Shipping fees include handling and packing fees as well as postage costs. Handling fees are fixed, whereas transport fees vary according to total weight of the shipment. We advise you to group your items in one order. We cannot group two distinct orders placed separately, and shipping fees will apply to each of them. Your package will be dispatched at your own risk, but special care is taken to protect fragile objects.<br /><br />Boxes are amply sized and your items are well-protected.</p>', 'delivery');
@@ -4792,7 +4800,7 @@ INSERT INTO jms_cms_lang VALUES(5, 6, 1, 'Secure payment', '', 'Our secure payme
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_cms_role
+-- Cấu trúc bảng cho bảng jms_cms_role
 --
 
 CREATE TABLE jms_cms_role (
@@ -4802,7 +4810,7 @@ CREATE TABLE jms_cms_role (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_cms_role
+-- Đang đổ dữ liệu cho bảng jms_cms_role
 --
 
 INSERT INTO jms_cms_role VALUES(1, 'LEGAL_CONDITIONS', 3);
@@ -4811,7 +4819,7 @@ INSERT INTO jms_cms_role VALUES(2, 'LEGAL_NOTICE', 2);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_cms_role_lang
+-- Cấu trúc bảng cho bảng jms_cms_role_lang
 --
 
 CREATE TABLE jms_cms_role_lang (
@@ -4824,7 +4832,7 @@ CREATE TABLE jms_cms_role_lang (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_cms_shop
+-- Cấu trúc bảng cho bảng jms_cms_shop
 --
 
 CREATE TABLE jms_cms_shop (
@@ -4833,7 +4841,7 @@ CREATE TABLE jms_cms_shop (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_cms_shop
+-- Đang đổ dữ liệu cho bảng jms_cms_shop
 --
 
 INSERT INTO jms_cms_shop VALUES(1, 1);
@@ -4845,7 +4853,7 @@ INSERT INTO jms_cms_shop VALUES(5, 1);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_condition
+-- Cấu trúc bảng cho bảng jms_condition
 --
 
 CREATE TABLE jms_condition (
@@ -4864,7 +4872,7 @@ CREATE TABLE jms_condition (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_condition
+-- Đang đổ dữ liệu cho bảng jms_condition
 --
 
 INSERT INTO jms_condition VALUES(1, 1, 'configuration', 'PS_REWRITING_SETTINGS', '==', '1', '', 'hook', 'actionAdminMetaControllerUpdate_optionsAfter', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
@@ -4889,7 +4897,7 @@ INSERT INTO jms_condition VALUES(19, 19, 'install', '', '>', '0', '1', 'time', '
 INSERT INTO jms_condition VALUES(20, 20, 'install', '', '>=', '7', '1', 'time', '1', 1, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
 INSERT INTO jms_condition VALUES(21, 21, 'configuration', 'PS_LOGO', '!=', 'logo.jpg', '', 'hook', 'actionAdminThemesControllerUpdate_optionsAfter', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
 INSERT INTO jms_condition VALUES(22, 22, 'sql', 'SELECT COUNT(*) FROM PREFIX_theme WHERE directory != \"default\" AND directory != \"prestashop\" AND directory ! \"default-bootstrap\"', '>', '0', '', 'hook', 'actionObjectShopUpdateAfter', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
-INSERT INTO jms_condition VALUES(23, 23, 'configuration', 'PS_LOGGED_ON_ADDONS', '==', '1', '', 'time', '1', 0, '2019-09-11 22:57:37', '2019-09-12 00:39:26');
+INSERT INTO jms_condition VALUES(23, 23, 'configuration', 'PS_LOGGED_ON_ADDONS', '==', '1', '', 'time', '1', 0, '2019-09-11 22:57:37', '2019-09-13 00:08:16');
 INSERT INTO jms_condition VALUES(24, 24, 'configuration', 'PS_MULTISHOP_FEATURE_ACTIVE', '==', '1', '', 'hook', 'actionAdminPreferencesControllerUpdate_optionsAfter', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
 INSERT INTO jms_condition VALUES(25, 25, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop', '>', '1', '', 'hook', 'actionObjectShopAddAfter', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
 INSERT INTO jms_condition VALUES(26, 26, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop', '>', '4', '', 'hook', 'actionObjectShopAddAfter', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
@@ -4898,52 +4906,52 @@ INSERT INTO jms_condition VALUES(28, 28, 'sql', 'SELECT COUNT(*) FROM PREFIX_sho
 INSERT INTO jms_condition VALUES(29, 29, 'sql', 'SELECT COUNT(distinct m.id_module) FROM PREFIX_hook h LEFT JOIN PREFIX_hook_module hm ON h.id_hook = hm.id_hook LEFT JOIN PREFIX_module m ON hm.id_module = m.id_module\r\nWHERE (h.name = \"displayPayment\" OR h.name = \"payment\") AND m.name NOT IN (\"bankwire\", \"cheque\", \"cashondelivery\")', '>', '2', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
 INSERT INTO jms_condition VALUES(30, 30, 'sql', 'SELECT COUNT(*) FROM PREFIX_carrier WHERE name NOT IN (\"0\", \"My carrier\")', '>', '2', '', 'hook', 'actionObjectCarrierAddAfter', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
 INSERT INTO jms_condition VALUES(31, 31, 'sql', 'SELECT SUM(total_paid_tax_excl / c.conversion_rate)\r\nFROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"', '>=', '200', '1078', 'hook', 'actionOrderStatusUpdate', 1, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
-INSERT INTO jms_condition VALUES(32, 32, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"', '>=', '2000', '1078', 'hook', 'actionOrderStatusUpdate', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
-INSERT INTO jms_condition VALUES(33, 33, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"', '>=', '20000', '1456', 'time', '1', 0, '2019-09-11 22:57:37', '2019-09-12 00:39:26');
+INSERT INTO jms_condition VALUES(32, 32, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"', '>=', '2000', '1456', 'hook', 'actionOrderStatusUpdate', 0, '2019-09-11 22:57:37', '2019-09-13 03:27:48');
+INSERT INTO jms_condition VALUES(33, 33, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"', '>=', '20000', '1456', 'time', '1', 0, '2019-09-11 22:57:37', '2019-09-13 00:08:16');
 INSERT INTO jms_condition VALUES(34, 34, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1', '>=', '200000', '1078', 'time', '7', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
 INSERT INTO jms_condition VALUES(35, 35, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1', '>=', '2000000', '1078', 'time', '7', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
 INSERT INTO jms_condition VALUES(36, 36, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1', '>=', '20000000', '1078', 'time', '7', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
 INSERT INTO jms_condition VALUES(37, 37, 'install', '', '>=', '30', '1', 'time', '1', 1, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
-INSERT INTO jms_condition VALUES(38, 38, 'install', '', '>=', '182', '', 'time', '2', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
-INSERT INTO jms_condition VALUES(39, 39, 'install', '', '>=', '365', '', 'time', '2', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
-INSERT INTO jms_condition VALUES(40, 40, 'install', '', '>=', '730', '', 'time', '2', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
+INSERT INTO jms_condition VALUES(38, 38, 'install', '', '>=', '182', '', 'time', '2', 0, '2019-09-11 22:57:37', '2019-09-12 21:41:12');
+INSERT INTO jms_condition VALUES(39, 39, 'install', '', '>=', '365', '', 'time', '2', 0, '2019-09-11 22:57:37', '2019-09-12 21:41:12');
+INSERT INTO jms_condition VALUES(40, 40, 'install', '', '>=', '730', '', 'time', '2', 0, '2019-09-11 22:57:37', '2019-09-12 21:41:12');
 INSERT INTO jms_condition VALUES(41, 41, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '10', '10', 'time', '1', 1, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
-INSERT INTO jms_condition VALUES(42, 42, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '100', '53', 'time', '1', 0, '2019-09-11 22:57:37', '2019-09-12 00:39:26');
-INSERT INTO jms_condition VALUES(43, 43, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '1000', '53', 'time', '1', 0, '2019-09-11 22:57:37', '2019-09-12 00:39:26');
-INSERT INTO jms_condition VALUES(44, 44, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '10000', '53', 'time', '2', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
+INSERT INTO jms_condition VALUES(42, 42, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '100', '65', 'time', '1', 0, '2019-09-11 22:57:37', '2019-09-13 00:08:16');
+INSERT INTO jms_condition VALUES(43, 43, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '1000', '65', 'time', '1', 0, '2019-09-11 22:57:37', '2019-09-13 00:08:16');
+INSERT INTO jms_condition VALUES(44, 44, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '10000', '64', 'time', '2', 0, '2019-09-11 22:57:37', '2019-09-12 21:41:12');
 INSERT INTO jms_condition VALUES(45, 45, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '100000', '47', 'time', '3', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
 INSERT INTO jms_condition VALUES(46, 46, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '1000000', '47', 'time', '4', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
 INSERT INTO jms_condition VALUES(47, 47, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '2', '2', 'hook', 'actionObjectCartAddAfter', 1, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
 INSERT INTO jms_condition VALUES(48, 48, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '10', '10', 'hook', 'actionObjectCartAddAfter', 1, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
-INSERT INTO jms_condition VALUES(49, 49, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '100', '15', 'hook', 'actionObjectCartAddAfter', 0, '2019-09-11 22:57:37', '2019-09-12 05:16:38');
-INSERT INTO jms_condition VALUES(50, 50, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '1000', '11', 'time', '1', 0, '2019-09-11 22:57:37', '2019-09-12 00:39:26');
+INSERT INTO jms_condition VALUES(49, 49, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '100', '19', 'hook', 'actionObjectCartAddAfter', 0, '2019-09-11 22:57:37', '2019-09-13 03:28:31');
+INSERT INTO jms_condition VALUES(50, 50, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '1000', '16', 'time', '1', 0, '2019-09-11 22:57:37', '2019-09-13 00:08:16');
 INSERT INTO jms_condition VALUES(51, 51, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '10000', '10', 'time', '4', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
 INSERT INTO jms_condition VALUES(52, 52, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '100000', '10', 'time', '8', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
-INSERT INTO jms_condition VALUES(53, 53, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '1', '0', 'hook', 'actionObjectOrderAddAfter', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
-INSERT INTO jms_condition VALUES(54, 54, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '10', '0', 'hook', 'actionObjectOrderAddAfter', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
-INSERT INTO jms_condition VALUES(55, 55, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '100', '0', 'hook', 'actionObjectOrderAddAfter', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
-INSERT INTO jms_condition VALUES(56, 56, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '1000', '0', 'time', '2', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
+INSERT INTO jms_condition VALUES(53, 53, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '1', '0', 'hook', 'actionObjectOrderAddAfter', 0, '2019-09-11 22:57:37', '2019-09-13 03:27:48');
+INSERT INTO jms_condition VALUES(54, 54, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '10', '0', 'hook', 'actionObjectOrderAddAfter', 0, '2019-09-11 22:57:37', '2019-09-13 03:27:48');
+INSERT INTO jms_condition VALUES(55, 55, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '100', '0', 'hook', 'actionObjectOrderAddAfter', 0, '2019-09-11 22:57:37', '2019-09-13 03:27:48');
+INSERT INTO jms_condition VALUES(56, 56, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '1000', '0', 'time', '2', 0, '2019-09-11 22:57:37', '2019-09-12 21:41:12');
 INSERT INTO jms_condition VALUES(57, 57, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '10000', '0', 'time', '4', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
 INSERT INTO jms_condition VALUES(58, 58, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '100000', '0', 'time', '8', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
 INSERT INTO jms_condition VALUES(59, 59, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '1', '1', 'hook', 'actionObjectCustomerAddAfter', 1, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
-INSERT INTO jms_condition VALUES(60, 60, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '10', '1', 'hook', 'actionObjectCustomerAddAfter', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
-INSERT INTO jms_condition VALUES(61, 61, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '100', '1', 'hook', 'actionObjectCustomerAddAfter', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
-INSERT INTO jms_condition VALUES(62, 62, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '1000', '1', 'time', '1', 0, '2019-09-11 22:57:37', '2019-09-12 00:39:26');
-INSERT INTO jms_condition VALUES(63, 63, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '10000', '1', 'time', '2', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
+INSERT INTO jms_condition VALUES(60, 60, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '10', '2', 'hook', 'actionObjectCustomerAddAfter', 0, '2019-09-11 22:57:37', '2019-09-13 03:26:59');
+INSERT INTO jms_condition VALUES(61, 61, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '100', '2', 'hook', 'actionObjectCustomerAddAfter', 0, '2019-09-11 22:57:37', '2019-09-13 03:26:59');
+INSERT INTO jms_condition VALUES(62, 62, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '1000', '1', 'time', '1', 0, '2019-09-11 22:57:37', '2019-09-13 00:08:16');
+INSERT INTO jms_condition VALUES(63, 63, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '10000', '1', 'time', '2', 0, '2019-09-11 22:57:37', '2019-09-12 21:41:12');
 INSERT INTO jms_condition VALUES(64, 64, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '100000', '1', 'time', '4', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
-INSERT INTO jms_condition VALUES(65, 65, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '1', '', 'hook', 'actionObjectCustomerThreadAddAfter', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
-INSERT INTO jms_condition VALUES(66, 66, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '10', '', 'hook', 'actionObjectCustomerThreadAddAfter', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
-INSERT INTO jms_condition VALUES(67, 67, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '100', '', 'hook', 'actionObjectCustomerThreadAddAfter', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
-INSERT INTO jms_condition VALUES(68, 68, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '1000', '0', 'time', '2', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
-INSERT INTO jms_condition VALUES(69, 69, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '10000', '0', 'time', '4', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
-INSERT INTO jms_condition VALUES(70, 70, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '100000', '0', 'time', '8', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
-INSERT INTO jms_condition VALUES(71, 76, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"CA\",\r\n\"GL\",\r\n\"PM\",\r\n\"US\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
-INSERT INTO jms_condition VALUES(72, 79, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"UM\",\r\n\"AS\",\r\n\"AU\",\r\n\"CK\",\r\n\"FJ\",\r\n\"FM\",\r\n\"GU\",\r\n\"KI\",\r\n\"MH,\"\r\n\"MP\",\r\n\"NC\",\r\n\"NF\",\r\n\"NR\",\r\n\"NU\",\r\n\"NZ\",\r\n\"PF\",\r\n\"PG\",\r\n\"PN\",\r\n\"PW\",\r\n\"SB\",\r\n\"TK\",\r\n\"TO\",\r\n\"TV\",\r\n\"VU\",\r\n\"WF\",\r\n\"WS\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
-INSERT INTO jms_condition VALUES(73, 85, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"KG\",\r\n\"KZ\",\r\n\"TJ\",\r\n\"TM\",\r\n\"UZ\",\r\n\"AE\",\r\n\"AM\",\r\n\"AZ\",\r\n\"BH\",\r\n\"CY\",\r\n\"GE\",\r\n\"IL\",\r\n\"IQ\",\r\n\"IR\",\r\n\"JO\",\r\n\"KW\",\r\n\"LB\",\r\n\"OM\",\r\n\"QA\",\r\n\"SA\",\r\n\"SY\",\r\n\"TR\",\r\n\"YE\",\r\n\"AF\",\r\n\"BD\",\r\n\"BT\",\r\n\"IN\",\r\n\"IO\",\r\n\"LK\",\r\n\"MV\",\r\n\"NP\",\r\n\"PK\",\r\n\"CN\",\r\n\"HK\",\r\n\"JP\",\r\n\"KP\",\r\n\"KR\",\r\n\"MO\",\r\n\"TW\",\r\n\"MN\",\r\n\"BN\",\r\n\"CC\",\r\n\"CX\",\r\n\"ID\",\r\n\"KH\",\r\n\"LA\",\r\n\"MM\",\r\n\"MY\",\r\n\"PH\",\r\n\"SG\",\r\n\"TH\",\r\n\"TP\",\r\n\"VN\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
-INSERT INTO jms_condition VALUES(74, 86, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"BZ\",\r\n\"CR\",\r\n\"GT\",\r\n\"HN\",\r\n\"MX\",\r\n\"NI\",\r\n\"PA\",\r\n\"SV\",\r\n\"AG\",\r\n\"AI\",\r\n\"AN\",\r\n\"AW\",\r\n\"BB\",\r\n\"BM\",\r\n\"BS\",\r\n\"CU\",\r\n\"DM\",\r\n\"DO\",\r\n\"GD\",\r\n\"GP\",\r\n\"HT\",\r\n\"JM\",\r\n\"KN\",\r\n\"KY\",\r\n\"LC\",\r\n\"MQ\",\r\n\"MS\",\r\n\"PR\",\r\n\"TC\",\r\n\"TT\",\r\n\"VC\",\r\n\"VG\",\r\n\"VI\",\r\n\"AR\",\r\n\"BO\",\r\n\"BR\",\r\n\"CL\",\r\n\"CO\",\r\n\"EC\",\r\n\"FK\",\r\n\"GF\",\r\n\"GY\",\r\n\"PE\",\r\n\"PY\",\r\n\"SR\",\r\n\"UY\",\r\n\"VE\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
-INSERT INTO jms_condition VALUES(75, 87, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"BE\",\r\n\"DE\",\r\n\"FR\",\r\n\"FX\",\r\n\"GB\",\r\n\"IE\",\r\n\"LU\",\r\n\"MC\",\r\n\"NL\",\r\n\"IT\",\r\n\"MT\",\r\n\"SM\",\r\n\"VA\",\r\n\"AD\",\r\n\"ES\",\r\n\"GI\",\r\n\"PT\",\r\n\"BY\",\r\n\"EE\",\r\n\"LT\",\r\n\"LV\",\r\n\"MD\",\r\n\"PL\",\r\n\"UA\",\r\n\"AL\",\r\n\"BA\",\r\n\"BG\",\r\n\"GR\",\r\n\"HR\",\r\n\"MK\",\r\n\"RO\",\r\n\"SI\",\r\n\"YU\",\r\n\"RU\",\r\n\"AT\",\r\n\"CH\",\r\n\"CZ\",\r\n\"HU\",\r\n\"LI\",\r\n\"SK\",\r\n\"DK\",\r\n\"FI\",\r\n\"FO\",\r\n\"IS\",\r\n\"NO\",\r\n\"SE\",\r\n\"SJ\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
-INSERT INTO jms_condition VALUES(76, 88, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"BI\",\r\n\"CF\",\r\n\"CG\",\r\n\"RW\",\r\n\"TD\",\r\n\"ZR\",\r\n\"DJ\",\r\n\"ER\",\r\n\"ET\",\r\n\"KE\",\r\n\"SO\",\r\n\"TZ\",\r\n\"UG\",\r\n\"KM\",\r\n\"MG\",\r\n\"MU\",\r\n\"RE\",\r\n\"SC\",\r\n\"YT\",\r\n\"AO\",\r\n\"BW\",\r\n\"LS\",\r\n\"MW\",\r\n\"MZ\",\r\n\"NA\",\r\n\"SZ\",\r\n\"ZA\",\r\n\"ZM\",\r\n\"ZW\",\r\n\"BF\",\r\n\"BJ\",\r\n\"CI\",\r\n\"CM\",\r\n\"CV\",\r\n\"GA\",\r\n\"GH\",\r\n\"GM\",\r\n\"GN\",\r\n\"GQ\",\r\n\"GW\",\r\n\"LR\",\r\n\"ML\",\r\n\"MR\",\r\n\"NE\",\r\n\"NG\",\r\n\"SL\",\r\n\"SN\",\r\n\"ST\",\r\n\"TG\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
-INSERT INTO jms_condition VALUES(77, 89, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"DZ\",\r\n\"EG\",\r\n\"EH\",\r\n\"LY\",\r\n\"MA\",\r\n\"SD\",\r\n\"TN\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
+INSERT INTO jms_condition VALUES(65, 65, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '1', '1', 'hook', 'actionObjectCustomerThreadAddAfter', 1, '2019-09-11 22:57:37', '2019-09-13 03:25:25');
+INSERT INTO jms_condition VALUES(66, 66, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '10', '1', 'hook', 'actionObjectCustomerThreadAddAfter', 0, '2019-09-11 22:57:37', '2019-09-13 04:26:40');
+INSERT INTO jms_condition VALUES(67, 67, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '100', '1', 'hook', 'actionObjectCustomerThreadAddAfter', 0, '2019-09-11 22:57:37', '2019-09-13 04:26:40');
+INSERT INTO jms_condition VALUES(68, 68, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '1000', '1', 'time', '2', 0, '2019-09-11 22:57:37', '2019-09-13 04:26:40');
+INSERT INTO jms_condition VALUES(69, 69, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '10000', '1', 'time', '4', 0, '2019-09-11 22:57:37', '2019-09-13 04:26:40');
+INSERT INTO jms_condition VALUES(70, 70, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '100000', '1', 'time', '8', 0, '2019-09-11 22:57:37', '2019-09-13 04:26:40');
+INSERT INTO jms_condition VALUES(71, 76, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"CA\",\r\n\"GL\",\r\n\"PM\",\r\n\"US\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-09-11 22:57:37', '2019-09-13 03:27:48');
+INSERT INTO jms_condition VALUES(72, 79, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"UM\",\r\n\"AS\",\r\n\"AU\",\r\n\"CK\",\r\n\"FJ\",\r\n\"FM\",\r\n\"GU\",\r\n\"KI\",\r\n\"MH,\"\r\n\"MP\",\r\n\"NC\",\r\n\"NF\",\r\n\"NR\",\r\n\"NU\",\r\n\"NZ\",\r\n\"PF\",\r\n\"PG\",\r\n\"PN\",\r\n\"PW\",\r\n\"SB\",\r\n\"TK\",\r\n\"TO\",\r\n\"TV\",\r\n\"VU\",\r\n\"WF\",\r\n\"WS\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-09-11 22:57:37', '2019-09-13 03:27:48');
+INSERT INTO jms_condition VALUES(73, 85, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"KG\",\r\n\"KZ\",\r\n\"TJ\",\r\n\"TM\",\r\n\"UZ\",\r\n\"AE\",\r\n\"AM\",\r\n\"AZ\",\r\n\"BH\",\r\n\"CY\",\r\n\"GE\",\r\n\"IL\",\r\n\"IQ\",\r\n\"IR\",\r\n\"JO\",\r\n\"KW\",\r\n\"LB\",\r\n\"OM\",\r\n\"QA\",\r\n\"SA\",\r\n\"SY\",\r\n\"TR\",\r\n\"YE\",\r\n\"AF\",\r\n\"BD\",\r\n\"BT\",\r\n\"IN\",\r\n\"IO\",\r\n\"LK\",\r\n\"MV\",\r\n\"NP\",\r\n\"PK\",\r\n\"CN\",\r\n\"HK\",\r\n\"JP\",\r\n\"KP\",\r\n\"KR\",\r\n\"MO\",\r\n\"TW\",\r\n\"MN\",\r\n\"BN\",\r\n\"CC\",\r\n\"CX\",\r\n\"ID\",\r\n\"KH\",\r\n\"LA\",\r\n\"MM\",\r\n\"MY\",\r\n\"PH\",\r\n\"SG\",\r\n\"TH\",\r\n\"TP\",\r\n\"VN\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-09-11 22:57:37', '2019-09-13 03:27:48');
+INSERT INTO jms_condition VALUES(74, 86, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"BZ\",\r\n\"CR\",\r\n\"GT\",\r\n\"HN\",\r\n\"MX\",\r\n\"NI\",\r\n\"PA\",\r\n\"SV\",\r\n\"AG\",\r\n\"AI\",\r\n\"AN\",\r\n\"AW\",\r\n\"BB\",\r\n\"BM\",\r\n\"BS\",\r\n\"CU\",\r\n\"DM\",\r\n\"DO\",\r\n\"GD\",\r\n\"GP\",\r\n\"HT\",\r\n\"JM\",\r\n\"KN\",\r\n\"KY\",\r\n\"LC\",\r\n\"MQ\",\r\n\"MS\",\r\n\"PR\",\r\n\"TC\",\r\n\"TT\",\r\n\"VC\",\r\n\"VG\",\r\n\"VI\",\r\n\"AR\",\r\n\"BO\",\r\n\"BR\",\r\n\"CL\",\r\n\"CO\",\r\n\"EC\",\r\n\"FK\",\r\n\"GF\",\r\n\"GY\",\r\n\"PE\",\r\n\"PY\",\r\n\"SR\",\r\n\"UY\",\r\n\"VE\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-09-11 22:57:37', '2019-09-13 03:27:48');
+INSERT INTO jms_condition VALUES(75, 87, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"BE\",\r\n\"DE\",\r\n\"FR\",\r\n\"FX\",\r\n\"GB\",\r\n\"IE\",\r\n\"LU\",\r\n\"MC\",\r\n\"NL\",\r\n\"IT\",\r\n\"MT\",\r\n\"SM\",\r\n\"VA\",\r\n\"AD\",\r\n\"ES\",\r\n\"GI\",\r\n\"PT\",\r\n\"BY\",\r\n\"EE\",\r\n\"LT\",\r\n\"LV\",\r\n\"MD\",\r\n\"PL\",\r\n\"UA\",\r\n\"AL\",\r\n\"BA\",\r\n\"BG\",\r\n\"GR\",\r\n\"HR\",\r\n\"MK\",\r\n\"RO\",\r\n\"SI\",\r\n\"YU\",\r\n\"RU\",\r\n\"AT\",\r\n\"CH\",\r\n\"CZ\",\r\n\"HU\",\r\n\"LI\",\r\n\"SK\",\r\n\"DK\",\r\n\"FI\",\r\n\"FO\",\r\n\"IS\",\r\n\"NO\",\r\n\"SE\",\r\n\"SJ\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-09-11 22:57:37', '2019-09-13 03:27:48');
+INSERT INTO jms_condition VALUES(76, 88, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"BI\",\r\n\"CF\",\r\n\"CG\",\r\n\"RW\",\r\n\"TD\",\r\n\"ZR\",\r\n\"DJ\",\r\n\"ER\",\r\n\"ET\",\r\n\"KE\",\r\n\"SO\",\r\n\"TZ\",\r\n\"UG\",\r\n\"KM\",\r\n\"MG\",\r\n\"MU\",\r\n\"RE\",\r\n\"SC\",\r\n\"YT\",\r\n\"AO\",\r\n\"BW\",\r\n\"LS\",\r\n\"MW\",\r\n\"MZ\",\r\n\"NA\",\r\n\"SZ\",\r\n\"ZA\",\r\n\"ZM\",\r\n\"ZW\",\r\n\"BF\",\r\n\"BJ\",\r\n\"CI\",\r\n\"CM\",\r\n\"CV\",\r\n\"GA\",\r\n\"GH\",\r\n\"GM\",\r\n\"GN\",\r\n\"GQ\",\r\n\"GW\",\r\n\"LR\",\r\n\"ML\",\r\n\"MR\",\r\n\"NE\",\r\n\"NG\",\r\n\"SL\",\r\n\"SN\",\r\n\"ST\",\r\n\"TG\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-09-11 22:57:37', '2019-09-13 03:27:48');
+INSERT INTO jms_condition VALUES(77, 89, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"DZ\",\r\n\"EG\",\r\n\"EH\",\r\n\"LY\",\r\n\"MA\",\r\n\"SD\",\r\n\"TN\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-09-11 22:57:37', '2019-09-13 03:27:48');
 INSERT INTO jms_condition VALUES(78, 90, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '2', '', 'hook', 'actionObjectEmployeeAddAfter', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
 INSERT INTO jms_condition VALUES(79, 91, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '3', '', 'hook', 'actionObjectEmployeeAddAfter', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
 INSERT INTO jms_condition VALUES(80, 92, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '5', '', 'hook', 'actionObjectEmployeeAddAfter', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
@@ -4953,7 +4961,7 @@ INSERT INTO jms_condition VALUES(83, 95, 'sql', 'SELECT COUNT(*) FROM PREFIX_emp
 INSERT INTO jms_condition VALUES(84, 96, 'sql', 'SELECT id_image FROM PREFIX_image WHERE id_image > 26', '>', '0', '27', 'hook', 'actionObjectImageAddAfter', 1, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
 INSERT INTO jms_condition VALUES(85, 97, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '50', '50', 'hook', 'actionObjectImageAddAfter', 1, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
 INSERT INTO jms_condition VALUES(86, 98, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '100', '100', 'hook', 'actionObjectImageAddAfter', 1, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
-INSERT INTO jms_condition VALUES(87, 99, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '1000', '186', 'time', '2', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
+INSERT INTO jms_condition VALUES(87, 99, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '1000', '186', 'time', '2', 0, '2019-09-11 22:57:37', '2019-09-12 21:41:12');
 INSERT INTO jms_condition VALUES(88, 100, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '10000', '186', 'time', '4', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
 INSERT INTO jms_condition VALUES(89, 101, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '50000', '112', 'time', '8', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
 INSERT INTO jms_condition VALUES(90, 102, 'sql', 'SELECT id_cms FROM PREFIX_cms WHERE id_cms > 5', '>', '0', '', 'hook', 'actionObjectCMSAddAfter', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
@@ -4964,11 +4972,11 @@ INSERT INTO jms_condition VALUES(94, 106, 'sql', 'SELECT COUNT(*) FROM PREFIX_ca
 INSERT INTO jms_condition VALUES(95, 107, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '500', '', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
 INSERT INTO jms_condition VALUES(96, 108, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '5000', '', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
 INSERT INTO jms_condition VALUES(97, 109, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '1', '', 'hook', 'newOrder', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
-INSERT INTO jms_condition VALUES(98, 110, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '10', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-09-11 22:57:37', '2019-09-11 22:57:37');
-INSERT INTO jms_condition VALUES(99, 111, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '100', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
-INSERT INTO jms_condition VALUES(100, 112, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '10000', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
-INSERT INTO jms_condition VALUES(101, 113, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '1000', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
-INSERT INTO jms_condition VALUES(102, 114, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '5000', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
+INSERT INTO jms_condition VALUES(98, 110, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '10', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-09-11 22:57:37', '2019-09-13 03:27:48');
+INSERT INTO jms_condition VALUES(99, 111, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '100', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-09-11 22:57:38', '2019-09-13 03:27:48');
+INSERT INTO jms_condition VALUES(100, 112, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '10000', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-09-11 22:57:38', '2019-09-13 03:27:48');
+INSERT INTO jms_condition VALUES(101, 113, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '1000', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-09-11 22:57:38', '2019-09-13 03:27:48');
+INSERT INTO jms_condition VALUES(102, 114, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '5000', '0', 'hook', 'actionOrderStatusUpdate', 0, '2019-09-11 22:57:38', '2019-09-13 03:27:48');
 INSERT INTO jms_condition VALUES(103, 132, 'sql', 'SELECT count(id_configuration) FROM PREFIX_configuration WHERE `name` = \'PS_SHOP_DOMAIN\' AND value IN (\'127.0.0.1\', \'localhost\' )', '==', '1', '', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
 INSERT INTO jms_condition VALUES(104, 136, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%ebay%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
 INSERT INTO jms_condition VALUES(105, 140, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%moneybookers%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
@@ -4986,128 +4994,128 @@ INSERT INTO jms_condition VALUES(116, 172, 'sql', 'SELECT COUNT(*) FROM PREFIX_w
 INSERT INTO jms_condition VALUES(117, 173, 'sql', 'SELECT COUNT(*) FROM PREFIX_webservice_account', '>=', '3', '', 'hook', 'actionAdminWebserviceControllerSaveAfter', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
 INSERT INTO jms_condition VALUES(118, 174, 'sql', 'SELECT COUNT(*) FROM PREFIX_webservice_account', '>=', '4', '', 'hook', 'actionAdminWebserviceControllerSaveAfter', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
 INSERT INTO jms_condition VALUES(119, 175, 'sql', 'SELECT count(*) FROM	 PREFIX_configuration WHERE name = \'PS_HOSTED_MODE\'', '==', '0', '', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
-INSERT INTO jms_condition VALUES(120, 209, 'configuration', 'EBAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-12 00:39:26');
+INSERT INTO jms_condition VALUES(120, 209, 'configuration', 'EBAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-13 00:08:16');
 INSERT INTO jms_condition VALUES(121, 320, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%shopgate%\" ', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
-INSERT INTO jms_condition VALUES(122, 322, 'configuration', 'SHOPGATE_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-12 00:39:26');
+INSERT INTO jms_condition VALUES(122, 322, 'configuration', 'SHOPGATE_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-13 00:08:16');
 INSERT INTO jms_condition VALUES(123, 323, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%shoppingfluxexport%\" ', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
 INSERT INTO jms_condition VALUES(124, 324, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%shoppingfluxexport%\" ', '==', '0', '', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
-INSERT INTO jms_condition VALUES(125, 325, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE name LIKE \'SHOPPINGFLUXEXPORT_CONFIGURATION_OK\' OR name LIKE \'SHOPPINGFLUXEXPORT_CONFIGURED\'', '>=', '1', '0', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-12 00:39:26');
-INSERT INTO jms_condition VALUES(126, 326, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'MONEYBOOKERS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'MB_PAY_TO_EMAIL \') AND ( value != \'testaccount2@moneybookers.com \'))', '==', '2', '0', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-12 00:39:26');
-INSERT INTO jms_condition VALUES(127, 358, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ebay%\" AND os.logable = 1', '>=', '1', '0', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-12 00:39:26');
-INSERT INTO jms_condition VALUES(128, 359, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ebay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-12 00:39:26');
-INSERT INTO jms_condition VALUES(129, 375, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%shopgate%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '1', '0', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-12 00:39:26');
-INSERT INTO jms_condition VALUES(130, 376, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%shopgate%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-12 00:39:26');
-INSERT INTO jms_condition VALUES(131, 377, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%moneybookers%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '1', '0', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-12 00:39:26');
-INSERT INTO jms_condition VALUES(132, 394, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%sofortbanking%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-12 00:39:26');
+INSERT INTO jms_condition VALUES(125, 325, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE name LIKE \'SHOPPINGFLUXEXPORT_CONFIGURATION_OK\' OR name LIKE \'SHOPPINGFLUXEXPORT_CONFIGURED\'', '>=', '1', '0', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-13 00:08:16');
+INSERT INTO jms_condition VALUES(126, 326, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'MONEYBOOKERS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'MB_PAY_TO_EMAIL \') AND ( value != \'testaccount2@moneybookers.com \'))', '==', '2', '0', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-13 00:08:16');
+INSERT INTO jms_condition VALUES(127, 358, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ebay%\" AND os.logable = 1', '>=', '1', '0', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-13 00:08:16');
+INSERT INTO jms_condition VALUES(128, 359, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ebay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-13 00:08:16');
+INSERT INTO jms_condition VALUES(129, 375, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%shopgate%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '1', '0', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-13 00:08:16');
+INSERT INTO jms_condition VALUES(130, 376, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%shopgate%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-13 00:08:16');
+INSERT INTO jms_condition VALUES(131, 377, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%moneybookers%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '1', '0', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-13 00:08:16');
+INSERT INTO jms_condition VALUES(132, 394, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%sofortbanking%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-13 00:08:16');
 INSERT INTO jms_condition VALUES(133, 399, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '499', '', 'hook', 'actionObjectProductAddAfter', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
 INSERT INTO jms_condition VALUES(134, 424, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%alliance3%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
-INSERT INTO jms_condition VALUES(135, 425, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ALLIANCE3_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'ALLIANCE_DEMO\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-12 00:39:26');
-INSERT INTO jms_condition VALUES(136, 426, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%alliance3%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
+INSERT INTO jms_condition VALUES(135, 425, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ALLIANCE3_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'ALLIANCE_DEMO\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-13 00:08:16');
+INSERT INTO jms_condition VALUES(136, 426, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%alliance3%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-11 22:57:38', '2019-09-12 21:41:12');
 INSERT INTO jms_condition VALUES(137, 427, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%alliance3%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
 INSERT INTO jms_condition VALUES(138, 428, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%authorizeaim%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
-INSERT INTO jms_condition VALUES(139, 429, 'configuration', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'AUTHORIZEAIM_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'AUTHORIZE_AIM_SANDBOX\') AND ( value = \'0\'))', '==', '2', '', 'time', '2', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
-INSERT INTO jms_condition VALUES(140, 430, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%authorizeaim%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
+INSERT INTO jms_condition VALUES(139, 429, 'configuration', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'AUTHORIZEAIM_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'AUTHORIZE_AIM_SANDBOX\') AND ( value = \'0\'))', '==', '2', '', 'time', '2', 0, '2019-09-11 22:57:38', '2019-09-12 21:41:12');
+INSERT INTO jms_condition VALUES(140, 430, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%authorizeaim%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-11 22:57:38', '2019-09-12 21:41:12');
 INSERT INTO jms_condition VALUES(141, 431, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%authorizeaim%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
 INSERT INTO jms_condition VALUES(142, 434, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%bluepay%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
-INSERT INTO jms_condition VALUES(143, 435, 'configuration', 'BLUEPAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-12 00:39:26');
-INSERT INTO jms_condition VALUES(144, 436, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluepay%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
+INSERT INTO jms_condition VALUES(143, 435, 'configuration', 'BLUEPAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-13 00:08:16');
+INSERT INTO jms_condition VALUES(144, 436, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluepay%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-11 22:57:38', '2019-09-12 21:41:12');
 INSERT INTO jms_condition VALUES(145, 437, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluepay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
 INSERT INTO jms_condition VALUES(146, 438, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%payplug%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
-INSERT INTO jms_condition VALUES(147, 439, 'configuration', 'PAYPLUG_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-12 00:39:26');
-INSERT INTO jms_condition VALUES(148, 440, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payplug%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
+INSERT INTO jms_condition VALUES(147, 439, 'configuration', 'PAYPLUG_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-13 00:08:16');
+INSERT INTO jms_condition VALUES(148, 440, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payplug%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-11 22:57:38', '2019-09-12 21:41:12');
 INSERT INTO jms_condition VALUES(149, 441, 'sql', 'SELECT SUM(o.total_paid) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payplug%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '10000', '0', 'time', '7', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
 INSERT INTO jms_condition VALUES(150, 442, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%affinityitems%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
-INSERT INTO jms_condition VALUES(151, 443, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE name LIKE \'AFFINITYITEMS_CONFIGURATION_OK\' AND value = \'1\'', '==', '1', '0', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-12 00:39:26');
+INSERT INTO jms_condition VALUES(151, 443, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE name LIKE \'AFFINITYITEMS_CONFIGURATION_OK\' AND value = \'1\'', '==', '1', '0', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-13 00:08:16');
 INSERT INTO jms_condition VALUES(152, 446, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%dpdpoland%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
-INSERT INTO jms_condition VALUES(153, 447, 'configuration', 'DPDPOLAND_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-12 00:39:26');
-INSERT INTO jms_condition VALUES(154, 448, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%dpdpoland%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
+INSERT INTO jms_condition VALUES(153, 447, 'configuration', 'DPDPOLAND_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-13 00:08:16');
+INSERT INTO jms_condition VALUES(154, 448, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%dpdpoland%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-11 22:57:38', '2019-09-12 21:41:12');
 INSERT INTO jms_condition VALUES(155, 449, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%dpdpoland%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '100', '0', 'time', '7', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
 INSERT INTO jms_condition VALUES(156, 450, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%envoimoinscher%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
-INSERT INTO jms_condition VALUES(157, 451, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ENVOIMOINSCHER_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'EMC_ENV \') AND ( value != \'TEST\'))', '==', '2', '0', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-12 00:39:26');
-INSERT INTO jms_condition VALUES(158, 452, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%envoimoinscher%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
+INSERT INTO jms_condition VALUES(157, 451, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ENVOIMOINSCHER_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'EMC_ENV \') AND ( value != \'TEST\'))', '==', '2', '0', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-13 00:08:16');
+INSERT INTO jms_condition VALUES(158, 452, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%envoimoinscher%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-11 22:57:38', '2019-09-12 21:41:12');
 INSERT INTO jms_condition VALUES(159, 453, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%envoimoinscher%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '100', '0', 'time', '7', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
 INSERT INTO jms_condition VALUES(160, 454, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%klikandpay%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
-INSERT INTO jms_condition VALUES(161, 455, 'configuration', 'KLIKANDPAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-12 00:39:26');
-INSERT INTO jms_condition VALUES(162, 456, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%klikandpay%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
+INSERT INTO jms_condition VALUES(161, 455, 'configuration', 'KLIKANDPAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-13 00:08:16');
+INSERT INTO jms_condition VALUES(162, 456, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%klikandpay%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-11 22:57:38', '2019-09-12 21:41:12');
 INSERT INTO jms_condition VALUES(163, 457, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%klikandpay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
 INSERT INTO jms_condition VALUES(164, 458, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%clickline%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
-INSERT INTO jms_condition VALUES(165, 459, 'configuration', 'CLICKLINE_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-12 00:39:26');
-INSERT INTO jms_condition VALUES(166, 460, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%clickline%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
+INSERT INTO jms_condition VALUES(165, 459, 'configuration', 'CLICKLINE_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-13 00:08:16');
+INSERT INTO jms_condition VALUES(166, 460, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%clickline%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-11 22:57:38', '2019-09-12 21:41:12');
 INSERT INTO jms_condition VALUES(167, 461, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%clickline%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '100', '0', 'time', '7', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
 INSERT INTO jms_condition VALUES(168, 462, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%cdiscount%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
 INSERT INTO jms_condition VALUES(169, 463, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
-INSERT INTO jms_condition VALUES(170, 464, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%cdiscount%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
+INSERT INTO jms_condition VALUES(170, 464, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%cdiscount%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-11 22:57:38', '2019-09-12 21:41:12');
 INSERT INTO jms_condition VALUES(171, 465, 'sql', 'SELECT SUM(o.total_paid) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%cdiscount%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 365 DAY)', '>=', '500', '0', 'time', '7', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
 INSERT INTO jms_condition VALUES(172, 467, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%erpillicopresta%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
-INSERT INTO jms_condition VALUES(173, 468, 'configuration', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ERPILLICOPRESTA_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'ERP_LICENCE_VALIDITY \') AND ( value == \'1\')) OR (( name LIKE \'ERP_MONTH_FREE_ACTIVE \') AND ( value == \'0\'))', '==', '3', '', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-12 00:39:26');
+INSERT INTO jms_condition VALUES(173, 468, 'configuration', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ERPILLICOPRESTA_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'ERP_LICENCE_VALIDITY \') AND ( value == \'1\')) OR (( name LIKE \'ERP_MONTH_FREE_ACTIVE \') AND ( value == \'0\'))', '==', '3', '', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-13 00:08:16');
 INSERT INTO jms_condition VALUES(174, 469, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
 INSERT INTO jms_condition VALUES(175, 470, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
 INSERT INTO jms_condition VALUES(176, 471, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%netreviews%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
-INSERT INTO jms_condition VALUES(177, 472, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'NETREVIEWS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'AVISVERIFIES_URLCERTIFICAT \') AND ( value IS NOT LIKE \'%preprod%\'))', '==', '2', '0', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-12 00:39:26');
+INSERT INTO jms_condition VALUES(177, 472, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'NETREVIEWS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'AVISVERIFIES_URLCERTIFICAT \') AND ( value IS NOT LIKE \'%preprod%\'))', '==', '2', '0', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-13 00:08:16');
 INSERT INTO jms_condition VALUES(178, 473, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
 INSERT INTO jms_condition VALUES(179, 474, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
 INSERT INTO jms_condition VALUES(180, 475, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%bluesnap%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
-INSERT INTO jms_condition VALUES(181, 476, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'BLUESNAP_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'BLUESNAP_SANDBOX \') AND ( value NOT LIKE \'%sandbox%\'))', '==', '2', '0', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-12 00:39:26');
-INSERT INTO jms_condition VALUES(182, 477, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluesnap%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
+INSERT INTO jms_condition VALUES(181, 476, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'BLUESNAP_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'BLUESNAP_SANDBOX \') AND ( value NOT LIKE \'%sandbox%\'))', '==', '2', '0', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-13 00:08:16');
+INSERT INTO jms_condition VALUES(182, 477, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluesnap%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-11 22:57:38', '2019-09-12 21:41:12');
 INSERT INTO jms_condition VALUES(183, 478, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluesnap%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
 INSERT INTO jms_condition VALUES(184, 479, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%desjardins%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
-INSERT INTO jms_condition VALUES(185, 480, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'DESJARDINS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'DESJARDINS_MODE \') AND ( value NOT LIKE \'%test%\'))', '==', '2', '0', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-12 00:39:26');
-INSERT INTO jms_condition VALUES(186, 481, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%desjardins%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
+INSERT INTO jms_condition VALUES(185, 480, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'DESJARDINS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'DESJARDINS_MODE \') AND ( value NOT LIKE \'%test%\'))', '==', '2', '0', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-13 00:08:16');
+INSERT INTO jms_condition VALUES(186, 481, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%desjardins%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-11 22:57:38', '2019-09-12 21:41:12');
 INSERT INTO jms_condition VALUES(187, 482, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%desjardins%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
 INSERT INTO jms_condition VALUES(188, 483, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%firstdata%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
-INSERT INTO jms_condition VALUES(189, 484, 'configuration', 'FIRSTDATA_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-12 00:39:26');
-INSERT INTO jms_condition VALUES(190, 485, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%firstdata%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
+INSERT INTO jms_condition VALUES(189, 484, 'configuration', 'FIRSTDATA_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-13 00:08:16');
+INSERT INTO jms_condition VALUES(190, 485, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%firstdata%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-11 22:57:38', '2019-09-12 21:41:12');
 INSERT INTO jms_condition VALUES(191, 486, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%firstdata%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
 INSERT INTO jms_condition VALUES(192, 487, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%giveit%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
-INSERT INTO jms_condition VALUES(193, 488, 'sql', 'GIVEIT_CONFIGURATION_OK', '>=', '1', '0', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-12 00:39:26');
+INSERT INTO jms_condition VALUES(193, 488, 'sql', 'GIVEIT_CONFIGURATION_OK', '>=', '1', '0', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-13 00:08:16');
 INSERT INTO jms_condition VALUES(194, 489, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
 INSERT INTO jms_condition VALUES(195, 490, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
 INSERT INTO jms_condition VALUES(196, 491, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%ganalytics%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
-INSERT INTO jms_condition VALUES(197, 492, 'configuration', 'GANALYTICS_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-12 00:39:26');
-INSERT INTO jms_condition VALUES(198, 493, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-12 00:39:26');
+INSERT INTO jms_condition VALUES(197, 492, 'configuration', 'GANALYTICS_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-13 00:08:16');
+INSERT INTO jms_condition VALUES(198, 493, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-13 00:08:16');
 INSERT INTO jms_condition VALUES(199, 494, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
 INSERT INTO jms_condition VALUES(200, 496, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%pagseguro%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
-INSERT INTO jms_condition VALUES(201, 497, 'configuration', 'PAGSEGURO_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-12 00:39:26');
-INSERT INTO jms_condition VALUES(202, 498, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%pagseguro%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
+INSERT INTO jms_condition VALUES(201, 497, 'configuration', 'PAGSEGURO_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-13 00:08:16');
+INSERT INTO jms_condition VALUES(202, 498, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%pagseguro%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-11 22:57:38', '2019-09-12 21:41:12');
 INSERT INTO jms_condition VALUES(203, 499, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%pagseguro%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
 INSERT INTO jms_condition VALUES(204, 500, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypalmx%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
-INSERT INTO jms_condition VALUES(205, 501, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPALMX_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_MX_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-12 00:39:26');
-INSERT INTO jms_condition VALUES(206, 502, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
+INSERT INTO jms_condition VALUES(205, 501, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPALMX_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_MX_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-13 00:08:16');
+INSERT INTO jms_condition VALUES(206, 502, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-11 22:57:38', '2019-09-12 21:41:12');
 INSERT INTO jms_condition VALUES(207, 503, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
 INSERT INTO jms_condition VALUES(208, 505, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypalusa%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
-INSERT INTO jms_condition VALUES(209, 506, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPALUSA_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_USA_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-12 00:39:26');
-INSERT INTO jms_condition VALUES(210, 507, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalusa%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
+INSERT INTO jms_condition VALUES(209, 506, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPALUSA_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_USA_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-13 00:08:16');
+INSERT INTO jms_condition VALUES(210, 507, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalusa%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-11 22:57:38', '2019-09-12 21:41:12');
 INSERT INTO jms_condition VALUES(211, 508, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
 INSERT INTO jms_condition VALUES(212, 509, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%payulatam%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
-INSERT INTO jms_condition VALUES(213, 510, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYULATAM_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYU_LATAM_TEST\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-12 00:39:26');
-INSERT INTO jms_condition VALUES(214, 511, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payulatam%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
+INSERT INTO jms_condition VALUES(213, 510, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYULATAM_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYU_LATAM_TEST\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-13 00:08:16');
+INSERT INTO jms_condition VALUES(214, 511, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payulatam%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-11 22:57:38', '2019-09-12 21:41:12');
 INSERT INTO jms_condition VALUES(215, 512, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payulatam%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
 INSERT INTO jms_condition VALUES(216, 513, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%prestastats%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
-INSERT INTO jms_condition VALUES(217, 514, 'configuration', 'PRESTASTATS_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-12 00:39:26');
+INSERT INTO jms_condition VALUES(217, 514, 'configuration', 'PRESTASTATS_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-13 00:08:16');
 INSERT INTO jms_condition VALUES(218, 515, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
 INSERT INTO jms_condition VALUES(219, 516, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
 INSERT INTO jms_condition VALUES(220, 517, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%riskified%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
-INSERT INTO jms_condition VALUES(221, 518, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'RISKIFIED_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'RISKIFIED_MODE\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-12 00:39:26');
-INSERT INTO jms_condition VALUES(222, 519, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%riskified%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
+INSERT INTO jms_condition VALUES(221, 518, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'RISKIFIED_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'RISKIFIED_MODE\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-13 00:08:16');
+INSERT INTO jms_condition VALUES(222, 519, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%riskified%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-11 22:57:38', '2019-09-12 21:41:12');
 INSERT INTO jms_condition VALUES(223, 520, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%riskified%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
 INSERT INTO jms_condition VALUES(224, 521, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%simplifycommerce%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
-INSERT INTO jms_condition VALUES(225, 522, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'SIMPLIFY_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'SIMPLIFY_MODE\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-12 00:39:26');
-INSERT INTO jms_condition VALUES(226, 523, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%simplifycommerce%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
+INSERT INTO jms_condition VALUES(225, 522, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'SIMPLIFY_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'SIMPLIFY_MODE\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-13 00:08:16');
+INSERT INTO jms_condition VALUES(226, 523, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%simplifycommerce%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-11 22:57:38', '2019-09-12 21:41:12');
 INSERT INTO jms_condition VALUES(227, 524, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%simplifycommerce%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
 INSERT INTO jms_condition VALUES(228, 525, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%vtpayment%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
-INSERT INTO jms_condition VALUES(229, 526, 'configuration', 'VTPAYMENT_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-12 00:39:26');
-INSERT INTO jms_condition VALUES(230, 527, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%vtpayment%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
+INSERT INTO jms_condition VALUES(229, 526, 'configuration', 'VTPAYMENT_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-13 00:08:16');
+INSERT INTO jms_condition VALUES(230, 527, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%vtpayment%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-11 22:57:38', '2019-09-12 21:41:12');
 INSERT INTO jms_condition VALUES(231, 528, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%vtpayment%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
 INSERT INTO jms_condition VALUES(232, 529, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%yotpo%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
-INSERT INTO jms_condition VALUES(233, 530, 'configuration', 'YOTPO_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-12 00:39:26');
+INSERT INTO jms_condition VALUES(233, 530, 'configuration', 'YOTPO_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-13 00:08:16');
 INSERT INTO jms_condition VALUES(234, 531, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
 INSERT INTO jms_condition VALUES(235, 532, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
 INSERT INTO jms_condition VALUES(236, 533, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%yotpo%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
-INSERT INTO jms_condition VALUES(237, 534, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'YOUSTICERESOLUTIONSYSTEM_CONF_OK\') AND ( value = \'1\')) OR (( name LIKE \'YRS_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-12 00:39:26');
+INSERT INTO jms_condition VALUES(237, 534, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'YOUSTICERESOLUTIONSYSTEM_CONF_OK\') AND ( value = \'1\')) OR (( name LIKE \'YRS_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-13 00:08:16');
 INSERT INTO jms_condition VALUES(238, 535, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
 INSERT INTO jms_condition VALUES(239, 536, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
 INSERT INTO jms_condition VALUES(240, 537, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%loyaltylion%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
-INSERT INTO jms_condition VALUES(241, 538, 'configuration', 'LOYALTYLION_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-12 00:39:26');
+INSERT INTO jms_condition VALUES(241, 538, 'configuration', 'LOYALTYLION_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-13 00:08:16');
 INSERT INTO jms_condition VALUES(242, 539, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
 INSERT INTO jms_condition VALUES(243, 540, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
 INSERT INTO jms_condition VALUES(244, 542, 'sql', 'SELECT \'{config} PS_VERSION_DB{/config}\' >= \'1.7.0.0\' AND < \'1.8.0.0\'', '==', '1', '', 'time', '1', 0, '2019-09-11 22:57:38', '2019-09-11 22:57:38');
@@ -5115,7 +5123,7 @@ INSERT INTO jms_condition VALUES(244, 542, 'sql', 'SELECT \'{config} PS_VERSION_
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_condition_advice
+-- Cấu trúc bảng cho bảng jms_condition_advice
 --
 
 CREATE TABLE jms_condition_advice (
@@ -5125,7 +5133,7 @@ CREATE TABLE jms_condition_advice (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_condition_advice
+-- Đang đổ dữ liệu cho bảng jms_condition_advice
 --
 
 INSERT INTO jms_condition_advice VALUES(19, 1, 1);
@@ -5456,7 +5464,7 @@ INSERT INTO jms_condition_advice VALUES(106, 295, 0);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_condition_badge
+-- Cấu trúc bảng cho bảng jms_condition_badge
 --
 
 CREATE TABLE jms_condition_badge (
@@ -5465,7 +5473,7 @@ CREATE TABLE jms_condition_badge (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_condition_badge
+-- Đang đổ dữ liệu cho bảng jms_condition_badge
 --
 
 INSERT INTO jms_condition_badge VALUES(1, 125);
@@ -5708,7 +5716,7 @@ INSERT INTO jms_condition_badge VALUES(243, 124);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_configuration
+-- Cấu trúc bảng cho bảng jms_configuration
 --
 
 CREATE TABLE jms_configuration (
@@ -5722,7 +5730,7 @@ CREATE TABLE jms_configuration (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_configuration
+-- Đang đổ dữ liệu cho bảng jms_configuration
 --
 
 INSERT INTO jms_configuration VALUES(1, NULL, NULL, 'PS_LANG_DEFAULT', '1', '2019-07-24 04:52:54', '2019-07-24 04:52:54');
@@ -6058,8 +6066,8 @@ INSERT INTO jms_configuration VALUES(336, NULL, NULL, 'CONF_PS_WIREPAYMENT_FIXED
 INSERT INTO jms_configuration VALUES(337, NULL, NULL, 'CONF_PS_WIREPAYMENT_VAR_FOREIGN', '2', '2019-07-24 04:53:14', '2019-07-24 04:53:14');
 INSERT INTO jms_configuration VALUES(338, NULL, NULL, 'GF_INSTALL_CALC', '1', '2019-07-24 04:55:12', '2019-07-23 22:58:38');
 INSERT INTO jms_configuration VALUES(339, NULL, NULL, 'GF_CURRENT_LEVEL', '2', '2019-07-24 04:55:12', '2019-09-11 05:18:12');
-INSERT INTO jms_configuration VALUES(340, NULL, NULL, 'GF_CURRENT_LEVEL_PERCENT', '0', '2019-07-24 04:55:12', '2019-09-11 05:18:12');
-INSERT INTO jms_configuration VALUES(341, NULL, NULL, 'GF_NOTIFICATION', '0', '2019-07-24 04:55:12', '2019-09-11 23:06:18');
+INSERT INTO jms_configuration VALUES(340, NULL, NULL, 'GF_CURRENT_LEVEL_PERCENT', '5', '2019-07-24 04:55:12', '2019-09-13 04:26:40');
+INSERT INTO jms_configuration VALUES(341, NULL, NULL, 'GF_NOTIFICATION', '0', '2019-07-24 04:55:12', '2019-09-13 06:16:45');
 INSERT INTO jms_configuration VALUES(342, NULL, NULL, 'BLOCKREASSURANCE_NBBLOCKS', '5', '2019-07-24 04:55:27', '2019-07-24 04:55:27');
 INSERT INTO jms_configuration VALUES(343, NULL, NULL, 'PS_LAYERED_SHOW_QTIES', '1', '2019-07-24 04:56:02', '2019-07-24 04:56:02');
 INSERT INTO jms_configuration VALUES(344, NULL, NULL, 'PS_LAYERED_FULL_TREE', '1', '2019-07-24 04:56:02', '2019-07-24 04:56:02');
@@ -6067,7 +6075,7 @@ INSERT INTO jms_configuration VALUES(345, NULL, NULL, 'PS_LAYERED_FILTER_PRICE_U
 INSERT INTO jms_configuration VALUES(346, NULL, NULL, 'PS_LAYERED_FILTER_CATEGORY_DEPTH', '1', '2019-07-24 04:56:02', '2019-07-24 04:56:02');
 INSERT INTO jms_configuration VALUES(347, NULL, NULL, 'PS_LAYERED_FILTER_PRICE_ROUNDING', '1', '2019-07-24 04:56:02', '2019-07-24 04:56:02');
 INSERT INTO jms_configuration VALUES(348, NULL, NULL, 'PS_LAYERED_INDEXED', '1', '2019-07-23 22:56:03', '2019-07-23 22:56:03');
-INSERT INTO jms_configuration VALUES(349, NULL, NULL, 'GF_NOT_VIEWED_BADGE', '170', '2019-07-23 22:58:38', '2019-09-11 05:18:12');
+INSERT INTO jms_configuration VALUES(349, NULL, NULL, 'GF_NOT_VIEWED_BADGE', '181', '2019-07-23 22:58:38', '2019-09-13 04:26:40');
 INSERT INTO jms_configuration VALUES(350, NULL, NULL, 'ONBOARDINGV2_SHUT_DOWN', '1', '2019-07-23 22:59:16', '2019-07-23 22:59:16');
 INSERT INTO jms_configuration VALUES(351, NULL, NULL, 'ONBOARDINGV2_CURRENT_STEP', '14', '2019-07-23 22:59:41', '2019-07-23 22:59:41');
 INSERT INTO jms_configuration VALUES(352, NULL, NULL, 'HOTDEAL_PRODUCT_SHOW', '2', '2019-07-23 23:01:23', '2019-07-23 23:01:23');
@@ -6095,7 +6103,7 @@ INSERT INTO jms_configuration VALUES(373, NULL, NULL, 'JMS_AJAXSEARCH_SHOW_DESC'
 INSERT INTO jms_configuration VALUES(374, NULL, NULL, 'JMS_AJAXSEARCH_DESC_COUNT', '100', '2019-07-23 23:01:25', '2019-07-23 23:01:25');
 INSERT INTO jms_configuration VALUES(375, NULL, NULL, 'JMS_AJAXSEARCH_SHOW_PRICE', '1', '2019-07-23 23:01:25', '2019-07-23 23:01:25');
 INSERT INTO jms_configuration VALUES(376, NULL, NULL, 'JMS_AJAXSEARCH_SHOW_IMAGE', '1', '2019-07-23 23:01:25', '2019-07-23 23:01:25');
-INSERT INTO jms_configuration VALUES(377, NULL, NULL, 'JMSMM_MOUSEEVENT', 'hover', '2019-07-23 23:01:25', '2019-09-05 21:57:23');
+INSERT INTO jms_configuration VALUES(377, NULL, NULL, 'JMSMM_MOUSEEVENT', 'hover', '2019-07-23 23:01:25', '2019-09-13 05:43:46');
 INSERT INTO jms_configuration VALUES(378, NULL, NULL, 'JMSMM_DURATION', '200', '2019-07-23 23:01:25', '2019-07-23 23:01:25');
 INSERT INTO jms_configuration VALUES(379, NULL, NULL, 'JMSMM_LOADBOOTSTRAPCSS', '0', '2019-07-23 23:01:25', '2019-07-23 23:01:25');
 INSERT INTO jms_configuration VALUES(380, NULL, NULL, 'JMS_SLIDER_DELAY', '1000', '2019-07-23 23:01:25', '2019-07-23 23:01:25');
@@ -6311,7 +6319,7 @@ INSERT INTO jms_configuration VALUES(588, NULL, NULL, 'JRB_CUSTOM_CSS', NULL, '2
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_configuration_kpi
+-- Cấu trúc bảng cho bảng jms_configuration_kpi
 --
 
 CREATE TABLE jms_configuration_kpi (
@@ -6325,7 +6333,7 @@ CREATE TABLE jms_configuration_kpi (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_configuration_kpi
+-- Đang đổ dữ liệu cho bảng jms_configuration_kpi
 --
 
 INSERT INTO jms_configuration_kpi VALUES(1, NULL, NULL, 'DASHGOALS_TRAFFIC_01_2019', '600', '2019-07-24 04:53:08', '2019-07-24 04:53:08');
@@ -6390,7 +6398,7 @@ INSERT INTO jms_configuration_kpi VALUES(58, NULL, NULL, 'AVG_ORDER_VALUE_EXPIRE
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_configuration_kpi_lang
+-- Cấu trúc bảng cho bảng jms_configuration_kpi_lang
 --
 
 CREATE TABLE jms_configuration_kpi_lang (
@@ -6401,7 +6409,7 @@ CREATE TABLE jms_configuration_kpi_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_configuration_kpi_lang
+-- Đang đổ dữ liệu cho bảng jms_configuration_kpi_lang
 --
 
 INSERT INTO jms_configuration_kpi_lang VALUES(37, 1, 'No orders', '2019-07-23 23:11:39');
@@ -6420,7 +6428,7 @@ INSERT INTO jms_configuration_kpi_lang VALUES(44, 1, '1564108851', '2019-07-24 2
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_configuration_lang
+-- Cấu trúc bảng cho bảng jms_configuration_lang
 --
 
 CREATE TABLE jms_configuration_lang (
@@ -6431,7 +6439,7 @@ CREATE TABLE jms_configuration_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_configuration_lang
+-- Đang đổ dữ liệu cho bảng jms_configuration_lang
 --
 
 INSERT INTO jms_configuration_lang VALUES(39, 1, '#IN', NULL);
@@ -6513,7 +6521,7 @@ INSERT INTO jms_configuration_lang VALUES(548, 6, '', '2019-09-12 11:46:29');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_connections
+-- Cấu trúc bảng cho bảng jms_connections
 --
 
 CREATE TABLE jms_connections (
@@ -6528,7 +6536,7 @@ CREATE TABLE jms_connections (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_connections
+-- Đang đổ dữ liệu cho bảng jms_connections
 --
 
 INSERT INTO jms_connections VALUES(1, 1, 1, 1, 1, 2130706433, '2019-07-24 04:55:54', 'http://www.prestashop.com');
@@ -6757,11 +6765,36 @@ INSERT INTO jms_connections VALUES(223, 1, 1, 64, 2, -1062731414, '2019-09-12 05
 INSERT INTO jms_connections VALUES(224, 1, 1, 65, 2, -1062731410, '2019-09-12 05:12:39', '');
 INSERT INTO jms_connections VALUES(225, 1, 1, 64, 2, -1062731414, '2019-09-12 06:15:19', '');
 INSERT INTO jms_connections VALUES(226, 1, 1, 13, 2, 2130706433, '2019-09-12 06:24:35', 'http://192.168.1.103/jms_kasos/index.php?controller=cart&delete=1&id_product=32&id_product_attribute=115&token=369d2df8266d810848551d5516856947');
+INSERT INTO jms_connections VALUES(227, 1, 1, 66, 1, 2130706433, '2019-09-12 21:41:05', '');
+INSERT INTO jms_connections VALUES(228, 1, 1, 67, 2, 2130706433, '2019-09-12 21:42:02', '');
+INSERT INTO jms_connections VALUES(229, 1, 1, 67, 1, 2130706433, '2019-09-12 22:45:06', '');
+INSERT INTO jms_connections VALUES(230, 1, 1, 67, 1, 2130706433, '2019-09-13 00:08:16', '');
+INSERT INTO jms_connections VALUES(231, 1, 1, 68, 2, -1062731419, '2019-09-13 00:30:23', 'http://localhost/jms_kasos/index.php');
+INSERT INTO jms_connections VALUES(232, 1, 1, 69, 2, -1062731390, '2019-09-13 00:41:58', '');
+INSERT INTO jms_connections VALUES(233, 1, 1, 70, 2, -1062731420, '2019-09-13 00:52:44', '');
+INSERT INTO jms_connections VALUES(234, 1, 1, 68, 2, -1062731419, '2019-09-13 02:30:30', 'http://localhost/jms_kasos/index.php');
+INSERT INTO jms_connections VALUES(235, 1, 1, 71, 2, -1062731419, '2019-09-13 02:36:32', '');
+INSERT INTO jms_connections VALUES(236, 1, 1, 72, 2, -1062731390, '2019-09-13 02:38:27', '');
+INSERT INTO jms_connections VALUES(237, 1, 1, 69, 1, -1062731390, '2019-09-13 02:52:21', '');
+INSERT INTO jms_connections VALUES(238, 1, 1, 68, 1, -1062731419, '2019-09-13 03:07:26', '');
+INSERT INTO jms_connections VALUES(239, 1, 1, 70, 2, -1062731420, '2019-09-13 03:16:37', '');
+INSERT INTO jms_connections VALUES(240, 1, 1, 73, 13, -1062731419, '2019-09-13 03:25:16', '');
+INSERT INTO jms_connections VALUES(241, 1, 1, 74, 2, -1062731418, '2019-09-13 03:32:50', '');
+INSERT INTO jms_connections VALUES(242, 1, 1, 69, 1, -1062731390, '2019-09-13 03:46:55', '');
+INSERT INTO jms_connections VALUES(243, 1, 1, 71, 1, -1062731419, '2019-09-13 03:58:29', '');
+INSERT INTO jms_connections VALUES(244, 1, 1, 75, 2, -1062731419, '2019-09-13 04:15:33', '');
+INSERT INTO jms_connections VALUES(245, 1, 1, 74, 1, -1062731418, '2019-09-13 04:20:37', '');
+INSERT INTO jms_connections VALUES(246, 1, 1, 69, 1, -1062731390, '2019-09-13 04:21:42', '');
+INSERT INTO jms_connections VALUES(247, 1, 1, 76, 2, -1062731416, '2019-09-13 04:32:11', '');
+INSERT INTO jms_connections VALUES(248, 1, 1, 77, 1, -1062731419, '2019-09-13 04:40:19', '');
+INSERT INTO jms_connections VALUES(249, 1, 1, 71, 1, -1062731419, '2019-09-13 04:59:00', '');
+INSERT INTO jms_connections VALUES(250, 1, 1, 69, 1, -1062731390, '2019-09-13 05:16:24', '');
+INSERT INTO jms_connections VALUES(251, 1, 1, 67, 2, 0, '2019-09-13 06:30:17', 'http://192.168.1.101/jms_kasos/index.php');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_connections_page
+-- Cấu trúc bảng cho bảng jms_connections_page
 --
 
 CREATE TABLE jms_connections_page (
@@ -6774,7 +6807,7 @@ CREATE TABLE jms_connections_page (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_connections_source
+-- Cấu trúc bảng cho bảng jms_connections_source
 --
 
 CREATE TABLE jms_connections_source (
@@ -6787,7 +6820,7 @@ CREATE TABLE jms_connections_source (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_connections_source
+-- Đang đổ dữ liệu cho bảng jms_connections_source
 --
 
 INSERT INTO jms_connections_source VALUES(1, 214, 'http://localhost/jms_kasos/index.php?controller=history', 'localhost/jms_kasos/index.php?', '', '2019-09-12 03:34:28');
@@ -6803,11 +6836,17 @@ INSERT INTO jms_connections_source VALUES(10, 220, 'http://localhost/jms_kasos/i
 INSERT INTO jms_connections_source VALUES(11, 226, 'http://192.168.1.103/jms_kasos/index.php?controller=cart&delete=1&id_product=32&id_product_attribute=115&token=369d2df8266d810848551d5516856947', 'localhost/jms_kasos/index.php?', '', '2019-09-12 06:24:35');
 INSERT INTO jms_connections_source VALUES(12, 226, 'http://192.168.1.103/jms_kasos/index.php?controller=cart&delete=1&id_product=32&id_product_attribute=115&token=369d2df8266d810848551d5516856947', 'localhost/jms_kasos/index.php?', '', '2019-09-12 06:24:49');
 INSERT INTO jms_connections_source VALUES(13, 226, 'http://192.168.1.103/jms_kasos/index.php?controller=cart&delete=1&id_product=32&id_product_attribute=115&token=369d2df8266d810848551d5516856947', 'localhost/jms_kasos/index.php?', '', '2019-09-12 06:27:40');
+INSERT INTO jms_connections_source VALUES(14, 231, 'http://localhost/jms_kasos/index.php', 'localhost/jms_kasos/index.php?', '', '2019-09-13 00:30:23');
+INSERT INTO jms_connections_source VALUES(15, 234, 'http://localhost/jms_kasos/index.php', 'localhost/jms_kasos/index.php?', '', '2019-09-13 02:30:30');
+INSERT INTO jms_connections_source VALUES(16, 234, 'http://localhost/jms_kasos/index.php', 'localhost/jms_kasos/index.php?', '', '2019-09-13 02:56:40');
+INSERT INTO jms_connections_source VALUES(17, 234, 'http://localhost/jms_kasos/index.php', 'localhost/jms_kasos/index.php?', '', '2019-09-13 02:57:21');
+INSERT INTO jms_connections_source VALUES(18, 251, 'http://192.168.1.101/jms_kasos/index.php', 'localhost/jms_kasos/index.php?', '', '2019-09-13 06:30:17');
+INSERT INTO jms_connections_source VALUES(19, 251, 'http://192.168.1.101/jms_kasos/index.php', 'localhost/jms_kasos/index.php?', '', '2019-09-13 06:31:22');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_contact
+-- Cấu trúc bảng cho bảng jms_contact
 --
 
 CREATE TABLE jms_contact (
@@ -6818,7 +6857,7 @@ CREATE TABLE jms_contact (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_contact
+-- Đang đổ dữ liệu cho bảng jms_contact
 --
 
 INSERT INTO jms_contact VALUES(1, 'admin@admin.com', 1, 0);
@@ -6827,7 +6866,7 @@ INSERT INTO jms_contact VALUES(2, 'admin@admin.com', 1, 0);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_contact_lang
+-- Cấu trúc bảng cho bảng jms_contact_lang
 --
 
 CREATE TABLE jms_contact_lang (
@@ -6838,7 +6877,7 @@ CREATE TABLE jms_contact_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_contact_lang
+-- Đang đổ dữ liệu cho bảng jms_contact_lang
 --
 
 INSERT INTO jms_contact_lang VALUES(1, 1, 'Webmaster', 'If a technical problem occurs on this website');
@@ -6855,7 +6894,7 @@ INSERT INTO jms_contact_lang VALUES(2, 6, 'Servicio al cliente', 'Para cualquier
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_contact_shop
+-- Cấu trúc bảng cho bảng jms_contact_shop
 --
 
 CREATE TABLE jms_contact_shop (
@@ -6864,7 +6903,7 @@ CREATE TABLE jms_contact_shop (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_contact_shop
+-- Đang đổ dữ liệu cho bảng jms_contact_shop
 --
 
 INSERT INTO jms_contact_shop VALUES(1, 1);
@@ -6873,7 +6912,7 @@ INSERT INTO jms_contact_shop VALUES(2, 1);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_country
+-- Cấu trúc bảng cho bảng jms_country
 --
 
 CREATE TABLE jms_country (
@@ -6891,7 +6930,7 @@ CREATE TABLE jms_country (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_country
+-- Đang đổ dữ liệu cho bảng jms_country
 --
 
 INSERT INTO jms_country VALUES(1, 1, 0, 'DE', 49, 1, 0, 0, 1, 'NNNNN', 1);
@@ -7142,7 +7181,7 @@ INSERT INTO jms_country VALUES(244, 7, 0, 'AX', 0, 0, 0, 0, 1, 'NNNNN', 1);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_country_lang
+-- Cấu trúc bảng cho bảng jms_country_lang
 --
 
 CREATE TABLE jms_country_lang (
@@ -7152,7 +7191,7 @@ CREATE TABLE jms_country_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_country_lang
+-- Đang đổ dữ liệu cho bảng jms_country_lang
 --
 
 INSERT INTO jms_country_lang VALUES(1, 1, 'Germany');
@@ -8379,7 +8418,7 @@ INSERT INTO jms_country_lang VALUES(244, 6, 'Åland Islands');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_country_shop
+-- Cấu trúc bảng cho bảng jms_country_shop
 --
 
 CREATE TABLE jms_country_shop (
@@ -8388,7 +8427,7 @@ CREATE TABLE jms_country_shop (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_country_shop
+-- Đang đổ dữ liệu cho bảng jms_country_shop
 --
 
 INSERT INTO jms_country_shop VALUES(1, 1);
@@ -8639,7 +8678,7 @@ INSERT INTO jms_country_shop VALUES(244, 1);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_currency
+-- Cấu trúc bảng cho bảng jms_currency
 --
 
 CREATE TABLE jms_currency (
@@ -8654,7 +8693,7 @@ CREATE TABLE jms_currency (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_currency
+-- Đang đổ dữ liệu cho bảng jms_currency
 --
 
 INSERT INTO jms_currency VALUES(1, '', 'USD', '840', 2, '1.000000', 0, 1);
@@ -8663,7 +8702,7 @@ INSERT INTO jms_currency VALUES(2, '', 'EUR', '978', 2, '0.896845', 0, 1);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_currency_lang
+-- Cấu trúc bảng cho bảng jms_currency_lang
 --
 
 CREATE TABLE jms_currency_lang (
@@ -8674,7 +8713,7 @@ CREATE TABLE jms_currency_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_currency_lang
+-- Đang đổ dữ liệu cho bảng jms_currency_lang
 --
 
 INSERT INTO jms_currency_lang VALUES(1, 1, 'US Dollar', '$');
@@ -8691,7 +8730,7 @@ INSERT INTO jms_currency_lang VALUES(2, 6, 'euro', '€');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_currency_shop
+-- Cấu trúc bảng cho bảng jms_currency_shop
 --
 
 CREATE TABLE jms_currency_shop (
@@ -8701,7 +8740,7 @@ CREATE TABLE jms_currency_shop (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_currency_shop
+-- Đang đổ dữ liệu cho bảng jms_currency_shop
 --
 
 INSERT INTO jms_currency_shop VALUES(1, 1, '1.000000');
@@ -8710,7 +8749,7 @@ INSERT INTO jms_currency_shop VALUES(2, 1, '0.896845');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_customer
+-- Cấu trúc bảng cho bảng jms_customer
 --
 
 CREATE TABLE jms_customer (
@@ -8750,16 +8789,17 @@ CREATE TABLE jms_customer (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_customer
+-- Đang đổ dữ liệu cho bảng jms_customer
 --
 
 INSERT INTO jms_customer VALUES(1, 1, 1, 1, 3, 1, 0, '', '', '', 'John', 'DOE', 'pub@prestashop.com', '629f2de2f800bf83a31766b55ef9257c', '2019-07-23 22:55:52', '1970-01-15', 1, '', '2013-12-13 08:19:15', 1, '', '0.000000', 0, 0, '25572f11bb221f9fb73eaffc57bd41a4', '', 1, 0, 0, '2019-07-24 04:55:52', '2019-07-24 04:55:52', '', '0000-00-00 00:00:00');
 INSERT INTO jms_customer VALUES(2, 1, 1, 1, 3, 2, 0, NULL, NULL, NULL, 'mr', 'huy', 'mrhuy@gmail.com', '$2y$10$jKGGPHbbX2j23MiT4SOyTeO/jROaF4pbpo0dPyvCsLdDpcaOrqoxG', '2019-08-07 20:45:08', '0000-00-00', 0, NULL, '0000-00-00 00:00:00', 0, NULL, '0.000000', 0, 0, '862058568727235c26ea62e1d7675036', NULL, 1, 0, 0, '2019-08-08 02:45:08', '2019-09-12 06:29:33', NULL, '0000-00-00 00:00:00');
+INSERT INTO jms_customer VALUES(3, 1, 1, 1, 3, 1, 0, '', '', '', 'John', 'Doe', 'admin@admin.com', '$2y$10$kbFuK/JP6BGhKBL4b0WpJuVjQvSW7m5NAcwKfuhaX5LYRA.T4hfK.', '2019-09-12 21:26:59', '1989-02-02', 0, '', '0000-00-00 00:00:00', 0, '', '0.000000', 0, 0, 'ceed26ee10ced4127bfdac76f0c8c49d', '', 1, 0, 0, '2019-09-13 03:26:59', '2019-09-13 03:26:59', '', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_customer_group
+-- Cấu trúc bảng cho bảng jms_customer_group
 --
 
 CREATE TABLE jms_customer_group (
@@ -8768,16 +8808,17 @@ CREATE TABLE jms_customer_group (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_customer_group
+-- Đang đổ dữ liệu cho bảng jms_customer_group
 --
 
 INSERT INTO jms_customer_group VALUES(1, 3);
 INSERT INTO jms_customer_group VALUES(2, 3);
+INSERT INTO jms_customer_group VALUES(3, 3);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_customer_message
+-- Cấu trúc bảng cho bảng jms_customer_message
 --
 
 CREATE TABLE jms_customer_message (
@@ -8794,10 +8835,16 @@ CREATE TABLE jms_customer_message (
   `read` tinyint(1) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+--
+-- Đang đổ dữ liệu cho bảng jms_customer_message
+--
+
+INSERT INTO jms_customer_message VALUES(1, 1, 0, 'sdsdsds dsds dsdsdsdsd sds dsdsd', '', '-1062731420', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:69.0) Gecko/20100101 Firefox/69.0', '2019-09-13 03:25:25', '2019-09-13 03:25:25', 0, 0);
+
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_customer_message_sync_imap
+-- Cấu trúc bảng cho bảng jms_customer_message_sync_imap
 --
 
 CREATE TABLE jms_customer_message_sync_imap (
@@ -8807,7 +8854,7 @@ CREATE TABLE jms_customer_message_sync_imap (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_customer_thread
+-- Cấu trúc bảng cho bảng jms_customer_thread
 --
 
 CREATE TABLE jms_customer_thread (
@@ -8825,10 +8872,16 @@ CREATE TABLE jms_customer_thread (
   date_upd datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+--
+-- Đang đổ dữ liệu cho bảng jms_customer_thread
+--
+
+INSERT INTO jms_customer_thread VALUES(1, 1, 1, 2, 0, 0, 0, 'open', 'admin@admin.com', '6fc60QX3u1bc', '2019-09-13 03:25:25', '2019-09-13 03:25:25');
+
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_customization
+-- Cấu trúc bảng cho bảng jms_customization
 --
 
 CREATE TABLE jms_customization (
@@ -8846,7 +8899,7 @@ CREATE TABLE jms_customization (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_customization_field
+-- Cấu trúc bảng cho bảng jms_customization_field
 --
 
 CREATE TABLE jms_customization_field (
@@ -8861,7 +8914,7 @@ CREATE TABLE jms_customization_field (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_customization_field_lang
+-- Cấu trúc bảng cho bảng jms_customization_field_lang
 --
 
 CREATE TABLE jms_customization_field_lang (
@@ -8874,7 +8927,7 @@ CREATE TABLE jms_customization_field_lang (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_customized_data
+-- Cấu trúc bảng cho bảng jms_customized_data
 --
 
 CREATE TABLE jms_customized_data (
@@ -8890,7 +8943,7 @@ CREATE TABLE jms_customized_data (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_date_range
+-- Cấu trúc bảng cho bảng jms_date_range
 --
 
 CREATE TABLE jms_date_range (
@@ -8902,7 +8955,7 @@ CREATE TABLE jms_date_range (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_delivery
+-- Cấu trúc bảng cho bảng jms_delivery
 --
 
 CREATE TABLE jms_delivery (
@@ -8917,7 +8970,7 @@ CREATE TABLE jms_delivery (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_delivery
+-- Đang đổ dữ liệu cho bảng jms_delivery
 --
 
 INSERT INTO jms_delivery VALUES(1, NULL, NULL, 2, 0, 1, 1, '5.000000');
@@ -8928,7 +8981,7 @@ INSERT INTO jms_delivery VALUES(4, NULL, NULL, 2, 1, 0, 2, '5.000000');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_emailsubscription
+-- Cấu trúc bảng cho bảng jms_emailsubscription
 --
 
 CREATE TABLE jms_emailsubscription (
@@ -8945,7 +8998,7 @@ CREATE TABLE jms_emailsubscription (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_employee
+-- Cấu trúc bảng cho bảng jms_employee
 --
 
 CREATE TABLE jms_employee (
@@ -8980,15 +9033,15 @@ CREATE TABLE jms_employee (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_employee
+-- Đang đổ dữ liệu cho bảng jms_employee
 --
 
-INSERT INTO jms_employee VALUES(1, 1, 1, 'Huy', 'Mr', 'admin@admin.com', '$2y$10$aJRmEKZrF2eR0s2BQ.PpK.nfYyxPoojM.LGk6KDhYPW20d2Btygha', '2019-07-23 22:53:02', '2019-06-24', '2019-07-24', '0000-00-00', '0000-00-00', 1, NULL, NULL, 'default', 'theme.css', 1, 0, 1, 1, 1, 8, 0, 2, '2019-09-12', NULL, '0000-00-00 00:00:00');
+INSERT INTO jms_employee VALUES(1, 1, 1, 'Huy', 'Mr', 'admin@admin.com', '$2y$10$aJRmEKZrF2eR0s2BQ.PpK.nfYyxPoojM.LGk6KDhYPW20d2Btygha', '2019-07-23 22:53:02', '2019-06-24', '2019-07-24', '0000-00-00', '0000-00-00', 1, NULL, NULL, 'default', 'theme.css', 1, 0, 1, 1, 1, 9, 1, 3, '2019-09-13', NULL, '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_employee_shop
+-- Cấu trúc bảng cho bảng jms_employee_shop
 --
 
 CREATE TABLE jms_employee_shop (
@@ -8997,7 +9050,7 @@ CREATE TABLE jms_employee_shop (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_employee_shop
+-- Đang đổ dữ liệu cho bảng jms_employee_shop
 --
 
 INSERT INTO jms_employee_shop VALUES(1, 1);
@@ -9005,7 +9058,7 @@ INSERT INTO jms_employee_shop VALUES(1, 1);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_feature
+-- Cấu trúc bảng cho bảng jms_feature
 --
 
 CREATE TABLE jms_feature (
@@ -9014,7 +9067,7 @@ CREATE TABLE jms_feature (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_feature
+-- Đang đổ dữ liệu cho bảng jms_feature
 --
 
 INSERT INTO jms_feature VALUES(1, 0);
@@ -9023,7 +9076,7 @@ INSERT INTO jms_feature VALUES(2, 1);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_feature_lang
+-- Cấu trúc bảng cho bảng jms_feature_lang
 --
 
 CREATE TABLE jms_feature_lang (
@@ -9033,7 +9086,7 @@ CREATE TABLE jms_feature_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_feature_lang
+-- Đang đổ dữ liệu cho bảng jms_feature_lang
 --
 
 INSERT INTO jms_feature_lang VALUES(1, 1, 'Composition');
@@ -9050,7 +9103,7 @@ INSERT INTO jms_feature_lang VALUES(2, 6, 'Property');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_feature_product
+-- Cấu trúc bảng cho bảng jms_feature_product
 --
 
 CREATE TABLE jms_feature_product (
@@ -9062,7 +9115,7 @@ CREATE TABLE jms_feature_product (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_feature_shop
+-- Cấu trúc bảng cho bảng jms_feature_shop
 --
 
 CREATE TABLE jms_feature_shop (
@@ -9071,7 +9124,7 @@ CREATE TABLE jms_feature_shop (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_feature_shop
+-- Đang đổ dữ liệu cho bảng jms_feature_shop
 --
 
 INSERT INTO jms_feature_shop VALUES(1, 1);
@@ -9080,7 +9133,7 @@ INSERT INTO jms_feature_shop VALUES(2, 1);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_feature_value
+-- Cấu trúc bảng cho bảng jms_feature_value
 --
 
 CREATE TABLE jms_feature_value (
@@ -9090,7 +9143,7 @@ CREATE TABLE jms_feature_value (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_feature_value
+-- Đang đổ dữ liệu cho bảng jms_feature_value
 --
 
 INSERT INTO jms_feature_value VALUES(1, 1, 0);
@@ -9107,7 +9160,7 @@ INSERT INTO jms_feature_value VALUES(10, 2, 0);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_feature_value_lang
+-- Cấu trúc bảng cho bảng jms_feature_value_lang
 --
 
 CREATE TABLE jms_feature_value_lang (
@@ -9117,7 +9170,7 @@ CREATE TABLE jms_feature_value_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_feature_value_lang
+-- Đang đổ dữ liệu cho bảng jms_feature_value_lang
 --
 
 INSERT INTO jms_feature_value_lang VALUES(1, 1, 'Polyester');
@@ -9174,7 +9227,7 @@ INSERT INTO jms_feature_value_lang VALUES(10, 6, '120 pages');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_gender
+-- Cấu trúc bảng cho bảng jms_gender
 --
 
 CREATE TABLE jms_gender (
@@ -9183,7 +9236,7 @@ CREATE TABLE jms_gender (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_gender
+-- Đang đổ dữ liệu cho bảng jms_gender
 --
 
 INSERT INTO jms_gender VALUES(1, 0);
@@ -9192,7 +9245,7 @@ INSERT INTO jms_gender VALUES(2, 1);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_gender_lang
+-- Cấu trúc bảng cho bảng jms_gender_lang
 --
 
 CREATE TABLE jms_gender_lang (
@@ -9202,7 +9255,7 @@ CREATE TABLE jms_gender_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_gender_lang
+-- Đang đổ dữ liệu cho bảng jms_gender_lang
 --
 
 INSERT INTO jms_gender_lang VALUES(1, 1, 'Mr.');
@@ -9219,7 +9272,7 @@ INSERT INTO jms_gender_lang VALUES(2, 6, 'Sra.');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_group
+-- Cấu trúc bảng cho bảng jms_group
 --
 
 CREATE TABLE jms_group (
@@ -9232,7 +9285,7 @@ CREATE TABLE jms_group (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_group
+-- Đang đổ dữ liệu cho bảng jms_group
 --
 
 INSERT INTO jms_group VALUES(1, '0.00', 1, 1, '2019-07-24 04:52:56', '2019-07-24 04:53:02');
@@ -9242,7 +9295,7 @@ INSERT INTO jms_group VALUES(3, '0.00', 1, 1, '2019-07-24 04:52:57', '2019-07-24
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_group_lang
+-- Cấu trúc bảng cho bảng jms_group_lang
 --
 
 CREATE TABLE jms_group_lang (
@@ -9252,7 +9305,7 @@ CREATE TABLE jms_group_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_group_lang
+-- Đang đổ dữ liệu cho bảng jms_group_lang
 --
 
 INSERT INTO jms_group_lang VALUES(1, 1, 'Visitor');
@@ -9274,7 +9327,7 @@ INSERT INTO jms_group_lang VALUES(3, 6, 'Cliente');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_group_reduction
+-- Cấu trúc bảng cho bảng jms_group_reduction
 --
 
 CREATE TABLE jms_group_reduction (
@@ -9287,7 +9340,7 @@ CREATE TABLE jms_group_reduction (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_group_shop
+-- Cấu trúc bảng cho bảng jms_group_shop
 --
 
 CREATE TABLE jms_group_shop (
@@ -9296,7 +9349,7 @@ CREATE TABLE jms_group_shop (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_group_shop
+-- Đang đổ dữ liệu cho bảng jms_group_shop
 --
 
 INSERT INTO jms_group_shop VALUES(1, 1);
@@ -9306,7 +9359,7 @@ INSERT INTO jms_group_shop VALUES(3, 1);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_gsitemap_sitemap
+-- Cấu trúc bảng cho bảng jms_gsitemap_sitemap
 --
 
 CREATE TABLE jms_gsitemap_sitemap (
@@ -9317,7 +9370,7 @@ CREATE TABLE jms_gsitemap_sitemap (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_guest
+-- Cấu trúc bảng cho bảng jms_guest
 --
 
 CREATE TABLE jms_guest (
@@ -9340,7 +9393,7 @@ CREATE TABLE jms_guest (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_guest
+-- Đang đổ dữ liệu cho bảng jms_guest
 --
 
 INSERT INTO jms_guest VALUES(1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', 0);
@@ -9406,11 +9459,23 @@ INSERT INTO jms_guest VALUES(62, 7, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'en', 0
 INSERT INTO jms_guest VALUES(63, 5, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'en', 0);
 INSERT INTO jms_guest VALUES(64, 5, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'en', 0);
 INSERT INTO jms_guest VALUES(65, 5, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'en', 0);
+INSERT INTO jms_guest VALUES(66, 3, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'vi', 0);
+INSERT INTO jms_guest VALUES(67, 3, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'vi', 0);
+INSERT INTO jms_guest VALUES(68, 3, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'vi', 0);
+INSERT INTO jms_guest VALUES(69, 5, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'en', 0);
+INSERT INTO jms_guest VALUES(70, 7, 3, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'en', 0);
+INSERT INTO jms_guest VALUES(71, 3, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'vi', 0);
+INSERT INTO jms_guest VALUES(72, 5, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'en', 0);
+INSERT INTO jms_guest VALUES(73, 3, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'vi', 0);
+INSERT INTO jms_guest VALUES(74, 7, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'en', 0);
+INSERT INTO jms_guest VALUES(75, 3, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'vi', 0);
+INSERT INTO jms_guest VALUES(76, 6, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'vi', 0);
+INSERT INTO jms_guest VALUES(77, 3, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'vi', 0);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_homeslider
+-- Cấu trúc bảng cho bảng jms_homeslider
 --
 
 CREATE TABLE jms_homeslider (
@@ -9419,7 +9484,7 @@ CREATE TABLE jms_homeslider (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_homeslider
+-- Đang đổ dữ liệu cho bảng jms_homeslider
 --
 
 INSERT INTO jms_homeslider VALUES(1, 1);
@@ -9429,7 +9494,7 @@ INSERT INTO jms_homeslider VALUES(3, 1);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_homeslider_slides
+-- Cấu trúc bảng cho bảng jms_homeslider_slides
 --
 
 CREATE TABLE jms_homeslider_slides (
@@ -9439,7 +9504,7 @@ CREATE TABLE jms_homeslider_slides (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_homeslider_slides
+-- Đang đổ dữ liệu cho bảng jms_homeslider_slides
 --
 
 INSERT INTO jms_homeslider_slides VALUES(1, 1, 1);
@@ -9449,7 +9514,7 @@ INSERT INTO jms_homeslider_slides VALUES(3, 3, 1);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_homeslider_slides_lang
+-- Cấu trúc bảng cho bảng jms_homeslider_slides_lang
 --
 
 CREATE TABLE jms_homeslider_slides_lang (
@@ -9463,7 +9528,7 @@ CREATE TABLE jms_homeslider_slides_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_homeslider_slides_lang
+-- Đang đổ dữ liệu cho bảng jms_homeslider_slides_lang
 --
 
 INSERT INTO jms_homeslider_slides_lang VALUES(1, 1, 'Sample 1', '<h3>EXCEPTEUR OCCAECAT</h3>\n                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique in tortor et dignissim. Quisque non tempor leo. Maecenas egestas sem elit</p>', 'sample-1', 'http://www.prestashop.com/?utm_source=back-office&utm_medium=v17_homeslider&utm_campaign=back-office-EN&utm_content=download', 'sample-1.jpg');
@@ -9485,7 +9550,7 @@ INSERT INTO jms_homeslider_slides_lang VALUES(3, 6, 'Sample 3', '<h3>EXCEPTEUR O
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_hook
+-- Cấu trúc bảng cho bảng jms_hook
 --
 
 CREATE TABLE jms_hook (
@@ -9497,7 +9562,7 @@ CREATE TABLE jms_hook (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_hook
+-- Đang đổ dữ liệu cho bảng jms_hook
 --
 
 INSERT INTO jms_hook VALUES(1, 'actionValidateOrder', 'New orders', '', 1);
@@ -9965,7 +10030,7 @@ INSERT INTO jms_hook VALUES(461, 'actionFrontControllerSetMedia', 'actionFrontCo
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_hook_alias
+-- Cấu trúc bảng cho bảng jms_hook_alias
 --
 
 CREATE TABLE jms_hook_alias (
@@ -9975,7 +10040,7 @@ CREATE TABLE jms_hook_alias (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_hook_alias
+-- Đang đổ dữ liệu cho bảng jms_hook_alias
 --
 
 INSERT INTO jms_hook_alias VALUES(1, 'newOrder', 'actionValidateOrder');
@@ -10065,7 +10130,7 @@ INSERT INTO jms_hook_alias VALUES(83, 'actionAfterDeleteProductInCart', 'actionD
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_hook_module
+-- Cấu trúc bảng cho bảng jms_hook_module
 --
 
 CREATE TABLE jms_hook_module (
@@ -10076,7 +10141,7 @@ CREATE TABLE jms_hook_module (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_hook_module
+-- Đang đổ dữ liệu cho bảng jms_hook_module
 --
 
 INSERT INTO jms_hook_module VALUES(1, 1, 394, 1);
@@ -10314,7 +10379,7 @@ INSERT INTO jms_hook_module VALUES(53, 1, 49, 22);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_hook_module_exceptions
+-- Cấu trúc bảng cho bảng jms_hook_module_exceptions
 --
 
 CREATE TABLE jms_hook_module_exceptions (
@@ -10326,7 +10391,7 @@ CREATE TABLE jms_hook_module_exceptions (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_hook_module_exceptions
+-- Đang đổ dữ liệu cho bảng jms_hook_module_exceptions
 --
 
 INSERT INTO jms_hook_module_exceptions VALUES(78, 1, 71, 12, 'address');
@@ -10735,7 +10800,7 @@ INSERT INTO jms_hook_module_exceptions VALUES(479, 1, 80, 12, 'contact');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_hotdeals
+-- Cấu trúc bảng cho bảng jms_hotdeals
 --
 
 CREATE TABLE jms_hotdeals (
@@ -10744,7 +10809,7 @@ CREATE TABLE jms_hotdeals (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_hotdeals
+-- Đang đổ dữ liệu cho bảng jms_hotdeals
 --
 
 INSERT INTO jms_hotdeals VALUES(1, 1);
@@ -10758,7 +10823,7 @@ INSERT INTO jms_hotdeals VALUES(7, 1);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_hotdeals_items
+-- Cấu trúc bảng cho bảng jms_hotdeals_items
 --
 
 CREATE TABLE jms_hotdeals_items (
@@ -10770,7 +10835,7 @@ CREATE TABLE jms_hotdeals_items (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_hotdeals_items
+-- Đang đổ dữ liệu cho bảng jms_hotdeals_items
 --
 
 INSERT INTO jms_hotdeals_items VALUES(1, 31, '2019-08-23 11:01:23', 0, 1);
@@ -10784,7 +10849,7 @@ INSERT INTO jms_hotdeals_items VALUES(7, 2, '2019-08-23 11:01:23', 7, 1);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_image
+-- Cấu trúc bảng cho bảng jms_image
 --
 
 CREATE TABLE jms_image (
@@ -10795,7 +10860,7 @@ CREATE TABLE jms_image (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_image
+-- Đang đổ dữ liệu cho bảng jms_image
 --
 
 INSERT INTO jms_image VALUES(38, 21, 3, NULL);
@@ -10988,7 +11053,7 @@ INSERT INTO jms_image VALUES(233, 34, 4, NULL);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_image_lang
+-- Cấu trúc bảng cho bảng jms_image_lang
 --
 
 CREATE TABLE jms_image_lang (
@@ -10998,7 +11063,7 @@ CREATE TABLE jms_image_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_image_lang
+-- Đang đổ dữ liệu cho bảng jms_image_lang
 --
 
 INSERT INTO jms_image_lang VALUES(38, 1, '');
@@ -11935,7 +12000,7 @@ INSERT INTO jms_image_lang VALUES(233, 6, '');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_image_shop
+-- Cấu trúc bảng cho bảng jms_image_shop
 --
 
 CREATE TABLE jms_image_shop (
@@ -11946,7 +12011,7 @@ CREATE TABLE jms_image_shop (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_image_shop
+-- Đang đổ dữ liệu cho bảng jms_image_shop
 --
 
 INSERT INTO jms_image_shop VALUES(21, 38, 1, NULL);
@@ -12139,7 +12204,7 @@ INSERT INTO jms_image_shop VALUES(34, 224, 1, 1);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_image_type
+-- Cấu trúc bảng cho bảng jms_image_type
 --
 
 CREATE TABLE jms_image_type (
@@ -12155,7 +12220,7 @@ CREATE TABLE jms_image_type (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_image_type
+-- Đang đổ dữ liệu cho bảng jms_image_type
 --
 
 INSERT INTO jms_image_type VALUES(1, 'cart_default', 118, 130, 1, 0, 0, 0, 0);
@@ -12169,7 +12234,7 @@ INSERT INTO jms_image_type VALUES(7, 'stores_default', 170, 115, 0, 0, 0, 0, 1);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_import_match
+-- Cấu trúc bảng cho bảng jms_import_match
 --
 
 CREATE TABLE jms_import_match (
@@ -12182,7 +12247,7 @@ CREATE TABLE jms_import_match (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_info
+-- Cấu trúc bảng cho bảng jms_info
 --
 
 CREATE TABLE jms_info (
@@ -12190,7 +12255,7 @@ CREATE TABLE jms_info (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_info
+-- Đang đổ dữ liệu cho bảng jms_info
 --
 
 INSERT INTO jms_info VALUES(1);
@@ -12198,7 +12263,7 @@ INSERT INTO jms_info VALUES(1);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_info_lang
+-- Cấu trúc bảng cho bảng jms_info_lang
 --
 
 CREATE TABLE jms_info_lang (
@@ -12209,7 +12274,7 @@ CREATE TABLE jms_info_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_info_lang
+-- Đang đổ dữ liệu cho bảng jms_info_lang
 --
 
 INSERT INTO jms_info_lang VALUES(1, 1, 1, '<h2>Custom Text Block</h2>\n<p><strong class=\"dark\">Lorem ipsum dolor sit amet conse ctetu</strong></p>\n<p>Sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>');
@@ -12221,7 +12286,7 @@ INSERT INTO jms_info_lang VALUES(1, 1, 6, '<h2>Custom Text Block</h2>\n<p><stron
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_info_shop
+-- Cấu trúc bảng cho bảng jms_info_shop
 --
 
 CREATE TABLE jms_info_shop (
@@ -12230,7 +12295,7 @@ CREATE TABLE jms_info_shop (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_info_shop
+-- Đang đổ dữ liệu cho bảng jms_info_shop
 --
 
 INSERT INTO jms_info_shop VALUES(1, 1);
@@ -12238,7 +12303,7 @@ INSERT INTO jms_info_shop VALUES(1, 1);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_jmsblog_categories
+-- Cấu trúc bảng cho bảng jms_jmsblog_categories
 --
 
 CREATE TABLE jms_jmsblog_categories (
@@ -12249,7 +12314,7 @@ CREATE TABLE jms_jmsblog_categories (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_jmsblog_categories
+-- Đang đổ dữ liệu cho bảng jms_jmsblog_categories
 --
 
 INSERT INTO jms_jmsblog_categories VALUES(1, 0, 1, 0);
@@ -12260,7 +12325,7 @@ INSERT INTO jms_jmsblog_categories VALUES(4, 0, 1, 0);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_jmsblog_categories_lang
+-- Cấu trúc bảng cho bảng jms_jmsblog_categories_lang
 --
 
 CREATE TABLE jms_jmsblog_categories_lang (
@@ -12273,7 +12338,7 @@ CREATE TABLE jms_jmsblog_categories_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_jmsblog_categories_lang
+-- Đang đổ dữ liệu cho bảng jms_jmsblog_categories_lang
 --
 
 INSERT INTO jms_jmsblog_categories_lang VALUES(1, 1, 'Smartphone', 'smartphone', '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>', 'fb0e5b375d7ad3dc0cb2cb279af1b2af.jpg');
@@ -12300,7 +12365,7 @@ INSERT INTO jms_jmsblog_categories_lang VALUES(4, 6, 'Smartwatches', 'smartwatch
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_jmsblog_posts
+-- Cấu trúc bảng cho bảng jms_jmsblog_posts
 --
 
 CREATE TABLE jms_jmsblog_posts (
@@ -12315,20 +12380,20 @@ CREATE TABLE jms_jmsblog_posts (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_jmsblog_posts
+-- Đang đổ dữ liệu cho bảng jms_jmsblog_posts
 --
 
-INSERT INTO jms_jmsblog_posts VALUES(1, 0, 1, 1, '2019-07-23 11:01:26', '', '2019-07-23 11:01:26', 105);
+INSERT INTO jms_jmsblog_posts VALUES(1, 0, 1, 1, '2019-07-23 11:01:26', '', '2019-07-23 11:01:26', 106);
 INSERT INTO jms_jmsblog_posts VALUES(2, 0, 1, 1, '2019-07-23 11:01:26', '', '2019-07-23 11:01:26', 8);
-INSERT INTO jms_jmsblog_posts VALUES(3, 0, 1, 1, '2019-07-23 11:01:26', '', '2019-07-23 11:01:26', 10);
+INSERT INTO jms_jmsblog_posts VALUES(3, 0, 1, 1, '2019-07-23 11:01:26', '', '2019-07-23 11:01:26', 12);
 INSERT INTO jms_jmsblog_posts VALUES(4, 0, 1, 1, '2019-08-01 05:28:00', '', '2019-08-14 17:09:00', 10);
-INSERT INTO jms_jmsblog_posts VALUES(5, 0, 1, 2, '2019-09-12 04:38:00', '', '2019-09-27 16:09:00', 0);
+INSERT INTO jms_jmsblog_posts VALUES(5, 0, 1, 2, '2019-09-12 04:38:00', '', '2019-09-27 16:09:00', 1);
 INSERT INTO jms_jmsblog_posts VALUES(6, 0, 1, 4, '2019-09-15 08:24:00', '', '2019-09-26 15:14:00', 0);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_jmsblog_posts_comments
+-- Cấu trúc bảng cho bảng jms_jmsblog_posts_comments
 --
 
 CREATE TABLE jms_jmsblog_posts_comments (
@@ -12344,7 +12409,7 @@ CREATE TABLE jms_jmsblog_posts_comments (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_jmsblog_posts_comments
+-- Đang đổ dữ liệu cho bảng jms_jmsblog_posts_comments
 --
 
 INSERT INTO jms_jmsblog_posts_comments VALUES(1, 1, 'The Best Of Quality Phone & Watch', 'Donec nex volutpat ornare metus rutrum extock. Lacus ultrices mollis, sapien ut aliquam eros. Lorem ipsum dolor sit amet,\r\nconsectetur adipiscing elit. Fusce et vestibulum lacus.', 'Ms. Karen Morales', 'Morales@gmail.com', '', '2019-08-12 21:42:32', 1);
@@ -12354,7 +12419,7 @@ INSERT INTO jms_jmsblog_posts_comments VALUES(3, 1, 'The Best Of Quality Phone &
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_jmsblog_posts_lang
+-- Cấu trúc bảng cho bảng jms_jmsblog_posts_lang
 --
 
 CREATE TABLE jms_jmsblog_posts_lang (
@@ -12372,7 +12437,7 @@ CREATE TABLE jms_jmsblog_posts_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_jmsblog_posts_lang
+-- Đang đổ dữ liệu cho bảng jms_jmsblog_posts_lang
 --
 
 INSERT INTO jms_jmsblog_posts_lang VALUES(1, 1, 'The Best Of Quality Phone & Watch', 'the-best-of-quality-phone-watch', '<p>Aenean cursus interdum elit, sit amet fermentum placerat. Suspendisse tempus velenim, condimentum neque <span class=\"quote\"> vel illum dolore eu feugiat nulla facilisis at vero eros et accumsa</span></p>', '<p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condimentum. Nullam dignissim neque odio, ac blandit sapien hendrerit sed. Nulla ac ex fringilla, volutpat mauris sit amet, consequat massa. Suspendisse feugiat, elit sed fringilla pellentesque, felis sapien pharetra nulla, sed aliquet ante nisi sit amet nibh. Mauris sed purus consequat, auctor libero sed, molestie neque. Nam convallis at felis vel varius. Aliquam sollicitudin tincidunt nunc suscipit vulputate</p>\r\n<p>Proin non feugiat velit. Maecenas porta arcu in pulvinar ultricies. Morbi varius consequat pulvinar. Integer id feugiat elit. Sed vehicula varius turpis, a interdum ex tincidunt sed. Nunc bibendum ipsum tellus, eget pellentesque metus dictum eu. Nullam a neque vestibulum, porta lorem sed, dapibus magna. Vivamus eget bibendum ligula. Proin facilisis felis non ornare pellentesque. Suspendisse posuere elit sit amet eros lobortis aliquam nec vitae mi. Quisque nec luctus dolor. Ut venenatis dictum quam quis malesuada</p>\r\n<div class=\"row\">\r\n<div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_kasos/assets/img/blog-post-img1.jpg\" /></div>\r\n<div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_kasos/assets/img/blog-post-img2.jpg\" /></div>\r\n</div>\r\n<h2>Enhance Your Life By Using Technology Products</h2>\r\n<p>Proin non feugiat velit. Maecenas porta arcu in pulvinar ultricies. Morbi varius consequat pulvinar. Integer id feugiat elit. Sed vehicula varius turpis, a interdum ex tincidunt sed. Nunc bibendum ipsum tellus, eget pellentesque metus dictum eu. Nullam a neque vestibulum, porta lorem sed, dapibus magna. Vivamus eget bibendum ligula. Proin facilisis felis non ornare pellentesque. Suspendisse posuere elit sit amet eros lobortis aliquam nec vitae mi. Quisque nec luctus dolor. Ut venenatis dictum quam quis malesuada</p>\r\n<p>Donec sit amet tempus purus. Etiam tincidunt lacinia lacus, sed convallis felis sodales at. Vivamus ornare massa sed felis faucibus luctus. Cras ullamcorper pellentesque vehicula. Sed posuere mauris ac sem interdum facilisis. Suspendisse venenatis leo non bibendum aliquam. Nam quis ex et sapien pellentesque egestas sed vel eros. Maecenas fermentum dictum ullamcorper</p>\r\n<div class=\"testimonial\">\r\n<div class=\"testimonial-comment\">“ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse auctor dolor lectus, maximus vitae sapien dictum feugiat vehicula. Donec odio vulputate feugiat consequat”</div>\r\n<div class=\"testimonial-author\"><img src=\"themes/jms_kasos/assets/img/avatar-blog.png\" /> <span><span>Ms. Karen Morales</span> - Fashion Designer</span></div>\r\n</div>\r\n<p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condimentum. Nullam dignissim neque odio, ac blandit sapien hendrerit sed. Nulla ac ex fringilla, volutpat mauris sit amet, consequat massa. Suspendisse feugiat, elit sed fringilla pellentesque, felis sapien pharetra nulla, sed aliquet ante nisi sit amet nibh. Mauris sed purus consequat, auctor libero sed, molestie neque. Nam convallis at felis vel varius. Aliquam sollicitudin tincidunt nunc suscipit vulputate</p>', '', '', '', 'b60ecd1cc756c7c55ba29fd4b2a0bf77.jpg', 'smartphone');
@@ -12386,10 +12451,10 @@ INSERT INTO jms_jmsblog_posts_lang VALUES(2, 3, 'Best About Mobile Smart Speaker
 INSERT INTO jms_jmsblog_posts_lang VALUES(2, 4, 'Best About Mobile Smart Speakers', 'best-about-mobile-smart-speakers', '<p>Aenean cursus interdum elit, sit amet fermentum placerat. Suspendisse tempus velenim, condimentum neque <span class=\"quote\"> vel illum dolore eu feugiat nulla facilisis at vero eros et accumsa</span></p>', '<p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condimentum. Nullam dignissim neque odio, ac blandit sapien hendrerit sed. Nulla ac ex fringilla, volutpat mauris sit amet, consequat massa. Suspendisse feugiat, elit sed fringilla pellentesque, felis sapien pharetra nulla, sed aliquet ante nisi sit amet nibh. Mauris sed purus consequat, auctor libero sed, molestie neque. Nam convallis at felis vel varius. Aliquam sollicitudin tincidunt nunc suscipit vulputate</p> <p>Proin non feugiat velit. Maecenas porta arcu in pulvinar ultricies. Morbi varius consequat pulvinar. Integer id feugiat elit. Sed vehicula varius turpis, a interdum ex tincidunt sed. Nunc bibendum ipsum tellus, eget pellentesque metus dictum eu. Nullam a neque vestibulum, porta lorem sed, dapibus magna. Vivamus eget bibendum ligula. Proin facilisis felis non ornare pellentesque. Suspendisse posuere elit sit amet eros lobortis aliquam nec vitae mi. Quisque nec luctus dolor. Ut venenatis dictum quam quis malesuada</p> <div class=\"row\"> <div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_kasos/assets/img/blog-post-img1.jpg\" /></div> <div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_kasos/assets/img/blog-post-img2.jpg\" /></div> </div> <h2>Enhance Your Life By Using Technology Products</h2> <p>Proin non feugiat velit. Maecenas porta arcu in pulvinar ultricies. Morbi varius consequat pulvinar. Integer id feugiat elit. Sed vehicula varius turpis, a interdum ex tincidunt sed. Nunc bibendum ipsum tellus, eget pellentesque metus dictum eu. Nullam a neque vestibulum, porta lorem sed, dapibus magna. Vivamus eget bibendum ligula. Proin facilisis felis non ornare pellentesque. Suspendisse posuere elit sit amet eros lobortis aliquam nec vitae mi. Quisque nec luctus dolor. Ut venenatis dictum quam quis malesuada</p> <p>Donec sit amet tempus purus. Etiam tincidunt lacinia lacus, sed convallis felis sodales at. Vivamus ornare massa sed felis faucibus luctus. Cras ullamcorper pellentesque vehicula. Sed posuere mauris ac sem interdum facilisis. Suspendisse venenatis leo non bibendum aliquam. Nam quis ex et sapien pellentesque egestas sed vel eros. Maecenas fermentum dictum ullamcorper</p> <div class=\"testimonial\"> <div class=\"testimonial-comment\">“ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse auctor dolor lectus, maximus vitae sapien dictum feugiat vehicula. Donec odio vulputate feugiat consequat”</div> <div class=\"testimonial-author\"><img src=\"themes/jms_kasos/assets/img/avatar-blog.png\" /> <span><span>Ms. Karen Morales</span> - Fashion Designer</span></div> </div> <p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condimentum. Nullam dignissim neque odio, ac blandit sapien hendrerit sed. Nulla ac ex fringilla, volutpat mauris sit amet, consequat massa. Suspendisse feugiat, elit sed fringilla pellentesque, felis sapien pharetra nulla, sed aliquet ante nisi sit amet nibh. Mauris sed purus consequat, auctor libero sed, molestie neque. Nam convallis at felis vel varius. Aliquam sollicitudin tincidunt nunc suscipit vulputate</p>', '', '', '', '4ce4151952fd82fc7b3c3bc691821e77.jpg', '');
 INSERT INTO jms_jmsblog_posts_lang VALUES(2, 6, 'Best About Mobile Smart Speakers', 'best-about-mobile-smart-speakers', '<p>Aenean cursus interdum elit, sit amet fermentum placerat. Suspendisse tempus velenim, condimentum neque <span class=\"quote\"> vel illum dolore eu feugiat nulla facilisis at vero eros et accumsa</span></p>', '<p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condimentum. Nullam dignissim neque odio, ac blandit sapien hendrerit sed. Nulla ac ex fringilla, volutpat mauris sit amet, consequat massa. Suspendisse feugiat, elit sed fringilla pellentesque, felis sapien pharetra nulla, sed aliquet ante nisi sit amet nibh. Mauris sed purus consequat, auctor libero sed, molestie neque. Nam convallis at felis vel varius. Aliquam sollicitudin tincidunt nunc suscipit vulputate</p> <p>Proin non feugiat velit. Maecenas porta arcu in pulvinar ultricies. Morbi varius consequat pulvinar. Integer id feugiat elit. Sed vehicula varius turpis, a interdum ex tincidunt sed. Nunc bibendum ipsum tellus, eget pellentesque metus dictum eu. Nullam a neque vestibulum, porta lorem sed, dapibus magna. Vivamus eget bibendum ligula. Proin facilisis felis non ornare pellentesque. Suspendisse posuere elit sit amet eros lobortis aliquam nec vitae mi. Quisque nec luctus dolor. Ut venenatis dictum quam quis malesuada</p> <div class=\"row\"> <div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_kasos/assets/img/blog-post-img1.jpg\" /></div> <div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_kasos/assets/img/blog-post-img2.jpg\" /></div> </div> <h2>Enhance Your Life By Using Technology Products</h2> <p>Proin non feugiat velit. Maecenas porta arcu in pulvinar ultricies. Morbi varius consequat pulvinar. Integer id feugiat elit. Sed vehicula varius turpis, a interdum ex tincidunt sed. Nunc bibendum ipsum tellus, eget pellentesque metus dictum eu. Nullam a neque vestibulum, porta lorem sed, dapibus magna. Vivamus eget bibendum ligula. Proin facilisis felis non ornare pellentesque. Suspendisse posuere elit sit amet eros lobortis aliquam nec vitae mi. Quisque nec luctus dolor. Ut venenatis dictum quam quis malesuada</p> <p>Donec sit amet tempus purus. Etiam tincidunt lacinia lacus, sed convallis felis sodales at. Vivamus ornare massa sed felis faucibus luctus. Cras ullamcorper pellentesque vehicula. Sed posuere mauris ac sem interdum facilisis. Suspendisse venenatis leo non bibendum aliquam. Nam quis ex et sapien pellentesque egestas sed vel eros. Maecenas fermentum dictum ullamcorper</p> <div class=\"testimonial\"> <div class=\"testimonial-comment\">“ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse auctor dolor lectus, maximus vitae sapien dictum feugiat vehicula. Donec odio vulputate feugiat consequat”</div> <div class=\"testimonial-author\"><img src=\"themes/jms_kasos/assets/img/avatar-blog.png\" /> <span><span>Ms. Karen Morales</span> - Fashion Designer</span></div> </div> <p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condimentum. Nullam dignissim neque odio, ac blandit sapien hendrerit sed. Nulla ac ex fringilla, volutpat mauris sit amet, consequat massa. Suspendisse feugiat, elit sed fringilla pellentesque, felis sapien pharetra nulla, sed aliquet ante nisi sit amet nibh. Mauris sed purus consequat, auctor libero sed, molestie neque. Nam convallis at felis vel varius. Aliquam sollicitudin tincidunt nunc suscipit vulputate</p>', '', '', '', '4ce4151952fd82fc7b3c3bc691821e77.jpg', '');
 INSERT INTO jms_jmsblog_posts_lang VALUES(3, 1, 'Mi 360 WiFi Smart Security Camera', 'mi-360-wifi-smart-security-camera', '<p>Aenean cursus interdum elit, sit amet fermentum placerat. Suspendisse tempus velenim, condimentum neque <span class=\"quote\"> vel illum dolore eu feugiat nulla facilisis at vero eros et accumsa</span></p>', '<p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condimentum. Nullam dignissim neque odio, ac blandit sapien hendrerit sed. Nulla ac ex fringilla, volutpat mauris sit amet, consequat massa. Suspendisse feugiat, elit sed fringilla pellentesque, felis sapien pharetra nulla, sed aliquet ante nisi sit amet nibh. Mauris sed purus consequat, auctor libero sed, molestie neque. Nam convallis at felis vel varius. Aliquam sollicitudin tincidunt nunc suscipit vulputate</p>\r\n<p>Proin non feugiat velit. Maecenas porta arcu in pulvinar ultricies. Morbi varius consequat pulvinar. Integer id feugiat elit. Sed vehicula varius turpis, a interdum ex tincidunt sed. Nunc bibendum ipsum tellus, eget pellentesque metus dictum eu. Nullam a neque vestibulum, porta lorem sed, dapibus magna. Vivamus eget bibendum ligula. Proin facilisis felis non ornare pellentesque. Suspendisse posuere elit sit amet eros lobortis aliquam nec vitae mi. Quisque nec luctus dolor. Ut venenatis dictum quam quis malesuada</p>\r\n<div class=\"row\">\r\n<div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_kasos/assets/img/blog-post-img1.jpg\" /></div>\r\n<div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_kasos/assets/img/blog-post-img2.jpg\" /></div>\r\n</div>\r\n<h2>Enhance Your Life By Using Technology Products</h2>\r\n<p>Proin non feugiat velit. Maecenas porta arcu in pulvinar ultricies. Morbi varius consequat pulvinar. Integer id feugiat elit. Sed vehicula varius turpis, a interdum ex tincidunt sed. Nunc bibendum ipsum tellus, eget pellentesque metus dictum eu. Nullam a neque vestibulum, porta lorem sed, dapibus magna. Vivamus eget bibendum ligula. Proin facilisis felis non ornare pellentesque. Suspendisse posuere elit sit amet eros lobortis aliquam nec vitae mi. Quisque nec luctus dolor. Ut venenatis dictum quam quis malesuada</p>\r\n<p>Donec sit amet tempus purus. Etiam tincidunt lacinia lacus, sed convallis felis sodales at. Vivamus ornare massa sed felis faucibus luctus. Cras ullamcorper pellentesque vehicula. Sed posuere mauris ac sem interdum facilisis. Suspendisse venenatis leo non bibendum aliquam. Nam quis ex et sapien pellentesque egestas sed vel eros. Maecenas fermentum dictum ullamcorper</p>\r\n<div class=\"testimonial\">\r\n<div class=\"testimonial-comment\">“ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse auctor dolor lectus, maximus vitae sapien dictum feugiat vehicula. Donec odio vulputate feugiat consequat”</div>\r\n<div class=\"testimonial-author\"><img src=\"themes/jms_kasos/assets/img/avatar-blog.png\" /> <span><span>Ms. Karen Morales</span> - Fashion Designer</span></div>\r\n</div>\r\n<p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condimentum. Nullam dignissim neque odio, ac blandit sapien hendrerit sed. Nulla ac ex fringilla, volutpat mauris sit amet, consequat massa. Suspendisse feugiat, elit sed fringilla pellentesque, felis sapien pharetra nulla, sed aliquet ante nisi sit amet nibh. Mauris sed purus consequat, auctor libero sed, molestie neque. Nam convallis at felis vel varius. Aliquam sollicitudin tincidunt nunc suscipit vulputate</p>', '', '', '', 'ec0d8ad2cfdf07d74cf41c895f7a69b3.jpg', '');
-INSERT INTO jms_jmsblog_posts_lang VALUES(3, 2, 'The Smart TV Ultra HD Resolution', 'the-smart-tv-ultra-dh-resolution', '<p>Aenean cursus interdum elit, sit amet fermentum placerat. Suspendisse tempus velenim, condimentum neque <span class=\"quote\"> vel illum dolore eu feugiat nulla facilisis at vero eros et accumsa</span></p>', '<p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condimentum. Nullam dignissim neque odio, ac blandit sapien hendrerit sed. Nulla ac ex fringilla, volutpat mauris sit amet, consequat massa. Suspendisse feugiat, elit sed fringilla pellentesque, felis sapien pharetra nulla, sed aliquet ante nisi sit amet nibh. Mauris sed purus consequat, auctor libero sed, molestie neque. Nam convallis at felis vel varius. Aliquam sollicitudin tincidunt nunc suscipit vulputate</p>\r\n<p>Proin non feugiat velit. Maecenas porta arcu in pulvinar ultricies. Morbi varius consequat pulvinar. Integer id feugiat elit. Sed vehicula varius turpis, a interdum ex tincidunt sed. Nunc bibendum ipsum tellus, eget pellentesque metus dictum eu. Nullam a neque vestibulum, porta lorem sed, dapibus magna. Vivamus eget bibendum ligula. Proin facilisis felis non ornare pellentesque. Suspendisse posuere elit sit amet eros lobortis aliquam nec vitae mi. Quisque nec luctus dolor. Ut venenatis dictum quam quis malesuada</p>\r\n<div class=\"row\">\r\n<div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_kasos/assets/img/blog-post-img1.jpg\" /></div>\r\n<div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_kasos/assets/img/blog-post-img2.jpg\" /></div>\r\n</div>\r\n<h2>Enhance Your Life By Using Technology Products</h2>\r\n<p>Proin non feugiat velit. Maecenas porta arcu in pulvinar ultricies. Morbi varius consequat pulvinar. Integer id feugiat elit. Sed vehicula varius turpis, a interdum ex tincidunt sed. Nunc bibendum ipsum tellus, eget pellentesque metus dictum eu. Nullam a neque vestibulum, porta lorem sed, dapibus magna. Vivamus eget bibendum ligula. Proin facilisis felis non ornare pellentesque. Suspendisse posuere elit sit amet eros lobortis aliquam nec vitae mi. Quisque nec luctus dolor. Ut venenatis dictum quam quis malesuada</p>\r\n<p>Donec sit amet tempus purus. Etiam tincidunt lacinia lacus, sed convallis felis sodales at. Vivamus ornare massa sed felis faucibus luctus. Cras ullamcorper pellentesque vehicula. Sed posuere mauris ac sem interdum facilisis. Suspendisse venenatis leo non bibendum aliquam. Nam quis ex et sapien pellentesque egestas sed vel eros. Maecenas fermentum dictum ullamcorper</p>\r\n<div class=\"testimonial\">\r\n<div class=\"testimonial-comment\">“ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse auctor dolor lectus, maximus vitae sapien dictum feugiat vehicula. Donec odio vulputate feugiat consequat”</div>\r\n<div class=\"testimonial-author\"><img src=\"themes/jms_kasos/assets/img/avatar-blog.png\" /> <span><span>Ms. Karen Morales</span> - Fashion Designer</span></div>\r\n</div>\r\n<p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condimentum. Nullam dignissim neque odio, ac blandit sapien hendrerit sed. Nulla ac ex fringilla, volutpat mauris sit amet, consequat massa. Suspendisse feugiat, elit sed fringilla pellentesque, felis sapien pharetra nulla, sed aliquet ante nisi sit amet nibh. Mauris sed purus consequat, auctor libero sed, molestie neque. Nam convallis at felis vel varius. Aliquam sollicitudin tincidunt nunc suscipit vulputate</p>', '', '', '', 'f03ca5f10de169feb35069ab6be833d3.jpg', '');
-INSERT INTO jms_jmsblog_posts_lang VALUES(3, 3, 'The Smart TV Ultra HD Resolution', 'the-smart-tv-ultra-dh-resolution', '<p>Aenean cursus interdum elit, sit amet fermentum placerat. Suspendisse tempus velenim, condimentum neque <span class=\"quote\"> vel illum dolore eu feugiat nulla facilisis at vero eros et accumsa</span></p>', '<p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condimentum. Nullam dignissim neque odio, ac blandit sapien hendrerit sed. Nulla ac ex fringilla, volutpat mauris sit amet, consequat massa. Suspendisse feugiat, elit sed fringilla pellentesque, felis sapien pharetra nulla, sed aliquet ante nisi sit amet nibh. Mauris sed purus consequat, auctor libero sed, molestie neque. Nam convallis at felis vel varius. Aliquam sollicitudin tincidunt nunc suscipit vulputate</p>\r\n<p>Proin non feugiat velit. Maecenas porta arcu in pulvinar ultricies. Morbi varius consequat pulvinar. Integer id feugiat elit. Sed vehicula varius turpis, a interdum ex tincidunt sed. Nunc bibendum ipsum tellus, eget pellentesque metus dictum eu. Nullam a neque vestibulum, porta lorem sed, dapibus magna. Vivamus eget bibendum ligula. Proin facilisis felis non ornare pellentesque. Suspendisse posuere elit sit amet eros lobortis aliquam nec vitae mi. Quisque nec luctus dolor. Ut venenatis dictum quam quis malesuada</p>\r\n<div class=\"row\">\r\n<div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_kasos/assets/img/blog-post-img1.jpg\" /></div>\r\n<div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_kasos/assets/img/blog-post-img2.jpg\" /></div>\r\n</div>\r\n<h2>Enhance Your Life By Using Technology Products</h2>\r\n<p>Proin non feugiat velit. Maecenas porta arcu in pulvinar ultricies. Morbi varius consequat pulvinar. Integer id feugiat elit. Sed vehicula varius turpis, a interdum ex tincidunt sed. Nunc bibendum ipsum tellus, eget pellentesque metus dictum eu. Nullam a neque vestibulum, porta lorem sed, dapibus magna. Vivamus eget bibendum ligula. Proin facilisis felis non ornare pellentesque. Suspendisse posuere elit sit amet eros lobortis aliquam nec vitae mi. Quisque nec luctus dolor. Ut venenatis dictum quam quis malesuada</p>\r\n<p>Donec sit amet tempus purus. Etiam tincidunt lacinia lacus, sed convallis felis sodales at. Vivamus ornare massa sed felis faucibus luctus. Cras ullamcorper pellentesque vehicula. Sed posuere mauris ac sem interdum facilisis. Suspendisse venenatis leo non bibendum aliquam. Nam quis ex et sapien pellentesque egestas sed vel eros. Maecenas fermentum dictum ullamcorper</p>\r\n<div class=\"testimonial\">\r\n<div class=\"testimonial-comment\">“ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse auctor dolor lectus, maximus vitae sapien dictum feugiat vehicula. Donec odio vulputate feugiat consequat”</div>\r\n<div class=\"testimonial-author\"><img src=\"themes/jms_kasos/assets/img/avatar-blog.png\" /> <span><span>Ms. Karen Morales</span> - Fashion Designer</span></div>\r\n</div>\r\n<p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condimentum. Nullam dignissim neque odio, ac blandit sapien hendrerit sed. Nulla ac ex fringilla, volutpat mauris sit amet, consequat massa. Suspendisse feugiat, elit sed fringilla pellentesque, felis sapien pharetra nulla, sed aliquet ante nisi sit amet nibh. Mauris sed purus consequat, auctor libero sed, molestie neque. Nam convallis at felis vel varius. Aliquam sollicitudin tincidunt nunc suscipit vulputate</p>', '', '', '', 'f03ca5f10de169feb35069ab6be833d3.jpg', '');
-INSERT INTO jms_jmsblog_posts_lang VALUES(3, 4, 'The Smart TV Ultra HD Resolution', 'the-smart-tv-ultra-dh-resolution', '<p>Aenean cursus interdum elit, sit amet fermentum placerat. Suspendisse tempus velenim, condimentum neque <span class=\"quote\"> vel illum dolore eu feugiat nulla facilisis at vero eros et accumsa</span></p>', '<p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condimentum. Nullam dignissim neque odio, ac blandit sapien hendrerit sed. Nulla ac ex fringilla, volutpat mauris sit amet, consequat massa. Suspendisse feugiat, elit sed fringilla pellentesque, felis sapien pharetra nulla, sed aliquet ante nisi sit amet nibh. Mauris sed purus consequat, auctor libero sed, molestie neque. Nam convallis at felis vel varius. Aliquam sollicitudin tincidunt nunc suscipit vulputate</p>\r\n<p>Proin non feugiat velit. Maecenas porta arcu in pulvinar ultricies. Morbi varius consequat pulvinar. Integer id feugiat elit. Sed vehicula varius turpis, a interdum ex tincidunt sed. Nunc bibendum ipsum tellus, eget pellentesque metus dictum eu. Nullam a neque vestibulum, porta lorem sed, dapibus magna. Vivamus eget bibendum ligula. Proin facilisis felis non ornare pellentesque. Suspendisse posuere elit sit amet eros lobortis aliquam nec vitae mi. Quisque nec luctus dolor. Ut venenatis dictum quam quis malesuada</p>\r\n<div class=\"row\">\r\n<div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_kasos/assets/img/blog-post-img1.jpg\" /></div>\r\n<div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_kasos/assets/img/blog-post-img2.jpg\" /></div>\r\n</div>\r\n<h2>Enhance Your Life By Using Technology Products</h2>\r\n<p>Proin non feugiat velit. Maecenas porta arcu in pulvinar ultricies. Morbi varius consequat pulvinar. Integer id feugiat elit. Sed vehicula varius turpis, a interdum ex tincidunt sed. Nunc bibendum ipsum tellus, eget pellentesque metus dictum eu. Nullam a neque vestibulum, porta lorem sed, dapibus magna. Vivamus eget bibendum ligula. Proin facilisis felis non ornare pellentesque. Suspendisse posuere elit sit amet eros lobortis aliquam nec vitae mi. Quisque nec luctus dolor. Ut venenatis dictum quam quis malesuada</p>\r\n<p>Donec sit amet tempus purus. Etiam tincidunt lacinia lacus, sed convallis felis sodales at. Vivamus ornare massa sed felis faucibus luctus. Cras ullamcorper pellentesque vehicula. Sed posuere mauris ac sem interdum facilisis. Suspendisse venenatis leo non bibendum aliquam. Nam quis ex et sapien pellentesque egestas sed vel eros. Maecenas fermentum dictum ullamcorper</p>\r\n<div class=\"testimonial\">\r\n<div class=\"testimonial-comment\">“ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse auctor dolor lectus, maximus vitae sapien dictum feugiat vehicula. Donec odio vulputate feugiat consequat”</div>\r\n<div class=\"testimonial-author\"><img src=\"themes/jms_kasos/assets/img/avatar-blog.png\" /> <span><span>Ms. Karen Morales</span> - Fashion Designer</span></div>\r\n</div>\r\n<p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condimentum. Nullam dignissim neque odio, ac blandit sapien hendrerit sed. Nulla ac ex fringilla, volutpat mauris sit amet, consequat massa. Suspendisse feugiat, elit sed fringilla pellentesque, felis sapien pharetra nulla, sed aliquet ante nisi sit amet nibh. Mauris sed purus consequat, auctor libero sed, molestie neque. Nam convallis at felis vel varius. Aliquam sollicitudin tincidunt nunc suscipit vulputate</p>', '', '', '', 'f03ca5f10de169feb35069ab6be833d3.jpg', '');
-INSERT INTO jms_jmsblog_posts_lang VALUES(3, 6, 'The Smart TV Ultra HD Resolution', 'the-smart-tv-ultra-dh-resolution', '<p>Aenean cursus interdum elit, sit amet fermentum placerat. Suspendisse tempus velenim, condimentum neque <span class=\"quote\"> vel illum dolore eu feugiat nulla facilisis at vero eros et accumsa</span></p>', '<p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condimentum. Nullam dignissim neque odio, ac blandit sapien hendrerit sed. Nulla ac ex fringilla, volutpat mauris sit amet, consequat massa. Suspendisse feugiat, elit sed fringilla pellentesque, felis sapien pharetra nulla, sed aliquet ante nisi sit amet nibh. Mauris sed purus consequat, auctor libero sed, molestie neque. Nam convallis at felis vel varius. Aliquam sollicitudin tincidunt nunc suscipit vulputate</p>\r\n<p>Proin non feugiat velit. Maecenas porta arcu in pulvinar ultricies. Morbi varius consequat pulvinar. Integer id feugiat elit. Sed vehicula varius turpis, a interdum ex tincidunt sed. Nunc bibendum ipsum tellus, eget pellentesque metus dictum eu. Nullam a neque vestibulum, porta lorem sed, dapibus magna. Vivamus eget bibendum ligula. Proin facilisis felis non ornare pellentesque. Suspendisse posuere elit sit amet eros lobortis aliquam nec vitae mi. Quisque nec luctus dolor. Ut venenatis dictum quam quis malesuada</p>\r\n<div class=\"row\">\r\n<div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_kasos/assets/img/blog-post-img1.jpg\" /></div>\r\n<div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_kasos/assets/img/blog-post-img2.jpg\" /></div>\r\n</div>\r\n<h2>Enhance Your Life By Using Technology Products</h2>\r\n<p>Proin non feugiat velit. Maecenas porta arcu in pulvinar ultricies. Morbi varius consequat pulvinar. Integer id feugiat elit. Sed vehicula varius turpis, a interdum ex tincidunt sed. Nunc bibendum ipsum tellus, eget pellentesque metus dictum eu. Nullam a neque vestibulum, porta lorem sed, dapibus magna. Vivamus eget bibendum ligula. Proin facilisis felis non ornare pellentesque. Suspendisse posuere elit sit amet eros lobortis aliquam nec vitae mi. Quisque nec luctus dolor. Ut venenatis dictum quam quis malesuada</p>\r\n<p>Donec sit amet tempus purus. Etiam tincidunt lacinia lacus, sed convallis felis sodales at. Vivamus ornare massa sed felis faucibus luctus. Cras ullamcorper pellentesque vehicula. Sed posuere mauris ac sem interdum facilisis. Suspendisse venenatis leo non bibendum aliquam. Nam quis ex et sapien pellentesque egestas sed vel eros. Maecenas fermentum dictum ullamcorper</p>\r\n<div class=\"testimonial\">\r\n<div class=\"testimonial-comment\">“ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse auctor dolor lectus, maximus vitae sapien dictum feugiat vehicula. Donec odio vulputate feugiat consequat”</div>\r\n<div class=\"testimonial-author\"><img src=\"themes/jms_kasos/assets/img/avatar-blog.png\" /> <span><span>Ms. Karen Morales</span> - Fashion Designer</span></div>\r\n</div>\r\n<p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condimentum. Nullam dignissim neque odio, ac blandit sapien hendrerit sed. Nulla ac ex fringilla, volutpat mauris sit amet, consequat massa. Suspendisse feugiat, elit sed fringilla pellentesque, felis sapien pharetra nulla, sed aliquet ante nisi sit amet nibh. Mauris sed purus consequat, auctor libero sed, molestie neque. Nam convallis at felis vel varius. Aliquam sollicitudin tincidunt nunc suscipit vulputate</p>', '', '', '', 'f03ca5f10de169feb35069ab6be833d3.jpg', '');
+INSERT INTO jms_jmsblog_posts_lang VALUES(3, 2, 'The Smart TV Ultra HD Resolution', 'the-smart-tv-ultra-dh-resolution', '<p>Aenean cursus interdum elit, sit amet fermentum placerat. Suspendisse tempus velenim, condimentum neque <span class=\"quote\"> vel illum dolore eu feugiat nulla facilisis at vero eros et accumsa</span></p>', '<p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condimentum. Nullam dignissim neque odio, ac blandit sapien hendrerit sed. Nulla ac ex fringilla, volutpat mauris sit amet, consequat massa. Suspendisse feugiat, elit sed fringilla pellentesque, felis sapien pharetra nulla, sed aliquet ante nisi sit amet nibh. Mauris sed purus consequat, auctor libero sed, molestie neque. Nam convallis at felis vel varius. Aliquam sollicitudin tincidunt nunc suscipit vulputate</p>\r\n<p>Proin non feugiat velit. Maecenas porta arcu in pulvinar ultricies. Morbi varius consequat pulvinar. Integer id feugiat elit. Sed vehicula varius turpis, a interdum ex tincidunt sed. Nunc bibendum ipsum tellus, eget pellentesque metus dictum eu. Nullam a neque vestibulum, porta lorem sed, dapibus magna. Vivamus eget bibendum ligula. Proin facilisis felis non ornare pellentesque. Suspendisse posuere elit sit amet eros lobortis aliquam nec vitae mi. Quisque nec luctus dolor. Ut venenatis dictum quam quis malesuada</p>\r\n<div class=\"row\">\r\n<div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_kasos/assets/img/blog-post-img1.jpg\" /></div>\r\n<div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_kasos/assets/img/blog-post-img2.jpg\" /></div>\r\n</div>\r\n<h2>Enhance Your Life By Using Technology Products</h2>\r\n<p>Proin non feugiat velit. Maecenas porta arcu in pulvinar ultricies. Morbi varius consequat pulvinar. Integer id feugiat elit. Sed vehicula varius turpis, a interdum ex tincidunt sed. Nunc bibendum ipsum tellus, eget pellentesque metus dictum eu. Nullam a neque vestibulum, porta lorem sed, dapibus magna. Vivamus eget bibendum ligula. Proin facilisis felis non ornare pellentesque. Suspendisse posuere elit sit amet eros lobortis aliquam nec vitae mi. Quisque nec luctus dolor. Ut venenatis dictum quam quis malesuada</p>\r\n<p>Donec sit amet tempus purus. Etiam tincidunt lacinia lacus, sed convallis felis sodales at. Vivamus ornare massa sed felis faucibus luctus. Cras ullamcorper pellentesque vehicula. Sed posuere mauris ac sem interdum facilisis. Suspendisse venenatis leo non bibendum aliquam. Nam quis ex et sapien pellentesque egestas sed vel eros. Maecenas fermentum dictum ullamcorper</p>\r\n<div class=\"testimonial\">\r\n<div class=\"testimonial-comment\">“ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse auctor dolor lectus, maximus vitae sapien dictum feugiat vehicula. Donec odio vulputate feugiat consequat”</div>\r\n<div class=\"testimonial-author\"><img src=\"themes/jms_kasos/assets/img/avatar-blog.png\" /> <span><span>Ms. Karen Morales</span> - Fashion Designer</span></div>\r\n</div>\r\n<p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condimentum. Nullam dignissim neque odio, ac blandit sapien hendrerit sed. Nulla ac ex fringilla, volutpat mauris sit amet, consequat massa. Suspendisse feugiat, elit sed fringilla pellentesque, felis sapien pharetra nulla, sed aliquet ante nisi sit amet nibh. Mauris sed purus consequat, auctor libero sed, molestie neque. Nam convallis at felis vel varius. Aliquam sollicitudin tincidunt nunc suscipit vulputate</p>', '', '', '', 'ec0d8ad2cfdf07d74cf41c895f7a69b3.jpg', '');
+INSERT INTO jms_jmsblog_posts_lang VALUES(3, 3, 'The Smart TV Ultra HD Resolution', 'the-smart-tv-ultra-dh-resolution', '<p>Aenean cursus interdum elit, sit amet fermentum placerat. Suspendisse tempus velenim, condimentum neque <span class=\"quote\"> vel illum dolore eu feugiat nulla facilisis at vero eros et accumsa</span></p>', '<p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condimentum. Nullam dignissim neque odio, ac blandit sapien hendrerit sed. Nulla ac ex fringilla, volutpat mauris sit amet, consequat massa. Suspendisse feugiat, elit sed fringilla pellentesque, felis sapien pharetra nulla, sed aliquet ante nisi sit amet nibh. Mauris sed purus consequat, auctor libero sed, molestie neque. Nam convallis at felis vel varius. Aliquam sollicitudin tincidunt nunc suscipit vulputate</p>\r\n<p>Proin non feugiat velit. Maecenas porta arcu in pulvinar ultricies. Morbi varius consequat pulvinar. Integer id feugiat elit. Sed vehicula varius turpis, a interdum ex tincidunt sed. Nunc bibendum ipsum tellus, eget pellentesque metus dictum eu. Nullam a neque vestibulum, porta lorem sed, dapibus magna. Vivamus eget bibendum ligula. Proin facilisis felis non ornare pellentesque. Suspendisse posuere elit sit amet eros lobortis aliquam nec vitae mi. Quisque nec luctus dolor. Ut venenatis dictum quam quis malesuada</p>\r\n<div class=\"row\">\r\n<div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_kasos/assets/img/blog-post-img1.jpg\" /></div>\r\n<div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_kasos/assets/img/blog-post-img2.jpg\" /></div>\r\n</div>\r\n<h2>Enhance Your Life By Using Technology Products</h2>\r\n<p>Proin non feugiat velit. Maecenas porta arcu in pulvinar ultricies. Morbi varius consequat pulvinar. Integer id feugiat elit. Sed vehicula varius turpis, a interdum ex tincidunt sed. Nunc bibendum ipsum tellus, eget pellentesque metus dictum eu. Nullam a neque vestibulum, porta lorem sed, dapibus magna. Vivamus eget bibendum ligula. Proin facilisis felis non ornare pellentesque. Suspendisse posuere elit sit amet eros lobortis aliquam nec vitae mi. Quisque nec luctus dolor. Ut venenatis dictum quam quis malesuada</p>\r\n<p>Donec sit amet tempus purus. Etiam tincidunt lacinia lacus, sed convallis felis sodales at. Vivamus ornare massa sed felis faucibus luctus. Cras ullamcorper pellentesque vehicula. Sed posuere mauris ac sem interdum facilisis. Suspendisse venenatis leo non bibendum aliquam. Nam quis ex et sapien pellentesque egestas sed vel eros. Maecenas fermentum dictum ullamcorper</p>\r\n<div class=\"testimonial\">\r\n<div class=\"testimonial-comment\">“ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse auctor dolor lectus, maximus vitae sapien dictum feugiat vehicula. Donec odio vulputate feugiat consequat”</div>\r\n<div class=\"testimonial-author\"><img src=\"themes/jms_kasos/assets/img/avatar-blog.png\" /> <span><span>Ms. Karen Morales</span> - Fashion Designer</span></div>\r\n</div>\r\n<p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condimentum. Nullam dignissim neque odio, ac blandit sapien hendrerit sed. Nulla ac ex fringilla, volutpat mauris sit amet, consequat massa. Suspendisse feugiat, elit sed fringilla pellentesque, felis sapien pharetra nulla, sed aliquet ante nisi sit amet nibh. Mauris sed purus consequat, auctor libero sed, molestie neque. Nam convallis at felis vel varius. Aliquam sollicitudin tincidunt nunc suscipit vulputate</p>', '', '', '', 'ec0d8ad2cfdf07d74cf41c895f7a69b3.jpg', '');
+INSERT INTO jms_jmsblog_posts_lang VALUES(3, 4, 'The Smart TV Ultra HD Resolution', 'the-smart-tv-ultra-dh-resolution', '<p>Aenean cursus interdum elit, sit amet fermentum placerat. Suspendisse tempus velenim, condimentum neque <span class=\"quote\"> vel illum dolore eu feugiat nulla facilisis at vero eros et accumsa</span></p>', '<p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condimentum. Nullam dignissim neque odio, ac blandit sapien hendrerit sed. Nulla ac ex fringilla, volutpat mauris sit amet, consequat massa. Suspendisse feugiat, elit sed fringilla pellentesque, felis sapien pharetra nulla, sed aliquet ante nisi sit amet nibh. Mauris sed purus consequat, auctor libero sed, molestie neque. Nam convallis at felis vel varius. Aliquam sollicitudin tincidunt nunc suscipit vulputate</p>\r\n<p>Proin non feugiat velit. Maecenas porta arcu in pulvinar ultricies. Morbi varius consequat pulvinar. Integer id feugiat elit. Sed vehicula varius turpis, a interdum ex tincidunt sed. Nunc bibendum ipsum tellus, eget pellentesque metus dictum eu. Nullam a neque vestibulum, porta lorem sed, dapibus magna. Vivamus eget bibendum ligula. Proin facilisis felis non ornare pellentesque. Suspendisse posuere elit sit amet eros lobortis aliquam nec vitae mi. Quisque nec luctus dolor. Ut venenatis dictum quam quis malesuada</p>\r\n<div class=\"row\">\r\n<div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_kasos/assets/img/blog-post-img1.jpg\" /></div>\r\n<div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_kasos/assets/img/blog-post-img2.jpg\" /></div>\r\n</div>\r\n<h2>Enhance Your Life By Using Technology Products</h2>\r\n<p>Proin non feugiat velit. Maecenas porta arcu in pulvinar ultricies. Morbi varius consequat pulvinar. Integer id feugiat elit. Sed vehicula varius turpis, a interdum ex tincidunt sed. Nunc bibendum ipsum tellus, eget pellentesque metus dictum eu. Nullam a neque vestibulum, porta lorem sed, dapibus magna. Vivamus eget bibendum ligula. Proin facilisis felis non ornare pellentesque. Suspendisse posuere elit sit amet eros lobortis aliquam nec vitae mi. Quisque nec luctus dolor. Ut venenatis dictum quam quis malesuada</p>\r\n<p>Donec sit amet tempus purus. Etiam tincidunt lacinia lacus, sed convallis felis sodales at. Vivamus ornare massa sed felis faucibus luctus. Cras ullamcorper pellentesque vehicula. Sed posuere mauris ac sem interdum facilisis. Suspendisse venenatis leo non bibendum aliquam. Nam quis ex et sapien pellentesque egestas sed vel eros. Maecenas fermentum dictum ullamcorper</p>\r\n<div class=\"testimonial\">\r\n<div class=\"testimonial-comment\">“ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse auctor dolor lectus, maximus vitae sapien dictum feugiat vehicula. Donec odio vulputate feugiat consequat”</div>\r\n<div class=\"testimonial-author\"><img src=\"themes/jms_kasos/assets/img/avatar-blog.png\" /> <span><span>Ms. Karen Morales</span> - Fashion Designer</span></div>\r\n</div>\r\n<p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condimentum. Nullam dignissim neque odio, ac blandit sapien hendrerit sed. Nulla ac ex fringilla, volutpat mauris sit amet, consequat massa. Suspendisse feugiat, elit sed fringilla pellentesque, felis sapien pharetra nulla, sed aliquet ante nisi sit amet nibh. Mauris sed purus consequat, auctor libero sed, molestie neque. Nam convallis at felis vel varius. Aliquam sollicitudin tincidunt nunc suscipit vulputate</p>', '', '', '', 'ec0d8ad2cfdf07d74cf41c895f7a69b3.jpg', '');
+INSERT INTO jms_jmsblog_posts_lang VALUES(3, 6, 'The Smart TV Ultra HD Resolution', 'the-smart-tv-ultra-dh-resolution', '<p>Aenean cursus interdum elit, sit amet fermentum placerat. Suspendisse tempus velenim, condimentum neque <span class=\"quote\"> vel illum dolore eu feugiat nulla facilisis at vero eros et accumsa</span></p>', '<p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condimentum. Nullam dignissim neque odio, ac blandit sapien hendrerit sed. Nulla ac ex fringilla, volutpat mauris sit amet, consequat massa. Suspendisse feugiat, elit sed fringilla pellentesque, felis sapien pharetra nulla, sed aliquet ante nisi sit amet nibh. Mauris sed purus consequat, auctor libero sed, molestie neque. Nam convallis at felis vel varius. Aliquam sollicitudin tincidunt nunc suscipit vulputate</p>\r\n<p>Proin non feugiat velit. Maecenas porta arcu in pulvinar ultricies. Morbi varius consequat pulvinar. Integer id feugiat elit. Sed vehicula varius turpis, a interdum ex tincidunt sed. Nunc bibendum ipsum tellus, eget pellentesque metus dictum eu. Nullam a neque vestibulum, porta lorem sed, dapibus magna. Vivamus eget bibendum ligula. Proin facilisis felis non ornare pellentesque. Suspendisse posuere elit sit amet eros lobortis aliquam nec vitae mi. Quisque nec luctus dolor. Ut venenatis dictum quam quis malesuada</p>\r\n<div class=\"row\">\r\n<div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_kasos/assets/img/blog-post-img1.jpg\" /></div>\r\n<div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_kasos/assets/img/blog-post-img2.jpg\" /></div>\r\n</div>\r\n<h2>Enhance Your Life By Using Technology Products</h2>\r\n<p>Proin non feugiat velit. Maecenas porta arcu in pulvinar ultricies. Morbi varius consequat pulvinar. Integer id feugiat elit. Sed vehicula varius turpis, a interdum ex tincidunt sed. Nunc bibendum ipsum tellus, eget pellentesque metus dictum eu. Nullam a neque vestibulum, porta lorem sed, dapibus magna. Vivamus eget bibendum ligula. Proin facilisis felis non ornare pellentesque. Suspendisse posuere elit sit amet eros lobortis aliquam nec vitae mi. Quisque nec luctus dolor. Ut venenatis dictum quam quis malesuada</p>\r\n<p>Donec sit amet tempus purus. Etiam tincidunt lacinia lacus, sed convallis felis sodales at. Vivamus ornare massa sed felis faucibus luctus. Cras ullamcorper pellentesque vehicula. Sed posuere mauris ac sem interdum facilisis. Suspendisse venenatis leo non bibendum aliquam. Nam quis ex et sapien pellentesque egestas sed vel eros. Maecenas fermentum dictum ullamcorper</p>\r\n<div class=\"testimonial\">\r\n<div class=\"testimonial-comment\">“ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse auctor dolor lectus, maximus vitae sapien dictum feugiat vehicula. Donec odio vulputate feugiat consequat”</div>\r\n<div class=\"testimonial-author\"><img src=\"themes/jms_kasos/assets/img/avatar-blog.png\" /> <span><span>Ms. Karen Morales</span> - Fashion Designer</span></div>\r\n</div>\r\n<p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condimentum. Nullam dignissim neque odio, ac blandit sapien hendrerit sed. Nulla ac ex fringilla, volutpat mauris sit amet, consequat massa. Suspendisse feugiat, elit sed fringilla pellentesque, felis sapien pharetra nulla, sed aliquet ante nisi sit amet nibh. Mauris sed purus consequat, auctor libero sed, molestie neque. Nam convallis at felis vel varius. Aliquam sollicitudin tincidunt nunc suscipit vulputate</p>', '', '', '', 'ec0d8ad2cfdf07d74cf41c895f7a69b3.jpg', '');
 INSERT INTO jms_jmsblog_posts_lang VALUES(4, 1, 'The Smart TV Ultra HD Resolution', 'the-smart-tv-ultra-dh-resolution', '<p>Aenean cursus interdum elit, sit amet fermentum placerat. Suspendisse tempus velenim, condimentum neque <span class=\"quote\"> vel illum dolore eu feugiat nulla facilisis at vero eros et accumsa</span></p>', '<p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condimentum. Nullam dignissim neque odio, ac blandit sapien hendrerit sed. Nulla ac ex fringilla, volutpat mauris sit amet, consequat massa. Suspendisse feugiat, elit sed fringilla pellentesque, felis sapien pharetra nulla, sed aliquet ante nisi sit amet nibh. Mauris sed purus consequat, auctor libero sed, molestie neque. Nam convallis at felis vel varius. Aliquam sollicitudin tincidunt nunc suscipit vulputate</p>\r\n<p>Proin non feugiat velit. Maecenas porta arcu in pulvinar ultricies. Morbi varius consequat pulvinar. Integer id feugiat elit. Sed vehicula varius turpis, a interdum ex tincidunt sed. Nunc bibendum ipsum tellus, eget pellentesque metus dictum eu. Nullam a neque vestibulum, porta lorem sed, dapibus magna. Vivamus eget bibendum ligula. Proin facilisis felis non ornare pellentesque. Suspendisse posuere elit sit amet eros lobortis aliquam nec vitae mi. Quisque nec luctus dolor. Ut venenatis dictum quam quis malesuada</p>\r\n<div class=\"row\">\r\n<div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_kasos/assets/img/blog-post-img1.jpg\" /></div>\r\n<div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_kasos/assets/img/blog-post-img2.jpg\" /></div>\r\n</div>\r\n<h2>Enhance Your Life By Using Technology Products</h2>\r\n<p>Proin non feugiat velit. Maecenas porta arcu in pulvinar ultricies. Morbi varius consequat pulvinar. Integer id feugiat elit. Sed vehicula varius turpis, a interdum ex tincidunt sed. Nunc bibendum ipsum tellus, eget pellentesque metus dictum eu. Nullam a neque vestibulum, porta lorem sed, dapibus magna. Vivamus eget bibendum ligula. Proin facilisis felis non ornare pellentesque. Suspendisse posuere elit sit amet eros lobortis aliquam nec vitae mi. Quisque nec luctus dolor. Ut venenatis dictum quam quis malesuada</p>\r\n<p>Donec sit amet tempus purus. Etiam tincidunt lacinia lacus, sed convallis felis sodales at. Vivamus ornare massa sed felis faucibus luctus. Cras ullamcorper pellentesque vehicula. Sed posuere mauris ac sem interdum facilisis. Suspendisse venenatis leo non bibendum aliquam. Nam quis ex et sapien pellentesque egestas sed vel eros. Maecenas fermentum dictum ullamcorper</p>\r\n<div class=\"testimonial\">\r\n<div class=\"testimonial-comment\">“ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse auctor dolor lectus, maximus vitae sapien dictum feugiat vehicula. Donec odio vulputate feugiat consequat”</div>\r\n<div class=\"testimonial-author\"><img src=\"themes/jms_kasos/assets/img/avatar-blog.png\" /> <span><span>Ms. Karen Morales</span> - Fashion Designer</span></div>\r\n</div>\r\n<p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condimentum. Nullam dignissim neque odio, ac blandit sapien hendrerit sed. Nulla ac ex fringilla, volutpat mauris sit amet, consequat massa. Suspendisse feugiat, elit sed fringilla pellentesque, felis sapien pharetra nulla, sed aliquet ante nisi sit amet nibh. Mauris sed purus consequat, auctor libero sed, molestie neque. Nam convallis at felis vel varius. Aliquam sollicitudin tincidunt nunc suscipit vulputate</p>', '', '', '', '61096544ac733107fc9fa3ee54e30aea.jpg', 'smartphone');
 INSERT INTO jms_jmsblog_posts_lang VALUES(4, 2, 'Enjoy Great Music From iPhone Xs Max', 'enjoy-great-music-from-iphone-xs-max', '<p>Aenean cursus interdum elit, sit amet fermentum placerat. Suspendisse tempus velenim, condimentum neque <span class=\"quote\"> vel illum dolore eu feugiat nulla facilisis at vero eros et accumsa</span></p>', '<p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condimentum. Nullam dignissim neque odio, ac blandit sapien hendrerit sed. Nulla ac ex fringilla, volutpat mauris sit amet, consequat massa. Suspendisse feugiat, elit sed fringilla pellentesque, felis sapien pharetra nulla, sed aliquet ante nisi sit amet nibh. Mauris sed purus consequat, auctor libero sed, molestie neque. Nam convallis at felis vel varius. Aliquam sollicitudin tincidunt nunc suscipit vulputate</p> <p>Proin non feugiat velit. Maecenas porta arcu in pulvinar ultricies. Morbi varius consequat pulvinar. Integer id feugiat elit. Sed vehicula varius turpis, a interdum ex tincidunt sed. Nunc bibendum ipsum tellus, eget pellentesque metus dictum eu. Nullam a neque vestibulum, porta lorem sed, dapibus magna. Vivamus eget bibendum ligula. Proin facilisis felis non ornare pellentesque. Suspendisse posuere elit sit amet eros lobortis aliquam nec vitae mi. Quisque nec luctus dolor. Ut venenatis dictum quam quis malesuada</p> <div class=\"row\"> <div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_kasos/assets/img/blog-post-img1.jpg\" /></div> <div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_kasos/assets/img/blog-post-img2.jpg\" /></div> </div> <h2>Enhance Your Life By Using Technology Products</h2> <p>Proin non feugiat velit. Maecenas porta arcu in pulvinar ultricies. Morbi varius consequat pulvinar. Integer id feugiat elit. Sed vehicula varius turpis, a interdum ex tincidunt sed. Nunc bibendum ipsum tellus, eget pellentesque metus dictum eu. Nullam a neque vestibulum, porta lorem sed, dapibus magna. Vivamus eget bibendum ligula. Proin facilisis felis non ornare pellentesque. Suspendisse posuere elit sit amet eros lobortis aliquam nec vitae mi. Quisque nec luctus dolor. Ut venenatis dictum quam quis malesuada</p> <p>Donec sit amet tempus purus. Etiam tincidunt lacinia lacus, sed convallis felis sodales at. Vivamus ornare massa sed felis faucibus luctus. Cras ullamcorper pellentesque vehicula. Sed posuere mauris ac sem interdum facilisis. Suspendisse venenatis leo non bibendum aliquam. Nam quis ex et sapien pellentesque egestas sed vel eros. Maecenas fermentum dictum ullamcorper</p> <div class=\"testimonial\"> <div class=\"testimonial-comment\">“ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse auctor dolor lectus, maximus vitae sapien dictum feugiat vehicula. Donec odio vulputate feugiat consequat”</div> <div class=\"testimonial-author\"><img src=\"themes/jms_kasos/assets/img/avatar-blog.png\" /> <span><span>Ms. Karen Morales</span> - Fashion Designer</span></div> </div> <p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condimentum. Nullam dignissim neque odio, ac blandit sapien hendrerit sed. Nulla ac ex fringilla, volutpat mauris sit amet, consequat massa. Suspendisse feugiat, elit sed fringilla pellentesque, felis sapien pharetra nulla, sed aliquet ante nisi sit amet nibh. Mauris sed purus consequat, auctor libero sed, molestie neque. Nam convallis at felis vel varius. Aliquam sollicitudin tincidunt nunc suscipit vulputate</p>', '', '', '', '61096544ac733107fc9fa3ee54e30aea.jpg', 'smartphone');
 INSERT INTO jms_jmsblog_posts_lang VALUES(4, 3, 'Enjoy Great Music From iPhone Xs Max', 'enjoy-great-music-from-iphone-xs-max', '<p>Aenean cursus interdum elit, sit amet fermentum placerat. Suspendisse tempus velenim, condimentum neque <span class=\"quote\"> vel illum dolore eu feugiat nulla facilisis at vero eros et accumsa</span></p>', '<p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condimentum. Nullam dignissim neque odio, ac blandit sapien hendrerit sed. Nulla ac ex fringilla, volutpat mauris sit amet, consequat massa. Suspendisse feugiat, elit sed fringilla pellentesque, felis sapien pharetra nulla, sed aliquet ante nisi sit amet nibh. Mauris sed purus consequat, auctor libero sed, molestie neque. Nam convallis at felis vel varius. Aliquam sollicitudin tincidunt nunc suscipit vulputate</p> <p>Proin non feugiat velit. Maecenas porta arcu in pulvinar ultricies. Morbi varius consequat pulvinar. Integer id feugiat elit. Sed vehicula varius turpis, a interdum ex tincidunt sed. Nunc bibendum ipsum tellus, eget pellentesque metus dictum eu. Nullam a neque vestibulum, porta lorem sed, dapibus magna. Vivamus eget bibendum ligula. Proin facilisis felis non ornare pellentesque. Suspendisse posuere elit sit amet eros lobortis aliquam nec vitae mi. Quisque nec luctus dolor. Ut venenatis dictum quam quis malesuada</p> <div class=\"row\"> <div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_kasos/assets/img/blog-post-img1.jpg\" /></div> <div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\"><img style=\"width: 100%;\" src=\"themes/jms_kasos/assets/img/blog-post-img2.jpg\" /></div> </div> <h2>Enhance Your Life By Using Technology Products</h2> <p>Proin non feugiat velit. Maecenas porta arcu in pulvinar ultricies. Morbi varius consequat pulvinar. Integer id feugiat elit. Sed vehicula varius turpis, a interdum ex tincidunt sed. Nunc bibendum ipsum tellus, eget pellentesque metus dictum eu. Nullam a neque vestibulum, porta lorem sed, dapibus magna. Vivamus eget bibendum ligula. Proin facilisis felis non ornare pellentesque. Suspendisse posuere elit sit amet eros lobortis aliquam nec vitae mi. Quisque nec luctus dolor. Ut venenatis dictum quam quis malesuada</p> <p>Donec sit amet tempus purus. Etiam tincidunt lacinia lacus, sed convallis felis sodales at. Vivamus ornare massa sed felis faucibus luctus. Cras ullamcorper pellentesque vehicula. Sed posuere mauris ac sem interdum facilisis. Suspendisse venenatis leo non bibendum aliquam. Nam quis ex et sapien pellentesque egestas sed vel eros. Maecenas fermentum dictum ullamcorper</p> <div class=\"testimonial\"> <div class=\"testimonial-comment\">“ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse auctor dolor lectus, maximus vitae sapien dictum feugiat vehicula. Donec odio vulputate feugiat consequat”</div> <div class=\"testimonial-author\"><img src=\"themes/jms_kasos/assets/img/avatar-blog.png\" /> <span><span>Ms. Karen Morales</span> - Fashion Designer</span></div> </div> <p>Aenean cursus interdum elit, posuere fermentum placerat pellentesque, egestas libero. Suspendisse tempus velenim, condimentum. Nullam dignissim neque odio, ac blandit sapien hendrerit sed. Nulla ac ex fringilla, volutpat mauris sit amet, consequat massa. Suspendisse feugiat, elit sed fringilla pellentesque, felis sapien pharetra nulla, sed aliquet ante nisi sit amet nibh. Mauris sed purus consequat, auctor libero sed, molestie neque. Nam convallis at felis vel varius. Aliquam sollicitudin tincidunt nunc suscipit vulputate</p>', '', '', '', '61096544ac733107fc9fa3ee54e30aea.jpg', 'smartphone');
@@ -12409,7 +12474,7 @@ INSERT INTO jms_jmsblog_posts_lang VALUES(6, 6, 'The Leather Apple Watch Series 
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_jmsbrands
+-- Cấu trúc bảng cho bảng jms_jmsbrands
 --
 
 CREATE TABLE jms_jmsbrands (
@@ -12418,7 +12483,7 @@ CREATE TABLE jms_jmsbrands (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_jmsbrands
+-- Đang đổ dữ liệu cho bảng jms_jmsbrands
 --
 
 INSERT INTO jms_jmsbrands VALUES(1, 1);
@@ -12431,7 +12496,7 @@ INSERT INTO jms_jmsbrands VALUES(6, 1);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_jmsbrands_logos
+-- Cấu trúc bảng cho bảng jms_jmsbrands_logos
 --
 
 CREATE TABLE jms_jmsbrands_logos (
@@ -12441,7 +12506,7 @@ CREATE TABLE jms_jmsbrands_logos (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_jmsbrands_logos
+-- Đang đổ dữ liệu cho bảng jms_jmsbrands_logos
 --
 
 INSERT INTO jms_jmsbrands_logos VALUES(1, 0, 1);
@@ -12454,7 +12519,7 @@ INSERT INTO jms_jmsbrands_logos VALUES(6, 0, 1);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_jmsbrands_logos_lang
+-- Cấu trúc bảng cho bảng jms_jmsbrands_logos_lang
 --
 
 CREATE TABLE jms_jmsbrands_logos_lang (
@@ -12467,7 +12532,7 @@ CREATE TABLE jms_jmsbrands_logos_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_jmsbrands_logos_lang
+-- Đang đổ dữ liệu cho bảng jms_jmsbrands_logos_lang
 --
 
 INSERT INTO jms_jmsbrands_logos_lang VALUES(1, 1, 'Brand 1', 'Proin ornare quam tortor, a scelerisque turpis elementum mattis. Integer mollis ante at lacus consequat, ac vestibulum dolor semper. Sed molestie nunc at nibh aliquet', '#', '34b342cbce663bbc6e7c2980a8763804.png');
@@ -12504,7 +12569,7 @@ INSERT INTO jms_jmsbrands_logos_lang VALUES(6, 6, 'Brand 6', 'Proin ornare quam 
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_jmsfacebookusers
+-- Cấu trúc bảng cho bảng jms_jmsfacebookusers
 --
 
 CREATE TABLE jms_jmsfacebookusers (
@@ -12524,7 +12589,7 @@ CREATE TABLE jms_jmsfacebookusers (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_jmsflashsales
+-- Cấu trúc bảng cho bảng jms_jmsflashsales
 --
 
 CREATE TABLE jms_jmsflashsales (
@@ -12533,7 +12598,7 @@ CREATE TABLE jms_jmsflashsales (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table jms_jmsflashsales
+-- Đang đổ dữ liệu cho bảng jms_jmsflashsales
 --
 
 INSERT INTO jms_jmsflashsales VALUES(1, 1);
@@ -12544,7 +12609,7 @@ INSERT INTO jms_jmsflashsales VALUES(4, 1);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_jmsflashsales_categories
+-- Cấu trúc bảng cho bảng jms_jmsflashsales_categories
 --
 
 CREATE TABLE jms_jmsflashsales_categories (
@@ -12553,7 +12618,7 @@ CREATE TABLE jms_jmsflashsales_categories (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_jmsflashsales_categories
+-- Đang đổ dữ liệu cho bảng jms_jmsflashsales_categories
 --
 
 INSERT INTO jms_jmsflashsales_categories VALUES(1, '');
@@ -12562,7 +12627,7 @@ INSERT INTO jms_jmsflashsales_categories VALUES(2, '');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_jmsflashsales_categories_lang
+-- Cấu trúc bảng cho bảng jms_jmsflashsales_categories_lang
 --
 
 CREATE TABLE jms_jmsflashsales_categories_lang (
@@ -12572,7 +12637,7 @@ CREATE TABLE jms_jmsflashsales_categories_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_jmsflashsales_categories_lang
+-- Đang đổ dữ liệu cho bảng jms_jmsflashsales_categories_lang
 --
 
 INSERT INTO jms_jmsflashsales_categories_lang VALUES(1, 1, 'Sale of 30%');
@@ -12589,7 +12654,7 @@ INSERT INTO jms_jmsflashsales_categories_lang VALUES(2, 6, 'Sale of 40%');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_jmsflashsales_items
+-- Cấu trúc bảng cho bảng jms_jmsflashsales_items
 --
 
 CREATE TABLE jms_jmsflashsales_items (
@@ -12601,7 +12666,7 @@ CREATE TABLE jms_jmsflashsales_items (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table jms_jmsflashsales_items
+-- Đang đổ dữ liệu cho bảng jms_jmsflashsales_items
 --
 
 INSERT INTO jms_jmsflashsales_items VALUES(1, 26, 1, 0, 1);
@@ -12612,7 +12677,7 @@ INSERT INTO jms_jmsflashsales_items VALUES(4, 33, 1, 3, 1);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_jmshtml_left
+-- Cấu trúc bảng cho bảng jms_jmshtml_left
 --
 
 CREATE TABLE jms_jmshtml_left (
@@ -12621,7 +12686,7 @@ CREATE TABLE jms_jmshtml_left (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_jmshtml_left
+-- Đang đổ dữ liệu cho bảng jms_jmshtml_left
 --
 
 INSERT INTO jms_jmshtml_left VALUES(1, 1);
@@ -12629,7 +12694,7 @@ INSERT INTO jms_jmshtml_left VALUES(1, 1);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_jmshtml_left_lang
+-- Cấu trúc bảng cho bảng jms_jmshtml_left_lang
 --
 
 CREATE TABLE jms_jmshtml_left_lang (
@@ -12639,7 +12704,7 @@ CREATE TABLE jms_jmshtml_left_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_jmshtml_left_lang
+-- Đang đổ dữ liệu cho bảng jms_jmshtml_left_lang
 --
 
 INSERT INTO jms_jmshtml_left_lang VALUES(1, 1, '<p><a href=\"#\"><img class=\"img-responsive\" src=\"themes/jms_kasos/assets/img/customhtml.jpg\" alt=\"Banner HTML\" /></a></p>');
@@ -12651,7 +12716,7 @@ INSERT INTO jms_jmshtml_left_lang VALUES(1, 6, '<p><a href=\"#\"><img class=\"im
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_jmsmaploc
+-- Cấu trúc bảng cho bảng jms_jmsmaploc
 --
 
 CREATE TABLE jms_jmsmaploc (
@@ -12660,7 +12725,7 @@ CREATE TABLE jms_jmsmaploc (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_jmsmaploc
+-- Đang đổ dữ liệu cho bảng jms_jmsmaploc
 --
 
 INSERT INTO jms_jmsmaploc VALUES(1, 1);
@@ -12672,7 +12737,7 @@ INSERT INTO jms_jmsmaploc VALUES(5, 1);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_jmsmaploc_locs
+-- Cấu trúc bảng cho bảng jms_jmsmaploc_locs
 --
 
 CREATE TABLE jms_jmsmaploc_locs (
@@ -12686,7 +12751,7 @@ CREATE TABLE jms_jmsmaploc_locs (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_jmsmaploc_locs
+-- Đang đổ dữ liệu cho bảng jms_jmsmaploc_locs
 --
 
 INSERT INTO jms_jmsmaploc_locs VALUES(1, '', '93 Rue de Rennes, Paris, France', '48.8495338', '2.329648099999986', 'default', 1);
@@ -12698,7 +12763,7 @@ INSERT INTO jms_jmsmaploc_locs VALUES(5, '', '16 Rue Jean Bologne, Paris, France
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_jmsmaploc_locs_lang
+-- Cấu trúc bảng cho bảng jms_jmsmaploc_locs_lang
 --
 
 CREATE TABLE jms_jmsmaploc_locs_lang (
@@ -12710,7 +12775,7 @@ CREATE TABLE jms_jmsmaploc_locs_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_jmsmaploc_locs_lang
+-- Đang đổ dữ liệu cho bảng jms_jmsmaploc_locs_lang
 --
 
 INSERT INTO jms_jmsmaploc_locs_lang VALUES(1, 1, 'Store 1', 'Proin ornare quam tortor, a scelerisque turpis elementum mattis. Integer mollis ante at lacus consequat, ac vestibulum dolor semper. Sed molestie nunc at nibh aliquet', '#');
@@ -12722,7 +12787,7 @@ INSERT INTO jms_jmsmaploc_locs_lang VALUES(5, 1, 'Store 5', 'Proin ornare quam t
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_jmsmegamenu
+-- Cấu trúc bảng cho bảng jms_jmsmegamenu
 --
 
 CREATE TABLE jms_jmsmegamenu (
@@ -12739,7 +12804,7 @@ CREATE TABLE jms_jmsmegamenu (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_jmsmegamenu
+-- Đang đổ dữ liệu cho bảng jms_jmsmegamenu
 --
 
 INSERT INTO jms_jmsmegamenu VALUES(1, 1, 0, 'link', '', '', 1, '_self', '{\"class\":\"sub-home\",\"align\":\"center\",\"sub\":{\"fullwidth\":\"1\",\"row\":[[{\"width\":\"12\",\"items\":[{\"item\":\"232\"},{\"item\":\"233\"},{\"item\":\"234\"},{\"item\":\"235\"},{\"item\":\"236\"},{\"item\":\"237\"},{\"item\":\"238\"},{\"item\":\"239\"}]}]]}}', 0);
@@ -12748,14 +12813,14 @@ INSERT INTO jms_jmsmegamenu VALUES(3, 1, 0, 'product', '21', '', 1, '_self', '{\
 INSERT INTO jms_jmsmegamenu VALUES(5, 1, 0, 'jmsblog-singlepost', '3', '', 1, '_self', '{\"class\":\"\",\"sub\":{\"row\":[[{\"width\":\"12\",\"items\":[{\"item\":\"287\"},{\"item\":\"294\"},{\"item\":\"298\"},{\"item\":\"305\"},{\"item\":\"306\"}]}]]}}', 4);
 INSERT INTO jms_jmsmegamenu VALUES(6, 1, 0, 'category', '3', '', 1, '_self', '{\"sub\":{\"row\":[[{\"width\":\"12\",\"items\":[{\"item\":\"253\"},{\"item\":\"254\"},{\"item\":\"256\"},{\"item\":\"255\"},{\"item\":\"307\"},{\"item\":\"258\"}]}]]}}', 5);
 INSERT INTO jms_jmsmegamenu VALUES(7, 1, 0, 'link', '', '', 1, '_self', '{}', 6);
-INSERT INTO jms_jmsmegamenu VALUES(232, 1, 1, 'html', 'html_content', '<div class=\"sub-home-content\">\r\n<p><a href=\"index.php?settingpanel=1&jpb_homepage=1\"><img src=\"themes/jms_kasos/assets/img/home-img/h1.jpg\" /></a></p>\r\n<p><a href=\"index.php?settingpanel=1&jpb_homepage=1\">Home 1</a></p>\r\n</div>', 1, '_self', '{\"class\":\"h1\",\"title\":\"0\"}', 1);
-INSERT INTO jms_jmsmegamenu VALUES(233, 1, 1, 'html', 'html_content', '<div class=\"sub-home-content\">\r\n<p><a href=\"index.php?settingpanel=1&jpb_homepage=2\"><img src=\"themes/jms_kasos/assets/img/home-img/h2.jpg\" /></a></p>\r\n<p><a href=\"index.php?settingpanel=1&jpb_homepage=2\">Home 2</a></p>\r\n</div>', 1, '_self', '{\"class\":\"h2\",\"title\":\"0\"}', 2);
-INSERT INTO jms_jmsmegamenu VALUES(234, 1, 1, 'html', 'html_content', '<div class=\"sub-home-content\">\r\n<p><a href=\"index.php?settingpanel=1&jpb_homepage=3\"><img src=\"themes/jms_kasos/assets/img/home-img/h3.jpg\" /></a></p>\r\n<p><a href=\"index.php?settingpanel=1&jpb_homepage=3\">Home 3</a></p>\r\n</div>', 1, '_self', '{\"class\":\"h3\",\"title\":\"0\"}', 3);
-INSERT INTO jms_jmsmegamenu VALUES(235, 1, 1, 'html', 'html_content', '<div class=\"sub-home-content\">\r\n<p><a href=\"index.php?settingpanel=1&jpb_homepage=4\"><img src=\"themes/jms_kasos/assets/img/home-img/h4.jpg\" /></a></p>\r\n<p><a href=\"index.php?settingpanel=1&jpb_homepage=4\">Home 4</a></p>\r\n</div>', 1, '_self', '{\"class\":\"h4\",\"title\":\"0\"}', 4);
-INSERT INTO jms_jmsmegamenu VALUES(236, 1, 1, 'html', 'html_content', '<div class=\"sub-home-content\">\r\n<p><a href=\"index.php?settingpanel=1&jpb_homepage=5\"><img src=\"themes/jms_kasos/assets/img/home-img/h5.jpg\" /></a></p>\r\n<p><a href=\"index.php?settingpanel=1&jpb_homepage=5\">Home 5</a></p>\r\n</div>', 1, '_self', '{\"class\":\"h5\",\"title\":\"0\"}', 5);
-INSERT INTO jms_jmsmegamenu VALUES(237, 1, 1, 'html', 'html_content', '<div class=\"sub-home-content\">\r\n<p><a href=\"index.php?settingpanel=1&jpb_homepage=6\"><img src=\"themes/jms_kasos/assets/img/home-img/h6.jpg\" /></a></p>\r\n<p><a href=\"index.php?settingpanel=1&jpb_homepage=6\">Home 6</a></p>\r\n</div>', 1, '_self', '{\"class\":\"h6\",\"title\":\"0\"}', 6);
-INSERT INTO jms_jmsmegamenu VALUES(238, 1, 1, 'html', 'html_content', '<div class=\"sub-home-content\">\r\n<p><a href=\"index.php?settingpanel=1&jpb_homepage=7\"><img src=\"themes/jms_kasos/assets/img/home-img/h7.jpg\" /></a></p>\r\n<p><a href=\"index.php?settingpanel=1&jpb_homepage=7\">Home 7</a></p>\r\n</div>', 1, '_self', '{\"class\":\"h7\",\"title\":\"0\"}', 7);
-INSERT INTO jms_jmsmegamenu VALUES(239, 1, 1, 'html', 'html_content', '<div class=\"sub-home-content\">\r\n<p><a href=\"index.php?settingpanel=1&jpb_homepage=8\"><img src=\"themes/jms_kasos/assets/img/home-img/h8.jpg\" /></a></p>\r\n<p><a href=\"index.php?settingpanel=1&jpb_homepage=8\">Home 8</a></p>\r\n</div>', 1, '_self', '{\"class\":\"h8\",\"title\":\"0\"}', 8);
+INSERT INTO jms_jmsmegamenu VALUES(232, 1, 1, 'html', 'html_content', '<div class=\"sub-home-content\">\r\n<p><a href=\"index.php?settingpanel=1&jpb_homepage=1\"><img src=\"themes/jms_kasos/assets/img/home-img/h1.jpg\" /></a></p>\r\n<p><a href=\"index.php?settingpanel=1&jpb_homepage=1\">Home 1</a></p>\r\n</div>', 1, '_self', '{\"class\":\"home1\",\"title\":\"0\"}', 1);
+INSERT INTO jms_jmsmegamenu VALUES(233, 1, 1, 'html', 'html_content', '<div class=\"sub-home-content\">\r\n<p><a href=\"index.php?settingpanel=1&jpb_homepage=2\"><img src=\"themes/jms_kasos/assets/img/home-img/h2.jpg\" /></a></p>\r\n<p><a href=\"index.php?settingpanel=1&jpb_homepage=2\">Home 2</a></p>\r\n</div>', 1, '_self', '{\"class\":\"home2\",\"title\":\"0\"}', 2);
+INSERT INTO jms_jmsmegamenu VALUES(234, 1, 1, 'html', 'html_content', '<div class=\"sub-home-content\">\r\n<p><a href=\"index.php?settingpanel=1&jpb_homepage=3\"><img src=\"themes/jms_kasos/assets/img/home-img/h3.jpg\" /></a></p>\r\n<p><a href=\"index.php?settingpanel=1&jpb_homepage=3\">Home 3</a></p>\r\n</div>', 1, '_self', '{\"class\":\"home3\",\"title\":\"0\"}', 3);
+INSERT INTO jms_jmsmegamenu VALUES(235, 1, 1, 'html', 'html_content', '<div class=\"sub-home-content\">\r\n<p><a href=\"index.php?settingpanel=1&jpb_homepage=4\"><img src=\"themes/jms_kasos/assets/img/home-img/h4.jpg\" /></a></p>\r\n<p><a href=\"index.php?settingpanel=1&jpb_homepage=4\">Home 4</a></p>\r\n</div>', 1, '_self', '{\"class\":\"home4\",\"title\":\"0\"}', 4);
+INSERT INTO jms_jmsmegamenu VALUES(236, 1, 1, 'html', 'html_content', '<div class=\"sub-home-content\">\r\n<p><a href=\"index.php?settingpanel=1&jpb_homepage=5\"><img src=\"themes/jms_kasos/assets/img/home-img/h5.jpg\" /></a></p>\r\n<p><a href=\"index.php?settingpanel=1&jpb_homepage=5\">Home 5</a></p>\r\n</div>', 1, '_self', '{\"class\":\"home5\",\"title\":\"0\"}', 5);
+INSERT INTO jms_jmsmegamenu VALUES(237, 1, 1, 'html', 'html_content', '<div class=\"sub-home-content\">\r\n<p><a href=\"index.php?settingpanel=1&jpb_homepage=6\"><img src=\"themes/jms_kasos/assets/img/home-img/h6.jpg\" /></a></p>\r\n<p><a href=\"index.php?settingpanel=1&jpb_homepage=6\">Home 6</a></p>\r\n</div>', 1, '_self', '{\"class\":\"home6\",\"title\":\"0\"}', 6);
+INSERT INTO jms_jmsmegamenu VALUES(238, 1, 1, 'html', 'html_content', '<div class=\"sub-home-content\">\r\n<p><a href=\"index.php?settingpanel=1&jpb_homepage=7\"><img src=\"themes/jms_kasos/assets/img/home-img/h7.jpg\" /></a></p>\r\n<p><a href=\"index.php?settingpanel=1&jpb_homepage=7\">Home 7</a></p>\r\n</div>', 1, '_self', '{\"class\":\"home7\",\"title\":\"0\"}', 7);
+INSERT INTO jms_jmsmegamenu VALUES(239, 1, 1, 'html', 'html_content', '<div class=\"sub-home-content\">\r\n<p><a href=\"index.php?settingpanel=1&jpb_homepage=8\"><img src=\"themes/jms_kasos/assets/img/home-img/h8.jpg\" /></a></p>\r\n<p><a href=\"index.php?settingpanel=1&jpb_homepage=8\">Home 8</a></p>\r\n</div>', 1, '_self', '{\"class\":\"home8\",\"title\":\"0\"}', 8);
 INSERT INTO jms_jmsmegamenu VALUES(253, 1, 6, 'link', '', '', 1, '_self', '{\"title\":\"1\"}', 0);
 INSERT INTO jms_jmsmegamenu VALUES(254, 1, 6, 'link', '', '', 1, '_self', '{\"title\":\"1\"}', 1);
 INSERT INTO jms_jmsmegamenu VALUES(255, 1, 6, 'link', '', '', 1, '_self', '{\"title\":\"1\"}', 3);
@@ -12851,7 +12916,7 @@ INSERT INTO jms_jmsmegamenu VALUES(356, 1, 2, 'link', '', '', 1, '_self', '{\"ti
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_jmsmegamenu_lang
+-- Cấu trúc bảng cho bảng jms_jmsmegamenu_lang
 --
 
 CREATE TABLE jms_jmsmegamenu_lang (
@@ -12862,7 +12927,7 @@ CREATE TABLE jms_jmsmegamenu_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_jmsmegamenu_lang
+-- Đang đổ dữ liệu cho bảng jms_jmsmegamenu_lang
 --
 
 INSERT INTO jms_jmsmegamenu_lang VALUES(1, 1, 'Home', 'index.php');
@@ -13395,7 +13460,7 @@ INSERT INTO jms_jmsmegamenu_lang VALUES(356, 6, 'Layout Grid', '');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_jmspagebuilder
+-- Cấu trúc bảng cho bảng jms_jmspagebuilder
 --
 
 CREATE TABLE jms_jmspagebuilder (
@@ -13404,7 +13469,7 @@ CREATE TABLE jms_jmspagebuilder (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_jmspagebuilder
+-- Đang đổ dữ liệu cho bảng jms_jmspagebuilder
 --
 
 INSERT INTO jms_jmspagebuilder VALUES(1, 1);
@@ -13419,7 +13484,7 @@ INSERT INTO jms_jmspagebuilder VALUES(8, 1);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_jmspagebuilder_homepages
+-- Cấu trúc bảng cho bảng jms_jmspagebuilder_homepages
 --
 
 CREATE TABLE jms_jmspagebuilder_homepages (
@@ -13434,7 +13499,7 @@ CREATE TABLE jms_jmspagebuilder_homepages (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_jmspagebuilder_homepages
+-- Đang đổ dữ liệu cho bảng jms_jmspagebuilder_homepages
 --
 
 INSERT INTO jms_jmspagebuilder_homepages VALUES(1, 'Home 1', 'home1.css', 'home1.js', 'home_1', '[{\"type\":\"row\",\"name\":\"Popup Advertising\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"popup_home\",\"name\":\"Popup Advertising\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"popupadvertising\",\"settings\":{\"active\":1,\"addon\":\"popupadvertising\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"6\":\"\"}},{\"type\":\"select\",\"label\":\"Popup Load On\",\"name\":\"loadtime\",\"multilang\":0,\"value\":\"alltime\"},{\"type\":\"select\",\"label\":\"Popup Show On Page\",\"name\":\"pageshow\",\"multilang\":0,\"value\":\"homepage\"},{\"type\":\"select\",\"label\":\"Popup Content Type\",\"name\":\"popuptype\",\"multilang\":0,\"value\":\"module\"},{\"type\":\"text\",\"label\":\"Popup Width\",\"name\":\"popup_width\",\"multilang\":0,\"value\":\"930\"},{\"type\":\"text\",\"label\":\"Popup Height\",\"name\":\"popup_height\",\"multilang\":0,\"value\":\"550\"},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"6\":\"\"}},{\"type\":\"select\",\"label\":\"Module Assign\",\"name\":\"modulename\",\"multilang\":0,\"value\":\"ps_emailsubscription\"},{\"type\":\"select\",\"label\":\"Module Hook\",\"name\":\"modulehook\",\"multilang\":0,\"value\":\"widget\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"Header\",\"layout\":\"2,7,3\",\"settings\":{\"active\":1,\"hook\":\"top\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":1,\"custom_class\":\"header\",\"name\":\"Header\",\"layout\":\"2,7,3\"},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-2 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"col-logo\"},\"addons\":[{\"type\":\"logo\",\"settings\":{\"active\":1,\"addon\":\"logo\"},\"fields\":[{\"type\":\"select\",\"label\":\"Use Default Logo of current theme\",\"name\":\"logo_type\",\"multilang\":0,\"value\":\"image\"},{\"type\":\"image\",\"label\":\"Custom Logo Image\",\"name\":\"custom_logo\",\"multilang\":0,\"value\":\"themes\\/jms_kasos\\/assets\\/img\\/logo.png\"},{\"type\":\"text\",\"label\":\"Logo Text\",\"name\":\"logo_text\",\"multilang\":0,\"value\":\"Kasos\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-7 col-md-3 col-sm-3 col-xs-3\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-3\",\"sm_col\":\"col-sm-3\",\"md_col\":\"col-md-3\",\"custom_class\":\"menu\"},\"addons\":[{\"type\":\"module\",\"settings\":{\"active\":1,\"hook\":\"displayTop\",\"modulename\":\"jmsmegamenu\",\"addon\":\"module\"},\"fields\":[]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-3 col-md-9 col-sm-9 col-xs-9\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-9\",\"sm_col\":\"col-sm-9\",\"md_col\":\"col-md-9\",\"custom_class\":\"right-icon-group\"},\"addons\":[{\"type\":\"module\",\"settings\":{\"active\":1,\"hook\":\"displayTop\",\"modulename\":\"jmsajaxsearch\",\"addon\":\"module\"},\"fields\":[]},{\"type\":\"module\",\"settings\":{\"active\":1,\"hook\":\"widget\",\"modulename\":\"ps_customersignin\",\"addon\":\"module\"},\"fields\":[]},{\"type\":\"module\",\"settings\":{\"active\":1,\"hook\":\"widget\",\"modulename\":\"ps_shoppingcart\",\"addon\":\"module\"},\"fields\":[]},{\"type\":\"module\",\"settings\":{\"active\":1,\"hook\":\"widget\",\"modulename\":\"ps_languageselector\",\"addon\":\"module\"},\"fields\":[]},{\"type\":\"module\",\"settings\":{\"active\":1,\"hook\":\"widget\",\"modulename\":\"ps_currencyselector\",\"addon\":\"module\"},\"fields\":[]}]}]},{\"type\":\"row\",\"name\":\"Banner text\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"banner-text\",\"name\":\"Banner text\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"html\",\"settings\":{\"active\":1,\"addon\":\"html\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"6\":\"\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"6\":\"\"}},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<p>Final Clearance: Selling 50% Discount \\u201cSale must-haves\\u201d<\\/p>_JMSLB_<p><a class=_JMSQUOTE_view-now_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>View now<\\/a><\\/p>\",\"2\":\"<p>Final Clearance: Selling 50% Discount \\u201cSale must-haves\\u201d<\\/p>_JMSLB_<p><a class=_JMSQUOTE_view-now_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>View now<\\/a><\\/p>\",\"3\":\"<p>Final Clearance: Selling 50% Discount \\u201cSale must-haves\\u201d<\\/p>_JMSLB_<p><a class=_JMSQUOTE_view-now_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>View now<\\/a><\\/p>\",\"4\":\"<p>Final Clearance: Selling 50% Discount \\u201cSale must-haves\\u201d<\\/p>_JMSLB_<p><a class=_JMSQUOTE_view-now_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>View now<\\/a><\\/p>\",\"6\":\"<p>Final Clearance: Selling 50% Discount \\u201cSale must-haves\\u201d<\\/p>_JMSLB_<p><a class=_JMSQUOTE_view-now_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>View now<\\/a><\\/p>\"}}]}]}]},{\"type\":\"row\",\"name\":\"Slider\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":1,\"custom_class\":\"\",\"name\":\"Slider\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"sliderlayer\",\"settings\":{\"active\":1,\"addon\":\"sliderlayer\"},\"fields\":[{\"type\":\"text\",\"label\":\"Slider IDs\",\"name\":\"slide_ids\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"Banner\",\"layout\":\"6,6\",\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"mt-30\",\"name\":\"Banner\",\"layout\":\"6,6\"},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-6 col-md-6 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-6\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"banner\",\"settings\":{\"active\":1,\"addon\":\"banner\"},\"fields\":[{\"type\":\"text\",\"label\":\"Banner Class\",\"name\":\"box_class\",\"multilang\":0,\"value\":\"banner-1\"},{\"type\":\"image\",\"label\":\"Banner Image\",\"name\":\"banner\",\"multilang\":0,\"value\":\"themes\\/jms_kasos\\/assets\\/img\\/h1-banner1.jpg\"},{\"type\":\"text\",\"label\":\"Alt Text\",\"name\":\"alt_text\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Banner Link\",\"name\":\"banner_link\",\"multilang\":0,\"value\":\"#\"},{\"type\":\"select\",\"label\":\"Target for Link\",\"name\":\"target\",\"multilang\":0,\"value\":\"new window\"},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<p class=_JMSQUOTE_sss-bold text-1_JMSQUOTE_>Powerful performance. Eye-catching design<\\/p>_JMSLB_<p><a class=_JMSQUOTE_sss-bold_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>Buy it now<\\/a><\\/p>\",\"2\":\"<p class=_JMSQUOTE_sss-bold text-1_JMSQUOTE_>Powerful performance. Eye-catching design<\\/p>_JMSLB_<p><a class=_JMSQUOTE_sss-bold_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>Buy it now<\\/a><\\/p>\",\"3\":\"<p class=_JMSQUOTE_sss-bold text-1_JMSQUOTE_>Powerful performance. Eye-catching design<\\/p>_JMSLB_<p><a class=_JMSQUOTE_sss-bold_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>Buy it now<\\/a><\\/p>\",\"4\":\"<p class=_JMSQUOTE_sss-bold text-1_JMSQUOTE_>Powerful performance. Eye-catching design<\\/p>_JMSLB_<p><a class=_JMSQUOTE_sss-bold_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>Buy it now<\\/a><\\/p>\",\"6\":\"<p class=_JMSQUOTE_sss-bold text-1_JMSQUOTE_>Powerful performance. Eye-catching design<\\/p>_JMSLB_<p><a class=_JMSQUOTE_sss-bold_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>Buy it now<\\/a><\\/p>\"}},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-6 col-md-6 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-6\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"banner\",\"settings\":{\"active\":1,\"addon\":\"banner\"},\"fields\":[{\"type\":\"text\",\"label\":\"Banner Class\",\"name\":\"box_class\",\"multilang\":0,\"value\":\"banner-2\"},{\"type\":\"image\",\"label\":\"Banner Image\",\"name\":\"banner\",\"multilang\":0,\"value\":\"themes\\/jms_kasos\\/assets\\/img\\/h1-banner2.jpg\"},{\"type\":\"text\",\"label\":\"Alt Text\",\"name\":\"alt_text\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Banner Link\",\"name\":\"banner_link\",\"multilang\":0,\"value\":\"#\"},{\"type\":\"select\",\"label\":\"Target for Link\",\"name\":\"target\",\"multilang\":0,\"value\":\"new window\"},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<p class=_JMSQUOTE_sss-bold text-1_JMSQUOTE_>Bose mini<br \\/>portable speaker<\\/p>_JMSLB_<p class=_JMSQUOTE_text-2_JMSQUOTE_>Free shipping when order online<\\/p>\",\"2\":\"<p class=_JMSQUOTE_sss-bold text-1_JMSQUOTE_>Bose mini<br \\/>portable speaker<\\/p>_JMSLB_<p class=_JMSQUOTE_text-2_JMSQUOTE_>Free shipping when order online<\\/p>\",\"3\":\"<p class=_JMSQUOTE_sss-bold text-1_JMSQUOTE_>Bose mini<br \\/>portable speaker<\\/p>_JMSLB_<p class=_JMSQUOTE_text-2_JMSQUOTE_>Free shipping when order online<\\/p>\",\"4\":\"<p class=_JMSQUOTE_sss-bold text-1_JMSQUOTE_>Bose mini<br \\/>portable speaker<\\/p>_JMSLB_<p class=_JMSQUOTE_text-2_JMSQUOTE_>Free shipping when order online<\\/p>\",\"6\":\"<p class=_JMSQUOTE_sss-bold text-1_JMSQUOTE_>Bose mini<br \\/>portable speaker<\\/p>_JMSLB_<p class=_JMSQUOTE_text-2_JMSQUOTE_>Free shipping when order online<\\/p>\"}},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]},{\"type\":\"space\",\"settings\":{\"active\":1,\"addon\":\"space\"},\"fields\":[{\"type\":\"number\",\"label\":\"Space Gap\",\"name\":\"spacegap\",\"multilang\":0,\"value\":\"30\"},{\"type\":\"text\",\"label\":\"Space Class\",\"name\":\"space_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]},{\"type\":\"banner\",\"settings\":{\"active\":1,\"addon\":\"banner\"},\"fields\":[{\"type\":\"text\",\"label\":\"Banner Class\",\"name\":\"box_class\",\"multilang\":0,\"value\":\"banner-3\"},{\"type\":\"image\",\"label\":\"Banner Image\",\"name\":\"banner\",\"multilang\":0,\"value\":\"themes\\/jms_kasos\\/assets\\/img\\/h1-banner3.jpg\"},{\"type\":\"text\",\"label\":\"Alt Text\",\"name\":\"alt_text\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Banner Link\",\"name\":\"banner_link\",\"multilang\":0,\"value\":\"#\"},{\"type\":\"select\",\"label\":\"Target for Link\",\"name\":\"target\",\"multilang\":0,\"value\":\"new window\"},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<p class=_JMSQUOTE_sss-bold text-1_JMSQUOTE_>New apple watch<br \\/>series 4<\\/p>_JMSLB_<p class=_JMSQUOTE_text-2_JMSQUOTE_>Order online starting at $109.00<\\/p>\",\"2\":\"<p class=_JMSQUOTE_sss-bold text-1_JMSQUOTE_>New apple watch<br \\/>series 4<\\/p>_JMSLB_<p class=_JMSQUOTE_text-2_JMSQUOTE_>Order online starting at $109.00<\\/p>\",\"3\":\"<p class=_JMSQUOTE_sss-bold text-1_JMSQUOTE_>New apple watch<br \\/>series 4<\\/p>_JMSLB_<p class=_JMSQUOTE_text-2_JMSQUOTE_>Order online starting at $109.00<\\/p>\",\"4\":\"<p class=_JMSQUOTE_sss-bold text-1_JMSQUOTE_>New apple watch<br \\/>series 4<\\/p>_JMSLB_<p class=_JMSQUOTE_text-2_JMSQUOTE_>Order online starting at $109.00<\\/p>\",\"6\":\"<p class=_JMSQUOTE_sss-bold text-1_JMSQUOTE_>New apple watch<br \\/>series 4<\\/p>_JMSLB_<p class=_JMSQUOTE_text-2_JMSQUOTE_>Order online starting at $109.00<\\/p>\"}},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"Best seller\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"mt-97\",\"name\":\"Best seller\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"productcarousel\",\"settings\":{\"active\":1,\"addon\":\"productcarousel\"},\"fields\":[{\"type\":\"text\",\"label\":\"Icon Class\",\"name\":\"icon_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"Best Sellers\",\"2\":\"Best Sellers\",\"3\":\"Best Sellers\",\"4\":\"Best Sellers\",\"6\":\"Best Sellers\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"6\":\"\"}},{\"type\":\"select\",\"label\":\"Product Type\",\"name\":\"producttype\",\"multilang\":0,\"value\":\"topseller\"},{\"type\":\"text\",\"label\":\"Total Items\",\"name\":\"items_total\",\"multilang\":0,\"value\":\"10\"},{\"type\":\"text\",\"label\":\"Number of Rows\",\"name\":\"rows\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"text\",\"label\":\"Number of Columns\",\"name\":\"cols\",\"multilang\":0,\"value\":\"4\"},{\"type\":\"text\",\"label\":\"Number of Columns On Medium Device\",\"name\":\"cols_md\",\"multilang\":0,\"value\":\"3\"},{\"type\":\"text\",\"label\":\"Number of Columns On Tablet\",\"name\":\"cols_sm\",\"multilang\":0,\"value\":\"2\"},{\"type\":\"text\",\"label\":\"Number of Columns On Mobile\",\"name\":\"cols_xs\",\"multilang\":0,\"value\":\"2\"},{\"type\":\"categories\",\"label\":\"Category\",\"name\":\"pccategories\",\"multilang\":0,\"value\":\"\"},{\"type\":\"switch\",\"label\":\"Show Navigation\",\"name\":\"navigation\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Show Pagination\",\"name\":\"pagination\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Auto Play\",\"name\":\"autoplay\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"ReWind Navigation\",\"name\":\"rewind\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"slide By Page\",\"name\":\"slidebypage\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"Discount\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"discount\",\"name\":\"Discount\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"html\",\"settings\":{\"active\":1,\"addon\":\"html\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"6\":\"\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"6\":\"\"}},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<p>Discount 50% everything for the next 03 hours only. Dont\\u2019s miss offer when checkout with code <span>KASOS50<\\/span><\\/p>\",\"2\":\"<p>Discount 50% everything for the next 03 hours only. Dont\\u2019s miss offer when checkout with code <span>KASOS50<\\/span><\\/p>\",\"3\":\"<p>Discount 50% everything for the next 03 hours only. Dont\\u2019s miss offer when checkout with code <span>KASOS50<\\/span><\\/p>\",\"4\":\"<p>Discount 50% everything for the next 03 hours only. Dont\\u2019s miss offer when checkout with code <span>KASOS50<\\/span><\\/p>\",\"6\":\"<p>Discount 50% everything for the next 03 hours only. Dont\\u2019s miss offer when checkout with code <span>KASOS50<\\/span><\\/p>\"}}]}]}]},{\"type\":\"row\",\"name\":\"Recent Arrivals\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"mt-98\",\"name\":\"Recent Arrivals\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"productcarousel\",\"settings\":{\"active\":1,\"addon\":\"productcarousel\"},\"fields\":[{\"type\":\"text\",\"label\":\"Icon Class\",\"name\":\"icon_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"Recent Arrivals\",\"2\":\"Recent Arrivals\",\"3\":\"Recent Arrivals\",\"4\":\"Recent Arrivals\",\"6\":\"Recent Arrivals\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"6\":\"\"}},{\"type\":\"select\",\"label\":\"Product Type\",\"name\":\"producttype\",\"multilang\":0,\"value\":\"new\"},{\"type\":\"text\",\"label\":\"Total Items\",\"name\":\"items_total\",\"multilang\":0,\"value\":\"10\"},{\"type\":\"text\",\"label\":\"Number of Rows\",\"name\":\"rows\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"text\",\"label\":\"Number of Columns\",\"name\":\"cols\",\"multilang\":0,\"value\":\"5\"},{\"type\":\"text\",\"label\":\"Number of Columns On Medium Device\",\"name\":\"cols_md\",\"multilang\":0,\"value\":\"3\"},{\"type\":\"text\",\"label\":\"Number of Columns On Tablet\",\"name\":\"cols_sm\",\"multilang\":0,\"value\":\"2\"},{\"type\":\"text\",\"label\":\"Number of Columns On Mobile\",\"name\":\"cols_xs\",\"multilang\":0,\"value\":\"2\"},{\"type\":\"categories\",\"label\":\"Category\",\"name\":\"pccategories\",\"multilang\":0,\"value\":\"\"},{\"type\":\"switch\",\"label\":\"Show Navigation\",\"name\":\"navigation\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Show Pagination\",\"name\":\"pagination\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Auto Play\",\"name\":\"autoplay\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"ReWind Navigation\",\"name\":\"rewind\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"slide By Page\",\"name\":\"slidebypage\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"addonproductcarousel-col5\"}]}]}]},{\"type\":\"row\",\"name\":\"Banner background\",\"layout\":\"6,6\",\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"50% 0\",\"background_repeat\":\"no-repeat\",\"background_size\":\"cover\",\"background_img\":\"themes\\/jms_kasos\\/assets\\/img\\/banner-bg1.jpg\",\"fluid\":0,\"custom_class\":\"banner-4\",\"name\":\"Banner background\",\"layout\":\"6,6\"},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-6 col-md-6 col-sm-6 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-6\",\"md_col\":\"col-md-6\",\"custom_class\":\"\"},\"addons\":[]},{\"type\":\"column\",\"className\":\"layout-column col-lg-6 col-md-6 col-sm-6 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-6\",\"md_col\":\"col-md-6\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"html\",\"settings\":{\"active\":1,\"addon\":\"html\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"6\":\"\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"6\":\"\"}},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<p class=_JMSQUOTE_text-1_JMSQUOTE_>Apple watch series 4<\\/p>_JMSLB_<p class=_JMSQUOTE_text-2_JMSQUOTE_>A new vision<br \\/>of smartwatch<\\/p>_JMSLB_<p class=_JMSQUOTE_mb-7_JMSQUOTE_><a class=_JMSQUOTE_buyitnow_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>Buy it now<\\/a><\\/p>\",\"2\":\"<p class=_JMSQUOTE_text-1_JMSQUOTE_>Apple watch series 4<\\/p>_JMSLB_<p class=_JMSQUOTE_text-2_JMSQUOTE_>A new vision<br \\/>of smartwatch<\\/p>_JMSLB_<p class=_JMSQUOTE_mb-7_JMSQUOTE_><a class=_JMSQUOTE_buyitnow_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>Buy it now<\\/a><\\/p>\",\"3\":\"<p class=_JMSQUOTE_text-1_JMSQUOTE_>Apple watch series 4<\\/p>_JMSLB_<p class=_JMSQUOTE_text-2_JMSQUOTE_>A new vision<br \\/>of smartwatch<\\/p>_JMSLB_<p class=_JMSQUOTE_mb-7_JMSQUOTE_><a class=_JMSQUOTE_buyitnow_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>Buy it now<\\/a><\\/p>\",\"4\":\"<p class=_JMSQUOTE_text-1_JMSQUOTE_>Apple watch series 4<\\/p>_JMSLB_<p class=_JMSQUOTE_text-2_JMSQUOTE_>A new vision<br \\/>of smartwatch<\\/p>_JMSLB_<p class=_JMSQUOTE_mb-7_JMSQUOTE_><a class=_JMSQUOTE_buyitnow_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>Buy it now<\\/a><\\/p>\",\"6\":\"<p class=_JMSQUOTE_text-1_JMSQUOTE_>Apple watch series 4<\\/p>_JMSLB_<p class=_JMSQUOTE_text-2_JMSQUOTE_>A new vision<br \\/>of smartwatch<\\/p>_JMSLB_<p class=_JMSQUOTE_mb-7_JMSQUOTE_><a class=_JMSQUOTE_buyitnow_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>Buy it now<\\/a><\\/p>\"}}]}]}]},{\"type\":\"row\",\"name\":\"Countdown banner\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"50% 0\",\"background_repeat\":\"no-repeat\",\"background_size\":\"cover\",\"background_img\":\"themes\\/jms_kasos\\/assets\\/img\\/banner-bg2.jpg\",\"fluid\":0,\"custom_class\":\"countdown-banner\",\"name\":\"Countdown banner\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"countdown\",\"settings\":{\"active\":1,\"addon\":\"countdown\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"6\":\"\"}},{\"type\":\"text\",\"label\":\"Expire Time\",\"name\":\"expire_time\",\"multilang\":0,\"value\":\"2020-10-04 09:34:34\"},{\"type\":\"text\",\"label\":\"Box Class\",\"name\":\"box_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"image\",\"label\":\"Image\",\"name\":\"image\",\"multilang\":0,\"value\":\"\"},{\"type\":\"editor\",\"label\":\"Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<p class=_JMSQUOTE_text-1_JMSQUOTE_>Deal of the week<\\/p>_JMSLB_<p class=_JMSQUOTE_text-2_JMSQUOTE_>Alienware gaming<br \\/>kaby computer<\\/p>\",\"2\":\"<p class=_JMSQUOTE_text-1_JMSQUOTE_>Deal of the week<\\/p>_JMSLB_<p class=_JMSQUOTE_text-2_JMSQUOTE_>Alienware gaming<br \\/>kaby computer<\\/p>\",\"3\":\"<p class=_JMSQUOTE_text-1_JMSQUOTE_>Deal of the week<\\/p>_JMSLB_<p class=_JMSQUOTE_text-2_JMSQUOTE_>Alienware gaming<br \\/>kaby computer<\\/p>\",\"4\":\"<p class=_JMSQUOTE_text-1_JMSQUOTE_>Deal of the week<\\/p>_JMSLB_<p class=_JMSQUOTE_text-2_JMSQUOTE_>Alienware gaming<br \\/>kaby computer<\\/p>\",\"6\":\"<p class=_JMSQUOTE_text-1_JMSQUOTE_>Deal of the week<\\/p>_JMSLB_<p class=_JMSQUOTE_text-2_JMSQUOTE_>Alienware gaming<br \\/>kaby computer<\\/p>\"}},{\"type\":\"text\",\"label\":\"Button Text\",\"name\":\"button_text\",\"multilang\":1,\"value\":{\"1\":\"Buy it now\",\"2\":\"Buy it now\",\"3\":\"Buy it now\",\"4\":\"Buy it now\",\"6\":\"Buy it now\"}},{\"type\":\"text\",\"label\":\"Button Link\",\"name\":\"button_link\",\"multilang\":0,\"value\":\"#\"},{\"type\":\"select\",\"label\":\"Target for Link\",\"name\":\"target\",\"multilang\":0,\"value\":\"new window\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"Featured products\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"mt-98\",\"name\":\"Featured products\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"productcarousel\",\"settings\":{\"active\":1,\"addon\":\"productcarousel\"},\"fields\":[{\"type\":\"text\",\"label\":\"Icon Class\",\"name\":\"icon_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"Featured products\",\"2\":\"Featured products\",\"3\":\"Featured products\",\"4\":\"Featured products\",\"6\":\"Featured products\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"6\":\"\"}},{\"type\":\"select\",\"label\":\"Product Type\",\"name\":\"producttype\",\"multilang\":0,\"value\":\"featured\"},{\"type\":\"text\",\"label\":\"Total Items\",\"name\":\"items_total\",\"multilang\":0,\"value\":\"10\"},{\"type\":\"text\",\"label\":\"Number of Rows\",\"name\":\"rows\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"text\",\"label\":\"Number of Columns\",\"name\":\"cols\",\"multilang\":0,\"value\":\"5\"},{\"type\":\"text\",\"label\":\"Number of Columns On Medium Device\",\"name\":\"cols_md\",\"multilang\":0,\"value\":\"3\"},{\"type\":\"text\",\"label\":\"Number of Columns On Tablet\",\"name\":\"cols_sm\",\"multilang\":0,\"value\":\"2\"},{\"type\":\"text\",\"label\":\"Number of Columns On Mobile\",\"name\":\"cols_xs\",\"multilang\":0,\"value\":\"2\"},{\"type\":\"categories\",\"label\":\"Category\",\"name\":\"pccategories\",\"multilang\":0,\"value\":\"\"},{\"type\":\"switch\",\"label\":\"Show Navigation\",\"name\":\"navigation\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Show Pagination\",\"name\":\"pagination\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Auto Play\",\"name\":\"autoplay\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"ReWind Navigation\",\"name\":\"rewind\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"slide By Page\",\"name\":\"slidebypage\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"addonproductcarousel-col5\"}]}]}]},{\"type\":\"row\",\"name\":\"Banner bg\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"50% 0\",\"background_repeat\":\"no-repeat\",\"background_size\":\"cover\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"banner_bg\",\"name\":\"Banner bg\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"html\",\"settings\":{\"active\":1,\"addon\":\"html\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"6\":\"\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"6\":\"\"}},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<p>Shop and save big on hottest iPhone<\\/p>_JMSLB_<p><a href=_JMSQUOTE_#_JMSQUOTE_ class=_JMSQUOTE_btn-buyitnow not-arrow_JMSQUOTE_>Buy with $99.00<\\/a><\\/p>\",\"2\":\"<p>Shop and save big on hottest iPhone<\\/p>_JMSLB_<p><a href=_JMSQUOTE_#_JMSQUOTE_ class=_JMSQUOTE_btn-buyitnow not-arrow_JMSQUOTE_>Buy with $99.00<\\/a><\\/p>\",\"3\":\"<p>Shop and save big on hottest iPhone<\\/p>_JMSLB_<p><a href=_JMSQUOTE_#_JMSQUOTE_ class=_JMSQUOTE_btn-buyitnow not-arrow_JMSQUOTE_>Buy with $99.00<\\/a><\\/p>\",\"4\":\"<p>Shop and save big on hottest iPhone<\\/p>_JMSLB_<p><a href=_JMSQUOTE_#_JMSQUOTE_ class=_JMSQUOTE_btn-buyitnow not-arrow_JMSQUOTE_>Buy with $99.00<\\/a><\\/p>\",\"6\":\"<p>Shop and save big on hottest iPhone<\\/p>_JMSLB_<p><a href=_JMSQUOTE_#_JMSQUOTE_ class=_JMSQUOTE_btn-buyitnow not-arrow_JMSQUOTE_>Buy with $99.00<\\/a><\\/p>\"}}]}]}]},{\"type\":\"row\",\"name\":\"Blog\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"mt-98\",\"name\":\"Blog\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"blog\",\"settings\":{\"active\":1,\"addon\":\"blog\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"Latest News\",\"2\":\"Latest News\",\"3\":\"Latest News\",\"4\":\"Latest News\",\"6\":\"Latest News\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"6\":\"\"}},{\"type\":\"text\",\"label\":\"Total Items\",\"name\":\"items_total\",\"multilang\":0,\"value\":\"10\"},{\"type\":\"text\",\"label\":\"Items Show\",\"name\":\"items_show\",\"multilang\":0,\"value\":\"3\"},{\"type\":\"text\",\"label\":\"Items Show On Medium Device\",\"name\":\"items_show_md\",\"multilang\":0,\"value\":\"2\"},{\"type\":\"text\",\"label\":\"Items Show On Tablet\",\"name\":\"items_show_sm\",\"multilang\":0,\"value\":\"2\"},{\"type\":\"text\",\"label\":\"Items Show On Mobile\",\"name\":\"items_show_xs\",\"multilang\":0,\"value\":\"2\"},{\"type\":\"switch\",\"label\":\"Show Category\",\"name\":\"show_category\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Show Introtext\",\"name\":\"show_introtext\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"text\",\"label\":\"Introtext Character Limit\",\"name\":\"introtext_limit\",\"multilang\":0,\"value\":\"120\"},{\"type\":\"switch\",\"label\":\"Show Readmore\",\"name\":\"show_readmore\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Show Time\",\"name\":\"show_time\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"switch\",\"label\":\"Show Comment Number\",\"name\":\"show_ncomments\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"switch\",\"label\":\"Show View Number\",\"name\":\"show_nviews\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"switch\",\"label\":\"Show Media\",\"name\":\"show_media\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"switch\",\"label\":\"Show Navigation\",\"name\":\"navigation\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Show Pagination\",\"name\":\"pagination\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Auto Play\",\"name\":\"autoplay\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"ReWind Navigation\",\"name\":\"rewind\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"slide By Page\",\"name\":\"slidebypage\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"Footer Top\",\"layout\":\"2,3,3,4\",\"settings\":{\"active\":1,\"hook\":\"footer\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"footer-top\",\"name\":\"Footer Top\",\"layout\":\"2,3,3,4\"},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-2 col-md-2 col-sm-6 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-6\",\"md_col\":\"col-md-2\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"html\",\"settings\":{\"active\":1,\"addon\":\"html\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"Company\",\"2\":\"Company\",\"3\":\"Company\",\"4\":\"Company\",\"6\":\"Company\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"6\":\"\"}},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<ul>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=4&controller=cms&id_lang=1_JMSQUOTE_>About Us<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?controller=contact_JMSQUOTE_>Contact Us<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?controller=stores_JMSQUOTE_>Store Locator<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=4&controller=cms&id_lang=1_JMSQUOTE_>Team Member<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=2&controller=cms&id_lang=1_JMSQUOTE_>Affilate<\\/a><\\/li>_JMSLB_<\\/ul>\",\"2\":\"<ul>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=4&controller=cms&id_lang=1_JMSQUOTE_>About Us<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?controller=contact_JMSQUOTE_>Contact Us<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?controller=stores_JMSQUOTE_>Store Locator<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=4&controller=cms&id_lang=1_JMSQUOTE_>Team Member<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=2&controller=cms&id_lang=1_JMSQUOTE_>Affilate<\\/a><\\/li>_JMSLB_<\\/ul>\",\"3\":\"<ul>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=4&controller=cms&id_lang=1_JMSQUOTE_>About Us<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?controller=contact_JMSQUOTE_>Contact Us<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?controller=stores_JMSQUOTE_>Store Locator<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=4&controller=cms&id_lang=1_JMSQUOTE_>Team Member<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=2&controller=cms&id_lang=1_JMSQUOTE_>Affilate<\\/a><\\/li>_JMSLB_<\\/ul>\",\"4\":\"<ul>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=4&controller=cms&id_lang=1_JMSQUOTE_>About Us<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?controller=contact_JMSQUOTE_>Contact Us<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?controller=stores_JMSQUOTE_>Store Locator<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=4&controller=cms&id_lang=1_JMSQUOTE_>Team Member<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=2&controller=cms&id_lang=1_JMSQUOTE_>Affilate<\\/a><\\/li>_JMSLB_<\\/ul>\",\"6\":\"<ul>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=4&controller=cms&id_lang=1_JMSQUOTE_>About Us<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?controller=contact_JMSQUOTE_>Contact Us<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?controller=stores_JMSQUOTE_>Store Locator<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=4&controller=cms&id_lang=1_JMSQUOTE_>Team Member<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=2&controller=cms&id_lang=1_JMSQUOTE_>Affilate<\\/a><\\/li>_JMSLB_<\\/ul>\"}}]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-3 col-md-3 col-sm-6 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-6\",\"md_col\":\"col-md-3\",\"custom_class\":\"info\"},\"addons\":[{\"type\":\"html\",\"settings\":{\"active\":1,\"addon\":\"html\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"INFORMATION\",\"2\":\"INFORMATION\",\"3\":\"INFORMATION\",\"4\":\"INFORMATION\",\"6\":\"INFORMATION\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"6\":\"\"}},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<ul>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=1&controller=cms&id_lang=1_JMSQUOTE_>Discount Info<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=2&controller=cms&id_lang=1_JMSQUOTE_>Partnership<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=3&controller=cms&id_lang=1_JMSQUOTE_>Payments<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=4&controller=cms&id_lang=1_JMSQUOTE_>Term & Conditions<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=5&controller=cms&id_lang=1_JMSQUOTE_>Advertises<\\/a><\\/li>_JMSLB_<\\/ul>\",\"2\":\"<ul>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=1&controller=cms&id_lang=1_JMSQUOTE_>Discount Info<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=2&controller=cms&id_lang=1_JMSQUOTE_>Partnership<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=3&controller=cms&id_lang=1_JMSQUOTE_>Payments<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=4&controller=cms&id_lang=1_JMSQUOTE_>Term & Conditions<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=5&controller=cms&id_lang=1_JMSQUOTE_>Advertises<\\/a><\\/li>_JMSLB_<\\/ul>\",\"3\":\"<ul>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=1&controller=cms&id_lang=1_JMSQUOTE_>Discount Info<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=2&controller=cms&id_lang=1_JMSQUOTE_>Partnership<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=3&controller=cms&id_lang=1_JMSQUOTE_>Payments<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=4&controller=cms&id_lang=1_JMSQUOTE_>Term & Conditions<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=5&controller=cms&id_lang=1_JMSQUOTE_>Advertises<\\/a><\\/li>_JMSLB_<\\/ul>\",\"4\":\"<ul>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=1&controller=cms&id_lang=1_JMSQUOTE_>Discount Info<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=2&controller=cms&id_lang=1_JMSQUOTE_>Partnership<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=3&controller=cms&id_lang=1_JMSQUOTE_>Payments<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=4&controller=cms&id_lang=1_JMSQUOTE_>Term & Conditions<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=5&controller=cms&id_lang=1_JMSQUOTE_>Advertises<\\/a><\\/li>_JMSLB_<\\/ul>\",\"6\":\"<ul>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=1&controller=cms&id_lang=1_JMSQUOTE_>Discount Info<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=2&controller=cms&id_lang=1_JMSQUOTE_>Partnership<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=3&controller=cms&id_lang=1_JMSQUOTE_>Payments<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=4&controller=cms&id_lang=1_JMSQUOTE_>Term & Conditions<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=5&controller=cms&id_lang=1_JMSQUOTE_>Advertises<\\/a><\\/li>_JMSLB_<\\/ul>\"}}]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-3 col-md-3 col-sm-6 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-6\",\"md_col\":\"col-md-3\",\"custom_class\":\"quicklink\"},\"addons\":[{\"type\":\"html\",\"settings\":{\"active\":1,\"addon\":\"html\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"QUICK LINKS\",\"2\":\"QUICK LINKS\",\"3\":\"QUICK LINKS\",\"4\":\"QUICK LINKS\",\"6\":\"QUICK LINKS\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"6\":\"\"}},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<ul>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=1&controller=cms&id_lang=1_JMSQUOTE_>Support Center<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=2&controller=cms&id_lang=1_JMSQUOTE_>Term & Conditions<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=3&controller=cms&id_lang=1_JMSQUOTE_>Shipping & Returns<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=4&controller=cms&id_lang=1_JMSQUOTE_>Customer Services<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=5&controller=cms&id_lang=1_JMSQUOTE_>FAQ\\u2019s<\\/a><\\/li>_JMSLB_<\\/ul>\",\"2\":\"<ul>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=1&controller=cms&id_lang=1_JMSQUOTE_>Support Center<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=2&controller=cms&id_lang=1_JMSQUOTE_>Term & Conditions<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=3&controller=cms&id_lang=1_JMSQUOTE_>Shipping & Returns<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=4&controller=cms&id_lang=1_JMSQUOTE_>Customer Services<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=5&controller=cms&id_lang=1_JMSQUOTE_>FAQ\\u2019s<\\/a><\\/li>_JMSLB_<\\/ul>\",\"3\":\"<ul>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=1&controller=cms&id_lang=1_JMSQUOTE_>Support Center<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=2&controller=cms&id_lang=1_JMSQUOTE_>Term & Conditions<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=3&controller=cms&id_lang=1_JMSQUOTE_>Shipping & Returns<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=4&controller=cms&id_lang=1_JMSQUOTE_>Customer Services<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=5&controller=cms&id_lang=1_JMSQUOTE_>FAQ\\u2019s<\\/a><\\/li>_JMSLB_<\\/ul>\",\"4\":\"<ul>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=1&controller=cms&id_lang=1_JMSQUOTE_>Support Center<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=2&controller=cms&id_lang=1_JMSQUOTE_>Term & Conditions<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=3&controller=cms&id_lang=1_JMSQUOTE_>Shipping & Returns<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=4&controller=cms&id_lang=1_JMSQUOTE_>Customer Services<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=5&controller=cms&id_lang=1_JMSQUOTE_>FAQ\\u2019s<\\/a><\\/li>_JMSLB_<\\/ul>\",\"6\":\"<ul>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=1&controller=cms&id_lang=1_JMSQUOTE_>Support Center<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=2&controller=cms&id_lang=1_JMSQUOTE_>Term & Conditions<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=3&controller=cms&id_lang=1_JMSQUOTE_>Shipping & Returns<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=4&controller=cms&id_lang=1_JMSQUOTE_>Customer Services<\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_index.php?id_cms=5&controller=cms&id_lang=1_JMSQUOTE_>FAQ\\u2019s<\\/a><\\/li>_JMSLB_<\\/ul>\"}}]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-4 col-md-4 col-sm-6 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-6\",\"md_col\":\"col-md-4\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"module\",\"settings\":{\"active\":1,\"hook\":\"widget\",\"modulename\":\"ps_emailsubscription\",\"addon\":\"module\"},\"fields\":[]},{\"type\":\"html\",\"settings\":{\"active\":1,\"addon\":\"html\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"6\":\"\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"6\":\"\"}},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<div class=_JMSQUOTE_social_icon_JMSQUOTE_>_JMSLB_<p>Follow Us:<\\/p>_JMSLB_<ul>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_><i class=_JMSQUOTE_fa fa-facebook-square_JMSQUOTE_><span class=_JMSQUOTE_hidden_JMSQUOTE_>facebook<\\/span><\\/i><\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_><i class=_JMSQUOTE_fa fa-twitter_JMSQUOTE_><span class=_JMSQUOTE_hidden_JMSQUOTE_>twitter<\\/span><\\/i><\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_><i class=_JMSQUOTE_fa fa-behance_JMSQUOTE_><span class=_JMSQUOTE_hidden_JMSQUOTE_>behance<\\/span><\\/i><\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_><i class=_JMSQUOTE_fa fa-pinterest_JMSQUOTE_><span class=_JMSQUOTE_hidden_JMSQUOTE_>pinterest<\\/span><\\/i><\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_><i class=_JMSQUOTE_fa fa-instagram_JMSQUOTE_><span class=_JMSQUOTE_hidden_JMSQUOTE_>instagram<\\/span><\\/i><\\/a><\\/li>_JMSLB_<\\/ul>_JMSLB_<\\/div>\",\"2\":\"<div class=_JMSQUOTE_social_icon_JMSQUOTE_>_JMSLB_<p>Follow Us:<\\/p>_JMSLB_<ul>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_><i class=_JMSQUOTE_fa fa-facebook-square_JMSQUOTE_><span class=_JMSQUOTE_hidden_JMSQUOTE_>facebook<\\/span><\\/i><\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_><i class=_JMSQUOTE_fa fa-twitter_JMSQUOTE_><span class=_JMSQUOTE_hidden_JMSQUOTE_>twitter<\\/span><\\/i><\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_><i class=_JMSQUOTE_fa fa-behance_JMSQUOTE_><span class=_JMSQUOTE_hidden_JMSQUOTE_>behance<\\/span><\\/i><\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_><i class=_JMSQUOTE_fa fa-pinterest_JMSQUOTE_><span class=_JMSQUOTE_hidden_JMSQUOTE_>pinterest<\\/span><\\/i><\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_><i class=_JMSQUOTE_fa fa-instagram_JMSQUOTE_><span class=_JMSQUOTE_hidden_JMSQUOTE_>instagram<\\/span><\\/i><\\/a><\\/li>_JMSLB_<\\/ul>_JMSLB_<\\/div>\",\"3\":\"<div class=_JMSQUOTE_social_icon_JMSQUOTE_>_JMSLB_<p>Follow Us:<\\/p>_JMSLB_<ul>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_><i class=_JMSQUOTE_fa fa-facebook-square_JMSQUOTE_><span class=_JMSQUOTE_hidden_JMSQUOTE_>facebook<\\/span><\\/i><\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_><i class=_JMSQUOTE_fa fa-twitter_JMSQUOTE_><span class=_JMSQUOTE_hidden_JMSQUOTE_>twitter<\\/span><\\/i><\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_><i class=_JMSQUOTE_fa fa-behance_JMSQUOTE_><span class=_JMSQUOTE_hidden_JMSQUOTE_>behance<\\/span><\\/i><\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_><i class=_JMSQUOTE_fa fa-pinterest_JMSQUOTE_><span class=_JMSQUOTE_hidden_JMSQUOTE_>pinterest<\\/span><\\/i><\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_><i class=_JMSQUOTE_fa fa-instagram_JMSQUOTE_><span class=_JMSQUOTE_hidden_JMSQUOTE_>instagram<\\/span><\\/i><\\/a><\\/li>_JMSLB_<\\/ul>_JMSLB_<\\/div>\",\"4\":\"<div class=_JMSQUOTE_social_icon_JMSQUOTE_>_JMSLB_<p>Follow Us:<\\/p>_JMSLB_<ul>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_><i class=_JMSQUOTE_fa fa-facebook-square_JMSQUOTE_><span class=_JMSQUOTE_hidden_JMSQUOTE_>facebook<\\/span><\\/i><\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_><i class=_JMSQUOTE_fa fa-twitter_JMSQUOTE_><span class=_JMSQUOTE_hidden_JMSQUOTE_>twitter<\\/span><\\/i><\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_><i class=_JMSQUOTE_fa fa-behance_JMSQUOTE_><span class=_JMSQUOTE_hidden_JMSQUOTE_>behance<\\/span><\\/i><\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_><i class=_JMSQUOTE_fa fa-pinterest_JMSQUOTE_><span class=_JMSQUOTE_hidden_JMSQUOTE_>pinterest<\\/span><\\/i><\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_><i class=_JMSQUOTE_fa fa-instagram_JMSQUOTE_><span class=_JMSQUOTE_hidden_JMSQUOTE_>instagram<\\/span><\\/i><\\/a><\\/li>_JMSLB_<\\/ul>_JMSLB_<\\/div>\",\"6\":\"<div class=_JMSQUOTE_social_icon_JMSQUOTE_>_JMSLB_<p>Follow Us:<\\/p>_JMSLB_<ul>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_><i class=_JMSQUOTE_fa fa-facebook-square_JMSQUOTE_><span class=_JMSQUOTE_hidden_JMSQUOTE_>facebook<\\/span><\\/i><\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_><i class=_JMSQUOTE_fa fa-twitter_JMSQUOTE_><span class=_JMSQUOTE_hidden_JMSQUOTE_>twitter<\\/span><\\/i><\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_><i class=_JMSQUOTE_fa fa-behance_JMSQUOTE_><span class=_JMSQUOTE_hidden_JMSQUOTE_>behance<\\/span><\\/i><\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_><i class=_JMSQUOTE_fa fa-pinterest_JMSQUOTE_><span class=_JMSQUOTE_hidden_JMSQUOTE_>pinterest<\\/span><\\/i><\\/a><\\/li>_JMSLB_<li><a href=_JMSQUOTE_#_JMSQUOTE_><i class=_JMSQUOTE_fa fa-instagram_JMSQUOTE_><span class=_JMSQUOTE_hidden_JMSQUOTE_>instagram<\\/span><\\/i><\\/a><\\/li>_JMSLB_<\\/ul>_JMSLB_<\\/div>\"}}]}]}]},{\"type\":\"row\",\"name\":\"Footer Bottom\",\"layout\":\"4,8\",\"settings\":{\"active\":1,\"hook\":\"footer\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"footer-bottom\",\"name\":\"Footer Bottom\",\"layout\":\"4,8\"},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-4 col-md-4 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-4\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"html\",\"settings\":{\"active\":1,\"addon\":\"html\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"6\":\"\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"6\":\"\"}},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<p class=_JMSQUOTE_lh-25 copyright_JMSQUOTE_>\\u00a9 2019 <span style=_JMSQUOTE_color: #ff4800;_JMSQUOTE_>Kasos<\\/span> Store. All rights reserved<\\/p>\",\"2\":\"<p class=_JMSQUOTE_lh-25 copyright_JMSQUOTE_>\\u00a9 2019 <span style=_JMSQUOTE_color: #ff4800;_JMSQUOTE_>Kasos<\\/span> Store. All rights reserved<\\/p>\",\"3\":\"<p class=_JMSQUOTE_lh-25 copyright_JMSQUOTE_>\\u00a9 2019 <span style=_JMSQUOTE_color: #ff4800;_JMSQUOTE_>Kasos<\\/span> Store. All rights reserved<\\/p>\",\"4\":\"<p class=_JMSQUOTE_lh-25 copyright_JMSQUOTE_>\\u00a9 2019 <span style=_JMSQUOTE_color: #ff4800;_JMSQUOTE_>Kasos<\\/span> Store. All rights reserved<\\/p>\",\"6\":\"<p class=_JMSQUOTE_lh-25 copyright_JMSQUOTE_>\\u00a9 2019 <span style=_JMSQUOTE_color: #ff4800;_JMSQUOTE_>Kasos<\\/span> Store. All rights reserved<\\/p>\"}}]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-8 col-md-8 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-8\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"html\",\"settings\":{\"active\":1,\"addon\":\"html\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"6\":\"\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"6\":\"\"}},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<div class=_JMSQUOTE_payments_JMSQUOTE_><span>We Using Safe Payment For<\\/span> <img src=_JMSQUOTE_themes\\/jms_kasos\\/assets\\/img\\/payments.png_JMSQUOTE_ alt=_JMSQUOTE__JMSQUOTE_ \\/><\\/div>\",\"2\":\"<div class=_JMSQUOTE_payments_JMSQUOTE_><span>We Using Safe Payment For<\\/span> <img src=_JMSQUOTE_themes\\/jms_kasos\\/assets\\/img\\/payments.png_JMSQUOTE_ alt=_JMSQUOTE__JMSQUOTE_ \\/><\\/div>\",\"3\":\"<div class=_JMSQUOTE_payments_JMSQUOTE_><span>We Using Safe Payment For<\\/span> <img src=_JMSQUOTE_themes\\/jms_kasos\\/assets\\/img\\/payments.png_JMSQUOTE_ alt=_JMSQUOTE__JMSQUOTE_ \\/><\\/div>\",\"4\":\"<div class=_JMSQUOTE_payments_JMSQUOTE_><span>We Using Safe Payment For<\\/span> <img src=_JMSQUOTE_themes\\/jms_kasos\\/assets\\/img\\/payments.png_JMSQUOTE_ alt=_JMSQUOTE__JMSQUOTE_ \\/><\\/div>\",\"6\":\"<div class=_JMSQUOTE_payments_JMSQUOTE_><span>We Using Safe Payment For<\\/span> <img src=_JMSQUOTE_themes\\/jms_kasos\\/assets\\/img\\/payments.png_JMSQUOTE_ alt=_JMSQUOTE__JMSQUOTE_ \\/><\\/div>\"}}]}]}]}]', 1, 0);
@@ -13449,7 +13514,7 @@ INSERT INTO jms_jmspagebuilder_homepages VALUES(8, 'Home 8', 'home8.css', 'home8
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_jmstestimonials
+-- Cấu trúc bảng cho bảng jms_jmstestimonials
 --
 
 CREATE TABLE jms_jmstestimonials (
@@ -13461,7 +13526,7 @@ CREATE TABLE jms_jmstestimonials (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_jmstestimonials
+-- Đang đổ dữ liệu cho bảng jms_jmstestimonials
 --
 
 INSERT INTO jms_jmstestimonials VALUES(1, 'Crystal Rios', '2012-12-12 00:00:00', 'd365883e320d58900f991d5a798fb694.png', 1);
@@ -13471,7 +13536,7 @@ INSERT INTO jms_jmstestimonials VALUES(3, 'Karen Morales', '2012-12-12 00:00:00'
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_jmstestimonials_lang
+-- Cấu trúc bảng cho bảng jms_jmstestimonials_lang
 --
 
 CREATE TABLE jms_jmstestimonials_lang (
@@ -13482,7 +13547,7 @@ CREATE TABLE jms_jmstestimonials_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_jmstestimonials_lang
+-- Đang đổ dữ liệu cho bảng jms_jmstestimonials_lang
 --
 
 INSERT INTO jms_jmstestimonials_lang VALUES(1, 1, 'Designer', 'Aenean cursus interdum elamet ferment placerat. Suspend tempus velenim pulvinar pharetra velit augue nec ex.');
@@ -13504,7 +13569,7 @@ INSERT INTO jms_jmstestimonials_lang VALUES(3, 6, 'Marketer							', 'Aenean cur
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_jmsvermegamenu
+-- Cấu trúc bảng cho bảng jms_jmsvermegamenu
 --
 
 CREATE TABLE jms_jmsvermegamenu (
@@ -13521,7 +13586,7 @@ CREATE TABLE jms_jmsvermegamenu (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_jmsvermegamenu
+-- Đang đổ dữ liệu cho bảng jms_jmsvermegamenu
 --
 
 INSERT INTO jms_jmsvermegamenu VALUES(84, 1, 0, 'category', '11', '', 1, '_self', '{\"icon\":\"icon-computer\"}', 1);
@@ -13540,7 +13605,7 @@ INSERT INTO jms_jmsvermegamenu VALUES(221, 1, 0, 'link', '', '', 1, '_self', '{\
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_jmsvermegamenu_lang
+-- Cấu trúc bảng cho bảng jms_jmsvermegamenu_lang
 --
 
 CREATE TABLE jms_jmsvermegamenu_lang (
@@ -13551,7 +13616,7 @@ CREATE TABLE jms_jmsvermegamenu_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_jmsvermegamenu_lang
+-- Đang đổ dữ liệu cho bảng jms_jmsvermegamenu_lang
 --
 
 INSERT INTO jms_jmsvermegamenu_lang VALUES(84, 1, 'Computers & PCs', 'indexen.php');
@@ -13633,7 +13698,7 @@ INSERT INTO jms_jmsvermegamenu_lang VALUES(221, 6, 'Top 50 Sellers', '');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_jms_hook
+-- Cấu trúc bảng cho bảng jms_jms_hook
 --
 
 CREATE TABLE jms_jms_hook (
@@ -13642,7 +13707,7 @@ CREATE TABLE jms_jms_hook (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_jms_hook
+-- Đang đổ dữ liệu cho bảng jms_jms_hook
 --
 
 INSERT INTO jms_jms_hook VALUES(1, 'displayWrapperTop');
@@ -13654,7 +13719,7 @@ INSERT INTO jms_jms_hook VALUES(5, 'displayHome');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_jms_layer_style
+-- Cấu trúc bảng cho bảng jms_jms_layer_style
 --
 
 CREATE TABLE jms_jms_layer_style (
@@ -13673,7 +13738,7 @@ CREATE TABLE jms_jms_layer_style (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_jms_layer_style
+-- Đang đổ dữ liệu cho bảng jms_jms_layer_style
 --
 
 INSERT INTO jms_jms_layer_style VALUES(19, 62, 'desktop', 'normal', 400, 53, 53, 1003, 297, 641, 69, 1);
@@ -13928,7 +13993,7 @@ INSERT INTO jms_jms_layer_style VALUES(679, 160, 'mobile2', 'normal', 400, 10, 1
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_jms_producttab
+-- Cấu trúc bảng cho bảng jms_jms_producttab
 --
 
 CREATE TABLE jms_jms_producttab (
@@ -13937,7 +14002,7 @@ CREATE TABLE jms_jms_producttab (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_jms_producttab
+-- Đang đổ dữ liệu cho bảng jms_jms_producttab
 --
 
 INSERT INTO jms_jms_producttab VALUES(1, 1);
@@ -13959,7 +14024,7 @@ INSERT INTO jms_jms_producttab VALUES(15, 1);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_jms_producttab_ctab
+-- Cấu trúc bảng cho bảng jms_jms_producttab_ctab
 --
 
 CREATE TABLE jms_jms_producttab_ctab (
@@ -13968,7 +14033,7 @@ CREATE TABLE jms_jms_producttab_ctab (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_jms_producttab_ctab
+-- Đang đổ dữ liệu cho bảng jms_jms_producttab_ctab
 --
 
 INSERT INTO jms_jms_producttab_ctab VALUES(1, 20);
@@ -13990,7 +14055,7 @@ INSERT INTO jms_jms_producttab_ctab VALUES(15, 34);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_jms_producttab_ctab_lang
+-- Cấu trúc bảng cho bảng jms_jms_producttab_ctab_lang
 --
 
 CREATE TABLE jms_jms_producttab_ctab_lang (
@@ -14001,7 +14066,7 @@ CREATE TABLE jms_jms_producttab_ctab_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_jms_producttab_ctab_lang
+-- Đang đổ dữ liệu cho bảng jms_jms_producttab_ctab_lang
 --
 
 INSERT INTO jms_jms_producttab_ctab_lang VALUES(1, 1, '', '');
@@ -14083,7 +14148,7 @@ INSERT INTO jms_jms_producttab_ctab_lang VALUES(15, 6, '', '');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_jms_product_video
+-- Cấu trúc bảng cho bảng jms_jms_product_video
 --
 
 CREATE TABLE jms_jms_product_video (
@@ -14095,7 +14160,7 @@ CREATE TABLE jms_jms_product_video (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_jms_product_video
+-- Đang đổ dữ liệu cho bảng jms_jms_product_video
 --
 
 INSERT INTO jms_jms_product_video VALUES(1, 20, 1, '', '');
@@ -14177,7 +14242,7 @@ INSERT INTO jms_jms_product_video VALUES(75, 34, 6, '', '');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_jms_slider
+-- Cấu trúc bảng cho bảng jms_jms_slider
 --
 
 CREATE TABLE jms_jms_slider (
@@ -14213,7 +14278,7 @@ CREATE TABLE jms_jms_slider (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_jms_slider
+-- Đang đổ dữ liệu cho bảng jms_jms_slider
 --
 
 INSERT INTO jms_jms_slider VALUES(1, 'Home 1', 1000, 0, 0, 'fade', 'left', 'left', 'easeInCubic', 'easeOutExpo', 300, 0, 7000, 1, 'easeOutCubic', 1, 1, 1, 1903, 750, 200, 400, 300, 1, 0, 0, 1, 1, 0);
@@ -14228,7 +14293,7 @@ INSERT INTO jms_jms_slider VALUES(8, 'Home 8', 1000, 0, 0, 'fade', 'left', 'left
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_jms_slider_hook
+-- Cấu trúc bảng cho bảng jms_jms_slider_hook
 --
 
 CREATE TABLE jms_jms_slider_hook (
@@ -14239,7 +14304,7 @@ CREATE TABLE jms_jms_slider_hook (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_jms_slider_lang
+-- Cấu trúc bảng cho bảng jms_jms_slider_lang
 --
 
 CREATE TABLE jms_jms_slider_lang (
@@ -14248,7 +14313,7 @@ CREATE TABLE jms_jms_slider_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_jms_slider_lang
+-- Đang đổ dữ liệu cho bảng jms_jms_slider_lang
 --
 
 INSERT INTO jms_jms_slider_lang VALUES(1, 0);
@@ -14263,7 +14328,7 @@ INSERT INTO jms_jms_slider_lang VALUES(8, 0);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_jms_slides
+-- Cấu trúc bảng cho bảng jms_jms_slides
 --
 
 CREATE TABLE jms_jms_slides (
@@ -14280,7 +14345,7 @@ CREATE TABLE jms_jms_slides (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_jms_slides
+-- Đang đổ dữ liệu cho bảng jms_jms_slides
 --
 
 INSERT INTO jms_jms_slides VALUES(7, 1, 'Slider 1', '', 1, '62e9921e503ae3520af858fb07b156f7.jpg', '', '', 0, 1);
@@ -14303,7 +14368,7 @@ INSERT INTO jms_jms_slides VALUES(26, 8, 'Slider 2', '', 1, 'ad15483cf0256cc8ff8
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_jms_slides_lang
+-- Cấu trúc bảng cho bảng jms_jms_slides_lang
 --
 
 CREATE TABLE jms_jms_slides_lang (
@@ -14312,7 +14377,7 @@ CREATE TABLE jms_jms_slides_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_jms_slides_lang
+-- Đang đổ dữ liệu cho bảng jms_jms_slides_lang
 --
 
 INSERT INTO jms_jms_slides_lang VALUES(7, 0);
@@ -14333,7 +14398,7 @@ INSERT INTO jms_jms_slides_lang VALUES(20, 0);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_jms_slides_layers
+-- Cấu trúc bảng cho bảng jms_jms_slides_layers
 --
 
 CREATE TABLE jms_jms_slides_layers (
@@ -14367,7 +14432,7 @@ CREATE TABLE jms_jms_slides_layers (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_jms_slides_layers
+-- Đang đổ dữ liệu cho bảng jms_jms_slides_layers
 --
 
 INSERT INTO jms_jms_slides_layers VALUES(62, 7, 'Hermes apple watch S4', 'sss-bold text-2', 0, 500, 1000, 'none', 'none', 'linear', 'linear', 'fadeInRight', 'fadeInRight', 'text', '', 'Hermes apple watch S4', '', 0, 0, 0, 0, 0, 'rgb(255, 255, 255)', 641, 69, 0, 1);
@@ -14436,7 +14501,7 @@ INSERT INTO jms_jms_slides_layers VALUES(160, 26, 'New Applewatch 2019', 'sss-re
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_jms_slides_shop
+-- Cấu trúc bảng cho bảng jms_jms_slides_shop
 --
 
 CREATE TABLE jms_jms_slides_shop (
@@ -14445,7 +14510,7 @@ CREATE TABLE jms_jms_slides_shop (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_jms_slides_shop
+-- Đang đổ dữ liệu cho bảng jms_jms_slides_shop
 --
 
 INSERT INTO jms_jms_slides_shop VALUES(7, 1);
@@ -14468,7 +14533,7 @@ INSERT INTO jms_jms_slides_shop VALUES(26, 1);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_lang
+-- Cấu trúc bảng cho bảng jms_lang
 --
 
 CREATE TABLE jms_lang (
@@ -14484,7 +14549,7 @@ CREATE TABLE jms_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_lang
+-- Đang đổ dữ liệu cho bảng jms_lang
 --
 
 INSERT INTO jms_lang VALUES(1, 'English (English)', 1, 'en', 'en-us', 'en-US', 'm/d/Y', 'm/d/Y H:i:s', 0);
@@ -14496,7 +14561,7 @@ INSERT INTO jms_lang VALUES(6, 'Español (Spanish)', 1, 'es', 'es-es', 'es-ES', 
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_lang_shop
+-- Cấu trúc bảng cho bảng jms_lang_shop
 --
 
 CREATE TABLE jms_lang_shop (
@@ -14505,7 +14570,7 @@ CREATE TABLE jms_lang_shop (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_lang_shop
+-- Đang đổ dữ liệu cho bảng jms_lang_shop
 --
 
 INSERT INTO jms_lang_shop VALUES(1, 1);
@@ -14517,7 +14582,7 @@ INSERT INTO jms_lang_shop VALUES(6, 1);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_layered_category
+-- Cấu trúc bảng cho bảng jms_layered_category
 --
 
 CREATE TABLE jms_layered_category (
@@ -14532,7 +14597,7 @@ CREATE TABLE jms_layered_category (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_layered_category
+-- Đang đổ dữ liệu cho bảng jms_layered_category
 --
 
 INSERT INTO jms_layered_category VALUES(1, 1, 2, NULL, 'category', 1, 0, 0);
@@ -14649,7 +14714,7 @@ INSERT INTO jms_layered_category VALUES(110, 1, 16, NULL, 'price', 10, 0, 0);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_layered_filter
+-- Cấu trúc bảng cho bảng jms_layered_filter
 --
 
 CREATE TABLE jms_layered_filter (
@@ -14661,7 +14726,7 @@ CREATE TABLE jms_layered_filter (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_layered_filter
+-- Đang đổ dữ liệu cho bảng jms_layered_filter
 --
 
 INSERT INTO jms_layered_filter VALUES(1, 'My template 2019-07-24', 'a:12:{s:10:\"categories\";a:11:{i:0;i:2;i:1;i:10;i:2;i:11;i:3;i:17;i:4;i:12;i:5;i:18;i:6;i:13;i:7;i:14;i:8;i:19;i:9;i:15;i:10;i:16;}s:9:\"shop_list\";a:1:{i:0;i:1;}s:31:\"layered_selection_subcategories\";a:2:{s:11:\"filter_type\";i:0;s:17:\"filter_show_limit\";i:0;}s:22:\"layered_selection_ag_2\";a:2:{s:11:\"filter_type\";i:0;s:17:\"filter_show_limit\";i:0;}s:22:\"layered_selection_ag_1\";a:2:{s:11:\"filter_type\";i:0;s:17:\"filter_show_limit\";i:0;}s:24:\"layered_selection_feat_1\";a:2:{s:11:\"filter_type\";i:0;s:17:\"filter_show_limit\";i:0;}s:24:\"layered_selection_feat_2\";a:2:{s:11:\"filter_type\";i:0;s:17:\"filter_show_limit\";i:0;}s:23:\"layered_selection_stock\";a:2:{s:11:\"filter_type\";i:0;s:17:\"filter_show_limit\";i:0;}s:30:\"layered_selection_manufacturer\";a:2:{s:11:\"filter_type\";i:0;s:17:\"filter_show_limit\";i:0;}s:27:\"layered_selection_condition\";a:2:{s:11:\"filter_type\";i:0;s:17:\"filter_show_limit\";i:0;}s:31:\"layered_selection_weight_slider\";a:2:{s:11:\"filter_type\";i:0;s:17:\"filter_show_limit\";i:0;}s:30:\"layered_selection_price_slider\";a:2:{s:11:\"filter_type\";i:0;s:17:\"filter_show_limit\";i:0;}}', 11, '2019-08-07 23:19:03');
@@ -14669,7 +14734,7 @@ INSERT INTO jms_layered_filter VALUES(1, 'My template 2019-07-24', 'a:12:{s:10:\
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_layered_filter_block
+-- Cấu trúc bảng cho bảng jms_layered_filter_block
 --
 
 CREATE TABLE jms_layered_filter_block (
@@ -14678,17 +14743,22 @@ CREATE TABLE jms_layered_filter_block (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_layered_filter_block
+-- Đang đổ dữ liệu cho bảng jms_layered_filter_block
 --
 
 INSERT INTO jms_layered_filter_block VALUES('015bfb72123867d995b40f614784ed1c', 'a:1:{s:7:\"filters\";a:8:{i:0;a:7:{s:9:\"type_lite\";s:8:\"category\";s:4:\"type\";s:8:\"category\";s:6:\"id_key\";i:0;s:4:\"name\";s:10:\"Categories\";s:6:\"values\";a:0:{}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:1;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"2\";s:4:\"name\";s:5:\"Color\";s:14:\"is_color_group\";b:1;s:6:\"values\";a:2:{i:5;a:5:{s:5:\"color\";s:7:\"#a4b3b4\";s:4:\"name\";s:4:\"Grey\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:4:\"grey\";s:10:\"meta_title\";s:0:\"\";}i:17;a:5:{s:5:\"color\";s:7:\"#9b763c\";s:4:\"name\";s:5:\"Brown\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:5:\"brown\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:2;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"1\";s:4:\"name\";s:4:\"Size\";s:14:\"is_color_group\";b:0;s:6:\"values\";a:4:{i:1;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"32GB\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:4:\"32gb\";s:10:\"meta_title\";s:0:\"\";}i:2;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"64GB\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:4:\"64gb\";s:10:\"meta_title\";s:0:\"\";}i:3;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"128GB\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:5:\"128gb\";s:10:\"meta_title\";s:0:\"\";}i:4;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"512GB\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:5:\"512gb\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:3;a:7:{s:9:\"type_lite\";s:8:\"quantity\";s:4:\"type\";s:8:\"quantity\";s:6:\"id_key\";i:0;s:4:\"name\";s:12:\"Availability\";s:6:\"values\";a:2:{i:0;a:2:{s:4:\"name\";s:13:\"Not available\";s:3:\"nbr\";i:0;}i:1;a:2:{s:4:\"name\";s:8:\"In stock\";s:3:\"nbr\";i:2;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:4;a:7:{s:9:\"type_lite\";s:12:\"manufacturer\";s:4:\"type\";s:12:\"manufacturer\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Brand\";s:6:\"values\";a:0:{}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:5;a:7:{s:9:\"type_lite\";s:9:\"condition\";s:4:\"type\";s:9:\"condition\";s:6:\"id_key\";i:0;s:4:\"name\";s:9:\"Condition\";s:6:\"values\";a:3:{s:3:\"new\";a:2:{s:4:\"name\";s:3:\"New\";s:3:\"nbr\";s:1:\"2\";}s:4:\"used\";a:2:{s:4:\"name\";s:4:\"Used\";s:3:\"nbr\";i:0;}s:11:\"refurbished\";a:2:{s:4:\"name\";s:11:\"Refurbished\";s:3:\"nbr\";i:0;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:6;a:0:{}i:7;a:12:{s:9:\"type_lite\";s:5:\"price\";s:4:\"type\";s:5:\"price\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Price\";s:3:\"max\";d:450;s:3:\"min\";d:149;s:4:\"unit\";s:1:\"$\";s:14:\"specifications\";a:10:{s:6:\"symbol\";a:11:{i:0;s:1:\".\";i:1;s:1:\",\";i:2;s:1:\";\";i:3;s:1:\"%\";i:4;s:1:\"-\";i:5;s:1:\"+\";i:6;s:1:\"E\";i:7;s:2:\"×\";i:8;s:3:\"‰\";i:9;s:3:\"∞\";i:10;s:3:\"NaN\";}s:12:\"currencyCode\";s:3:\"USD\";s:14:\"currencySymbol\";s:1:\"$\";s:15:\"positivePattern\";s:10:\"¤#,##0.00\";s:15:\"negativePattern\";s:11:\"-¤#,##0.00\";s:17:\"maxFractionDigits\";i:2;s:17:\"minFractionDigits\";i:2;s:12:\"groupingUsed\";b:1;s:16:\"primaryGroupSize\";i:3;s:18:\"secondaryGroupSize\";i:3;}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";i:3;s:3:\"nbr\";s:1:\"2\";s:5:\"value\";N;}}}');
+INSERT INTO jms_layered_filter_block VALUES('105a6a62cac783cddf361154ec968692', 'a:1:{s:7:\"filters\";a:7:{i:0;a:7:{s:9:\"type_lite\";s:8:\"category\";s:4:\"type\";s:8:\"category\";s:6:\"id_key\";i:0;s:4:\"name\";s:10:\"Categories\";s:6:\"values\";a:5:{i:11;a:2:{s:4:\"name\";s:8:\"Computer\";s:3:\"nbr\";s:1:\"1\";}i:13;a:2:{s:4:\"name\";s:10:\"Smartphone\";s:3:\"nbr\";s:1:\"1\";}i:14;a:2:{s:4:\"name\";s:10:\"Smartwatch\";s:3:\"nbr\";s:1:\"1\";}i:15;a:2:{s:4:\"name\";s:6:\"Tablet\";s:3:\"nbr\";s:1:\"1\";}i:16;a:2:{s:4:\"name\";s:11:\"Accessories\";s:3:\"nbr\";s:1:\"1\";}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:1;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"1\";s:4:\"name\";s:4:\"Size\";s:14:\"is_color_group\";b:0;s:6:\"values\";a:4:{i:1;a:6:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"32GB\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:4:\"32gb\";s:10:\"meta_title\";s:0:\"\";s:7:\"checked\";b:1;}i:2;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"64GB\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:4:\"64gb\";s:10:\"meta_title\";s:0:\"\";}i:3;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"128GB\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:5:\"128gb\";s:10:\"meta_title\";s:0:\"\";}i:4;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"512GB\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:5:\"512gb\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:2;a:7:{s:9:\"type_lite\";s:8:\"quantity\";s:4:\"type\";s:8:\"quantity\";s:6:\"id_key\";i:0;s:4:\"name\";s:12:\"Availability\";s:6:\"values\";a:2:{i:0;a:2:{s:4:\"name\";s:13:\"Not available\";s:3:\"nbr\";i:0;}i:1;a:2:{s:4:\"name\";s:8:\"In stock\";s:3:\"nbr\";i:9;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:3;a:7:{s:9:\"type_lite\";s:12:\"manufacturer\";s:4:\"type\";s:12:\"manufacturer\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Brand\";s:6:\"values\";a:0:{}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:4;a:7:{s:9:\"type_lite\";s:9:\"condition\";s:4:\"type\";s:9:\"condition\";s:6:\"id_key\";i:0;s:4:\"name\";s:9:\"Condition\";s:6:\"values\";a:3:{s:3:\"new\";a:2:{s:4:\"name\";s:3:\"New\";s:3:\"nbr\";s:1:\"9\";}s:4:\"used\";a:2:{s:4:\"name\";s:4:\"Used\";s:3:\"nbr\";i:0;}s:11:\"refurbished\";a:2:{s:4:\"name\";s:11:\"Refurbished\";s:3:\"nbr\";i:0;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:5;a:0:{}i:6;a:12:{s:9:\"type_lite\";s:5:\"price\";s:4:\"type\";s:5:\"price\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Price\";s:3:\"max\";d:459;s:3:\"min\";d:108;s:4:\"unit\";s:1:\"$\";s:14:\"specifications\";a:10:{s:6:\"symbol\";a:11:{i:0;s:1:\".\";i:1;s:1:\",\";i:2;s:1:\";\";i:3;s:1:\"%\";i:4;s:1:\"-\";i:5;s:1:\"+\";i:6;s:1:\"E\";i:7;s:2:\"×\";i:8;s:3:\"‰\";i:9;s:3:\"∞\";i:10;s:3:\"NaN\";}s:12:\"currencyCode\";s:3:\"USD\";s:14:\"currencySymbol\";s:1:\"$\";s:15:\"positivePattern\";s:10:\"¤#,##0.00\";s:15:\"negativePattern\";s:11:\"-¤#,##0.00\";s:17:\"maxFractionDigits\";i:2;s:17:\"minFractionDigits\";i:2;s:12:\"groupingUsed\";b:1;s:16:\"primaryGroupSize\";i:3;s:18:\"secondaryGroupSize\";i:3;}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";i:3;s:3:\"nbr\";s:1:\"1\";s:5:\"value\";a:2:{i:0;s:3:\"108\";i:1;s:3:\"290\";}}}}');
 INSERT INTO jms_layered_filter_block VALUES('178af1cc258768c13a623d213266dec7', 'a:1:{s:7:\"filters\";a:8:{i:0;a:7:{s:9:\"type_lite\";s:8:\"category\";s:4:\"type\";s:8:\"category\";s:6:\"id_key\";i:0;s:4:\"name\";s:10:\"Categories\";s:6:\"values\";a:1:{i:17;a:2:{s:4:\"name\";s:14:\"Mac & Computer\";s:3:\"nbr\";s:1:\"2\";}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:1;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"2\";s:4:\"name\";s:5:\"Color\";s:14:\"is_color_group\";b:1;s:6:\"values\";a:6:{i:5;a:5:{s:5:\"color\";s:7:\"#a4b3b4\";s:4:\"name\";s:4:\"Grey\";s:3:\"nbr\";s:1:\"6\";s:8:\"url_name\";s:4:\"grey\";s:10:\"meta_title\";s:0:\"\";}i:13;a:5:{s:5:\"color\";s:7:\"#ff7e00\";s:4:\"name\";s:6:\"Orange\";s:3:\"nbr\";s:1:\"5\";s:8:\"url_name\";s:6:\"orange\";s:10:\"meta_title\";s:0:\"\";}i:14;a:5:{s:5:\"color\";s:7:\"#00aeef\";s:4:\"name\";s:4:\"Blue\";s:3:\"nbr\";s:1:\"4\";s:8:\"url_name\";s:4:\"blue\";s:10:\"meta_title\";s:0:\"\";}i:15;a:5:{s:5:\"color\";s:7:\"#0cae8a\";s:4:\"name\";s:5:\"Green\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:5:\"green\";s:10:\"meta_title\";s:0:\"\";}i:16;a:5:{s:5:\"color\";s:7:\"#92389a\";s:4:\"name\";s:6:\"Purple\";s:3:\"nbr\";s:1:\"3\";s:8:\"url_name\";s:6:\"purple\";s:10:\"meta_title\";s:0:\"\";}i:17;a:5:{s:5:\"color\";s:7:\"#9b763c\";s:4:\"name\";s:5:\"Brown\";s:3:\"nbr\";s:1:\"3\";s:8:\"url_name\";s:5:\"brown\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:2;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"1\";s:4:\"name\";s:4:\"Size\";s:14:\"is_color_group\";b:0;s:6:\"values\";a:4:{i:1;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"32GB\";s:3:\"nbr\";s:1:\"3\";s:8:\"url_name\";s:4:\"32gb\";s:10:\"meta_title\";s:0:\"\";}i:2;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"64GB\";s:3:\"nbr\";s:1:\"3\";s:8:\"url_name\";s:4:\"64gb\";s:10:\"meta_title\";s:0:\"\";}i:3;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"128GB\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:5:\"128gb\";s:10:\"meta_title\";s:0:\"\";}i:4;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"512GB\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:5:\"512gb\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:3;a:7:{s:9:\"type_lite\";s:8:\"quantity\";s:4:\"type\";s:8:\"quantity\";s:6:\"id_key\";i:0;s:4:\"name\";s:12:\"Availability\";s:6:\"values\";a:2:{i:0;a:2:{s:4:\"name\";s:13:\"Not available\";s:3:\"nbr\";i:1;}i:1;a:2:{s:4:\"name\";s:8:\"In stock\";s:3:\"nbr\";i:11;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:4;a:7:{s:9:\"type_lite\";s:12:\"manufacturer\";s:4:\"type\";s:12:\"manufacturer\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Brand\";s:6:\"values\";a:0:{}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:5;a:7:{s:9:\"type_lite\";s:9:\"condition\";s:4:\"type\";s:9:\"condition\";s:6:\"id_key\";i:0;s:4:\"name\";s:9:\"Condition\";s:6:\"values\";a:3:{s:3:\"new\";a:2:{s:4:\"name\";s:3:\"New\";s:3:\"nbr\";s:2:\"12\";}s:4:\"used\";a:2:{s:4:\"name\";s:4:\"Used\";s:3:\"nbr\";i:0;}s:11:\"refurbished\";a:2:{s:4:\"name\";s:11:\"Refurbished\";s:3:\"nbr\";i:0;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:6;a:0:{}i:7;a:12:{s:9:\"type_lite\";s:5:\"price\";s:4:\"type\";s:5:\"price\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Price\";s:3:\"max\";d:459;s:3:\"min\";d:108;s:4:\"unit\";s:1:\"$\";s:14:\"specifications\";a:10:{s:6:\"symbol\";a:11:{i:0;s:1:\".\";i:1;s:1:\",\";i:2;s:1:\";\";i:3;s:1:\"%\";i:4;s:1:\"-\";i:5;s:1:\"+\";i:6;s:1:\"E\";i:7;s:2:\"×\";i:8;s:3:\"‰\";i:9;s:3:\"∞\";i:10;s:3:\"NaN\";}s:12:\"currencyCode\";s:3:\"USD\";s:14:\"currencySymbol\";s:1:\"$\";s:15:\"positivePattern\";s:10:\"¤#,##0.00\";s:15:\"negativePattern\";s:11:\"-¤#,##0.00\";s:17:\"maxFractionDigits\";i:2;s:17:\"minFractionDigits\";i:2;s:12:\"groupingUsed\";b:1;s:16:\"primaryGroupSize\";i:3;s:18:\"secondaryGroupSize\";i:3;}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";i:3;s:3:\"nbr\";s:2:\"12\";s:5:\"value\";N;}}}');
 INSERT INTO jms_layered_filter_block VALUES('2311c62d71c8a32a4a8b6ef6f65f01fb', 'a:1:{s:7:\"filters\";a:8:{i:0;a:7:{s:9:\"type_lite\";s:8:\"category\";s:4:\"type\";s:8:\"category\";s:6:\"id_key\";i:0;s:4:\"name\";s:10:\"Categories\";s:6:\"values\";a:6:{i:11;a:2:{s:4:\"name\";s:8:\"Computer\";s:3:\"nbr\";s:1:\"5\";}i:12;a:2:{s:4:\"name\";s:5:\"Audio\";s:3:\"nbr\";s:1:\"5\";}i:13;a:2:{s:4:\"name\";s:10:\"Smartphone\";s:3:\"nbr\";s:1:\"4\";}i:14;a:2:{s:4:\"name\";s:10:\"Smartwatch\";s:3:\"nbr\";s:1:\"4\";}i:15;a:2:{s:4:\"name\";s:6:\"Tablet\";s:3:\"nbr\";s:1:\"4\";}i:16;a:2:{s:4:\"name\";s:11:\"Accessories\";s:3:\"nbr\";s:1:\"3\";}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:1;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"2\";s:4:\"name\";s:5:\"Color\";s:14:\"is_color_group\";b:1;s:6:\"values\";a:6:{i:5;a:5:{s:5:\"color\";s:7:\"#a4b3b4\";s:4:\"name\";s:4:\"Grey\";s:3:\"nbr\";s:1:\"6\";s:8:\"url_name\";s:4:\"grey\";s:10:\"meta_title\";s:0:\"\";}i:13;a:6:{s:5:\"color\";s:7:\"#ff7e00\";s:4:\"name\";s:6:\"Orange\";s:3:\"nbr\";s:1:\"5\";s:8:\"url_name\";s:6:\"orange\";s:10:\"meta_title\";s:0:\"\";s:7:\"checked\";b:1;}i:14;a:5:{s:5:\"color\";s:7:\"#00aeef\";s:4:\"name\";s:4:\"Blue\";s:3:\"nbr\";s:1:\"6\";s:8:\"url_name\";s:4:\"blue\";s:10:\"meta_title\";s:0:\"\";}i:15;a:5:{s:5:\"color\";s:7:\"#0cae8a\";s:4:\"name\";s:5:\"Green\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:5:\"green\";s:10:\"meta_title\";s:0:\"\";}i:16;a:5:{s:5:\"color\";s:7:\"#92389a\";s:4:\"name\";s:6:\"Purple\";s:3:\"nbr\";s:1:\"5\";s:8:\"url_name\";s:6:\"purple\";s:10:\"meta_title\";s:0:\"\";}i:17;a:5:{s:5:\"color\";s:7:\"#9b763c\";s:4:\"name\";s:5:\"Brown\";s:3:\"nbr\";s:1:\"3\";s:8:\"url_name\";s:5:\"brown\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:2;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"1\";s:4:\"name\";s:4:\"Size\";s:14:\"is_color_group\";b:0;s:6:\"values\";a:4:{i:1;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"32GB\";s:3:\"nbr\";s:1:\"3\";s:8:\"url_name\";s:4:\"32gb\";s:10:\"meta_title\";s:0:\"\";}i:2;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"64GB\";s:3:\"nbr\";s:1:\"4\";s:8:\"url_name\";s:4:\"64gb\";s:10:\"meta_title\";s:0:\"\";}i:3;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"128GB\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:5:\"128gb\";s:10:\"meta_title\";s:0:\"\";}i:4;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"512GB\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:5:\"512gb\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:3;a:7:{s:9:\"type_lite\";s:8:\"quantity\";s:4:\"type\";s:8:\"quantity\";s:6:\"id_key\";i:0;s:4:\"name\";s:12:\"Availability\";s:6:\"values\";a:2:{i:0;a:2:{s:4:\"name\";s:13:\"Not available\";s:3:\"nbr\";i:1;}i:1;a:2:{s:4:\"name\";s:8:\"In stock\";s:3:\"nbr\";i:13;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:4;a:7:{s:9:\"type_lite\";s:12:\"manufacturer\";s:4:\"type\";s:12:\"manufacturer\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Brand\";s:6:\"values\";a:0:{}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:5;a:7:{s:9:\"type_lite\";s:9:\"condition\";s:4:\"type\";s:9:\"condition\";s:6:\"id_key\";i:0;s:4:\"name\";s:9:\"Condition\";s:6:\"values\";a:3:{s:3:\"new\";a:2:{s:4:\"name\";s:3:\"New\";s:3:\"nbr\";s:2:\"14\";}s:4:\"used\";a:2:{s:4:\"name\";s:4:\"Used\";s:3:\"nbr\";i:0;}s:11:\"refurbished\";a:2:{s:4:\"name\";s:11:\"Refurbished\";s:3:\"nbr\";i:0;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:6;a:0:{}i:7;a:12:{s:9:\"type_lite\";s:5:\"price\";s:4:\"type\";s:5:\"price\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Price\";s:3:\"max\";d:459;s:3:\"min\";d:108;s:4:\"unit\";s:1:\"$\";s:14:\"specifications\";a:10:{s:6:\"symbol\";a:11:{i:0;s:1:\".\";i:1;s:1:\",\";i:2;s:1:\";\";i:3;s:1:\"%\";i:4;s:1:\"-\";i:5;s:1:\"+\";i:6;s:1:\"E\";i:7;s:2:\"×\";i:8;s:3:\"‰\";i:9;s:3:\"∞\";i:10;s:3:\"NaN\";}s:12:\"currencyCode\";s:3:\"USD\";s:14:\"currencySymbol\";s:1:\"$\";s:15:\"positivePattern\";s:10:\"¤#,##0.00\";s:15:\"negativePattern\";s:11:\"-¤#,##0.00\";s:17:\"maxFractionDigits\";i:2;s:17:\"minFractionDigits\";i:2;s:12:\"groupingUsed\";b:1;s:16:\"primaryGroupSize\";i:3;s:18:\"secondaryGroupSize\";i:3;}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";i:3;s:3:\"nbr\";s:1:\"5\";s:5:\"value\";N;}}}');
+INSERT INTO jms_layered_filter_block VALUES('2367dbcc10dbb0e1b84344472f26121a', 'a:1:{s:7:\"filters\";a:7:{i:0;a:7:{s:9:\"type_lite\";s:8:\"category\";s:4:\"type\";s:8:\"category\";s:6:\"id_key\";i:0;s:4:\"name\";s:10:\"Categories\";s:6:\"values\";a:5:{i:11;a:3:{s:4:\"name\";s:8:\"Computer\";s:3:\"nbr\";s:1:\"1\";s:7:\"checked\";b:1;}i:13;a:2:{s:4:\"name\";s:10:\"Smartphone\";s:3:\"nbr\";s:1:\"1\";}i:14;a:2:{s:4:\"name\";s:10:\"Smartwatch\";s:3:\"nbr\";s:1:\"1\";}i:15;a:2:{s:4:\"name\";s:6:\"Tablet\";s:3:\"nbr\";s:1:\"1\";}i:16;a:2:{s:4:\"name\";s:11:\"Accessories\";s:3:\"nbr\";s:1:\"1\";}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:1;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"1\";s:4:\"name\";s:4:\"Size\";s:14:\"is_color_group\";b:0;s:6:\"values\";a:4:{i:1;a:6:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"32GB\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:4:\"32gb\";s:10:\"meta_title\";s:0:\"\";s:7:\"checked\";b:1;}i:2;a:6:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"64GB\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:4:\"64gb\";s:10:\"meta_title\";s:0:\"\";s:7:\"checked\";b:1;}i:3;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"128GB\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:5:\"128gb\";s:10:\"meta_title\";s:0:\"\";}i:4;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"512GB\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:5:\"512gb\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:2;a:7:{s:9:\"type_lite\";s:8:\"quantity\";s:4:\"type\";s:8:\"quantity\";s:6:\"id_key\";i:0;s:4:\"name\";s:12:\"Availability\";s:6:\"values\";a:2:{i:0;a:2:{s:4:\"name\";s:13:\"Not available\";s:3:\"nbr\";i:0;}i:1;a:2:{s:4:\"name\";s:8:\"In stock\";s:3:\"nbr\";i:8;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:3;a:7:{s:9:\"type_lite\";s:12:\"manufacturer\";s:4:\"type\";s:12:\"manufacturer\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Brand\";s:6:\"values\";a:0:{}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:4;a:7:{s:9:\"type_lite\";s:9:\"condition\";s:4:\"type\";s:9:\"condition\";s:6:\"id_key\";i:0;s:4:\"name\";s:9:\"Condition\";s:6:\"values\";a:3:{s:3:\"new\";a:2:{s:4:\"name\";s:3:\"New\";s:3:\"nbr\";s:1:\"8\";}s:4:\"used\";a:2:{s:4:\"name\";s:4:\"Used\";s:3:\"nbr\";i:0;}s:11:\"refurbished\";a:2:{s:4:\"name\";s:11:\"Refurbished\";s:3:\"nbr\";i:0;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:5;a:0:{}i:6;a:12:{s:9:\"type_lite\";s:5:\"price\";s:4:\"type\";s:5:\"price\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Price\";s:3:\"max\";d:459;s:3:\"min\";d:108;s:4:\"unit\";s:1:\"$\";s:14:\"specifications\";a:10:{s:6:\"symbol\";a:11:{i:0;s:1:\".\";i:1;s:1:\",\";i:2;s:1:\";\";i:3;s:1:\"%\";i:4;s:1:\"-\";i:5;s:1:\"+\";i:6;s:1:\"E\";i:7;s:2:\"×\";i:8;s:3:\"‰\";i:9;s:3:\"∞\";i:10;s:3:\"NaN\";}s:12:\"currencyCode\";s:3:\"USD\";s:14:\"currencySymbol\";s:1:\"$\";s:15:\"positivePattern\";s:10:\"¤#,##0.00\";s:15:\"negativePattern\";s:11:\"-¤#,##0.00\";s:17:\"maxFractionDigits\";i:2;s:17:\"minFractionDigits\";i:2;s:12:\"groupingUsed\";b:1;s:16:\"primaryGroupSize\";i:3;s:18:\"secondaryGroupSize\";i:3;}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";i:3;s:3:\"nbr\";s:1:\"1\";s:5:\"value\";a:2:{i:0;s:3:\"108\";i:1;s:3:\"290\";}}}}');
 INSERT INTO jms_layered_filter_block VALUES('43b13bb726875d2d28e7d3d64faad1a7', 'a:1:{s:7:\"filters\";a:8:{i:0;a:7:{s:9:\"type_lite\";s:8:\"category\";s:4:\"type\";s:8:\"category\";s:6:\"id_key\";i:0;s:4:\"name\";s:10:\"Categories\";s:6:\"values\";a:6:{i:11;a:2:{s:4:\"name\";s:8:\"Computer\";s:3:\"nbr\";s:2:\"11\";}i:12;a:2:{s:4:\"name\";s:5:\"Audio\";s:3:\"nbr\";s:2:\"12\";}i:13;a:2:{s:4:\"name\";s:10:\"Smartphone\";s:3:\"nbr\";s:2:\"12\";}i:14;a:2:{s:4:\"name\";s:10:\"Smartwatch\";s:3:\"nbr\";s:2:\"11\";}i:15;a:2:{s:4:\"name\";s:6:\"Tablet\";s:3:\"nbr\";s:2:\"12\";}i:16;a:2:{s:4:\"name\";s:11:\"Accessories\";s:3:\"nbr\";s:2:\"12\";}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:1;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"2\";s:4:\"name\";s:5:\"Color\";s:14:\"is_color_group\";b:1;s:6:\"values\";a:6:{i:5;a:5:{s:5:\"color\";s:7:\"#a4b3b4\";s:4:\"name\";s:4:\"Grey\";s:3:\"nbr\";s:1:\"6\";s:8:\"url_name\";s:4:\"grey\";s:10:\"meta_title\";s:0:\"\";}i:13;a:5:{s:5:\"color\";s:7:\"#ff7e00\";s:4:\"name\";s:6:\"Orange\";s:3:\"nbr\";s:1:\"5\";s:8:\"url_name\";s:6:\"orange\";s:10:\"meta_title\";s:0:\"\";}i:14;a:5:{s:5:\"color\";s:7:\"#00aeef\";s:4:\"name\";s:4:\"Blue\";s:3:\"nbr\";s:1:\"6\";s:8:\"url_name\";s:4:\"blue\";s:10:\"meta_title\";s:0:\"\";}i:15;a:5:{s:5:\"color\";s:7:\"#0cae8a\";s:4:\"name\";s:5:\"Green\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:5:\"green\";s:10:\"meta_title\";s:0:\"\";}i:16;a:5:{s:5:\"color\";s:7:\"#92389a\";s:4:\"name\";s:6:\"Purple\";s:3:\"nbr\";s:1:\"5\";s:8:\"url_name\";s:6:\"purple\";s:10:\"meta_title\";s:0:\"\";}i:17;a:5:{s:5:\"color\";s:7:\"#9b763c\";s:4:\"name\";s:5:\"Brown\";s:3:\"nbr\";s:1:\"3\";s:8:\"url_name\";s:5:\"brown\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:2;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"1\";s:4:\"name\";s:4:\"Size\";s:14:\"is_color_group\";b:0;s:6:\"values\";a:4:{i:1;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"32GB\";s:3:\"nbr\";s:1:\"3\";s:8:\"url_name\";s:4:\"32gb\";s:10:\"meta_title\";s:0:\"\";}i:2;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"64GB\";s:3:\"nbr\";s:1:\"4\";s:8:\"url_name\";s:4:\"64gb\";s:10:\"meta_title\";s:0:\"\";}i:3;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"128GB\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:5:\"128gb\";s:10:\"meta_title\";s:0:\"\";}i:4;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"512GB\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:5:\"512gb\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:3;a:7:{s:9:\"type_lite\";s:8:\"quantity\";s:4:\"type\";s:8:\"quantity\";s:6:\"id_key\";i:0;s:4:\"name\";s:12:\"Availability\";s:6:\"values\";a:2:{i:0;a:2:{s:4:\"name\";s:13:\"Not available\";s:3:\"nbr\";i:1;}i:1;a:2:{s:4:\"name\";s:8:\"In stock\";s:3:\"nbr\";i:13;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:4;a:7:{s:9:\"type_lite\";s:12:\"manufacturer\";s:4:\"type\";s:12:\"manufacturer\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Brand\";s:6:\"values\";a:0:{}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:5;a:7:{s:9:\"type_lite\";s:9:\"condition\";s:4:\"type\";s:9:\"condition\";s:6:\"id_key\";i:0;s:4:\"name\";s:9:\"Condition\";s:6:\"values\";a:3:{s:3:\"new\";a:2:{s:4:\"name\";s:3:\"New\";s:3:\"nbr\";s:2:\"14\";}s:4:\"used\";a:2:{s:4:\"name\";s:4:\"Used\";s:3:\"nbr\";i:0;}s:11:\"refurbished\";a:2:{s:4:\"name\";s:11:\"Refurbished\";s:3:\"nbr\";i:0;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:6;a:0:{}i:7;a:12:{s:9:\"type_lite\";s:5:\"price\";s:4:\"type\";s:5:\"price\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Price\";s:3:\"max\";d:459;s:3:\"min\";d:108;s:4:\"unit\";s:1:\"$\";s:14:\"specifications\";a:10:{s:6:\"symbol\";a:11:{i:0;s:1:\".\";i:1;s:1:\",\";i:2;s:1:\";\";i:3;s:1:\"%\";i:4;s:1:\"-\";i:5;s:1:\"+\";i:6;s:1:\"E\";i:7;s:2:\"×\";i:8;s:3:\"‰\";i:9;s:3:\"∞\";i:10;s:3:\"NaN\";}s:12:\"currencyCode\";s:3:\"USD\";s:14:\"currencySymbol\";s:1:\"$\";s:15:\"positivePattern\";s:10:\"¤#,##0.00\";s:15:\"negativePattern\";s:11:\"-¤#,##0.00\";s:17:\"maxFractionDigits\";i:2;s:17:\"minFractionDigits\";i:2;s:12:\"groupingUsed\";b:1;s:16:\"primaryGroupSize\";i:3;s:18:\"secondaryGroupSize\";i:3;}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";i:3;s:3:\"nbr\";s:2:\"14\";s:5:\"value\";N;}}}');
 INSERT INTO jms_layered_filter_block VALUES('4ff70a36af8718c40390426ade29213d', 'a:1:{s:7:\"filters\";a:8:{i:0;a:7:{s:9:\"type_lite\";s:8:\"category\";s:4:\"type\";s:8:\"category\";s:6:\"id_key\";i:0;s:4:\"name\";s:10:\"Categories\";s:6:\"values\";a:6:{i:11;a:3:{s:4:\"name\";s:8:\"Computer\";s:3:\"nbr\";s:1:\"2\";s:7:\"checked\";b:1;}i:12;a:2:{s:4:\"name\";s:5:\"Audio\";s:3:\"nbr\";s:1:\"2\";}i:13;a:2:{s:4:\"name\";s:10:\"Smartphone\";s:3:\"nbr\";s:1:\"3\";}i:14;a:2:{s:4:\"name\";s:10:\"Smartwatch\";s:3:\"nbr\";s:1:\"2\";}i:15;a:2:{s:4:\"name\";s:6:\"Tablet\";s:3:\"nbr\";s:1:\"3\";}i:16;a:2:{s:4:\"name\";s:11:\"Accessories\";s:3:\"nbr\";s:1:\"3\";}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:1;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"2\";s:4:\"name\";s:5:\"Color\";s:14:\"is_color_group\";b:1;s:6:\"values\";a:2:{i:13;a:5:{s:5:\"color\";s:7:\"#ff7e00\";s:4:\"name\";s:6:\"Orange\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:6:\"orange\";s:10:\"meta_title\";s:0:\"\";}i:14;a:5:{s:5:\"color\";s:7:\"#00aeef\";s:4:\"name\";s:4:\"Blue\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:4:\"blue\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:2;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"1\";s:4:\"name\";s:4:\"Size\";s:14:\"is_color_group\";b:0;s:6:\"values\";a:4:{i:1;a:6:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"32GB\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:4:\"32gb\";s:10:\"meta_title\";s:0:\"\";s:7:\"checked\";b:1;}i:2;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"64GB\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:4:\"64gb\";s:10:\"meta_title\";s:0:\"\";}i:3;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"128GB\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:5:\"128gb\";s:10:\"meta_title\";s:0:\"\";}i:4;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"512GB\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:5:\"512gb\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:3;a:7:{s:9:\"type_lite\";s:8:\"quantity\";s:4:\"type\";s:8:\"quantity\";s:6:\"id_key\";i:0;s:4:\"name\";s:12:\"Availability\";s:6:\"values\";a:2:{i:0;a:2:{s:4:\"name\";s:13:\"Not available\";s:3:\"nbr\";i:1;}i:1;a:2:{s:4:\"name\";s:8:\"In stock\";s:3:\"nbr\";i:10;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:4;a:7:{s:9:\"type_lite\";s:12:\"manufacturer\";s:4:\"type\";s:12:\"manufacturer\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Brand\";s:6:\"values\";a:0:{}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:5;a:7:{s:9:\"type_lite\";s:9:\"condition\";s:4:\"type\";s:9:\"condition\";s:6:\"id_key\";i:0;s:4:\"name\";s:9:\"Condition\";s:6:\"values\";a:3:{s:3:\"new\";a:2:{s:4:\"name\";s:3:\"New\";s:3:\"nbr\";s:2:\"11\";}s:4:\"used\";a:2:{s:4:\"name\";s:4:\"Used\";s:3:\"nbr\";i:0;}s:11:\"refurbished\";a:2:{s:4:\"name\";s:11:\"Refurbished\";s:3:\"nbr\";i:0;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:6;a:0:{}i:7;a:12:{s:9:\"type_lite\";s:5:\"price\";s:4:\"type\";s:5:\"price\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Price\";s:3:\"max\";d:459;s:3:\"min\";d:108;s:4:\"unit\";s:1:\"$\";s:14:\"specifications\";a:10:{s:6:\"symbol\";a:11:{i:0;s:1:\".\";i:1;s:1:\",\";i:2;s:1:\";\";i:3;s:1:\"%\";i:4;s:1:\"-\";i:5;s:1:\"+\";i:6;s:1:\"E\";i:7;s:2:\"×\";i:8;s:3:\"‰\";i:9;s:3:\"∞\";i:10;s:3:\"NaN\";}s:12:\"currencyCode\";s:3:\"USD\";s:14:\"currencySymbol\";s:1:\"$\";s:15:\"positivePattern\";s:10:\"¤#,##0.00\";s:15:\"negativePattern\";s:11:\"-¤#,##0.00\";s:17:\"maxFractionDigits\";i:2;s:17:\"minFractionDigits\";i:2;s:12:\"groupingUsed\";b:1;s:16:\"primaryGroupSize\";i:3;s:18:\"secondaryGroupSize\";i:3;}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";i:3;s:3:\"nbr\";s:1:\"2\";s:5:\"value\";N;}}}');
+INSERT INTO jms_layered_filter_block VALUES('53c74567b1ae09e7cbb50ce2bbd9569b', 'a:1:{s:7:\"filters\";a:7:{i:0;a:7:{s:9:\"type_lite\";s:8:\"category\";s:4:\"type\";s:8:\"category\";s:6:\"id_key\";i:0;s:4:\"name\";s:10:\"Categories\";s:6:\"values\";a:5:{i:11;a:2:{s:4:\"name\";s:8:\"Computer\";s:3:\"nbr\";s:1:\"1\";}i:13;a:2:{s:4:\"name\";s:10:\"Smartphone\";s:3:\"nbr\";s:1:\"1\";}i:14;a:2:{s:4:\"name\";s:10:\"Smartwatch\";s:3:\"nbr\";s:1:\"1\";}i:15;a:2:{s:4:\"name\";s:6:\"Tablet\";s:3:\"nbr\";s:1:\"1\";}i:16;a:2:{s:4:\"name\";s:11:\"Accessories\";s:3:\"nbr\";s:1:\"1\";}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:1;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"1\";s:4:\"name\";s:4:\"Size\";s:14:\"is_color_group\";b:0;s:6:\"values\";a:4:{i:1;a:6:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"32GB\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:4:\"32gb\";s:10:\"meta_title\";s:0:\"\";s:7:\"checked\";b:1;}i:2;a:6:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"64GB\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:4:\"64gb\";s:10:\"meta_title\";s:0:\"\";s:7:\"checked\";b:1;}i:3;a:6:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"128GB\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:5:\"128gb\";s:10:\"meta_title\";s:0:\"\";s:7:\"checked\";b:1;}i:4;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"512GB\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:5:\"512gb\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:2;a:7:{s:9:\"type_lite\";s:8:\"quantity\";s:4:\"type\";s:8:\"quantity\";s:6:\"id_key\";i:0;s:4:\"name\";s:12:\"Availability\";s:6:\"values\";a:2:{i:0;a:2:{s:4:\"name\";s:13:\"Not available\";s:3:\"nbr\";i:0;}i:1;a:2:{s:4:\"name\";s:8:\"In stock\";s:3:\"nbr\";i:9;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:3;a:7:{s:9:\"type_lite\";s:12:\"manufacturer\";s:4:\"type\";s:12:\"manufacturer\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Brand\";s:6:\"values\";a:0:{}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:4;a:7:{s:9:\"type_lite\";s:9:\"condition\";s:4:\"type\";s:9:\"condition\";s:6:\"id_key\";i:0;s:4:\"name\";s:9:\"Condition\";s:6:\"values\";a:3:{s:3:\"new\";a:2:{s:4:\"name\";s:3:\"New\";s:3:\"nbr\";s:1:\"9\";}s:4:\"used\";a:2:{s:4:\"name\";s:4:\"Used\";s:3:\"nbr\";i:0;}s:11:\"refurbished\";a:2:{s:4:\"name\";s:11:\"Refurbished\";s:3:\"nbr\";i:0;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:5;a:0:{}i:6;a:12:{s:9:\"type_lite\";s:5:\"price\";s:4:\"type\";s:5:\"price\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Price\";s:3:\"max\";d:459;s:3:\"min\";d:108;s:4:\"unit\";s:1:\"$\";s:14:\"specifications\";a:10:{s:6:\"symbol\";a:11:{i:0;s:1:\".\";i:1;s:1:\",\";i:2;s:1:\";\";i:3;s:1:\"%\";i:4;s:1:\"-\";i:5;s:1:\"+\";i:6;s:1:\"E\";i:7;s:2:\"×\";i:8;s:3:\"‰\";i:9;s:3:\"∞\";i:10;s:3:\"NaN\";}s:12:\"currencyCode\";s:3:\"USD\";s:14:\"currencySymbol\";s:1:\"$\";s:15:\"positivePattern\";s:10:\"¤#,##0.00\";s:15:\"negativePattern\";s:11:\"-¤#,##0.00\";s:17:\"maxFractionDigits\";i:2;s:17:\"minFractionDigits\";i:2;s:12:\"groupingUsed\";b:1;s:16:\"primaryGroupSize\";i:3;s:18:\"secondaryGroupSize\";i:3;}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";i:3;s:3:\"nbr\";s:1:\"1\";s:5:\"value\";a:2:{i:0;s:3:\"108\";i:1;s:3:\"290\";}}}}');
 INSERT INTO jms_layered_filter_block VALUES('5ca8516a8e162ff7c5510093e418778b', 'a:1:{s:7:\"filters\";a:7:{i:0;a:7:{s:9:\"type_lite\";s:8:\"category\";s:4:\"type\";s:8:\"category\";s:6:\"id_key\";i:0;s:4:\"name\";s:10:\"Categories\";s:6:\"values\";a:1:{i:17;a:2:{s:4:\"name\";s:14:\"Mac & Computer\";s:3:\"nbr\";s:1:\"1\";}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:1;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"1\";s:4:\"name\";s:4:\"Size\";s:14:\"is_color_group\";b:0;s:6:\"values\";a:4:{i:1;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"32GB\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:4:\"32gb\";s:10:\"meta_title\";s:0:\"\";}i:2;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"64GB\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:4:\"64gb\";s:10:\"meta_title\";s:0:\"\";}i:3;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"128GB\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:5:\"128gb\";s:10:\"meta_title\";s:0:\"\";}i:4;a:6:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"512GB\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:5:\"512gb\";s:10:\"meta_title\";s:0:\"\";s:7:\"checked\";b:1;}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:2;a:7:{s:9:\"type_lite\";s:8:\"quantity\";s:4:\"type\";s:8:\"quantity\";s:6:\"id_key\";i:0;s:4:\"name\";s:12:\"Availability\";s:6:\"values\";a:2:{i:0;a:2:{s:4:\"name\";s:13:\"Not available\";s:3:\"nbr\";i:0;}i:1;a:2:{s:4:\"name\";s:8:\"In stock\";s:3:\"nbr\";i:8;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:3;a:7:{s:9:\"type_lite\";s:12:\"manufacturer\";s:4:\"type\";s:12:\"manufacturer\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Brand\";s:6:\"values\";a:0:{}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:4;a:7:{s:9:\"type_lite\";s:9:\"condition\";s:4:\"type\";s:9:\"condition\";s:6:\"id_key\";i:0;s:4:\"name\";s:9:\"Condition\";s:6:\"values\";a:3:{s:3:\"new\";a:2:{s:4:\"name\";s:3:\"New\";s:3:\"nbr\";s:1:\"8\";}s:4:\"used\";a:2:{s:4:\"name\";s:4:\"Used\";s:3:\"nbr\";i:0;}s:11:\"refurbished\";a:2:{s:4:\"name\";s:11:\"Refurbished\";s:3:\"nbr\";i:0;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:5;a:0:{}i:6;a:12:{s:9:\"type_lite\";s:5:\"price\";s:4:\"type\";s:5:\"price\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Price\";s:3:\"max\";d:459;s:3:\"min\";d:108;s:4:\"unit\";s:1:\"$\";s:14:\"specifications\";a:10:{s:6:\"symbol\";a:11:{i:0;s:1:\".\";i:1;s:1:\",\";i:2;s:1:\";\";i:3;s:1:\"%\";i:4;s:1:\"-\";i:5;s:1:\"+\";i:6;s:1:\"E\";i:7;s:2:\"×\";i:8;s:3:\"‰\";i:9;s:3:\"∞\";i:10;s:3:\"NaN\";}s:12:\"currencyCode\";s:3:\"USD\";s:14:\"currencySymbol\";s:1:\"$\";s:15:\"positivePattern\";s:10:\"¤#,##0.00\";s:15:\"negativePattern\";s:11:\"-¤#,##0.00\";s:17:\"maxFractionDigits\";i:2;s:17:\"minFractionDigits\";i:2;s:12:\"groupingUsed\";b:1;s:16:\"primaryGroupSize\";i:3;s:18:\"secondaryGroupSize\";i:3;}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";i:3;s:3:\"nbr\";s:1:\"1\";s:5:\"value\";a:2:{i:0;s:3:\"108\";i:1;s:3:\"270\";}}}}');
 INSERT INTO jms_layered_filter_block VALUES('6275c67b48755ffc145abcca6dde7f1d', 'a:1:{s:7:\"filters\";a:8:{i:0;a:7:{s:9:\"type_lite\";s:8:\"category\";s:4:\"type\";s:8:\"category\";s:6:\"id_key\";i:0;s:4:\"name\";s:10:\"Categories\";s:6:\"values\";a:6:{i:11;a:2:{s:4:\"name\";s:8:\"Computer\";s:3:\"nbr\";s:1:\"2\";}i:12;a:2:{s:4:\"name\";s:5:\"Audio\";s:3:\"nbr\";s:1:\"2\";}i:13;a:2:{s:4:\"name\";s:10:\"Smartphone\";s:3:\"nbr\";s:1:\"3\";}i:14;a:2:{s:4:\"name\";s:10:\"Smartwatch\";s:3:\"nbr\";s:1:\"2\";}i:15;a:2:{s:4:\"name\";s:6:\"Tablet\";s:3:\"nbr\";s:1:\"3\";}i:16;a:2:{s:4:\"name\";s:11:\"Accessories\";s:3:\"nbr\";s:1:\"3\";}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:1;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"2\";s:4:\"name\";s:5:\"Color\";s:14:\"is_color_group\";b:1;s:6:\"values\";a:4:{i:5;a:5:{s:5:\"color\";s:7:\"#a4b3b4\";s:4:\"name\";s:4:\"Grey\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:4:\"grey\";s:10:\"meta_title\";s:0:\"\";}i:13;a:5:{s:5:\"color\";s:7:\"#ff7e00\";s:4:\"name\";s:6:\"Orange\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:6:\"orange\";s:10:\"meta_title\";s:0:\"\";}i:14;a:5:{s:5:\"color\";s:7:\"#00aeef\";s:4:\"name\";s:4:\"Blue\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:4:\"blue\";s:10:\"meta_title\";s:0:\"\";}i:17;a:5:{s:5:\"color\";s:7:\"#9b763c\";s:4:\"name\";s:5:\"Brown\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:5:\"brown\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:2;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"1\";s:4:\"name\";s:4:\"Size\";s:14:\"is_color_group\";b:0;s:6:\"values\";a:4:{i:1;a:6:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"32GB\";s:3:\"nbr\";s:1:\"3\";s:8:\"url_name\";s:4:\"32gb\";s:10:\"meta_title\";s:0:\"\";s:7:\"checked\";b:1;}i:2;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"64GB\";s:3:\"nbr\";s:1:\"4\";s:8:\"url_name\";s:4:\"64gb\";s:10:\"meta_title\";s:0:\"\";}i:3;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"128GB\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:5:\"128gb\";s:10:\"meta_title\";s:0:\"\";}i:4;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"512GB\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:5:\"512gb\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:3;a:7:{s:9:\"type_lite\";s:8:\"quantity\";s:4:\"type\";s:8:\"quantity\";s:6:\"id_key\";i:0;s:4:\"name\";s:12:\"Availability\";s:6:\"values\";a:2:{i:0;a:2:{s:4:\"name\";s:13:\"Not available\";s:3:\"nbr\";i:1;}i:1;a:2:{s:4:\"name\";s:8:\"In stock\";s:3:\"nbr\";i:13;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:4;a:7:{s:9:\"type_lite\";s:12:\"manufacturer\";s:4:\"type\";s:12:\"manufacturer\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Brand\";s:6:\"values\";a:0:{}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:5;a:7:{s:9:\"type_lite\";s:9:\"condition\";s:4:\"type\";s:9:\"condition\";s:6:\"id_key\";i:0;s:4:\"name\";s:9:\"Condition\";s:6:\"values\";a:3:{s:3:\"new\";a:2:{s:4:\"name\";s:3:\"New\";s:3:\"nbr\";s:2:\"14\";}s:4:\"used\";a:2:{s:4:\"name\";s:4:\"Used\";s:3:\"nbr\";i:0;}s:11:\"refurbished\";a:2:{s:4:\"name\";s:11:\"Refurbished\";s:3:\"nbr\";i:0;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:6;a:0:{}i:7;a:12:{s:9:\"type_lite\";s:5:\"price\";s:4:\"type\";s:5:\"price\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Price\";s:3:\"max\";d:459;s:3:\"min\";d:108;s:4:\"unit\";s:1:\"$\";s:14:\"specifications\";a:10:{s:6:\"symbol\";a:11:{i:0;s:1:\".\";i:1;s:1:\",\";i:2;s:1:\";\";i:3;s:1:\"%\";i:4;s:1:\"-\";i:5;s:1:\"+\";i:6;s:1:\"E\";i:7;s:2:\"×\";i:8;s:3:\"‰\";i:9;s:3:\"∞\";i:10;s:3:\"NaN\";}s:12:\"currencyCode\";s:3:\"USD\";s:14:\"currencySymbol\";s:1:\"$\";s:15:\"positivePattern\";s:10:\"¤#,##0.00\";s:15:\"negativePattern\";s:11:\"-¤#,##0.00\";s:17:\"maxFractionDigits\";i:2;s:17:\"minFractionDigits\";i:2;s:12:\"groupingUsed\";b:1;s:16:\"primaryGroupSize\";i:3;s:18:\"secondaryGroupSize\";i:3;}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";i:3;s:3:\"nbr\";s:1:\"3\";s:5:\"value\";N;}}}');
+INSERT INTO jms_layered_filter_block VALUES('6361e0ec5d627a976dce62c85237411b', 'a:1:{s:7:\"filters\";a:7:{i:0;a:7:{s:9:\"type_lite\";s:8:\"category\";s:4:\"type\";s:8:\"category\";s:6:\"id_key\";i:0;s:4:\"name\";s:10:\"Categories\";s:6:\"values\";a:5:{i:11;a:3:{s:4:\"name\";s:8:\"Computer\";s:3:\"nbr\";s:1:\"1\";s:7:\"checked\";b:1;}i:13;a:2:{s:4:\"name\";s:10:\"Smartphone\";s:3:\"nbr\";s:1:\"1\";}i:14;a:2:{s:4:\"name\";s:10:\"Smartwatch\";s:3:\"nbr\";s:1:\"1\";}i:15;a:2:{s:4:\"name\";s:6:\"Tablet\";s:3:\"nbr\";s:1:\"1\";}i:16;a:2:{s:4:\"name\";s:11:\"Accessories\";s:3:\"nbr\";s:1:\"1\";}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:1;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"1\";s:4:\"name\";s:4:\"Size\";s:14:\"is_color_group\";b:0;s:6:\"values\";a:4:{i:1;a:6:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"32GB\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:4:\"32gb\";s:10:\"meta_title\";s:0:\"\";s:7:\"checked\";b:1;}i:2;a:6:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"64GB\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:4:\"64gb\";s:10:\"meta_title\";s:0:\"\";s:7:\"checked\";b:1;}i:3;a:6:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"128GB\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:5:\"128gb\";s:10:\"meta_title\";s:0:\"\";s:7:\"checked\";b:1;}i:4;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"512GB\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:5:\"512gb\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:2;a:7:{s:9:\"type_lite\";s:8:\"quantity\";s:4:\"type\";s:8:\"quantity\";s:6:\"id_key\";i:0;s:4:\"name\";s:12:\"Availability\";s:6:\"values\";a:2:{i:0;a:2:{s:4:\"name\";s:13:\"Not available\";s:3:\"nbr\";i:0;}i:1;a:2:{s:4:\"name\";s:8:\"In stock\";s:3:\"nbr\";i:8;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:3;a:7:{s:9:\"type_lite\";s:12:\"manufacturer\";s:4:\"type\";s:12:\"manufacturer\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Brand\";s:6:\"values\";a:0:{}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:4;a:7:{s:9:\"type_lite\";s:9:\"condition\";s:4:\"type\";s:9:\"condition\";s:6:\"id_key\";i:0;s:4:\"name\";s:9:\"Condition\";s:6:\"values\";a:3:{s:3:\"new\";a:2:{s:4:\"name\";s:3:\"New\";s:3:\"nbr\";s:1:\"8\";}s:4:\"used\";a:2:{s:4:\"name\";s:4:\"Used\";s:3:\"nbr\";i:0;}s:11:\"refurbished\";a:2:{s:4:\"name\";s:11:\"Refurbished\";s:3:\"nbr\";i:0;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:5;a:0:{}i:6;a:12:{s:9:\"type_lite\";s:5:\"price\";s:4:\"type\";s:5:\"price\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Price\";s:3:\"max\";d:459;s:3:\"min\";d:108;s:4:\"unit\";s:1:\"$\";s:14:\"specifications\";a:10:{s:6:\"symbol\";a:11:{i:0;s:1:\".\";i:1;s:1:\",\";i:2;s:1:\";\";i:3;s:1:\"%\";i:4;s:1:\"-\";i:5;s:1:\"+\";i:6;s:1:\"E\";i:7;s:2:\"×\";i:8;s:3:\"‰\";i:9;s:3:\"∞\";i:10;s:3:\"NaN\";}s:12:\"currencyCode\";s:3:\"USD\";s:14:\"currencySymbol\";s:1:\"$\";s:15:\"positivePattern\";s:10:\"¤#,##0.00\";s:15:\"negativePattern\";s:11:\"-¤#,##0.00\";s:17:\"maxFractionDigits\";i:2;s:17:\"minFractionDigits\";i:2;s:12:\"groupingUsed\";b:1;s:16:\"primaryGroupSize\";i:3;s:18:\"secondaryGroupSize\";i:3;}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";i:3;s:3:\"nbr\";s:1:\"1\";s:5:\"value\";a:2:{i:0;s:3:\"108\";i:1;s:3:\"290\";}}}}');
 INSERT INTO jms_layered_filter_block VALUES('63d5b2f8272b815b66aafaa643b08082', 'a:1:{s:7:\"filters\";a:8:{i:0;a:7:{s:9:\"type_lite\";s:8:\"category\";s:4:\"type\";s:8:\"category\";s:6:\"id_key\";i:0;s:4:\"name\";s:10:\"Categories\";s:6:\"values\";a:0:{}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:1;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"2\";s:4:\"name\";s:5:\"Color\";s:14:\"is_color_group\";b:1;s:6:\"values\";a:6:{i:5;a:5:{s:5:\"color\";s:7:\"#a4b3b4\";s:4:\"name\";s:4:\"Grey\";s:3:\"nbr\";s:1:\"5\";s:8:\"url_name\";s:4:\"grey\";s:10:\"meta_title\";s:0:\"\";}i:13;a:5:{s:5:\"color\";s:7:\"#ff7e00\";s:4:\"name\";s:6:\"Orange\";s:3:\"nbr\";s:1:\"4\";s:8:\"url_name\";s:6:\"orange\";s:10:\"meta_title\";s:0:\"\";}i:14;a:5:{s:5:\"color\";s:7:\"#00aeef\";s:4:\"name\";s:4:\"Blue\";s:3:\"nbr\";s:1:\"5\";s:8:\"url_name\";s:4:\"blue\";s:10:\"meta_title\";s:0:\"\";}i:15;a:5:{s:5:\"color\";s:7:\"#0cae8a\";s:4:\"name\";s:5:\"Green\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:5:\"green\";s:10:\"meta_title\";s:0:\"\";}i:16;a:5:{s:5:\"color\";s:7:\"#92389a\";s:4:\"name\";s:6:\"Purple\";s:3:\"nbr\";s:1:\"5\";s:8:\"url_name\";s:6:\"purple\";s:10:\"meta_title\";s:0:\"\";}i:17;a:5:{s:5:\"color\";s:7:\"#9b763c\";s:4:\"name\";s:5:\"Brown\";s:3:\"nbr\";s:1:\"3\";s:8:\"url_name\";s:5:\"brown\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:2;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"1\";s:4:\"name\";s:4:\"Size\";s:14:\"is_color_group\";b:0;s:6:\"values\";a:4:{i:1;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"32GB\";s:3:\"nbr\";s:1:\"3\";s:8:\"url_name\";s:4:\"32gb\";s:10:\"meta_title\";s:0:\"\";}i:2;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"64GB\";s:3:\"nbr\";s:1:\"4\";s:8:\"url_name\";s:4:\"64gb\";s:10:\"meta_title\";s:0:\"\";}i:3;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"128GB\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:5:\"128gb\";s:10:\"meta_title\";s:0:\"\";}i:4;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"512GB\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:5:\"512gb\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:3;a:7:{s:9:\"type_lite\";s:8:\"quantity\";s:4:\"type\";s:8:\"quantity\";s:6:\"id_key\";i:0;s:4:\"name\";s:12:\"Availability\";s:6:\"values\";a:2:{i:0;a:2:{s:4:\"name\";s:13:\"Not available\";s:3:\"nbr\";i:0;}i:1;a:2:{s:4:\"name\";s:8:\"In stock\";s:3:\"nbr\";i:12;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:4;a:7:{s:9:\"type_lite\";s:12:\"manufacturer\";s:4:\"type\";s:12:\"manufacturer\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Brand\";s:6:\"values\";a:0:{}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:5;a:7:{s:9:\"type_lite\";s:9:\"condition\";s:4:\"type\";s:9:\"condition\";s:6:\"id_key\";i:0;s:4:\"name\";s:9:\"Condition\";s:6:\"values\";a:3:{s:3:\"new\";a:2:{s:4:\"name\";s:3:\"New\";s:3:\"nbr\";s:2:\"12\";}s:4:\"used\";a:2:{s:4:\"name\";s:4:\"Used\";s:3:\"nbr\";i:0;}s:11:\"refurbished\";a:2:{s:4:\"name\";s:11:\"Refurbished\";s:3:\"nbr\";i:0;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:6;a:0:{}i:7;a:12:{s:9:\"type_lite\";s:5:\"price\";s:4:\"type\";s:5:\"price\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Price\";s:3:\"max\";d:459;s:3:\"min\";d:141;s:4:\"unit\";s:1:\"$\";s:14:\"specifications\";a:10:{s:6:\"symbol\";a:11:{i:0;s:1:\".\";i:1;s:1:\",\";i:2;s:1:\";\";i:3;s:1:\"%\";i:4;s:1:\"-\";i:5;s:1:\"+\";i:6;s:1:\"E\";i:7;s:2:\"×\";i:8;s:3:\"‰\";i:9;s:3:\"∞\";i:10;s:3:\"NaN\";}s:12:\"currencyCode\";s:3:\"USD\";s:14:\"currencySymbol\";s:1:\"$\";s:15:\"positivePattern\";s:10:\"¤#,##0.00\";s:15:\"negativePattern\";s:11:\"-¤#,##0.00\";s:17:\"maxFractionDigits\";i:2;s:17:\"minFractionDigits\";i:2;s:12:\"groupingUsed\";b:1;s:16:\"primaryGroupSize\";i:3;s:18:\"secondaryGroupSize\";i:3;}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";i:3;s:3:\"nbr\";s:2:\"12\";s:5:\"value\";N;}}}');
+INSERT INTO jms_layered_filter_block VALUES('653c565eeb769eed7d59a45d62f2e5ec', 'a:1:{s:7:\"filters\";a:7:{i:0;a:7:{s:9:\"type_lite\";s:8:\"category\";s:4:\"type\";s:8:\"category\";s:6:\"id_key\";i:0;s:4:\"name\";s:10:\"Categories\";s:6:\"values\";a:5:{i:11;a:2:{s:4:\"name\";s:8:\"Computer\";s:3:\"nbr\";s:1:\"1\";}i:13;a:2:{s:4:\"name\";s:10:\"Smartphone\";s:3:\"nbr\";s:1:\"1\";}i:14;a:2:{s:4:\"name\";s:10:\"Smartwatch\";s:3:\"nbr\";s:1:\"1\";}i:15;a:2:{s:4:\"name\";s:6:\"Tablet\";s:3:\"nbr\";s:1:\"1\";}i:16;a:2:{s:4:\"name\";s:11:\"Accessories\";s:3:\"nbr\";s:1:\"1\";}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:1;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"1\";s:4:\"name\";s:4:\"Size\";s:14:\"is_color_group\";b:0;s:6:\"values\";a:4:{i:1;a:6:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"32GB\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:4:\"32gb\";s:10:\"meta_title\";s:0:\"\";s:7:\"checked\";b:1;}i:2;a:6:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"64GB\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:4:\"64gb\";s:10:\"meta_title\";s:0:\"\";s:7:\"checked\";b:1;}i:3;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"128GB\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:5:\"128gb\";s:10:\"meta_title\";s:0:\"\";}i:4;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"512GB\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:5:\"512gb\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:2;a:7:{s:9:\"type_lite\";s:8:\"quantity\";s:4:\"type\";s:8:\"quantity\";s:6:\"id_key\";i:0;s:4:\"name\";s:12:\"Availability\";s:6:\"values\";a:2:{i:0;a:2:{s:4:\"name\";s:13:\"Not available\";s:3:\"nbr\";i:0;}i:1;a:2:{s:4:\"name\";s:8:\"In stock\";s:3:\"nbr\";i:9;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:3;a:7:{s:9:\"type_lite\";s:12:\"manufacturer\";s:4:\"type\";s:12:\"manufacturer\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Brand\";s:6:\"values\";a:0:{}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:4;a:7:{s:9:\"type_lite\";s:9:\"condition\";s:4:\"type\";s:9:\"condition\";s:6:\"id_key\";i:0;s:4:\"name\";s:9:\"Condition\";s:6:\"values\";a:3:{s:3:\"new\";a:2:{s:4:\"name\";s:3:\"New\";s:3:\"nbr\";s:1:\"9\";}s:4:\"used\";a:2:{s:4:\"name\";s:4:\"Used\";s:3:\"nbr\";i:0;}s:11:\"refurbished\";a:2:{s:4:\"name\";s:11:\"Refurbished\";s:3:\"nbr\";i:0;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:5;a:0:{}i:6;a:12:{s:9:\"type_lite\";s:5:\"price\";s:4:\"type\";s:5:\"price\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Price\";s:3:\"max\";d:459;s:3:\"min\";d:108;s:4:\"unit\";s:1:\"$\";s:14:\"specifications\";a:10:{s:6:\"symbol\";a:11:{i:0;s:1:\".\";i:1;s:1:\",\";i:2;s:1:\";\";i:3;s:1:\"%\";i:4;s:1:\"-\";i:5;s:1:\"+\";i:6;s:1:\"E\";i:7;s:2:\"×\";i:8;s:3:\"‰\";i:9;s:3:\"∞\";i:10;s:3:\"NaN\";}s:12:\"currencyCode\";s:3:\"USD\";s:14:\"currencySymbol\";s:1:\"$\";s:15:\"positivePattern\";s:10:\"¤#,##0.00\";s:15:\"negativePattern\";s:11:\"-¤#,##0.00\";s:17:\"maxFractionDigits\";i:2;s:17:\"minFractionDigits\";i:2;s:12:\"groupingUsed\";b:1;s:16:\"primaryGroupSize\";i:3;s:18:\"secondaryGroupSize\";i:3;}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";i:3;s:3:\"nbr\";s:1:\"1\";s:5:\"value\";a:2:{i:0;s:3:\"108\";i:1;s:3:\"290\";}}}}');
 INSERT INTO jms_layered_filter_block VALUES('65e38514371de08fa743dc24eb97ba38', 'a:1:{s:7:\"filters\";a:8:{i:0;a:7:{s:9:\"type_lite\";s:8:\"category\";s:4:\"type\";s:8:\"category\";s:6:\"id_key\";i:0;s:4:\"name\";s:10:\"Categories\";s:6:\"values\";a:6:{i:11;a:2:{s:4:\"name\";s:8:\"Computer\";s:3:\"nbr\";s:1:\"1\";}i:12;a:2:{s:4:\"name\";s:5:\"Audio\";s:3:\"nbr\";s:1:\"1\";}i:13;a:2:{s:4:\"name\";s:10:\"Smartphone\";s:3:\"nbr\";s:1:\"2\";}i:14;a:2:{s:4:\"name\";s:10:\"Smartwatch\";s:3:\"nbr\";s:1:\"2\";}i:15;a:2:{s:4:\"name\";s:6:\"Tablet\";s:3:\"nbr\";s:1:\"2\";}i:16;a:2:{s:4:\"name\";s:11:\"Accessories\";s:3:\"nbr\";s:1:\"2\";}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:1;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"2\";s:4:\"name\";s:5:\"Color\";s:14:\"is_color_group\";b:1;s:6:\"values\";a:2:{i:14;a:5:{s:5:\"color\";s:7:\"#00aeef\";s:4:\"name\";s:4:\"Blue\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:4:\"blue\";s:10:\"meta_title\";s:0:\"\";}i:16;a:5:{s:5:\"color\";s:7:\"#92389a\";s:4:\"name\";s:6:\"Purple\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:6:\"purple\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:2;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"1\";s:4:\"name\";s:4:\"Size\";s:14:\"is_color_group\";b:0;s:6:\"values\";a:4:{i:1;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"32GB\";s:3:\"nbr\";s:1:\"3\";s:8:\"url_name\";s:4:\"32gb\";s:10:\"meta_title\";s:0:\"\";}i:2;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"64GB\";s:3:\"nbr\";s:1:\"4\";s:8:\"url_name\";s:4:\"64gb\";s:10:\"meta_title\";s:0:\"\";}i:3;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"128GB\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:5:\"128gb\";s:10:\"meta_title\";s:0:\"\";}i:4;a:6:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"512GB\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:5:\"512gb\";s:10:\"meta_title\";s:0:\"\";s:7:\"checked\";b:1;}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:3;a:7:{s:9:\"type_lite\";s:8:\"quantity\";s:4:\"type\";s:8:\"quantity\";s:6:\"id_key\";i:0;s:4:\"name\";s:12:\"Availability\";s:6:\"values\";a:2:{i:0;a:2:{s:4:\"name\";s:13:\"Not available\";s:3:\"nbr\";i:1;}i:1;a:2:{s:4:\"name\";s:8:\"In stock\";s:3:\"nbr\";i:13;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:4;a:7:{s:9:\"type_lite\";s:12:\"manufacturer\";s:4:\"type\";s:12:\"manufacturer\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Brand\";s:6:\"values\";a:0:{}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:5;a:7:{s:9:\"type_lite\";s:9:\"condition\";s:4:\"type\";s:9:\"condition\";s:6:\"id_key\";i:0;s:4:\"name\";s:9:\"Condition\";s:6:\"values\";a:3:{s:3:\"new\";a:2:{s:4:\"name\";s:3:\"New\";s:3:\"nbr\";s:2:\"14\";}s:4:\"used\";a:2:{s:4:\"name\";s:4:\"Used\";s:3:\"nbr\";i:0;}s:11:\"refurbished\";a:2:{s:4:\"name\";s:11:\"Refurbished\";s:3:\"nbr\";i:0;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:6;a:0:{}i:7;a:12:{s:9:\"type_lite\";s:5:\"price\";s:4:\"type\";s:5:\"price\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Price\";s:3:\"max\";d:459;s:3:\"min\";d:108;s:4:\"unit\";s:1:\"$\";s:14:\"specifications\";a:10:{s:6:\"symbol\";a:11:{i:0;s:1:\".\";i:1;s:1:\",\";i:2;s:1:\";\";i:3;s:1:\"%\";i:4;s:1:\"-\";i:5;s:1:\"+\";i:6;s:1:\"E\";i:7;s:2:\"×\";i:8;s:3:\"‰\";i:9;s:3:\"∞\";i:10;s:3:\"NaN\";}s:12:\"currencyCode\";s:3:\"USD\";s:14:\"currencySymbol\";s:1:\"$\";s:15:\"positivePattern\";s:10:\"¤#,##0.00\";s:15:\"negativePattern\";s:11:\"-¤#,##0.00\";s:17:\"maxFractionDigits\";i:2;s:17:\"minFractionDigits\";i:2;s:12:\"groupingUsed\";b:1;s:16:\"primaryGroupSize\";i:3;s:18:\"secondaryGroupSize\";i:3;}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";i:3;s:3:\"nbr\";s:1:\"2\";s:5:\"value\";N;}}}');
 INSERT INTO jms_layered_filter_block VALUES('676a54488e46caa34f02b537a22b750e', 'a:1:{s:7:\"filters\";a:8:{i:0;a:7:{s:9:\"type_lite\";s:8:\"category\";s:4:\"type\";s:8:\"category\";s:6:\"id_key\";i:0;s:4:\"name\";s:10:\"Categories\";s:6:\"values\";a:6:{i:11;a:3:{s:4:\"name\";s:8:\"Computer\";s:3:\"nbr\";s:2:\"11\";s:7:\"checked\";b:1;}i:12;a:2:{s:4:\"name\";s:5:\"Audio\";s:3:\"nbr\";s:2:\"12\";}i:13;a:2:{s:4:\"name\";s:10:\"Smartphone\";s:3:\"nbr\";s:2:\"12\";}i:14;a:2:{s:4:\"name\";s:10:\"Smartwatch\";s:3:\"nbr\";s:2:\"11\";}i:15;a:2:{s:4:\"name\";s:6:\"Tablet\";s:3:\"nbr\";s:2:\"12\";}i:16;a:2:{s:4:\"name\";s:11:\"Accessories\";s:3:\"nbr\";s:2:\"12\";}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:1;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"2\";s:4:\"name\";s:5:\"Color\";s:14:\"is_color_group\";b:1;s:6:\"values\";a:6:{i:5;a:5:{s:5:\"color\";s:7:\"#a4b3b4\";s:4:\"name\";s:4:\"Grey\";s:3:\"nbr\";s:1:\"5\";s:8:\"url_name\";s:4:\"grey\";s:10:\"meta_title\";s:0:\"\";}i:13;a:5:{s:5:\"color\";s:7:\"#ff7e00\";s:4:\"name\";s:6:\"Orange\";s:3:\"nbr\";s:1:\"5\";s:8:\"url_name\";s:6:\"orange\";s:10:\"meta_title\";s:0:\"\";}i:14;a:5:{s:5:\"color\";s:7:\"#00aeef\";s:4:\"name\";s:4:\"Blue\";s:3:\"nbr\";s:1:\"4\";s:8:\"url_name\";s:4:\"blue\";s:10:\"meta_title\";s:0:\"\";}i:15;a:5:{s:5:\"color\";s:7:\"#0cae8a\";s:4:\"name\";s:5:\"Green\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:5:\"green\";s:10:\"meta_title\";s:0:\"\";}i:16;a:5:{s:5:\"color\";s:7:\"#92389a\";s:4:\"name\";s:6:\"Purple\";s:3:\"nbr\";s:1:\"3\";s:8:\"url_name\";s:6:\"purple\";s:10:\"meta_title\";s:0:\"\";}i:17;a:5:{s:5:\"color\";s:7:\"#9b763c\";s:4:\"name\";s:5:\"Brown\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:5:\"brown\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:2;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"1\";s:4:\"name\";s:4:\"Size\";s:14:\"is_color_group\";b:0;s:6:\"values\";a:4:{i:1;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"32GB\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:4:\"32gb\";s:10:\"meta_title\";s:0:\"\";}i:2;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"64GB\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:4:\"64gb\";s:10:\"meta_title\";s:0:\"\";}i:3;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"128GB\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:5:\"128gb\";s:10:\"meta_title\";s:0:\"\";}i:4;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"512GB\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:5:\"512gb\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:3;a:7:{s:9:\"type_lite\";s:8:\"quantity\";s:4:\"type\";s:8:\"quantity\";s:6:\"id_key\";i:0;s:4:\"name\";s:12:\"Availability\";s:6:\"values\";a:2:{i:0;a:2:{s:4:\"name\";s:13:\"Not available\";s:3:\"nbr\";i:1;}i:1;a:2:{s:4:\"name\";s:8:\"In stock\";s:3:\"nbr\";i:10;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:4;a:7:{s:9:\"type_lite\";s:12:\"manufacturer\";s:4:\"type\";s:12:\"manufacturer\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Brand\";s:6:\"values\";a:0:{}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:5;a:7:{s:9:\"type_lite\";s:9:\"condition\";s:4:\"type\";s:9:\"condition\";s:6:\"id_key\";i:0;s:4:\"name\";s:9:\"Condition\";s:6:\"values\";a:3:{s:3:\"new\";a:2:{s:4:\"name\";s:3:\"New\";s:3:\"nbr\";s:2:\"11\";}s:4:\"used\";a:2:{s:4:\"name\";s:4:\"Used\";s:3:\"nbr\";i:0;}s:11:\"refurbished\";a:2:{s:4:\"name\";s:11:\"Refurbished\";s:3:\"nbr\";i:0;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:6;a:0:{}i:7;a:12:{s:9:\"type_lite\";s:5:\"price\";s:4:\"type\";s:5:\"price\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Price\";s:3:\"max\";d:459;s:3:\"min\";d:108;s:4:\"unit\";s:1:\"$\";s:14:\"specifications\";a:10:{s:6:\"symbol\";a:11:{i:0;s:1:\".\";i:1;s:1:\",\";i:2;s:1:\";\";i:3;s:1:\"%\";i:4;s:1:\"-\";i:5;s:1:\"+\";i:6;s:1:\"E\";i:7;s:2:\"×\";i:8;s:3:\"‰\";i:9;s:3:\"∞\";i:10;s:3:\"NaN\";}s:12:\"currencyCode\";s:3:\"USD\";s:14:\"currencySymbol\";s:1:\"$\";s:15:\"positivePattern\";s:10:\"¤#,##0.00\";s:15:\"negativePattern\";s:11:\"-¤#,##0.00\";s:17:\"maxFractionDigits\";i:2;s:17:\"minFractionDigits\";i:2;s:12:\"groupingUsed\";b:1;s:16:\"primaryGroupSize\";i:3;s:18:\"secondaryGroupSize\";i:3;}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";i:3;s:3:\"nbr\";s:2:\"11\";s:5:\"value\";N;}}}');
 INSERT INTO jms_layered_filter_block VALUES('6c3b89a5a28158fd0674fd80917a9627', 'a:1:{s:7:\"filters\";a:8:{i:0;a:7:{s:9:\"type_lite\";s:8:\"category\";s:4:\"type\";s:8:\"category\";s:6:\"id_key\";i:0;s:4:\"name\";s:10:\"Categories\";s:6:\"values\";a:6:{i:11;a:2:{s:4:\"name\";s:8:\"Computer\";s:3:\"nbr\";s:2:\"11\";}i:12;a:2:{s:4:\"name\";s:5:\"Audio\";s:3:\"nbr\";s:2:\"12\";}i:13;a:2:{s:4:\"name\";s:10:\"Smartphone\";s:3:\"nbr\";s:2:\"12\";}i:14;a:2:{s:4:\"name\";s:10:\"Smartwatch\";s:3:\"nbr\";s:2:\"11\";}i:15;a:2:{s:4:\"name\";s:6:\"Tablet\";s:3:\"nbr\";s:2:\"12\";}i:16;a:3:{s:4:\"name\";s:11:\"Accessories\";s:3:\"nbr\";s:2:\"12\";s:7:\"checked\";b:1;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:1;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"2\";s:4:\"name\";s:5:\"Color\";s:14:\"is_color_group\";b:1;s:6:\"values\";a:6:{i:5;a:5:{s:5:\"color\";s:7:\"#a4b3b4\";s:4:\"name\";s:4:\"Grey\";s:3:\"nbr\";s:1:\"4\";s:8:\"url_name\";s:4:\"grey\";s:10:\"meta_title\";s:0:\"\";}i:13;a:5:{s:5:\"color\";s:7:\"#ff7e00\";s:4:\"name\";s:6:\"Orange\";s:3:\"nbr\";s:1:\"3\";s:8:\"url_name\";s:6:\"orange\";s:10:\"meta_title\";s:0:\"\";}i:14;a:5:{s:5:\"color\";s:7:\"#00aeef\";s:4:\"name\";s:4:\"Blue\";s:3:\"nbr\";s:1:\"5\";s:8:\"url_name\";s:4:\"blue\";s:10:\"meta_title\";s:0:\"\";}i:15;a:5:{s:5:\"color\";s:7:\"#0cae8a\";s:4:\"name\";s:5:\"Green\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:5:\"green\";s:10:\"meta_title\";s:0:\"\";}i:16;a:5:{s:5:\"color\";s:7:\"#92389a\";s:4:\"name\";s:6:\"Purple\";s:3:\"nbr\";s:1:\"4\";s:8:\"url_name\";s:6:\"purple\";s:10:\"meta_title\";s:0:\"\";}i:17;a:5:{s:5:\"color\";s:7:\"#9b763c\";s:4:\"name\";s:5:\"Brown\";s:3:\"nbr\";s:1:\"3\";s:8:\"url_name\";s:5:\"brown\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:2;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"1\";s:4:\"name\";s:4:\"Size\";s:14:\"is_color_group\";b:0;s:6:\"values\";a:4:{i:1;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"32GB\";s:3:\"nbr\";s:1:\"3\";s:8:\"url_name\";s:4:\"32gb\";s:10:\"meta_title\";s:0:\"\";}i:2;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"64GB\";s:3:\"nbr\";s:1:\"4\";s:8:\"url_name\";s:4:\"64gb\";s:10:\"meta_title\";s:0:\"\";}i:3;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"128GB\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:5:\"128gb\";s:10:\"meta_title\";s:0:\"\";}i:4;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"512GB\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:5:\"512gb\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:3;a:7:{s:9:\"type_lite\";s:8:\"quantity\";s:4:\"type\";s:8:\"quantity\";s:6:\"id_key\";i:0;s:4:\"name\";s:12:\"Availability\";s:6:\"values\";a:2:{i:0;a:2:{s:4:\"name\";s:13:\"Not available\";s:3:\"nbr\";i:1;}i:1;a:2:{s:4:\"name\";s:8:\"In stock\";s:3:\"nbr\";i:11;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:4;a:7:{s:9:\"type_lite\";s:12:\"manufacturer\";s:4:\"type\";s:12:\"manufacturer\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Brand\";s:6:\"values\";a:0:{}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:5;a:7:{s:9:\"type_lite\";s:9:\"condition\";s:4:\"type\";s:9:\"condition\";s:6:\"id_key\";i:0;s:4:\"name\";s:9:\"Condition\";s:6:\"values\";a:3:{s:3:\"new\";a:2:{s:4:\"name\";s:3:\"New\";s:3:\"nbr\";s:2:\"12\";}s:4:\"used\";a:2:{s:4:\"name\";s:4:\"Used\";s:3:\"nbr\";i:0;}s:11:\"refurbished\";a:2:{s:4:\"name\";s:11:\"Refurbished\";s:3:\"nbr\";i:0;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:6;a:0:{}i:7;a:12:{s:9:\"type_lite\";s:5:\"price\";s:4:\"type\";s:5:\"price\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Price\";s:3:\"max\";d:459;s:3:\"min\";d:108;s:4:\"unit\";s:1:\"$\";s:14:\"specifications\";a:10:{s:6:\"symbol\";a:11:{i:0;s:1:\".\";i:1;s:1:\",\";i:2;s:1:\";\";i:3;s:1:\"%\";i:4;s:1:\"-\";i:5;s:1:\"+\";i:6;s:1:\"E\";i:7;s:2:\"×\";i:8;s:3:\"‰\";i:9;s:3:\"∞\";i:10;s:3:\"NaN\";}s:12:\"currencyCode\";s:3:\"USD\";s:14:\"currencySymbol\";s:1:\"$\";s:15:\"positivePattern\";s:10:\"¤#,##0.00\";s:15:\"negativePattern\";s:11:\"-¤#,##0.00\";s:17:\"maxFractionDigits\";i:2;s:17:\"minFractionDigits\";i:2;s:12:\"groupingUsed\";b:1;s:16:\"primaryGroupSize\";i:3;s:18:\"secondaryGroupSize\";i:3;}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";i:3;s:3:\"nbr\";s:2:\"12\";s:5:\"value\";N;}}}');
@@ -14697,18 +14767,21 @@ INSERT INTO jms_layered_filter_block VALUES('7ec20ddead370269b36270b0c94246ac', 
 INSERT INTO jms_layered_filter_block VALUES('83fb6a4f3dce88b23fc8e901a7aa0113', 'a:1:{s:7:\"filters\";a:8:{i:0;a:7:{s:9:\"type_lite\";s:8:\"category\";s:4:\"type\";s:8:\"category\";s:6:\"id_key\";i:0;s:4:\"name\";s:10:\"Categories\";s:6:\"values\";a:1:{i:17;a:2:{s:4:\"name\";s:14:\"Mac & Computer\";s:3:\"nbr\";s:1:\"1\";}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:1;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"2\";s:4:\"name\";s:5:\"Color\";s:14:\"is_color_group\";b:1;s:6:\"values\";a:6:{i:5;a:5:{s:5:\"color\";s:7:\"#a4b3b4\";s:4:\"name\";s:4:\"Grey\";s:3:\"nbr\";s:1:\"3\";s:8:\"url_name\";s:4:\"grey\";s:10:\"meta_title\";s:0:\"\";}i:13;a:5:{s:5:\"color\";s:7:\"#ff7e00\";s:4:\"name\";s:6:\"Orange\";s:3:\"nbr\";s:1:\"3\";s:8:\"url_name\";s:6:\"orange\";s:10:\"meta_title\";s:0:\"\";}i:14;a:5:{s:5:\"color\";s:7:\"#00aeef\";s:4:\"name\";s:4:\"Blue\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:4:\"blue\";s:10:\"meta_title\";s:0:\"\";}i:15;a:5:{s:5:\"color\";s:7:\"#0cae8a\";s:4:\"name\";s:5:\"Green\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:5:\"green\";s:10:\"meta_title\";s:0:\"\";}i:16;a:5:{s:5:\"color\";s:7:\"#92389a\";s:4:\"name\";s:6:\"Purple\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:6:\"purple\";s:10:\"meta_title\";s:0:\"\";}i:17;a:5:{s:5:\"color\";s:7:\"#9b763c\";s:4:\"name\";s:5:\"Brown\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:5:\"brown\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:2;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"1\";s:4:\"name\";s:4:\"Size\";s:14:\"is_color_group\";b:0;s:6:\"values\";a:4:{i:1;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"32GB\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:4:\"32gb\";s:10:\"meta_title\";s:0:\"\";}i:2;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"64GB\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:4:\"64gb\";s:10:\"meta_title\";s:0:\"\";}i:3;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"128GB\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:5:\"128gb\";s:10:\"meta_title\";s:0:\"\";}i:4;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"512GB\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:5:\"512gb\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:3;a:7:{s:9:\"type_lite\";s:8:\"quantity\";s:4:\"type\";s:8:\"quantity\";s:6:\"id_key\";i:0;s:4:\"name\";s:12:\"Availability\";s:6:\"values\";a:2:{i:0;a:2:{s:4:\"name\";s:13:\"Not available\";s:3:\"nbr\";i:0;}i:1;a:2:{s:4:\"name\";s:8:\"In stock\";s:3:\"nbr\";i:8;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:4;a:7:{s:9:\"type_lite\";s:12:\"manufacturer\";s:4:\"type\";s:12:\"manufacturer\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Brand\";s:6:\"values\";a:0:{}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:5;a:7:{s:9:\"type_lite\";s:9:\"condition\";s:4:\"type\";s:9:\"condition\";s:6:\"id_key\";i:0;s:4:\"name\";s:9:\"Condition\";s:6:\"values\";a:3:{s:3:\"new\";a:2:{s:4:\"name\";s:3:\"New\";s:3:\"nbr\";s:1:\"8\";}s:4:\"used\";a:2:{s:4:\"name\";s:4:\"Used\";s:3:\"nbr\";i:0;}s:11:\"refurbished\";a:2:{s:4:\"name\";s:11:\"Refurbished\";s:3:\"nbr\";i:0;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:6;a:0:{}i:7;a:12:{s:9:\"type_lite\";s:5:\"price\";s:4:\"type\";s:5:\"price\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Price\";s:3:\"max\";d:459;s:3:\"min\";d:108;s:4:\"unit\";s:1:\"$\";s:14:\"specifications\";a:10:{s:6:\"symbol\";a:11:{i:0;s:1:\".\";i:1;s:1:\",\";i:2;s:1:\";\";i:3;s:1:\"%\";i:4;s:1:\"-\";i:5;s:1:\"+\";i:6;s:1:\"E\";i:7;s:2:\"×\";i:8;s:3:\"‰\";i:9;s:3:\"∞\";i:10;s:3:\"NaN\";}s:12:\"currencyCode\";s:3:\"USD\";s:14:\"currencySymbol\";s:1:\"$\";s:15:\"positivePattern\";s:10:\"¤#,##0.00\";s:15:\"negativePattern\";s:11:\"-¤#,##0.00\";s:17:\"maxFractionDigits\";i:2;s:17:\"minFractionDigits\";i:2;s:12:\"groupingUsed\";b:1;s:16:\"primaryGroupSize\";i:3;s:18:\"secondaryGroupSize\";i:3;}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";i:3;s:3:\"nbr\";s:1:\"8\";s:5:\"value\";a:2:{i:0;s:3:\"108\";i:1;s:3:\"270\";}}}}');
 INSERT INTO jms_layered_filter_block VALUES('935255b61825a0975ff486f9e96837b6', 'a:1:{s:7:\"filters\";a:7:{i:0;a:7:{s:9:\"type_lite\";s:8:\"category\";s:4:\"type\";s:8:\"category\";s:6:\"id_key\";i:0;s:4:\"name\";s:10:\"Categories\";s:6:\"values\";a:5:{i:11;a:2:{s:4:\"name\";s:8:\"Computer\";s:3:\"nbr\";s:1:\"1\";}i:12;a:2:{s:4:\"name\";s:5:\"Audio\";s:3:\"nbr\";s:1:\"1\";}i:14;a:2:{s:4:\"name\";s:10:\"Smartwatch\";s:3:\"nbr\";s:1:\"1\";}i:15;a:2:{s:4:\"name\";s:6:\"Tablet\";s:3:\"nbr\";s:1:\"1\";}i:16;a:2:{s:4:\"name\";s:11:\"Accessories\";s:3:\"nbr\";s:1:\"1\";}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:1;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"2\";s:4:\"name\";s:5:\"Color\";s:14:\"is_color_group\";b:1;s:6:\"values\";a:3:{i:5;a:5:{s:5:\"color\";s:7:\"#a4b3b4\";s:4:\"name\";s:4:\"Grey\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:4:\"grey\";s:10:\"meta_title\";s:0:\"\";}i:13;a:5:{s:5:\"color\";s:7:\"#ff7e00\";s:4:\"name\";s:6:\"Orange\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:6:\"orange\";s:10:\"meta_title\";s:0:\"\";}i:14;a:5:{s:5:\"color\";s:7:\"#00aeef\";s:4:\"name\";s:4:\"Blue\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:4:\"blue\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:2;a:7:{s:9:\"type_lite\";s:8:\"quantity\";s:4:\"type\";s:8:\"quantity\";s:6:\"id_key\";i:0;s:4:\"name\";s:12:\"Availability\";s:6:\"values\";a:2:{i:0;a:3:{s:4:\"name\";s:13:\"Not available\";s:3:\"nbr\";i:1;s:7:\"checked\";b:1;}i:1;a:2:{s:4:\"name\";s:8:\"In stock\";s:3:\"nbr\";i:0;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:3;a:7:{s:9:\"type_lite\";s:12:\"manufacturer\";s:4:\"type\";s:12:\"manufacturer\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Brand\";s:6:\"values\";a:0:{}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:4;a:7:{s:9:\"type_lite\";s:9:\"condition\";s:4:\"type\";s:9:\"condition\";s:6:\"id_key\";i:0;s:4:\"name\";s:9:\"Condition\";s:6:\"values\";a:3:{s:3:\"new\";a:2:{s:4:\"name\";s:3:\"New\";s:3:\"nbr\";s:1:\"1\";}s:4:\"used\";a:2:{s:4:\"name\";s:4:\"Used\";s:3:\"nbr\";i:0;}s:11:\"refurbished\";a:2:{s:4:\"name\";s:11:\"Refurbished\";s:3:\"nbr\";i:0;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:5;a:0:{}i:6;a:12:{s:9:\"type_lite\";s:5:\"price\";s:4:\"type\";s:5:\"price\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Price\";s:3:\"max\";d:459;s:3:\"min\";d:108;s:4:\"unit\";s:1:\"$\";s:14:\"specifications\";a:10:{s:6:\"symbol\";a:11:{i:0;s:1:\".\";i:1;s:1:\",\";i:2;s:1:\";\";i:3;s:1:\"%\";i:4;s:1:\"-\";i:5;s:1:\"+\";i:6;s:1:\"E\";i:7;s:2:\"×\";i:8;s:3:\"‰\";i:9;s:3:\"∞\";i:10;s:3:\"NaN\";}s:12:\"currencyCode\";s:3:\"USD\";s:14:\"currencySymbol\";s:1:\"$\";s:15:\"positivePattern\";s:10:\"¤#,##0.00\";s:15:\"negativePattern\";s:11:\"-¤#,##0.00\";s:17:\"maxFractionDigits\";i:2;s:17:\"minFractionDigits\";i:2;s:12:\"groupingUsed\";b:1;s:16:\"primaryGroupSize\";i:3;s:18:\"secondaryGroupSize\";i:3;}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";i:3;s:3:\"nbr\";s:1:\"1\";s:5:\"value\";N;}}}');
 INSERT INTO jms_layered_filter_block VALUES('9b85bb3c363977c471356f9c7fac9ba7', 'a:1:{s:7:\"filters\";a:8:{i:0;a:7:{s:9:\"type_lite\";s:8:\"category\";s:4:\"type\";s:8:\"category\";s:6:\"id_key\";i:0;s:4:\"name\";s:10:\"Categories\";s:6:\"values\";a:0:{}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:1;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"2\";s:4:\"name\";s:5:\"Color\";s:14:\"is_color_group\";b:1;s:6:\"values\";a:5:{i:5;a:5:{s:5:\"color\";s:7:\"#a4b3b4\";s:4:\"name\";s:4:\"Grey\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:4:\"grey\";s:10:\"meta_title\";s:0:\"\";}i:13;a:5:{s:5:\"color\";s:7:\"#ff7e00\";s:4:\"name\";s:6:\"Orange\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:6:\"orange\";s:10:\"meta_title\";s:0:\"\";}i:14;a:5:{s:5:\"color\";s:7:\"#00aeef\";s:4:\"name\";s:4:\"Blue\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:4:\"blue\";s:10:\"meta_title\";s:0:\"\";}i:16;a:5:{s:5:\"color\";s:7:\"#92389a\";s:4:\"name\";s:6:\"Purple\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:6:\"purple\";s:10:\"meta_title\";s:0:\"\";}i:17;a:5:{s:5:\"color\";s:7:\"#9b763c\";s:4:\"name\";s:5:\"Brown\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:5:\"brown\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:2;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"1\";s:4:\"name\";s:4:\"Size\";s:14:\"is_color_group\";b:0;s:6:\"values\";a:4:{i:1;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"32GB\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:4:\"32gb\";s:10:\"meta_title\";s:0:\"\";}i:2;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"64GB\";s:3:\"nbr\";s:1:\"3\";s:8:\"url_name\";s:4:\"64gb\";s:10:\"meta_title\";s:0:\"\";}i:3;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"128GB\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:5:\"128gb\";s:10:\"meta_title\";s:0:\"\";}i:4;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"512GB\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:5:\"512gb\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:3;a:7:{s:9:\"type_lite\";s:8:\"quantity\";s:4:\"type\";s:8:\"quantity\";s:6:\"id_key\";i:0;s:4:\"name\";s:12:\"Availability\";s:6:\"values\";a:2:{i:0;a:2:{s:4:\"name\";s:13:\"Not available\";s:3:\"nbr\";i:0;}i:1;a:2:{s:4:\"name\";s:8:\"In stock\";s:3:\"nbr\";i:4;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:4;a:7:{s:9:\"type_lite\";s:12:\"manufacturer\";s:4:\"type\";s:12:\"manufacturer\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Brand\";s:6:\"values\";a:0:{}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:5;a:7:{s:9:\"type_lite\";s:9:\"condition\";s:4:\"type\";s:9:\"condition\";s:6:\"id_key\";i:0;s:4:\"name\";s:9:\"Condition\";s:6:\"values\";a:3:{s:3:\"new\";a:2:{s:4:\"name\";s:3:\"New\";s:3:\"nbr\";s:1:\"4\";}s:4:\"used\";a:2:{s:4:\"name\";s:4:\"Used\";s:3:\"nbr\";i:0;}s:11:\"refurbished\";a:2:{s:4:\"name\";s:11:\"Refurbished\";s:3:\"nbr\";i:0;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:6;a:0:{}i:7;a:12:{s:9:\"type_lite\";s:5:\"price\";s:4:\"type\";s:5:\"price\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Price\";s:3:\"max\";d:459;s:3:\"min\";d:141;s:4:\"unit\";s:1:\"$\";s:14:\"specifications\";a:10:{s:6:\"symbol\";a:11:{i:0;s:1:\".\";i:1;s:1:\",\";i:2;s:1:\";\";i:3;s:1:\"%\";i:4;s:1:\"-\";i:5;s:1:\"+\";i:6;s:1:\"E\";i:7;s:2:\"×\";i:8;s:3:\"‰\";i:9;s:3:\"∞\";i:10;s:3:\"NaN\";}s:12:\"currencyCode\";s:3:\"USD\";s:14:\"currencySymbol\";s:1:\"$\";s:15:\"positivePattern\";s:10:\"¤#,##0.00\";s:15:\"negativePattern\";s:11:\"-¤#,##0.00\";s:17:\"maxFractionDigits\";i:2;s:17:\"minFractionDigits\";i:2;s:12:\"groupingUsed\";b:1;s:16:\"primaryGroupSize\";i:3;s:18:\"secondaryGroupSize\";i:3;}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";i:3;s:3:\"nbr\";s:1:\"4\";s:5:\"value\";a:2:{i:0;s:3:\"313\";i:1;s:3:\"459\";}}}}');
+INSERT INTO jms_layered_filter_block VALUES('9bab5b468c7c37a440ebf5bed3b9cd64', 'a:1:{s:7:\"filters\";a:8:{i:0;a:7:{s:9:\"type_lite\";s:8:\"category\";s:4:\"type\";s:8:\"category\";s:6:\"id_key\";i:0;s:4:\"name\";s:10:\"Categories\";s:6:\"values\";a:6:{i:11;a:2:{s:4:\"name\";s:8:\"Computer\";s:3:\"nbr\";s:1:\"2\";}i:12;a:2:{s:4:\"name\";s:5:\"Audio\";s:3:\"nbr\";s:1:\"3\";}i:13;a:2:{s:4:\"name\";s:10:\"Smartphone\";s:3:\"nbr\";s:1:\"4\";}i:14;a:2:{s:4:\"name\";s:10:\"Smartwatch\";s:3:\"nbr\";s:1:\"3\";}i:15;a:2:{s:4:\"name\";s:6:\"Tablet\";s:3:\"nbr\";s:1:\"4\";}i:16;a:2:{s:4:\"name\";s:11:\"Accessories\";s:3:\"nbr\";s:1:\"4\";}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:1;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"2\";s:4:\"name\";s:5:\"Color\";s:14:\"is_color_group\";b:1;s:6:\"values\";a:5:{i:5;a:5:{s:5:\"color\";s:7:\"#a4b3b4\";s:4:\"name\";s:4:\"Grey\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:4:\"grey\";s:10:\"meta_title\";s:0:\"\";}i:13;a:5:{s:5:\"color\";s:7:\"#ff7e00\";s:4:\"name\";s:6:\"Orange\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:6:\"orange\";s:10:\"meta_title\";s:0:\"\";}i:14;a:5:{s:5:\"color\";s:7:\"#00aeef\";s:4:\"name\";s:4:\"Blue\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:4:\"blue\";s:10:\"meta_title\";s:0:\"\";}i:16;a:5:{s:5:\"color\";s:7:\"#92389a\";s:4:\"name\";s:6:\"Purple\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:6:\"purple\";s:10:\"meta_title\";s:0:\"\";}i:17;a:5:{s:5:\"color\";s:7:\"#9b763c\";s:4:\"name\";s:5:\"Brown\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:5:\"brown\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:2;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"1\";s:4:\"name\";s:4:\"Size\";s:14:\"is_color_group\";b:0;s:6:\"values\";a:4:{i:1;a:6:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"32GB\";s:3:\"nbr\";s:1:\"3\";s:8:\"url_name\";s:4:\"32gb\";s:10:\"meta_title\";s:0:\"\";s:7:\"checked\";b:1;}i:2;a:6:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"64GB\";s:3:\"nbr\";s:1:\"4\";s:8:\"url_name\";s:4:\"64gb\";s:10:\"meta_title\";s:0:\"\";s:7:\"checked\";b:1;}i:3;a:6:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"128GB\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:5:\"128gb\";s:10:\"meta_title\";s:0:\"\";s:7:\"checked\";b:1;}i:4;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"512GB\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:5:\"512gb\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:3;a:7:{s:9:\"type_lite\";s:8:\"quantity\";s:4:\"type\";s:8:\"quantity\";s:6:\"id_key\";i:0;s:4:\"name\";s:12:\"Availability\";s:6:\"values\";a:2:{i:0;a:2:{s:4:\"name\";s:13:\"Not available\";s:3:\"nbr\";i:1;}i:1;a:2:{s:4:\"name\";s:8:\"In stock\";s:3:\"nbr\";i:13;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:4;a:7:{s:9:\"type_lite\";s:12:\"manufacturer\";s:4:\"type\";s:12:\"manufacturer\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Brand\";s:6:\"values\";a:0:{}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:5;a:7:{s:9:\"type_lite\";s:9:\"condition\";s:4:\"type\";s:9:\"condition\";s:6:\"id_key\";i:0;s:4:\"name\";s:9:\"Condition\";s:6:\"values\";a:3:{s:3:\"new\";a:2:{s:4:\"name\";s:3:\"New\";s:3:\"nbr\";s:2:\"14\";}s:4:\"used\";a:2:{s:4:\"name\";s:4:\"Used\";s:3:\"nbr\";i:0;}s:11:\"refurbished\";a:2:{s:4:\"name\";s:11:\"Refurbished\";s:3:\"nbr\";i:0;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:6;a:0:{}i:7;a:12:{s:9:\"type_lite\";s:5:\"price\";s:4:\"type\";s:5:\"price\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Price\";s:3:\"max\";d:459;s:3:\"min\";d:108;s:4:\"unit\";s:1:\"$\";s:14:\"specifications\";a:10:{s:6:\"symbol\";a:11:{i:0;s:1:\".\";i:1;s:1:\",\";i:2;s:1:\";\";i:3;s:1:\"%\";i:4;s:1:\"-\";i:5;s:1:\"+\";i:6;s:1:\"E\";i:7;s:2:\"×\";i:8;s:3:\"‰\";i:9;s:3:\"∞\";i:10;s:3:\"NaN\";}s:12:\"currencyCode\";s:3:\"USD\";s:14:\"currencySymbol\";s:1:\"$\";s:15:\"positivePattern\";s:10:\"¤#,##0.00\";s:15:\"negativePattern\";s:11:\"-¤#,##0.00\";s:17:\"maxFractionDigits\";i:2;s:17:\"minFractionDigits\";i:2;s:12:\"groupingUsed\";b:1;s:16:\"primaryGroupSize\";i:3;s:18:\"secondaryGroupSize\";i:3;}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";i:3;s:3:\"nbr\";s:1:\"4\";s:5:\"value\";N;}}}');
 INSERT INTO jms_layered_filter_block VALUES('add129194cd7e1543a4bf555de59c4af', 'a:1:{s:7:\"filters\";a:8:{i:0;a:7:{s:9:\"type_lite\";s:8:\"category\";s:4:\"type\";s:8:\"category\";s:6:\"id_key\";i:0;s:4:\"name\";s:10:\"Categories\";s:6:\"values\";a:6:{i:11;a:2:{s:4:\"name\";s:8:\"Computer\";s:3:\"nbr\";s:2:\"11\";}i:12;a:2:{s:4:\"name\";s:5:\"Audio\";s:3:\"nbr\";s:2:\"12\";}i:13;a:2:{s:4:\"name\";s:10:\"Smartphone\";s:3:\"nbr\";s:2:\"12\";}i:14;a:3:{s:4:\"name\";s:10:\"Smartwatch\";s:3:\"nbr\";s:2:\"11\";s:7:\"checked\";b:1;}i:15;a:2:{s:4:\"name\";s:6:\"Tablet\";s:3:\"nbr\";s:2:\"12\";}i:16;a:2:{s:4:\"name\";s:11:\"Accessories\";s:3:\"nbr\";s:2:\"12\";}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:1;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"2\";s:4:\"name\";s:5:\"Color\";s:14:\"is_color_group\";b:1;s:6:\"values\";a:6:{i:5;a:5:{s:5:\"color\";s:7:\"#a4b3b4\";s:4:\"name\";s:4:\"Grey\";s:3:\"nbr\";s:1:\"5\";s:8:\"url_name\";s:4:\"grey\";s:10:\"meta_title\";s:0:\"\";}i:13;a:5:{s:5:\"color\";s:7:\"#ff7e00\";s:4:\"name\";s:6:\"Orange\";s:3:\"nbr\";s:1:\"4\";s:8:\"url_name\";s:6:\"orange\";s:10:\"meta_title\";s:0:\"\";}i:14;a:5:{s:5:\"color\";s:7:\"#00aeef\";s:4:\"name\";s:4:\"Blue\";s:3:\"nbr\";s:1:\"5\";s:8:\"url_name\";s:4:\"blue\";s:10:\"meta_title\";s:0:\"\";}i:15;a:5:{s:5:\"color\";s:7:\"#0cae8a\";s:4:\"name\";s:5:\"Green\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:5:\"green\";s:10:\"meta_title\";s:0:\"\";}i:16;a:5:{s:5:\"color\";s:7:\"#92389a\";s:4:\"name\";s:6:\"Purple\";s:3:\"nbr\";s:1:\"4\";s:8:\"url_name\";s:6:\"purple\";s:10:\"meta_title\";s:0:\"\";}i:17;a:5:{s:5:\"color\";s:7:\"#9b763c\";s:4:\"name\";s:5:\"Brown\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:5:\"brown\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:2;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"1\";s:4:\"name\";s:4:\"Size\";s:14:\"is_color_group\";b:0;s:6:\"values\";a:4:{i:1;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"32GB\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:4:\"32gb\";s:10:\"meta_title\";s:0:\"\";}i:2;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"64GB\";s:3:\"nbr\";s:1:\"3\";s:8:\"url_name\";s:4:\"64gb\";s:10:\"meta_title\";s:0:\"\";}i:3;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"128GB\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:5:\"128gb\";s:10:\"meta_title\";s:0:\"\";}i:4;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"512GB\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:5:\"512gb\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:3;a:7:{s:9:\"type_lite\";s:8:\"quantity\";s:4:\"type\";s:8:\"quantity\";s:6:\"id_key\";i:0;s:4:\"name\";s:12:\"Availability\";s:6:\"values\";a:2:{i:0;a:2:{s:4:\"name\";s:13:\"Not available\";s:3:\"nbr\";i:1;}i:1;a:2:{s:4:\"name\";s:8:\"In stock\";s:3:\"nbr\";i:10;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:4;a:7:{s:9:\"type_lite\";s:12:\"manufacturer\";s:4:\"type\";s:12:\"manufacturer\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Brand\";s:6:\"values\";a:0:{}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:5;a:7:{s:9:\"type_lite\";s:9:\"condition\";s:4:\"type\";s:9:\"condition\";s:6:\"id_key\";i:0;s:4:\"name\";s:9:\"Condition\";s:6:\"values\";a:3:{s:3:\"new\";a:2:{s:4:\"name\";s:3:\"New\";s:3:\"nbr\";s:2:\"11\";}s:4:\"used\";a:2:{s:4:\"name\";s:4:\"Used\";s:3:\"nbr\";i:0;}s:11:\"refurbished\";a:2:{s:4:\"name\";s:11:\"Refurbished\";s:3:\"nbr\";i:0;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:6;a:0:{}i:7;a:12:{s:9:\"type_lite\";s:5:\"price\";s:4:\"type\";s:5:\"price\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Price\";s:3:\"max\";d:459;s:3:\"min\";d:108;s:4:\"unit\";s:1:\"$\";s:14:\"specifications\";a:10:{s:6:\"symbol\";a:11:{i:0;s:1:\".\";i:1;s:1:\",\";i:2;s:1:\";\";i:3;s:1:\"%\";i:4;s:1:\"-\";i:5;s:1:\"+\";i:6;s:1:\"E\";i:7;s:2:\"×\";i:8;s:3:\"‰\";i:9;s:3:\"∞\";i:10;s:3:\"NaN\";}s:12:\"currencyCode\";s:3:\"USD\";s:14:\"currencySymbol\";s:1:\"$\";s:15:\"positivePattern\";s:10:\"¤#,##0.00\";s:15:\"negativePattern\";s:11:\"-¤#,##0.00\";s:17:\"maxFractionDigits\";i:2;s:17:\"minFractionDigits\";i:2;s:12:\"groupingUsed\";b:1;s:16:\"primaryGroupSize\";i:3;s:18:\"secondaryGroupSize\";i:3;}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";i:3;s:3:\"nbr\";s:2:\"11\";s:5:\"value\";N;}}}');
+INSERT INTO jms_layered_filter_block VALUES('b26304109b90af2a9eb0bc222c487938', 'a:1:{s:7:\"filters\";a:8:{i:0;a:7:{s:9:\"type_lite\";s:8:\"category\";s:4:\"type\";s:8:\"category\";s:6:\"id_key\";i:0;s:4:\"name\";s:10:\"Categories\";s:6:\"values\";a:6:{i:11;a:2:{s:4:\"name\";s:8:\"Computer\";s:3:\"nbr\";s:2:\"11\";}i:12;a:3:{s:4:\"name\";s:5:\"Audio\";s:3:\"nbr\";s:2:\"12\";s:7:\"checked\";b:1;}i:13;a:2:{s:4:\"name\";s:10:\"Smartphone\";s:3:\"nbr\";s:2:\"12\";}i:14;a:2:{s:4:\"name\";s:10:\"Smartwatch\";s:3:\"nbr\";s:2:\"11\";}i:15;a:2:{s:4:\"name\";s:6:\"Tablet\";s:3:\"nbr\";s:2:\"12\";}i:16;a:2:{s:4:\"name\";s:11:\"Accessories\";s:3:\"nbr\";s:2:\"12\";}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:1;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"2\";s:4:\"name\";s:5:\"Color\";s:14:\"is_color_group\";b:1;s:6:\"values\";a:6:{i:5;a:5:{s:5:\"color\";s:7:\"#a4b3b4\";s:4:\"name\";s:4:\"Grey\";s:3:\"nbr\";s:1:\"5\";s:8:\"url_name\";s:4:\"grey\";s:10:\"meta_title\";s:0:\"\";}i:13;a:5:{s:5:\"color\";s:7:\"#ff7e00\";s:4:\"name\";s:6:\"Orange\";s:3:\"nbr\";s:1:\"5\";s:8:\"url_name\";s:6:\"orange\";s:10:\"meta_title\";s:0:\"\";}i:14;a:5:{s:5:\"color\";s:7:\"#00aeef\";s:4:\"name\";s:4:\"Blue\";s:3:\"nbr\";s:1:\"5\";s:8:\"url_name\";s:4:\"blue\";s:10:\"meta_title\";s:0:\"\";}i:15;a:5:{s:5:\"color\";s:7:\"#0cae8a\";s:4:\"name\";s:5:\"Green\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:5:\"green\";s:10:\"meta_title\";s:0:\"\";}i:16;a:5:{s:5:\"color\";s:7:\"#92389a\";s:4:\"name\";s:6:\"Purple\";s:3:\"nbr\";s:1:\"5\";s:8:\"url_name\";s:6:\"purple\";s:10:\"meta_title\";s:0:\"\";}i:17;a:5:{s:5:\"color\";s:7:\"#9b763c\";s:4:\"name\";s:5:\"Brown\";s:3:\"nbr\";s:1:\"3\";s:8:\"url_name\";s:5:\"brown\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:2;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"1\";s:4:\"name\";s:4:\"Size\";s:14:\"is_color_group\";b:0;s:6:\"values\";a:4:{i:1;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"32GB\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:4:\"32gb\";s:10:\"meta_title\";s:0:\"\";}i:2;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"64GB\";s:3:\"nbr\";s:1:\"3\";s:8:\"url_name\";s:4:\"64gb\";s:10:\"meta_title\";s:0:\"\";}i:3;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"128GB\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:5:\"128gb\";s:10:\"meta_title\";s:0:\"\";}i:4;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"512GB\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:5:\"512gb\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:3;a:7:{s:9:\"type_lite\";s:8:\"quantity\";s:4:\"type\";s:8:\"quantity\";s:6:\"id_key\";i:0;s:4:\"name\";s:12:\"Availability\";s:6:\"values\";a:2:{i:0;a:2:{s:4:\"name\";s:13:\"Not available\";s:3:\"nbr\";i:1;}i:1;a:2:{s:4:\"name\";s:8:\"In stock\";s:3:\"nbr\";i:11;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:4;a:7:{s:9:\"type_lite\";s:12:\"manufacturer\";s:4:\"type\";s:12:\"manufacturer\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Brand\";s:6:\"values\";a:0:{}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:5;a:7:{s:9:\"type_lite\";s:9:\"condition\";s:4:\"type\";s:9:\"condition\";s:6:\"id_key\";i:0;s:4:\"name\";s:9:\"Condition\";s:6:\"values\";a:3:{s:3:\"new\";a:2:{s:4:\"name\";s:3:\"New\";s:3:\"nbr\";s:2:\"12\";}s:4:\"used\";a:2:{s:4:\"name\";s:4:\"Used\";s:3:\"nbr\";i:0;}s:11:\"refurbished\";a:2:{s:4:\"name\";s:11:\"Refurbished\";s:3:\"nbr\";i:0;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:6;a:0:{}i:7;a:12:{s:9:\"type_lite\";s:5:\"price\";s:4:\"type\";s:5:\"price\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Price\";s:3:\"max\";d:459;s:3:\"min\";d:108;s:4:\"unit\";s:1:\"$\";s:14:\"specifications\";a:10:{s:6:\"symbol\";a:11:{i:0;s:1:\".\";i:1;s:1:\",\";i:2;s:1:\";\";i:3;s:1:\"%\";i:4;s:1:\"-\";i:5;s:1:\"+\";i:6;s:1:\"E\";i:7;s:2:\"×\";i:8;s:3:\"‰\";i:9;s:3:\"∞\";i:10;s:3:\"NaN\";}s:12:\"currencyCode\";s:3:\"USD\";s:14:\"currencySymbol\";s:1:\"$\";s:15:\"positivePattern\";s:10:\"¤#,##0.00\";s:15:\"negativePattern\";s:11:\"-¤#,##0.00\";s:17:\"maxFractionDigits\";i:2;s:17:\"minFractionDigits\";i:2;s:12:\"groupingUsed\";b:1;s:16:\"primaryGroupSize\";i:3;s:18:\"secondaryGroupSize\";i:3;}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";i:3;s:3:\"nbr\";s:2:\"12\";s:5:\"value\";N;}}}');
 INSERT INTO jms_layered_filter_block VALUES('b7c80b0da2a66ad75367623a21e324f9', 'a:1:{s:7:\"filters\";a:8:{i:0;a:7:{s:9:\"type_lite\";s:8:\"category\";s:4:\"type\";s:8:\"category\";s:6:\"id_key\";i:0;s:4:\"name\";s:10:\"Categories\";s:6:\"values\";a:0:{}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:1;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"2\";s:4:\"name\";s:5:\"Color\";s:14:\"is_color_group\";b:1;s:6:\"values\";a:6:{i:5;a:5:{s:5:\"color\";s:7:\"#a4b3b4\";s:4:\"name\";s:4:\"Grey\";s:3:\"nbr\";s:1:\"3\";s:8:\"url_name\";s:4:\"grey\";s:10:\"meta_title\";s:0:\"\";}i:13;a:5:{s:5:\"color\";s:7:\"#ff7e00\";s:4:\"name\";s:6:\"Orange\";s:3:\"nbr\";s:1:\"3\";s:8:\"url_name\";s:6:\"orange\";s:10:\"meta_title\";s:0:\"\";}i:14;a:5:{s:5:\"color\";s:7:\"#00aeef\";s:4:\"name\";s:4:\"Blue\";s:3:\"nbr\";s:1:\"3\";s:8:\"url_name\";s:4:\"blue\";s:10:\"meta_title\";s:0:\"\";}i:15;a:5:{s:5:\"color\";s:7:\"#0cae8a\";s:4:\"name\";s:5:\"Green\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:5:\"green\";s:10:\"meta_title\";s:0:\"\";}i:16;a:5:{s:5:\"color\";s:7:\"#92389a\";s:4:\"name\";s:6:\"Purple\";s:3:\"nbr\";s:1:\"3\";s:8:\"url_name\";s:6:\"purple\";s:10:\"meta_title\";s:0:\"\";}i:17;a:5:{s:5:\"color\";s:7:\"#9b763c\";s:4:\"name\";s:5:\"Brown\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:5:\"brown\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:2;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"1\";s:4:\"name\";s:4:\"Size\";s:14:\"is_color_group\";b:0;s:6:\"values\";a:4:{i:1;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"32GB\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:4:\"32gb\";s:10:\"meta_title\";s:0:\"\";}i:2;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"64GB\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:4:\"64gb\";s:10:\"meta_title\";s:0:\"\";}i:3;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"128GB\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:5:\"128gb\";s:10:\"meta_title\";s:0:\"\";}i:4;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"512GB\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:5:\"512gb\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:3;a:7:{s:9:\"type_lite\";s:8:\"quantity\";s:4:\"type\";s:8:\"quantity\";s:6:\"id_key\";i:0;s:4:\"name\";s:12:\"Availability\";s:6:\"values\";a:2:{i:0;a:2:{s:4:\"name\";s:13:\"Not available\";s:3:\"nbr\";i:0;}i:1;a:2:{s:4:\"name\";s:8:\"In stock\";s:3:\"nbr\";i:8;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:4;a:7:{s:9:\"type_lite\";s:12:\"manufacturer\";s:4:\"type\";s:12:\"manufacturer\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Brand\";s:6:\"values\";a:0:{}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:5;a:7:{s:9:\"type_lite\";s:9:\"condition\";s:4:\"type\";s:9:\"condition\";s:6:\"id_key\";i:0;s:4:\"name\";s:9:\"Condition\";s:6:\"values\";a:3:{s:3:\"new\";a:2:{s:4:\"name\";s:3:\"New\";s:3:\"nbr\";s:1:\"8\";}s:4:\"used\";a:2:{s:4:\"name\";s:4:\"Used\";s:3:\"nbr\";i:0;}s:11:\"refurbished\";a:2:{s:4:\"name\";s:11:\"Refurbished\";s:3:\"nbr\";i:0;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:6;a:0:{}i:7;a:12:{s:9:\"type_lite\";s:5:\"price\";s:4:\"type\";s:5:\"price\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Price\";s:3:\"max\";d:459;s:3:\"min\";d:141;s:4:\"unit\";s:1:\"$\";s:14:\"specifications\";a:10:{s:6:\"symbol\";a:11:{i:0;s:1:\".\";i:1;s:1:\",\";i:2;s:1:\";\";i:3;s:1:\"%\";i:4;s:1:\"-\";i:5;s:1:\"+\";i:6;s:1:\"E\";i:7;s:2:\"×\";i:8;s:3:\"‰\";i:9;s:3:\"∞\";i:10;s:3:\"NaN\";}s:12:\"currencyCode\";s:3:\"USD\";s:14:\"currencySymbol\";s:1:\"$\";s:15:\"positivePattern\";s:10:\"¤#,##0.00\";s:15:\"negativePattern\";s:11:\"-¤#,##0.00\";s:17:\"maxFractionDigits\";i:2;s:17:\"minFractionDigits\";i:2;s:12:\"groupingUsed\";b:1;s:16:\"primaryGroupSize\";i:3;s:18:\"secondaryGroupSize\";i:3;}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";i:3;s:3:\"nbr\";s:1:\"8\";s:5:\"value\";a:2:{i:0;s:3:\"141\";i:1;s:3:\"281\";}}}}');
 INSERT INTO jms_layered_filter_block VALUES('b97636407f3b46f0ef5500ba3c5fd4b4', 'a:1:{s:7:\"filters\";a:8:{i:0;a:7:{s:9:\"type_lite\";s:8:\"category\";s:4:\"type\";s:8:\"category\";s:6:\"id_key\";i:0;s:4:\"name\";s:11:\"Catégories\";s:6:\"values\";a:6:{i:11;a:2:{s:4:\"name\";s:8:\"Computer\";s:3:\"nbr\";s:2:\"11\";}i:12;a:2:{s:4:\"name\";s:5:\"Audio\";s:3:\"nbr\";s:2:\"12\";}i:13;a:2:{s:4:\"name\";s:10:\"Smartphone\";s:3:\"nbr\";s:2:\"12\";}i:14;a:2:{s:4:\"name\";s:10:\"Smartwatch\";s:3:\"nbr\";s:2:\"11\";}i:15;a:2:{s:4:\"name\";s:6:\"Tablet\";s:3:\"nbr\";s:2:\"12\";}i:16;a:2:{s:4:\"name\";s:11:\"Accessories\";s:3:\"nbr\";s:2:\"12\";}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:1;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"2\";s:4:\"name\";s:7:\"Couleur\";s:14:\"is_color_group\";b:1;s:6:\"values\";a:6:{i:5;a:5:{s:5:\"color\";s:7:\"#a4b3b4\";s:4:\"name\";s:4:\"Gris\";s:3:\"nbr\";s:1:\"6\";s:8:\"url_name\";s:4:\"gris\";s:10:\"meta_title\";s:0:\"\";}i:13;a:5:{s:5:\"color\";s:7:\"#ff7e00\";s:4:\"name\";s:6:\"Orange\";s:3:\"nbr\";s:1:\"5\";s:8:\"url_name\";s:6:\"orange\";s:10:\"meta_title\";s:0:\"\";}i:14;a:5:{s:5:\"color\";s:7:\"#00aeef\";s:4:\"name\";s:4:\"Bleu\";s:3:\"nbr\";s:1:\"6\";s:8:\"url_name\";s:4:\"bleu\";s:10:\"meta_title\";s:0:\"\";}i:15;a:5:{s:5:\"color\";s:7:\"#0cae8a\";s:4:\"name\";s:4:\"Vert\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:4:\"vert\";s:10:\"meta_title\";s:0:\"\";}i:16;a:5:{s:5:\"color\";s:7:\"#92389a\";s:4:\"name\";s:5:\"Jaune\";s:3:\"nbr\";s:1:\"5\";s:8:\"url_name\";s:5:\"jaune\";s:10:\"meta_title\";s:0:\"\";}i:17;a:5:{s:5:\"color\";s:7:\"#9b763c\";s:4:\"name\";s:6:\"Marron\";s:3:\"nbr\";s:1:\"3\";s:8:\"url_name\";s:6:\"marron\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:2;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"1\";s:4:\"name\";s:6:\"Taille\";s:14:\"is_color_group\";b:0;s:6:\"values\";a:4:{i:1;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:1:\"S\";s:3:\"nbr\";s:1:\"3\";s:8:\"url_name\";s:1:\"s\";s:10:\"meta_title\";s:0:\"\";}i:2;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:1:\"M\";s:3:\"nbr\";s:1:\"4\";s:8:\"url_name\";s:1:\"m\";s:10:\"meta_title\";s:0:\"\";}i:3;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:1:\"L\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:1:\"l\";s:10:\"meta_title\";s:0:\"\";}i:4;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:2:\"XL\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:2:\"xl\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:3;a:7:{s:9:\"type_lite\";s:8:\"quantity\";s:4:\"type\";s:8:\"quantity\";s:6:\"id_key\";i:0;s:4:\"name\";s:14:\"Disponibilité\";s:6:\"values\";a:2:{i:0;a:2:{s:4:\"name\";s:14:\"Non disponible\";s:3:\"nbr\";i:1;}i:1;a:2:{s:4:\"name\";s:8:\"En stock\";s:3:\"nbr\";i:13;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:4;a:7:{s:9:\"type_lite\";s:12:\"manufacturer\";s:4:\"type\";s:12:\"manufacturer\";s:6:\"id_key\";i:0;s:4:\"name\";s:6:\"Marque\";s:6:\"values\";a:0:{}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:5;a:7:{s:9:\"type_lite\";s:9:\"condition\";s:4:\"type\";s:9:\"condition\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"État\";s:6:\"values\";a:3:{s:3:\"new\";a:2:{s:4:\"name\";s:7:\"Nouveau\";s:3:\"nbr\";s:2:\"14\";}s:4:\"used\";a:2:{s:4:\"name\";s:8:\"Utilisé\";s:3:\"nbr\";i:0;}s:11:\"refurbished\";a:2:{s:4:\"name\";s:14:\"Reconditionné\";s:3:\"nbr\";i:0;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:6;a:0:{}i:7;a:12:{s:9:\"type_lite\";s:5:\"price\";s:4:\"type\";s:5:\"price\";s:6:\"id_key\";i:0;s:4:\"name\";s:4:\"Prix\";s:3:\"max\";d:459;s:3:\"min\";d:108;s:4:\"unit\";s:1:\"$\";s:14:\"specifications\";a:10:{s:6:\"symbol\";a:11:{i:0;s:1:\".\";i:1;s:1:\",\";i:2;s:1:\";\";i:3;s:1:\"%\";i:4;s:1:\"-\";i:5;s:1:\"+\";i:6;s:1:\"E\";i:7;s:2:\"×\";i:8;s:3:\"‰\";i:9;s:3:\"∞\";i:10;s:3:\"NaN\";}s:12:\"currencyCode\";s:3:\"USD\";s:14:\"currencySymbol\";s:1:\"$\";s:15:\"positivePattern\";s:12:\"#,##0.00 ¤\";s:15:\"negativePattern\";s:13:\"-#,##0.00 ¤\";s:17:\"maxFractionDigits\";i:2;s:17:\"minFractionDigits\";i:2;s:12:\"groupingUsed\";b:1;s:16:\"primaryGroupSize\";i:3;s:18:\"secondaryGroupSize\";i:3;}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";i:3;s:3:\"nbr\";s:2:\"14\";s:5:\"value\";N;}}}');
 INSERT INTO jms_layered_filter_block VALUES('d77f69bfe33acc1e2d251a2eb93e3d9a', 'a:1:{s:7:\"filters\";a:8:{i:0;a:7:{s:9:\"type_lite\";s:8:\"category\";s:4:\"type\";s:8:\"category\";s:6:\"id_key\";i:0;s:4:\"name\";s:10:\"Categories\";s:6:\"values\";a:6:{i:11;a:2:{s:4:\"name\";s:8:\"Computer\";s:3:\"nbr\";s:2:\"11\";}i:12;a:2:{s:4:\"name\";s:5:\"Audio\";s:3:\"nbr\";s:2:\"12\";}i:13;a:2:{s:4:\"name\";s:10:\"Smartphone\";s:3:\"nbr\";s:2:\"12\";}i:14;a:2:{s:4:\"name\";s:10:\"Smartwatch\";s:3:\"nbr\";s:2:\"11\";}i:15;a:2:{s:4:\"name\";s:6:\"Tablet\";s:3:\"nbr\";s:2:\"12\";}i:16;a:2:{s:4:\"name\";s:11:\"Accessories\";s:3:\"nbr\";s:2:\"12\";}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:1;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"2\";s:4:\"name\";s:5:\"Color\";s:14:\"is_color_group\";b:1;s:6:\"values\";a:6:{i:5;a:5:{s:5:\"color\";s:7:\"#a4b3b4\";s:4:\"name\";s:4:\"Grey\";s:3:\"nbr\";s:1:\"6\";s:8:\"url_name\";s:4:\"grey\";s:10:\"meta_title\";s:0:\"\";}i:13;a:5:{s:5:\"color\";s:7:\"#ff7e00\";s:4:\"name\";s:6:\"Orange\";s:3:\"nbr\";s:1:\"5\";s:8:\"url_name\";s:6:\"orange\";s:10:\"meta_title\";s:0:\"\";}i:14;a:5:{s:5:\"color\";s:7:\"#00aeef\";s:4:\"name\";s:4:\"Blue\";s:3:\"nbr\";s:1:\"6\";s:8:\"url_name\";s:4:\"blue\";s:10:\"meta_title\";s:0:\"\";}i:15;a:5:{s:5:\"color\";s:7:\"#0cae8a\";s:4:\"name\";s:5:\"Green\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:5:\"green\";s:10:\"meta_title\";s:0:\"\";}i:16;a:5:{s:5:\"color\";s:7:\"#92389a\";s:4:\"name\";s:6:\"Purple\";s:3:\"nbr\";s:1:\"5\";s:8:\"url_name\";s:6:\"purple\";s:10:\"meta_title\";s:0:\"\";}i:17;a:5:{s:5:\"color\";s:7:\"#9b763c\";s:4:\"name\";s:5:\"Brown\";s:3:\"nbr\";s:1:\"3\";s:8:\"url_name\";s:5:\"brown\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:2;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"1\";s:4:\"name\";s:4:\"Size\";s:14:\"is_color_group\";b:0;s:6:\"values\";a:4:{i:1;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"32GB\";s:3:\"nbr\";s:1:\"3\";s:8:\"url_name\";s:4:\"32gb\";s:10:\"meta_title\";s:0:\"\";}i:2;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"64GB\";s:3:\"nbr\";s:1:\"4\";s:8:\"url_name\";s:4:\"64gb\";s:10:\"meta_title\";s:0:\"\";}i:3;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"128GB\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:5:\"128gb\";s:10:\"meta_title\";s:0:\"\";}i:4;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"512GB\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:5:\"512gb\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:3;a:7:{s:9:\"type_lite\";s:8:\"quantity\";s:4:\"type\";s:8:\"quantity\";s:6:\"id_key\";i:0;s:4:\"name\";s:12:\"Availability\";s:6:\"values\";a:2:{i:0;a:2:{s:4:\"name\";s:13:\"Not available\";s:3:\"nbr\";i:1;}i:1;a:2:{s:4:\"name\";s:8:\"In stock\";s:3:\"nbr\";i:13;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:4;a:7:{s:9:\"type_lite\";s:12:\"manufacturer\";s:4:\"type\";s:12:\"manufacturer\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Brand\";s:6:\"values\";a:0:{}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:5;a:7:{s:9:\"type_lite\";s:9:\"condition\";s:4:\"type\";s:9:\"condition\";s:6:\"id_key\";i:0;s:4:\"name\";s:9:\"Condition\";s:6:\"values\";a:3:{s:3:\"new\";a:2:{s:4:\"name\";s:3:\"New\";s:3:\"nbr\";s:2:\"14\";}s:4:\"used\";a:2:{s:4:\"name\";s:4:\"Used\";s:3:\"nbr\";i:0;}s:11:\"refurbished\";a:2:{s:4:\"name\";s:11:\"Refurbished\";s:3:\"nbr\";i:0;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:6;a:0:{}i:7;a:12:{s:9:\"type_lite\";s:5:\"price\";s:4:\"type\";s:5:\"price\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Price\";s:3:\"max\";d:411;s:3:\"min\";d:96;s:4:\"unit\";s:3:\"€\";s:14:\"specifications\";a:10:{s:6:\"symbol\";a:11:{i:0;s:1:\".\";i:1;s:1:\",\";i:2;s:1:\";\";i:3;s:1:\"%\";i:4;s:1:\"-\";i:5;s:1:\"+\";i:6;s:1:\"E\";i:7;s:2:\"×\";i:8;s:3:\"‰\";i:9;s:3:\"∞\";i:10;s:3:\"NaN\";}s:12:\"currencyCode\";s:3:\"EUR\";s:14:\"currencySymbol\";s:3:\"€\";s:15:\"positivePattern\";s:10:\"¤#,##0.00\";s:15:\"negativePattern\";s:11:\"-¤#,##0.00\";s:17:\"maxFractionDigits\";i:2;s:17:\"minFractionDigits\";i:2;s:12:\"groupingUsed\";b:1;s:16:\"primaryGroupSize\";i:3;s:18:\"secondaryGroupSize\";i:3;}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";i:3;s:3:\"nbr\";s:2:\"14\";s:5:\"value\";N;}}}');
 INSERT INTO jms_layered_filter_block VALUES('e29a46a804ca6933f2a84918072d1846', 'a:1:{s:7:\"filters\";a:8:{i:0;a:7:{s:9:\"type_lite\";s:8:\"category\";s:4:\"type\";s:8:\"category\";s:6:\"id_key\";i:0;s:4:\"name\";s:10:\"Categories\";s:6:\"values\";a:5:{i:11;a:2:{s:4:\"name\";s:8:\"Computer\";s:3:\"nbr\";s:1:\"1\";}i:12;a:2:{s:4:\"name\";s:5:\"Audio\";s:3:\"nbr\";s:1:\"1\";}i:13;a:2:{s:4:\"name\";s:10:\"Smartphone\";s:3:\"nbr\";s:1:\"1\";}i:15;a:2:{s:4:\"name\";s:6:\"Tablet\";s:3:\"nbr\";s:1:\"1\";}i:16;a:2:{s:4:\"name\";s:11:\"Accessories\";s:3:\"nbr\";s:1:\"1\";}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:1;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"2\";s:4:\"name\";s:5:\"Color\";s:14:\"is_color_group\";b:1;s:6:\"values\";a:6:{i:5;a:5:{s:5:\"color\";s:7:\"#a4b3b4\";s:4:\"name\";s:4:\"Grey\";s:3:\"nbr\";s:1:\"6\";s:8:\"url_name\";s:4:\"grey\";s:10:\"meta_title\";s:0:\"\";}i:13;a:6:{s:5:\"color\";s:7:\"#ff7e00\";s:4:\"name\";s:6:\"Orange\";s:3:\"nbr\";s:1:\"5\";s:8:\"url_name\";s:6:\"orange\";s:10:\"meta_title\";s:0:\"\";s:7:\"checked\";b:1;}i:14;a:5:{s:5:\"color\";s:7:\"#00aeef\";s:4:\"name\";s:4:\"Blue\";s:3:\"nbr\";s:1:\"6\";s:8:\"url_name\";s:4:\"blue\";s:10:\"meta_title\";s:0:\"\";}i:15;a:5:{s:5:\"color\";s:7:\"#0cae8a\";s:4:\"name\";s:5:\"Green\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:5:\"green\";s:10:\"meta_title\";s:0:\"\";}i:16;a:5:{s:5:\"color\";s:7:\"#92389a\";s:4:\"name\";s:6:\"Purple\";s:3:\"nbr\";s:1:\"5\";s:8:\"url_name\";s:6:\"purple\";s:10:\"meta_title\";s:0:\"\";}i:17;a:5:{s:5:\"color\";s:7:\"#9b763c\";s:4:\"name\";s:5:\"Brown\";s:3:\"nbr\";s:1:\"3\";s:8:\"url_name\";s:5:\"brown\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:2;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"1\";s:4:\"name\";s:4:\"Size\";s:14:\"is_color_group\";b:0;s:6:\"values\";a:4:{i:1;a:6:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"32GB\";s:3:\"nbr\";s:1:\"3\";s:8:\"url_name\";s:4:\"32gb\";s:10:\"meta_title\";s:0:\"\";s:7:\"checked\";b:1;}i:2;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"64GB\";s:3:\"nbr\";s:1:\"4\";s:8:\"url_name\";s:4:\"64gb\";s:10:\"meta_title\";s:0:\"\";}i:3;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"128GB\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:5:\"128gb\";s:10:\"meta_title\";s:0:\"\";}i:4;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"512GB\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:5:\"512gb\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:3;a:7:{s:9:\"type_lite\";s:8:\"quantity\";s:4:\"type\";s:8:\"quantity\";s:6:\"id_key\";i:0;s:4:\"name\";s:12:\"Availability\";s:6:\"values\";a:2:{i:0;a:2:{s:4:\"name\";s:13:\"Not available\";s:3:\"nbr\";i:1;}i:1;a:2:{s:4:\"name\";s:8:\"In stock\";s:3:\"nbr\";i:13;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:4;a:7:{s:9:\"type_lite\";s:12:\"manufacturer\";s:4:\"type\";s:12:\"manufacturer\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Brand\";s:6:\"values\";a:0:{}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:5;a:7:{s:9:\"type_lite\";s:9:\"condition\";s:4:\"type\";s:9:\"condition\";s:6:\"id_key\";i:0;s:4:\"name\";s:9:\"Condition\";s:6:\"values\";a:3:{s:3:\"new\";a:2:{s:4:\"name\";s:3:\"New\";s:3:\"nbr\";s:2:\"14\";}s:4:\"used\";a:2:{s:4:\"name\";s:4:\"Used\";s:3:\"nbr\";i:0;}s:11:\"refurbished\";a:2:{s:4:\"name\";s:11:\"Refurbished\";s:3:\"nbr\";i:0;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:6;a:0:{}i:7;a:12:{s:9:\"type_lite\";s:5:\"price\";s:4:\"type\";s:5:\"price\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Price\";s:3:\"max\";d:459;s:3:\"min\";d:108;s:4:\"unit\";s:1:\"$\";s:14:\"specifications\";a:10:{s:6:\"symbol\";a:11:{i:0;s:1:\".\";i:1;s:1:\",\";i:2;s:1:\";\";i:3;s:1:\"%\";i:4;s:1:\"-\";i:5;s:1:\"+\";i:6;s:1:\"E\";i:7;s:2:\"×\";i:8;s:3:\"‰\";i:9;s:3:\"∞\";i:10;s:3:\"NaN\";}s:12:\"currencyCode\";s:3:\"USD\";s:14:\"currencySymbol\";s:1:\"$\";s:15:\"positivePattern\";s:10:\"¤#,##0.00\";s:15:\"negativePattern\";s:11:\"-¤#,##0.00\";s:17:\"maxFractionDigits\";i:2;s:17:\"minFractionDigits\";i:2;s:12:\"groupingUsed\";b:1;s:16:\"primaryGroupSize\";i:3;s:18:\"secondaryGroupSize\";i:3;}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";i:3;s:3:\"nbr\";s:1:\"1\";s:5:\"value\";N;}}}');
 INSERT INTO jms_layered_filter_block VALUES('e692633fd5651f732b92596eb970b3f8', 'a:1:{s:7:\"filters\";a:8:{i:0;a:7:{s:9:\"type_lite\";s:8:\"category\";s:4:\"type\";s:8:\"category\";s:6:\"id_key\";i:0;s:4:\"name\";s:10:\"Categories\";s:6:\"values\";a:5:{i:11;a:3:{s:4:\"name\";s:8:\"Computer\";s:3:\"nbr\";s:1:\"1\";s:7:\"checked\";b:1;}i:12;a:2:{s:4:\"name\";s:5:\"Audio\";s:3:\"nbr\";s:1:\"1\";}i:13;a:2:{s:4:\"name\";s:10:\"Smartphone\";s:3:\"nbr\";s:1:\"1\";}i:15;a:2:{s:4:\"name\";s:6:\"Tablet\";s:3:\"nbr\";s:1:\"1\";}i:16;a:2:{s:4:\"name\";s:11:\"Accessories\";s:3:\"nbr\";s:1:\"1\";}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:1;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"2\";s:4:\"name\";s:5:\"Color\";s:14:\"is_color_group\";b:1;s:6:\"values\";a:6:{i:5;a:5:{s:5:\"color\";s:7:\"#a4b3b4\";s:4:\"name\";s:4:\"Grey\";s:3:\"nbr\";s:1:\"5\";s:8:\"url_name\";s:4:\"grey\";s:10:\"meta_title\";s:0:\"\";}i:13;a:6:{s:5:\"color\";s:7:\"#ff7e00\";s:4:\"name\";s:6:\"Orange\";s:3:\"nbr\";s:1:\"5\";s:8:\"url_name\";s:6:\"orange\";s:10:\"meta_title\";s:0:\"\";s:7:\"checked\";b:1;}i:14;a:5:{s:5:\"color\";s:7:\"#00aeef\";s:4:\"name\";s:4:\"Blue\";s:3:\"nbr\";s:1:\"4\";s:8:\"url_name\";s:4:\"blue\";s:10:\"meta_title\";s:0:\"\";}i:15;a:5:{s:5:\"color\";s:7:\"#0cae8a\";s:4:\"name\";s:5:\"Green\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:5:\"green\";s:10:\"meta_title\";s:0:\"\";}i:16;a:5:{s:5:\"color\";s:7:\"#92389a\";s:4:\"name\";s:6:\"Purple\";s:3:\"nbr\";s:1:\"3\";s:8:\"url_name\";s:6:\"purple\";s:10:\"meta_title\";s:0:\"\";}i:17;a:5:{s:5:\"color\";s:7:\"#9b763c\";s:4:\"name\";s:5:\"Brown\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:5:\"brown\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:2;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"1\";s:4:\"name\";s:4:\"Size\";s:14:\"is_color_group\";b:0;s:6:\"values\";a:4:{i:1;a:6:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"32GB\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:4:\"32gb\";s:10:\"meta_title\";s:0:\"\";s:7:\"checked\";b:1;}i:2;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"64GB\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:4:\"64gb\";s:10:\"meta_title\";s:0:\"\";}i:3;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"128GB\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:5:\"128gb\";s:10:\"meta_title\";s:0:\"\";}i:4;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"512GB\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:5:\"512gb\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:3;a:7:{s:9:\"type_lite\";s:8:\"quantity\";s:4:\"type\";s:8:\"quantity\";s:6:\"id_key\";i:0;s:4:\"name\";s:12:\"Availability\";s:6:\"values\";a:2:{i:0;a:2:{s:4:\"name\";s:13:\"Not available\";s:3:\"nbr\";i:1;}i:1;a:2:{s:4:\"name\";s:8:\"In stock\";s:3:\"nbr\";i:10;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:4;a:7:{s:9:\"type_lite\";s:12:\"manufacturer\";s:4:\"type\";s:12:\"manufacturer\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Brand\";s:6:\"values\";a:0:{}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:5;a:7:{s:9:\"type_lite\";s:9:\"condition\";s:4:\"type\";s:9:\"condition\";s:6:\"id_key\";i:0;s:4:\"name\";s:9:\"Condition\";s:6:\"values\";a:3:{s:3:\"new\";a:2:{s:4:\"name\";s:3:\"New\";s:3:\"nbr\";s:2:\"11\";}s:4:\"used\";a:2:{s:4:\"name\";s:4:\"Used\";s:3:\"nbr\";i:0;}s:11:\"refurbished\";a:2:{s:4:\"name\";s:11:\"Refurbished\";s:3:\"nbr\";i:0;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:6;a:0:{}i:7;a:12:{s:9:\"type_lite\";s:5:\"price\";s:4:\"type\";s:5:\"price\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Price\";s:3:\"max\";d:459;s:3:\"min\";d:108;s:4:\"unit\";s:1:\"$\";s:14:\"specifications\";a:10:{s:6:\"symbol\";a:11:{i:0;s:1:\".\";i:1;s:1:\",\";i:2;s:1:\";\";i:3;s:1:\"%\";i:4;s:1:\"-\";i:5;s:1:\"+\";i:6;s:1:\"E\";i:7;s:2:\"×\";i:8;s:3:\"‰\";i:9;s:3:\"∞\";i:10;s:3:\"NaN\";}s:12:\"currencyCode\";s:3:\"USD\";s:14:\"currencySymbol\";s:1:\"$\";s:15:\"positivePattern\";s:10:\"¤#,##0.00\";s:15:\"negativePattern\";s:11:\"-¤#,##0.00\";s:17:\"maxFractionDigits\";i:2;s:17:\"minFractionDigits\";i:2;s:12:\"groupingUsed\";b:1;s:16:\"primaryGroupSize\";i:3;s:18:\"secondaryGroupSize\";i:3;}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";i:3;s:3:\"nbr\";s:1:\"1\";s:5:\"value\";N;}}}');
 INSERT INTO jms_layered_filter_block VALUES('f2e6d4c3acfa7c3bdc090d285ba75c9d', 'a:1:{s:7:\"filters\";a:8:{i:0;a:7:{s:9:\"type_lite\";s:8:\"category\";s:4:\"type\";s:8:\"category\";s:6:\"id_key\";i:0;s:4:\"name\";s:10:\"Categories\";s:6:\"values\";a:0:{}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:1;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"2\";s:4:\"name\";s:5:\"Color\";s:14:\"is_color_group\";b:1;s:6:\"values\";a:6:{i:5;a:5:{s:5:\"color\";s:7:\"#a4b3b4\";s:4:\"name\";s:4:\"Grey\";s:3:\"nbr\";s:1:\"5\";s:8:\"url_name\";s:4:\"grey\";s:10:\"meta_title\";s:0:\"\";}i:13;a:5:{s:5:\"color\";s:7:\"#ff7e00\";s:4:\"name\";s:6:\"Orange\";s:3:\"nbr\";s:1:\"4\";s:8:\"url_name\";s:6:\"orange\";s:10:\"meta_title\";s:0:\"\";}i:14;a:6:{s:5:\"color\";s:7:\"#00aeef\";s:4:\"name\";s:4:\"Blue\";s:3:\"nbr\";s:1:\"5\";s:8:\"url_name\";s:4:\"blue\";s:10:\"meta_title\";s:0:\"\";s:7:\"checked\";b:1;}i:15;a:5:{s:5:\"color\";s:7:\"#0cae8a\";s:4:\"name\";s:5:\"Green\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:5:\"green\";s:10:\"meta_title\";s:0:\"\";}i:16;a:5:{s:5:\"color\";s:7:\"#92389a\";s:4:\"name\";s:6:\"Purple\";s:3:\"nbr\";s:1:\"5\";s:8:\"url_name\";s:6:\"purple\";s:10:\"meta_title\";s:0:\"\";}i:17;a:5:{s:5:\"color\";s:7:\"#9b763c\";s:4:\"name\";s:5:\"Brown\";s:3:\"nbr\";s:1:\"3\";s:8:\"url_name\";s:5:\"brown\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:2;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"1\";s:4:\"name\";s:4:\"Size\";s:14:\"is_color_group\";b:0;s:6:\"values\";a:4:{i:1;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"32GB\";s:3:\"nbr\";s:1:\"3\";s:8:\"url_name\";s:4:\"32gb\";s:10:\"meta_title\";s:0:\"\";}i:2;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"64GB\";s:3:\"nbr\";s:1:\"4\";s:8:\"url_name\";s:4:\"64gb\";s:10:\"meta_title\";s:0:\"\";}i:3;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"128GB\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:5:\"128gb\";s:10:\"meta_title\";s:0:\"\";}i:4;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"512GB\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:5:\"512gb\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:3;a:7:{s:9:\"type_lite\";s:8:\"quantity\";s:4:\"type\";s:8:\"quantity\";s:6:\"id_key\";i:0;s:4:\"name\";s:12:\"Availability\";s:6:\"values\";a:2:{i:0;a:2:{s:4:\"name\";s:13:\"Not available\";s:3:\"nbr\";i:0;}i:1;a:2:{s:4:\"name\";s:8:\"In stock\";s:3:\"nbr\";i:12;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:4;a:7:{s:9:\"type_lite\";s:12:\"manufacturer\";s:4:\"type\";s:12:\"manufacturer\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Brand\";s:6:\"values\";a:0:{}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:5;a:7:{s:9:\"type_lite\";s:9:\"condition\";s:4:\"type\";s:9:\"condition\";s:6:\"id_key\";i:0;s:4:\"name\";s:9:\"Condition\";s:6:\"values\";a:3:{s:3:\"new\";a:2:{s:4:\"name\";s:3:\"New\";s:3:\"nbr\";s:2:\"12\";}s:4:\"used\";a:2:{s:4:\"name\";s:4:\"Used\";s:3:\"nbr\";i:0;}s:11:\"refurbished\";a:2:{s:4:\"name\";s:11:\"Refurbished\";s:3:\"nbr\";i:0;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:6;a:0:{}i:7;a:12:{s:9:\"type_lite\";s:5:\"price\";s:4:\"type\";s:5:\"price\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Price\";s:3:\"max\";d:459;s:3:\"min\";d:141;s:4:\"unit\";s:1:\"$\";s:14:\"specifications\";a:10:{s:6:\"symbol\";a:11:{i:0;s:1:\".\";i:1;s:1:\",\";i:2;s:1:\";\";i:3;s:1:\"%\";i:4;s:1:\"-\";i:5;s:1:\"+\";i:6;s:1:\"E\";i:7;s:2:\"×\";i:8;s:3:\"‰\";i:9;s:3:\"∞\";i:10;s:3:\"NaN\";}s:12:\"currencyCode\";s:3:\"USD\";s:14:\"currencySymbol\";s:1:\"$\";s:15:\"positivePattern\";s:10:\"¤#,##0.00\";s:15:\"negativePattern\";s:11:\"-¤#,##0.00\";s:17:\"maxFractionDigits\";i:2;s:17:\"minFractionDigits\";i:2;s:12:\"groupingUsed\";b:1;s:16:\"primaryGroupSize\";i:3;s:18:\"secondaryGroupSize\";i:3;}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";i:3;s:3:\"nbr\";s:1:\"5\";s:5:\"value\";N;}}}');
+INSERT INTO jms_layered_filter_block VALUES('f306b0ac41b6caeb9f1e114fbe754937', 'a:1:{s:7:\"filters\";a:8:{i:0;a:7:{s:9:\"type_lite\";s:8:\"category\";s:4:\"type\";s:8:\"category\";s:6:\"id_key\";i:0;s:4:\"name\";s:10:\"Categories\";s:6:\"values\";a:6:{i:11;a:2:{s:4:\"name\";s:8:\"Computer\";s:3:\"nbr\";s:1:\"2\";}i:12;a:2:{s:4:\"name\";s:5:\"Audio\";s:3:\"nbr\";s:1:\"3\";}i:13;a:2:{s:4:\"name\";s:10:\"Smartphone\";s:3:\"nbr\";s:1:\"4\";}i:14;a:2:{s:4:\"name\";s:10:\"Smartwatch\";s:3:\"nbr\";s:1:\"3\";}i:15;a:2:{s:4:\"name\";s:6:\"Tablet\";s:3:\"nbr\";s:1:\"4\";}i:16;a:2:{s:4:\"name\";s:11:\"Accessories\";s:3:\"nbr\";s:1:\"4\";}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:1;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"2\";s:4:\"name\";s:5:\"Color\";s:14:\"is_color_group\";b:1;s:6:\"values\";a:5:{i:5;a:5:{s:5:\"color\";s:7:\"#a4b3b4\";s:4:\"name\";s:4:\"Grey\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:4:\"grey\";s:10:\"meta_title\";s:0:\"\";}i:13;a:5:{s:5:\"color\";s:7:\"#ff7e00\";s:4:\"name\";s:6:\"Orange\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:6:\"orange\";s:10:\"meta_title\";s:0:\"\";}i:14;a:5:{s:5:\"color\";s:7:\"#00aeef\";s:4:\"name\";s:4:\"Blue\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:4:\"blue\";s:10:\"meta_title\";s:0:\"\";}i:16;a:5:{s:5:\"color\";s:7:\"#92389a\";s:4:\"name\";s:6:\"Purple\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:6:\"purple\";s:10:\"meta_title\";s:0:\"\";}i:17;a:5:{s:5:\"color\";s:7:\"#9b763c\";s:4:\"name\";s:5:\"Brown\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:5:\"brown\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:2;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"1\";s:4:\"name\";s:4:\"Size\";s:14:\"is_color_group\";b:0;s:6:\"values\";a:4:{i:1;a:6:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"32GB\";s:3:\"nbr\";s:1:\"3\";s:8:\"url_name\";s:4:\"32gb\";s:10:\"meta_title\";s:0:\"\";s:7:\"checked\";b:1;}i:2;a:6:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:4:\"64GB\";s:3:\"nbr\";s:1:\"4\";s:8:\"url_name\";s:4:\"64gb\";s:10:\"meta_title\";s:0:\"\";s:7:\"checked\";b:1;}i:3;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"128GB\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:5:\"128gb\";s:10:\"meta_title\";s:0:\"\";}i:4;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:5:\"512GB\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:5:\"512gb\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:3;a:7:{s:9:\"type_lite\";s:8:\"quantity\";s:4:\"type\";s:8:\"quantity\";s:6:\"id_key\";i:0;s:4:\"name\";s:12:\"Availability\";s:6:\"values\";a:2:{i:0;a:2:{s:4:\"name\";s:13:\"Not available\";s:3:\"nbr\";i:1;}i:1;a:2:{s:4:\"name\";s:8:\"In stock\";s:3:\"nbr\";i:13;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:4;a:7:{s:9:\"type_lite\";s:12:\"manufacturer\";s:4:\"type\";s:12:\"manufacturer\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Brand\";s:6:\"values\";a:0:{}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:5;a:7:{s:9:\"type_lite\";s:9:\"condition\";s:4:\"type\";s:9:\"condition\";s:6:\"id_key\";i:0;s:4:\"name\";s:9:\"Condition\";s:6:\"values\";a:3:{s:3:\"new\";a:2:{s:4:\"name\";s:3:\"New\";s:3:\"nbr\";s:2:\"14\";}s:4:\"used\";a:2:{s:4:\"name\";s:4:\"Used\";s:3:\"nbr\";i:0;}s:11:\"refurbished\";a:2:{s:4:\"name\";s:11:\"Refurbished\";s:3:\"nbr\";i:0;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:6;a:0:{}i:7;a:12:{s:9:\"type_lite\";s:5:\"price\";s:4:\"type\";s:5:\"price\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Price\";s:3:\"max\";d:459;s:3:\"min\";d:108;s:4:\"unit\";s:1:\"$\";s:14:\"specifications\";a:10:{s:6:\"symbol\";a:11:{i:0;s:1:\".\";i:1;s:1:\",\";i:2;s:1:\";\";i:3;s:1:\"%\";i:4;s:1:\"-\";i:5;s:1:\"+\";i:6;s:1:\"E\";i:7;s:2:\"×\";i:8;s:3:\"‰\";i:9;s:3:\"∞\";i:10;s:3:\"NaN\";}s:12:\"currencyCode\";s:3:\"USD\";s:14:\"currencySymbol\";s:1:\"$\";s:15:\"positivePattern\";s:10:\"¤#,##0.00\";s:15:\"negativePattern\";s:11:\"-¤#,##0.00\";s:17:\"maxFractionDigits\";i:2;s:17:\"minFractionDigits\";i:2;s:12:\"groupingUsed\";b:1;s:16:\"primaryGroupSize\";i:3;s:18:\"secondaryGroupSize\";i:3;}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";i:3;s:3:\"nbr\";s:1:\"4\";s:5:\"value\";N;}}}');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_layered_filter_shop
+-- Cấu trúc bảng cho bảng jms_layered_filter_shop
 --
 
 CREATE TABLE jms_layered_filter_shop (
@@ -14719,7 +14792,7 @@ CREATE TABLE jms_layered_filter_shop (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_layered_indexable_attribute_group
+-- Cấu trúc bảng cho bảng jms_layered_indexable_attribute_group
 --
 
 CREATE TABLE jms_layered_indexable_attribute_group (
@@ -14728,7 +14801,7 @@ CREATE TABLE jms_layered_indexable_attribute_group (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_layered_indexable_attribute_group
+-- Đang đổ dữ liệu cho bảng jms_layered_indexable_attribute_group
 --
 
 INSERT INTO jms_layered_indexable_attribute_group VALUES(1, 1);
@@ -14739,7 +14812,7 @@ INSERT INTO jms_layered_indexable_attribute_group VALUES(4, 1);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_layered_indexable_attribute_group_lang_value
+-- Cấu trúc bảng cho bảng jms_layered_indexable_attribute_group_lang_value
 --
 
 CREATE TABLE jms_layered_indexable_attribute_group_lang_value (
@@ -14752,7 +14825,7 @@ CREATE TABLE jms_layered_indexable_attribute_group_lang_value (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_layered_indexable_attribute_lang_value
+-- Cấu trúc bảng cho bảng jms_layered_indexable_attribute_lang_value
 --
 
 CREATE TABLE jms_layered_indexable_attribute_lang_value (
@@ -14763,7 +14836,7 @@ CREATE TABLE jms_layered_indexable_attribute_lang_value (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_layered_indexable_attribute_lang_value
+-- Đang đổ dữ liệu cho bảng jms_layered_indexable_attribute_lang_value
 --
 
 INSERT INTO jms_layered_indexable_attribute_lang_value VALUES(1, 1, '32gb', '');
@@ -14820,7 +14893,7 @@ INSERT INTO jms_layered_indexable_attribute_lang_value VALUES(17, 6, 'marron', '
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_layered_indexable_feature
+-- Cấu trúc bảng cho bảng jms_layered_indexable_feature
 --
 
 CREATE TABLE jms_layered_indexable_feature (
@@ -14829,7 +14902,7 @@ CREATE TABLE jms_layered_indexable_feature (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_layered_indexable_feature
+-- Đang đổ dữ liệu cho bảng jms_layered_indexable_feature
 --
 
 INSERT INTO jms_layered_indexable_feature VALUES(1, 1);
@@ -14838,7 +14911,7 @@ INSERT INTO jms_layered_indexable_feature VALUES(2, 1);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_layered_indexable_feature_lang_value
+-- Cấu trúc bảng cho bảng jms_layered_indexable_feature_lang_value
 --
 
 CREATE TABLE jms_layered_indexable_feature_lang_value (
@@ -14851,7 +14924,7 @@ CREATE TABLE jms_layered_indexable_feature_lang_value (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_layered_indexable_feature_value_lang_value
+-- Cấu trúc bảng cho bảng jms_layered_indexable_feature_value_lang_value
 --
 
 CREATE TABLE jms_layered_indexable_feature_value_lang_value (
@@ -14864,7 +14937,7 @@ CREATE TABLE jms_layered_indexable_feature_value_lang_value (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_layered_price_index
+-- Cấu trúc bảng cho bảng jms_layered_price_index
 --
 
 CREATE TABLE jms_layered_price_index (
@@ -14877,7 +14950,7 @@ CREATE TABLE jms_layered_price_index (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_layered_price_index
+-- Đang đổ dữ liệu cho bảng jms_layered_price_index
 --
 
 INSERT INTO jms_layered_price_index VALUES(1, 1, 1, 19, 19, 21);
@@ -14933,7 +15006,7 @@ INSERT INTO jms_layered_price_index VALUES(34, 2, 1, 187, 187, 21);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_layered_product_attribute
+-- Cấu trúc bảng cho bảng jms_layered_product_attribute
 --
 
 CREATE TABLE jms_layered_product_attribute (
@@ -14944,7 +15017,7 @@ CREATE TABLE jms_layered_product_attribute (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_layered_product_attribute
+-- Đang đổ dữ liệu cho bảng jms_layered_product_attribute
 --
 
 INSERT INTO jms_layered_product_attribute VALUES(1, 1, 1, 1);
@@ -15026,7 +15099,7 @@ INSERT INTO jms_layered_product_attribute VALUES(25, 18, 4, 1);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_linksmenutop
+-- Cấu trúc bảng cho bảng jms_linksmenutop
 --
 
 CREATE TABLE jms_linksmenutop (
@@ -15038,7 +15111,7 @@ CREATE TABLE jms_linksmenutop (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_linksmenutop_lang
+-- Cấu trúc bảng cho bảng jms_linksmenutop_lang
 --
 
 CREATE TABLE jms_linksmenutop_lang (
@@ -15052,7 +15125,7 @@ CREATE TABLE jms_linksmenutop_lang (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_link_block
+-- Cấu trúc bảng cho bảng jms_link_block
 --
 
 CREATE TABLE jms_link_block (
@@ -15063,7 +15136,7 @@ CREATE TABLE jms_link_block (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_link_block
+-- Đang đổ dữ liệu cho bảng jms_link_block
 --
 
 INSERT INTO jms_link_block VALUES(1, 35, 0, '{\"cms\":[false],\"product\":[\"prices-drop\",\"new-products\",\"best-sales\"],\"static\":[false]}');
@@ -15072,7 +15145,7 @@ INSERT INTO jms_link_block VALUES(2, 35, 1, '{\"cms\":[\"1\",\"2\",\"3\",\"4\",\
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_link_block_lang
+-- Cấu trúc bảng cho bảng jms_link_block_lang
 --
 
 CREATE TABLE jms_link_block_lang (
@@ -15083,7 +15156,7 @@ CREATE TABLE jms_link_block_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_link_block_lang
+-- Đang đổ dữ liệu cho bảng jms_link_block_lang
 --
 
 INSERT INTO jms_link_block_lang VALUES(1, 1, 'Products', NULL);
@@ -15100,7 +15173,7 @@ INSERT INTO jms_link_block_lang VALUES(2, 6, 'Nuestra empresa', NULL);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_link_block_shop
+-- Cấu trúc bảng cho bảng jms_link_block_shop
 --
 
 CREATE TABLE jms_link_block_shop (
@@ -15111,7 +15184,7 @@ CREATE TABLE jms_link_block_shop (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_log
+-- Cấu trúc bảng cho bảng jms_log
 --
 
 CREATE TABLE jms_log (
@@ -15127,7 +15200,7 @@ CREATE TABLE jms_log (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_log
+-- Đang đổ dữ liệu cho bảng jms_log
 --
 
 INSERT INTO jms_log VALUES(1, 1, 0, 'Exporting mail with theme modern for language English (English)', '', 0, 0, '2019-07-24 04:52:50', '2019-07-24 04:52:50');
@@ -16171,11 +16244,24 @@ INSERT INTO jms_log VALUES(1038, 1, 0, 'Could not crawl for translation files: T
 INSERT INTO jms_log VALUES(1039, 1, 0, 'Could not crawl for translation files: The \\\"D:\\\\xamppp\\\\htdocs\\\\jms_kasos\\\\var\\\\cache\\\\prod/themes\\\\jms_kasos\\\\translations\\\" directory does not exist.', '', 0, 1, '2019-09-12 04:42:19', '2019-09-12 04:42:19');
 INSERT INTO jms_log VALUES(1040, 1, 0, 'Could not crawl for translation files: The \\\"D:\\\\xamppp\\\\htdocs\\\\jms_kasos\\\\var\\\\cache\\\\prod/themes\\\\jms_kasos\\\\translations\\\" directory does not exist.', '', 0, 1, '2019-09-12 04:42:22', '2019-09-12 04:42:22');
 INSERT INTO jms_log VALUES(1041, 1, 0, 'Could not crawl for translation files: The \\\"D:\\\\xamppp\\\\htdocs\\\\jms_kasos\\\\var\\\\cache\\\\prod/themes\\\\jms_kasos\\\\translations\\\" directory does not exist.', '', 0, 1, '2019-09-12 04:42:25', '2019-09-12 04:42:25');
+INSERT INTO jms_log VALUES(1042, 1, 0, 'Back office connection from 127.0.0.1', '', 0, 1, '2019-09-12 21:41:06', '2019-09-12 21:41:06');
+INSERT INTO jms_log VALUES(1043, 1, 0, 'Could not crawl for translation files: The \\\"D:\\\\xamppp\\\\htdocs\\\\jms_kasos\\\\var\\\\cache\\\\prod/themes\\\\jms_kasos\\\\translations\\\" directory does not exist.', '', 0, 1, '2019-09-12 22:10:50', '2019-09-12 22:10:50');
+INSERT INTO jms_log VALUES(1044, 1, 0, 'Could not crawl for translation files: The \\\"D:\\\\xamppp\\\\htdocs\\\\jms_kasos\\\\var\\\\cache\\\\prod/themes\\\\jms_kasos\\\\translations\\\" directory does not exist.', '', 0, 1, '2019-09-12 22:10:57', '2019-09-12 22:10:57');
+INSERT INTO jms_log VALUES(1045, 1, 0, 'Could not crawl for translation files: The \\\"D:\\\\xamppp\\\\htdocs\\\\jms_kasos\\\\var\\\\cache\\\\prod/themes\\\\jms_kasos\\\\translations\\\" directory does not exist.', '', 0, 1, '2019-09-12 22:11:00', '2019-09-12 22:11:00');
+INSERT INTO jms_log VALUES(1046, 1, 0, 'Could not crawl for translation files: The \\\"D:\\\\xamppp\\\\htdocs\\\\jms_kasos\\\\var\\\\cache\\\\prod/themes\\\\jms_kasos\\\\translations\\\" directory does not exist.', '', 0, 1, '2019-09-12 22:11:03', '2019-09-12 22:11:03');
+INSERT INTO jms_log VALUES(1047, 1, 0, 'Could not crawl for translation files: The \\\"D:\\\\xamppp\\\\htdocs\\\\jms_kasos\\\\var\\\\cache\\\\prod/themes\\\\jms_kasos\\\\translations\\\" directory does not exist.', '', 0, 1, '2019-09-12 22:11:06', '2019-09-12 22:11:06');
+INSERT INTO jms_log VALUES(1048, 1, 0, 'Could not crawl for translation files: The \\\"D:\\\\xamppp\\\\htdocs\\\\jms_kasos\\\\var\\\\cache\\\\prod/themes\\\\jms_kasos\\\\translations\\\" directory does not exist.', '', 0, 1, '2019-09-12 22:11:39', '2019-09-12 22:11:39');
+INSERT INTO jms_log VALUES(1049, 1, 0, 'Could not crawl for translation files: The \\\"D:\\\\xamppp\\\\htdocs\\\\jms_kasos\\\\var\\\\cache\\\\prod/themes\\\\jms_kasos\\\\translations\\\" directory does not exist.', '', 0, 1, '2019-09-12 22:11:41', '2019-09-12 22:11:41');
+INSERT INTO jms_log VALUES(1050, 1, 0, 'Could not crawl for translation files: The \\\"D:\\\\xamppp\\\\htdocs\\\\jms_kasos\\\\var\\\\cache\\\\prod/themes\\\\jms_kasos\\\\translations\\\" directory does not exist.', '', 0, 1, '2019-09-12 22:16:05', '2019-09-12 22:16:05');
+INSERT INTO jms_log VALUES(1051, 1, 0, 'Could not crawl for translation files: The \\\"D:\\\\xamppp\\\\htdocs\\\\jms_kasos\\\\var\\\\cache\\\\prod/themes\\\\jms_kasos\\\\translations\\\" directory does not exist.', '', 0, 1, '2019-09-12 22:22:35', '2019-09-12 22:22:35');
+INSERT INTO jms_log VALUES(1052, 1, 0, 'Back office connection from 192.168.1.100', '', 0, 1, '2019-09-13 00:53:06', '2019-09-13 00:53:06');
+INSERT INTO jms_log VALUES(1053, 1, 0, 'Back office connection from localhost', '', 0, 1, '2019-09-13 03:07:31', '2019-09-13 03:07:31');
+INSERT INTO jms_log VALUES(1054, 1, 0, 'Frontcontroller::init - Cart cannot be loaded or an order has already been placed using this cart', 'Cart', 22, 0, '2019-09-13 03:27:51', '2019-09-13 03:27:51');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_mail
+-- Cấu trúc bảng cho bảng jms_mail
 --
 
 CREATE TABLE jms_mail (
@@ -16190,7 +16276,7 @@ CREATE TABLE jms_mail (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_manufacturer
+-- Cấu trúc bảng cho bảng jms_manufacturer
 --
 
 CREATE TABLE jms_manufacturer (
@@ -16202,7 +16288,7 @@ CREATE TABLE jms_manufacturer (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_manufacturer
+-- Đang đổ dữ liệu cho bảng jms_manufacturer
 --
 
 INSERT INTO jms_manufacturer VALUES(1, 'Studio Design', '2019-07-24 04:55:52', '2019-07-24 04:55:52', 1);
@@ -16211,7 +16297,7 @@ INSERT INTO jms_manufacturer VALUES(2, 'Graphic Corner', '2019-07-24 04:55:52', 
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_manufacturer_lang
+-- Cấu trúc bảng cho bảng jms_manufacturer_lang
 --
 
 CREATE TABLE jms_manufacturer_lang (
@@ -16225,7 +16311,7 @@ CREATE TABLE jms_manufacturer_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_manufacturer_lang
+-- Đang đổ dữ liệu cho bảng jms_manufacturer_lang
 --
 
 INSERT INTO jms_manufacturer_lang VALUES(1, 1, '<p><span style=\"font-size:10pt;font-style:normal;\">Studio Design offers a range of items from ready-to-wear collections to contemporary objects. The brand has been presenting new ideas and trends since its creation in 2012.</span></p>', '', '', '', '');
@@ -16242,7 +16328,7 @@ INSERT INTO jms_manufacturer_lang VALUES(2, 6, '<p><span style=\"font-size:10pt;
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_manufacturer_shop
+-- Cấu trúc bảng cho bảng jms_manufacturer_shop
 --
 
 CREATE TABLE jms_manufacturer_shop (
@@ -16251,7 +16337,7 @@ CREATE TABLE jms_manufacturer_shop (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_manufacturer_shop
+-- Đang đổ dữ liệu cho bảng jms_manufacturer_shop
 --
 
 INSERT INTO jms_manufacturer_shop VALUES(1, 1);
@@ -16260,7 +16346,7 @@ INSERT INTO jms_manufacturer_shop VALUES(2, 1);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_memcached_servers
+-- Cấu trúc bảng cho bảng jms_memcached_servers
 --
 
 CREATE TABLE jms_memcached_servers (
@@ -16273,7 +16359,7 @@ CREATE TABLE jms_memcached_servers (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_message
+-- Cấu trúc bảng cho bảng jms_message
 --
 
 CREATE TABLE jms_message (
@@ -16290,7 +16376,7 @@ CREATE TABLE jms_message (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_message_readed
+-- Cấu trúc bảng cho bảng jms_message_readed
 --
 
 CREATE TABLE jms_message_readed (
@@ -16302,7 +16388,7 @@ CREATE TABLE jms_message_readed (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_meta
+-- Cấu trúc bảng cho bảng jms_meta
 --
 
 CREATE TABLE jms_meta (
@@ -16312,7 +16398,7 @@ CREATE TABLE jms_meta (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_meta
+-- Đang đổ dữ liệu cho bảng jms_meta
 --
 
 INSERT INTO jms_meta VALUES(1, 'pagenotfound', 1);
@@ -16361,7 +16447,7 @@ INSERT INTO jms_meta VALUES(42, 'module-jmsblog-categories', 1);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_meta_lang
+-- Cấu trúc bảng cho bảng jms_meta_lang
 --
 
 CREATE TABLE jms_meta_lang (
@@ -16375,7 +16461,7 @@ CREATE TABLE jms_meta_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_meta_lang
+-- Đang đổ dữ liệu cho bảng jms_meta_lang
 --
 
 INSERT INTO jms_meta_lang VALUES(1, 1, 1, '404 error', 'This page cannot be found', '', 'page-not-found');
@@ -16552,7 +16638,7 @@ INSERT INTO jms_meta_lang VALUES(42, 1, 6, '', '', '', '');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_module
+-- Cấu trúc bảng cho bảng jms_module
 --
 
 CREATE TABLE jms_module (
@@ -16563,7 +16649,7 @@ CREATE TABLE jms_module (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_module
+-- Đang đổ dữ liệu cho bảng jms_module
 --
 
 INSERT INTO jms_module VALUES(1, 'contactform', 1, '4.1.1');
@@ -16650,7 +16736,7 @@ INSERT INTO jms_module VALUES(82, 'jmsrecentlybought', 1, '1.0.0');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_module_access
+-- Cấu trúc bảng cho bảng jms_module_access
 --
 
 CREATE TABLE jms_module_access (
@@ -16659,7 +16745,7 @@ CREATE TABLE jms_module_access (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_module_access
+-- Đang đổ dữ liệu cho bảng jms_module_access
 --
 
 INSERT INTO jms_module_access VALUES(1, 477);
@@ -16986,7 +17072,7 @@ INSERT INTO jms_module_access VALUES(1, 912);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_module_carrier
+-- Cấu trúc bảng cho bảng jms_module_carrier
 --
 
 CREATE TABLE jms_module_carrier (
@@ -16996,7 +17082,7 @@ CREATE TABLE jms_module_carrier (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_module_carrier
+-- Đang đổ dữ liệu cho bảng jms_module_carrier
 --
 
 INSERT INTO jms_module_carrier VALUES(11, 1, 1);
@@ -17007,7 +17093,7 @@ INSERT INTO jms_module_carrier VALUES(30, 1, 2);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_module_country
+-- Cấu trúc bảng cho bảng jms_module_country
 --
 
 CREATE TABLE jms_module_country (
@@ -17017,7 +17103,7 @@ CREATE TABLE jms_module_country (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_module_country
+-- Đang đổ dữ liệu cho bảng jms_module_country
 --
 
 INSERT INTO jms_module_country VALUES(11, 1, 21);
@@ -17026,7 +17112,7 @@ INSERT INTO jms_module_country VALUES(30, 1, 21);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_module_currency
+-- Cấu trúc bảng cho bảng jms_module_currency
 --
 
 CREATE TABLE jms_module_currency (
@@ -17036,7 +17122,7 @@ CREATE TABLE jms_module_currency (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_module_currency
+-- Đang đổ dữ liệu cho bảng jms_module_currency
 --
 
 INSERT INTO jms_module_currency VALUES(11, 1, 1);
@@ -17047,7 +17133,7 @@ INSERT INTO jms_module_currency VALUES(30, 1, 2);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_module_group
+-- Cấu trúc bảng cho bảng jms_module_group
 --
 
 CREATE TABLE jms_module_group (
@@ -17057,7 +17143,7 @@ CREATE TABLE jms_module_group (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_module_group
+-- Đang đổ dữ liệu cho bảng jms_module_group
 --
 
 INSERT INTO jms_module_group VALUES(1, 1, 1);
@@ -17304,7 +17390,7 @@ INSERT INTO jms_module_group VALUES(82, 1, 3);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_module_history
+-- Cấu trúc bảng cho bảng jms_module_history
 --
 
 CREATE TABLE jms_module_history (
@@ -17316,7 +17402,7 @@ CREATE TABLE jms_module_history (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_module_history
+-- Đang đổ dữ liệu cho bảng jms_module_history
 --
 
 INSERT INTO jms_module_history VALUES(1, 1, 67, '2019-07-24 04:04:51', '2019-07-24 04:07:33');
@@ -17339,7 +17425,7 @@ INSERT INTO jms_module_history VALUES(16, 1, 30, '2019-09-11 23:05:54', '2019-09
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_module_preference
+-- Cấu trúc bảng cho bảng jms_module_preference
 --
 
 CREATE TABLE jms_module_preference (
@@ -17353,7 +17439,7 @@ CREATE TABLE jms_module_preference (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_module_shop
+-- Cấu trúc bảng cho bảng jms_module_shop
 --
 
 CREATE TABLE jms_module_shop (
@@ -17363,7 +17449,7 @@ CREATE TABLE jms_module_shop (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_module_shop
+-- Đang đổ dữ liệu cho bảng jms_module_shop
 --
 
 INSERT INTO jms_module_shop VALUES(1, 1, 7);
@@ -17450,7 +17536,7 @@ INSERT INTO jms_module_shop VALUES(82, 1, 7);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_operating_system
+-- Cấu trúc bảng cho bảng jms_operating_system
 --
 
 CREATE TABLE jms_operating_system (
@@ -17459,7 +17545,7 @@ CREATE TABLE jms_operating_system (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_operating_system
+-- Đang đổ dữ liệu cho bảng jms_operating_system
 --
 
 INSERT INTO jms_operating_system VALUES(1, 'Windows XP');
@@ -17475,7 +17561,7 @@ INSERT INTO jms_operating_system VALUES(9, 'Android');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_orders
+-- Cấu trúc bảng cho bảng jms_orders
 --
 
 CREATE TABLE jms_orders (
@@ -17528,7 +17614,7 @@ CREATE TABLE jms_orders (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_orders
+-- Đang đổ dữ liệu cho bảng jms_orders
 --
 
 INSERT INTO jms_orders VALUES(1, 'XKBKNABJK', 1, 1, 2, 1, 1, 1, 1, 4, 4, 6, 'b44a6d9efd7a0076a0fbce6b15eaf3b1', 'Payment by check', '1.000000', 'ps_checkpayment', 0, 0, '', 0, '', '0.000000', '0.000000', '0.000000', '61.800000', '61.800000', '61.800000', '0.000000', '59.800000', '59.800000', '2.000000', '2.000000', '2.000000', '0.000', '0.000000', '0.000000', '0.000000', 0, 0, 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, '2019-07-24 04:55:55', '2019-07-24 04:55:55');
@@ -17539,11 +17625,12 @@ INSERT INTO jms_orders VALUES(5, 'KHWLILZLL', 1, 1, 2, 1, 1, 5, 1, 4, 4, 10, 'b4
 INSERT INTO jms_orders VALUES(6, 'BYOCMIXNM', 1, 1, 2, 1, 2, 7, 1, 5, 5, 2, '862058568727235c26ea62e1d7675036', 'Payments by check', '1.000000', 'ps_checkpayment', 0, 0, '', 0, '', '0.000000', '0.000000', '0.000000', '1078.700000', '1078.700000', '1078.700000', '1078.700000', '1071.700000', '1071.700000', '7.000000', '7.000000', '7.000000', '0.000', '0.000000', '0.000000', '0.000000', 2, 2, 1, 0, '2019-08-08 02:46:14', '0000-00-00 00:00:00', 1, '2019-08-08 02:45:50', '2019-08-08 02:46:14');
 INSERT INTO jms_orders VALUES(7, 'WUVUZPTIV', 1, 1, 2, 1, 2, 8, 1, 6, 6, 1, '862058568727235c26ea62e1d7675036', 'Payments by check', '1.000000', 'ps_checkpayment', 0, 0, '', 0, '', '0.000000', '0.000000', '0.000000', '329.150000', '329.150000', '329.150000', '0.000000', '322.150000', '322.150000', '7.000000', '7.000000', '7.000000', '0.000', '0.000000', '0.000000', '0.000000', 2, 2, 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, '2019-08-15 03:52:06', '2019-08-15 03:52:06');
 INSERT INTO jms_orders VALUES(8, 'GFXIHGJXS', 1, 1, 2, 1, 2, 15, 1, 6, 6, 2, '862058568727235c26ea62e1d7675036', 'Payments by check', '1.000000', 'ps_checkpayment', 0, 0, '', 0, '', '0.000000', '0.000000', '0.000000', '378.000000', '378.000000', '378.000000', '378.000000', '371.000000', '371.000000', '7.000000', '7.000000', '7.000000', '0.000', '0.000000', '0.000000', '0.000000', 2, 2, 2, 0, '2019-09-11 05:53:13', '0000-00-00 00:00:00', 1, '2019-09-11 05:52:47', '2019-09-11 05:53:13');
+INSERT INTO jms_orders VALUES(9, 'RHSEVWZXF', 1, 1, 2, 1, 3, 22, 1, 7, 7, 10, 'ceed26ee10ced4127bfdac76f0c8c49d', 'Bank transfer', '1.000000', 'ps_wirepayment', 0, 0, '', 0, '', '0.000000', '0.000000', '0.000000', '466.000000', '466.000000', '466.000000', '0.000000', '459.000000', '459.000000', '7.000000', '7.000000', '7.000000', '0.000', '0.000000', '0.000000', '0.000000', 2, 2, 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, '2019-09-13 03:27:48', '2019-09-13 03:27:48');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_order_carrier
+-- Cấu trúc bảng cho bảng jms_order_carrier
 --
 
 CREATE TABLE jms_order_carrier (
@@ -17559,7 +17646,7 @@ CREATE TABLE jms_order_carrier (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_order_carrier
+-- Đang đổ dữ liệu cho bảng jms_order_carrier
 --
 
 INSERT INTO jms_order_carrier VALUES(1, 1, 2, 0, '0.000000', '2.000000', '2.000000', '', '2019-07-24 04:55:55');
@@ -17570,11 +17657,12 @@ INSERT INTO jms_order_carrier VALUES(5, 5, 2, 0, '0.000000', '2.000000', '2.0000
 INSERT INTO jms_order_carrier VALUES(6, 6, 2, 1, '0.000000', '7.000000', '7.000000', '', '2019-08-08 02:45:50');
 INSERT INTO jms_order_carrier VALUES(7, 7, 2, 0, '0.000000', '7.000000', '7.000000', '', '2019-08-15 03:52:06');
 INSERT INTO jms_order_carrier VALUES(8, 8, 2, 2, '0.000000', '7.000000', '7.000000', '', '2019-09-11 05:52:47');
+INSERT INTO jms_order_carrier VALUES(9, 9, 2, 0, '0.000000', '7.000000', '7.000000', '', '2019-09-13 03:27:48');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_order_cart_rule
+-- Cấu trúc bảng cho bảng jms_order_cart_rule
 --
 
 CREATE TABLE jms_order_cart_rule (
@@ -17591,7 +17679,7 @@ CREATE TABLE jms_order_cart_rule (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_order_detail
+-- Cấu trúc bảng cho bảng jms_order_detail
 --
 
 CREATE TABLE jms_order_detail (
@@ -17644,7 +17732,7 @@ CREATE TABLE jms_order_detail (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_order_detail
+-- Đang đổ dữ liệu cho bảng jms_order_detail
 --
 
 INSERT INTO jms_order_detail VALUES(1, 1, 0, 0, 1, 1, 1, 0, 'Hummingbird printed t-shirt - Color : White, Size : S', 1, 1, 0, 0, 0, '23.900000', '0.00', '0.000000', '0.000000', '0.000000', '0.00', '0.000000', '', '', '', 'demo_2', '', '0.000000', 0, 0, '', '0.000', '0.000000', '0.000', 0, '', 0, '0000-00-00 00:00:00', '27.000000', '23.900000', '23.900000', '23.900000', '0.000000', '0.000000', '0.000000', '23.900000', '0.000000');
@@ -17661,11 +17749,12 @@ INSERT INTO jms_order_detail VALUES(11, 6, 1, 0, 1, 29, 98, 0, 'Blackmagic GPU P
 INSERT INTO jms_order_detail VALUES(12, 7, 0, 0, 1, 29, 98, 0, 'Blackmagic GPU Pro For Mac - Color : Grey', 1, 1, 0, 0, 0, '379.000000', '15.00', '0.000000', '0.000000', '0.000000', '0.00', '323.150000', '', '', '', 'demo_9', '', '0.000000', 0, 0, '', '0.000', '0.000000', '0.000', 0, '', 0, '0000-00-00 00:00:00', '322.150000', '322.150000', '322.150000', '322.150000', '0.000000', '0.000000', '0.000000', '379.000000', '0.000000');
 INSERT INTO jms_order_detail VALUES(13, 8, 2, 0, 1, 21, 40, 0, 'B&O 360 Speaker Wam - Color : Grey', 1, 1, 0, 0, 0, '149.000000', '0.00', '0.000000', '0.000000', '0.000000', '0.00', '0.000000', '', '', '', 'demo_1', '', '0.000000', 0, 0, '', '0.000', '0.000000', '0.000', 0, '', 0, '0000-00-00 00:00:00', '149.000000', '149.000000', '149.000000', '149.000000', '0.000000', '0.000000', '0.000000', '149.000000', '0.000000');
 INSERT INTO jms_order_detail VALUES(14, 8, 2, 0, 1, 30, 0, 0, 'iPhone XR Nike Case Blue', 1, 1, 0, 0, 0, '222.000000', '0.00', '0.000000', '0.000000', '0.000000', '0.00', '0.000000', '', '', '', 'demo_10', '', '0.000000', 0, 0, '', '0.000', '0.000000', '0.000', 0, '', 0, '0000-00-00 00:00:00', '222.000000', '222.000000', '222.000000', '222.000000', '0.000000', '0.000000', '0.000000', '222.000000', '0.000000');
+INSERT INTO jms_order_detail VALUES(15, 9, 0, 0, 1, 22, 49, 0, 'Samsung Galaxy S9 Plus - Size : 64GB- Color : Purple', 1, 1, 0, 0, 0, '459.000000', '0.00', '0.000000', '0.000000', '0.000000', '0.00', '0.000000', '', '', '', 'demo_2', '', '0.000000', 0, 0, '', '0.000', '0.000000', '0.000', 0, '', 0, '0000-00-00 00:00:00', '459.000000', '459.000000', '459.000000', '459.000000', '0.000000', '0.000000', '0.000000', '459.000000', '0.000000');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_order_detail_tax
+-- Cấu trúc bảng cho bảng jms_order_detail_tax
 --
 
 CREATE TABLE jms_order_detail_tax (
@@ -17678,7 +17767,7 @@ CREATE TABLE jms_order_detail_tax (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_order_history
+-- Cấu trúc bảng cho bảng jms_order_history
 --
 
 CREATE TABLE jms_order_history (
@@ -17690,7 +17779,7 @@ CREATE TABLE jms_order_history (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_order_history
+-- Đang đổ dữ liệu cho bảng jms_order_history
 --
 
 INSERT INTO jms_order_history VALUES(1, 0, 1, 1, '2019-07-24 04:55:55');
@@ -17705,11 +17794,12 @@ INSERT INTO jms_order_history VALUES(9, 1, 6, 2, '2019-08-08 02:46:14');
 INSERT INTO jms_order_history VALUES(10, 0, 7, 1, '2019-08-15 03:52:06');
 INSERT INTO jms_order_history VALUES(11, 0, 8, 1, '2019-09-11 05:52:47');
 INSERT INTO jms_order_history VALUES(12, 1, 8, 2, '2019-09-11 05:53:13');
+INSERT INTO jms_order_history VALUES(13, 0, 9, 10, '2019-09-13 03:27:48');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_order_invoice
+-- Cấu trúc bảng cho bảng jms_order_invoice
 --
 
 CREATE TABLE jms_order_invoice (
@@ -17735,7 +17825,7 @@ CREATE TABLE jms_order_invoice (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_order_invoice
+-- Đang đổ dữ liệu cho bảng jms_order_invoice
 --
 
 INSERT INTO jms_order_invoice VALUES(1, 6, 1, 0, '0000-00-00 00:00:00', '0.000000', '0.000000', '1078.700000', '1078.700000', '1071.700000', '1071.700000', '7.000000', '7.000000', 0, '0.000000', '0.000000', 'JMS Kasos', '', '2019-08-08 02:46:14');
@@ -17744,7 +17834,7 @@ INSERT INTO jms_order_invoice VALUES(2, 8, 2, 0, '0000-00-00 00:00:00', '0.00000
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_order_invoice_payment
+-- Cấu trúc bảng cho bảng jms_order_invoice_payment
 --
 
 CREATE TABLE jms_order_invoice_payment (
@@ -17754,7 +17844,7 @@ CREATE TABLE jms_order_invoice_payment (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_order_invoice_payment
+-- Đang đổ dữ liệu cho bảng jms_order_invoice_payment
 --
 
 INSERT INTO jms_order_invoice_payment VALUES(1, 1, 6);
@@ -17763,7 +17853,7 @@ INSERT INTO jms_order_invoice_payment VALUES(2, 2, 8);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_order_invoice_tax
+-- Cấu trúc bảng cho bảng jms_order_invoice_tax
 --
 
 CREATE TABLE jms_order_invoice_tax (
@@ -17776,7 +17866,7 @@ CREATE TABLE jms_order_invoice_tax (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_order_message
+-- Cấu trúc bảng cho bảng jms_order_message
 --
 
 CREATE TABLE jms_order_message (
@@ -17785,7 +17875,7 @@ CREATE TABLE jms_order_message (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_order_message
+-- Đang đổ dữ liệu cho bảng jms_order_message
 --
 
 INSERT INTO jms_order_message VALUES(1, '2019-07-24 04:55:55');
@@ -17793,7 +17883,7 @@ INSERT INTO jms_order_message VALUES(1, '2019-07-24 04:55:55');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_order_message_lang
+-- Cấu trúc bảng cho bảng jms_order_message_lang
 --
 
 CREATE TABLE jms_order_message_lang (
@@ -17804,7 +17894,7 @@ CREATE TABLE jms_order_message_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_order_message_lang
+-- Đang đổ dữ liệu cho bảng jms_order_message_lang
 --
 
 INSERT INTO jms_order_message_lang VALUES(1, 1, 'Delay', 'Hi,\n\nUnfortunately, an item on your order is currently out of stock. This may cause a slight delay in delivery.\nPlease accept our apologies and rest assured that we are working hard to rectify this.\n\nBest regards,');
@@ -17816,7 +17906,7 @@ INSERT INTO jms_order_message_lang VALUES(1, 6, 'Retraso', 'Hola:\n\nDesafortuna
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_order_payment
+-- Cấu trúc bảng cho bảng jms_order_payment
 --
 
 CREATE TABLE jms_order_payment (
@@ -17835,7 +17925,7 @@ CREATE TABLE jms_order_payment (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_order_payment
+-- Đang đổ dữ liệu cho bảng jms_order_payment
 --
 
 INSERT INTO jms_order_payment VALUES(1, 'BYOCMIXNM', 1, '1078.70', 'Payments by check', '1.000000', '', '', '', '', '', '2019-08-08 02:46:14');
@@ -17844,7 +17934,7 @@ INSERT INTO jms_order_payment VALUES(2, 'GFXIHGJXS', 1, '378.00', 'Payments by c
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_order_return
+-- Cấu trúc bảng cho bảng jms_order_return
 --
 
 CREATE TABLE jms_order_return (
@@ -17860,7 +17950,7 @@ CREATE TABLE jms_order_return (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_order_return_detail
+-- Cấu trúc bảng cho bảng jms_order_return_detail
 --
 
 CREATE TABLE jms_order_return_detail (
@@ -17873,7 +17963,7 @@ CREATE TABLE jms_order_return_detail (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_order_return_state
+-- Cấu trúc bảng cho bảng jms_order_return_state
 --
 
 CREATE TABLE jms_order_return_state (
@@ -17882,7 +17972,7 @@ CREATE TABLE jms_order_return_state (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_order_return_state
+-- Đang đổ dữ liệu cho bảng jms_order_return_state
 --
 
 INSERT INTO jms_order_return_state VALUES(1, '#4169E1');
@@ -17894,7 +17984,7 @@ INSERT INTO jms_order_return_state VALUES(5, '#108510');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_order_return_state_lang
+-- Cấu trúc bảng cho bảng jms_order_return_state_lang
 --
 
 CREATE TABLE jms_order_return_state_lang (
@@ -17904,7 +17994,7 @@ CREATE TABLE jms_order_return_state_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_order_return_state_lang
+-- Đang đổ dữ liệu cho bảng jms_order_return_state_lang
 --
 
 INSERT INTO jms_order_return_state_lang VALUES(1, 1, 'Waiting for confirmation');
@@ -17936,7 +18026,7 @@ INSERT INTO jms_order_return_state_lang VALUES(5, 6, 'Devolución completada');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_order_slip
+-- Cấu trúc bảng cho bảng jms_order_slip
 --
 
 CREATE TABLE jms_order_slip (
@@ -17960,7 +18050,7 @@ CREATE TABLE jms_order_slip (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_order_slip_detail
+-- Cấu trúc bảng cho bảng jms_order_slip_detail
 --
 
 CREATE TABLE jms_order_slip_detail (
@@ -17978,7 +18068,7 @@ CREATE TABLE jms_order_slip_detail (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_order_slip_detail_tax
+-- Cấu trúc bảng cho bảng jms_order_slip_detail_tax
 --
 
 CREATE TABLE jms_order_slip_detail_tax (
@@ -17991,7 +18081,7 @@ CREATE TABLE jms_order_slip_detail_tax (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_order_state
+-- Cấu trúc bảng cho bảng jms_order_state
 --
 
 CREATE TABLE jms_order_state (
@@ -18012,7 +18102,7 @@ CREATE TABLE jms_order_state (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_order_state
+-- Đang đổ dữ liệu cho bảng jms_order_state
 --
 
 INSERT INTO jms_order_state VALUES(1, 0, 1, 'ps_checkpayment', '#4169E1', 1, 0, 0, 0, 0, 0, 0, 0, 0);
@@ -18032,7 +18122,7 @@ INSERT INTO jms_order_state VALUES(13, 0, 0, 'ps_cashondelivery', '#4169E1', 1, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_order_state_lang
+-- Cấu trúc bảng cho bảng jms_order_state_lang
 --
 
 CREATE TABLE jms_order_state_lang (
@@ -18043,7 +18133,7 @@ CREATE TABLE jms_order_state_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_order_state_lang
+-- Đang đổ dữ liệu cho bảng jms_order_state_lang
 --
 
 INSERT INTO jms_order_state_lang VALUES(1, 1, 'Awaiting check payment', 'cheque');
@@ -18115,7 +18205,7 @@ INSERT INTO jms_order_state_lang VALUES(13, 6, 'En espera de validación por con
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_pack
+-- Cấu trúc bảng cho bảng jms_pack
 --
 
 CREATE TABLE jms_pack (
@@ -18126,7 +18216,7 @@ CREATE TABLE jms_pack (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_pack
+-- Đang đổ dữ liệu cho bảng jms_pack
 --
 
 INSERT INTO jms_pack VALUES(30, 22, 49, 1);
@@ -18134,7 +18224,7 @@ INSERT INTO jms_pack VALUES(30, 22, 49, 1);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_page
+-- Cấu trúc bảng cho bảng jms_page
 --
 
 CREATE TABLE jms_page (
@@ -18144,7 +18234,7 @@ CREATE TABLE jms_page (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_page
+-- Đang đổ dữ liệu cho bảng jms_page
 --
 
 INSERT INTO jms_page VALUES(1, 1, NULL);
@@ -18159,11 +18249,12 @@ INSERT INTO jms_page VALUES(9, 6, NULL);
 INSERT INTO jms_page VALUES(10, 7, NULL);
 INSERT INTO jms_page VALUES(11, 8, NULL);
 INSERT INTO jms_page VALUES(12, 9, NULL);
+INSERT INTO jms_page VALUES(13, 10, NULL);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_pagenotfound
+-- Cấu trúc bảng cho bảng jms_pagenotfound
 --
 
 CREATE TABLE jms_pagenotfound (
@@ -18178,7 +18269,7 @@ CREATE TABLE jms_pagenotfound (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_page_type
+-- Cấu trúc bảng cho bảng jms_page_type
 --
 
 CREATE TABLE jms_page_type (
@@ -18187,10 +18278,11 @@ CREATE TABLE jms_page_type (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_page_type
+-- Đang đổ dữ liệu cho bảng jms_page_type
 --
 
 INSERT INTO jms_page_type VALUES(8, 'authentication');
+INSERT INTO jms_page_type VALUES(10, 'cart');
 INSERT INTO jms_page_type VALUES(3, 'category');
 INSERT INTO jms_page_type VALUES(9, 'contact');
 INSERT INTO jms_page_type VALUES(2, 'index');
@@ -18203,7 +18295,7 @@ INSERT INTO jms_page_type VALUES(6, 'search');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_page_viewed
+-- Cấu trúc bảng cho bảng jms_page_viewed
 --
 
 CREATE TABLE jms_page_viewed (
@@ -18217,7 +18309,7 @@ CREATE TABLE jms_page_viewed (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_product
+-- Cấu trúc bảng cho bảng jms_product
 --
 
 CREATE TABLE jms_product (
@@ -18277,7 +18369,7 @@ CREATE TABLE jms_product (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_product
+-- Đang đổ dữ liệu cho bảng jms_product
 --
 
 INSERT INTO jms_product VALUES(21, 0, 0, 12, 1, 0, 0, 0, '', '', '', '0.000000', 0, 1, NULL, 0, '149.000000', '0.000000', '', '0.000000', '0.00', 'demo_1', '', '', '0.000000', '0.000000', '0.000000', '0.000000', 2, 1, 0, 0, 0, 0, 1, '301-category', 0, 1, '0000-00-00', 0, 'new', 1, 1, 'both', 0, 0, 0, 40, '2019-07-24 23:36:30', '2019-08-08 23:31:02', 0, 3, 1);
@@ -18298,7 +18390,7 @@ INSERT INTO jms_product VALUES(34, 0, 0, 12, 1, 0, 0, 0, '', '', '', '0.000000',
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_product_attachment
+-- Cấu trúc bảng cho bảng jms_product_attachment
 --
 
 CREATE TABLE jms_product_attachment (
@@ -18309,7 +18401,7 @@ CREATE TABLE jms_product_attachment (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_product_attribute
+-- Cấu trúc bảng cho bảng jms_product_attribute
 --
 
 CREATE TABLE jms_product_attribute (
@@ -18335,7 +18427,7 @@ CREATE TABLE jms_product_attribute (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_product_attribute
+-- Đang đổ dữ liệu cho bảng jms_product_attribute
 --
 
 INSERT INTO jms_product_attribute VALUES(40, 21, '', '', '', '', '', '', '0.000000', '0.000000', '0.000000', 0, '0.000000', '0.000000', 1, 1, NULL, 0, '0000-00-00');
@@ -18381,7 +18473,7 @@ INSERT INTO jms_product_attribute VALUES(133, 31, '', '', '', '', '', '', '0.000
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_product_attribute_combination
+-- Cấu trúc bảng cho bảng jms_product_attribute_combination
 --
 
 CREATE TABLE jms_product_attribute_combination (
@@ -18390,7 +18482,7 @@ CREATE TABLE jms_product_attribute_combination (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_product_attribute_combination
+-- Đang đổ dữ liệu cho bảng jms_product_attribute_combination
 --
 
 INSERT INTO jms_product_attribute_combination VALUES(1, 64);
@@ -18450,7 +18542,7 @@ INSERT INTO jms_product_attribute_combination VALUES(17, 117);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_product_attribute_image
+-- Cấu trúc bảng cho bảng jms_product_attribute_image
 --
 
 CREATE TABLE jms_product_attribute_image (
@@ -18459,7 +18551,7 @@ CREATE TABLE jms_product_attribute_image (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_product_attribute_image
+-- Đang đổ dữ liệu cho bảng jms_product_attribute_image
 --
 
 INSERT INTO jms_product_attribute_image VALUES(131, 183);
@@ -18474,7 +18566,7 @@ INSERT INTO jms_product_attribute_image VALUES(133, 180);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_product_attribute_shop
+-- Cấu trúc bảng cho bảng jms_product_attribute_shop
 --
 
 CREATE TABLE jms_product_attribute_shop (
@@ -18494,7 +18586,7 @@ CREATE TABLE jms_product_attribute_shop (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_product_attribute_shop
+-- Đang đổ dữ liệu cho bảng jms_product_attribute_shop
 --
 
 INSERT INTO jms_product_attribute_shop VALUES(21, 40, 1, '0.000000', '0.000000', '0.000000', '0.000000', '0.000000', 1, 1, NULL, 0, '0000-00-00');
@@ -18540,7 +18632,7 @@ INSERT INTO jms_product_attribute_shop VALUES(31, 133, 1, '0.000000', '0.000000'
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_product_carrier
+-- Cấu trúc bảng cho bảng jms_product_carrier
 --
 
 CREATE TABLE jms_product_carrier (
@@ -18552,7 +18644,7 @@ CREATE TABLE jms_product_carrier (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_product_country_tax
+-- Cấu trúc bảng cho bảng jms_product_country_tax
 --
 
 CREATE TABLE jms_product_country_tax (
@@ -18564,7 +18656,7 @@ CREATE TABLE jms_product_country_tax (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_product_download
+-- Cấu trúc bảng cho bảng jms_product_download
 --
 
 CREATE TABLE jms_product_download (
@@ -18583,7 +18675,7 @@ CREATE TABLE jms_product_download (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_product_group_reduction_cache
+-- Cấu trúc bảng cho bảng jms_product_group_reduction_cache
 --
 
 CREATE TABLE jms_product_group_reduction_cache (
@@ -18595,7 +18687,7 @@ CREATE TABLE jms_product_group_reduction_cache (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_product_lang
+-- Cấu trúc bảng cho bảng jms_product_lang
 --
 
 CREATE TABLE jms_product_lang (
@@ -18616,7 +18708,7 @@ CREATE TABLE jms_product_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_product_lang
+-- Đang đổ dữ liệu cho bảng jms_product_lang
 --
 
 INSERT INTO jms_product_lang VALUES(21, 1, 1, '<p>Donec nex volutpat ornare metus in rutrum extock. Lacus ultrices mollis, sapien ut aliquam eros. Donec pulvinar erat in lorem tempus ultrices. Aenean ligula elementum metus, vitae ultricies ex placerat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus maximus vehicula arcu sed ornare. Vivamus blandit bibendum pulvinar. Fusce ut sem ac metus fringilla porta bibendum vitae purus imperdiet ligula euismod.</p>\r\n<p>Morbi felis arcu, finibus at euismod eu, consequat eu ligula. Cras sem massa, luctus eu accumsan nec, posuere eget libero. Fusce sollicitudin eros ac nibh hendrerit, lobortis nisi feugiat, feugiat tempus, nulla ex viverra<br />odio venenatis a molestie quis, accumsan efficitur neque.</p>', '<p>Quisque aliquam porttitor consequat purus sollicitudin eros ineu. Aenean atest dolor hendrer eleifend consed. Vivamus porttitor phasellus quis ullamcorper. Aenean leoaugue semperuis nunc</p>\r\n<ul>\r\n<li>85W power delivery</li>\r\n<li>Radeon RX Vega 56 GPU</li>\r\n<li>8GB of HBM2 memory</li>\r\n<li>Thunderbolt 3 (USB-C) / DisplayPort 1.4, HDMI / USB</li>\r\n<li>MacOS 10.14.1 Mojave or later</li>\r\n</ul>', 'bo-360-speaker-wam', '', '', '', 'B&O 360 Speaker Wam', 'Available In Stock', 'Out of Stock', '', '');
@@ -18693,7 +18785,7 @@ INSERT INTO jms_product_lang VALUES(34, 1, 6, '<p>Donec nex volutpat ornare metu
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_product_sale
+-- Cấu trúc bảng cho bảng jms_product_sale
 --
 
 CREATE TABLE jms_product_sale (
@@ -18704,7 +18796,7 @@ CREATE TABLE jms_product_sale (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_product_sale
+-- Đang đổ dữ liệu cho bảng jms_product_sale
 --
 
 INSERT INTO jms_product_sale VALUES(1, 1, 1, '2019-08-08');
@@ -18723,7 +18815,7 @@ INSERT INTO jms_product_sale VALUES(30, 1, 1, '2019-09-11');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_product_shop
+-- Cấu trúc bảng cho bảng jms_product_shop
 --
 
 CREATE TABLE jms_product_shop (
@@ -18763,7 +18855,7 @@ CREATE TABLE jms_product_shop (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_product_shop
+-- Đang đổ dữ liệu cho bảng jms_product_shop
 --
 
 INSERT INTO jms_product_shop VALUES(21, 1, 12, 0, 0, 0, '0.000000', 1, NULL, 0, '149.000000', '0.000000', '', '0.000000', '0.00', 0, 0, 0, 1, '301-category', 0, 1, '0000-00-00', 0, 'new', 1, 1, 'both', 40, 0, '2019-07-24 23:36:30', '2019-08-08 23:31:02', 3);
@@ -18784,7 +18876,7 @@ INSERT INTO jms_product_shop VALUES(34, 1, 12, 0, 0, 0, '0.000000', 1, NULL, 0, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_product_supplier
+-- Cấu trúc bảng cho bảng jms_product_supplier
 --
 
 CREATE TABLE jms_product_supplier (
@@ -18800,7 +18892,7 @@ CREATE TABLE jms_product_supplier (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_product_tag
+-- Cấu trúc bảng cho bảng jms_product_tag
 --
 
 CREATE TABLE jms_product_tag (
@@ -18812,7 +18904,7 @@ CREATE TABLE jms_product_tag (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_profile
+-- Cấu trúc bảng cho bảng jms_profile
 --
 
 CREATE TABLE jms_profile (
@@ -18820,7 +18912,7 @@ CREATE TABLE jms_profile (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_profile
+-- Đang đổ dữ liệu cho bảng jms_profile
 --
 
 INSERT INTO jms_profile VALUES(1);
@@ -18831,7 +18923,7 @@ INSERT INTO jms_profile VALUES(4);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_profile_lang
+-- Cấu trúc bảng cho bảng jms_profile_lang
 --
 
 CREATE TABLE jms_profile_lang (
@@ -18841,7 +18933,7 @@ CREATE TABLE jms_profile_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_profile_lang
+-- Đang đổ dữ liệu cho bảng jms_profile_lang
 --
 
 INSERT INTO jms_profile_lang VALUES(1, 1, 'SuperAdmin');
@@ -18868,7 +18960,7 @@ INSERT INTO jms_profile_lang VALUES(6, 4, 'Vendedor');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_quick_access
+-- Cấu trúc bảng cho bảng jms_quick_access
 --
 
 CREATE TABLE jms_quick_access (
@@ -18878,7 +18970,7 @@ CREATE TABLE jms_quick_access (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_quick_access
+-- Đang đổ dữ liệu cho bảng jms_quick_access
 --
 
 INSERT INTO jms_quick_access VALUES(1, 0, 'index.php?controller=AdminOrders');
@@ -18891,7 +18983,7 @@ INSERT INTO jms_quick_access VALUES(6, 0, 'index.php?controller=AdminStats&modul
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_quick_access_lang
+-- Cấu trúc bảng cho bảng jms_quick_access_lang
 --
 
 CREATE TABLE jms_quick_access_lang (
@@ -18901,7 +18993,7 @@ CREATE TABLE jms_quick_access_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_quick_access_lang
+-- Đang đổ dữ liệu cho bảng jms_quick_access_lang
 --
 
 INSERT INTO jms_quick_access_lang VALUES(1, 1, 'Orders');
@@ -18938,7 +19030,7 @@ INSERT INTO jms_quick_access_lang VALUES(6, 6, 'Evaluación del catálogo');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_range_price
+-- Cấu trúc bảng cho bảng jms_range_price
 --
 
 CREATE TABLE jms_range_price (
@@ -18949,7 +19041,7 @@ CREATE TABLE jms_range_price (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_range_price
+-- Đang đổ dữ liệu cho bảng jms_range_price
 --
 
 INSERT INTO jms_range_price VALUES(1, 2, '0.000000', '10000.000000');
@@ -18957,7 +19049,7 @@ INSERT INTO jms_range_price VALUES(1, 2, '0.000000', '10000.000000');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_range_weight
+-- Cấu trúc bảng cho bảng jms_range_weight
 --
 
 CREATE TABLE jms_range_weight (
@@ -18968,7 +19060,7 @@ CREATE TABLE jms_range_weight (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_range_weight
+-- Đang đổ dữ liệu cho bảng jms_range_weight
 --
 
 INSERT INTO jms_range_weight VALUES(1, 2, '0.000000', '10000.000000');
@@ -18976,7 +19068,7 @@ INSERT INTO jms_range_weight VALUES(1, 2, '0.000000', '10000.000000');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_reassurance
+-- Cấu trúc bảng cho bảng jms_reassurance
 --
 
 CREATE TABLE jms_reassurance (
@@ -18986,7 +19078,7 @@ CREATE TABLE jms_reassurance (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_reassurance
+-- Đang đổ dữ liệu cho bảng jms_reassurance
 --
 
 INSERT INTO jms_reassurance VALUES(1, 1, 'ic_verified_user_black_36dp_1x.png');
@@ -18996,7 +19088,7 @@ INSERT INTO jms_reassurance VALUES(3, 1, 'ic_swap_horiz_black_36dp_1x.png');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_reassurance_lang
+-- Cấu trúc bảng cho bảng jms_reassurance_lang
 --
 
 CREATE TABLE jms_reassurance_lang (
@@ -19006,7 +19098,7 @@ CREATE TABLE jms_reassurance_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_reassurance_lang
+-- Đang đổ dữ liệu cho bảng jms_reassurance_lang
 --
 
 INSERT INTO jms_reassurance_lang VALUES(1, 1, 'Security policy (edit with Customer reassurance module)');
@@ -19028,7 +19120,7 @@ INSERT INTO jms_reassurance_lang VALUES(3, 6, 'Return policy (edit with Customer
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_referrer
+-- Cấu trúc bảng cho bảng jms_referrer
 --
 
 CREATE TABLE jms_referrer (
@@ -19052,7 +19144,7 @@ CREATE TABLE jms_referrer (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_referrer_cache
+-- Cấu trúc bảng cho bảng jms_referrer_cache
 --
 
 CREATE TABLE jms_referrer_cache (
@@ -19063,7 +19155,7 @@ CREATE TABLE jms_referrer_cache (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_referrer_shop
+-- Cấu trúc bảng cho bảng jms_referrer_shop
 --
 
 CREATE TABLE jms_referrer_shop (
@@ -19082,7 +19174,7 @@ CREATE TABLE jms_referrer_shop (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_request_sql
+-- Cấu trúc bảng cho bảng jms_request_sql
 --
 
 CREATE TABLE jms_request_sql (
@@ -19094,7 +19186,7 @@ CREATE TABLE jms_request_sql (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_required_field
+-- Cấu trúc bảng cho bảng jms_required_field
 --
 
 CREATE TABLE jms_required_field (
@@ -19106,7 +19198,7 @@ CREATE TABLE jms_required_field (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_risk
+-- Cấu trúc bảng cho bảng jms_risk
 --
 
 CREATE TABLE jms_risk (
@@ -19116,7 +19208,7 @@ CREATE TABLE jms_risk (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_risk
+-- Đang đổ dữ liệu cho bảng jms_risk
 --
 
 INSERT INTO jms_risk VALUES(1, 0, '#32CD32');
@@ -19127,7 +19219,7 @@ INSERT INTO jms_risk VALUES(4, 100, '#ec2e15');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_risk_lang
+-- Cấu trúc bảng cho bảng jms_risk_lang
 --
 
 CREATE TABLE jms_risk_lang (
@@ -19137,7 +19229,7 @@ CREATE TABLE jms_risk_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_risk_lang
+-- Đang đổ dữ liệu cho bảng jms_risk_lang
 --
 
 INSERT INTO jms_risk_lang VALUES(1, 1, 'None');
@@ -19164,7 +19256,7 @@ INSERT INTO jms_risk_lang VALUES(4, 6, 'Alto');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_search_engine
+-- Cấu trúc bảng cho bảng jms_search_engine
 --
 
 CREATE TABLE jms_search_engine (
@@ -19174,7 +19266,7 @@ CREATE TABLE jms_search_engine (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_search_engine
+-- Đang đổ dữ liệu cho bảng jms_search_engine
 --
 
 INSERT INTO jms_search_engine VALUES(1, 'google', 'q');
@@ -19219,7 +19311,7 @@ INSERT INTO jms_search_engine VALUES(38, 'rambler', 'words');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_search_index
+-- Cấu trúc bảng cho bảng jms_search_index
 --
 
 CREATE TABLE jms_search_index (
@@ -19229,7 +19321,7 @@ CREATE TABLE jms_search_index (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_search_index
+-- Đang đổ dữ liệu cho bảng jms_search_index
 --
 
 INSERT INTO jms_search_index VALUES(21, 709, 1);
@@ -21264,7 +21356,7 @@ INSERT INTO jms_search_index VALUES(34, 814, 10);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_search_word
+-- Cấu trúc bảng cho bảng jms_search_word
 --
 
 CREATE TABLE jms_search_word (
@@ -21275,7 +21367,7 @@ CREATE TABLE jms_search_word (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_search_word
+-- Đang đổ dữ liệu cho bảng jms_search_word
 --
 
 INSERT INTO jms_search_word VALUES(7246, 1, 1, '10141');
@@ -21508,7 +21600,7 @@ INSERT INTO jms_search_word VALUES(813, 1, 6, 'wam');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_sekeyword
+-- Cấu trúc bảng cho bảng jms_sekeyword
 --
 
 CREATE TABLE jms_sekeyword (
@@ -21522,7 +21614,7 @@ CREATE TABLE jms_sekeyword (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_shop
+-- Cấu trúc bảng cho bảng jms_shop
 --
 
 CREATE TABLE jms_shop (
@@ -21536,7 +21628,7 @@ CREATE TABLE jms_shop (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_shop
+-- Đang đổ dữ liệu cho bảng jms_shop
 --
 
 INSERT INTO jms_shop VALUES(1, 1, 'JMS Kasos', 2, 'jms_kasos', 1, 0);
@@ -21544,7 +21636,7 @@ INSERT INTO jms_shop VALUES(1, 1, 'JMS Kasos', 2, 'jms_kasos', 1, 0);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_shop_group
+-- Cấu trúc bảng cho bảng jms_shop_group
 --
 
 CREATE TABLE jms_shop_group (
@@ -21558,7 +21650,7 @@ CREATE TABLE jms_shop_group (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_shop_group
+-- Đang đổ dữ liệu cho bảng jms_shop_group
 --
 
 INSERT INTO jms_shop_group VALUES(1, 'Default', 0, 0, 0, 1, 0);
@@ -21566,7 +21658,7 @@ INSERT INTO jms_shop_group VALUES(1, 'Default', 0, 0, 0, 1, 0);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_shop_url
+-- Cấu trúc bảng cho bảng jms_shop_url
 --
 
 CREATE TABLE jms_shop_url (
@@ -21581,7 +21673,7 @@ CREATE TABLE jms_shop_url (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_shop_url
+-- Đang đổ dữ liệu cho bảng jms_shop_url
 --
 
 INSERT INTO jms_shop_url VALUES(1, 1, 'localhost', 'localhost', '/jms_kasos/', '', 1, 1);
@@ -21589,7 +21681,7 @@ INSERT INTO jms_shop_url VALUES(1, 1, 'localhost', 'localhost', '/jms_kasos/', '
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_smarty_cache
+-- Cấu trúc bảng cho bảng jms_smarty_cache
 --
 
 CREATE TABLE jms_smarty_cache (
@@ -21603,7 +21695,7 @@ CREATE TABLE jms_smarty_cache (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_smarty_last_flush
+-- Cấu trúc bảng cho bảng jms_smarty_last_flush
 --
 
 CREATE TABLE jms_smarty_last_flush (
@@ -21614,7 +21706,7 @@ CREATE TABLE jms_smarty_last_flush (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_smarty_lazy_cache
+-- Cấu trúc bảng cho bảng jms_smarty_lazy_cache
 --
 
 CREATE TABLE jms_smarty_lazy_cache (
@@ -21628,7 +21720,7 @@ CREATE TABLE jms_smarty_lazy_cache (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_specific_price
+-- Cấu trúc bảng cho bảng jms_specific_price
 --
 
 CREATE TABLE jms_specific_price (
@@ -21653,7 +21745,7 @@ CREATE TABLE jms_specific_price (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_specific_price
+-- Đang đổ dữ liệu cho bảng jms_specific_price
 --
 
 INSERT INTO jms_specific_price VALUES(3, 0, 0, 31, 1, 0, 0, 0, 0, 0, 0, '-1.000000', 1, '0.120000', 1, 'percentage', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
@@ -21664,7 +21756,7 @@ INSERT INTO jms_specific_price VALUES(6, 0, 0, 33, 1, 0, 0, 0, 0, 0, 0, '-1.0000
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_specific_price_priority
+-- Cấu trúc bảng cho bảng jms_specific_price_priority
 --
 
 CREATE TABLE jms_specific_price_priority (
@@ -21674,7 +21766,7 @@ CREATE TABLE jms_specific_price_priority (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_specific_price_priority
+-- Đang đổ dữ liệu cho bảng jms_specific_price_priority
 --
 
 INSERT INTO jms_specific_price_priority VALUES(1, 20, 'id_shop;id_currency;id_country;id_group');
@@ -21696,7 +21788,7 @@ INSERT INTO jms_specific_price_priority VALUES(55, 34, 'id_shop;id_currency;id_c
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_specific_price_rule
+-- Cấu trúc bảng cho bảng jms_specific_price_rule
 --
 
 CREATE TABLE jms_specific_price_rule (
@@ -21718,7 +21810,7 @@ CREATE TABLE jms_specific_price_rule (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_specific_price_rule_condition
+-- Cấu trúc bảng cho bảng jms_specific_price_rule_condition
 --
 
 CREATE TABLE jms_specific_price_rule_condition (
@@ -21731,7 +21823,7 @@ CREATE TABLE jms_specific_price_rule_condition (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_specific_price_rule_condition_group
+-- Cấu trúc bảng cho bảng jms_specific_price_rule_condition_group
 --
 
 CREATE TABLE jms_specific_price_rule_condition_group (
@@ -21742,7 +21834,7 @@ CREATE TABLE jms_specific_price_rule_condition_group (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_state
+-- Cấu trúc bảng cho bảng jms_state
 --
 
 CREATE TABLE jms_state (
@@ -21756,7 +21848,7 @@ CREATE TABLE jms_state (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_state
+-- Đang đổ dữ liệu cho bảng jms_state
 --
 
 INSERT INTO jms_state VALUES(1, 21, 2, 'AA', 'AA', 0, 1);
@@ -22139,7 +22231,7 @@ INSERT INTO jms_state VALUES(376, 6, 1, ' Melilla', 'ES-ML', 0, 1);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_statssearch
+-- Cấu trúc bảng cho bảng jms_statssearch
 --
 
 CREATE TABLE jms_statssearch (
@@ -22152,7 +22244,7 @@ CREATE TABLE jms_statssearch (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_statssearch
+-- Đang đổ dữ liệu cho bảng jms_statssearch
 --
 
 INSERT INTO jms_statssearch VALUES(1, 1, 1, 'apple', 2, '2019-08-14 14:07:40');
@@ -22165,11 +22257,12 @@ INSERT INTO jms_statssearch VALUES(7, 1, 1, 'samsung', 3, '2019-09-05 14:58:09')
 INSERT INTO jms_statssearch VALUES(8, 1, 1, 'samsung', 3, '2019-09-09 16:00:48');
 INSERT INTO jms_statssearch VALUES(9, 1, 1, 'samsung', 3, '2019-09-12 08:51:28');
 INSERT INTO jms_statssearch VALUES(10, 1, 1, 'samsung', 3, '2019-09-12 08:52:34');
+INSERT INTO jms_statssearch VALUES(11, 1, 1, 'samsung', 3, '2019-09-13 14:33:31');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_stock
+-- Cấu trúc bảng cho bảng jms_stock
 --
 
 CREATE TABLE jms_stock (
@@ -22189,7 +22282,7 @@ CREATE TABLE jms_stock (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_stock_available
+-- Cấu trúc bảng cho bảng jms_stock_available
 --
 
 CREATE TABLE jms_stock_available (
@@ -22207,7 +22300,7 @@ CREATE TABLE jms_stock_available (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_stock_available
+-- Đang đổ dữ liệu cho bảng jms_stock_available
 --
 
 INSERT INTO jms_stock_available VALUES(59, 18, 0, 1, 0, 0, 0, 0, 0, 0, '');
@@ -22225,8 +22318,8 @@ INSERT INTO jms_stock_available VALUES(71, 21, 0, 1, 0, 149, 149, 0, 0, 2, '');
 INSERT INTO jms_stock_available VALUES(72, 21, 40, 1, 0, 49, 50, 1, 0, 2, '');
 INSERT INTO jms_stock_available VALUES(73, 21, 41, 1, 0, 30, 30, 0, 0, 2, '');
 INSERT INTO jms_stock_available VALUES(74, 21, 42, 1, 0, 70, 70, 0, 0, 2, '');
-INSERT INTO jms_stock_available VALUES(75, 22, 0, 1, 0, 389, 389, 0, 0, 2, '');
-INSERT INTO jms_stock_available VALUES(82, 22, 49, 1, 0, 39, 40, 1, 0, 2, '');
+INSERT INTO jms_stock_available VALUES(75, 22, 0, 1, 0, 388, 388, 0, 0, 2, '');
+INSERT INTO jms_stock_available VALUES(82, 22, 49, 1, 0, 38, 40, 2, 0, 2, '');
 INSERT INTO jms_stock_available VALUES(83, 22, 50, 1, 0, 60, 60, 0, 0, 2, '');
 INSERT INTO jms_stock_available VALUES(84, 22, 51, 1, 0, 80, 80, 0, 0, 2, '');
 INSERT INTO jms_stock_available VALUES(85, 22, 52, 1, 0, 50, 50, 0, 0, 2, '');
@@ -22278,7 +22371,7 @@ INSERT INTO jms_stock_available VALUES(178, 31, 133, 1, 0, 70, 70, 0, 0, 2, '');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_stock_mvt
+-- Cấu trúc bảng cho bảng jms_stock_mvt
 --
 
 CREATE TABLE jms_stock_mvt (
@@ -22300,7 +22393,7 @@ CREATE TABLE jms_stock_mvt (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_stock_mvt
+-- Đang đổ dữ liệu cho bảng jms_stock_mvt
 --
 
 INSERT INTO jms_stock_mvt VALUES(1, 72, NULL, NULL, 11, 1, 'Huy', 'Mr', 50, '2019-07-24 23:43:07', 1, '0.000000', '0.000000', '0.000000', NULL);
@@ -22367,7 +22460,7 @@ INSERT INTO jms_stock_mvt VALUES(60, 133, NULL, NULL, 11, 1, 'Huy', 'Mr', 90, '2
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_stock_mvt_reason
+-- Cấu trúc bảng cho bảng jms_stock_mvt_reason
 --
 
 CREATE TABLE jms_stock_mvt_reason (
@@ -22379,7 +22472,7 @@ CREATE TABLE jms_stock_mvt_reason (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_stock_mvt_reason
+-- Đang đổ dữ liệu cho bảng jms_stock_mvt_reason
 --
 
 INSERT INTO jms_stock_mvt_reason VALUES(1, 1, '2019-07-24 04:52:58', '2019-07-24 04:52:58', 0);
@@ -22398,7 +22491,7 @@ INSERT INTO jms_stock_mvt_reason VALUES(12, -1, '2019-07-24 04:52:58', '2019-07-
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_stock_mvt_reason_lang
+-- Cấu trúc bảng cho bảng jms_stock_mvt_reason_lang
 --
 
 CREATE TABLE jms_stock_mvt_reason_lang (
@@ -22408,7 +22501,7 @@ CREATE TABLE jms_stock_mvt_reason_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_stock_mvt_reason_lang
+-- Đang đổ dữ liệu cho bảng jms_stock_mvt_reason_lang
 --
 
 INSERT INTO jms_stock_mvt_reason_lang VALUES(1, 1, 'Increase');
@@ -22475,7 +22568,7 @@ INSERT INTO jms_stock_mvt_reason_lang VALUES(12, 6, 'Employee Edition');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_store
+-- Cấu trúc bảng cho bảng jms_store
 --
 
 CREATE TABLE jms_store (
@@ -22495,7 +22588,7 @@ CREATE TABLE jms_store (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_store
+-- Đang đổ dữ liệu cho bảng jms_store
 --
 
 INSERT INTO jms_store VALUES(1, 21, 12, 'Miami', ' 33135', '25.76500500', '-80.24379700', '', '', '', 1, '2019-07-24 04:55:56', '2019-07-24 04:55:56');
@@ -22507,7 +22600,7 @@ INSERT INTO jms_store VALUES(5, 21, 12, 'Miami', '33181', '25.88674000', '-80.16
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_store_lang
+-- Cấu trúc bảng cho bảng jms_store_lang
 --
 
 CREATE TABLE jms_store_lang (
@@ -22521,7 +22614,7 @@ CREATE TABLE jms_store_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_store_lang
+-- Đang đổ dữ liệu cho bảng jms_store_lang
 --
 
 INSERT INTO jms_store_lang VALUES(1, 1, 'Dade County', '3030 SW 8th St Miami', '', ' [[\"09:00AM - 07:00PM\"],[\"09:00AM - 07:00PM\"],[\"09:00AM - 07:00PM\"],[\"09:00AM - 07:00PM\"],[\"09:00AM - 07:00PM\"],[\"10:00AM - 04:00PM\"],[\"10:00AM - 04:00PM\"]]', '');
@@ -22553,7 +22646,7 @@ INSERT INTO jms_store_lang VALUES(5, 6, 'N Miami/Biscayne', '12055 Biscayne Blvd
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_store_shop
+-- Cấu trúc bảng cho bảng jms_store_shop
 --
 
 CREATE TABLE jms_store_shop (
@@ -22562,7 +22655,7 @@ CREATE TABLE jms_store_shop (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_store_shop
+-- Đang đổ dữ liệu cho bảng jms_store_shop
 --
 
 INSERT INTO jms_store_shop VALUES(1, 1);
@@ -22574,7 +22667,7 @@ INSERT INTO jms_store_shop VALUES(5, 1);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_supplier
+-- Cấu trúc bảng cho bảng jms_supplier
 --
 
 CREATE TABLE jms_supplier (
@@ -22588,7 +22681,7 @@ CREATE TABLE jms_supplier (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_supplier_lang
+-- Cấu trúc bảng cho bảng jms_supplier_lang
 --
 
 CREATE TABLE jms_supplier_lang (
@@ -22603,7 +22696,7 @@ CREATE TABLE jms_supplier_lang (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_supplier_shop
+-- Cấu trúc bảng cho bảng jms_supplier_shop
 --
 
 CREATE TABLE jms_supplier_shop (
@@ -22614,7 +22707,7 @@ CREATE TABLE jms_supplier_shop (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_supply_order
+-- Cấu trúc bảng cho bảng jms_supply_order
 --
 
 CREATE TABLE jms_supply_order (
@@ -22642,7 +22735,7 @@ CREATE TABLE jms_supply_order (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_supply_order_detail
+-- Cấu trúc bảng cho bảng jms_supply_order_detail
 --
 
 CREATE TABLE jms_supply_order_detail (
@@ -22675,7 +22768,7 @@ CREATE TABLE jms_supply_order_detail (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_supply_order_history
+-- Cấu trúc bảng cho bảng jms_supply_order_history
 --
 
 CREATE TABLE jms_supply_order_history (
@@ -22691,7 +22784,7 @@ CREATE TABLE jms_supply_order_history (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_supply_order_receipt_history
+-- Cấu trúc bảng cho bảng jms_supply_order_receipt_history
 --
 
 CREATE TABLE jms_supply_order_receipt_history (
@@ -22708,7 +22801,7 @@ CREATE TABLE jms_supply_order_receipt_history (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_supply_order_state
+-- Cấu trúc bảng cho bảng jms_supply_order_state
 --
 
 CREATE TABLE jms_supply_order_state (
@@ -22722,7 +22815,7 @@ CREATE TABLE jms_supply_order_state (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_supply_order_state
+-- Đang đổ dữ liệu cho bảng jms_supply_order_state
 --
 
 INSERT INTO jms_supply_order_state VALUES(1, 0, 1, 0, 0, 0, '#faab00');
@@ -22735,7 +22828,7 @@ INSERT INTO jms_supply_order_state VALUES(6, 0, 0, 0, 0, 1, '#666666');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_supply_order_state_lang
+-- Cấu trúc bảng cho bảng jms_supply_order_state_lang
 --
 
 CREATE TABLE jms_supply_order_state_lang (
@@ -22745,7 +22838,7 @@ CREATE TABLE jms_supply_order_state_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_supply_order_state_lang
+-- Đang đổ dữ liệu cho bảng jms_supply_order_state_lang
 --
 
 INSERT INTO jms_supply_order_state_lang VALUES(1, 1, '1 - Creation in progress');
@@ -22782,7 +22875,7 @@ INSERT INTO jms_supply_order_state_lang VALUES(6, 6, '6 - Pedido cancelado');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_tab
+-- Cấu trúc bảng cho bảng jms_tab
 --
 
 CREATE TABLE jms_tab (
@@ -22797,7 +22890,7 @@ CREATE TABLE jms_tab (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_tab
+-- Đang đổ dữ liệu cho bảng jms_tab
 --
 
 INSERT INTO jms_tab VALUES(1, 0, 0, NULL, 'AdminDashboard', 1, 0, 'trending_up');
@@ -22953,7 +23046,7 @@ INSERT INTO jms_tab VALUES(149, 147, 2, 'jmsvermegamenu', 'AdminJmsvermegamenuSt
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_tab_advice
+-- Cấu trúc bảng cho bảng jms_tab_advice
 --
 
 CREATE TABLE jms_tab_advice (
@@ -22962,7 +23055,7 @@ CREATE TABLE jms_tab_advice (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_tab_advice
+-- Đang đổ dữ liệu cho bảng jms_tab_advice
 --
 
 INSERT INTO jms_tab_advice VALUES(1, 1);
@@ -23269,7 +23362,7 @@ INSERT INTO jms_tab_advice VALUES(1, 300);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_tab_lang
+-- Cấu trúc bảng cho bảng jms_tab_lang
 --
 
 CREATE TABLE jms_tab_lang (
@@ -23279,7 +23372,7 @@ CREATE TABLE jms_tab_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_tab_lang
+-- Đang đổ dữ liệu cho bảng jms_tab_lang
 --
 
 INSERT INTO jms_tab_lang VALUES(1, 1, 'Dashboard');
@@ -24016,7 +24109,7 @@ INSERT INTO jms_tab_lang VALUES(149, 6, 'Menu Style');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_tab_module_preference
+-- Cấu trúc bảng cho bảng jms_tab_module_preference
 --
 
 CREATE TABLE jms_tab_module_preference (
@@ -24029,7 +24122,7 @@ CREATE TABLE jms_tab_module_preference (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_tag
+-- Cấu trúc bảng cho bảng jms_tag
 --
 
 CREATE TABLE jms_tag (
@@ -24041,7 +24134,7 @@ CREATE TABLE jms_tag (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_tag_count
+-- Cấu trúc bảng cho bảng jms_tag_count
 --
 
 CREATE TABLE jms_tag_count (
@@ -24055,7 +24148,7 @@ CREATE TABLE jms_tag_count (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_tax
+-- Cấu trúc bảng cho bảng jms_tax
 --
 
 CREATE TABLE jms_tax (
@@ -24066,7 +24159,7 @@ CREATE TABLE jms_tax (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_tax
+-- Đang đổ dữ liệu cho bảng jms_tax
 --
 
 INSERT INTO jms_tax VALUES(1, '4.000', 1, 0);
@@ -24161,7 +24254,7 @@ INSERT INTO jms_tax VALUES(88, '4.000', 1, 0);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_tax_lang
+-- Cấu trúc bảng cho bảng jms_tax_lang
 --
 
 CREATE TABLE jms_tax_lang (
@@ -24171,7 +24264,7 @@ CREATE TABLE jms_tax_lang (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_tax_lang
+-- Đang đổ dữ liệu cho bảng jms_tax_lang
 --
 
 INSERT INTO jms_tax_lang VALUES(1, 1, 'Sales-taxes US-AL 4%');
@@ -24618,7 +24711,7 @@ INSERT INTO jms_tax_lang VALUES(88, 6, 'IVA ES 4%');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_tax_rule
+-- Cấu trúc bảng cho bảng jms_tax_rule
 --
 
 CREATE TABLE jms_tax_rule (
@@ -24634,7 +24727,7 @@ CREATE TABLE jms_tax_rule (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_tax_rule
+-- Đang đổ dữ liệu cho bảng jms_tax_rule
 --
 
 INSERT INTO jms_tax_rule VALUES(1, 1, 21, 4, '0', '0', 1, 1, '');
@@ -25189,7 +25282,7 @@ INSERT INTO jms_tax_rule VALUES(548, 71, 18, 0, '0', '0', 88, 0, '');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_tax_rules_group
+-- Cấu trúc bảng cho bảng jms_tax_rules_group
 --
 
 CREATE TABLE jms_tax_rules_group (
@@ -25202,7 +25295,7 @@ CREATE TABLE jms_tax_rules_group (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_tax_rules_group
+-- Đang đổ dữ liệu cho bảng jms_tax_rules_group
 --
 
 INSERT INTO jms_tax_rules_group VALUES(1, 'US-AL Rate (4%)', 1, 0, '2019-07-24 04:53:00', '2019-07-24 04:53:00');
@@ -25280,7 +25373,7 @@ INSERT INTO jms_tax_rules_group VALUES(71, 'ES Books Rate (4%)', 1, 0, '2019-07-
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_tax_rules_group_shop
+-- Cấu trúc bảng cho bảng jms_tax_rules_group_shop
 --
 
 CREATE TABLE jms_tax_rules_group_shop (
@@ -25289,7 +25382,7 @@ CREATE TABLE jms_tax_rules_group_shop (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_tax_rules_group_shop
+-- Đang đổ dữ liệu cho bảng jms_tax_rules_group_shop
 --
 
 INSERT INTO jms_tax_rules_group_shop VALUES(1, 1);
@@ -25367,7 +25460,7 @@ INSERT INTO jms_tax_rules_group_shop VALUES(71, 1);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_timezone
+-- Cấu trúc bảng cho bảng jms_timezone
 --
 
 CREATE TABLE jms_timezone (
@@ -25376,7 +25469,7 @@ CREATE TABLE jms_timezone (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_timezone
+-- Đang đổ dữ liệu cho bảng jms_timezone
 --
 
 INSERT INTO jms_timezone VALUES(1, 'Africa/Abidjan');
@@ -25943,7 +26036,7 @@ INSERT INTO jms_timezone VALUES(560, 'Zulu');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_translation
+-- Cấu trúc bảng cho bảng jms_translation
 --
 
 CREATE TABLE jms_translation (
@@ -25956,16 +26049,17 @@ CREATE TABLE jms_translation (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_translation
+-- Đang đổ dữ liệu cho bảng jms_translation
 --
 
 INSERT INTO jms_translation VALUES(1, 1, '404', '404', 'ShopTheme', 'jms_fluent');
 INSERT INTO jms_translation VALUES(2, 1, '404', '404', 'ShopTheme', 'jms_kasos');
+INSERT INTO jms_translation VALUES(3, 1, 'On sale', 'On sale', 'ModulesSpecialsShop', 'jms_kasos');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_warehouse
+-- Cấu trúc bảng cho bảng jms_warehouse
 --
 
 CREATE TABLE jms_warehouse (
@@ -25982,7 +26076,7 @@ CREATE TABLE jms_warehouse (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_warehouse_carrier
+-- Cấu trúc bảng cho bảng jms_warehouse_carrier
 --
 
 CREATE TABLE jms_warehouse_carrier (
@@ -25993,7 +26087,7 @@ CREATE TABLE jms_warehouse_carrier (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_warehouse_product_location
+-- Cấu trúc bảng cho bảng jms_warehouse_product_location
 --
 
 CREATE TABLE jms_warehouse_product_location (
@@ -26007,7 +26101,7 @@ CREATE TABLE jms_warehouse_product_location (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_warehouse_shop
+-- Cấu trúc bảng cho bảng jms_warehouse_shop
 --
 
 CREATE TABLE jms_warehouse_shop (
@@ -26018,7 +26112,7 @@ CREATE TABLE jms_warehouse_shop (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_webservice_account
+-- Cấu trúc bảng cho bảng jms_webservice_account
 --
 
 CREATE TABLE jms_webservice_account (
@@ -26034,7 +26128,7 @@ CREATE TABLE jms_webservice_account (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_webservice_account_shop
+-- Cấu trúc bảng cho bảng jms_webservice_account_shop
 --
 
 CREATE TABLE jms_webservice_account_shop (
@@ -26045,7 +26139,7 @@ CREATE TABLE jms_webservice_account_shop (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_webservice_permission
+-- Cấu trúc bảng cho bảng jms_webservice_permission
 --
 
 CREATE TABLE jms_webservice_permission (
@@ -26058,7 +26152,7 @@ CREATE TABLE jms_webservice_permission (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_web_browser
+-- Cấu trúc bảng cho bảng jms_web_browser
 --
 
 CREATE TABLE jms_web_browser (
@@ -26067,7 +26161,7 @@ CREATE TABLE jms_web_browser (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_web_browser
+-- Đang đổ dữ liệu cho bảng jms_web_browser
 --
 
 INSERT INTO jms_web_browser VALUES(1, 'Safari');
@@ -26085,7 +26179,7 @@ INSERT INTO jms_web_browser VALUES(11, 'Chrome');
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_wishlist
+-- Cấu trúc bảng cho bảng jms_wishlist
 --
 
 CREATE TABLE jms_wishlist (
@@ -26102,15 +26196,16 @@ CREATE TABLE jms_wishlist (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_wishlist
+-- Đang đổ dữ liệu cho bảng jms_wishlist
 --
 
 INSERT INTO jms_wishlist VALUES(1, 2, '1D001C270D994361', 'My wishlist', NULL, 1, 1, '2019-08-15 04:24:10', '2019-08-15 04:24:10', 1);
+INSERT INTO jms_wishlist VALUES(2, 3, 'EDBD51204FE089D3', 'My wishlist', NULL, 1, 1, '2019-09-13 03:30:31', '2019-09-13 03:30:31', 1);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_wishlist_email
+-- Cấu trúc bảng cho bảng jms_wishlist_email
 --
 
 CREATE TABLE jms_wishlist_email (
@@ -26122,7 +26217,7 @@ CREATE TABLE jms_wishlist_email (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_wishlist_product
+-- Cấu trúc bảng cho bảng jms_wishlist_product
 --
 
 CREATE TABLE jms_wishlist_product (
@@ -26135,7 +26230,7 @@ CREATE TABLE jms_wishlist_product (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table jms_wishlist_product
+-- Đang đổ dữ liệu cho bảng jms_wishlist_product
 --
 
 INSERT INTO jms_wishlist_product VALUES(1, 1, 21, 0, 2, 1);
@@ -26143,11 +26238,13 @@ INSERT INTO jms_wishlist_product VALUES(2, 1, 22, 0, 1, 1);
 INSERT INTO jms_wishlist_product VALUES(3, 1, 23, 0, 1, 1);
 INSERT INTO jms_wishlist_product VALUES(4, 1, 24, 0, 1, 1);
 INSERT INTO jms_wishlist_product VALUES(5, 1, 25, 0, 1, 1);
+INSERT INTO jms_wishlist_product VALUES(6, 2, 28, 0, 1, 1);
+INSERT INTO jms_wishlist_product VALUES(7, 2, 30, 0, 1, 1);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_wishlist_product_cart
+-- Cấu trúc bảng cho bảng jms_wishlist_product_cart
 --
 
 CREATE TABLE jms_wishlist_product_cart (
@@ -26160,7 +26257,7 @@ CREATE TABLE jms_wishlist_product_cart (
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_zone
+-- Cấu trúc bảng cho bảng jms_zone
 --
 
 CREATE TABLE jms_zone (
@@ -26170,7 +26267,7 @@ CREATE TABLE jms_zone (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_zone
+-- Đang đổ dữ liệu cho bảng jms_zone
 --
 
 INSERT INTO jms_zone VALUES(1, 'Europe', 1);
@@ -26185,7 +26282,7 @@ INSERT INTO jms_zone VALUES(8, 'Central America/Antilla', 1);
 -- --------------------------------------------------------
 
 --
--- Table structure for table jms_zone_shop
+-- Cấu trúc bảng cho bảng jms_zone_shop
 --
 
 CREATE TABLE jms_zone_shop (
@@ -26194,7 +26291,7 @@ CREATE TABLE jms_zone_shop (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table jms_zone_shop
+-- Đang đổ dữ liệu cho bảng jms_zone_shop
 --
 
 INSERT INTO jms_zone_shop VALUES(1, 1);
@@ -26207,23 +26304,23 @@ INSERT INTO jms_zone_shop VALUES(7, 1);
 INSERT INTO jms_zone_shop VALUES(8, 1);
 
 --
--- Indexes for dumped tables
+-- Chỉ mục cho các bảng đã đổ
 --
 
 --
--- Indexes for table jms_access
+-- Chỉ mục cho bảng jms_access
 --
 ALTER TABLE jms_access
   ADD PRIMARY KEY (id_profile,id_authorization_role);
 
 --
--- Indexes for table jms_accessory
+-- Chỉ mục cho bảng jms_accessory
 --
 ALTER TABLE jms_accessory
   ADD KEY accessory_product (id_product_1,id_product_2);
 
 --
--- Indexes for table jms_address
+-- Chỉ mục cho bảng jms_address
 --
 ALTER TABLE jms_address
   ADD PRIMARY KEY (id_address),
@@ -26235,64 +26332,64 @@ ALTER TABLE jms_address
   ADD KEY id_warehouse (id_warehouse);
 
 --
--- Indexes for table jms_address_format
+-- Chỉ mục cho bảng jms_address_format
 --
 ALTER TABLE jms_address_format
   ADD PRIMARY KEY (id_country);
 
 --
--- Indexes for table jms_admin_filter
+-- Chỉ mục cho bảng jms_admin_filter
 --
 ALTER TABLE jms_admin_filter
   ADD PRIMARY KEY (id),
   ADD UNIQUE KEY admin_filter_search_id_idx (employee,shop,controller,action,filter_id);
 
 --
--- Indexes for table jms_advice
+-- Chỉ mục cho bảng jms_advice
 --
 ALTER TABLE jms_advice
   ADD PRIMARY KEY (id_advice);
 
 --
--- Indexes for table jms_advice_lang
+-- Chỉ mục cho bảng jms_advice_lang
 --
 ALTER TABLE jms_advice_lang
   ADD PRIMARY KEY (id_advice,id_lang);
 
 --
--- Indexes for table jms_alias
+-- Chỉ mục cho bảng jms_alias
 --
 ALTER TABLE jms_alias
   ADD PRIMARY KEY (id_alias),
   ADD UNIQUE KEY alias (alias);
 
 --
--- Indexes for table jms_attachment
+-- Chỉ mục cho bảng jms_attachment
 --
 ALTER TABLE jms_attachment
   ADD PRIMARY KEY (id_attachment);
 
 --
--- Indexes for table jms_attachment_lang
+-- Chỉ mục cho bảng jms_attachment_lang
 --
 ALTER TABLE jms_attachment_lang
   ADD PRIMARY KEY (id_attachment,id_lang);
 
 --
--- Indexes for table jms_attribute
+-- Chỉ mục cho bảng jms_attribute
 --
 ALTER TABLE jms_attribute
   ADD PRIMARY KEY (id_attribute),
   ADD KEY attribute_group (id_attribute_group);
 
 --
--- Indexes for table jms_attribute_group
+-- Chỉ mục cho bảng jms_attribute_group
 --
 ALTER TABLE jms_attribute_group
   ADD PRIMARY KEY (id_attribute_group);
 
 --
--- Indexes for table jms_attribute_group_lang
+-- Chỉ mục cho bảng jms_attribute_group_lang
 --
 ALTER TABLE jms_attribute_group_lang
   ADD PRIMARY KEY (id_attribute_group,id_lang),
@@ -26300,7 +26397,7 @@ ALTER TABLE jms_attribute_group_lang
   ADD KEY IDX_DEEAE65BBA299860 (id_lang);
 
 --
--- Indexes for table jms_attribute_group_shop
+-- Chỉ mục cho bảng jms_attribute_group_shop
 --
 ALTER TABLE jms_attribute_group_shop
   ADD PRIMARY KEY (id_attribute_group,id_shop),
@@ -26308,14 +26405,14 @@ ALTER TABLE jms_attribute_group_shop
   ADD KEY IDX_43892E9B274A50A0 (id_shop);
 
 --
--- Indexes for table jms_attribute_impact
+-- Chỉ mục cho bảng jms_attribute_impact
 --
 ALTER TABLE jms_attribute_impact
   ADD PRIMARY KEY (id_attribute_impact),
   ADD UNIQUE KEY id_product (id_product,id_attribute);
 
 --
--- Indexes for table jms_attribute_lang
+-- Chỉ mục cho bảng jms_attribute_lang
 --
 ALTER TABLE jms_attribute_lang
   ADD PRIMARY KEY (id_attribute,id_lang),
@@ -26323,7 +26420,7 @@ ALTER TABLE jms_attribute_lang
   ADD KEY IDX_64EB4FE7BA299860 (id_lang);
 
 --
--- Indexes for table jms_attribute_shop
+-- Chỉ mục cho bảng jms_attribute_shop
 --
 ALTER TABLE jms_attribute_shop
   ADD PRIMARY KEY (id_attribute,id_shop),
@@ -26331,26 +26428,26 @@ ALTER TABLE jms_attribute_shop
   ADD KEY IDX_F9888727274A50A0 (id_shop);
 
 --
--- Indexes for table jms_authorization_role
+-- Chỉ mục cho bảng jms_authorization_role
 --
 ALTER TABLE jms_authorization_role
   ADD PRIMARY KEY (id_authorization_role),
   ADD UNIQUE KEY slug (slug);
 
 --
--- Indexes for table jms_badge
+-- Chỉ mục cho bảng jms_badge
 --
 ALTER TABLE jms_badge
   ADD PRIMARY KEY (id_badge);
 
 --
--- Indexes for table jms_badge_lang
+-- Chỉ mục cho bảng jms_badge_lang
 --
 ALTER TABLE jms_badge_lang
   ADD PRIMARY KEY (id_badge,id_lang);
 
 --
--- Indexes for table jms_carrier
+-- Chỉ mục cho bảng jms_carrier
 --
 ALTER TABLE jms_carrier
   ADD PRIMARY KEY (id_carrier),
@@ -26359,38 +26456,38 @@ ALTER TABLE jms_carrier
   ADD KEY reference (id_reference,deleted,active);
 
 --
--- Indexes for table jms_carrier_group
+-- Chỉ mục cho bảng jms_carrier_group
 --
 ALTER TABLE jms_carrier_group
   ADD PRIMARY KEY (id_carrier,id_group);
 
 --
--- Indexes for table jms_carrier_lang
+-- Chỉ mục cho bảng jms_carrier_lang
 --
 ALTER TABLE jms_carrier_lang
   ADD PRIMARY KEY (id_lang,id_shop,id_carrier);
 
 --
--- Indexes for table jms_carrier_shop
+-- Chỉ mục cho bảng jms_carrier_shop
 --
 ALTER TABLE jms_carrier_shop
   ADD PRIMARY KEY (id_carrier,id_shop),
   ADD KEY id_shop (id_shop);
 
 --
--- Indexes for table jms_carrier_tax_rules_group_shop
+-- Chỉ mục cho bảng jms_carrier_tax_rules_group_shop
 --
 ALTER TABLE jms_carrier_tax_rules_group_shop
   ADD PRIMARY KEY (id_carrier,id_tax_rules_group,id_shop);
 
 --
--- Indexes for table jms_carrier_zone
+-- Chỉ mục cho bảng jms_carrier_zone
 --
 ALTER TABLE jms_carrier_zone
   ADD PRIMARY KEY (id_carrier,id_zone);
 
 --
--- Indexes for table jms_cart
+-- Chỉ mục cho bảng jms_cart
 --
 ALTER TABLE jms_cart
   ADD PRIMARY KEY (id_cart),
@@ -26406,14 +26503,14 @@ ALTER TABLE jms_cart
   ADD KEY id_shop (id_shop,date_add);
 
 --
--- Indexes for table jms_cart_cart_rule
+-- Chỉ mục cho bảng jms_cart_cart_rule
 --
 ALTER TABLE jms_cart_cart_rule
   ADD PRIMARY KEY (id_cart,id_cart_rule),
   ADD KEY id_cart_rule (id_cart_rule);
 
 --
--- Indexes for table jms_cart_product
+-- Chỉ mục cho bảng jms_cart_product
 --
 ALTER TABLE jms_cart_product
   ADD PRIMARY KEY (id_cart,id_product,id_product_attribute,id_customization,id_address_delivery),
@@ -26421,7 +26518,7 @@ ALTER TABLE jms_cart_product
   ADD KEY id_cart_order (id_cart,date_add,id_product,id_product_attribute);
 
 --
--- Indexes for table jms_cart_rule
+-- Chỉ mục cho bảng jms_cart_rule
 --
 ALTER TABLE jms_cart_rule
   ADD PRIMARY KEY (id_cart_rule),
@@ -26433,13 +26530,13 @@ ALTER TABLE jms_cart_rule
   ADD KEY date_to (date_to);
 
 --
--- Indexes for table jms_cart_rule_carrier
+-- Chỉ mục cho bảng jms_cart_rule_carrier
 --
 ALTER TABLE jms_cart_rule_carrier
   ADD PRIMARY KEY (id_cart_rule,id_carrier);
 
 --
--- Indexes for table jms_cart_rule_combination
+-- Chỉ mục cho bảng jms_cart_rule_combination
 --
 ALTER TABLE jms_cart_rule_combination
   ADD PRIMARY KEY (id_cart_rule_1,id_cart_rule_2),
@@ -26447,49 +26544,49 @@ ALTER TABLE jms_cart_rule_combination
   ADD KEY id_cart_rule_2 (id_cart_rule_2);
 
 --
--- Indexes for table jms_cart_rule_country
+-- Chỉ mục cho bảng jms_cart_rule_country
 --
 ALTER TABLE jms_cart_rule_country
   ADD PRIMARY KEY (id_cart_rule,id_country);
 
 --
--- Indexes for table jms_cart_rule_group
+-- Chỉ mục cho bảng jms_cart_rule_group
 --
 ALTER TABLE jms_cart_rule_group
   ADD PRIMARY KEY (id_cart_rule,id_group);
 
 --
--- Indexes for table jms_cart_rule_lang
+-- Chỉ mục cho bảng jms_cart_rule_lang
 --
 ALTER TABLE jms_cart_rule_lang
   ADD PRIMARY KEY (id_cart_rule,id_lang);
 
 --
--- Indexes for table jms_cart_rule_product_rule
+-- Chỉ mục cho bảng jms_cart_rule_product_rule
 --
 ALTER TABLE jms_cart_rule_product_rule
   ADD PRIMARY KEY (id_product_rule);
 
 --
--- Indexes for table jms_cart_rule_product_rule_group
+-- Chỉ mục cho bảng jms_cart_rule_product_rule_group
 --
 ALTER TABLE jms_cart_rule_product_rule_group
   ADD PRIMARY KEY (id_product_rule_group);
 
 --
--- Indexes for table jms_cart_rule_product_rule_value
+-- Chỉ mục cho bảng jms_cart_rule_product_rule_value
 --
 ALTER TABLE jms_cart_rule_product_rule_value
   ADD PRIMARY KEY (id_product_rule,id_item);
 
 --
--- Indexes for table jms_cart_rule_shop
+-- Chỉ mục cho bảng jms_cart_rule_shop
 --
 ALTER TABLE jms_cart_rule_shop
   ADD PRIMARY KEY (id_cart_rule,id_shop);
 
 --
--- Indexes for table jms_category
+-- Chỉ mục cho bảng jms_category
 --
 ALTER TABLE jms_category
   ADD PRIMARY KEY (id_category),
@@ -26501,7 +26598,7 @@ ALTER TABLE jms_category
   ADD KEY activenright (active,nright);
 
 --
--- Indexes for table jms_category_group
+-- Chỉ mục cho bảng jms_category_group
 --
 ALTER TABLE jms_category_group
   ADD PRIMARY KEY (id_category,id_group),
@@ -26509,14 +26606,14 @@ ALTER TABLE jms_category_group
   ADD KEY id_group (id_group);
 
 --
--- Indexes for table jms_category_lang
+-- Chỉ mục cho bảng jms_category_lang
 --
 ALTER TABLE jms_category_lang
   ADD PRIMARY KEY (id_category,id_shop,id_lang),
   ADD KEY category_name (name);
 
 --
--- Indexes for table jms_category_product
+-- Chỉ mục cho bảng jms_category_product
 --
 ALTER TABLE jms_category_product
   ADD PRIMARY KEY (id_category,id_product),
@@ -26524,84 +26621,84 @@ ALTER TABLE jms_category_product
   ADD KEY id_category (id_category,position);
 
 --
--- Indexes for table jms_category_shop
+-- Chỉ mục cho bảng jms_category_shop
 --
 ALTER TABLE jms_category_shop
   ADD PRIMARY KEY (id_category,id_shop);
 
 --
--- Indexes for table jms_cms
+-- Chỉ mục cho bảng jms_cms
 --
 ALTER TABLE jms_cms
   ADD PRIMARY KEY (id_cms);
 
 --
--- Indexes for table jms_cms_category
+-- Chỉ mục cho bảng jms_cms_category
 --
 ALTER TABLE jms_cms_category
   ADD PRIMARY KEY (id_cms_category),
   ADD KEY category_parent (id_parent);
 
 --
--- Indexes for table jms_cms_category_lang
+-- Chỉ mục cho bảng jms_cms_category_lang
 --
 ALTER TABLE jms_cms_category_lang
   ADD PRIMARY KEY (id_cms_category,id_shop,id_lang),
   ADD KEY category_name (name);
 
 --
--- Indexes for table jms_cms_category_shop
+-- Chỉ mục cho bảng jms_cms_category_shop
 --
 ALTER TABLE jms_cms_category_shop
   ADD PRIMARY KEY (id_cms_category,id_shop),
   ADD KEY id_shop (id_shop);
 
 --
--- Indexes for table jms_cms_lang
+-- Chỉ mục cho bảng jms_cms_lang
 --
 ALTER TABLE jms_cms_lang
   ADD PRIMARY KEY (id_cms,id_shop,id_lang);
 
 --
--- Indexes for table jms_cms_role
+-- Chỉ mục cho bảng jms_cms_role
 --
 ALTER TABLE jms_cms_role
   ADD PRIMARY KEY (id_cms_role,id_cms),
   ADD UNIQUE KEY name (name);
 
 --
--- Indexes for table jms_cms_role_lang
+-- Chỉ mục cho bảng jms_cms_role_lang
 --
 ALTER TABLE jms_cms_role_lang
   ADD PRIMARY KEY (id_cms_role,id_lang,id_shop);
 
 --
--- Indexes for table jms_cms_shop
+-- Chỉ mục cho bảng jms_cms_shop
 --
 ALTER TABLE jms_cms_shop
   ADD PRIMARY KEY (id_cms,id_shop),
   ADD KEY id_shop (id_shop);
 
 --
--- Indexes for table jms_condition
+-- Chỉ mục cho bảng jms_condition
 --
 ALTER TABLE jms_condition
   ADD PRIMARY KEY (id_condition,id_ps_condition);
 
 --
--- Indexes for table jms_condition_advice
+-- Chỉ mục cho bảng jms_condition_advice
 --
 ALTER TABLE jms_condition_advice
   ADD PRIMARY KEY (id_condition,id_advice);
 
 --
--- Indexes for table jms_condition_badge
+-- Chỉ mục cho bảng jms_condition_badge
 --
 ALTER TABLE jms_condition_badge
   ADD PRIMARY KEY (id_condition,id_badge);
 
 --
--- Indexes for table jms_configuration
+-- Chỉ mục cho bảng jms_configuration
 --
 ALTER TABLE jms_configuration
   ADD PRIMARY KEY (id_configuration),
@@ -26610,7 +26707,7 @@ ALTER TABLE jms_configuration
   ADD KEY id_shop_group (id_shop_group);
 
 --
--- Indexes for table jms_configuration_kpi
+-- Chỉ mục cho bảng jms_configuration_kpi
 --
 ALTER TABLE jms_configuration_kpi
   ADD PRIMARY KEY (id_configuration_kpi),
@@ -26619,19 +26716,19 @@ ALTER TABLE jms_configuration_kpi
   ADD KEY id_shop_group (id_shop_group);
 
 --
--- Indexes for table jms_configuration_kpi_lang
+-- Chỉ mục cho bảng jms_configuration_kpi_lang
 --
 ALTER TABLE jms_configuration_kpi_lang
   ADD PRIMARY KEY (id_configuration_kpi,id_lang);
 
 --
--- Indexes for table jms_configuration_lang
+-- Chỉ mục cho bảng jms_configuration_lang
 --
 ALTER TABLE jms_configuration_lang
   ADD PRIMARY KEY (id_configuration,id_lang);
 
 --
--- Indexes for table jms_connections
+-- Chỉ mục cho bảng jms_connections
 --
 ALTER TABLE jms_connections
   ADD PRIMARY KEY (id_connections),
@@ -26640,13 +26737,13 @@ ALTER TABLE jms_connections
   ADD KEY id_page (id_page);
 
 --
--- Indexes for table jms_connections_page
+-- Chỉ mục cho bảng jms_connections_page
 --
 ALTER TABLE jms_connections_page
   ADD PRIMARY KEY (id_connections,id_page,time_start);
 
 --
--- Indexes for table jms_connections_source
+-- Chỉ mục cho bảng jms_connections_source
 --
 ALTER TABLE jms_connections_source
   ADD PRIMARY KEY (id_connections_source),
@@ -26656,26 +26753,26 @@ ALTER TABLE jms_connections_source
   ADD KEY request_uri (request_uri);
 
 --
--- Indexes for table jms_contact
+-- Chỉ mục cho bảng jms_contact
 --
 ALTER TABLE jms_contact
   ADD PRIMARY KEY (id_contact);
 
 --
--- Indexes for table jms_contact_lang
+-- Chỉ mục cho bảng jms_contact_lang
 --
 ALTER TABLE jms_contact_lang
   ADD PRIMARY KEY (id_contact,id_lang);
 
 --
--- Indexes for table jms_contact_shop
+-- Chỉ mục cho bảng jms_contact_shop
 --
 ALTER TABLE jms_contact_shop
   ADD PRIMARY KEY (id_contact,id_shop),
   ADD KEY id_shop (id_shop);
 
 --
--- Indexes for table jms_country
+-- Chỉ mục cho bảng jms_country
 --
 ALTER TABLE jms_country
   ADD PRIMARY KEY (id_country),
@@ -26683,40 +26780,40 @@ ALTER TABLE jms_country
   ADD KEY country_ (id_zone);
 
 --
--- Indexes for table jms_country_lang
+-- Chỉ mục cho bảng jms_country_lang
 --
 ALTER TABLE jms_country_lang
   ADD PRIMARY KEY (id_country,id_lang);
 
 --
--- Indexes for table jms_country_shop
+-- Chỉ mục cho bảng jms_country_shop
 --
 ALTER TABLE jms_country_shop
   ADD PRIMARY KEY (id_country,id_shop),
   ADD KEY id_shop (id_shop);
 
 --
--- Indexes for table jms_currency
+-- Chỉ mục cho bảng jms_currency
 --
 ALTER TABLE jms_currency
   ADD PRIMARY KEY (id_currency),
   ADD KEY currency_iso_code (iso_code);
 
 --
--- Indexes for table jms_currency_lang
+-- Chỉ mục cho bảng jms_currency_lang
 --
 ALTER TABLE jms_currency_lang
   ADD PRIMARY KEY (id_currency,id_lang);
 
 --
--- Indexes for table jms_currency_shop
+-- Chỉ mục cho bảng jms_currency_shop
 --
 ALTER TABLE jms_currency_shop
   ADD PRIMARY KEY (id_currency,id_shop),
   ADD KEY id_shop (id_shop);
 
 --
--- Indexes for table jms_customer
+-- Chỉ mục cho bảng jms_customer
 --
 ALTER TABLE jms_customer
   ADD PRIMARY KEY (id_customer),
@@ -26728,7 +26825,7 @@ ALTER TABLE jms_customer
   ADD KEY id_shop (id_shop,date_add);
 
 --
--- Indexes for table jms_customer_group
+-- Chỉ mục cho bảng jms_customer_group
 --
 ALTER TABLE jms_customer_group
   ADD PRIMARY KEY (id_customer,id_group),
@@ -26736,7 +26833,7 @@ ALTER TABLE jms_customer_group
   ADD KEY id_customer (id_customer);
 
 --
--- Indexes for table jms_customer_message
+-- Chỉ mục cho bảng jms_customer_message
 --
 ALTER TABLE jms_customer_message
   ADD PRIMARY KEY (id_customer_message),
@@ -26744,13 +26841,13 @@ ALTER TABLE jms_customer_message
   ADD KEY id_employee (id_employee);
 
 --
--- Indexes for table jms_customer_message_sync_imap
+-- Chỉ mục cho bảng jms_customer_message_sync_imap
 --
 ALTER TABLE jms_customer_message_sync_imap
   ADD KEY md5_header_index (md5_header(4));
 
 --
--- Indexes for table jms_customer_thread
+-- Chỉ mục cho bảng jms_customer_thread
 --
 ALTER TABLE jms_customer_thread
   ADD PRIMARY KEY (id_customer_thread),
@@ -26762,7 +26859,7 @@ ALTER TABLE jms_customer_thread
   ADD KEY id_product (id_product);
 
 --
--- Indexes for table jms_customization
+-- Chỉ mục cho bảng jms_customization
 --
 ALTER TABLE jms_customization
   ADD PRIMARY KEY (id_customization,id_cart,id_product,id_address_delivery),
@@ -26770,32 +26867,32 @@ ALTER TABLE jms_customization
   ADD KEY id_cart_product (id_cart,id_product,id_product_attribute);
 
 --
--- Indexes for table jms_customization_field
+-- Chỉ mục cho bảng jms_customization_field
 --
 ALTER TABLE jms_customization_field
   ADD PRIMARY KEY (id_customization_field),
   ADD KEY id_product (id_product);
 
 --
--- Indexes for table jms_customization_field_lang
+-- Chỉ mục cho bảng jms_customization_field_lang
 --
 ALTER TABLE jms_customization_field_lang
   ADD PRIMARY KEY (id_customization_field,id_lang,id_shop);
 
 --
--- Indexes for table jms_customized_data
+-- Chỉ mục cho bảng jms_customized_data
 --
 ALTER TABLE jms_customized_data
   ADD PRIMARY KEY (id_customization,type,`index`);
 
 --
--- Indexes for table jms_date_range
+-- Chỉ mục cho bảng jms_date_range
 --
 ALTER TABLE jms_date_range
   ADD PRIMARY KEY (id_date_range);
 
 --
--- Indexes for table jms_delivery
+-- Chỉ mục cho bảng jms_delivery
 --
 ALTER TABLE jms_delivery
   ADD PRIMARY KEY (id_delivery),
@@ -26805,13 +26902,13 @@ ALTER TABLE jms_delivery
   ADD KEY id_range_weight (id_range_weight);
 
 --
--- Indexes for table jms_emailsubscription
+-- Chỉ mục cho bảng jms_emailsubscription
 --
 ALTER TABLE jms_emailsubscription
   ADD PRIMARY KEY (id);
 
 --
--- Indexes for table jms_employee
+-- Chỉ mục cho bảng jms_employee
 --
 ALTER TABLE jms_employee
   ADD PRIMARY KEY (id_employee),
@@ -26820,27 +26917,27 @@ ALTER TABLE jms_employee
   ADD KEY id_profile (id_profile);
 
 --
--- Indexes for table jms_employee_shop
+-- Chỉ mục cho bảng jms_employee_shop
 --
 ALTER TABLE jms_employee_shop
   ADD PRIMARY KEY (id_employee,id_shop),
   ADD KEY id_shop (id_shop);
 
 --
--- Indexes for table jms_feature
+-- Chỉ mục cho bảng jms_feature
 --
 ALTER TABLE jms_feature
   ADD PRIMARY KEY (id_feature);
 
 --
--- Indexes for table jms_feature_lang
+-- Chỉ mục cho bảng jms_feature_lang
 --
 ALTER TABLE jms_feature_lang
   ADD PRIMARY KEY (id_feature,id_lang),
   ADD KEY id_lang (id_lang,name);
 
 --
--- Indexes for table jms_feature_product
+-- Chỉ mục cho bảng jms_feature_product
 --
 ALTER TABLE jms_feature_product
   ADD PRIMARY KEY (id_feature,id_product,id_feature_value),
@@ -26848,66 +26945,66 @@ ALTER TABLE jms_feature_product
   ADD KEY id_product (id_product);
 
 --
--- Indexes for table jms_feature_shop
+-- Chỉ mục cho bảng jms_feature_shop
 --
 ALTER TABLE jms_feature_shop
   ADD PRIMARY KEY (id_feature,id_shop),
   ADD KEY id_shop (id_shop);
 
 --
--- Indexes for table jms_feature_value
+-- Chỉ mục cho bảng jms_feature_value
 --
 ALTER TABLE jms_feature_value
   ADD PRIMARY KEY (id_feature_value),
   ADD KEY feature (id_feature);
 
 --
--- Indexes for table jms_feature_value_lang
+-- Chỉ mục cho bảng jms_feature_value_lang
 --
 ALTER TABLE jms_feature_value_lang
   ADD PRIMARY KEY (id_feature_value,id_lang);
 
 --
--- Indexes for table jms_gender
+-- Chỉ mục cho bảng jms_gender
 --
 ALTER TABLE jms_gender
   ADD PRIMARY KEY (id_gender);
 
 --
--- Indexes for table jms_gender_lang
+-- Chỉ mục cho bảng jms_gender_lang
 --
 ALTER TABLE jms_gender_lang
   ADD PRIMARY KEY (id_gender,id_lang),
   ADD KEY id_gender (id_gender);
 
 --
--- Indexes for table jms_group
+-- Chỉ mục cho bảng jms_group
 --
 ALTER TABLE jms_group
   ADD PRIMARY KEY (id_group);
 
 --
--- Indexes for table jms_group_lang
+-- Chỉ mục cho bảng jms_group_lang
 --
 ALTER TABLE jms_group_lang
   ADD PRIMARY KEY (id_group,id_lang);
 
 --
--- Indexes for table jms_group_reduction
+-- Chỉ mục cho bảng jms_group_reduction
 --
 ALTER TABLE jms_group_reduction
   ADD PRIMARY KEY (id_group_reduction),
   ADD UNIQUE KEY id_group (id_group,id_category);
 
 --
--- Indexes for table jms_group_shop
+-- Chỉ mục cho bảng jms_group_shop
 --
 ALTER TABLE jms_group_shop
   ADD PRIMARY KEY (id_group,id_shop),
   ADD KEY id_shop (id_shop);
 
 --
--- Indexes for table jms_guest
+-- Chỉ mục cho bảng jms_guest
 --
 ALTER TABLE jms_guest
   ADD PRIMARY KEY (id_guest),
@@ -26916,39 +27013,39 @@ ALTER TABLE jms_guest
   ADD KEY id_web_browser (id_web_browser);
 
 --
--- Indexes for table jms_homeslider
+-- Chỉ mục cho bảng jms_homeslider
 --
 ALTER TABLE jms_homeslider
   ADD PRIMARY KEY (id_homeslider_slides,id_shop);
 
 --
--- Indexes for table jms_homeslider_slides
+-- Chỉ mục cho bảng jms_homeslider_slides
 --
 ALTER TABLE jms_homeslider_slides
   ADD PRIMARY KEY (id_homeslider_slides);
 
 --
--- Indexes for table jms_homeslider_slides_lang
+-- Chỉ mục cho bảng jms_homeslider_slides_lang
 --
 ALTER TABLE jms_homeslider_slides_lang
   ADD PRIMARY KEY (id_homeslider_slides,id_lang);
 
 --
--- Indexes for table jms_hook
+-- Chỉ mục cho bảng jms_hook
 --
 ALTER TABLE jms_hook
   ADD PRIMARY KEY (id_hook),
   ADD UNIQUE KEY hook_name (name);
 
 --
--- Indexes for table jms_hook_alias
+-- Chỉ mục cho bảng jms_hook_alias
 --
 ALTER TABLE jms_hook_alias
   ADD PRIMARY KEY (id_hook_alias),
   ADD UNIQUE KEY alias (alias);
 
 --
--- Indexes for table jms_hook_module
+-- Chỉ mục cho bảng jms_hook_module
 --
 ALTER TABLE jms_hook_module
   ADD PRIMARY KEY (id_module,id_hook,id_shop),
@@ -26957,7 +27054,7 @@ ALTER TABLE jms_hook_module
   ADD KEY position (id_shop,position);
 
 --
--- Indexes for table jms_hook_module_exceptions
+-- Chỉ mục cho bảng jms_hook_module_exceptions
 --
 ALTER TABLE jms_hook_module_exceptions
   ADD PRIMARY KEY (id_hook_module_exceptions),
@@ -26965,19 +27062,19 @@ ALTER TABLE jms_hook_module_exceptions
   ADD KEY id_hook (id_hook);
 
 --
--- Indexes for table jms_hotdeals
+-- Chỉ mục cho bảng jms_hotdeals
 --
 ALTER TABLE jms_hotdeals
   ADD PRIMARY KEY (id_hotdeals);
 
 --
--- Indexes for table jms_hotdeals_items
+-- Chỉ mục cho bảng jms_hotdeals_items
 --
 ALTER TABLE jms_hotdeals_items
   ADD PRIMARY KEY (id_hotdeals);
 
 --
--- Indexes for table jms_image
+-- Chỉ mục cho bảng jms_image
 --
 ALTER TABLE jms_image
   ADD PRIMARY KEY (id_image),
@@ -26986,14 +27083,14 @@ ALTER TABLE jms_image
   ADD KEY image_product (id_product);
 
 --
--- Indexes for table jms_image_lang
+-- Chỉ mục cho bảng jms_image_lang
 --
 ALTER TABLE jms_image_lang
   ADD PRIMARY KEY (id_image,id_lang),
   ADD KEY id_image (id_image);
 
 --
--- Indexes for table jms_image_shop
+-- Chỉ mục cho bảng jms_image_shop
 --
 ALTER TABLE jms_image_shop
   ADD PRIMARY KEY (id_image,id_shop),
@@ -27001,266 +27098,266 @@ ALTER TABLE jms_image_shop
   ADD KEY id_shop (id_shop);
 
 --
--- Indexes for table jms_image_type
+-- Chỉ mục cho bảng jms_image_type
 --
 ALTER TABLE jms_image_type
   ADD PRIMARY KEY (id_image_type),
   ADD KEY image_type_name (name);
 
 --
--- Indexes for table jms_import_match
+-- Chỉ mục cho bảng jms_import_match
 --
 ALTER TABLE jms_import_match
   ADD PRIMARY KEY (id_import_match);
 
 --
--- Indexes for table jms_info
+-- Chỉ mục cho bảng jms_info
 --
 ALTER TABLE jms_info
   ADD PRIMARY KEY (id_info);
 
 --
--- Indexes for table jms_info_lang
+-- Chỉ mục cho bảng jms_info_lang
 --
 ALTER TABLE jms_info_lang
   ADD PRIMARY KEY (id_info,id_lang,id_shop);
 
 --
--- Indexes for table jms_info_shop
+-- Chỉ mục cho bảng jms_info_shop
 --
 ALTER TABLE jms_info_shop
   ADD PRIMARY KEY (id_info,id_shop);
 
 --
--- Indexes for table jms_jmsblog_categories
+-- Chỉ mục cho bảng jms_jmsblog_categories
 --
 ALTER TABLE jms_jmsblog_categories
   ADD PRIMARY KEY (category_id);
 
 --
--- Indexes for table jms_jmsblog_categories_lang
+-- Chỉ mục cho bảng jms_jmsblog_categories_lang
 --
 ALTER TABLE jms_jmsblog_categories_lang
   ADD PRIMARY KEY (category_id,id_lang);
 
 --
--- Indexes for table jms_jmsblog_posts
+-- Chỉ mục cho bảng jms_jmsblog_posts
 --
 ALTER TABLE jms_jmsblog_posts
   ADD PRIMARY KEY (post_id);
 
 --
--- Indexes for table jms_jmsblog_posts_comments
+-- Chỉ mục cho bảng jms_jmsblog_posts_comments
 --
 ALTER TABLE jms_jmsblog_posts_comments
   ADD PRIMARY KEY (comment_id);
 
 --
--- Indexes for table jms_jmsblog_posts_lang
+-- Chỉ mục cho bảng jms_jmsblog_posts_lang
 --
 ALTER TABLE jms_jmsblog_posts_lang
   ADD PRIMARY KEY (post_id,id_lang);
 
 --
--- Indexes for table jms_jmsbrands
+-- Chỉ mục cho bảng jms_jmsbrands
 --
 ALTER TABLE jms_jmsbrands
   ADD PRIMARY KEY (brand_id,id_shop);
 
 --
--- Indexes for table jms_jmsbrands_logos
+-- Chỉ mục cho bảng jms_jmsbrands_logos
 --
 ALTER TABLE jms_jmsbrands_logos
   ADD PRIMARY KEY (brand_id);
 
 --
--- Indexes for table jms_jmsbrands_logos_lang
+-- Chỉ mục cho bảng jms_jmsbrands_logos_lang
 --
 ALTER TABLE jms_jmsbrands_logos_lang
   ADD PRIMARY KEY (brand_id,id_lang);
 
 --
--- Indexes for table jms_jmsfacebookusers
+-- Chỉ mục cho bảng jms_jmsfacebookusers
 --
 ALTER TABLE jms_jmsfacebookusers
   ADD PRIMARY KEY (id);
 
 --
--- Indexes for table jms_jmsflashsales
+-- Chỉ mục cho bảng jms_jmsflashsales
 --
 ALTER TABLE jms_jmsflashsales
   ADD PRIMARY KEY (item_id);
 
 --
--- Indexes for table jms_jmsflashsales_categories
+-- Chỉ mục cho bảng jms_jmsflashsales_categories
 --
 ALTER TABLE jms_jmsflashsales_categories
   ADD PRIMARY KEY (category_id);
 
 --
--- Indexes for table jms_jmsflashsales_categories_lang
+-- Chỉ mục cho bảng jms_jmsflashsales_categories_lang
 --
 ALTER TABLE jms_jmsflashsales_categories_lang
   ADD PRIMARY KEY (category_id,id_lang);
 
 --
--- Indexes for table jms_jmsflashsales_items
+-- Chỉ mục cho bảng jms_jmsflashsales_items
 --
 ALTER TABLE jms_jmsflashsales_items
   ADD PRIMARY KEY (item_id,product_id);
 
 --
--- Indexes for table jms_jmshtml_left
+-- Chỉ mục cho bảng jms_jmshtml_left
 --
 ALTER TABLE jms_jmshtml_left
   ADD PRIMARY KEY (html_id,id_shop);
 
 --
--- Indexes for table jms_jmshtml_left_lang
+-- Chỉ mục cho bảng jms_jmshtml_left_lang
 --
 ALTER TABLE jms_jmshtml_left_lang
   ADD PRIMARY KEY (html_id,id_lang);
 
 --
--- Indexes for table jms_jmsmaploc
+-- Chỉ mục cho bảng jms_jmsmaploc
 --
 ALTER TABLE jms_jmsmaploc
   ADD PRIMARY KEY (id_loc,id_shop);
 
 --
--- Indexes for table jms_jmsmaploc_locs
+-- Chỉ mục cho bảng jms_jmsmaploc_locs
 --
 ALTER TABLE jms_jmsmaploc_locs
   ADD PRIMARY KEY (id_loc);
 
 --
--- Indexes for table jms_jmsmaploc_locs_lang
+-- Chỉ mục cho bảng jms_jmsmaploc_locs_lang
 --
 ALTER TABLE jms_jmsmaploc_locs_lang
   ADD PRIMARY KEY (id_loc,id_lang);
 
 --
--- Indexes for table jms_jmsmegamenu
+-- Chỉ mục cho bảng jms_jmsmegamenu
 --
 ALTER TABLE jms_jmsmegamenu
   ADD PRIMARY KEY (mitem_id);
 
 --
--- Indexes for table jms_jmspagebuilder
+-- Chỉ mục cho bảng jms_jmspagebuilder
 --
 ALTER TABLE jms_jmspagebuilder
   ADD PRIMARY KEY (id_homepage,id_shop);
 
 --
--- Indexes for table jms_jmspagebuilder_homepages
+-- Chỉ mục cho bảng jms_jmspagebuilder_homepages
 --
 ALTER TABLE jms_jmspagebuilder_homepages
   ADD PRIMARY KEY (id_homepage);
 
 --
--- Indexes for table jms_jmstestimonials
+-- Chỉ mục cho bảng jms_jmstestimonials
 --
 ALTER TABLE jms_jmstestimonials
   ADD PRIMARY KEY (id_testimonial);
 
 --
--- Indexes for table jms_jmstestimonials_lang
+-- Chỉ mục cho bảng jms_jmstestimonials_lang
 --
 ALTER TABLE jms_jmstestimonials_lang
   ADD PRIMARY KEY (id_testimonial,id_lang);
 
 --
--- Indexes for table jms_jmsvermegamenu
+-- Chỉ mục cho bảng jms_jmsvermegamenu
 --
 ALTER TABLE jms_jmsvermegamenu
   ADD PRIMARY KEY (mitem_id);
 
 --
--- Indexes for table jms_jms_hook
+-- Chỉ mục cho bảng jms_jms_hook
 --
 ALTER TABLE jms_jms_hook
   ADD PRIMARY KEY (id_hook);
 
 --
--- Indexes for table jms_jms_layer_style
+-- Chỉ mục cho bảng jms_jms_layer_style
 --
 ALTER TABLE jms_jms_layer_style
   ADD PRIMARY KEY (id_style);
 
 --
--- Indexes for table jms_jms_producttab
+-- Chỉ mục cho bảng jms_jms_producttab
 --
 ALTER TABLE jms_jms_producttab
   ADD PRIMARY KEY (tab_id,id_shop);
 
 --
--- Indexes for table jms_jms_producttab_ctab
+-- Chỉ mục cho bảng jms_jms_producttab_ctab
 --
 ALTER TABLE jms_jms_producttab_ctab
   ADD PRIMARY KEY (tab_id);
 
 --
--- Indexes for table jms_jms_producttab_ctab_lang
+-- Chỉ mục cho bảng jms_jms_producttab_ctab_lang
 --
 ALTER TABLE jms_jms_producttab_ctab_lang
   ADD PRIMARY KEY (tab_id,id_lang);
 
 --
--- Indexes for table jms_jms_product_video
+-- Chỉ mục cho bảng jms_jms_product_video
 --
 ALTER TABLE jms_jms_product_video
   ADD PRIMARY KEY (id);
 
 --
--- Indexes for table jms_jms_slider
+-- Chỉ mục cho bảng jms_jms_slider
 --
 ALTER TABLE jms_jms_slider
   ADD PRIMARY KEY (id_slider);
 
 --
--- Indexes for table jms_jms_slider_hook
+-- Chỉ mục cho bảng jms_jms_slider_hook
 --
 ALTER TABLE jms_jms_slider_hook
   ADD PRIMARY KEY (id_slider,id_hook);
 
 --
--- Indexes for table jms_jms_slider_lang
+-- Chỉ mục cho bảng jms_jms_slider_lang
 --
 ALTER TABLE jms_jms_slider_lang
   ADD PRIMARY KEY (id_slider,id_lang);
 
 --
--- Indexes for table jms_jms_slides
+-- Chỉ mục cho bảng jms_jms_slides
 --
 ALTER TABLE jms_jms_slides
   ADD PRIMARY KEY (id_slide);
 
 --
--- Indexes for table jms_jms_slides_lang
+-- Chỉ mục cho bảng jms_jms_slides_lang
 --
 ALTER TABLE jms_jms_slides_lang
   ADD PRIMARY KEY (id_slide,id_lang);
 
 --
--- Indexes for table jms_jms_slides_layers
+-- Chỉ mục cho bảng jms_jms_slides_layers
 --
 ALTER TABLE jms_jms_slides_layers
   ADD PRIMARY KEY (id_layer,id_slide);
 
 --
--- Indexes for table jms_jms_slides_shop
+-- Chỉ mục cho bảng jms_jms_slides_shop
 --
 ALTER TABLE jms_jms_slides_shop
   ADD PRIMARY KEY (id_slide,id_shop);
 
 --
--- Indexes for table jms_lang
+-- Chỉ mục cho bảng jms_lang
 --
 ALTER TABLE jms_lang
   ADD PRIMARY KEY (id_lang);
 
 --
--- Indexes for table jms_lang_shop
+-- Chỉ mục cho bảng jms_lang_shop
 --
 ALTER TABLE jms_lang_shop
   ADD PRIMARY KEY (id_lang,id_shop),
@@ -27268,7 +27365,7 @@ ALTER TABLE jms_lang_shop
   ADD KEY IDX_FDF96F40274A50A0 (id_shop);
 
 --
--- Indexes for table jms_layered_category
+-- Chỉ mục cho bảng jms_layered_category
 --
 ALTER TABLE jms_layered_category
   ADD PRIMARY KEY (id_layered_category),
@@ -27276,62 +27373,62 @@ ALTER TABLE jms_layered_category
   ADD KEY id_category (id_category,type);
 
 --
--- Indexes for table jms_layered_filter
+-- Chỉ mục cho bảng jms_layered_filter
 --
 ALTER TABLE jms_layered_filter
   ADD PRIMARY KEY (id_layered_filter);
 
 --
--- Indexes for table jms_layered_filter_block
+-- Chỉ mục cho bảng jms_layered_filter_block
 --
 ALTER TABLE jms_layered_filter_block
   ADD PRIMARY KEY (hash);
 
 --
--- Indexes for table jms_layered_filter_shop
+-- Chỉ mục cho bảng jms_layered_filter_shop
 --
 ALTER TABLE jms_layered_filter_shop
   ADD PRIMARY KEY (id_layered_filter,id_shop),
   ADD KEY id_shop (id_shop);
 
 --
--- Indexes for table jms_layered_indexable_attribute_group
+-- Chỉ mục cho bảng jms_layered_indexable_attribute_group
 --
 ALTER TABLE jms_layered_indexable_attribute_group
   ADD PRIMARY KEY (id_attribute_group);
 
 --
--- Indexes for table jms_layered_indexable_attribute_group_lang_value
+-- Chỉ mục cho bảng jms_layered_indexable_attribute_group_lang_value
 --
 ALTER TABLE jms_layered_indexable_attribute_group_lang_value
   ADD PRIMARY KEY (id_attribute_group,id_lang);
 
 --
--- Indexes for table jms_layered_indexable_attribute_lang_value
+-- Chỉ mục cho bảng jms_layered_indexable_attribute_lang_value
 --
 ALTER TABLE jms_layered_indexable_attribute_lang_value
   ADD PRIMARY KEY (id_attribute,id_lang);
 
 --
--- Indexes for table jms_layered_indexable_feature
+-- Chỉ mục cho bảng jms_layered_indexable_feature
 --
 ALTER TABLE jms_layered_indexable_feature
   ADD PRIMARY KEY (id_feature);
 
 --
--- Indexes for table jms_layered_indexable_feature_lang_value
+-- Chỉ mục cho bảng jms_layered_indexable_feature_lang_value
 --
 ALTER TABLE jms_layered_indexable_feature_lang_value
   ADD PRIMARY KEY (id_feature,id_lang);
 
 --
--- Indexes for table jms_layered_indexable_feature_value_lang_value
+-- Chỉ mục cho bảng jms_layered_indexable_feature_value_lang_value
 --
 ALTER TABLE jms_layered_indexable_feature_value_lang_value
   ADD PRIMARY KEY (id_feature_value,id_lang);
 
 --
--- Indexes for table jms_layered_price_index
+-- Chỉ mục cho bảng jms_layered_price_index
 --
 ALTER TABLE jms_layered_price_index
   ADD PRIMARY KEY (id_product,id_currency,id_shop,id_country),
@@ -27340,83 +27437,83 @@ ALTER TABLE jms_layered_price_index
   ADD KEY price_max (price_max);
 
 --
--- Indexes for table jms_layered_product_attribute
+-- Chỉ mục cho bảng jms_layered_product_attribute
 --
 ALTER TABLE jms_layered_product_attribute
   ADD PRIMARY KEY (id_attribute,id_product,id_shop),
   ADD UNIQUE KEY id_attribute_group (id_attribute_group,id_attribute,id_product,id_shop);
 
 --
--- Indexes for table jms_linksmenutop
+-- Chỉ mục cho bảng jms_linksmenutop
 --
 ALTER TABLE jms_linksmenutop
   ADD PRIMARY KEY (id_linksmenutop),
   ADD KEY id_shop (id_shop);
 
 --
--- Indexes for table jms_linksmenutop_lang
+-- Chỉ mục cho bảng jms_linksmenutop_lang
 --
 ALTER TABLE jms_linksmenutop_lang
   ADD KEY id_linksmenutop (id_linksmenutop,id_lang,id_shop);
 
 --
--- Indexes for table jms_link_block
+-- Chỉ mục cho bảng jms_link_block
 --
 ALTER TABLE jms_link_block
   ADD PRIMARY KEY (id_link_block);
 
 --
--- Indexes for table jms_link_block_lang
+-- Chỉ mục cho bảng jms_link_block_lang
 --
 ALTER TABLE jms_link_block_lang
   ADD PRIMARY KEY (id_link_block,id_lang);
 
 --
--- Indexes for table jms_link_block_shop
+-- Chỉ mục cho bảng jms_link_block_shop
 --
 ALTER TABLE jms_link_block_shop
   ADD PRIMARY KEY (id_link_block,id_shop);
 
 --
--- Indexes for table jms_log
+-- Chỉ mục cho bảng jms_log
 --
 ALTER TABLE jms_log
   ADD PRIMARY KEY (id_log);
 
 --
--- Indexes for table jms_mail
+-- Chỉ mục cho bảng jms_mail
 --
 ALTER TABLE jms_mail
   ADD PRIMARY KEY (id_mail),
   ADD KEY recipient (recipient(10));
 
 --
--- Indexes for table jms_manufacturer
+-- Chỉ mục cho bảng jms_manufacturer
 --
 ALTER TABLE jms_manufacturer
   ADD PRIMARY KEY (id_manufacturer);
 
 --
--- Indexes for table jms_manufacturer_lang
+-- Chỉ mục cho bảng jms_manufacturer_lang
 --
 ALTER TABLE jms_manufacturer_lang
   ADD PRIMARY KEY (id_manufacturer,id_lang);
 
 --
--- Indexes for table jms_manufacturer_shop
+-- Chỉ mục cho bảng jms_manufacturer_shop
 --
 ALTER TABLE jms_manufacturer_shop
   ADD PRIMARY KEY (id_manufacturer,id_shop),
   ADD KEY id_shop (id_shop);
 
 --
--- Indexes for table jms_memcached_servers
+-- Chỉ mục cho bảng jms_memcached_servers
 --
 ALTER TABLE jms_memcached_servers
   ADD PRIMARY KEY (id_memcached_server);
 
 --
--- Indexes for table jms_message
+-- Chỉ mục cho bảng jms_message
 --
 ALTER TABLE jms_message
   ADD PRIMARY KEY (id_message),
@@ -27426,20 +27523,20 @@ ALTER TABLE jms_message
   ADD KEY id_employee (id_employee);
 
 --
--- Indexes for table jms_message_readed
+-- Chỉ mục cho bảng jms_message_readed
 --
 ALTER TABLE jms_message_readed
   ADD PRIMARY KEY (id_message,id_employee);
 
 --
--- Indexes for table jms_meta
+-- Chỉ mục cho bảng jms_meta
 --
 ALTER TABLE jms_meta
   ADD PRIMARY KEY (id_meta),
   ADD UNIQUE KEY page (page);
 
 --
--- Indexes for table jms_meta_lang
+-- Chỉ mục cho bảng jms_meta_lang
 --
 ALTER TABLE jms_meta_lang
   ADD PRIMARY KEY (id_meta,id_shop,id_lang),
@@ -27447,7 +27544,7 @@ ALTER TABLE jms_meta_lang
   ADD KEY id_lang (id_lang);
 
 --
--- Indexes for table jms_module
+-- Chỉ mục cho bảng jms_module
 --
 ALTER TABLE jms_module
   ADD PRIMARY KEY (id_module),
@@ -27455,64 +27552,64 @@ ALTER TABLE jms_module
   ADD KEY name (name);
 
 --
--- Indexes for table jms_module_access
+-- Chỉ mục cho bảng jms_module_access
 --
 ALTER TABLE jms_module_access
   ADD PRIMARY KEY (id_profile,id_authorization_role);
 
 --
--- Indexes for table jms_module_carrier
+-- Chỉ mục cho bảng jms_module_carrier
 --
 ALTER TABLE jms_module_carrier
   ADD PRIMARY KEY (id_module,id_shop,id_reference);
 
 --
--- Indexes for table jms_module_country
+-- Chỉ mục cho bảng jms_module_country
 --
 ALTER TABLE jms_module_country
   ADD PRIMARY KEY (id_module,id_shop,id_country);
 
 --
--- Indexes for table jms_module_currency
+-- Chỉ mục cho bảng jms_module_currency
 --
 ALTER TABLE jms_module_currency
   ADD PRIMARY KEY (id_module,id_shop,id_currency),
   ADD KEY id_module (id_module);
 
 --
--- Indexes for table jms_module_group
+-- Chỉ mục cho bảng jms_module_group
 --
 ALTER TABLE jms_module_group
   ADD PRIMARY KEY (id_module,id_shop,id_group);
 
 --
--- Indexes for table jms_module_history
+-- Chỉ mục cho bảng jms_module_history
 --
 ALTER TABLE jms_module_history
   ADD PRIMARY KEY (id);
 
 --
--- Indexes for table jms_module_preference
+-- Chỉ mục cho bảng jms_module_preference
 --
 ALTER TABLE jms_module_preference
   ADD PRIMARY KEY (id_module_preference),
   ADD UNIQUE KEY employee_module (id_employee,module);
 
 --
--- Indexes for table jms_module_shop
+-- Chỉ mục cho bảng jms_module_shop
 --
 ALTER TABLE jms_module_shop
   ADD PRIMARY KEY (id_module,id_shop),
   ADD KEY id_shop (id_shop);
 
 --
--- Indexes for table jms_operating_system
+-- Chỉ mục cho bảng jms_operating_system
 --
 ALTER TABLE jms_operating_system
   ADD PRIMARY KEY (id_operating_system);
 
 --
--- Indexes for table jms_orders
+-- Chỉ mục cho bảng jms_orders
 --
 ALTER TABLE jms_orders
   ADD PRIMARY KEY (id_order),
@@ -27531,7 +27628,7 @@ ALTER TABLE jms_orders
   ADD KEY date_add (date_add);
 
 --
--- Indexes for table jms_order_carrier
+-- Chỉ mục cho bảng jms_order_carrier
 --
 ALTER TABLE jms_order_carrier
   ADD PRIMARY KEY (id_order_carrier),
@@ -27540,7 +27637,7 @@ ALTER TABLE jms_order_carrier
   ADD KEY id_order_invoice (id_order_invoice);
 
 --
--- Indexes for table jms_order_cart_rule
+-- Chỉ mục cho bảng jms_order_cart_rule
 --
 ALTER TABLE jms_order_cart_rule
   ADD PRIMARY KEY (id_order_cart_rule),
@@ -27548,7 +27645,7 @@ ALTER TABLE jms_order_cart_rule
   ADD KEY id_cart_rule (id_cart_rule);
 
 --
--- Indexes for table jms_order_detail
+-- Chỉ mục cho bảng jms_order_detail
 --
 ALTER TABLE jms_order_detail
   ADD PRIMARY KEY (id_order_detail),
@@ -27559,14 +27656,14 @@ ALTER TABLE jms_order_detail
   ADD KEY id_order_id_order_detail (id_order,id_order_detail);
 
 --
--- Indexes for table jms_order_detail_tax
+-- Chỉ mục cho bảng jms_order_detail_tax
 --
 ALTER TABLE jms_order_detail_tax
   ADD KEY id_order_detail (id_order_detail),
   ADD KEY id_tax (id_tax);
 
 --
--- Indexes for table jms_order_history
+-- Chỉ mục cho bảng jms_order_history
 --
 ALTER TABLE jms_order_history
   ADD PRIMARY KEY (id_order_history),
@@ -27575,14 +27672,14 @@ ALTER TABLE jms_order_history
   ADD KEY id_order_state (id_order_state);
 
 --
--- Indexes for table jms_order_invoice
+-- Chỉ mục cho bảng jms_order_invoice
 --
 ALTER TABLE jms_order_invoice
   ADD PRIMARY KEY (id_order_invoice),
   ADD KEY id_order (id_order);
 
 --
--- Indexes for table jms_order_invoice_payment
+-- Chỉ mục cho bảng jms_order_invoice_payment
 --
 ALTER TABLE jms_order_invoice_payment
   ADD PRIMARY KEY (id_order_invoice,id_order_payment),
@@ -27590,32 +27687,32 @@ ALTER TABLE jms_order_invoice_payment
   ADD KEY id_order (id_order);
 
 --
--- Indexes for table jms_order_invoice_tax
+-- Chỉ mục cho bảng jms_order_invoice_tax
 --
 ALTER TABLE jms_order_invoice_tax
   ADD KEY id_tax (id_tax);
 
 --
--- Indexes for table jms_order_message
+-- Chỉ mục cho bảng jms_order_message
 --
 ALTER TABLE jms_order_message
   ADD PRIMARY KEY (id_order_message);
 
 --
--- Indexes for table jms_order_message_lang
+-- Chỉ mục cho bảng jms_order_message_lang
 --
 ALTER TABLE jms_order_message_lang
   ADD PRIMARY KEY (id_order_message,id_lang);
 
 --
--- Indexes for table jms_order_payment
+-- Chỉ mục cho bảng jms_order_payment
 --
 ALTER TABLE jms_order_payment
   ADD PRIMARY KEY (id_order_payment),
   ADD KEY order_reference (order_reference);
 
 --
--- Indexes for table jms_order_return
+-- Chỉ mục cho bảng jms_order_return
 --
 ALTER TABLE jms_order_return
   ADD PRIMARY KEY (id_order_return),
@@ -27623,25 +27720,25 @@ ALTER TABLE jms_order_return
   ADD KEY id_order (id_order);
 
 --
--- Indexes for table jms_order_return_detail
+-- Chỉ mục cho bảng jms_order_return_detail
 --
 ALTER TABLE jms_order_return_detail
   ADD PRIMARY KEY (id_order_return,id_order_detail,id_customization);
 
 --
--- Indexes for table jms_order_return_state
+-- Chỉ mục cho bảng jms_order_return_state
 --
 ALTER TABLE jms_order_return_state
   ADD PRIMARY KEY (id_order_return_state);
 
 --
--- Indexes for table jms_order_return_state_lang
+-- Chỉ mục cho bảng jms_order_return_state_lang
 --
 ALTER TABLE jms_order_return_state_lang
   ADD PRIMARY KEY (id_order_return_state,id_lang);
 
 --
--- Indexes for table jms_order_slip
+-- Chỉ mục cho bảng jms_order_slip
 --
 ALTER TABLE jms_order_slip
   ADD PRIMARY KEY (id_order_slip),
@@ -27649,40 +27746,40 @@ ALTER TABLE jms_order_slip
   ADD KEY id_order (id_order);
 
 --
--- Indexes for table jms_order_slip_detail
+-- Chỉ mục cho bảng jms_order_slip_detail
 --
 ALTER TABLE jms_order_slip_detail
   ADD PRIMARY KEY (id_order_slip,id_order_detail);
 
 --
--- Indexes for table jms_order_slip_detail_tax
+-- Chỉ mục cho bảng jms_order_slip_detail_tax
 --
 ALTER TABLE jms_order_slip_detail_tax
   ADD KEY id_order_slip_detail (id_order_slip_detail),
   ADD KEY id_tax (id_tax);
 
 --
--- Indexes for table jms_order_state
+-- Chỉ mục cho bảng jms_order_state
 --
 ALTER TABLE jms_order_state
   ADD PRIMARY KEY (id_order_state),
   ADD KEY module_name (module_name);
 
 --
--- Indexes for table jms_order_state_lang
+-- Chỉ mục cho bảng jms_order_state_lang
 --
 ALTER TABLE jms_order_state_lang
   ADD PRIMARY KEY (id_order_state,id_lang);
 
 --
--- Indexes for table jms_pack
+-- Chỉ mục cho bảng jms_pack
 --
 ALTER TABLE jms_pack
   ADD PRIMARY KEY (id_product_pack,id_product_item,id_product_attribute_item),
   ADD KEY product_item (id_product_item,id_product_attribute_item);
 
 --
--- Indexes for table jms_page
+-- Chỉ mục cho bảng jms_page
 --
 ALTER TABLE jms_page
   ADD PRIMARY KEY (id_page),
@@ -27690,27 +27787,27 @@ ALTER TABLE jms_page
   ADD KEY id_object (id_object);
 
 --
--- Indexes for table jms_pagenotfound
+-- Chỉ mục cho bảng jms_pagenotfound
 --
 ALTER TABLE jms_pagenotfound
   ADD PRIMARY KEY (id_pagenotfound),
   ADD KEY date_add (date_add);
 
 --
--- Indexes for table jms_page_type
+-- Chỉ mục cho bảng jms_page_type
 --
 ALTER TABLE jms_page_type
   ADD PRIMARY KEY (id_page_type),
   ADD KEY name (name);
 
 --
--- Indexes for table jms_page_viewed
+-- Chỉ mục cho bảng jms_page_viewed
 --
 ALTER TABLE jms_page_viewed
   ADD PRIMARY KEY (id_page,id_date_range,id_shop);
 
 --
--- Indexes for table jms_product
+-- Chỉ mục cho bảng jms_product
 --
 ALTER TABLE jms_product
   ADD PRIMARY KEY (id_product),
@@ -27722,13 +27819,13 @@ ALTER TABLE jms_product
   ADD KEY state (state,date_upd);
 
 --
--- Indexes for table jms_product_attachment
+-- Chỉ mục cho bảng jms_product_attachment
 --
 ALTER TABLE jms_product_attachment
   ADD PRIMARY KEY (id_product,id_attachment);
 
 --
--- Indexes for table jms_product_attribute
+-- Chỉ mục cho bảng jms_product_attribute
 --
 ALTER TABLE jms_product_attribute
   ADD PRIMARY KEY (id_product_attribute),
@@ -27739,52 +27836,52 @@ ALTER TABLE jms_product_attribute
   ADD KEY id_product_id_product_attribute (id_product_attribute,id_product);
 
 --
--- Indexes for table jms_product_attribute_combination
+-- Chỉ mục cho bảng jms_product_attribute_combination
 --
 ALTER TABLE jms_product_attribute_combination
   ADD PRIMARY KEY (id_attribute,id_product_attribute),
   ADD KEY id_product_attribute (id_product_attribute);
 
 --
--- Indexes for table jms_product_attribute_image
+-- Chỉ mục cho bảng jms_product_attribute_image
 --
 ALTER TABLE jms_product_attribute_image
   ADD PRIMARY KEY (id_product_attribute,id_image),
   ADD KEY id_image (id_image);
 
 --
--- Indexes for table jms_product_attribute_shop
+-- Chỉ mục cho bảng jms_product_attribute_shop
 --
 ALTER TABLE jms_product_attribute_shop
   ADD PRIMARY KEY (id_product_attribute,id_shop),
   ADD UNIQUE KEY id_product (id_product,id_shop,default_on);
 
 --
--- Indexes for table jms_product_carrier
+-- Chỉ mục cho bảng jms_product_carrier
 --
 ALTER TABLE jms_product_carrier
   ADD PRIMARY KEY (id_product,id_carrier_reference,id_shop);
 
 --
--- Indexes for table jms_product_country_tax
+-- Chỉ mục cho bảng jms_product_country_tax
 --
 ALTER TABLE jms_product_country_tax
   ADD PRIMARY KEY (id_product,id_country);
 
 --
--- Indexes for table jms_product_download
+-- Chỉ mục cho bảng jms_product_download
 --
 ALTER TABLE jms_product_download
   ADD PRIMARY KEY (id_product_download);
 
 --
--- Indexes for table jms_product_group_reduction_cache
+-- Chỉ mục cho bảng jms_product_group_reduction_cache
 --
 ALTER TABLE jms_product_group_reduction_cache
   ADD PRIMARY KEY (id_product,id_group);
 
 --
--- Indexes for table jms_product_lang
+-- Chỉ mục cho bảng jms_product_lang
 --
 ALTER TABLE jms_product_lang
   ADD PRIMARY KEY (id_product,id_shop,id_lang),
@@ -27792,14 +27889,14 @@ ALTER TABLE jms_product_lang
   ADD KEY name (name);
 
 --
--- Indexes for table jms_product_sale
+-- Chỉ mục cho bảng jms_product_sale
 --
 ALTER TABLE jms_product_sale
   ADD PRIMARY KEY (id_product),
   ADD KEY quantity (quantity);
 
 --
--- Indexes for table jms_product_shop
+-- Chỉ mục cho bảng jms_product_shop
 --
 ALTER TABLE jms_product_shop
   ADD PRIMARY KEY (id_product,id_shop),
@@ -27808,7 +27905,7 @@ ALTER TABLE jms_product_shop
   ADD KEY indexed (indexed,active,id_product);
 
 --
--- Indexes for table jms_product_supplier
+-- Chỉ mục cho bảng jms_product_supplier
 --
 ALTER TABLE jms_product_supplier
   ADD PRIMARY KEY (id_product_supplier),
@@ -27816,7 +27913,7 @@ ALTER TABLE jms_product_supplier
   ADD KEY id_supplier (id_supplier,id_product);
 
 --
--- Indexes for table jms_product_tag
+-- Chỉ mục cho bảng jms_product_tag
 --
 ALTER TABLE jms_product_tag
   ADD PRIMARY KEY (id_product,id_tag),
@@ -27824,140 +27921,140 @@ ALTER TABLE jms_product_tag
   ADD KEY id_lang (id_lang,id_tag);
 
 --
--- Indexes for table jms_profile
+-- Chỉ mục cho bảng jms_profile
 --
 ALTER TABLE jms_profile
   ADD PRIMARY KEY (id_profile);
 
 --
--- Indexes for table jms_profile_lang
+-- Chỉ mục cho bảng jms_profile_lang
 --
 ALTER TABLE jms_profile_lang
   ADD PRIMARY KEY (id_profile,id_lang);
 
 --
--- Indexes for table jms_quick_access
+-- Chỉ mục cho bảng jms_quick_access
 --
 ALTER TABLE jms_quick_access
   ADD PRIMARY KEY (id_quick_access);
 
 --
--- Indexes for table jms_quick_access_lang
+-- Chỉ mục cho bảng jms_quick_access_lang
 --
 ALTER TABLE jms_quick_access_lang
   ADD PRIMARY KEY (id_quick_access,id_lang);
 
 --
--- Indexes for table jms_range_price
+-- Chỉ mục cho bảng jms_range_price
 --
 ALTER TABLE jms_range_price
   ADD PRIMARY KEY (id_range_price),
   ADD UNIQUE KEY id_carrier (id_carrier,delimiter1,delimiter2);
 
 --
--- Indexes for table jms_range_weight
+-- Chỉ mục cho bảng jms_range_weight
 --
 ALTER TABLE jms_range_weight
   ADD PRIMARY KEY (id_range_weight),
   ADD UNIQUE KEY id_carrier (id_carrier,delimiter1,delimiter2);
 
 --
--- Indexes for table jms_reassurance
+-- Chỉ mục cho bảng jms_reassurance
 --
 ALTER TABLE jms_reassurance
   ADD PRIMARY KEY (id_reassurance);
 
 --
--- Indexes for table jms_reassurance_lang
+-- Chỉ mục cho bảng jms_reassurance_lang
 --
 ALTER TABLE jms_reassurance_lang
   ADD PRIMARY KEY (id_reassurance,id_lang);
 
 --
--- Indexes for table jms_referrer
+-- Chỉ mục cho bảng jms_referrer
 --
 ALTER TABLE jms_referrer
   ADD PRIMARY KEY (id_referrer);
 
 --
--- Indexes for table jms_referrer_cache
+-- Chỉ mục cho bảng jms_referrer_cache
 --
 ALTER TABLE jms_referrer_cache
   ADD PRIMARY KEY (id_connections_source,id_referrer);
 
 --
--- Indexes for table jms_referrer_shop
+-- Chỉ mục cho bảng jms_referrer_shop
 --
 ALTER TABLE jms_referrer_shop
   ADD PRIMARY KEY (id_referrer,id_shop);
 
 --
--- Indexes for table jms_request_sql
+-- Chỉ mục cho bảng jms_request_sql
 --
 ALTER TABLE jms_request_sql
   ADD PRIMARY KEY (id_request_sql);
 
 --
--- Indexes for table jms_required_field
+-- Chỉ mục cho bảng jms_required_field
 --
 ALTER TABLE jms_required_field
   ADD PRIMARY KEY (id_required_field),
   ADD KEY object_name (object_name);
 
 --
--- Indexes for table jms_risk
+-- Chỉ mục cho bảng jms_risk
 --
 ALTER TABLE jms_risk
   ADD PRIMARY KEY (id_risk);
 
 --
--- Indexes for table jms_risk_lang
+-- Chỉ mục cho bảng jms_risk_lang
 --
 ALTER TABLE jms_risk_lang
   ADD PRIMARY KEY (id_risk,id_lang),
   ADD KEY id_risk (id_risk);
 
 --
--- Indexes for table jms_search_engine
+-- Chỉ mục cho bảng jms_search_engine
 --
 ALTER TABLE jms_search_engine
   ADD PRIMARY KEY (id_search_engine);
 
 --
--- Indexes for table jms_search_index
+-- Chỉ mục cho bảng jms_search_index
 --
 ALTER TABLE jms_search_index
   ADD PRIMARY KEY (id_word,id_product),
   ADD KEY id_product (id_product,weight);
 
 --
--- Indexes for table jms_search_word
+-- Chỉ mục cho bảng jms_search_word
 --
 ALTER TABLE jms_search_word
   ADD PRIMARY KEY (id_word),
   ADD UNIQUE KEY id_lang (id_lang,id_shop,word);
 
 --
--- Indexes for table jms_sekeyword
+-- Chỉ mục cho bảng jms_sekeyword
 --
 ALTER TABLE jms_sekeyword
   ADD PRIMARY KEY (id_sekeyword);
 
 --
--- Indexes for table jms_shop
+-- Chỉ mục cho bảng jms_shop
 --
 ALTER TABLE jms_shop
   ADD PRIMARY KEY (id_shop),
   ADD KEY IDX_74B3FAF4F5C9E40 (id_shop_group);
 
 --
--- Indexes for table jms_shop_group
+-- Chỉ mục cho bảng jms_shop_group
 --
 ALTER TABLE jms_shop_group
   ADD PRIMARY KEY (id_shop_group);
 
 --
--- Indexes for table jms_shop_url
+-- Chỉ mục cho bảng jms_shop_url
 --
 ALTER TABLE jms_shop_url
   ADD PRIMARY KEY (id_shop_url),
@@ -27966,7 +28063,7 @@ ALTER TABLE jms_shop_url
   ADD KEY id_shop (id_shop,main);
 
 --
--- Indexes for table jms_smarty_cache
+-- Chỉ mục cho bảng jms_smarty_cache
 --
 ALTER TABLE jms_smarty_cache
   ADD PRIMARY KEY (id_smarty_cache),
@@ -27975,19 +28072,19 @@ ALTER TABLE jms_smarty_cache
   ADD KEY modified (modified);
 
 --
--- Indexes for table jms_smarty_last_flush
+-- Chỉ mục cho bảng jms_smarty_last_flush
 --
 ALTER TABLE jms_smarty_last_flush
   ADD PRIMARY KEY (type);
 
 --
--- Indexes for table jms_smarty_lazy_cache
+-- Chỉ mục cho bảng jms_smarty_lazy_cache
 --
 ALTER TABLE jms_smarty_lazy_cache
   ADD PRIMARY KEY (template_hash,cache_id,compile_id);
 
 --
--- Indexes for table jms_specific_price
+-- Chỉ mục cho bảng jms_specific_price
 --
 ALTER TABLE jms_specific_price
   ADD PRIMARY KEY (id_specific_price),
@@ -28003,34 +28100,34 @@ ALTER TABLE jms_specific_price
   ADD KEY `to` (`to`);
 
 --
--- Indexes for table jms_specific_price_priority
+-- Chỉ mục cho bảng jms_specific_price_priority
 --
 ALTER TABLE jms_specific_price_priority
   ADD PRIMARY KEY (id_specific_price_priority,id_product),
   ADD UNIQUE KEY id_product (id_product);
 
 --
--- Indexes for table jms_specific_price_rule
+-- Chỉ mục cho bảng jms_specific_price_rule
 --
 ALTER TABLE jms_specific_price_rule
   ADD PRIMARY KEY (id_specific_price_rule),
   ADD KEY id_product (id_shop,id_currency,id_country,id_group,from_quantity,`from`,`to`);
 
 --
--- Indexes for table jms_specific_price_rule_condition
+-- Chỉ mục cho bảng jms_specific_price_rule_condition
 --
 ALTER TABLE jms_specific_price_rule_condition
   ADD PRIMARY KEY (id_specific_price_rule_condition),
   ADD KEY id_specific_price_rule_condition_group (id_specific_price_rule_condition_group);
 
 --
--- Indexes for table jms_specific_price_rule_condition_group
+-- Chỉ mục cho bảng jms_specific_price_rule_condition_group
 --
 ALTER TABLE jms_specific_price_rule_condition_group
   ADD PRIMARY KEY (id_specific_price_rule_condition_group,id_specific_price_rule);
 
 --
--- Indexes for table jms_state
+-- Chỉ mục cho bảng jms_state
 --
 ALTER TABLE jms_state
   ADD PRIMARY KEY (id_state),
@@ -28039,13 +28136,13 @@ ALTER TABLE jms_state
   ADD KEY id_zone (id_zone);
 
 --
--- Indexes for table jms_statssearch
+-- Chỉ mục cho bảng jms_statssearch
 --
 ALTER TABLE jms_statssearch
   ADD PRIMARY KEY (id_statssearch);
 
 --
--- Indexes for table jms_stock
+-- Chỉ mục cho bảng jms_stock
 --
 ALTER TABLE jms_stock
   ADD PRIMARY KEY (id_stock),
@@ -28054,7 +28151,7 @@ ALTER TABLE jms_stock
   ADD KEY id_product_attribute (id_product_attribute);
 
 --
--- Indexes for table jms_stock_available
+-- Chỉ mục cho bảng jms_stock_available
 --
 ALTER TABLE jms_stock_available
   ADD PRIMARY KEY (id_stock_available),
@@ -28065,7 +28162,7 @@ ALTER TABLE jms_stock_available
   ADD KEY id_product_attribute (id_product_attribute);
 
 --
--- Indexes for table jms_stock_mvt
+-- Chỉ mục cho bảng jms_stock_mvt
 --
 ALTER TABLE jms_stock_mvt
   ADD PRIMARY KEY (id_stock_mvt),
@@ -28073,57 +28170,57 @@ ALTER TABLE jms_stock_mvt
   ADD KEY id_stock_mvt_reason (id_stock_mvt_reason);
 
 --
--- Indexes for table jms_stock_mvt_reason
+-- Chỉ mục cho bảng jms_stock_mvt_reason
 --
 ALTER TABLE jms_stock_mvt_reason
   ADD PRIMARY KEY (id_stock_mvt_reason);
 
 --
--- Indexes for table jms_stock_mvt_reason_lang
+-- Chỉ mục cho bảng jms_stock_mvt_reason_lang
 --
 ALTER TABLE jms_stock_mvt_reason_lang
   ADD PRIMARY KEY (id_stock_mvt_reason,id_lang);
 
 --
--- Indexes for table jms_store
+-- Chỉ mục cho bảng jms_store
 --
 ALTER TABLE jms_store
   ADD PRIMARY KEY (id_store);
 
 --
--- Indexes for table jms_store_lang
+-- Chỉ mục cho bảng jms_store_lang
 --
 ALTER TABLE jms_store_lang
   ADD PRIMARY KEY (id_store,id_lang);
 
 --
--- Indexes for table jms_store_shop
+-- Chỉ mục cho bảng jms_store_shop
 --
 ALTER TABLE jms_store_shop
   ADD PRIMARY KEY (id_store,id_shop),
   ADD KEY id_shop (id_shop);
 
 --
--- Indexes for table jms_supplier
+-- Chỉ mục cho bảng jms_supplier
 --
 ALTER TABLE jms_supplier
   ADD PRIMARY KEY (id_supplier);
 
 --
--- Indexes for table jms_supplier_lang
+-- Chỉ mục cho bảng jms_supplier_lang
 --
 ALTER TABLE jms_supplier_lang
   ADD PRIMARY KEY (id_supplier,id_lang);
 
 --
--- Indexes for table jms_supplier_shop
+-- Chỉ mục cho bảng jms_supplier_shop
 --
 ALTER TABLE jms_supplier_shop
   ADD PRIMARY KEY (id_supplier,id_shop),
   ADD KEY id_shop (id_shop);
 
 --
--- Indexes for table jms_supply_order
+-- Chỉ mục cho bảng jms_supply_order
 --
 ALTER TABLE jms_supply_order
   ADD PRIMARY KEY (id_supply_order),
@@ -28132,7 +28229,7 @@ ALTER TABLE jms_supply_order
   ADD KEY reference (reference);
 
 --
--- Indexes for table jms_supply_order_detail
+-- Chỉ mục cho bảng jms_supply_order_detail
 --
 ALTER TABLE jms_supply_order_detail
   ADD PRIMARY KEY (id_supply_order_detail),
@@ -28141,7 +28238,7 @@ ALTER TABLE jms_supply_order_detail
   ADD KEY id_product_product_attribute (id_product,id_product_attribute);
 
 --
--- Indexes for table jms_supply_order_history
+-- Chỉ mục cho bảng jms_supply_order_history
 --
 ALTER TABLE jms_supply_order_history
   ADD PRIMARY KEY (id_supply_order_history),
@@ -28150,7 +28247,7 @@ ALTER TABLE jms_supply_order_history
   ADD KEY id_state (id_state);
 
 --
--- Indexes for table jms_supply_order_receipt_history
+-- Chỉ mục cho bảng jms_supply_order_receipt_history
 --
 ALTER TABLE jms_supply_order_receipt_history
   ADD PRIMARY KEY (id_supply_order_receipt_history),
@@ -28158,31 +28255,31 @@ ALTER TABLE jms_supply_order_receipt_history
   ADD KEY id_supply_order_state (id_supply_order_state);
 
 --
--- Indexes for table jms_supply_order_state
+-- Chỉ mục cho bảng jms_supply_order_state
 --
 ALTER TABLE jms_supply_order_state
   ADD PRIMARY KEY (id_supply_order_state);
 
 --
--- Indexes for table jms_supply_order_state_lang
+-- Chỉ mục cho bảng jms_supply_order_state_lang
 --
 ALTER TABLE jms_supply_order_state_lang
   ADD PRIMARY KEY (id_supply_order_state,id_lang);
 
 --
--- Indexes for table jms_tab
+-- Chỉ mục cho bảng jms_tab
 --
 ALTER TABLE jms_tab
   ADD PRIMARY KEY (id_tab);
 
 --
--- Indexes for table jms_tab_advice
+-- Chỉ mục cho bảng jms_tab_advice
 --
 ALTER TABLE jms_tab_advice
   ADD PRIMARY KEY (id_tab,id_advice);
 
 --
--- Indexes for table jms_tab_lang
+-- Chỉ mục cho bảng jms_tab_lang
 --
 ALTER TABLE jms_tab_lang
   ADD PRIMARY KEY (id_tab,id_lang),
@@ -28190,14 +28287,14 @@ ALTER TABLE jms_tab_lang
   ADD KEY IDX_788C5C0BBA299860 (id_lang);
 
 --
--- Indexes for table jms_tab_module_preference
+-- Chỉ mục cho bảng jms_tab_module_preference
 --
 ALTER TABLE jms_tab_module_preference
   ADD PRIMARY KEY (id_tab_module_preference),
   ADD UNIQUE KEY employee_module (id_employee,id_tab,module);
 
 --
--- Indexes for table jms_tag
+-- Chỉ mục cho bảng jms_tag
 --
 ALTER TABLE jms_tag
   ADD PRIMARY KEY (id_tag),
@@ -28205,26 +28302,26 @@ ALTER TABLE jms_tag
   ADD KEY id_lang (id_lang);
 
 --
--- Indexes for table jms_tag_count
+-- Chỉ mục cho bảng jms_tag_count
 --
 ALTER TABLE jms_tag_count
   ADD PRIMARY KEY (id_group,id_tag),
   ADD KEY id_group (id_group,id_lang,id_shop,counter);
 
 --
--- Indexes for table jms_tax
+-- Chỉ mục cho bảng jms_tax
 --
 ALTER TABLE jms_tax
   ADD PRIMARY KEY (id_tax);
 
 --
--- Indexes for table jms_tax_lang
+-- Chỉ mục cho bảng jms_tax_lang
 --
 ALTER TABLE jms_tax_lang
   ADD PRIMARY KEY (id_tax,id_lang);
 
 --
--- Indexes for table jms_tax_rule
+-- Chỉ mục cho bảng jms_tax_rule
 --
 ALTER TABLE jms_tax_rule
   ADD PRIMARY KEY (id_tax_rule),
@@ -28233,26 +28330,26 @@ ALTER TABLE jms_tax_rule
   ADD KEY category_getproducts (id_tax_rules_group,id_country,id_state,zipcode_from);
 
 --
--- Indexes for table jms_tax_rules_group
+-- Chỉ mục cho bảng jms_tax_rules_group
 --
 ALTER TABLE jms_tax_rules_group
   ADD PRIMARY KEY (id_tax_rules_group);
 
 --
--- Indexes for table jms_tax_rules_group_shop
+-- Chỉ mục cho bảng jms_tax_rules_group_shop
 --
 ALTER TABLE jms_tax_rules_group_shop
   ADD PRIMARY KEY (id_tax_rules_group,id_shop),
   ADD KEY id_shop (id_shop);
 
 --
--- Indexes for table jms_timezone
+-- Chỉ mục cho bảng jms_timezone
 --
 ALTER TABLE jms_timezone
   ADD PRIMARY KEY (id_timezone);
 
 --
--- Indexes for table jms_translation
+-- Chỉ mục cho bảng jms_translation
 --
 ALTER TABLE jms_translation
   ADD PRIMARY KEY (id_translation),
@@ -28260,13 +28357,13 @@ ALTER TABLE jms_translation
   ADD KEY `key` (domain);
 
 --
--- Indexes for table jms_warehouse
+-- Chỉ mục cho bảng jms_warehouse
 --
 ALTER TABLE jms_warehouse
   ADD PRIMARY KEY (id_warehouse);
 
 --
--- Indexes for table jms_warehouse_carrier
+-- Chỉ mục cho bảng jms_warehouse_carrier
 --
 ALTER TABLE jms_warehouse_carrier
   ADD PRIMARY KEY (id_warehouse,id_carrier),
@@ -28274,14 +28371,14 @@ ALTER TABLE jms_warehouse_carrier
   ADD KEY id_carrier (id_carrier);
 
 --
--- Indexes for table jms_warehouse_product_location
+-- Chỉ mục cho bảng jms_warehouse_product_location
 --
 ALTER TABLE jms_warehouse_product_location
   ADD PRIMARY KEY (id_warehouse_product_location),
   ADD UNIQUE KEY id_product (id_product,id_product_attribute,id_warehouse);
 
 --
--- Indexes for table jms_warehouse_shop
+-- Chỉ mục cho bảng jms_warehouse_shop
 --
 ALTER TABLE jms_warehouse_shop
   ADD PRIMARY KEY (id_warehouse,id_shop),
@@ -28289,21 +28386,21 @@ ALTER TABLE jms_warehouse_shop
   ADD KEY id_shop (id_shop);
 
 --
--- Indexes for table jms_webservice_account
+-- Chỉ mục cho bảng jms_webservice_account
 --
 ALTER TABLE jms_webservice_account
   ADD PRIMARY KEY (id_webservice_account),
   ADD KEY `key` (`key`);
 
 --
--- Indexes for table jms_webservice_account_shop
+-- Chỉ mục cho bảng jms_webservice_account_shop
 --
 ALTER TABLE jms_webservice_account_shop
   ADD PRIMARY KEY (id_webservice_account,id_shop),
   ADD KEY id_shop (id_shop);
 
 --
--- Indexes for table jms_webservice_permission
+-- Chỉ mục cho bảng jms_webservice_permission
 --
 ALTER TABLE jms_webservice_permission
   ADD PRIMARY KEY (id_webservice_permission),
@@ -28313,1086 +28410,1086 @@ ALTER TABLE jms_webservice_permission
   ADD KEY id_webservice_account (id_webservice_account);
 
 --
--- Indexes for table jms_web_browser
+-- Chỉ mục cho bảng jms_web_browser
 --
 ALTER TABLE jms_web_browser
   ADD PRIMARY KEY (id_web_browser);
 
 --
--- Indexes for table jms_wishlist
+-- Chỉ mục cho bảng jms_wishlist
 --
 ALTER TABLE jms_wishlist
   ADD PRIMARY KEY (id_wishlist);
 
 --
--- Indexes for table jms_wishlist_product
+-- Chỉ mục cho bảng jms_wishlist_product
 --
 ALTER TABLE jms_wishlist_product
   ADD PRIMARY KEY (id_wishlist_product);
 
 --
--- Indexes for table jms_zone
+-- Chỉ mục cho bảng jms_zone
 --
 ALTER TABLE jms_zone
   ADD PRIMARY KEY (id_zone);
 
 --
--- Indexes for table jms_zone_shop
+-- Chỉ mục cho bảng jms_zone_shop
 --
 ALTER TABLE jms_zone_shop
   ADD PRIMARY KEY (id_zone,id_shop),
   ADD KEY id_shop (id_shop);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT cho các bảng đã đổ
 --
 
 --
--- AUTO_INCREMENT for table jms_address
+-- AUTO_INCREMENT cho bảng jms_address
 --
 ALTER TABLE jms_address
-  MODIFY id_address int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY id_address int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT for table jms_admin_filter
+-- AUTO_INCREMENT cho bảng jms_admin_filter
 --
 ALTER TABLE jms_admin_filter
   MODIFY id int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT for table jms_advice
+-- AUTO_INCREMENT cho bảng jms_advice
 --
 ALTER TABLE jms_advice
   MODIFY id_advice int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=301;
 
 --
--- AUTO_INCREMENT for table jms_alias
+-- AUTO_INCREMENT cho bảng jms_alias
 --
 ALTER TABLE jms_alias
   MODIFY id_alias int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table jms_attachment
+-- AUTO_INCREMENT cho bảng jms_attachment
 --
 ALTER TABLE jms_attachment
   MODIFY id_attachment int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table jms_attachment_lang
+-- AUTO_INCREMENT cho bảng jms_attachment_lang
 --
 ALTER TABLE jms_attachment_lang
   MODIFY id_attachment int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table jms_attribute
+-- AUTO_INCREMENT cho bảng jms_attribute
 --
 ALTER TABLE jms_attribute
   MODIFY id_attribute int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
--- AUTO_INCREMENT for table jms_attribute_group
+-- AUTO_INCREMENT cho bảng jms_attribute_group
 --
 ALTER TABLE jms_attribute_group
   MODIFY id_attribute_group int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table jms_attribute_impact
+-- AUTO_INCREMENT cho bảng jms_attribute_impact
 --
 ALTER TABLE jms_attribute_impact
   MODIFY id_attribute_impact int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table jms_authorization_role
+-- AUTO_INCREMENT cho bảng jms_authorization_role
 --
 ALTER TABLE jms_authorization_role
   MODIFY id_authorization_role int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=913;
 
 --
--- AUTO_INCREMENT for table jms_badge
+-- AUTO_INCREMENT cho bảng jms_badge
 --
 ALTER TABLE jms_badge
   MODIFY id_badge int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=235;
 
 --
--- AUTO_INCREMENT for table jms_carrier
+-- AUTO_INCREMENT cho bảng jms_carrier
 --
 ALTER TABLE jms_carrier
   MODIFY id_carrier int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table jms_cart
+-- AUTO_INCREMENT cho bảng jms_cart
 --
 ALTER TABLE jms_cart
-  MODIFY id_cart int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY id_cart int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
--- AUTO_INCREMENT for table jms_cart_rule
+-- AUTO_INCREMENT cho bảng jms_cart_rule
 --
 ALTER TABLE jms_cart_rule
   MODIFY id_cart_rule int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table jms_cart_rule_product_rule
+-- AUTO_INCREMENT cho bảng jms_cart_rule_product_rule
 --
 ALTER TABLE jms_cart_rule_product_rule
   MODIFY id_product_rule int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table jms_cart_rule_product_rule_group
+-- AUTO_INCREMENT cho bảng jms_cart_rule_product_rule_group
 --
 ALTER TABLE jms_cart_rule_product_rule_group
   MODIFY id_product_rule_group int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table jms_category
+-- AUTO_INCREMENT cho bảng jms_category
 --
 ALTER TABLE jms_category
   MODIFY id_category int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
--- AUTO_INCREMENT for table jms_cms
+-- AUTO_INCREMENT cho bảng jms_cms
 --
 ALTER TABLE jms_cms
   MODIFY id_cms int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table jms_cms_category
+-- AUTO_INCREMENT cho bảng jms_cms_category
 --
 ALTER TABLE jms_cms_category
   MODIFY id_cms_category int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table jms_cms_category_shop
+-- AUTO_INCREMENT cho bảng jms_cms_category_shop
 --
 ALTER TABLE jms_cms_category_shop
   MODIFY id_cms_category int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table jms_cms_role
+-- AUTO_INCREMENT cho bảng jms_cms_role
 --
 ALTER TABLE jms_cms_role
   MODIFY id_cms_role int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table jms_condition
+-- AUTO_INCREMENT cho bảng jms_condition
 --
 ALTER TABLE jms_condition
   MODIFY id_condition int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=245;
 
 --
--- AUTO_INCREMENT for table jms_configuration
+-- AUTO_INCREMENT cho bảng jms_configuration
 --
 ALTER TABLE jms_configuration
   MODIFY id_configuration int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=589;
 
 --
--- AUTO_INCREMENT for table jms_configuration_kpi
+-- AUTO_INCREMENT cho bảng jms_configuration_kpi
 --
 ALTER TABLE jms_configuration_kpi
   MODIFY id_configuration_kpi int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
 
 --
--- AUTO_INCREMENT for table jms_connections
+-- AUTO_INCREMENT cho bảng jms_connections
 --
 ALTER TABLE jms_connections
-  MODIFY id_connections int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=227;
+  MODIFY id_connections int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=252;
 
 --
--- AUTO_INCREMENT for table jms_connections_source
+-- AUTO_INCREMENT cho bảng jms_connections_source
 --
 ALTER TABLE jms_connections_source
-  MODIFY id_connections_source int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY id_connections_source int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
--- AUTO_INCREMENT for table jms_contact
+-- AUTO_INCREMENT cho bảng jms_contact
 --
 ALTER TABLE jms_contact
   MODIFY id_contact int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table jms_country
+-- AUTO_INCREMENT cho bảng jms_country
 --
 ALTER TABLE jms_country
   MODIFY id_country int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=245;
 
 --
--- AUTO_INCREMENT for table jms_currency
+-- AUTO_INCREMENT cho bảng jms_currency
 --
 ALTER TABLE jms_currency
   MODIFY id_currency int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table jms_customer
+-- AUTO_INCREMENT cho bảng jms_customer
 --
 ALTER TABLE jms_customer
-  MODIFY id_customer int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY id_customer int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table jms_customer_message
+-- AUTO_INCREMENT cho bảng jms_customer_message
 --
 ALTER TABLE jms_customer_message
-  MODIFY id_customer_message int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY id_customer_message int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table jms_customer_thread
+-- AUTO_INCREMENT cho bảng jms_customer_thread
 --
 ALTER TABLE jms_customer_thread
-  MODIFY id_customer_thread int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY id_customer_thread int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table jms_customization
+-- AUTO_INCREMENT cho bảng jms_customization
 --
 ALTER TABLE jms_customization
   MODIFY id_customization int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table jms_customization_field
+-- AUTO_INCREMENT cho bảng jms_customization_field
 --
 ALTER TABLE jms_customization_field
   MODIFY id_customization_field int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table jms_date_range
+-- AUTO_INCREMENT cho bảng jms_date_range
 --
 ALTER TABLE jms_date_range
   MODIFY id_date_range int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table jms_delivery
+-- AUTO_INCREMENT cho bảng jms_delivery
 --
 ALTER TABLE jms_delivery
   MODIFY id_delivery int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table jms_emailsubscription
+-- AUTO_INCREMENT cho bảng jms_emailsubscription
 --
 ALTER TABLE jms_emailsubscription
   MODIFY id int(6) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table jms_employee
+-- AUTO_INCREMENT cho bảng jms_employee
 --
 ALTER TABLE jms_employee
   MODIFY id_employee int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table jms_feature
+-- AUTO_INCREMENT cho bảng jms_feature
 --
 ALTER TABLE jms_feature
   MODIFY id_feature int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table jms_feature_value
+-- AUTO_INCREMENT cho bảng jms_feature_value
 --
 ALTER TABLE jms_feature_value
   MODIFY id_feature_value int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- AUTO_INCREMENT for table jms_gender
+-- AUTO_INCREMENT cho bảng jms_gender
 --
 ALTER TABLE jms_gender
   MODIFY id_gender int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table jms_group
+-- AUTO_INCREMENT cho bảng jms_group
 --
 ALTER TABLE jms_group
   MODIFY id_group int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table jms_group_reduction
+-- AUTO_INCREMENT cho bảng jms_group_reduction
 --
 ALTER TABLE jms_group_reduction
   MODIFY id_group_reduction mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table jms_guest
+-- AUTO_INCREMENT cho bảng jms_guest
 --
 ALTER TABLE jms_guest
-  MODIFY id_guest int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=66;
+  MODIFY id_guest int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=78;
 
 --
--- AUTO_INCREMENT for table jms_homeslider
+-- AUTO_INCREMENT cho bảng jms_homeslider
 --
 ALTER TABLE jms_homeslider
   MODIFY id_homeslider_slides int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table jms_homeslider_slides
+-- AUTO_INCREMENT cho bảng jms_homeslider_slides
 --
 ALTER TABLE jms_homeslider_slides
   MODIFY id_homeslider_slides int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table jms_hook
+-- AUTO_INCREMENT cho bảng jms_hook
 --
 ALTER TABLE jms_hook
   MODIFY id_hook int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=462;
 
 --
--- AUTO_INCREMENT for table jms_hook_alias
+-- AUTO_INCREMENT cho bảng jms_hook_alias
 --
 ALTER TABLE jms_hook_alias
   MODIFY id_hook_alias int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=84;
 
 --
--- AUTO_INCREMENT for table jms_hook_module_exceptions
+-- AUTO_INCREMENT cho bảng jms_hook_module_exceptions
 --
 ALTER TABLE jms_hook_module_exceptions
   MODIFY id_hook_module_exceptions int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=480;
 
 --
--- AUTO_INCREMENT for table jms_hotdeals
+-- AUTO_INCREMENT cho bảng jms_hotdeals
 --
 ALTER TABLE jms_hotdeals
   MODIFY id_hotdeals int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT for table jms_hotdeals_items
+-- AUTO_INCREMENT cho bảng jms_hotdeals_items
 --
 ALTER TABLE jms_hotdeals_items
   MODIFY id_hotdeals int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT for table jms_image
+-- AUTO_INCREMENT cho bảng jms_image
 --
 ALTER TABLE jms_image
   MODIFY id_image int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=234;
 
 --
--- AUTO_INCREMENT for table jms_image_type
+-- AUTO_INCREMENT cho bảng jms_image_type
 --
 ALTER TABLE jms_image_type
   MODIFY id_image_type int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT for table jms_import_match
+-- AUTO_INCREMENT cho bảng jms_import_match
 --
 ALTER TABLE jms_import_match
   MODIFY id_import_match int(10) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table jms_info
+-- AUTO_INCREMENT cho bảng jms_info
 --
 ALTER TABLE jms_info
   MODIFY id_info int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table jms_jmsblog_categories
+-- AUTO_INCREMENT cho bảng jms_jmsblog_categories
 --
 ALTER TABLE jms_jmsblog_categories
   MODIFY category_id int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table jms_jmsblog_categories_lang
+-- AUTO_INCREMENT cho bảng jms_jmsblog_categories_lang
 --
 ALTER TABLE jms_jmsblog_categories_lang
   MODIFY category_id int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table jms_jmsblog_posts
+-- AUTO_INCREMENT cho bảng jms_jmsblog_posts
 --
 ALTER TABLE jms_jmsblog_posts
   MODIFY post_id int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT for table jms_jmsblog_posts_comments
+-- AUTO_INCREMENT cho bảng jms_jmsblog_posts_comments
 --
 ALTER TABLE jms_jmsblog_posts_comments
   MODIFY comment_id int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table jms_jmsblog_posts_lang
+-- AUTO_INCREMENT cho bảng jms_jmsblog_posts_lang
 --
 ALTER TABLE jms_jmsblog_posts_lang
   MODIFY post_id int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT for table jms_jmsbrands
+-- AUTO_INCREMENT cho bảng jms_jmsbrands
 --
 ALTER TABLE jms_jmsbrands
   MODIFY brand_id int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT for table jms_jmsbrands_logos
+-- AUTO_INCREMENT cho bảng jms_jmsbrands_logos
 --
 ALTER TABLE jms_jmsbrands_logos
   MODIFY brand_id int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT for table jms_jmsbrands_logos_lang
+-- AUTO_INCREMENT cho bảng jms_jmsbrands_logos_lang
 --
 ALTER TABLE jms_jmsbrands_logos_lang
   MODIFY brand_id int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT for table jms_jmsfacebookusers
+-- AUTO_INCREMENT cho bảng jms_jmsfacebookusers
 --
 ALTER TABLE jms_jmsfacebookusers
   MODIFY id int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table jms_jmsflashsales
+-- AUTO_INCREMENT cho bảng jms_jmsflashsales
 --
 ALTER TABLE jms_jmsflashsales
   MODIFY item_id int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table jms_jmsflashsales_categories
+-- AUTO_INCREMENT cho bảng jms_jmsflashsales_categories
 --
 ALTER TABLE jms_jmsflashsales_categories
   MODIFY category_id int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table jms_jmsflashsales_categories_lang
+-- AUTO_INCREMENT cho bảng jms_jmsflashsales_categories_lang
 --
 ALTER TABLE jms_jmsflashsales_categories_lang
   MODIFY category_id int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table jms_jmsflashsales_items
+-- AUTO_INCREMENT cho bảng jms_jmsflashsales_items
 --
 ALTER TABLE jms_jmsflashsales_items
   MODIFY item_id int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table jms_jmshtml_left
+-- AUTO_INCREMENT cho bảng jms_jmshtml_left
 --
 ALTER TABLE jms_jmshtml_left
   MODIFY html_id int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table jms_jmshtml_left_lang
+-- AUTO_INCREMENT cho bảng jms_jmshtml_left_lang
 --
 ALTER TABLE jms_jmshtml_left_lang
   MODIFY html_id int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table jms_jmsmaploc
+-- AUTO_INCREMENT cho bảng jms_jmsmaploc
 --
 ALTER TABLE jms_jmsmaploc
   MODIFY id_loc int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table jms_jmsmaploc_locs
+-- AUTO_INCREMENT cho bảng jms_jmsmaploc_locs
 --
 ALTER TABLE jms_jmsmaploc_locs
   MODIFY id_loc int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table jms_jmsmaploc_locs_lang
+-- AUTO_INCREMENT cho bảng jms_jmsmaploc_locs_lang
 --
 ALTER TABLE jms_jmsmaploc_locs_lang
   MODIFY id_loc int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table jms_jmsmegamenu
+-- AUTO_INCREMENT cho bảng jms_jmsmegamenu
 --
 ALTER TABLE jms_jmsmegamenu
   MODIFY mitem_id int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=357;
 
 --
--- AUTO_INCREMENT for table jms_jmspagebuilder
+-- AUTO_INCREMENT cho bảng jms_jmspagebuilder
 --
 ALTER TABLE jms_jmspagebuilder
   MODIFY id_homepage int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT for table jms_jmspagebuilder_homepages
+-- AUTO_INCREMENT cho bảng jms_jmspagebuilder_homepages
 --
 ALTER TABLE jms_jmspagebuilder_homepages
   MODIFY id_homepage int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT for table jms_jmstestimonials
+-- AUTO_INCREMENT cho bảng jms_jmstestimonials
 --
 ALTER TABLE jms_jmstestimonials
   MODIFY id_testimonial int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table jms_jmstestimonials_lang
+-- AUTO_INCREMENT cho bảng jms_jmstestimonials_lang
 --
 ALTER TABLE jms_jmstestimonials_lang
   MODIFY id_testimonial int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table jms_jmsvermegamenu
+-- AUTO_INCREMENT cho bảng jms_jmsvermegamenu
 --
 ALTER TABLE jms_jmsvermegamenu
   MODIFY mitem_id int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=222;
 
 --
--- AUTO_INCREMENT for table jms_jms_layer_style
+-- AUTO_INCREMENT cho bảng jms_jms_layer_style
 --
 ALTER TABLE jms_jms_layer_style
   MODIFY id_style int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=680;
 
 --
--- AUTO_INCREMENT for table jms_jms_producttab
+-- AUTO_INCREMENT cho bảng jms_jms_producttab
 --
 ALTER TABLE jms_jms_producttab
   MODIFY tab_id int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
--- AUTO_INCREMENT for table jms_jms_producttab_ctab
+-- AUTO_INCREMENT cho bảng jms_jms_producttab_ctab
 --
 ALTER TABLE jms_jms_producttab_ctab
   MODIFY tab_id int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
--- AUTO_INCREMENT for table jms_jms_producttab_ctab_lang
+-- AUTO_INCREMENT cho bảng jms_jms_producttab_ctab_lang
 --
 ALTER TABLE jms_jms_producttab_ctab_lang
   MODIFY tab_id int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
--- AUTO_INCREMENT for table jms_jms_product_video
+-- AUTO_INCREMENT cho bảng jms_jms_product_video
 --
 ALTER TABLE jms_jms_product_video
   MODIFY id int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=76;
 
 --
--- AUTO_INCREMENT for table jms_jms_slider
+-- AUTO_INCREMENT cho bảng jms_jms_slider
 --
 ALTER TABLE jms_jms_slider
   MODIFY id_slider int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT for table jms_jms_slides
+-- AUTO_INCREMENT cho bảng jms_jms_slides
 --
 ALTER TABLE jms_jms_slides
   MODIFY id_slide int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
--- AUTO_INCREMENT for table jms_jms_slides_lang
+-- AUTO_INCREMENT cho bảng jms_jms_slides_lang
 --
 ALTER TABLE jms_jms_slides_lang
   MODIFY id_slide int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
--- AUTO_INCREMENT for table jms_jms_slides_layers
+-- AUTO_INCREMENT cho bảng jms_jms_slides_layers
 --
 ALTER TABLE jms_jms_slides_layers
   MODIFY id_layer int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=161;
 
 --
--- AUTO_INCREMENT for table jms_jms_slides_shop
+-- AUTO_INCREMENT cho bảng jms_jms_slides_shop
 --
 ALTER TABLE jms_jms_slides_shop
   MODIFY id_slide int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
--- AUTO_INCREMENT for table jms_lang
+-- AUTO_INCREMENT cho bảng jms_lang
 --
 ALTER TABLE jms_lang
   MODIFY id_lang int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT for table jms_layered_category
+-- AUTO_INCREMENT cho bảng jms_layered_category
 --
 ALTER TABLE jms_layered_category
   MODIFY id_layered_category int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=111;
 
 --
--- AUTO_INCREMENT for table jms_layered_filter
+-- AUTO_INCREMENT cho bảng jms_layered_filter
 --
 ALTER TABLE jms_layered_filter
   MODIFY id_layered_filter int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table jms_linksmenutop
+-- AUTO_INCREMENT cho bảng jms_linksmenutop
 --
 ALTER TABLE jms_linksmenutop
   MODIFY id_linksmenutop int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table jms_link_block
+-- AUTO_INCREMENT cho bảng jms_link_block
 --
 ALTER TABLE jms_link_block
   MODIFY id_link_block int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table jms_link_block_shop
+-- AUTO_INCREMENT cho bảng jms_link_block_shop
 --
 ALTER TABLE jms_link_block_shop
   MODIFY id_link_block int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table jms_log
+-- AUTO_INCREMENT cho bảng jms_log
 --
 ALTER TABLE jms_log
-  MODIFY id_log int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1042;
+  MODIFY id_log int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1055;
 
 --
--- AUTO_INCREMENT for table jms_mail
+-- AUTO_INCREMENT cho bảng jms_mail
 --
 ALTER TABLE jms_mail
   MODIFY id_mail int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table jms_manufacturer
+-- AUTO_INCREMENT cho bảng jms_manufacturer
 --
 ALTER TABLE jms_manufacturer
   MODIFY id_manufacturer int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table jms_memcached_servers
+-- AUTO_INCREMENT cho bảng jms_memcached_servers
 --
 ALTER TABLE jms_memcached_servers
   MODIFY id_memcached_server int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table jms_message
+-- AUTO_INCREMENT cho bảng jms_message
 --
 ALTER TABLE jms_message
   MODIFY id_message int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table jms_meta
+-- AUTO_INCREMENT cho bảng jms_meta
 --
 ALTER TABLE jms_meta
   MODIFY id_meta int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
--- AUTO_INCREMENT for table jms_module
+-- AUTO_INCREMENT cho bảng jms_module
 --
 ALTER TABLE jms_module
   MODIFY id_module int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=83;
 
 --
--- AUTO_INCREMENT for table jms_module_history
+-- AUTO_INCREMENT cho bảng jms_module_history
 --
 ALTER TABLE jms_module_history
   MODIFY id int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
--- AUTO_INCREMENT for table jms_module_preference
+-- AUTO_INCREMENT cho bảng jms_module_preference
 --
 ALTER TABLE jms_module_preference
   MODIFY id_module_preference int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table jms_operating_system
+-- AUTO_INCREMENT cho bảng jms_operating_system
 --
 ALTER TABLE jms_operating_system
   MODIFY id_operating_system int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- AUTO_INCREMENT for table jms_orders
+-- AUTO_INCREMENT cho bảng jms_orders
 --
 ALTER TABLE jms_orders
-  MODIFY id_order int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY id_order int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- AUTO_INCREMENT for table jms_order_carrier
+-- AUTO_INCREMENT cho bảng jms_order_carrier
 --
 ALTER TABLE jms_order_carrier
-  MODIFY id_order_carrier int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY id_order_carrier int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- AUTO_INCREMENT for table jms_order_cart_rule
+-- AUTO_INCREMENT cho bảng jms_order_cart_rule
 --
 ALTER TABLE jms_order_cart_rule
   MODIFY id_order_cart_rule int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table jms_order_detail
+-- AUTO_INCREMENT cho bảng jms_order_detail
 --
 ALTER TABLE jms_order_detail
-  MODIFY id_order_detail int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY id_order_detail int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
--- AUTO_INCREMENT for table jms_order_history
+-- AUTO_INCREMENT cho bảng jms_order_history
 --
 ALTER TABLE jms_order_history
-  MODIFY id_order_history int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY id_order_history int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
--- AUTO_INCREMENT for table jms_order_invoice
+-- AUTO_INCREMENT cho bảng jms_order_invoice
 --
 ALTER TABLE jms_order_invoice
   MODIFY id_order_invoice int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table jms_order_message
+-- AUTO_INCREMENT cho bảng jms_order_message
 --
 ALTER TABLE jms_order_message
   MODIFY id_order_message int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table jms_order_payment
+-- AUTO_INCREMENT cho bảng jms_order_payment
 --
 ALTER TABLE jms_order_payment
   MODIFY id_order_payment int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table jms_order_return
+-- AUTO_INCREMENT cho bảng jms_order_return
 --
 ALTER TABLE jms_order_return
   MODIFY id_order_return int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table jms_order_return_state
+-- AUTO_INCREMENT cho bảng jms_order_return_state
 --
 ALTER TABLE jms_order_return_state
   MODIFY id_order_return_state int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table jms_order_slip
+-- AUTO_INCREMENT cho bảng jms_order_slip
 --
 ALTER TABLE jms_order_slip
   MODIFY id_order_slip int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table jms_order_state
+-- AUTO_INCREMENT cho bảng jms_order_state
 --
 ALTER TABLE jms_order_state
   MODIFY id_order_state int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
--- AUTO_INCREMENT for table jms_page
+-- AUTO_INCREMENT cho bảng jms_page
 --
 ALTER TABLE jms_page
-  MODIFY id_page int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY id_page int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
--- AUTO_INCREMENT for table jms_pagenotfound
+-- AUTO_INCREMENT cho bảng jms_pagenotfound
 --
 ALTER TABLE jms_pagenotfound
   MODIFY id_pagenotfound int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table jms_page_type
+-- AUTO_INCREMENT cho bảng jms_page_type
 --
 ALTER TABLE jms_page_type
-  MODIFY id_page_type int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY id_page_type int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- AUTO_INCREMENT for table jms_product
+-- AUTO_INCREMENT cho bảng jms_product
 --
 ALTER TABLE jms_product
   MODIFY id_product int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
--- AUTO_INCREMENT for table jms_product_attribute
+-- AUTO_INCREMENT cho bảng jms_product_attribute
 --
 ALTER TABLE jms_product_attribute
   MODIFY id_product_attribute int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=134;
 
 --
--- AUTO_INCREMENT for table jms_product_download
+-- AUTO_INCREMENT cho bảng jms_product_download
 --
 ALTER TABLE jms_product_download
   MODIFY id_product_download int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table jms_product_supplier
+-- AUTO_INCREMENT cho bảng jms_product_supplier
 --
 ALTER TABLE jms_product_supplier
   MODIFY id_product_supplier int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table jms_profile
+-- AUTO_INCREMENT cho bảng jms_profile
 --
 ALTER TABLE jms_profile
   MODIFY id_profile int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table jms_quick_access
+-- AUTO_INCREMENT cho bảng jms_quick_access
 --
 ALTER TABLE jms_quick_access
   MODIFY id_quick_access int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT for table jms_range_price
+-- AUTO_INCREMENT cho bảng jms_range_price
 --
 ALTER TABLE jms_range_price
   MODIFY id_range_price int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table jms_range_weight
+-- AUTO_INCREMENT cho bảng jms_range_weight
 --
 ALTER TABLE jms_range_weight
   MODIFY id_range_weight int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table jms_reassurance
+-- AUTO_INCREMENT cho bảng jms_reassurance
 --
 ALTER TABLE jms_reassurance
   MODIFY id_reassurance int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table jms_reassurance_lang
+-- AUTO_INCREMENT cho bảng jms_reassurance_lang
 --
 ALTER TABLE jms_reassurance_lang
   MODIFY id_reassurance int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table jms_referrer
+-- AUTO_INCREMENT cho bảng jms_referrer
 --
 ALTER TABLE jms_referrer
   MODIFY id_referrer int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table jms_referrer_shop
+-- AUTO_INCREMENT cho bảng jms_referrer_shop
 --
 ALTER TABLE jms_referrer_shop
   MODIFY id_referrer int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table jms_request_sql
+-- AUTO_INCREMENT cho bảng jms_request_sql
 --
 ALTER TABLE jms_request_sql
   MODIFY id_request_sql int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table jms_required_field
+-- AUTO_INCREMENT cho bảng jms_required_field
 --
 ALTER TABLE jms_required_field
   MODIFY id_required_field int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table jms_risk
+-- AUTO_INCREMENT cho bảng jms_risk
 --
 ALTER TABLE jms_risk
   MODIFY id_risk int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table jms_search_engine
+-- AUTO_INCREMENT cho bảng jms_search_engine
 --
 ALTER TABLE jms_search_engine
   MODIFY id_search_engine int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
--- AUTO_INCREMENT for table jms_search_word
+-- AUTO_INCREMENT cho bảng jms_search_word
 --
 ALTER TABLE jms_search_word
   MODIFY id_word int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7251;
 
 --
--- AUTO_INCREMENT for table jms_sekeyword
+-- AUTO_INCREMENT cho bảng jms_sekeyword
 --
 ALTER TABLE jms_sekeyword
   MODIFY id_sekeyword int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table jms_shop
+-- AUTO_INCREMENT cho bảng jms_shop
 --
 ALTER TABLE jms_shop
   MODIFY id_shop int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table jms_shop_group
+-- AUTO_INCREMENT cho bảng jms_shop_group
 --
 ALTER TABLE jms_shop_group
   MODIFY id_shop_group int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table jms_shop_url
+-- AUTO_INCREMENT cho bảng jms_shop_url
 --
 ALTER TABLE jms_shop_url
   MODIFY id_shop_url int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table jms_specific_price
+-- AUTO_INCREMENT cho bảng jms_specific_price
 --
 ALTER TABLE jms_specific_price
   MODIFY id_specific_price int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT for table jms_specific_price_priority
+-- AUTO_INCREMENT cho bảng jms_specific_price_priority
 --
 ALTER TABLE jms_specific_price_priority
   MODIFY id_specific_price_priority int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
 
 --
--- AUTO_INCREMENT for table jms_specific_price_rule
+-- AUTO_INCREMENT cho bảng jms_specific_price_rule
 --
 ALTER TABLE jms_specific_price_rule
   MODIFY id_specific_price_rule int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table jms_specific_price_rule_condition
+-- AUTO_INCREMENT cho bảng jms_specific_price_rule_condition
 --
 ALTER TABLE jms_specific_price_rule_condition
   MODIFY id_specific_price_rule_condition int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table jms_specific_price_rule_condition_group
+-- AUTO_INCREMENT cho bảng jms_specific_price_rule_condition_group
 --
 ALTER TABLE jms_specific_price_rule_condition_group
   MODIFY id_specific_price_rule_condition_group int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table jms_state
+-- AUTO_INCREMENT cho bảng jms_state
 --
 ALTER TABLE jms_state
   MODIFY id_state int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=377;
 
 --
--- AUTO_INCREMENT for table jms_statssearch
+-- AUTO_INCREMENT cho bảng jms_statssearch
 --
 ALTER TABLE jms_statssearch
-  MODIFY id_statssearch int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY id_statssearch int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- AUTO_INCREMENT for table jms_stock
+-- AUTO_INCREMENT cho bảng jms_stock
 --
 ALTER TABLE jms_stock
   MODIFY id_stock int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table jms_stock_available
+-- AUTO_INCREMENT cho bảng jms_stock_available
 --
 ALTER TABLE jms_stock_available
   MODIFY id_stock_available int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=179;
 
 --
--- AUTO_INCREMENT for table jms_stock_mvt
+-- AUTO_INCREMENT cho bảng jms_stock_mvt
 --
 ALTER TABLE jms_stock_mvt
   MODIFY id_stock_mvt bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
 
 --
--- AUTO_INCREMENT for table jms_stock_mvt_reason
+-- AUTO_INCREMENT cho bảng jms_stock_mvt_reason
 --
 ALTER TABLE jms_stock_mvt_reason
   MODIFY id_stock_mvt_reason int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
--- AUTO_INCREMENT for table jms_store
+-- AUTO_INCREMENT cho bảng jms_store
 --
 ALTER TABLE jms_store
   MODIFY id_store int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table jms_supplier
+-- AUTO_INCREMENT cho bảng jms_supplier
 --
 ALTER TABLE jms_supplier
   MODIFY id_supplier int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table jms_supply_order
+-- AUTO_INCREMENT cho bảng jms_supply_order
 --
 ALTER TABLE jms_supply_order
   MODIFY id_supply_order int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table jms_supply_order_detail
+-- AUTO_INCREMENT cho bảng jms_supply_order_detail
 --
 ALTER TABLE jms_supply_order_detail
   MODIFY id_supply_order_detail int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table jms_supply_order_history
+-- AUTO_INCREMENT cho bảng jms_supply_order_history
 --
 ALTER TABLE jms_supply_order_history
   MODIFY id_supply_order_history int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table jms_supply_order_receipt_history
+-- AUTO_INCREMENT cho bảng jms_supply_order_receipt_history
 --
 ALTER TABLE jms_supply_order_receipt_history
   MODIFY id_supply_order_receipt_history int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table jms_supply_order_state
+-- AUTO_INCREMENT cho bảng jms_supply_order_state
 --
 ALTER TABLE jms_supply_order_state
   MODIFY id_supply_order_state int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT for table jms_tab
+-- AUTO_INCREMENT cho bảng jms_tab
 --
 ALTER TABLE jms_tab
   MODIFY id_tab int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=150;
 
 --
--- AUTO_INCREMENT for table jms_tab_module_preference
+-- AUTO_INCREMENT cho bảng jms_tab_module_preference
 --
 ALTER TABLE jms_tab_module_preference
   MODIFY id_tab_module_preference int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table jms_tag
+-- AUTO_INCREMENT cho bảng jms_tag
 --
 ALTER TABLE jms_tag
   MODIFY id_tag int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table jms_tax
+-- AUTO_INCREMENT cho bảng jms_tax
 --
 ALTER TABLE jms_tax
   MODIFY id_tax int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=89;
 
 --
--- AUTO_INCREMENT for table jms_tax_rule
+-- AUTO_INCREMENT cho bảng jms_tax_rule
 --
 ALTER TABLE jms_tax_rule
   MODIFY id_tax_rule int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=549;
 
 --
--- AUTO_INCREMENT for table jms_tax_rules_group
+-- AUTO_INCREMENT cho bảng jms_tax_rules_group
 --
 ALTER TABLE jms_tax_rules_group
   MODIFY id_tax_rules_group int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=72;
 
 --
--- AUTO_INCREMENT for table jms_timezone
+-- AUTO_INCREMENT cho bảng jms_timezone
 --
 ALTER TABLE jms_timezone
   MODIFY id_timezone int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=561;
 
 --
--- AUTO_INCREMENT for table jms_translation
+-- AUTO_INCREMENT cho bảng jms_translation
 --
 ALTER TABLE jms_translation
-  MODIFY id_translation int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY id_translation int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table jms_warehouse
+-- AUTO_INCREMENT cho bảng jms_warehouse
 --
 ALTER TABLE jms_warehouse
   MODIFY id_warehouse int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table jms_warehouse_product_location
+-- AUTO_INCREMENT cho bảng jms_warehouse_product_location
 --
 ALTER TABLE jms_warehouse_product_location
   MODIFY id_warehouse_product_location int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table jms_webservice_account
+-- AUTO_INCREMENT cho bảng jms_webservice_account
 --
 ALTER TABLE jms_webservice_account
   MODIFY id_webservice_account int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table jms_webservice_permission
+-- AUTO_INCREMENT cho bảng jms_webservice_permission
 --
 ALTER TABLE jms_webservice_permission
   MODIFY id_webservice_permission int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table jms_web_browser
+-- AUTO_INCREMENT cho bảng jms_web_browser
 --
 ALTER TABLE jms_web_browser
   MODIFY id_web_browser int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- AUTO_INCREMENT for table jms_wishlist
+-- AUTO_INCREMENT cho bảng jms_wishlist
 --
 ALTER TABLE jms_wishlist
-  MODIFY id_wishlist int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY id_wishlist int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table jms_wishlist_product
+-- AUTO_INCREMENT cho bảng jms_wishlist_product
 --
 ALTER TABLE jms_wishlist_product
-  MODIFY id_wishlist_product int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY id_wishlist_product int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT for table jms_zone
+-- AUTO_INCREMENT cho bảng jms_zone
 --
 ALTER TABLE jms_zone
   MODIFY id_zone int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;

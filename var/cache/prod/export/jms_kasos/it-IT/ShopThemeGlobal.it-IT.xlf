@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="D:\xamppp\htdocs\jms_kasos\admin201ucslkx" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="6d5d57d934d07956e515fe7db9a7788c">
+        <source>Get In Touch</source>
+        <target>Get In Touch</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="dd7bf230fde8d4836917806aff6a6b27">
+        <source>Address</source>
+        <target>Address</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="1300caaefd15b839f37952dc7cc75d82">
+        <source>Call us:</source>
+        <target>Call us:</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="8e4ce991c38fbb44cd2db0bd0434cef1">
+        <source>Opening: </source>
+        <target>Opening: </target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="5bd71194b6fad2f7e5bc45d7d229aa50">
+        <source>Don't show this popup again</source>
+        <target>Don't show this popup again</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="15422d54ec0d47000dc86a9820a5237e">
+        <source>Featured</source>
+        <target>Featured</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="06935560825762bbb2d20a4a3ed69e4f">
+        <source>New Arrival</source>
+        <target>New Arrival</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="22c6735b370cecf293e32dca6c678185">
+        <source>Best Seller</source>
+        <target>Best Seller</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b4c2b550635fe54fd29f2b64dfaca55d">
+        <source>Special</source>
+        <target>Special</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b57a43365a05fba262ddc6240d2f733b">
+        <source>Sale Off</source>
+        <target>Sale Off</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="ce8ae9da5b7cd6c3df2929543a9af92d">
+        <source>Email</source>
+        <target>Email</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="dbeeb228eb563f7a3a2ca81b253dc50f">
+        <source>Contact Info</source>
+        <target>Contact Info</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="c3755e61202abd74da5885d2e9c9160e">
+        <source>Call</source>
+        <target>Call</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="0e2fb5b02182fd28b9b96e86ed27838f">
+        <source>Fax:</source>
+        <target>Fax:</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="ed6697531780f4e8c7cab2c8d95d57a6">
+        <source>Headquarter</source>
+        <target>Headquarter</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="c7a7395519f0547b6676cf02431dcbd0">
+        <source>[1]%phone%[/1]</source>
+        <target>[1]%phone%[/1]</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="bcb2603bd53059cc5b6aaee6f625c77a">
+        <source>[1]%fax%[/1]</source>
+        <target>[1]%fax%[/1]</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="ae0bae303e24e9b202cdc9c95baf980c">
+        <source>[1]%email%[/1]</source>
+        <target>[1]%email%[/1]</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="ffb7e666a70151215b4c55c6268d7d72">
+        <source>Newsletter</source>
+        <target>Newsletter</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="586c3cef038045597a9edfb064a0c7ff">
+        <source>Register now to get updates on promotions</source>
+        <target>Register now to get updates on promotions</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="28882724d375042a7b19db1e976cb622">
+        <source>coupons</source>
+        <target>coupons</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="6d24737354356fa516a5b1d13120124a">
+        <source>Recent news</source>
+        <target>Recent news</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="7457dc704300568da80c1a1a9b8e92d5">
+        <source>updates from Kasos Store.</source>
+        <target>updates from Kasos Store.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="160b4640a9510878921aa64826c35c00">
+        <source>No spam, we promise.</source>
+        <target>No spam, we promise.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="388e4fd7ebe8ee6d333cdf4a96233802">
+        <source>Apply for your next purchase!</source>
+        <target>Apply for your next purchase!</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b26917587d98330d93f87808fc9d7267">
+        <source>Subscribe</source>
+        <target>Subscribe</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="2143f8cb66482342b35208bdc3fd949c">
+        <source>Active filters</source>
+        <target>Active filters</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="7a1c5301da6b1ce9e4345bd501397045">
+        <source>(no filter)</source>
+        <target>(no filter)</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d0f369aab921195580d8319855bbb69f">
+        <source>%label%:</source>
+        <target>%label%:</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d3d2e617335f08df83599665eef8a418">
+        <source>Close</source>
+        <target>Close</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="5813ce0ec7196c492c97596718f71969">
+        <source>Sitemap</source>
+        <target>Sitemap</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="cde8c76a3908d4e4eca893101693b697">
+        <source>Return to store</source>
+        <target>Return to store</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="4f4adcbf8c6f66dcfc8a3282ac2bf10a">
+        <source>404</source>
+        <target>404</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="432af5f964b152acc3f9aa7db5cca69e">
+        <source>Oops! This page Could Not Be Found!</source>
+        <target>Oops! This page Could Not Be Found!</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="90668f8186fee2e8c6e10c03a5303eb0">
+        <source>Sorry bit the page you are looking for does not exist, have been removed or name changed</source>
+        <target>Sorry bit the page you are looking for does not exist, have been removed or name changed</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="38563dee8ec9b2588c22dd3d4686c5aa">
+        <source>Back to homepage</source>
+        <target>Back to homepage</target>
+        <note>Line: </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

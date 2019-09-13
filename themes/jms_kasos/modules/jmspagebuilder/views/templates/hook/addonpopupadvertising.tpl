@@ -31,7 +31,7 @@
 		</h2>
 		{/if}
 		<a class="popup-close">
-			<i class="fa fa-times"></i>
+			<i class="la la-times"></i>
 		</a>
 		<div class="jms-popup-content">
 

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="D:\xamppp\htdocs\jms_kasos\admin201ucslkx" source-language="de-DE" target-language="de-DE" datatype="plaintext">
+    <body>
+      <trans-unit id="f2fc7490cbdb0db5cd6f1a4e7edb0da1">
+        <source>Your account</source>
+        <target>Your account</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="a82be0f551b8708bc08eb33cd9ded0cf">
+        <source>Information</source>
+        <target>Information</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="284b47b0bb63ae2df3b29f0e691d6fcf">
+        <source>Addresses</source>
+        <target>Addresses</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="da4791bc9700aca963b560fcb7db0605">
+        <source>Add first address</source>
+        <target>Add first address</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="cea4dedd9147586b361b90e900944690">
+        <source>Order history and details</source>
+        <target>Order history and details</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d1a365ea7809ae5831c6d9f86886630c">
+        <source>Credit slips</source>
+        <target>Credit slips</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="a82868319826fb092b73968e661b5b38">
+        <source>Vouchers</source>
+        <target>Vouchers</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="e06d7593c1cd6dabef450be6c3da7091">
+        <source>Merchandise returns</source>
+        <target>Merchandise returns</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="f28d8a87d03470521d5a992312bfaed8">
+        <source>Please enter the email address you used to register. You will receive a temporary link to reset your password.</source>
+        <target>Please enter the email address you used to register. You will receive a temporary link to reset your password.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="01a569ddc6cf67ddec2a683f0a5f5956">
+        <source>Forgot your password?</source>
+        <target>Forgot your password?</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="32fe59513f5bbdd353b4527cc6af55ce">
+        <source>Reset your password</source>
+        <target>Reset your password</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="24e372d72a306d924e8f1e53900dd7b6">
+        <source>Email address: %email%</source>
+        <target>Email address: %email%</target>
+        <note>Line: </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

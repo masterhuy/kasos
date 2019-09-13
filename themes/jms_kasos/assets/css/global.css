@@ -320,8 +320,8 @@
     -webkit-box-shadow: -5px -6px 15px rgba(0, 0, 0, 0.25);
     box-shadow: -5px -6px 15px rgba(0, 0, 0, 0.25);
     background: #fff;
-    width: 8px;
-    height: 8px;
+    width: 11.3px;
+    height: 11.3px;
     position: absolute;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -352,8 +352,8 @@
   -webkit-box-shadow: -5px -6px 15px rgba(0, 0, 0, 0.25);
   box-shadow: -5px -6px 15px rgba(0, 0, 0, 0.25);
   background: #fff;
-  width: 8px;
-  height: 8px;
+  width: 11.3px;
+  height: 11.3px;
   position: absolute;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -406,7 +406,8 @@
   font-size: 12px;
   font-weight: 500;
   bottom: -9px;
-  right: -8px; }
+  right: -8px;
+  overflow: hidden; }
 
 .languages-info .dropdown-menu {
   min-width: 130px;
@@ -664,6 +665,8 @@
 
 .btn-border-bottom {
   position: relative; }
+  .btn-border-bottom.disabled::after {
+    background: #7a7a7a; }
   .btn-border-bottom::after {
     content: "";
     position: absolute;
@@ -1164,6 +1167,7 @@
       height: 11px;
       background: #fff;
       top: -9px;
+      left: 0;
       position: absolute; }
 
 .product-preview .quick-view::after {
@@ -1171,6 +1175,9 @@
   font-family: 'typo-icon';
   font-size: 22px;
   display: inline-block; }
+
+.product-preview .ajax-add-to-cart[disabled]::after {
+  background: #7a7a7a; }
 
 .product-preview .ajax-add-to-cart::after {
   content: "";
@@ -2487,6 +2494,25 @@ a.wishlist_top.my_account {
           color: #d62424; }
         #contact .social_icon ul li a .fa-instagram:hover {
           color: #b27d62; }
+
+#footer .addon-box .addon-title + ul li a {
+  position: relative; }
+  #footer .addon-box .addon-title + ul li a:hover::after {
+    opacity: 1;
+    top: calc(100% - 2px); }
+  #footer .addon-box .addon-title + ul li a::after {
+    background-color: #ff4800;
+    content: "";
+    height: 1px;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: calc(100% + 2px);
+    -webkit-transition: .2s all;
+    -o-transition: .2s all;
+    transition: .2s all;
+    width: 100%; }
 
 #footer .footer-top-2 {
   background: #000;

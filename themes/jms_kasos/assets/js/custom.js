@@ -1184,28 +1184,28 @@ $(document).ready(function() {
     $(".home_6 #jms-vermegamenu-container").addClass('collapse');
 
     if ($("body").hasClass("home_1")){
-		$(".sub-home .menu-item.h1").addClass('active');
+		$(".sub-home .menu-item.home1").addClass('active');
     }
     else if($("body").hasClass("home_2")){
-    	$(".sub-home .menu-item.h2").addClass('active');
+    	$(".sub-home .menu-item.home2").addClass('active');
     }
     else if($("body").hasClass("home_3")){
-    	$(".sub-home .menu-item.h3").addClass('active');
+    	$(".sub-home .menu-item.home3").addClass('active');
     }
     else if($("body").hasClass("home_4")){
-    	$(".sub-home .menu-item.h4").addClass('active');
+    	$(".sub-home .menu-item.home4").addClass('active');
     }
     else if($("body").hasClass("home_5")){
-    	$(".sub-home .menu-item.h5").addClass('active');
+    	$(".sub-home .menu-item.home5").addClass('active');
     }
     else if($("body").hasClass("home_6")){
-    	$(".sub-home .menu-item.h6").addClass('active');
+    	$(".sub-home .menu-item.home6").addClass('active');
     }
     else if($("body").hasClass("home_7")){
-    	$(".sub-home .menu-item.h7").addClass('active');
+    	$(".sub-home .menu-item.home7").addClass('active');
     }
     else if($("body").hasClass("home_8")){
-    	$(".sub-home .menu-item.h8").addClass('active');
+    	$(".sub-home .menu-item.home8").addClass('active');
     }
 
 	if(initialLoad){

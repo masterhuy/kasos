@@ -202,11 +202,17 @@ div.jms-megamenu .dropdown-menu::before{
     margin-bottom: 0;
 }
 .jms-megamenu .mega-nav .mega > a::after {
-    font-family: "FontAwesome";
+    font-family: "LineAwesome";
     position: absolute;
-    right: 28px;
+    right: 20px;
     top: calc(50% - 17px);
-    content: '\f105';
+    content: '\f2c2';
+    font-size: 15px;
+    transition: .4s all;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    border-radius: 50%;
 }
 .jms-megamenu .item-fullwidth .mega-nav > li > ul > li.group, .jms-megamenu .item-fullwidth .mega-nav > li.group {
     position: relative;
@@ -237,7 +243,7 @@ div.jms-megamenu .dropdown-menu::before{
     margin-left: 0;
 }
 .jms-megamenu .dropdown-menu {
-    left: -30px;
+    left: -17px;
 }
 .jms-megamenu .nav > li.menu-align-center.open > .dropdown-menu {
     -webkit-transform: translateX(-50%);
@@ -324,6 +330,13 @@ div.jms-megamenu .dropdown-menu::before{
 }
 .jms-megamenu .nav > .menu-item .mega-nav li > a:hover {
     color: #ff4800;
+    background: #f9f9f9;
+}
+.jms-megamenu .nav > .menu-item .mega-nav li > a:hover::after{
+    transform: rotate(45deg);
+}
+.jms-megamenu .nav > .menu-item .mega-nav li > a::after:hover{
+    background: #ebebeb;
 }
 .jms-megamenu .nav > .menu-item .mega-nav li{
     position: relative;

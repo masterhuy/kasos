@@ -48,9 +48,11 @@
   .banner-1 .banner-content p {
     color: #fff; }
   .banner-1 .banner-content a {
-    font-size: 16px;
+    font-size: 17px;
     color: #fff;
     letter-spacing: 0.8px; }
+    .banner-1 .banner-content a:hover {
+      color: #ff4800; }
     .banner-1 .banner-content a::after {
       content: "\f105";
       font-family: FontAwesome;

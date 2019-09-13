@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-09-12 05:29:46
+/* Smarty version 3.1.33, created on 2019-09-13 03:29:04
   from 'D:\xamppp\htdocs\jms_kasos\themes\jms_kasos\templates\catalog\_partials\sort-orders.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d7a100a09e1c6_95022375',
+  'unifunc' => 'content_5d7b45402a6894_11671343',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d7a100a09e1c6_95022375 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d7b45402a6894_11671343 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="inlude_sort_by">
 	<span class="hidden-sm-down sort-by"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Sort by','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
 :</span>

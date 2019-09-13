@@ -1610,7 +1610,7 @@ ul#order_step li {
   width: 340px;
   left: 50%;
   transform: translateX(-50%);
-  top: calc(100% + 19px);
+  top: calc(100% + 29px);
   box-shadow: 0 0 10px rgba(0,0,0,0.25);
 }
 #cart_block .shoppingcart-box::before {
@@ -1618,8 +1618,8 @@ ul#order_step li {
   left: 50%;
   box-shadow: -5px -6px 15px rgba(0,0,0,0.25);
   background: #fff;
-  width: 8px;
-  height: 8px;
+  width: 11.3px;
+  height: 11.3px;
   position: absolute;
   transform: rotate(45deg) translateX(-50%);
   top: -1px;
@@ -3037,7 +3037,8 @@ ul.footer_links {
 }
   #blockcart-modal .modal-header {
     background: #ebebeb;
-    border-radius: 3px; }
+    border-radius: 3px;
+    position: relative; }
   #blockcart-modal .modal-title i.material-icons {
     margin-right: 1.875rem; }
 #blockcart-modal .product-name {
@@ -3064,6 +3065,11 @@ ul.footer_links {
   top: 10px;
   color: #000;
   z-index: 99;
+}
+#blockcart-modal .modal-dialog .close{
+  top: 50%;
+  transform: translateY(-50%);
+  margin-top: 0;
 }
 .js-modal-product-cover.product-cover-modal {
   width: 100%; }
@@ -5530,7 +5536,12 @@ footer .blog-carousel {
 #new-products .category-title{
   position: relative;
 }
-
+#notifications{
+  text-align: center;
+}
+#notifications ul{
+   margin-bottom: 30px;
+}
 
 a,
 button,

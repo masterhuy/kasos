@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-09-11 05:53:15
+/* Smarty version 3.1.33, created on 2019-09-13 06:16:42
   from 'D:\xamppp\htdocs\jms_kasos\admin201ucslkx\themes\default\template\controllers\orders\helpers\view\view.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d78c40bebba12_94073026',
+  'unifunc' => 'content_5d7b6c8a183ed2_88358417',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -26,7 +26,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:controllers/orders/_discount_form.tpl' => 1,
   ),
 ),false)) {
-function content_5d78c40bebba12_94073026 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d7b6c8a183ed2_88358417 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
@@ -34,18 +34,18 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_10206659665d78c40bb6fd43_62777785', "override_tpl");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_4760010115d7b6c89bff736_29151764', "override_tpl");
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "helpers/view/view.tpl");
 }
 /* {block "override_tpl"} */
-class Block_10206659665d78c40bb6fd43_62777785 extends Smarty_Internal_Block
+class Block_4760010115d7b6c89bff736_29151764 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'override_tpl' => 
   array (
-    0 => 'Block_10206659665d78c40bb6fd43_62777785',
+    0 => 'Block_4760010115d7b6c89bff736_29151764',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -120,8 +120,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 
   <?php ob_start();
 echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0], array( array('h'=>"displayInvoice",'id_order'=>$_smarty_tpl->tpl_vars['order']->value->id),$_smarty_tpl ) );
-$_prefixVariable4 = ob_get_clean();
-$_smarty_tpl->_assignInScope('hook_invoice', $_prefixVariable4);?>
+$_prefixVariable1 = ob_get_clean();
+$_smarty_tpl->_assignInScope('hook_invoice', $_prefixVariable1);?>
   <?php if (($_smarty_tpl->tpl_vars['hook_invoice']->value)) {?>
   <div><?php echo $_smarty_tpl->tpl_vars['hook_invoice']->value;?>
 </div>
@@ -616,7 +616,7 @@ if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['brother_order']->value) {
 $_smarty_tpl->tpl_vars['brother_order']->index++;
 $_smarty_tpl->tpl_vars['brother_order']->first = !$_smarty_tpl->tpl_vars['brother_order']->index;
-$__foreach_brother_order_12_saved = $_smarty_tpl->tpl_vars['brother_order'];
+$__foreach_brother_order_4_saved = $_smarty_tpl->tpl_vars['brother_order'];
 ?>
               <?php if ($_smarty_tpl->tpl_vars['brother_order']->first) {?>
                 <?php if (count($_smarty_tpl->tpl_vars['order']->value->getBrother()) == 1) {?>
@@ -635,7 +635,7 @@ $__foreach_brother_order_12_saved = $_smarty_tpl->tpl_vars['brother_order'];
 
               </a>
             <?php
-$_smarty_tpl->tpl_vars['brother_order'] = $__foreach_brother_order_12_saved;
+$_smarty_tpl->tpl_vars['brother_order'] = $__foreach_brother_order_4_saved;
 }
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
@@ -678,9 +678,9 @@ foreach ($_from as $_smarty_tpl->tpl_vars['payment']->value) {
                   <td><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['displayPrice'][0], array( array('price'=>$_smarty_tpl->tpl_vars['payment']->value->amount,'currency'=>$_smarty_tpl->tpl_vars['payment']->value->id_currency),$_smarty_tpl ) );?>
 </td>
                   <td>
-                  <?php $_prefixVariable5 = $_smarty_tpl->tpl_vars['payment']->value->getOrderInvoice($_smarty_tpl->tpl_vars['order']->value->id);
-$_smarty_tpl->_assignInScope('invoice', $_prefixVariable5);
-if ($_prefixVariable5) {?>
+                  <?php $_prefixVariable2 = $_smarty_tpl->tpl_vars['payment']->value->getOrderInvoice($_smarty_tpl->tpl_vars['order']->value->id);
+$_smarty_tpl->_assignInScope('invoice', $_prefixVariable2);
+if ($_prefixVariable2) {?>
                     <?php echo $_smarty_tpl->tpl_vars['invoice']->value->getInvoiceNumberFormatted($_smarty_tpl->tpl_vars['current_id_lang']->value,$_smarty_tpl->tpl_vars['order']->value->id_shop);?>
 
                   <?php } else { ?>
@@ -1840,7 +1840,7 @@ if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['brother_order']->value) {
 $_smarty_tpl->tpl_vars['brother_order']->index++;
 $_smarty_tpl->tpl_vars['brother_order']->first = !$_smarty_tpl->tpl_vars['brother_order']->index;
-$__foreach_brother_order_25_saved = $_smarty_tpl->tpl_vars['brother_order'];
+$__foreach_brother_order_17_saved = $_smarty_tpl->tpl_vars['brother_order'];
 ?>
               <tr>
                 <td>
@@ -1870,7 +1870,7 @@ $__foreach_brother_order_25_saved = $_smarty_tpl->tpl_vars['brother_order'];
                 </td>
               </tr>
               <?php
-$_smarty_tpl->tpl_vars['brother_order'] = $__foreach_brother_order_25_saved;
+$_smarty_tpl->tpl_vars['brother_order'] = $__foreach_brother_order_17_saved;
 }
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>

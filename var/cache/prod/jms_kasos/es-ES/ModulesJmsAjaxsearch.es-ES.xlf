@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="D:\xamppp\htdocs\jms_kasos\themes\jms_kasos\modules\jmsajaxsearch\views\templates\hook\jmsajaxsearch.tpl" source-language="es-ES" target-language="es-ES" datatype="plaintext">
+    <body>
+      <trans-unit id="d5f66ab852c4c3c24b2c3880a3e0d616">
+        <source>Search everything...</source>
+        <target>Search everything...</target>
+        <note>Line: 16</note>
+      </trans-unit>
+      <trans-unit id="13348442cc6a27032d2b4aa28b75a5d3">
+        <source>Search</source>
+        <target>Search</target>
+        <note>Line: 18</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

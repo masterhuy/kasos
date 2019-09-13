@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-09-12 05:30:53
+/* Smarty version 3.1.33, created on 2019-09-13 06:31:22
   from 'D:\xamppp\htdocs\jms_kasos\themes\jms_kasos\modules\jmswishlist\views\templates\hook\my-account.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d7a104dee5ea5_96004831',
+  'unifunc' => 'content_5d7b6ffa41d549_70658117',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d7a104dee5ea5_96004831 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d7b6ffa41d549_70658117 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!-- MODULE WishList -->
 <a class="wishlist_top home_page lnk_wishlist p-relative" href="<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['link']->value->getModuleLink('jmswishlist','mywishlist',array(),true),'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>

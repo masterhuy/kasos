@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-09-12 04:05:00
+/* Smarty version 3.1.33, created on 2019-09-13 03:25:25
   from 'D:\xamppp\htdocs\jms_kasos\themes\jms_kasos\modules\contactform\views\templates\widget\contactform.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d79fc2ca0cb13_18891415',
+  'unifunc' => 'content_5d7b4465d506b7_95192155',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d79fc2ca0cb13_18891415 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d7b4465d506b7_95192155 (Smarty_Internal_Template $_smarty_tpl) {
 ?><section class="contact-form">
   <form action="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['pages']['contact'], ENT_QUOTES, 'UTF-8');?>
 " method="post" <?php if ($_smarty_tpl->tpl_vars['contact']->value['allow_file_upload']) {?>enctype="multipart/form-data"<?php }?>>

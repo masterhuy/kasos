@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-09-12 05:30:52
+/* Smarty version 3.1.33, created on 2019-09-13 06:13:45
   from 'D:\xamppp\htdocs\jms_kasos\themes\jms_kasos\modules\jmspagebuilder\views\templates\hook\addonvideo.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d7a104cf01093_67187160',
+  'unifunc' => 'content_5d7b6bd98692b0_07223260',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d7a104cf01093_67187160 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d7b6bd98692b0_07223260 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="addon-video">
     <?php if ($_smarty_tpl->tpl_vars['addon_title']->value) {?>
         <div class="addon-title">
