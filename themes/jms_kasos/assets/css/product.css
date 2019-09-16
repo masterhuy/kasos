@@ -1039,6 +1039,9 @@
     }
 }
 @media(max-width:991px){
+    #product #right-column{
+        margin-bottom: 85px;
+    }
     .product-add-to-cart .title{
         display: none;
     }

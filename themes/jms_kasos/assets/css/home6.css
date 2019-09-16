@@ -150,6 +150,23 @@
     font-family: 'samsungsharpsans-bold';
     letter-spacing: 16px; }
 
+.cates-banner .container-fluid > .row {
+  margin: 0; }
+  .cates-banner .container-fluid > .row .layout-column {
+    padding: 0; }
+
+.cates-banner .banner-content {
+  top: 87px;
+  left: 0;
+  padding: 0 20px;
+  width: 100%;
+  text-align: center; }
+  .cates-banner .banner-content p {
+    color: #fff;
+    font-size: 27px;
+    font-family: 'samsungsharpsans-bold';
+    letter-spacing: 1.1px; }
+
 .addon-box .addon-title h3 {
   color: #fff; }
 
@@ -242,6 +259,10 @@ div.menu-wrap {
   .ver_menu {
     padding: 16px 15px; } }
 
+@media (max-width: 1366px) {
+  .cates-banner .banner-content {
+    top: 63px; } }
+
 @media (max-width: 1199px) {
   #header {
     padding: 0; }
@@ -253,6 +274,10 @@ div.menu-wrap {
     .megamenu .jms-megamenu-wrap #open-button {
       color: #fff;
       right: -4px; }
+  .cates-banner .banner-content {
+    top: 50px; }
+    .cates-banner .banner-content p {
+      font-size: 16px; }
   .banner-3 {
     margin-bottom: 30px; }
   .video .container > .row {
@@ -262,6 +287,8 @@ div.menu-wrap {
     margin: auto; } }
 
 @media (max-width: 991px) {
+  .cates-banner .banner-content {
+    top: 35px; }
   .banner-1 {
     margin-bottom: 30px; }
   .jms-row.header {

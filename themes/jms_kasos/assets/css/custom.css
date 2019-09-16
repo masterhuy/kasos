@@ -17,7 +17,6 @@
 @import url(sitemap.css);
 @import url(cms.css);
 @import url(order-detail.css);
-@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:600&display=swap');
 @font-face {
     font-family: 'samsungsharpsans-regular';
@@ -2246,8 +2245,14 @@ li.product-flag {
   font-family: "samsungsharpsans-bold";
   font-size: 18px;
 }
+li.product-flag.new {
+  top: 18px !important;
+  left: 20px;
+  right: auto;
+  color: #0070c9;
+}
 
-.product-flag.discount, .product-flag.new {
+.product-flag.discount {
   display: none; }
 
 .product-pack .pack-product-container {
@@ -5541,6 +5546,9 @@ footer .blog-carousel {
 }
 #notifications ul{
    margin-bottom: 30px;
+}
+.product-detail .product-flags{
+  display: none;
 }
 
 a,

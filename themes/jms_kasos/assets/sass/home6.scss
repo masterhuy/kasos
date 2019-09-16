@@ -187,6 +187,27 @@
 		}
 	}
 }
+.cates-banner{
+	.container-fluid > .row{
+		margin: 0;
+		.layout-column{
+			padding: 0;
+		}
+	}
+	.banner-content{
+		top: 87px;
+		left: 0;
+		padding: 0 20px;
+		width: 100%;
+		text-align: center;
+		p{
+			color: #fff;
+			font-size: 27px;
+			font-family: 'samsungsharpsans-bold';
+			letter-spacing: 1.1px;
+		}
+	}
+}
 .addon-box .addon-title h3{
 	color: #fff;
 }
@@ -283,6 +304,11 @@ div.menu-wrap{
 		padding: 16px 15px;
 	}
 }
+@media (max-width: 1366px){
+	.cates-banner .banner-content{
+		top: 63px;
+	}
+}
 @media (max-width: 1199px){
 	#header{
 		padding: 0;
@@ -300,6 +326,12 @@ div.menu-wrap{
 			}
 		}
 	}
+	.cates-banner .banner-content{
+		top: 50px;
+		p{
+			font-size: 16px;
+		}
+	}
 	.banner-3{
 		margin-bottom: 30px;
 	}
@@ -312,6 +344,9 @@ div.menu-wrap{
 	}
 }
 @media (max-width: 991px){
+	.cates-banner .banner-content{
+		top: 35px;
+	}
 	.banner-1{
 		margin-bottom: 30px;
 	}

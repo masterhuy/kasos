@@ -108,36 +108,69 @@ jQuery(function ($) {
 		var customsCarouselProduct = $(".customs-carousel-product");
 		var rtl = false;
 		if ($("body").hasClass("rtl")) rtl = true;
-		customsCarouselProduct.owlCarousel({
-			responsiveClass:true,
-			responsive:{
-				1440:{
-                  	items:5
+		if($("#product #content-wrapper").hasClass('sidebar')){
+			customsCarouselProduct.owlCarousel({
+				responsiveClass:true,
+				responsive:{
+					1440:{
+	                  	items:4
+					},
+					1199:{
+	                  	items:3
+					},
+					991:{
+						items:2
+					},
+					768:{
+						items:2
+					},
+					481:{
+						items:2
+					},
+					0:{
+						items:1
+					}
 				},
-				1199:{
-                  	items:4
+				rtl: rtl,
+				margin: 0,
+				nav: false,
+				dots: false,
+				autoplay: false,
+				slideSpeed: 200,
+				loop: true
+			});
+		}else{
+			customsCarouselProduct.owlCarousel({
+				responsiveClass:true,
+				responsive:{
+					1440:{
+	                  	items:5
+					},
+					1199:{
+	                  	items:4
+					},
+					991:{
+						items:3
+					},
+					768:{
+						items:2
+					},
+					481:{
+						items:2
+					},
+					0:{
+						items:1
+					}
 				},
-				991:{
-					items:3
-				},
-				768:{
-					items:2
-				},
-				481:{
-					items:2
-				},
-				0:{
-					items:1
-				}
-			},
-			rtl: rtl,
-			margin: 0,
-			nav: false,
-			dots: false,
-			autoplay: false,
-			slideSpeed: 200,
-			loop: true
-		});
+				rtl: rtl,
+				margin: 0,
+				nav: false,
+				dots: false,
+				autoplay: false,
+				slideSpeed: 200,
+				loop: true
+			});
+		}
 	}
     
     if($(".category-custom-carousel").length) {		

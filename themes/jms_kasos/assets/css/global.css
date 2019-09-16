@@ -479,7 +479,7 @@
       right: -37px; }
     .jms-tab ul li a {
       color: #17171f;
-      font-size: 19px;
+      font-size: 18px;
       font-family: 'samsungsharpsans-bold';
       padding: 0;
       letter-spacing: 0.4px; }
@@ -854,7 +854,7 @@
 
 .flashsales-carousel {
   padding-top: 35px; }
-  .flashsales-carousel .label-sale {
+  .flashsales-carousel .product-flags {
     display: none; }
   .flashsales-carousel .product-preview .product-info {
     margin-top: -6px;
@@ -1972,7 +1972,8 @@ a.wishlist_top.my_account {
     -ms-flex-pack: center;
     justify-content: center; }
   .quickview .right .content_price .price.new {
-    text-align: center; }
+    text-align: center;
+    margin-left: 20px; }
 
 .quickview .arrows.js-arrows {
   width: 100px;

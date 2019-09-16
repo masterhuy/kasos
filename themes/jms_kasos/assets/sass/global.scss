@@ -617,7 +617,7 @@
 			}
 			a{
 				color: #17171f;
-				font-size: 19px;
+				font-size: 18px;
 				font-family: 'samsungsharpsans-bold';
 				padding: 0;
 				letter-spacing: 0.4px;
@@ -1070,7 +1070,7 @@
 //flashsales
 .flashsales-carousel{
 	padding-top: 35px;
-	.label-sale{
+	.product-flags{
 		display: none;
 	}
 	.product-preview .product-info{
@@ -2382,6 +2382,7 @@ a.wishlist_top{
 		}
 		.content_price .price.new{
 			text-align: center;
+			margin-left: 20px;
 		}
 	}
 	.arrows.js-arrows{

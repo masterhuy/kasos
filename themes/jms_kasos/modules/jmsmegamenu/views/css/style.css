@@ -327,6 +327,19 @@ div.jms-megamenu .dropdown-menu::before{
 }
 .jms-megamenu .nav > .menu-item.item-fullwidth .mega-nav li > a{
     padding: 0;
+    background: transparent !important;
+}
+.jms-megamenu .nav > .menu-item.item-fullwidth .mega-nav li > a:hover::before{
+    content: "";
+    width: calc(100% + 15px);
+    left: -15px;
+    position: absolute;
+    background: #f9f9f9;
+    height: 100%;
+    z-index: -1;
+}
+.jms-megamenu .nav > .menu-item.item-fullwidth .mega-nav li.group > a:hover::before{
+    display: none;
 }
 .jms-megamenu .nav > .menu-item .mega-nav li > a:hover {
     color: #ff4800;
@@ -334,9 +347,6 @@ div.jms-megamenu .dropdown-menu::before{
 }
 .jms-megamenu .nav > .menu-item .mega-nav li > a:hover::after{
     transform: rotate(45deg);
-}
-.jms-megamenu .nav > .menu-item .mega-nav li > a::after:hover{
-    background: #ebebeb;
 }
 .jms-megamenu .nav > .menu-item .mega-nav li{
     position: relative;
@@ -353,7 +363,7 @@ div.jms-megamenu .dropdown-menu::before{
 }
 .jms-megamenu .nav .mega-nav li.group > a {
     font-family: 'samsungsharpsans-bold';
-    color: #000;
+    color: #000 !important;
     letter-spacing: 0.7px;
     font-size: 20px;
     display: block;
